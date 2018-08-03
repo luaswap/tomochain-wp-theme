@@ -37,7 +37,7 @@ gulp.task('bs-reload', function () {
 })
 
 gulp.task('watch', function () {
-    gulp.watch('src/' + theme + '/assets/scss/*.scss', ['sass'])
+    gulp.watch('src/' + theme + '/assets/scss/**/*.scss', ['sass'])
     gulp.watch('src/' + theme + '/assets/**/*.js', ['bs-reload'])
     gulp.watch('src/' + theme + '/**/*.php', ['bs-reload'])
 })

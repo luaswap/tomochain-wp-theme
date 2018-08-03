@@ -22,72 +22,86 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 /*--------------------------------------------------------------
 >>> TABLE OF CONTENTS:
 ----------------------------------------------------------------
-# Normalize
-# Typography
+# Settings
+# Tools
+# Generic
 # Elements
-# Forms
-# Navigation
-	## Links
-	## Menus
-# Accessibility
-# Alignments
-# Clearings
-# Content
-	## Posts and pages
-	## Comments
-# Media
-	## Captions
-	## Galleries
+# Objects
+# Components
+# Trumps
 --------------------------------------------------------------*/
-@import "variables-site/*";
-@import "mixins/*";
+/*
+SETTINGS
+store all variables, config switches, etc.
+Split up into logical sections, the smaller and simpler the better.
+used with preprocessors and contain font, colors definitions, etc
+================================================
+*/
+@import "settings/*";
+// Core variables and mixins
+@import '../../../../node_modules/bootstrap/scss/functions';
+@import '../../../../node_modules/bootstrap/scss/variables';
+@import '../../../../node_modules/bootstrap/scss/mixins';
+// Utility classes
+@import '../../../../node_modules/bootstrap/scss/utilities';
 
-/*--------------------------------------------------------------
-# Normalize
---------------------------------------------------------------*/
-@import "normalize";
+/*
+TOOLS
+================================================
+store all programic Sass functionality.
+If your tooling is simplistic enough, you can do something like:
+  tools.mixins
+If your tooling is more complex you can split it up like:
+  tools.grid
+  tools.typography
+  etc.
+*/
+@import "tools/*";
 
-/*--------------------------------------------------------------
-# Typography
---------------------------------------------------------------*/
-@import "typography/*";
+/*
+GENERIC
+================================================
+reset and/or normalize styles, box-sizing definition, etc.
+This is the first layer which generates actual CSS.
+*/
+@import '../../../../node_modules/bootstrap/scss/print';
+@import '../../../../node_modules/bootstrap/scss/reboot';
+@import 'generic/*';
 
-/*--------------------------------------------------------------
-# Elements
---------------------------------------------------------------*/
+/*
+ELEMENTS
+================================================
+styling for bare HTML elements (like H1, A, etc.).
+moThese come with default styling from the browser so we can redefine them here.
+*/
+@import '../../../../node_modules/bootstrap/scss/type';
+@import '../../../../node_modules/bootstrap/scss/images';
+@import '../../../../node_modules/bootstrap/scss/code';
+@import '../../../../node_modules/bootstrap/scss/tables';
 @import "elements/*";
 
-/*--------------------------------------------------------------
-# Forms
---------------------------------------------------------------*/
-@import "forms/*";
+/*
+OBJECTS
+================================================
+"formless", in other words invisible to the user, no cosmetics
+  Eg. wrappers, grid systems, etc.
+This is the first layer of classes and should be agnostically named
+  Eg. list-inline, ui-list, etc.
+*/
+@import '../../../../node_modules/bootstrap/scss/grid';
+@import 'objects/*';
 
-/*--------------------------------------------------------------
-# Navigation
---------------------------------------------------------------*/
-@import "navigation/*";
+/*
+COMPONENTS
+================================================
+Specific UI components.
+This is where majority of our work takes place and our UI components are often composed of Objects and Components
+*/
+@import 'components/*';
 
-/*--------------------------------------------------------------
-# Accessibility
---------------------------------------------------------------*/
-@import "modules/*";
-
-/*--------------------------------------------------------------
-# Alignments
---------------------------------------------------------------*/
-@import "modules/*";
-
-/*--------------------------------------------------------------
-# Clearings
---------------------------------------------------------------*/
-@import "modules/*";
-
-/*--------------------------------------------------------------
-# Content
---------------------------------------------------------------*/
-@import "site/*";
-
-/*--------------------------------------------------------------
-# Media
---------------------------------------------------------------*/
-@import "media/*";
+/*
+Trumps
+================================================
+utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
+*/
+@import 'trumps/*';
