@@ -6,6 +6,19 @@
  *
  * @package tomochain
  */
+$tomochain_theme = wp_get_theme();
+
+if ( ! empty( $tomochain_theme['Template'] ) ) {
+	$tomochain_theme = wp_get_theme( $tomochain_theme['Template'] );
+}
+
+define( 'TOMOCHAIN_THEME_NAME', $tomochain_theme['Name'] );
+define( 'TOMOCHAIN_THEME_SLUG', $tomochain_theme['Template'] );
+define( 'TOMOCHAIN_THEME_VERSION', $tomochain_theme['Version'] );
+define( 'TOMOCHAIN_THEME_DIR', get_template_directory() );
+define( 'TOMOCHAIN_THEME_URI', get_template_directory_uri() );
+define( 'TOMOCHAIN_CHILD_THEME_URI', get_stylesheet_directory_uri() );
+define( 'TOMOCHAIN_CHILD_THEME_DIR', get_stylesheet_directory() );
 
 if ( ! function_exists( 'tomochain_setup' ) ) :
 	/**
