@@ -133,7 +133,25 @@ add_action( 'widgets_init', 'tomochain_widgets_init' );
  * Enqueue scripts and styles.
  */
 function tomochain_scripts() {
+
+	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
+	if ($suffix === '.min') {
+		add_filter( 'stylesheet_uri',
+			function ( $stylesheet_uri, $stylesheet_dir_uri ) {
+				return $stylesheet_dir_uri . '/style.min.css';
+			},
+		10,
+		2 );
+	}
+
 	wp_enqueue_style( 'tomochain-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'tomochain-js',
+		TOMOCHAIN_THEME_URI . '/assets/js/tomochain' . $suffix . '.js',
+		array('jquery'),
+		TOMOCHAIN_THEME_VERSION,
+		true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

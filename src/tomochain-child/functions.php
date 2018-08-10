@@ -11,7 +11,9 @@ add_action( 'wp_enqueue_scripts', 'tomochain_child_enqueue_scripts' );
 if ( ! function_exists( 'tomochain_child_enqueue_scripts' ) ) {
 
 	function tomochain_child_enqueue_scripts() {
-        wp_enqueue_style( 'tomochain-main-style', trailingslashit( TOMOCHAIN_THEME_URI ) . 'style.css' );
+		$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+		
+        wp_enqueue_style( 'tomochain-style', trailingslashit( TOMOCHAIN_THEME_URI ) . 'style' . $suffix . '.css' );
         wp_enqueue_style( 'tomochain-child-style', trailingslashit( TOMOCHAIN_CHILD_THEME_URI ) . 'style.css' );
         // wp_enqueue_script( 'tomochain-child-script',
 		// 	trailingslashit( TOMOCHAIN_CHILD_THEME_URI ) . '/assets/js/script.js',

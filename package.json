@@ -15,14 +15,17 @@
     "css-mqpacker": "^6.0.2",
     "glob": "^7.1.2",
     "gulp": "^3.9.1",
+    "gulp-file-include": "^2.0.1",
     "gulp-line-ending-corrector": "^1.0.2",
     "gulp-load-plugins": "^1.5.0",
     "gulp-notify": "^3.2.0",
     "gulp-plumber": "^1.2.0",
     "gulp-postcss": "^7.0.1",
+    "gulp-rename": "^1.4.0",
     "gulp-sass": "^4.0.1",
     "gulp-sass-glob-import": "^0.1.0",
     "gulp-sourcemaps": "^2.6.4",
+    "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
     "postcss-assets": "^5.0.0"
   }

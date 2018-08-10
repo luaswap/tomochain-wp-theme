@@ -151,7 +151,7 @@
 				font-size: 20px;
 				line-height: 40px;
 
-				@include fa-icon('\f105');
+				// @include fa-icon('\f105');
 			}
 		}
 	}
@@ -172,7 +172,7 @@
 		list-style: none;
 		transform: translateX(100%);
 
-		@extend %transit;
+		// @extend %transit;
 	}
 
 	.menu-back {
@@ -197,7 +197,7 @@
 			font-size: 20px;
 			line-height: 39px;
 
-			@include fa-icon('\f104');
+			// @include fa-icon('\f104');
 		}
 	}
 }

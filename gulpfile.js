@@ -24,6 +24,30 @@ gulp.task('sass', function () {
                }))
                .pipe($.lineEndingCorrector())
                .pipe(gulp.dest('src/' + theme + '/'))
+               .pipe( $.rename( {
+                   basename: 'style',
+                   suffix: '.min'
+               }))
+               .pipe(gulp.dest('src/' + theme + '/'))
+})
+
+gulp.task('js', function () {
+    return gulp.src( 'src/' + theme + '/assets/js/input/*.js' )
+        .pipe( $.plumber( { errorHandler: reportError } ) )
+        .pipe( $.fileInclude({
+            prefix: '//@',
+            basepath: '@file'
+        }))
+        .pipe( $.rename( {
+            basename: 'tomochain',
+        }))
+        .pipe( gulp.dest( 'src/' + theme + '/assets/js/' ) )
+        .pipe( $.rename( {
+            basename: 'tomochain',
+            suffix: '.min'
+        }))
+        .pipe( $.uglify() )
+        .pipe( gulp.dest( 'src/' + theme + '/assets/js/' ) )
 })
 
 gulp.task('bs', function () {
@@ -38,7 +62,7 @@ gulp.task('bs-reload', function () {
 
 gulp.task('watch', function () {
     gulp.watch('src/' + theme + '/assets/scss/**/*.scss', ['sass'])
-    gulp.watch('src/' + theme + '/assets/**/*.js', ['bs-reload'])
+    gulp.watch('src/' + theme + '/assets/**/*.js', ['bs-reload', 'js'])
     gulp.watch('src/' + theme + '/**/*.php', ['bs-reload'])
 })
 
