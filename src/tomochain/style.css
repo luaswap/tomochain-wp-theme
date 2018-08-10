@@ -36,6 +36,48 @@ Split up into logical sections, the smaller and simpler the better.
 used with preprocessors and contain font, colors definitions, etc
 ================================================
 */
+@font-face {
+  font-family: 'SFProText';
+  src: url("assets/fonts/SFPro/sf-pro-text-bold.eot");
+  src: url("assets/fonts/SFPro/sf-pro-text-bold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SFPro/sf-pro-text-bold.woff") format("woff"), url("assets/fonts/SFPro/sf-pro-text-bold.ttf") format("truetype"), url("assets/fonts/SFPro/sf-pro-text-bold.svg#sf_pro_textbold") format("svg");
+  font-weight: 700;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SFProText';
+  src: url("assets/fonts/SFPro/sf-pro-text-heavy.eot");
+  src: url("assets/fonts/SFPro/sf-pro-text-heavy.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SFPro/sf-pro-text-heavy.woff") format("woff"), url("assets/fonts/SFPro/sf-pro-text-heavy.ttf") format("truetype"), url("assets/fonts/SFPro/sf-pro-text-heavy.svg#sf_pro_textheavy") format("svg");
+  font-weight: 800;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SFProText';
+  src: url("assets/fonts/SFPro/sf-pro-text-light.eot");
+  src: url("assets/fonts/SFPro/sf-pro-text-light.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SFPro/sf-pro-text-light.woff") format("woff"), url("assets/fonts/SFPro/sf-pro-text-light.ttf") format("truetype"), url("assets/fonts/SFPro/sf-pro-text-light.svg#sf_pro_textlight") format("svg");
+  font-weight: 200;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SFProText';
+  src: url("assets/fonts/SFPro/sf-pro-text-medium.eot");
+  src: url("assets/fonts/SFPro/sf-pro-text-medium.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SFPro/sf-pro-text-medium.woff") format("woff"), url("assets/fonts/SFPro/sf-pro-text-medium.ttf") format("truetype"), url("assets/fonts/SFPro/sf-pro-text-medium.svg#sf_pro_textmedium") format("svg");
+  font-weight: 500;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SFProText';
+  src: url("assets/fonts/SFPro/sf-pro-text-regular.eot");
+  src: url("assets/fonts/SFPro/sf-pro-text-regular.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SFPro/sf-pro-text-regular.woff") format("woff"), url("assets/fonts/SFPro/sf-pro-text-regular.ttf") format("truetype"), url("assets/fonts/SFPro/sf-pro-text-regular.svg#sf_pro_textregular") format("svg");
+  font-weight: 400;
+  font-style: normal; }
+
+@font-face {
+  font-family: 'SFProText';
+  src: url("assets/fonts/SFPro/sf-pro-text-semibold.eot");
+  src: url("assets/fonts/SFPro/sf-pro-text-semibold.eot?#iefix") format("embedded-opentype"), url("assets/fonts/SFPro/sf-pro-text-semibold.woff") format("woff"), url("assets/fonts/SFPro/sf-pro-text-semibold.ttf") format("truetype"), url("assets/fonts/SFPro/sf-pro-text-semibold.svg#sf_pro_textsemibold") format("svg");
+  font-weight: 600;
+  font-style: normal; }
+
 .align-baseline {
   vertical-align: baseline !important; }
 
@@ -1875,11 +1917,11 @@ html {
           box-sizing: inherit; }
 
 body {
-  background: #fff;
-  /* Fallback for when there is no custom background color defined. */ }
+  background: #15192e;
+  background-image: linear-gradient(-220deg, #272f4b 0%, #1a1f36 41%, #15152d 64%, #211841 96%); }
 
 hr {
-  background-color: #ccc;
+  background-color: #3b4669;
   border: 0;
   height: 1px;
   margin-bottom: 1.5em; }
@@ -1939,11 +1981,11 @@ textarea {
   width: 100%; }
 
 a {
-  color: royalblue; }
+  color: #9eaacc; }
   a:visited {
-    color: purple; }
+    color: #9eaacc; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #dee2ee; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -1979,8 +2021,8 @@ input,
 select,
 optgroup,
 textarea {
-  color: #404040;
-  font-family: sans-serif;
+  color: #8b96b5;
+  font-family: "SFProText", "Arial", "sans-serif";
   font-size: 16px;
   font-size: 1rem;
   line-height: 1.5; }
@@ -2025,7 +2067,8 @@ big {
   font-size: 125%; }
 
 h1, h2, h3, h4, h5, h6 {
-  clear: both; }
+  clear: both;
+  color: #ebeaf5; }
 
 /*
 OBJECTS
@@ -2500,7 +2543,9 @@ This is where majority of our work takes place and our UI components are often c
   overflow-x: hidden;
   width: 270px;
   height: 100%;
-  background-color: #f5f5f5;
+  background-color: #15192e;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(#191d34));
+  background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
   -webkit-overflow-scrolling: touch;
   -webkit-transform: translate3d(-100%, 0, 0);
           transform: translate3d(-100%, 0, 0);
@@ -2523,12 +2568,13 @@ This is where majority of our work takes place and our UI components are often c
     margin-right: 10px; }
   .site-mobile-menu-wrapper .menu > ul li.page_item,
   .site-mobile-menu-wrapper .menu li.menu-item {
+    font-family: 'Quicksand', 'SFProText', sans-serif;
+    font-size: 14px;
     display: block;
     clear: both;
     padding-left: 20px;
     padding-right: 20px;
-    border-bottom: 1px solid #e6e6e6;
-    vertical-align: top; }
+    border-bottom: 1px solid #3b4669; }
     .site-mobile-menu-wrapper .menu > ul li.page_item.hide,
     .site-mobile-menu-wrapper .menu li.menu-item.hide {
       display: none; }
@@ -2631,8 +2677,7 @@ This is where majority of our work takes place and our UI components are often c
 
 .site-content {
   position: relative;
-  overflow: hidden;
-  background-color: #ffffff; }
+  overflow: hidden; }
   .site-content:after {
     content: '';
     position: fixed;
@@ -2643,12 +2688,7 @@ This is where majority of our work takes place and our UI components are often c
     height: 100%;
     opacity: 0;
     background: rgba(35, 35, 44, 0.5); }
-  body.mobile-menu-opened .site-content:after,
-  body.wishlist-opened .site-content:after,
-  body.minicart-opened .site-content:after,
-  body.search-opened .site-content:after,
-  body.quick-view-opened .site-content:after,
-  body.offcanvas-sidebar-opened .site-content:after {
+  body.mobile-menu-opened .site-content:after {
     opacity: 1;
     z-index: 999; }
 

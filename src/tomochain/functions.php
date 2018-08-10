@@ -134,6 +134,14 @@ add_action( 'widgets_init', 'tomochain_widgets_init' );
  */
 function tomochain_scripts() {
 
+    /*
+    * Enqueue Google Fonts
+    */
+    $font_url = add_query_arg( 'family',
+                'Quicksand:400,500&amp;subset=latin-ext,vietnamese',
+                'http://fonts.googleapis.com/css' );
+            wp_enqueue_style( 'google-fonts', $font_url, null, TOMOCHAIN_THEME_VERSION );
+
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 
 	if ($suffix === '.min') {
