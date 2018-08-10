@@ -1,13 +1,13 @@
 .site-header {
     position: relative;
     transition: all .5s ease, background 1.2s ease;
-    
+
     > .container > .row {
-		display: table;
-		margin: 0;
-		width: 100%;
+        display: table;
+        margin: 0;
+        width: 100%;
     }
-    
+
     .site-branding,
     .header-tools {
         display: table-cell;
@@ -27,9 +27,9 @@
         font-size: 0;
 
         > div {
-			display: inline-block;
-			vertical-align: middle;
-			text-align: left;
-		}
+            display: inline-block;
+            vertical-align: middle;
+            text-align: left;
+        }
     }
 }
