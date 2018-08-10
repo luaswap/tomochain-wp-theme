@@ -1,0 +1,26 @@
+
+%transit {
+
+	@include transit;
+	&-sm {
+
+		@include media-breakpoint-up(sm) {
+
+			@include transit();
+		}
+	}
+	&-md {
+
+		@include media-breakpoint-up(md) {
+
+			@include transit();
+		}
+	}
+	&-lg {
+
+		@include media-breakpoint-up(lg) {
+
+			@include transit();
+		}
+	}
+}

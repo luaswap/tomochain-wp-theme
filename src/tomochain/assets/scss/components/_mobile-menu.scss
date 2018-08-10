@@ -47,7 +47,7 @@
 	}
 }
 
-.site-mobile-menu {
+.site-mobile-menu-wrapper {
 	position: fixed;
 	left: 0;
 	z-index: 1001;
@@ -172,7 +172,7 @@
 		list-style: none;
 		transform: translateX(100%);
 
-		// @extend %transit;
+		@extend %transit;
 	}
 
 	.menu-back {

@@ -22,3 +22,7 @@
 @mixin clearfix-after() {
 	clear: both;
 }
+
+@mixin transit() {
+	transition: all .5s ease; 
+}

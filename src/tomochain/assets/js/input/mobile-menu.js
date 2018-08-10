@@ -1,20 +1,3 @@
-'use strict'
-
-var tomochain
-
-(
-    function() {
-        tomochain = (
-            function () {
-                return {
-                    init: function () {
-                        this.mobileMenu();
-                    }
-                }
-            }()
-        )
-    }
-)(jQuery);
 (
     function ($) {
         var $window = $( window ),
@@ -149,6 +132,3 @@ var tomochain
         }
     }
 )(jQuery);
-jQuery (document).ready(function() {
-    tomochain.init()
-})

@@ -926,6 +926,11 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
+.site-mobile-menu-wrapper .menu > ul > li .children,
+.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after {
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+
 /*
 GENERIC
 ================================================
@@ -2486,7 +2491,7 @@ This is where majority of our work takes place and our UI components are often c
     stroke-dashoffset: -115px;
     stroke-dasharray: 1px 220px; }
 
-.site-mobile-menu {
+.site-mobile-menu-wrapper {
   position: fixed;
   left: 0;
   z-index: 1001;
@@ -2503,58 +2508,58 @@ This is where majority of our work takes place and our UI components are often c
   transition: -webkit-transform .5s ease;
   transition: transform .5s ease;
   transition: transform .5s ease, -webkit-transform .5s ease; }
-  .mobile-menu-opened .site-mobile-menu {
+  .mobile-menu-opened .site-mobile-menu-wrapper {
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
-  .mobile-search-opened .site-mobile-menu {
+  .mobile-search-opened .site-mobile-menu-wrapper {
     display: none; }
-  .site-mobile-menu .menu > ul,
-  .site-mobile-menu .menu {
+  .site-mobile-menu-wrapper .menu > ul,
+  .site-mobile-menu-wrapper .menu {
     position: relative;
     margin: 0;
     padding: 0;
     list-style: none; }
-  .site-mobile-menu .menu-item-icon {
+  .site-mobile-menu-wrapper .menu-item-icon {
     margin-right: 10px; }
-  .site-mobile-menu .menu > ul li.page_item,
-  .site-mobile-menu .menu li.menu-item {
+  .site-mobile-menu-wrapper .menu > ul li.page_item,
+  .site-mobile-menu-wrapper .menu li.menu-item {
     display: block;
     clear: both;
     padding-left: 20px;
     padding-right: 20px;
     border-bottom: 1px solid #e6e6e6;
     vertical-align: top; }
-    .site-mobile-menu .menu > ul li.page_item.hide,
-    .site-mobile-menu .menu li.menu-item.hide {
+    .site-mobile-menu-wrapper .menu > ul li.page_item.hide,
+    .site-mobile-menu-wrapper .menu li.menu-item.hide {
       display: none; }
-    .site-mobile-menu .menu > ul li.page_item.over > .children,
-    .site-mobile-menu .menu > ul li.page_item.over > .sub-menu,
-    .site-mobile-menu .menu li.menu-item.over > .children,
-    .site-mobile-menu .menu li.menu-item.over > .sub-menu {
+    .site-mobile-menu-wrapper .menu > ul li.page_item.over > .children,
+    .site-mobile-menu-wrapper .menu > ul li.page_item.over > .sub-menu,
+    .site-mobile-menu-wrapper .menu li.menu-item.over > .children,
+    .site-mobile-menu-wrapper .menu li.menu-item.over > .sub-menu {
       -webkit-transform: translateX(0);
               transform: translateX(0); }
-    .site-mobile-menu .menu > ul li.page_item.mega-menu .sub-menu .menu-item-object-ic_mega_menu,
-    .site-mobile-menu .menu li.menu-item.mega-menu .sub-menu .menu-item-object-ic_mega_menu {
+    .site-mobile-menu-wrapper .menu > ul li.page_item.mega-menu .sub-menu .menu-item-object-ic_mega_menu,
+    .site-mobile-menu-wrapper .menu li.menu-item.mega-menu .sub-menu .menu-item-object-ic_mega_menu {
       padding-top: 20px;
       padding-bottom: 20px; }
-      .site-mobile-menu .menu > ul li.page_item.mega-menu .sub-menu .menu-item-object-ic_mega_menu .open-child,
-      .site-mobile-menu .menu li.menu-item.mega-menu .sub-menu .menu-item-object-ic_mega_menu .open-child {
+      .site-mobile-menu-wrapper .menu > ul li.page_item.mega-menu .sub-menu .menu-item-object-ic_mega_menu .open-child,
+      .site-mobile-menu-wrapper .menu li.menu-item.mega-menu .sub-menu .menu-item-object-ic_mega_menu .open-child {
         display: none; }
-    .site-mobile-menu .menu > ul li.page_item.mega-menu .sub-menu .mega-menu-content,
-    .site-mobile-menu .menu li.menu-item.mega-menu .sub-menu .mega-menu-content {
+    .site-mobile-menu-wrapper .menu > ul li.page_item.mega-menu .sub-menu .mega-menu-content,
+    .site-mobile-menu-wrapper .menu li.menu-item.mega-menu .sub-menu .mega-menu-content {
       padding: 0; }
-    .site-mobile-menu .menu > ul li.page_item.page_item_has_children, .site-mobile-menu .menu > ul li.page_item.menu-item-has-children,
-    .site-mobile-menu .menu li.menu-item.page_item_has_children,
-    .site-mobile-menu .menu li.menu-item.menu-item-has-children {
+    .site-mobile-menu-wrapper .menu > ul li.page_item.page_item_has_children, .site-mobile-menu-wrapper .menu > ul li.page_item.menu-item-has-children,
+    .site-mobile-menu-wrapper .menu li.menu-item.page_item_has_children,
+    .site-mobile-menu-wrapper .menu li.menu-item.menu-item-has-children {
       padding-right: 0; }
-    .site-mobile-menu .menu > ul li.page_item > a,
-    .site-mobile-menu .menu li.menu-item > a {
+    .site-mobile-menu-wrapper .menu > ul li.page_item > a,
+    .site-mobile-menu-wrapper .menu li.menu-item > a {
       display: block;
       position: relative;
       line-height: 40px;
       z-index: 1; }
-    .site-mobile-menu .menu > ul li.page_item .open-child,
-    .site-mobile-menu .menu li.menu-item .open-child {
+    .site-mobile-menu-wrapper .menu > ul li.page_item .open-child,
+    .site-mobile-menu-wrapper .menu li.menu-item .open-child {
       position: relative;
       text-align: center;
       display: inline-block;
@@ -2565,14 +2570,14 @@ This is where majority of our work takes place and our UI components are often c
       width: 40px;
       z-index: 2;
       background-color: rgba(239, 239, 239, 0.8); }
-      .site-mobile-menu .menu > ul li.page_item .open-child:before,
-      .site-mobile-menu .menu li.menu-item .open-child:before {
+      .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
+      .site-mobile-menu-wrapper .menu li.menu-item .open-child:before {
         display: block;
         opacity: .6;
         font-size: 20px;
         line-height: 40px; }
-  .site-mobile-menu .menu > ul > li .children,
-  .site-mobile-menu .menu > li .sub-menu {
+  .site-mobile-menu-wrapper .menu > ul > li .children,
+  .site-mobile-menu-wrapper .menu > li .sub-menu {
     position: absolute;
     top: 0;
     left: 0;
@@ -2587,18 +2592,18 @@ This is where majority of our work takes place and our UI components are often c
     list-style: none;
     -webkit-transform: translateX(100%);
             transform: translateX(100%); }
-  .site-mobile-menu .menu-back {
+  .site-mobile-menu-wrapper .menu-back {
     position: relative;
     display: block;
     text-align: center;
     background-color: #e6e6e6;
     border-bottom: 1px solid #e6e6e6; }
-    .site-mobile-menu .menu-back a {
+    .site-mobile-menu-wrapper .menu-back a {
       text-transform: uppercase;
       font-weight: 600;
       line-height: 40px;
       opacity: .5; }
-    .site-mobile-menu .menu-back:before {
+    .site-mobile-menu-wrapper .menu-back:before {
       position: absolute;
       top: 0;
       left: 15px;
@@ -2623,6 +2628,29 @@ This is where majority of our work takes place and our UI components are often c
 .page-links {
   clear: both;
   margin: 0 0 1.5em; }
+
+.site-content {
+  position: relative;
+  overflow: hidden;
+  background-color: #ffffff; }
+  .site-content:after {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    background: rgba(35, 35, 44, 0.5); }
+  body.mobile-menu-opened .site-content:after,
+  body.wishlist-opened .site-content:after,
+  body.minicart-opened .site-content:after,
+  body.search-opened .site-content:after,
+  body.quick-view-opened .site-content:after,
+  body.offcanvas-sidebar-opened .site-content:after {
+    opacity: 1;
+    z-index: 999; }
 
 .widget {
   margin: 0 0 1.5em;

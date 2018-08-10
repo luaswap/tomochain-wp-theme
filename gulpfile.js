@@ -32,7 +32,7 @@ gulp.task('sass', function () {
 })
 
 gulp.task('js', function () {
-    return gulp.src( 'src/' + theme + '/assets/js/input/*.js' )
+    return gulp.src( 'src/' + theme + '/assets/js/input/_tomochain.js' )
         .pipe( $.plumber( { errorHandler: reportError } ) )
         .pipe( $.fileInclude({
             prefix: '//@',

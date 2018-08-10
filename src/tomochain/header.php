@@ -21,7 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
-<div class="site-mobile-menu">
+<div class="site-mobile-menu-wrapper">
 	<?php
 	wp_nav_menu( array(
 		'theme_location' => 'primary',

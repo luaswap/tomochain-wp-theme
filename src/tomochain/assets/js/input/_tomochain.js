@@ -8,14 +8,14 @@ var tomochain
             function () {
                 return {
                     init: function () {
-
+                        this.mobileMenu();
                     }
                 }
             }()
         )
     }
-)(jQuery)
-
+)(jQuery);
+//@include('mobile-menu.js')
 jQuery (document).ready(function() {
     tomochain.init()
 })
