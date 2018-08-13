@@ -1,0 +1,39 @@
+{
+  "name": "tomochain",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "superfish": "^1.7.9"
+  },
+  "install": {
+    "options": {
+      "includePackageNameInInstallPath": false
+    },
+    "base": "src/tomochain/assets/libs",
+    "path": {
+      "js": "{name}/js",
+      "css": "{name}/css",
+      ".map": "{name}/css",
+      "eot": "{name}/fonts",
+      "svg": "{name}/fonts",
+      "ttf": "{name}/fonts",
+      "otf": "{name}/fonts",
+      "woff2": "{name}/fonts",
+      "woff": "{name}/fonts"
+    },
+    "sources": {
+      "superfish": [
+        "bower_components/superfish/dist/js/superfish.min.js",
+        "bower_components/superfish/dist/js/hoverIntent.js"
+      ]
+    },
+    "ignore": [
+      "jquery",
+      "tether"
+    ]
+  }
+}

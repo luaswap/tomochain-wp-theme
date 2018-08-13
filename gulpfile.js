@@ -3,12 +3,18 @@ const gulp = require('gulp')
 const glob = require('glob')
 const bs = require('browser-sync')
 const $ = require('gulp-load-plugins')()
+const spawn  = require( 'child_process' ).spawn
 const mqpacker = require('css-mqpacker')
 const autoprefixer = require('autoprefixer')
 const assets = require('postcss-assets')
 const reportError = require('./report-bug')
 const files = glob('src/*', {sync: true})
 const theme = files[0].replace('src/', '')
+
+gulp.task( 'bower:copy', function( done ) {
+	spawn( 'bower-installer', { stdio: 'inherit' } );
+	done();
+} )
 
 gulp.task('sass', function () {
     return gulp.src('src/' + theme + '/assets/scss/*.scss')
