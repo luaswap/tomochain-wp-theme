@@ -963,6 +963,14 @@ a.text-dark:hover, a.text-dark:focus {
  */
 .fa,
 .fas,
+.main-menu .menu li.page_item.page_item_has_children > a:before,
+.main-menu .menu li.page_item.menu-item-has-children > a:before,
+.main-menu .menu li.menu-item.page_item_has_children > a:before,
+.main-menu .menu li.menu-item.menu-item-has-children > a:before,
+.main-menu .menu > ul > li .children li.page_item.page_item_has_children:after,
+.main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
+.main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
+.main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after,
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
@@ -1049,6 +1057,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .fa.fa-pull-left,
 .fas.fa-pull-left,
+.main-menu .menu li.page_item.page_item_has_children > a.fa-pull-left:before,
+.main-menu .menu li.page_item.menu-item-has-children > a.fa-pull-left:before,
+.main-menu .menu li.menu-item.page_item_has_children > a.fa-pull-left:before,
+.main-menu .menu li.menu-item.menu-item-has-children > a.fa-pull-left:before,
+.main-menu .menu > ul > li .children li.fa-pull-left.page_item.page_item_has_children:after,
+.main-menu .menu > ul > li .children li.fa-pull-left.page_item.menu-item-has-children:after,
+.main-menu .menu > li .sub-menu li.fa-pull-left.menu-item.page_item_has_children:after,
+.main-menu .menu > li .sub-menu li.fa-pull-left.menu-item.menu-item-has-children:after,
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-left.menu-back:before,
@@ -1059,6 +1075,14 @@ a.text-dark:hover, a.text-dark:focus {
 
 .fa.fa-pull-right,
 .fas.fa-pull-right,
+.main-menu .menu li.page_item.page_item_has_children > a.fa-pull-right:before,
+.main-menu .menu li.page_item.menu-item-has-children > a.fa-pull-right:before,
+.main-menu .menu li.menu-item.page_item_has_children > a.fa-pull-right:before,
+.main-menu .menu li.menu-item.menu-item-has-children > a.fa-pull-right:before,
+.main-menu .menu > ul > li .children li.fa-pull-right.page_item.page_item_has_children:after,
+.main-menu .menu > ul > li .children li.fa-pull-right.page_item.menu-item-has-children:after,
+.main-menu .menu > li .sub-menu li.fa-pull-right.menu-item.page_item_has_children:after,
+.main-menu .menu > li .sub-menu li.fa-pull-right.menu-item.menu-item-has-children:after,
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-right.menu-back:before,
@@ -4650,6 +4674,14 @@ readers do not read off random characters that represent icons */
 
 .fa,
 .fas,
+.main-menu .menu li.page_item.page_item_has_children > a:before,
+.main-menu .menu li.page_item.menu-item-has-children > a:before,
+.main-menu .menu li.menu-item.page_item_has_children > a:before,
+.main-menu .menu li.menu-item.menu-item-has-children > a:before,
+.main-menu .menu > ul > li .children li.page_item.page_item_has_children:after,
+.main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
+.main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
+.main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after,
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before {
@@ -6838,7 +6870,9 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
-.site-mobile-menu-wrapper .menu > ul > li .children,
+a, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
+.main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
+.main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
 .site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
@@ -7859,7 +7893,7 @@ a {
   a:hover, a:focus, a:active {
     color: #dee2ee; }
   a:focus {
-    outline: thin dotted; }
+    outline: 0; }
   a:hover, a:active {
     outline: 0; }
 
@@ -8245,6 +8279,51 @@ This is the first layer of classes and should be agnostically named
   margin-left: auto;
   margin-right: auto; }
 
+/* Fade Out Up & Down small for site-menu */
+@-webkit-keyframes fadeOutDownSmall {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); } }
+
+@keyframes fadeOutDownSmall {
+  0% {
+    opacity: 1; }
+  100% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); } }
+
+.fadeOutDownSmall {
+  -webkit-animation-name: fadeOutDownSmall;
+  animation-name: fadeOutDownSmall; }
+
+@-webkit-keyframes fadeInUpSmall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+@keyframes fadeInUpSmall {
+  0% {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 10px, 0);
+    transform: translate3d(0, 10px, 0); }
+  100% {
+    opacity: 1;
+    -webkit-transform: none;
+    transform: none; } }
+
+.fadeInUpSmall {
+  -webkit-animation-name: fadeInUpSmall;
+  animation-name: fadeInUpSmall; }
+
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%; }
@@ -8372,10 +8451,139 @@ This is where majority of our work takes place and our UI components are often c
       vertical-align: middle;
       text-align: left; }
 
-.main-navigation {
+.main-menu {
   position: relative;
   display: table-cell;
-  vertical-align: middle; }
+  vertical-align: middle;
+  font-family: 'Quicksand'; }
+  .main-menu .menu > ul,
+  .main-menu .menu {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 0; }
+  .main-menu .menu > ul > li,
+  .main-menu .menu > li {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    font-size: 14px; }
+    .main-menu .menu > ul > li > a,
+    .main-menu .menu > li > a {
+      position: relative;
+      display: inline-block;
+      line-height: 80px;
+      height: 80px;
+      padding: 0 25px; }
+    .main-menu .menu > ul > li span.menu-item-text,
+    .main-menu .menu > li span.menu-item-text {
+      position: relative; }
+    .main-menu .menu > ul > li span.menu-item-text:after,
+    .main-menu .menu > li span.menu-item-text:after {
+      content: '';
+      position: absolute;
+      bottom: -2px;
+      left: 0;
+      width: 100%;
+      height: 1px;
+      -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+      transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+      transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+      transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1), -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+      -webkit-transform: scale3d(0, 1, 1);
+              transform: scale3d(0, 1, 1);
+      -webkit-transform-origin: 100% 50%;
+              transform-origin: 100% 50%;
+      background-color: #dee2ee; }
+  .main-menu .menu li.page_item:hover span.menu-item-text:after,
+  .main-menu .menu li.menu-item:hover span.menu-item-text:after {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%; }
+  .main-menu .menu li.page_item:hover > .children,
+  .main-menu .menu li.page_item:hover > .sub-menu,
+  .main-menu .menu li.menu-item:hover > .children,
+  .main-menu .menu li.menu-item:hover > .sub-menu {
+    display: block; }
+  .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
+  .main-menu .menu li.menu-item.page_item_has_children > a:before,
+  .main-menu .menu li.menu-item.menu-item-has-children > a:before {
+    content: "\f107";
+    font-size: 12px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    opacity: .6;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%); }
+  .main-menu .menu li.current_page_item a,
+  .main-menu .menu li.current-menu-item a {
+    color: #dee2ee; }
+  .main-menu .menu li.current_page_item span.menu-item-text:after,
+  .main-menu .menu li.current-menu-item span.menu-item-text:after {
+    -webkit-transform: scale3d(1, 1, 1);
+            transform: scale3d(1, 1, 1);
+    -webkit-transform-origin: 0% 50%;
+            transform-origin: 0% 50%; }
+  .main-menu .menu > ul > li .children,
+  .main-menu .menu > li .sub-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 25px;
+    width: 100%;
+    min-width: 280px;
+    background-color: #2a3452;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(#191d34));
+    background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
+    -webkit-box-shadow: -2px 2px 81px -20px rgba(0, 0, 0, 0.3);
+            box-shadow: -2px 2px 81px -20px rgba(0, 0, 0, 0.3);
+    list-style: none;
+    text-align: left;
+    -webkit-animation-duration: .6s;
+            animation-duration: .6s;
+    -webkit-transition: left .5s ease, right .5s ease;
+    transition: left .5s ease, right .5s ease;
+    margin: 0;
+    padding: 10px 0;
+    z-index: 999; }
+  .main-menu .menu > ul > li .children li.page_item,
+  .main-menu .menu > li .sub-menu li.menu-item {
+    position: relative;
+    display: block;
+    line-height: 1.5; }
+    .main-menu .menu > ul > li .children li.page_item.page_item_has_children > a:before, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children > a:before,
+    .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children > a:before,
+    .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children > a:before {
+      display: none; }
+    .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
+    .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
+    .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after {
+      content: "\f105";
+      position: absolute;
+      top: 50%;
+      right: 30px;
+      color: #ababab;
+      font-size: 16px;
+      background-color: transparent !important;
+      margin: -1px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%); }
+    .main-menu .menu > ul > li .children li.page_item a,
+    .main-menu .menu > li .sub-menu li.menu-item a {
+      display: block;
+      padding: 12px 30px; }
+    .main-menu .menu > ul > li .children li.page_item span.menu-item-text:after,
+    .main-menu .menu > li .sub-menu li.menu-item span.menu-item-text:after {
+      display: none; }
+    .main-menu .menu > ul > li .children li.page_item .children,
+    .main-menu .menu > ul > li .children li.page_item .sub-menu,
+    .main-menu .menu > li .sub-menu li.menu-item .children,
+    .main-menu .menu > li .sub-menu li.menu-item .sub-menu {
+      top: 0;
+      left: 100%;
+      margin-top: -10px; }
 
 .mobile-menu-btn {
   margin-right: -10px; }
@@ -10093,7 +10301,11 @@ utilities and helper classes with ability to override anything which goes before
   .offset-lg-11 {
     margin-left: 91.66667%; }
   .hidden-lg-up {
-    display: none !important; } }
+    display: none !important; }
+    .site-header .site-branding {
+      width: 20%; }
+      .site-header .site-branding img {
+        max-width: none; } }
 
 @media (min-width: 1200px) {
   .d-xl-none {

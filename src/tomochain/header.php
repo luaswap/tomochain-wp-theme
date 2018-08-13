@@ -40,14 +40,16 @@
 					<?php the_custom_logo(); ?>
 				</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation hidden-md-down">
+				<nav id="site-menu" class="main-menu hidden-md-down">
 					<?php
 					wp_nav_menu( array(
 						'theme_location' => 'primary',
-						'menu_id'        => 'primary-menu',
+                        'menu_id'        => 'primary-menu',
+                        'link_before'    => '<span class="menu-item-text">',
+                        'link_after'     => '</span>'
 					) );
 					?>
-				</nav><!-- #site-navigation -->
+				</nav><!-- #site-menu -->
 
 				<div class="header-tools">
 					<?php tomochain_mobile_menu_btn(); ?>

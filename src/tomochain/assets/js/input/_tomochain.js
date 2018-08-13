@@ -9,6 +9,7 @@ var tomochain
                 return {
                     init: function () {
                         this.mobileMenu();
+                        this.mainMenu();
                     }
                 }
             }()
@@ -16,6 +17,7 @@ var tomochain
     }
 )(jQuery);
 //@include('mobile-menu.js')
+//@include('main-menu.js')
 jQuery (document).ready(function() {
     tomochain.init()
 })

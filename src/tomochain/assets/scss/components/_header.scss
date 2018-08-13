@@ -32,4 +32,15 @@
             text-align: left;
         }
     }
+
+    @include media-breakpoint-up(lg) {
+
+        .site-branding {
+            width: 20%;
+
+            img {
+                max-width: none;
+            }
+        }
+    }
 }

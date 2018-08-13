@@ -1,5 +1,7 @@
 a {
-	color: $color__link;
+    color: $color__link;
+
+    @extend %transit;
 
 	&:visited {
 		color: $color__link-visited;
@@ -13,7 +15,7 @@ a {
 		color: $color__link-hover;
 	}
 	&:focus {
-		outline: thin dotted;
+		outline: 0;
 	}
 	&:hover,
 	&:active {
