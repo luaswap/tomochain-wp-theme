@@ -39,3 +39,21 @@ add_action( 'wp_head', 'tomochain_pingback_header' );
  * Social links
  *
 */
+function tomochain_social_links() {
+    ob_start();
+
+    if (have_rows('social', 'option')) : ?>
+        <ul class="list-inline social-links">
+            <?php while (have_rows('social', 'option')) : the_row(); ?>
+                <li class="list-inline-item social-links__items">
+                    <a class="social-links__link" href="<?php echo esc_url(the_sub_field('url')); ?>">
+                        <span><?php echo the_sub_field('icon-class'); ?></span>
+                        <i class="fab fa-<?php echo esc_attr(the_sub_field('icon-class')); ?>"></i>
+                    </a>
+                </li>
+            <?php endwhile; ?>
+        </ul>
+    <?php endif;
+
+    echo ob_get_clean();
+}

@@ -26,7 +26,8 @@
 	wp_nav_menu( array(
 		'theme_location' => 'primary',
 		'menu_id'        => 'site-mobile-menu',
-	) );
+    ) );
+    tomochain_social_links();
 	?>
 </div>
 <div id="page" class="site">
@@ -47,7 +48,7 @@
 					) );
 					?>
 				</nav><!-- #site-navigation -->
-				
+
 				<div class="header-tools">
 					<div class="mobile-menu-btn hidden-xl-up">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">

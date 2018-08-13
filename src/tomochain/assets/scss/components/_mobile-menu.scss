@@ -56,7 +56,7 @@
     overflow-x: hidden;
     width: 270px;
     height: 100%;
-    background-color: $color__background-body;
+    background-color: #2a3452;
     background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
     -webkit-overflow-scrolling: touch;
     transform: translate3d(-100%, 0, 0);
@@ -145,15 +145,16 @@
             line-height: 0;
             width: 40px;
             z-index: 2;
-            background-color: rgba(239, 239, 239, .8);
+            background-color: rgba(59, 70, 105, 0.4);
 
             &:before {
+                content: fa-content($fa-var-chevron-right);
                 display: block;
                 opacity: .6;
-                font-size: 20px;
+                font-size: 16px;
                 line-height: 40px;
 
-                // @include fa-icon('\f105');
+                @extend .fas;
             }
         }
     }
@@ -170,7 +171,8 @@
         min-height: 100% !important;
         width: 100% !important;
         height: 100vh !important;
-        background-color: #f5f5f5;
+        background-color: #2a3452;
+        background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
         list-style: none;
         transform: translateX(100%);
 
@@ -181,25 +183,25 @@
         position: relative;
         display: block;
         text-align: center;
-        background-color: #e6e6e6;
-        border-bottom: 1px solid #e6e6e6;
+        background-color: transparent;
+        border-bottom: 1px solid #3b4669;
 
         a {
             text-transform: uppercase;
             font-weight: 600;
             line-height: 40px;
-            opacity: .5;
         }
 
         &:before {
+            content: fa-content($fa-var-chevron-left);
             position: absolute;
             top: 0;
             left: 15px;
             display: inline-block;
-            font-size: 20px;
-            line-height: 39px;
+            font-size: 16px;
+            line-height: 40px;
 
-            // @include fa-icon('\f104');
+            @extend .fas;
         }
     }
 }

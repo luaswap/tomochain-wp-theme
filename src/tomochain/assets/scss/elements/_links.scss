@@ -3,7 +3,10 @@ a {
 
 	&:visited {
 		color: $color__link-visited;
-	}
+    }
+    &:hover {
+        text-decoration: none;
+    }
 	&:hover,
 	&:focus,
 	&:active {
