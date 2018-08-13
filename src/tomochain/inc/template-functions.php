@@ -17,7 +17,6 @@ function tomochain_body_classes( $classes ) {
 		$classes[] = 'hfeed';
 	}
 
-	// Adds a class of no-sidebar when there is no sidebar present.
 	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		$classes[] = 'no-sidebar';
 	}
@@ -35,3 +34,8 @@ function tomochain_pingback_header() {
 	}
 }
 add_action( 'wp_head', 'tomochain_pingback_header' );
+
+/**
+ * Social links
+ *
+*/

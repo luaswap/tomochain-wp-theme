@@ -11,9 +11,13 @@
  * @param WP_Customize_Manager $wp_customize Theme Customizer object.
  */
 function tomochain_customize_register( $wp_customize ) {
+    $wp_customize->remove_control('header_textcolor');
+    $wp_customize->remove_control('background_color');
+    $wp_customize->remove_control('header_image');
+    $wp_customize->remove_section("background_image");
+    $wp_customize->remove_control('background_image');
 	$wp_customize->get_setting( 'blogname' )->transport         = 'postMessage';
 	$wp_customize->get_setting( 'blogdescription' )->transport  = 'postMessage';
-	$wp_customize->get_setting( 'header_textcolor' )->transport = 'postMessage';
 
 	if ( isset( $wp_customize->selective_refresh ) ) {
 		$wp_customize->selective_refresh->add_partial( 'blogname', array(

@@ -168,6 +168,19 @@ function tomochain_scripts() {
 add_action( 'wp_enqueue_scripts', 'tomochain_scripts' );
 
 /**
+ * Add Theme Options page
+ */
+if (function_exists('acf_add_options_page')) {
+    acf_add_options_sub_page(array(
+        'page_title'  => esc_html('Theme Options', 'tomochain'),
+        'menu_title'  => esc_html('Theme Options', 'tomochain'),
+        'menu_slug'   => 'theme-options',
+        'capability'  => 'edit_posts',
+        'parent_slug' => 'themes.php'
+    ));
+}
+
+/**
  * Implement the Custom Header feature.
  */
 require get_template_directory() . '/inc/custom-header.php';
@@ -186,11 +199,3 @@ require get_template_directory() . '/inc/template-functions.php';
  * Customizer additions.
  */
 require get_template_directory() . '/inc/customizer.php';
-
-/**
- * Load Jetpack compatibility file.
- */
-if ( defined( 'JETPACK__VERSION' ) ) {
-	require get_template_directory() . '/inc/jetpack.php';
-}
-
