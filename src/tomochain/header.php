@@ -40,7 +40,7 @@
 					<?php the_custom_logo(); ?>
 				</div><!-- .site-branding -->
 
-				<nav id="site-navigation" class="main-navigation hidden-lg-down">
+				<nav id="site-navigation" class="main-navigation hidden-md-down">
 					<?php
 					wp_nav_menu( array(
 						'theme_location' => 'primary',
@@ -50,7 +50,7 @@
 				</nav><!-- #site-navigation -->
 
 				<div class="header-tools">
-					<div class="mobile-menu-btn hidden-xl-up">
+					<div class="mobile-menu-btn hidden-lg-up">
 						<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
 							<path d="M300,220 C300,220 520,220 540,220 C740,220 640,540 520,420 C440,340 300,200 300,200" id="top"></path>
 							<path d="M300,320 L540,320" id="middle"></path>

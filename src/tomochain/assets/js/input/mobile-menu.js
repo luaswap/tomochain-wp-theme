@@ -17,7 +17,7 @@
             if ( $el.closest( '.sticky-header.is-sticky' ).length ) {
                 top = 0;
             }
-            
+
             $el.css( 'top', top );
         };
 
@@ -120,6 +120,10 @@
 
                     $mobileMenu.parent().scrollTop( 0 );
                 } );
+
+                $mobileMenu.on( 'click', '.menu-back > a', function(e) {
+                    e.preventDefault();
+                });
             };
 
             buildSlideOut();
