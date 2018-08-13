@@ -1,21 +1,32 @@
 'use strict'
 
-var tomochain
+import mobileMenu from '../input/mobile-menu'
 
-(
-    function() {
-        tomochain = (
-            function () {
-                return {
-                    init: function () {
-                        this.mobileMenu();
-                    }
-                }
-            }()
-        )
-    }
-)(jQuery);
+// var tomochain
+
+// (
+//     function() {
+//         tomochain = (
+//             function () {
+//                 return {
+//                     init: function () {
+//                         this.mobileMenu();
+//                     }
+//                 }
+//             }()
+//         )
+//     }
+// )(jQuery);
 //@include('mobile-menu.js')
+
+let tomoChain = {
+    init () {
+        mobileMenu.mobileMenuInit()
+    }
+}
+
+export default tomoChain
+
 jQuery (document).ready(function() {
-    tomochain.init()
+    tomoChain.init()
 })

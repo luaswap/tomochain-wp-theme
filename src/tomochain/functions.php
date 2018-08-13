@@ -155,8 +155,14 @@ function tomochain_scripts() {
 
 	wp_enqueue_style( 'tomochain-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'tomochain-js',
-		TOMOCHAIN_THEME_URI . '/assets/js/tomochain' . $suffix . '.js',
+	// wp_enqueue_script( 'tomochain-js',
+	// 	TOMOCHAIN_THEME_URI . '/assets/js/tomochain' . $suffix . '.js',
+	// 	array('jquery'),
+	// 	TOMOCHAIN_THEME_VERSION,
+    // 	true );
+
+    wp_enqueue_script( 'tomochain-js',
+		TOMOCHAIN_THEME_URI . '/assets/dist/bundle.js',
 		array('jquery'),
 		TOMOCHAIN_THEME_VERSION,
 		true );
