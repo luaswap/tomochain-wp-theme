@@ -119,8 +119,8 @@ add_action( 'after_setup_theme', 'tomochain_content_width', 0 );
  */
 function tomochain_widgets_init() {
 	register_sidebar( array(
-		'name'          => esc_html__( 'Sidebar', 'tomochain' ),
-		'id'            => 'sidebar-1',
+		'name'          => esc_html__( 'Footer Sidebar', 'tomochain' ),
+		'id'            => 'sidebar-footer',
 		'description'   => esc_html__( 'Add widgets here.', 'tomochain' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
@@ -188,11 +188,23 @@ function tomochain_scripts() {
             TOMOCHAIN_THEME_VERSION,
             true );
 
+    wp_localize_script( 'tomochain-js',
+        'tomochainConfigs',
+        array(
+            'placeholder_subscribe_text' => esc_html( 'Enter your email to get more details', 'tomochain' )
+        ));
+
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'tomochain_scripts' );
+
+/**
+ * Widgets
+ */
+require get_template_directory() . '/inc/widgets/wph-widget-class.php';
+require get_template_directory() . '/inc/widgets/tomochain-address.php';
 
 /**
  * Add Theme Options page

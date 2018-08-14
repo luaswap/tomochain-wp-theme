@@ -11,12 +11,8 @@ input[type="submit"] {
 	line-height: 1;
 	padding: .6em 1em .4em;
 
-	&:hover {
-		border-color: $color__border-button-hover;
-	}
-
 	&:active,
 	&:focus {
-		border-color: $color__border-button-focus;
+		outline: none;
 	}
 }

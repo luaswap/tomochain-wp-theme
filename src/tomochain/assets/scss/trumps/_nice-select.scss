@@ -6,7 +6,8 @@
     border-radius: 0;
 
     &:after {
-        content: fa-content($fa-var-angle-down);
+        content: '\e900';
+        font-size: 5px;
         position: absolute;
         top: 50%;
         left: 0;
@@ -19,7 +20,7 @@
         transform: translateY(-50%);
         margin-top: 0;
 
-        @extend .fas;
+        @extend %tm-icon;
         @extend %transit;
     }
 

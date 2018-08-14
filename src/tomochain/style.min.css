@@ -78,6 +78,32 @@ used with preprocessors and contain font, colors definitions, etc
   font-weight: 600;
   font-style: normal; }
 
+@font-face {
+  font-family: 'tomochain';
+  src: url("assets/fonts/TomoChain/tomochain.eot?gujivw");
+  src: url("assets/fonts/TomoChain/tomochain.eot?gujivw#iefix") format("embedded-opentype"), url("assets/fonts/TomoChain/tomochain.ttf?gujivw") format("truetype"), url("assets/fonts/TomoChain/tomochain.woff?gujivw") format("woff"), url("assets/fonts/TomoChain/tomochain.svg?gujivw#tomochain") format("svg");
+  font-weight: normal;
+  font-style: normal; }
+
+[class^="tm-"], [class*=" tm-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'tomochain' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale; }
+
+.tm-angle-down:before {
+  content: "\e900"; }
+
+.tm-arrow-right:before {
+  content: "\e901"; }
+
 .align-baseline {
   vertical-align: baseline !important; }
 
@@ -974,7 +1000,6 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
-.nice-select:after,
 .far,
 .fal,
 .fab {
@@ -1069,7 +1094,6 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-left.menu-back:before,
-.fa-pull-left.nice-select:after,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -1088,7 +1112,6 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-right.menu-back:before,
-.fa-pull-right.nice-select:after,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -4687,8 +4710,7 @@ readers do not read off random characters that represent icons */
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after,
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
-.site-mobile-menu-wrapper .menu-back:before,
-.nice-select:after {
+.site-mobile-menu-wrapper .menu-back:before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -6883,6 +6905,14 @@ a, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
+.widget_sendgrid_nlvx_widget .sendgrid_mc_button_div:after, .nice-select:after {
+  font-family: 'tomochain';
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  text-decoration: inherit;
+  line-height: 1; }
+
 /*
 GENERIC
 ================================================
@@ -7793,7 +7823,7 @@ input[type="button"],
 input[type="reset"],
 input[type="submit"] {
   border: 1px solid;
-  border-color: #ccc #ccc #bbb;
+  border-color: #ccc;
   border-radius: 3px;
   background: #e6e6e6;
   color: rgba(0, 0, 0, 0.8);
@@ -7801,11 +7831,6 @@ input[type="submit"] {
   font-size: 0.75rem;
   line-height: 1;
   padding: .6em 1em .4em; }
-  button:hover,
-  input[type="button"]:hover,
-  input[type="reset"]:hover,
-  input[type="submit"]:hover {
-    border-color: #ccc #bbb #aaa; }
   button:active, button:focus,
   input[type="button"]:active,
   input[type="button"]:focus,
@@ -7813,7 +7838,7 @@ input[type="submit"] {
   input[type="reset"]:focus,
   input[type="submit"]:active,
   input[type="submit"]:focus {
-    border-color: #aaa #bbb #bbb; }
+    outline: none; }
 
 html {
   -webkit-box-sizing: border-box;
@@ -7862,10 +7887,12 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: #666;
-  border: 1px solid #ccc;
-  border-radius: 3px;
-  padding: 3px; }
+  color: #757f9c;
+  background-color: #dee2ee;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  padding: 10px 20px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -7882,10 +7909,7 @@ textarea {
   input[type="datetime-local"]:focus,
   input[type="color"]:focus,
   textarea:focus {
-    color: #111; }
-
-select {
-  border: 1px solid #ccc; }
+    outline: none; }
 
 textarea {
   width: 100%; }
@@ -7935,8 +7959,8 @@ optgroup,
 textarea {
   color: #8b96b5;
   font-family: "SFProText", "Arial", "sans-serif";
-  font-size: 16px;
-  font-size: 1rem;
+  font-size: 14px;
+  font-size: 0.875rem;
   line-height: 1.5; }
 
 p {
@@ -8434,6 +8458,25 @@ This is where majority of our work takes place and our UI components are often c
 .bypostauthor {
   display: block; }
 
+.site-footer {
+  background-color: #242c47;
+  background-image: linear-gradient(-225deg, #242c47 0%, #1e243d 100%); }
+  .site-footer:before {
+    content: '';
+    display: block;
+    height: 2px;
+    background-color: #fcb168;
+    background-image: -webkit-gradient(linear, left top, right top, from(#181631), color-stop(51%, #fcb168), to(#181c34));
+    background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%); }
+  .site-footer .custom-logo {
+    padding-top: 60px;
+    width: 40px;
+    margin-bottom: 15px; }
+
+.site-info {
+  padding-top: 30px;
+  padding-bottom: 40px; }
+
 .site-header {
   position: relative;
   -webkit-transition: all .5s ease, background 1.2s ease;
@@ -8809,6 +8852,45 @@ This is where majority of our work takes place and our UI components are often c
   .widget select {
     max-width: 100%; }
 
+.widget_tomo_address {
+  margin-bottom: 15px; }
+  .widget_tomo_address .widget-title {
+    font-size: 18px;
+    font-weight: 400;
+    color: #ebeaf5; }
+  .widget_tomo_address .address {
+    font-weight: 300;
+    line-height: 1.7;
+    margin: 0 auto;
+    max-width: 320px; }
+
+.widget_sendgrid_nlvx_widget {
+  margin-bottom: 0; }
+  .widget_sendgrid_nlvx_widget .widget-title,
+  .widget_sendgrid_nlvx_widget .sendgrid_widget_text,
+  .widget_sendgrid_nlvx_widget .sendgrid_mc_label_div {
+    display: none; }
+  .widget_sendgrid_nlvx_widget .mc_email_form {
+    position: relative;
+    max-width: 530px;
+    padding-top: 0 !important;
+    margin: 0 auto; }
+  .widget_sendgrid_nlvx_widget .sendgrid_mc_fields {
+    padding: 0 !important; }
+  .widget_sendgrid_nlvx_widget .sendgrid_mc_input {
+    padding: 9px 40px 10px 15px; }
+  .widget_sendgrid_nlvx_widget .sendgrid_mc_button_div:after {
+    content: '\e901';
+    font-size: 10px;
+    position: absolute;
+    top: 50%;
+    right: 10px;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    color: #6a6beb; }
+  .widget_sendgrid_nlvx_widget .sendgrid_mc_button {
+    display: none; }
+
 /*
 Trumps
 ================================================
@@ -8821,7 +8903,8 @@ utilities and helper classes with ability to override anything which goes before
   border: none;
   border-radius: 0; }
   .nice-select:after {
-    content: "\f107";
+    content: '\e900';
+    font-size: 5px;
     position: absolute;
     top: 50%;
     left: 0;
@@ -10223,6 +10306,23 @@ utilities and helper classes with ability to override anything which goes before
     text-align: right !important; }
   .text-lg-center {
     text-align: center !important; }
+    input[type="text"],
+    input[type="email"],
+    input[type="url"],
+    input[type="password"],
+    input[type="search"],
+    input[type="number"],
+    input[type="tel"],
+    input[type="range"],
+    input[type="date"],
+    input[type="month"],
+    input[type="week"],
+    input[type="time"],
+    input[type="datetime"],
+    input[type="datetime-local"],
+    input[type="color"],
+    textarea {
+      padding: 18px 40px; }
     .container {
       max-width: 960px; }
   .col-lg {
@@ -10387,7 +10487,13 @@ utilities and helper classes with ability to override anything which goes before
     .site-header .site-branding {
       width: 20%; }
       .site-header .site-branding img {
-        max-width: none; } }
+        max-width: none; }
+    .widget_sendgrid_nlvx_widget .sendgrid_mc_input {
+      font-size: 16px;
+      padding: 18px 80px 18px 40px; }
+    .widget_sendgrid_nlvx_widget .sendgrid_mc_button_div:after {
+      font-size: 12px;
+      right: 40px; } }
     @media (min-width: 1200px) {
   .d-xl-none {
     display: none !important; }

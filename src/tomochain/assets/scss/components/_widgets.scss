@@ -6,3 +6,74 @@
         max-width: 100%;
     }
 }
+
+.widget_tomo_address {
+    margin-bottom: 15px;
+
+    .widget-title {
+        font-size: 18px;
+        font-weight: 400;
+        color: #ebeaf5;
+    }
+
+    .address {
+        font-weight: 300;
+        line-height: 1.7;
+        margin: 0 auto;
+        max-width: 320px;
+    }
+}
+
+.widget_sendgrid_nlvx_widget {
+    margin-bottom: 0;
+
+    .widget-title,
+    .sendgrid_widget_text,
+    .sendgrid_mc_label_div {
+        display: none;
+    }
+
+    .mc_email_form {
+        position: relative;
+        max-width: 530px;
+        padding-top: 0 !important;
+        margin: 0 auto;
+    }
+
+    .sendgrid_mc_fields {
+        padding: 0 !important;
+    }
+
+    .sendgrid_mc_input {
+        padding: 9px 40px 10px 15px;
+    }
+
+    .sendgrid_mc_button_div:after {
+        content: '\e901';
+        font-size: 10px;
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        color: #6a6beb;
+        @extend %tm-icon;
+    }
+
+    .sendgrid_mc_button {
+        display: none;
+    }
+
+    @include media-breakpoint-up(lg) {
+
+        .sendgrid_mc_input {
+            font-size: 16px;
+            padding: 18px 80px 18px 40px;
+        }
+
+        .sendgrid_mc_button_div:after {
+            font-size: 12px;
+            right: 40px;
+        }
+    }
+}
+

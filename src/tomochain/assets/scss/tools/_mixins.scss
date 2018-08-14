@@ -24,5 +24,10 @@
 }
 
 @mixin transit() {
-	transition: all .5s ease; 
+	transition: all .5s ease;
+}
+
+@mixin tm-icon($icon) {
+    content: $icon;
+    @extend %tm-icon;
 }

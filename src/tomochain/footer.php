@@ -11,23 +11,24 @@
 
 ?>
 
-	</div><!-- #content -->
+    </div><!-- #content -->
 
-	<footer id="colophon" class="site-footer">
-		<div class="site-info">
-			<a href="<?php echo esc_url( __( 'https://wordpress.org/', 'tomochain' ) ); ?>">
-				<?php
-				/* translators: %s: CMS name, i.e. WordPress. */
-				printf( esc_html__( 'Proudly powered by %s', 'tomochain' ), 'WordPress' );
-				?>
-			</a>
-			<span class="sep"> | </span>
-				<?php
-				/* translators: 1: Theme name, 2: Theme author. */
-				printf( esc_html__( 'Theme: %1$s by %2$s.', 'tomochain' ), 'tomochain', '<a href="https://tomochain.com/">TomoChain</a>' );
-				?>
-		</div><!-- .site-info -->
-	</footer><!-- #colophon -->
+    <footer id="colophon" class="site-footer text-center">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <?php the_custom_logo(); ?>
+                    <?php dynamic_sidebar( 'sidebar-footer' ); ?>
+
+                    <div class="site-info">
+                        <?php
+                        printf( esc_html__( 'Copyright &copy; %1$s by %2$s.', 'tomochain' ), date('Y'), 'TomoChain Pte. Ltd' );
+                        ?>
+                    </div><!-- .site-info -->
+                </div>
+            </div>
+        </div>
+    </footer><!-- #colophon -->
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
