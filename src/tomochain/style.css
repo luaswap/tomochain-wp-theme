@@ -8480,7 +8480,8 @@ This is where majority of our work takes place and our UI components are often c
 .site-header {
   position: relative;
   -webkit-transition: all .5s ease, background 1.2s ease;
-  transition: all .5s ease, background 1.2s ease; }
+  transition: all .5s ease, background 1.2s ease;
+  padding: 20px 0; }
   .site-header > .container > .row {
     display: table;
     margin: 0;
@@ -8557,6 +8558,9 @@ This is where majority of our work takes place and our UI components are often c
       -webkit-transform-origin: 100% 50%;
               transform-origin: 100% 50%;
       background-color: #e68b71; }
+  .main-menu .menu li.page_item:hover a,
+  .main-menu .menu li.menu-item:hover a {
+    color: #e68b71; }
   .main-menu .menu li.page_item:hover span.menu-item-text:after,
   .main-menu .menu li.menu-item:hover span.menu-item-text:after {
     -webkit-transform: scale3d(1, 1, 1);
@@ -8582,7 +8586,7 @@ This is where majority of our work takes place and our UI components are often c
   .main-menu .menu li.current-menu-parent a,
   .main-menu .menu li.current_page_item a,
   .main-menu .menu li.current-menu-item a {
-    color: #dee2ee; }
+    color: #e68b71; }
   .main-menu .menu li.current-menu-parent span.menu-item-text:after,
   .main-menu .menu li.current_page_item span.menu-item-text:after,
   .main-menu .menu li.current-menu-item span.menu-item-text:after {
@@ -8840,7 +8844,7 @@ This is where majority of our work takes place and our UI components are often c
   color: #fff; }
 
 .site-mobile-menu-wrapper .social-links {
-  text-align: center;
+  padding-left: 20px;
   margin-left: 0;
   margin-top: 30px;
   margin-bottom: 0; }
