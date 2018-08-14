@@ -8533,8 +8533,8 @@ This is where majority of our work takes place and our UI components are often c
     .main-menu .menu > li > a {
       position: relative;
       display: inline-block;
-      line-height: 80px;
-      height: 80px;
+      line-height: 70px;
+      height: 70px;
       padding: 0 25px; }
     .main-menu .menu > ul > li span.menu-item-text,
     .main-menu .menu > li span.menu-item-text {
@@ -8543,10 +8543,11 @@ This is where majority of our work takes place and our UI components are often c
     .main-menu .menu > li span.menu-item-text:after {
       content: '';
       position: absolute;
-      bottom: -2px;
+      bottom: -10px;
       left: 0;
       width: 100%;
-      height: 1px;
+      max-width: 40px;
+      height: 2px;
       -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
       transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
       transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
@@ -8555,7 +8556,7 @@ This is where majority of our work takes place and our UI components are often c
               transform: scale3d(0, 1, 1);
       -webkit-transform-origin: 100% 50%;
               transform-origin: 100% 50%;
-      background-color: #dee2ee; }
+      background-color: #e68b71; }
   .main-menu .menu li.page_item:hover span.menu-item-text:after,
   .main-menu .menu li.menu-item:hover span.menu-item-text:after {
     -webkit-transform: scale3d(1, 1, 1);
@@ -8578,9 +8579,11 @@ This is where majority of our work takes place and our UI components are often c
     opacity: .6;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
+  .main-menu .menu li.current-menu-parent a,
   .main-menu .menu li.current_page_item a,
   .main-menu .menu li.current-menu-item a {
     color: #dee2ee; }
+  .main-menu .menu li.current-menu-parent span.menu-item-text:after,
   .main-menu .menu li.current_page_item span.menu-item-text:after,
   .main-menu .menu li.current-menu-item span.menu-item-text:after {
     -webkit-transform: scale3d(1, 1, 1);
@@ -8596,8 +8599,8 @@ This is where majority of our work takes place and our UI components are often c
     width: 100%;
     min-width: 200px;
     background-color: #2a3452;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(#191d34));
-    background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
+    background-image: -webkit-gradient(linear, right top, left top, from(#2a3452), to(#191d34));
+    background-image: linear-gradient(-90deg, #2a3452 0%, #191d34 100%);
     -webkit-box-shadow: -2px 2px 81px -20px rgba(0, 0, 0, 0.3);
             box-shadow: -2px 2px 81px -20px rgba(0, 0, 0, 0.3);
     list-style: none;
@@ -8898,6 +8901,7 @@ utilities and helper classes with ability to override anything which goes before
 */
 .nice-select {
   font-family: 'Quicksand';
+  text-transform: lowercase;
   padding-right: 15px;
   background-color: transparent;
   border: none;
@@ -8918,6 +8922,7 @@ utilities and helper classes with ability to override anything which goes before
             transform: translateY(-50%);
     margin-top: 0; }
   .nice-select .list {
+    text-transform: lowercase;
     border-radius: 0;
     top: 120%;
     width: 100%;
@@ -8928,9 +8933,7 @@ utilities and helper classes with ability to override anything which goes before
     margin: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0);
-    background-color: #2a3452;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(#191d34));
-    background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%); }
+    background-color: transparent; }
   .nice-select.open .list {
     top: 100%; }
 
@@ -8942,7 +8945,7 @@ utilities and helper classes with ability to override anything which goes before
   display: block;
   min-height: 0;
   line-height: initial;
-  padding: 8px 15px; }
+  padding: 5px 15px; }
   .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
     color: #dee2ee;
     background-color: transparent; }
@@ -8951,23 +8954,8 @@ utilities and helper classes with ability to override anything which goes before
             transform: translate(5px); }
   .nice-select .option.selected {
     position: relative;
-    font-weight: 400;
-    padding-left: 25px; }
-    .nice-select .option.selected:before {
-      content: '';
-      position: absolute;
-      top: 50%;
-      left: 15px;
-      display: inline-block;
-      height: 5px;
-      width: 5px;
-      border-radius: 100%;
-      margin-right: 5px;
-      -webkit-transform: translateY(-50%);
-              transform: translateY(-50%);
-      background-color: #41c5e1;
-      background-image: linear-gradient(-216deg, #41c5e1 0%, #1c88d8 100%); }
-    @media (min-width: 576px) {
+    font-weight: 400; }
+  @media (min-width: 576px) {
   .d-sm-none {
     display: none !important; }
   .d-sm-inline {
@@ -9467,7 +9455,7 @@ utilities and helper classes with ability to override anything which goes before
     margin-left: 91.66667%; }
   .hidden-sm-up {
     display: none !important; } }
-    @media (min-width: 768px) {
+  @media (min-width: 768px) {
   .d-md-none {
     display: none !important; }
   .d-md-inline {
@@ -9967,7 +9955,7 @@ utilities and helper classes with ability to override anything which goes before
     margin-left: 91.66667%; }
   .hidden-md-up {
     display: none !important; } }
-    @media (min-width: 992px) {
+  @media (min-width: 992px) {
   .d-lg-none {
     display: none !important; }
   .d-lg-inline {
@@ -10494,7 +10482,7 @@ utilities and helper classes with ability to override anything which goes before
     .widget_sendgrid_nlvx_widget .sendgrid_mc_button_div:after {
       font-size: 12px;
       right: 40px; } }
-    @media (min-width: 1200px) {
+  @media (min-width: 1200px) {
   .d-xl-none {
     display: none !important; }
   .d-xl-inline {
@@ -10994,7 +10982,7 @@ utilities and helper classes with ability to override anything which goes before
     margin-left: 91.66667%; }
   .hidden-xl-up {
     display: none !important; } }
-    @media print {
+  @media print {
   .d-print-none {
     display: none !important; }
   .d-print-inline {
@@ -11074,7 +11062,7 @@ utilities and helper classes with ability to override anything which goes before
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-    @media (max-width: 575.98px) {
+  @media (max-width: 575.98px) {
   .table-responsive-sm {
     display: block;
     width: 100%;
@@ -11085,7 +11073,7 @@ utilities and helper classes with ability to override anything which goes before
       border: 0; }
   .hidden-xs-down {
     display: none !important; } }
-    @media (max-width: 767.98px) {
+  @media (max-width: 767.98px) {
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -11096,7 +11084,7 @@ utilities and helper classes with ability to override anything which goes before
       border: 0; }
   .hidden-sm-down {
     display: none !important; } }
-    @media (max-width: 991.98px) {
+  @media (max-width: 991.98px) {
   .table-responsive-lg {
     display: block;
     width: 100%;
@@ -11107,7 +11095,7 @@ utilities and helper classes with ability to override anything which goes before
       border: 0; }
   .hidden-md-down {
     display: none !important; } }
-    @media (max-width: 1199.98px) {
+  @media (max-width: 1199.98px) {
   .table-responsive-xl {
     display: block;
     width: 100%;

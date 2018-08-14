@@ -1,5 +1,6 @@
 .nice-select {
     font-family: 'Quicksand';
+    text-transform: lowercase;
     padding-right: 15px;
     background-color: transparent;
     border: none;
@@ -26,6 +27,7 @@
 
 
     .list {
+        text-transform: lowercase;
         border-radius: 0;
         top: 120%;
         width: 100%;
@@ -34,8 +36,7 @@
         z-index: 999;
         margin: 0;
         transform: translateY(0);
-        background-color: #2a3452;
-        background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
+        background-color: transparent;
     }
 
     &.open .list {
@@ -55,7 +56,7 @@
     display: block;
     min-height: 0;
     line-height: initial;
-    padding: 8px 15px;
+    padding: 5px 15px;
 
     @extend %transit;
 
@@ -73,21 +74,5 @@
     &.selected {
         position: relative;
         font-weight: 400;
-        padding-left: 25px;
-
-        &:before {
-            content: '';
-            position: absolute;
-            top: 50%;
-            left: 15px;
-            display: inline-block;
-            height: 5px;
-            width: 5px;
-            border-radius: 100%;
-            margin-right: 5px;
-            transform: translateY(-50%);
-            background-color: #41c5e1;
-            background-image: linear-gradient(-216deg, #41c5e1 0%, #1c88d8 100%);
-        }
     }
 }
