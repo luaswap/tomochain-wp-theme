@@ -1,8 +1,8 @@
 .main-menu {
+    font-family: 'Quicksand';
     position: relative;
     display: table-cell;
     vertical-align: middle;
-    font-family: 'Quicksand';
 
     .menu > ul,
     .menu {
@@ -73,6 +73,7 @@
                 transform: translateY(-50%);
 
                 @extend .fas;
+                @extend %transit;
             }
         }
     }
@@ -97,7 +98,7 @@
         top: 100%;
         left: 25px;
         width: 100%;
-        min-width: 280px;
+        min-width: 200px;
         background-color: #2a3452;
         background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
         box-shadow: -2px 2px 81px -20px rgba(0, 0, 0, .3);
@@ -106,7 +107,7 @@
         animation-duration: .6s;
         transition: left .5s ease, right .5s ease;
         margin: 0;
-        padding: 10px 0;
+        padding: 0;
         z-index: 999;
     }
 
@@ -128,8 +129,6 @@
                 position: absolute;
                 top: 50%;
                 right: 30px;
-                color: #ababab;
-                font-size: 16px;
                 background-color: transparent !important;
                 margin: -1px;
                 transform: translateY(-50%);
@@ -141,7 +140,7 @@
 
         a {
             display: block;
-            padding: 12px 30px;
+            padding: 10px 20px;
         }
 
         span.menu-item-text:after {
@@ -152,7 +151,6 @@
         .sub-menu {
             top: 0;
             left: 100%;
-            margin-top: -10px;
         }
     }
 }

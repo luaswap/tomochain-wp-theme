@@ -8,16 +8,18 @@ var tomochain
             function () {
                 return {
                     init: function () {
-                        this.mobileMenu();
+                        this.langSwitcher();
                         this.mainMenu();
+                        this.mobileMenu();
                     }
                 }
             }()
         )
     }
 )(jQuery);
-//@include('mobile-menu.js')
+//@include('lang-switcher.js')
 //@include('main-menu.js')
+//@include('mobile-menu.js')
 jQuery (document).ready(function() {
     tomochain.init()
 })

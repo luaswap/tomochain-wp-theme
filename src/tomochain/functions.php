@@ -131,36 +131,16 @@ function tomochain_widgets_init() {
 add_action( 'widgets_init', 'tomochain_widgets_init' );
 
 /**
- * Enqueue scripts and styles.
+ * Enqueue libraries
  */
-function tomochain_scripts() {
-
+function tomochain_enqueue_libs() {
     /*
     * Enqueue Google Fonts
     */
     $font_url = add_query_arg( 'family',
-                'Quicksand:400,500&amp;subset=latin-ext,vietnamese',
-                'http://fonts.googleapis.com/css' );
-            wp_enqueue_style( 'google-fonts', $font_url, null, TOMOCHAIN_THEME_VERSION );
-
-	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
-
-	if ($suffix === '.min') {
-		add_filter( 'stylesheet_uri',
-			function ( $stylesheet_uri, $stylesheet_dir_uri ) {
-				return $stylesheet_dir_uri . '/style.min.css';
-			},
-		10,
-		2 );
-	}
-
-	wp_enqueue_style( 'tomochain-style', get_stylesheet_uri() );
-
-    wp_enqueue_script( 'tomochain-js',
-        TOMOCHAIN_THEME_URI . '/assets/js/tomochain' . $suffix . '.js',
-            array('jquery'),
-            TOMOCHAIN_THEME_VERSION,
-            true );
+            'Quicksand:400,500&amp;subset=latin-ext,vietnamese',
+            'http://fonts.googleapis.com/css' );
+    wp_enqueue_style( 'google-fonts', $font_url, null, TOMOCHAIN_THEME_VERSION );
 
     wp_enqueue_script( 'superfish',
         TOMOCHAIN_LIBS_URI . '/superfish/js/superfish.min.js',
@@ -173,6 +153,40 @@ function tomochain_scripts() {
         array(),
         null,
         true );
+
+    wp_enqueue_style( 'jquery-nice-select', TOMOCHAIN_LIBS_URI . '/jquery-nice-select/css/nice-select.css' );
+
+    wp_enqueue_script( 'jquery-nice-select',
+        TOMOCHAIN_LIBS_URI . '/jquery-nice-select/js/jquery.nice-select.min.js',
+        array(),
+        null,
+        true );
+}
+add_action( 'wp_enqueue_scripts', 'tomochain_enqueue_libs', 1 );
+
+/**
+ * Enqueue scripts and styles.
+ */
+function tomochain_scripts() {
+
+	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
+	if ($suffix === '.min') {
+		add_filter( 'stylesheet_uri',
+			function ( $stylesheet_uri, $stylesheet_dir_uri ) {
+				return $stylesheet_dir_uri . '/style.min.css';
+			},
+		10,
+		2 );
+    }
+
+    wp_enqueue_style( 'tomochain-style', get_stylesheet_uri() );
+
+    wp_enqueue_script( 'tomochain-js',
+        TOMOCHAIN_THEME_URI . '/assets/js/tomochain' . $suffix . '.js',
+            array('jquery'),
+            TOMOCHAIN_THEME_VERSION,
+            true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );

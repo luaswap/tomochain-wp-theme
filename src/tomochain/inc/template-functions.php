@@ -59,7 +59,7 @@ function tomochain_social_links() {
 }
 
 /**
- * Header tools
+ * Mobile menu button
  */
 function tomochain_mobile_menu_btn() {
     ob_start();
@@ -72,5 +72,50 @@ function tomochain_mobile_menu_btn() {
         </svg>
     </div>
 <?php
+    echo ob_get_clean();
+}
+
+/**
+ * Language Switcher
+ */
+function tomochain_lang_switcher() {
+    ob_start();
+    if (class_exists('PolyLang')) :
+        if (function_exists( 'pll_languages_list' )) :
+            $langs = pll_languages_list();
+
+            if ( ! empty( $langs ) ) :
+                $args = array(
+                    'dropdown' => 1,
+                    'raw'      => 1,
+                );
+
+                if ( function_exists( 'pll_the_languages' ) ) :
+                    $langs = pll_the_languages( $args );
+                    $html = '';
+
+                    if ( ! empty ( $langs ) ) :
+                        foreach ( $langs as $l ):
+                            if ( $l['current_lang'] ) :
+                                $html .= '<option selected="selected"';
+                            else :
+                                $html .= '<option';
+                            endif;
+
+                            $html .= ' value="' . esc_url( $l['url'] ) . '"';
+                            $html .= '>' . $l['name'] . '</option>';
+                        endforeach;
+                    endif;
+                    ?>
+                    <div class="tomochain-lang-switcher-wrapper">
+                        <select id="tomochain-lang-switcher">
+                            <?php echo '' . $html; ?>
+                        </select>
+                    </div>
+                    <?php
+                endif;
+            endif;
+        endif;
+    endif;
     echo ob_get_clean();
 }

@@ -8,14 +8,76 @@ var tomochain
             function () {
                 return {
                     init: function () {
-                        this.mobileMenu();
+                        this.langSwitcher();
                         this.mainMenu();
+                        this.mobileMenu();
                     }
                 }
             }()
         )
     }
 )(jQuery);
+(
+    function ($) {
+        tomochain.langSwitcher = function() {
+            var $body                  = $( 'body' ),
+                $languageSwitcher      = $( '#tomochain-lang-switcher' );
+
+            $languageSwitcher.each(function() {
+                var $this = $( this );
+
+                if ( $( 'option', $this ).length ) {
+                    $this.niceSelect();
+                }
+
+                $body.on( 'click', '.tomochain-lang-switcher-wrapper .nice-select .option', function() {
+                    var $this = $( this );
+
+                    $( '.tomochain-lang-switcher-wrapper' ).addClass( 'loading' );
+                    setTimeout( function() {
+                        window.location = $this.attr( 'data-value' );
+                    }, 1000 );
+                });
+            });
+
+        }
+    }
+)(jQuery);
+
+(
+    function ($) {
+        tomochain.mainMenu = function() {
+            var $siteHeader   = $( '.site-header:not(.sticky-header)' ),
+                $stickyHeader = $( '.site-header.sticky-header' ),
+                $mainMenu     = $siteHeader.find( '.main-menu' );
+
+                if ( $stickyHeader.hasClass( 'is-sticky' ) ) {
+                    $mainMenu = $stickyHeader.find( '.main-menu' );
+                }
+
+                if ( ! $mainMenu.length && ! $mainMenu.find( 'ul.menu' ).length ) {
+                    return;
+                }
+
+                $mainMenu.find('ul.menu').superfish({
+                    delay       : 300,
+                    speed       : 300,
+                    speedOut    : 300,
+                    autoArrows  : false,
+                    dropShadows : false,
+                    onBeforeShow: function() {
+                        $( this ).removeClass( 'animated fast fadeOutDownSmall' );
+                        $( this ).addClass( 'animated fast fadeInUpSmall' );
+                    },
+                    onBeforeHide: function() {
+                        $( this ).removeClass( 'animated fast fadeInUpSmall' );
+                        $( this ).addClass( 'animated fast fadeOutDownSmall' );
+                    }
+                });
+        }
+    }
+)(jQuery);
+
 (
     function ($) {
         var $window = $( window ),
@@ -151,40 +213,6 @@ var tomochain
             $window.on( 'resize', function() {
                 tomochain.setTopValue( $mobileMenuWrap );
             } );
-        }
-    }
-)(jQuery);
-
-(
-    function ($) {
-        tomochain.mainMenu = function() {
-            var $siteHeader   = $( '.site-header:not(.sticky-header)' ),
-                $stickyHeader = $( '.site-header.sticky-header' ),
-                $mainMenu     = $siteHeader.find( '.main-menu' );
-
-                if ( $stickyHeader.hasClass( 'is-sticky' ) ) {
-                    $mainMenu = $stickyHeader.find( '.main-menu' );
-                }
-
-                if ( ! $mainMenu.length && ! $mainMenu.find( 'ul.menu' ).length ) {
-                    return;
-                }
-
-                $mainMenu.find('ul.menu').superfish({
-                    delay       : 300,
-                    speed       : 300,
-                    speedOut    : 300,
-                    autoArrows  : false,
-                    dropShadows : false,
-                    onBeforeShow: function() {
-                        $( this ).removeClass( 'animated fast fadeOutDownSmall' );
-                        $( this ).addClass( 'animated fast fadeInUpSmall' );
-                    },
-                    onBeforeHide: function() {
-                        $( this ).removeClass( 'animated fast fadeInUpSmall' );
-                        $( this ).addClass( 'animated fast fadeOutDownSmall' );
-                    }
-                });
         }
     }
 )(jQuery);

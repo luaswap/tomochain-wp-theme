@@ -1,0 +1,92 @@
+.nice-select {
+    font-family: 'Quicksand';
+    padding-right: 15px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+
+    &:after {
+        content: fa-content($fa-var-angle-down);
+        position: absolute;
+        top: 50%;
+        left: 0;
+        right: auto;
+        width: auto;
+        height: auto;
+        border: none;
+        pointer-events: none;
+        color: #6a6beb;
+        transform: translateY(-50%);
+        margin-top: 0;
+
+        @extend .fas;
+        @extend %transit;
+    }
+
+
+    .list {
+        border-radius: 0;
+        top: 120%;
+        width: 100%;
+        min-width: 120px;
+        transition-duration: .5s;
+        z-index: 999;
+        margin: 0;
+        transform: translateY(0);
+        background-color: #2a3452;
+        background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
+    }
+
+    &.open .list {
+        top: 100%;
+    }
+}
+
+.nice-select.open:after {
+    transform: rotate(0) translateY(-50%);
+}
+
+.nice-select .current {
+    @extend %transit;
+}
+
+.nice-select .option {
+    display: block;
+    min-height: 0;
+    line-height: initial;
+    padding: 8px 15px;
+
+    @extend %transit;
+
+    &:hover,
+    &.focus,
+    &.selected.focus {
+        color: $color__link-hover;
+        background-color: transparent;
+    }
+
+    &:hover {
+        transform: translate(5px);
+    }
+
+    &.selected {
+        position: relative;
+        font-weight: 400;
+        padding-left: 25px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 15px;
+            display: inline-block;
+            height: 5px;
+            width: 5px;
+            border-radius: 100%;
+            margin-right: 5px;
+            transform: translateY(-50%);
+            background-color: #41c5e1;
+            background-image: linear-gradient(-216deg, #41c5e1 0%, #1c88d8 100%);
+        }
+    }
+}

@@ -52,7 +52,10 @@
 				</nav><!-- #site-menu -->
 
 				<div class="header-tools">
-					<?php tomochain_mobile_menu_btn(); ?>
+                    <?php
+                        tomochain_lang_switcher();
+                        tomochain_mobile_menu_btn();
+                    ?>
 				</div><!-- .header-tools-->
 			</div>
 		</div>

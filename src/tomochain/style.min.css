@@ -974,6 +974,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
+.nice-select:after,
 .far,
 .fal,
 .fab {
@@ -1068,6 +1069,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-left.menu-back:before,
+.fa-pull-left.nice-select:after,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -1086,6 +1088,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-right.menu-back:before,
+.fa-pull-right.nice-select:after,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -4684,7 +4687,8 @@ readers do not read off random characters that represent icons */
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after,
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
-.site-mobile-menu-wrapper .menu-back:before {
+.site-mobile-menu-wrapper .menu-back:before,
+.nice-select:after {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -6870,10 +6874,12 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
-a, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
+a, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
+.main-menu .menu li.menu-item.page_item_has_children > a:before,
+.main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
@@ -8451,11 +8457,23 @@ This is where majority of our work takes place and our UI components are often c
       vertical-align: middle;
       text-align: left; }
 
+.tomochain-lang-switcher-wrapper.loading .nice-select:after {
+  top: 4px;
+  left: -25px;
+  content: url(assets/images/loading.svg) !important;
+  background-color: transparent !important;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+  width: 100%; }
+
+.tomochain-lang-switcher-wrapper select {
+  display: none; }
+
 .main-menu {
+  font-family: 'Quicksand';
   position: relative;
   display: table-cell;
-  vertical-align: middle;
-  font-family: 'Quicksand'; }
+  vertical-align: middle; }
   .main-menu .menu > ul,
   .main-menu .menu {
     margin: 0;
@@ -8533,7 +8551,7 @@ This is where majority of our work takes place and our UI components are often c
     top: 100%;
     left: 25px;
     width: 100%;
-    min-width: 280px;
+    min-width: 200px;
     background-color: #2a3452;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(#191d34));
     background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
@@ -8546,7 +8564,7 @@ This is where majority of our work takes place and our UI components are often c
     -webkit-transition: left .5s ease, right .5s ease;
     transition: left .5s ease, right .5s ease;
     margin: 0;
-    padding: 10px 0;
+    padding: 0;
     z-index: 999; }
   .main-menu .menu > ul > li .children li.page_item,
   .main-menu .menu > li .sub-menu li.menu-item {
@@ -8564,8 +8582,6 @@ This is where majority of our work takes place and our UI components are often c
       position: absolute;
       top: 50%;
       right: 30px;
-      color: #ababab;
-      font-size: 16px;
       background-color: transparent !important;
       margin: -1px;
       -webkit-transform: translateY(-50%);
@@ -8573,7 +8589,7 @@ This is where majority of our work takes place and our UI components are often c
     .main-menu .menu > ul > li .children li.page_item a,
     .main-menu .menu > li .sub-menu li.menu-item a {
       display: block;
-      padding: 12px 30px; }
+      padding: 10px 20px; }
     .main-menu .menu > ul > li .children li.page_item span.menu-item-text:after,
     .main-menu .menu > li .sub-menu li.menu-item span.menu-item-text:after {
       display: none; }
@@ -8582,8 +8598,7 @@ This is where majority of our work takes place and our UI components are often c
     .main-menu .menu > li .sub-menu li.menu-item .children,
     .main-menu .menu > li .sub-menu li.menu-item .sub-menu {
       top: 0;
-      left: 100%;
-      margin-top: -10px; }
+      left: 100%; }
 
 .mobile-menu-btn {
   margin-right: -10px; }
@@ -8799,8 +8814,77 @@ Trumps
 ================================================
 utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
 */
+.nice-select {
+  font-family: 'Quicksand';
+  padding-right: 15px;
+  background-color: transparent;
+  border: none;
+  border-radius: 0; }
+  .nice-select:after {
+    content: "\f107";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: auto;
+    width: auto;
+    height: auto;
+    border: none;
+    pointer-events: none;
+    color: #6a6beb;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+    margin-top: 0; }
+  .nice-select .list {
+    border-radius: 0;
+    top: 120%;
+    width: 100%;
+    min-width: 120px;
+    -webkit-transition-duration: .5s;
+            transition-duration: .5s;
+    z-index: 999;
+    margin: 0;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    background-color: #2a3452;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(#191d34));
+    background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%); }
+  .nice-select.open .list {
+    top: 100%; }
 
-@media (min-width: 576px) {
+.nice-select.open:after {
+  -webkit-transform: rotate(0) translateY(-50%);
+          transform: rotate(0) translateY(-50%); }
+
+.nice-select .option {
+  display: block;
+  min-height: 0;
+  line-height: initial;
+  padding: 8px 15px; }
+  .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
+    color: #dee2ee;
+    background-color: transparent; }
+  .nice-select .option:hover {
+    -webkit-transform: translate(5px);
+            transform: translate(5px); }
+  .nice-select .option.selected {
+    position: relative;
+    font-weight: 400;
+    padding-left: 25px; }
+    .nice-select .option.selected:before {
+      content: '';
+      position: absolute;
+      top: 50%;
+      left: 15px;
+      display: inline-block;
+      height: 5px;
+      width: 5px;
+      border-radius: 100%;
+      margin-right: 5px;
+      -webkit-transform: translateY(-50%);
+              transform: translateY(-50%);
+      background-color: #41c5e1;
+      background-image: linear-gradient(-216deg, #41c5e1 0%, #1c88d8 100%); }
+    @media (min-width: 576px) {
   .d-sm-none {
     display: none !important; }
   .d-sm-inline {
@@ -9300,8 +9384,7 @@ utilities and helper classes with ability to override anything which goes before
     margin-left: 91.66667%; }
   .hidden-sm-up {
     display: none !important; } }
-
-@media (min-width: 768px) {
+    @media (min-width: 768px) {
   .d-md-none {
     display: none !important; }
   .d-md-inline {
@@ -9801,8 +9884,7 @@ utilities and helper classes with ability to override anything which goes before
     margin-left: 91.66667%; }
   .hidden-md-up {
     display: none !important; } }
-
-@media (min-width: 992px) {
+    @media (min-width: 992px) {
   .d-lg-none {
     display: none !important; }
   .d-lg-inline {
@@ -10306,8 +10388,7 @@ utilities and helper classes with ability to override anything which goes before
       width: 20%; }
       .site-header .site-branding img {
         max-width: none; } }
-
-@media (min-width: 1200px) {
+    @media (min-width: 1200px) {
   .d-xl-none {
     display: none !important; }
   .d-xl-inline {
@@ -10807,8 +10888,7 @@ utilities and helper classes with ability to override anything which goes before
     margin-left: 91.66667%; }
   .hidden-xl-up {
     display: none !important; } }
-
-@media print {
+    @media print {
   .d-print-none {
     display: none !important; }
   .d-print-inline {
@@ -10888,8 +10968,7 @@ utilities and helper classes with ability to override anything which goes before
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-
-@media (max-width: 575.98px) {
+    @media (max-width: 575.98px) {
   .table-responsive-sm {
     display: block;
     width: 100%;
@@ -10900,8 +10979,7 @@ utilities and helper classes with ability to override anything which goes before
       border: 0; }
   .hidden-xs-down {
     display: none !important; } }
-
-@media (max-width: 767.98px) {
+    @media (max-width: 767.98px) {
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -10912,8 +10990,7 @@ utilities and helper classes with ability to override anything which goes before
       border: 0; }
   .hidden-sm-down {
     display: none !important; } }
-
-@media (max-width: 991.98px) {
+    @media (max-width: 991.98px) {
   .table-responsive-lg {
     display: block;
     width: 100%;
@@ -10924,8 +11001,7 @@ utilities and helper classes with ability to override anything which goes before
       border: 0; }
   .hidden-md-down {
     display: none !important; } }
-
-@media (max-width: 1199.98px) {
+    @media (max-width: 1199.98px) {
   .table-responsive-xl {
     display: block;
     width: 100%;

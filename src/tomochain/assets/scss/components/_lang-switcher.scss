@@ -1,0 +1,19 @@
+.tomochain-lang-switcher-wrapper {
+
+    &.loading {
+        .nice-select {
+            &:after {
+                top: 4px;
+                left: -25px;
+                content: url(assets/images/loading.svg) !important;
+                background-color: transparent !important;
+                transform: scale(.7);
+                width: 100%;
+            }
+        }
+    }
+
+    select {
+        display: none;
+    }
+}
