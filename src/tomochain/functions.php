@@ -36,7 +36,7 @@ if ( ! function_exists( 'tomochain_setup' ) ) :
 		 * If you're building a theme based on tomochain, use a find and replace
 		 * to change 'tomochain' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'tomochain', get_template_directory() . '/languages' );
+		load_theme_textdomain( 'tomochain', TOMOCHAIN_THEME_DIR . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -203,8 +203,8 @@ add_action( 'wp_enqueue_scripts', 'tomochain_scripts' );
 /**
  * Widgets
  */
-require get_template_directory() . '/inc/widgets/wph-widget-class.php';
-require get_template_directory() . '/inc/widgets/tomochain-address.php';
+require TOMOCHAIN_THEME_DIR . '/inc/widgets/wph-widget-class.php';
+require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-address.php';
 
 /**
  * Add Theme Options page
@@ -222,24 +222,24 @@ if (function_exists('acf_add_options_page')) {
 /**
  * Implement the Custom Header feature.
  */
-require get_template_directory() . '/inc/custom-header.php';
+require TOMOCHAIN_THEME_DIR . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
  */
-require get_template_directory() . '/inc/template-tags.php';
+require TOMOCHAIN_THEME_DIR . '/inc/template-tags.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require get_template_directory() . '/inc/template-functions.php';
+require TOMOCHAIN_THEME_DIR . '/inc/template-functions.php';
 
 /**
  * Customizer additions.
  */
-require get_template_directory() . '/inc/customizer.php';
+require TOMOCHAIN_THEME_DIR . '/inc/customizer.php';
 
 /**
  * Import ACF local field groups
  */
-require get_template_directory() . '/inc/acf-local-field-groups.php';
+require TOMOCHAIN_THEME_DIR . '/inc/acf-local-field-groups.php';
