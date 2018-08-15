@@ -1,4 +1,9 @@
 <?php
+if (function_exists('vc_set_shortcodes_templates_dir')) {
+    $new_vc_dir = TOMOCHAIN_ADDONS_DIR . '/inc/templates';
+    vc_set_shortcodes_templates_dir( $new_vc_dir );
+}
+
 add_action('vc_before_init', 'tomochain_set_as_theme');
 function tomochain_set_as_theme() {
     vc_set_as_theme();

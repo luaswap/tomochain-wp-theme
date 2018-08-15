@@ -1,7 +1,7 @@
 <?php
 /**
  * Plugin Name: TomoChain Addons
- * Description: A collection of shortcodes for Visual Composer. It was made for TomoChain website
+ * Description: A collection of shortcodes for WPBakery Pabe Builder. It was made for TomoChain website.
  * Author: TomoChain
  * Author URI: http://tomochain.com
  * Version: 1.0
@@ -38,7 +38,15 @@ class TomoChain_Addons {
             $plugin_data = get_plugin_data( __FILE__ );
 
             printf( '<div class="notice notice-error"><p>%s</p></div>',
-                sprintf( __( '<strong>%s</strong> requires <strong><a href="http://bit.ly/vcomposer" target="_blank">Visual Composer</a></strong> plugin to be installed and activated on your site.',
+                sprintf( __( '<strong>%s</strong> requires <strong><a href="http://bit.ly/vcomposer" target="_blank">WPBakery Page Builder</a></strong> plugin to be installed and activated on your site.',
+                    'tomochain-addons' ),
+                    $plugin_data['Name'] ) );
+        }
+
+        $theme = wp_get_theme();
+        if ('TomoChain' != $theme->name && 'TomoChain Child' != $theme->name) {
+            printf( '<div class="notice notice-error"><p>%s</p></div>',
+                sprintf( __( '<strong>%s</strong> requires <strong>TomoChain</strong> theme to be installed and activated on your site.',
                     'tomochain-addons' ),
                     $plugin_data['Name'] ) );
         }
