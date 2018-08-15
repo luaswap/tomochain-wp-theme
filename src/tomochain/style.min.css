@@ -8858,7 +8858,8 @@ This is where majority of our work takes place and our UI components are often c
     padding-left: 1.25rem;
     margin-bottom: 0; }
   .tomochain-social .social-links {
-    text-align: center; }
+    text-align: center;
+    margin-bottom: 1.875rem; }
     .tomochain-social .social-links .social-links__items {
       margin-right: 0.46875rem;
       margin-left: 0.46875rem; }
@@ -8905,6 +8906,19 @@ This is where majority of our work takes place and our UI components are often c
         line-height: 2.5rem;
         z-index: 1;
         color: #fff; }
+
+.vc_custom_heading {
+  font-weight: 200; }
+  .vc_custom_heading.text-align--right .heading-line {
+    margin-left: auto; }
+  .vc_custom_heading.text-align--center .heading-line {
+    margin-left: auto;
+    margin-right: auto; }
+  .vc_custom_heading .heading-line {
+    display: block;
+    width: 2.5rem;
+    height: 0.125rem;
+    margin-bottom: 1.5625rem; }
 
 .widget {
   margin: 0 0 1.5em;

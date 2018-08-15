@@ -39,3 +39,20 @@ function tomochain_get_param($param_name, $group = '', $dependency = '') {
 
     return $param;
 }
+
+add_action('vc_after_init', 'tomochain_update_shortcodes');
+function tomochain_update_shortcodes() {
+    /* Custom Heading */
+    vc_update_shortcode_param( 'vc_custom_heading',
+        array(
+            'param_name' => 'use_theme_fonts',
+            'std'        => 'yes',
+    ) );
+    vc_add_param( 'vc_custom_heading',
+        array(
+            'type'       => 'colorpicker',
+            'heading'    => esc_html('Line Color', 'tomochain-addons'),
+            'param_name' => 'line_color',
+            'weight'     => 1
+    ) );
+}

@@ -1,0 +1,19 @@
+.vc_custom_heading {
+    font-weight: 200;
+
+    &.text-align--right .heading-line {
+        margin-left: auto;
+    }
+
+    &.text-align--center .heading-line {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .heading-line {
+        display: block;
+        width: 40px;
+        height: 2px;
+        margin-bottom: 25px;
+    }
+}
