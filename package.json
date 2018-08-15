@@ -27,7 +27,8 @@
     "gulp-sourcemaps": "^2.6.4",
     "gulp-uglify": "^3.0.1",
     "gulp-util": "^3.0.8",
-    "postcss-assets": "^5.0.0"
+    "postcss-assets": "^5.0.0",
+    "postcss-pxtorem": "^4.0.1"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.2.0"

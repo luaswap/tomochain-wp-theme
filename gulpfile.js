@@ -6,6 +6,7 @@ const $ = require('gulp-load-plugins')()
 const spawn  = require( 'child_process' ).spawn
 const mqpacker = require('css-mqpacker')
 const autoprefixer = require('autoprefixer')
+const pxtorem = require('postcss-pxtorem')
 const assets = require('postcss-assets')
 const reportError = require('./report-bug')
 const files = glob('src/*', {sync: true})
@@ -22,8 +23,17 @@ gulp.task('sass', function () {
                .pipe($.sourcemaps.init())
                .pipe($.sassGlobImport())
                .pipe($.sass())
-               .pipe($.postcss([autoprefixer({browsers: ['last 2 versions']}), mqpacker({sort: true}),
-                                assets({loadPaths: ['src/' + theme + 'assets/images/']})]))
+               .pipe($.postcss([
+                    autoprefixer({browsers: ['last 2 versions']}),
+                    mqpacker({sort: true}),
+                    assets({
+                        loadPaths: ['src/' + theme + 'assets/images/']
+                    }),
+                    pxtorem({
+                        propList: ['*'],
+                        mediaQuery: true
+                    })
+                ]))
                .pipe($.sourcemaps.write('./assets/scss/sourcemap/', {
                    includeContent: false,
                    sourceRoot    : '../../scss/'
@@ -69,7 +79,7 @@ gulp.task('bs-reload', function () {
 gulp.task('watch', function () {
     gulp.watch('src/' + theme + '/assets/scss/**/*.scss', ['sass'])
     gulp.watch('src/' + theme + '/assets/**/*.js', ['bs-reload', 'js'])
-    gulp.watch('src/' + theme + '/**/*.php', ['bs-reload'])
+    gulp.watch('src/' + '/**/*.php', ['bs-reload'])
 })
 
 gulp.task('default', ['bs', 'sass', 'watch'])
