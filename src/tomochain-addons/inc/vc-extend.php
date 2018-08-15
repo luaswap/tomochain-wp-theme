@@ -15,11 +15,22 @@ function tomochain_get_param($param_name, $group = '', $dependency = '') {
     switch ( $param_name ) {
         case 'css':
             $param = array(
-                'group'      => esc_html__( 'Design Options', 'tomochain' ),
+                'group'      => esc_html__( 'Design Options', 'tomochain-addons' ),
                 'type'       => 'css_editor',
-                'heading'    => esc_html__( 'CSS box', 'tomochain' ),
+                'heading'    => esc_html__( 'CSS box', 'tomochain-addons' ),
                 'param_name' => 'css',
             );
             break;
+        case 'el_class':
+            $param = array(
+                'type'        => 'textfield',
+                'heading'     => esc_html__( 'Extra class name', 'tomochain-addons' ),
+                'param_name'  => 'el_class',
+                'description' => esc_html__( 'Style particular content element differently - add a class name and refer to it in custom CSS.',
+                    'tomochain-addons' ),
+            );
+            break;
     }
+
+    return $param;
 }
