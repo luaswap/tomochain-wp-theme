@@ -11,7 +11,9 @@ function tomochain_set_as_theme() {
 
 add_action('vc_after_init', 'tomochain_load_shortcodes');
 function tomochain_load_shortcodes() {
-    require TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-social.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-social.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-roadmap.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-roadmap-item.php';
 }
 
 function tomochain_get_param($param_name, $group = '', $dependency = '') {

@@ -1,0 +1,140 @@
+.tomochain-roadmap-item {
+    margin-bottom: 45px;
+
+    .roadmap-deco {
+        position: relative;
+        height: 90px;
+        overflow: hidden;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 18px;
+            left: 50px;
+            width: 100%;
+            height: 4px;
+            background-image: linear-gradient(90deg, #424f73 0%, #181631 99%);
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: 45px;
+            left: 19px;
+            height: 45px;
+            width: 2px;
+            background-image: linear-gradient(0deg, rgba(29, 23, 58, 0) 0%, #58668f 99%);
+        }
+    }
+
+    .roadmap-dot {
+        position: relative;
+        display: inline-block;
+        vertical-align: middle;
+        height: 40px;
+        width: 40px;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            left: 0;
+            height: 40px;
+            width: 40px;
+            border-radius: 100%;
+            transform: translateY(-50%);
+            opacity: 0.1;
+            background-color: #58668f;
+        }
+
+        i {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            height: 16px;
+            width: 16px;
+            transform: translate(-50%, -50%);
+            border-radius: 100%;
+            background-color: #58668f;
+
+            &:before,
+            &:after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                border-radius: 100%;
+                transform: translate(-50%, -50%);
+                background-color: #58668f;
+            }
+
+            &:before {
+                height: 26px;
+                width: 26px;
+                opacity: .3;
+            }
+
+            &:after {
+                height: 34px;
+                width: 34px;
+                opacity: 0.2;
+            }
+        }
+    }
+
+    .roadmap-title {
+        font-size: 18px;
+        font-weight: 400;
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
+
+    .roadmap-description {
+        line-height: 22px;
+        font-weight: 200;
+
+        p:first-child,
+        p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+
+        li {
+            position: relative;
+            text-indent: 15px;
+            margin-bottom: 5px;
+        }
+
+        li:before {
+            content: '•';
+            position: absolute;
+            top: auto;
+            left: -15px;
+        }
+    }
+}
+
+.tomochain-roadmap-item--current {
+
+    .roadmap-deco:before {
+        background-image: linear-gradient(90deg, #e78875 0%, #181631 80%);
+    }
+
+    .roadmap-deco:after {
+        background-image: linear-gradient(-180deg, #ea8f73 0%, rgba(29, 23, 58, 0) 80%);
+    }
+
+    .roadmap-dot {
+
+        &:before, i, i:before, i:after {
+            background-image: linear-gradient(-225deg, #ffb567 0%, #e48476 100%);
+            background-size: 400% 400%;
+            animation: roadmapAnimation 1.5s infinite;
+        }
+    }
+}

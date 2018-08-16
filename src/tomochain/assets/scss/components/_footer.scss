@@ -1,12 +1,10 @@
 .site-footer {
-    background-color: #242c47;
     background-image: linear-gradient(-225deg, #242c47 0%, #1e243d 100%);
 
     &:before {
         content: '';
         display: block;
         height: 2px;
-        background-color: #fcb168;
         background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%);
     }
 

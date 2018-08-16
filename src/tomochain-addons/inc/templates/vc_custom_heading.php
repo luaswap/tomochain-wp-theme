@@ -70,13 +70,17 @@ $output = '';
 if ( apply_filters( 'vc_custom_heading_template_use_wrapper', false ) ) {
 	$output .= '<div class="' . esc_attr( $css_class ) . '" ' . implode( ' ', $wrapper_attributes ) . '>';
     $output .= '<' . $font_container_data['values']['tag'] . ' ' . $style . ' >';
-    $output .= '<span class="heading-line" style="background-color:' . $line_color . '">&nbsp;</span>';
+    if ($line_color) {
+        $output .= '<span class="heading-line" style="background-color:' . $line_color . '">&nbsp;</span>';
+    }
 	$output .= $text;
 	$output .= '</' . $font_container_data['values']['tag'] . '>';
 	$output .= '</div>';
 } else {
     $output .= '<' . $font_container_data['values']['tag'] . ' ' . $style . ' class="' . esc_attr( $css_class ) . '" ' . implode( ' ', $wrapper_attributes ) . '>';
-    $output .= '<span class="heading-line" style="background-color:' . $line_color . '">&nbsp;</span>';
+    if ($line_color) {
+        $output .= '<span class="heading-line" style="background-color:' . $line_color . '">&nbsp;</span>';
+    }
 	$output .= $text;
 	$output .= '</' . $font_container_data['values']['tag'] . '>';
 }
