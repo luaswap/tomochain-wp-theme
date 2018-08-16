@@ -11,6 +11,7 @@ var tomochain
                         this.langSwitcher();
                         this.mainMenu();
                         this.mobileMenu();
+                        this.roadmap();
                         this.utils();
                     }
                 }
@@ -20,6 +21,7 @@ var tomochain
 )(jQuery);
 //@include('lang-switcher.js')
 //@include('main-menu.js')
+//@include('roadmap.js')
 //@include('mobile-menu.js')
 //@include('utils.js')
 jQuery (document).ready(function() {

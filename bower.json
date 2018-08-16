@@ -1,44 +1,49 @@
 {
-    "name": "tomochain",
-    "ignore": [
-        "node_modules",
-        "bower_components",
-        "test",
-        "tests"
-    ],
-    "devDependencies": {
-        "superfish": "^1.7.9",
-        "jquery-nice-select": "^1.1.0"
-    },
-    "install": {
+  "name": "tomochain",
+  "ignore": [
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery-nice-select": "^1.1.0",
+    "slick-carousel": "^1.8.1",
+    "superfish": "^1.7.9"
+  },
+  "install": {
     "options": {
-        "includePackageNameInInstallPath": false
+      "includePackageNameInInstallPath": false
     },
     "base": "src/tomochain/assets/libs",
     "path": {
-        "js": "{name}/js",
-        "css": "{name}/css",
-        ".map": "{name}/css",
-        "eot": "{name}/fonts",
-        "svg": "{name}/fonts",
-        "ttf": "{name}/fonts",
-        "otf": "{name}/fonts",
-        "woff2": "{name}/fonts",
-        "woff": "{name}/fonts"
+      "js": "{name}/js",
+      "css": "{name}/css",
+      ".map": "{name}/css",
+      "eot": "{name}/fonts",
+      "svg": "{name}/fonts",
+      "ttf": "{name}/fonts",
+      "otf": "{name}/fonts",
+      "woff2": "{name}/fonts",
+      "woff": "{name}/fonts"
     },
     "sources": {
-        "jquery-nice-select": [
-            "bower_components/jquery-nice-select/css/nice-select.css",
-            "bower_components/jquery-nice-select/js/jquery.nice-select.min.js"
-        ],
-        "superfish": [
-            "bower_components/superfish/dist/js/superfish.min.js",
-            "bower_components/superfish/dist/js/hoverIntent.js"
-        ]
+      "jquery-nice-select": [
+        "bower_components/jquery-nice-select/css/nice-select.css",
+        "bower_components/jquery-nice-select/js/jquery.nice-select.min.js"
+      ],
+      "slick-carousel": [
+        "bower_components/slick-carousel/slick/slick.css",
+        "bower_components/slick-carousel/slick/slick.min.js"
+      ],
+      "superfish": [
+        "bower_components/superfish/dist/js/superfish.min.js",
+        "bower_components/superfish/dist/js/hoverIntent.js"
+      ]
     },
     "ignore": [
-            "jquery",
-            "tether"
-        ]
-    }
+      "jquery",
+      "tether"
+    ]
+  }
 }

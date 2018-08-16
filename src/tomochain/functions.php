@@ -19,7 +19,7 @@ define( 'TOMOCHAIN_THEME_DIR', get_template_directory() );
 define( 'TOMOCHAIN_THEME_URI', get_template_directory_uri() );
 define( 'TOMOCHAIN_CHILD_THEME_URI', get_stylesheet_directory_uri() );
 define( 'TOMOCHAIN_CHILD_THEME_DIR', get_stylesheet_directory() );
-define( 'TOMOCHAIN_LIBS_URI', TOMOCHAIN_THEME_URI . '/assets/libs/' );
+define( 'TOMOCHAIN_LIBS_URI', TOMOCHAIN_THEME_URI . '/assets/libs' );
 
 if ( ! function_exists( 'tomochain_setup' ) ) :
 	/**
@@ -158,6 +158,14 @@ function tomochain_enqueue_libs() {
 
     wp_enqueue_script( 'jquery-nice-select',
         TOMOCHAIN_LIBS_URI . '/jquery-nice-select/js/jquery.nice-select.min.js',
+        array(),
+        null,
+        true );
+
+    wp_enqueue_style( 'slick-carousel', TOMOCHAIN_LIBS_URI . '/slick-carousel/css/slick.css' );
+
+    wp_enqueue_script( 'slick-carousel',
+        TOMOCHAIN_LIBS_URI . '/slick-carousel/js/slick.min.js',
         array(),
         null,
         true );

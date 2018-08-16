@@ -6902,7 +6902,7 @@ a, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-roadmap, .slick-dots li, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
@@ -8946,8 +8946,27 @@ This is where majority of our work takes place and our UI components are often c
         z-index: 1;
         color: #fff; }
 
+.tomochain-roadmap {
+  margin-bottom: 1.875rem; }
+  .tomochain-roadmap.slick-slider {
+    cursor: url("https://www.google.com/intl/en_ALL/mapfiles/openhand.cur"), all-scroll;
+    cursor: -webkit-grab;
+    cursor: -o-grab;
+    cursor: -ms-grab;
+    cursor: grab; }
+
 .tomochain-roadmap-item {
   margin-bottom: 2.8125rem; }
+  .tomochain-roadmap-item.slick-slide {
+    margin-bottom: 0; }
+  .tomochain-roadmap-item.slick-slide:focus {
+    outline: 0; }
+  .tomochain-roadmap-item.slick-slide:active {
+    cursor: url("https://www.google.com/intl/en_ALL/mapfiles/closedhand.cur"), all-scroll;
+    cursor: -webkit-grabbing;
+    cursor: -o-grabbing;
+    cursor: -ms-grabbing;
+    cursor: grabbing; }
   .tomochain-roadmap-item .roadmap-deco {
     position: relative;
     height: 5.625rem;
@@ -9117,6 +9136,64 @@ Trumps
 ================================================
 utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
 */
+.slick-dots {
+  list-style: none;
+  display: block;
+  text-align: center;
+  padding: 0;
+  margin: 1.875rem 0;
+  width: 100%; }
+  .slick-dots li {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    height: 0.625rem;
+    width: 0.625rem;
+    margin-right: 0.625rem;
+    margin-left: 0;
+    line-height: 1.5;
+    height: initial;
+    width: initial;
+    padding: 0;
+    cursor: pointer;
+    background: none; }
+    .slick-dots li:last-child {
+      margin: 0; }
+    .slick-dots li button {
+      font-size: 0;
+      display: block;
+      cursor: pointer;
+      outline: 0;
+      line-height: 0;
+      border: 0;
+      width: 0.625rem;
+      height: 0.625rem;
+      color: transparent;
+      opacity: .2;
+      padding: 0;
+      -webkit-backface-visibility: hidden;
+      border-radius: 50%;
+      padding: 0;
+      background-color: rgba(255, 255, 255, 0.4); }
+      .slick-dots li button:focus {
+        outline: 0; }
+      .slick-dots li button:hover {
+        opacity: .75; }
+    .slick-dots li.slick-active button {
+      border-radius: 100%;
+      opacity: 1;
+      margin: 0;
+      padding: 0.0625rem;
+      background-image: -webkit-gradient(linear, left top, left bottom, from(#f78d7a), to(#fac15e));
+      background-image: linear-gradient(to bottom, #f78d7a 0%, #fac15e 100%); }
+    .slick-dots li.slick-active button:after {
+      content: '';
+      display: block;
+      height: 100%;
+      width: 100%;
+      border-radius: 100%;
+      background-color: #1b2038; }
+
 .nice-select {
   font-family: 'Quicksand';
   text-transform: lowercase;
@@ -9672,7 +9749,17 @@ utilities and helper classes with ability to override anything which goes before
   .offset-sm-11 {
     margin-left: 91.66667%; }
   .hidden-sm-up {
-    display: none !important; } }
+    display: none !important; }
+  .tomochain-roadmap {
+    opacity: 0;
+    visibility: hidden;
+    margin-left: -0.9375rem;
+    margin-right: -0.9375rem; }
+    .tomochain-roadmap.slick-initialized {
+      opacity: 1;
+      visibility: visible; }
+  .tomochain-roadmap-item {
+    padding: 0 0.9375rem; } }
   @media (min-width: 48rem) {
   .d-md-none {
     display: none !important; }
