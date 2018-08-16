@@ -8543,6 +8543,12 @@ This is where majority of our work takes place and our UI components are often c
       vertical-align: middle;
       text-align: left; }
 
+.tomochain-image-carousel .slick-slide {
+  text-align: center; }
+
+.tomochain-image-carousel .slick-slide img {
+  display: inline-block; }
+
 .tomochain-lang-switcher-wrapper.loading .nice-select:after {
   top: 0.25rem;
   left: -1.5625rem;

@@ -9,6 +9,7 @@ var tomochain
                 return {
                     init: function () {
                         this.langSwitcher();
+                        this.imageCarousel();
                         this.mainMenu();
                         this.mobileMenu();
                         this.roadmap();
@@ -19,6 +20,7 @@ var tomochain
         )
     }
 )(jQuery);
+//@include('image-carousel.js')
 //@include('lang-switcher.js')
 //@include('main-menu.js')
 //@include('roadmap.js')
