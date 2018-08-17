@@ -16,49 +16,60 @@
                 accessibility : false,
                 arrows        : false,
                 slidesToShow  : parseInt( atts.number_of_images_to_show ),
-                slidesToScroll: parseInt( atts.number_of_images_to_show ),
+                slidesToScroll: 1,
                 infinite      : atts.loop == 'yes',
                 autoplay      : atts.auto_play == 'yes',
                 autoplaySpeed : parseInt( atts.auto_play_speed ) * 1000,
-                adaptiveHeight: true,
-                speed         : 1000,
-                responsive    : [{
+                responsive    : [
+                    {
                     breakpoint: 1200,
                     settings  : {
-                        dots          : true,
-                        slidesToShow  : 3,
-                        slidesToScroll: 3,
+                            slidesToShow  : 4
                     },
-                }, {
+                    },
+                    {
+                        breakpoint: 769,
+                        settings  : {
+                            slidesToShow  : 3
+                        },
+                    },
+                    {
                     breakpoint: 544,
                     settings  : {
-                        adaptiveHeight: true,
-                        slidesToShow  : 1,
-                        slidesToScroll: 1
+                            slidesToShow  : 1
                     },
-                },],
+                    }
+                ],
             };
 
             if ( parseInt( atts.number_of_images_to_show ) == 1 ) {
                 configs['responsive'] = [{
-                    breakpoint: 992,
+                    breakpoint: 1200,
                     settings  : {
                         adaptiveHeight: true,
-                        slidesToShow  : 1,
-                        slidesToScroll: 1,
+                        slidesToShow  : 1
                     },
                 },
                 {
                     breakpoint: 544,
                     settings  : {
                         adaptiveHeight: true,
-                        slidesToShow  : 1,
-                        slidesToScroll: 1,
+                        slidesToShow  : 1
                     },
                 }];
             }
 
-            $this.slick( configs );
+            var slider = $this.slick( configs );
+
+            slider.on('wheel', function(e) {
+                e.preventDefault();
+
+                if (e.originalEvent.deltaY < 0) {
+                    $(this).slick('slickNext');
+                } else {
+                    $(this).slick('slickPrev');
+                }
+            });
         });
     }
 })(jQuery);

@@ -87,7 +87,7 @@ vc_map( array(
         array(
             'type'       => 'textfield',
             'param_name' => 'auto_play_speed',
-            'heading'    => esc_html__( 'Auto play speed (second)', 'tomochain-addons' ),
+            'heading'    => esc_html__( 'Auto play speed (in seconds)', 'tomochain-addons' ),
             'value'      => 3,
             'dependency' => array(
                 'element' => 'auto_play',

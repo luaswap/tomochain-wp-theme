@@ -5,6 +5,7 @@
                 index = $roadmap.find('.tomochain-roadmap-item--current').index();
 
             var slider = $('.tomochain-roadmap').slick({
+                accessibility : false,
                 arrows: false,
                 infinite: false,
                 initialSlide: index,

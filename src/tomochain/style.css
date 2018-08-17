@@ -8543,11 +8543,17 @@ This is where majority of our work takes place and our UI components are often c
       vertical-align: middle;
       text-align: left; }
 
-.tomochain-image-carousel .slick-slide {
-  text-align: center; }
-
-.tomochain-image-carousel .slick-slide img {
-  display: inline-block; }
+.tomochain-image-carousel {
+  margin: 1.875rem 0; }
+  .tomochain-image-carousel .slick-slide {
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+    text-align: center;
+    padding: 0 0.9375rem; }
+  .tomochain-image-carousel .slick-slide img {
+    display: inline-block;
+    vertical-align: middle; }
 
 .tomochain-lang-switcher-wrapper.loading .nice-select:after {
   top: 0.25rem;
@@ -8954,25 +8960,14 @@ This is where majority of our work takes place and our UI components are often c
 
 .tomochain-roadmap {
   margin-bottom: 1.875rem; }
-  .tomochain-roadmap.slick-slider {
-    cursor: url("https://www.google.com/intl/en_ALL/mapfiles/openhand.cur"), all-scroll;
-    cursor: -webkit-grab;
-    cursor: -o-grab;
-    cursor: -ms-grab;
-    cursor: grab; }
 
 .tomochain-roadmap-item {
   margin-bottom: 2.8125rem; }
   .tomochain-roadmap-item.slick-slide {
     margin-bottom: 0; }
-  .tomochain-roadmap-item.slick-slide:focus {
-    outline: 0; }
-  .tomochain-roadmap-item.slick-slide:active {
-    cursor: url("https://www.google.com/intl/en_ALL/mapfiles/closedhand.cur"), all-scroll;
-    cursor: -webkit-grabbing;
-    cursor: -o-grabbing;
-    cursor: -ms-grabbing;
-    cursor: grabbing; }
+  .tomochain-roadmap-item.slick-slide:not(:last-child):not(.tomochain-roadmap-item--current) .roadmap-deco:before {
+    background-image: none;
+    background-color: #3b4669; }
   .tomochain-roadmap-item .roadmap-deco {
     position: relative;
     height: 5.625rem;
@@ -9199,6 +9194,20 @@ utilities and helper classes with ability to override anything which goes before
       width: 100%;
       border-radius: 100%;
       background-color: #1b2038; }
+
+.slick-slider {
+  cursor: url("https://www.google.com/intl/en_ALL/mapfiles/openhand.cur"), all-scroll;
+  cursor: -webkit-grab;
+  cursor: -o-grab;
+  cursor: -ms-grab;
+  cursor: grab; }
+
+.slick-slide:active {
+  cursor: url("https://www.google.com/intl/en_ALL/mapfiles/closedhand.cur"), all-scroll;
+  cursor: -webkit-grabbing;
+  cursor: -o-grabbing;
+  cursor: -ms-grabbing;
+  cursor: grabbing; }
 
 .nice-select {
   font-family: 'Quicksand';
@@ -10787,6 +10796,8 @@ utilities and helper classes with ability to override anything which goes before
       width: 20%; }
       .site-header .site-branding img {
         max-width: none; }
+    .tomochain-image-carousel .slick-slide {
+      text-align: left; }
     .widget_sendgrid_nlvx_widget .sendgrid_mc_input {
       font-size: 1rem;
       padding: 0.9375rem 5rem 0.9375rem 2.5rem; }

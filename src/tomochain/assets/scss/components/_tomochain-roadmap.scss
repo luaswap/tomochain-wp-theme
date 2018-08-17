@@ -2,15 +2,6 @@
     margin-bottom: 30px;
 
     @extend %transit;
-
-    &.slick-slider {
-        cursor: url('https://www.google.com/intl/en_ALL/mapfiles/openhand.cur'), all-scroll;
-        cursor: -webkit-grab;
-        cursor: -moz-grab;
-        cursor: -o-grab;
-        cursor: -ms-grab;
-        cursor: grab;
-    }
 }
 
 .tomochain-roadmap-item {
@@ -20,17 +11,12 @@
         margin-bottom: 0;
     }
 
-    &.slick-slide:focus {
-        outline: 0;
-    }
+    &.slick-slide:not(:last-child):not(.tomochain-roadmap-item--current) {
 
-    &.slick-slide:active {
-        cursor: url('https://www.google.com/intl/en_ALL/mapfiles/closedhand.cur'), all-scroll;
-        cursor: -webkit-grabbing;
-        cursor: -moz-grabbing;
-        cursor: -o-grabbing;
-        cursor: -ms-grabbing;
-        cursor: grabbing;
+        .roadmap-deco:before {
+            background-image: none;
+            background-color: #3b4669;
+        }
     }
 
     .roadmap-deco {
