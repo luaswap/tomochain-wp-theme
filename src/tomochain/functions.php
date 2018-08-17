@@ -251,3 +251,8 @@ require TOMOCHAIN_THEME_DIR . '/inc/customizer.php';
  * Import ACF local field groups
  */
 require TOMOCHAIN_THEME_DIR . '/inc/acf-local-field-groups.php';
+
+function my_acf_init() {
+    acf_update_setting('google_api_key', get_field('google_maps_api_key', 'options'));
+}
+add_action('acf/init', 'my_acf_init');

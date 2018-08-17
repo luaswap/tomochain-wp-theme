@@ -77,6 +77,25 @@ if( function_exists('acf_add_local_field_group') ) {
                     ),
                 ),
             ),
+            array (
+                'key' => 'field_5b765a1170f8a',
+                'label' => 'Google Maps API Key',
+                'name' => 'google_maps_api_key',
+                'type' => 'text',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+                'prepend' => '',
+                'append' => '',
+                'maxlength' => '',
+            ),
         ),
         'location' => array (
             array (
