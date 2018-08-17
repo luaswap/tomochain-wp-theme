@@ -20,9 +20,9 @@ $css_class = array(
 );
 
 $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
-	implode( ' ', $css_class ),
-	$this->settings['base'],
-	$atts );
+    implode( ' ', $css_class ),
+    $this->settings['base'],
+    $atts );
 ?>
 <div class="<?php echo esc_attr( trim( $css_class ) ); ?>">
 <?php

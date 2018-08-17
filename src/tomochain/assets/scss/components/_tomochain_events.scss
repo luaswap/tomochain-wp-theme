@@ -1,0 +1,109 @@
+.tomochain-events-item {
+    text-align: center;
+    margin-bottom: 60px;
+
+    &:hover {
+
+        .event-thumbnail {
+            transform: translateY(-10px);
+        }
+
+        .event-thumbnail a:before,
+        .event-date {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .event-thumbnail a:before {
+            background-image: linear-gradient(to top, #1e2242 0%, rgba(30, 34, 66, 0) 33%);
+        }
+    }
+
+    .event-thumbnail {
+        position: relative;
+        margin-bottom: -140px;
+
+        @extend %transit;
+
+        a:before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 50%;
+            height: 100%;
+            width: 100%;
+            max-width: 200px;
+            opacity: 0;
+            visibility: hidden;
+            transform: translateX(-50%);
+
+            @extend %transit;
+        }
+
+        img {
+            max-width: 200px;
+            box-shadow: 0 2px 10px 5px #1e2242;
+            border-radius: 8px;
+
+            @extend %transit;
+        }
+    }
+
+    .event-date {
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        padding-bottom: 10px;
+        opacity: 0;
+        visibility: hidden;
+        backface-visibility: hidden;
+        transform: translateX(-50%);
+
+        @extend %transit;
+    }
+
+    .event-info {
+        padding: 160px 30px 30px;
+        max-width: 250px;
+        min-height: 235px;
+        margin: 0 auto;
+        background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
+        border-radius: 8px;
+    }
+
+    .event-title {
+        font-size: 18px;
+        font-weight: 200;
+
+        a {
+            color: #ebeaf5;
+        }
+    }
+
+    .event-venue {
+        color: #808aa9;
+        margin-bottom: 0;
+
+        &:before {
+            content: fa-content($fa-var-map-marker-alt);
+            margin-right: 10px;
+
+            @extend .fas;
+        }
+    }
+}
+
+.see-all-events {
+    display: block;
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 30px;
+
+    a {
+        color: #e68b71;
+
+        &:hover {
+            color: $color__link-hover;
+        }
+    }
+}

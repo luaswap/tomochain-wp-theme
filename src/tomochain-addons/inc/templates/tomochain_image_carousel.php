@@ -17,7 +17,7 @@
  * @var $this WPBakeryShortCode_TomoChain_Image_Carousel
  */
 
- $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
+$atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
 
 $el_class = $this->getExtraClass( $el_class );

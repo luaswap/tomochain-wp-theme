@@ -1001,6 +1001,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
+.tomochain-events-item .event-venue:before,
 .far,
 .fal,
 .fab {
@@ -1095,6 +1096,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-left.menu-back:before,
+.tomochain-events-item .fa-pull-left.event-venue:before,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -1113,6 +1115,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-right.menu-back:before,
+.tomochain-events-item .fa-pull-right.event-venue:before,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -4711,7 +4714,8 @@ readers do not read off random characters that represent icons */
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after,
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
-.site-mobile-menu-wrapper .menu-back:before {
+.site-mobile-menu-wrapper .menu-back:before,
+.tomochain-events-item .event-venue:before {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -6902,7 +6906,7 @@ a, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-roadmap, .slick-dots li, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .slick-dots li, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
@@ -8637,10 +8641,6 @@ This is where majority of our work takes place and our UI components are often c
     opacity: .6;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
-  .main-menu .menu li.current-menu-parent a,
-  .main-menu .menu li.current_page_item a,
-  .main-menu .menu li.current-menu-item a {
-    color: #e68b71; }
   .main-menu .menu li.current-menu-parent span.menu-item-text:after,
   .main-menu .menu li.current_page_item span.menu-item-text:after,
   .main-menu .menu li.current-menu-item span.menu-item-text:after {
@@ -8957,6 +8957,80 @@ This is where majority of our work takes place and our UI components are often c
         line-height: 2.5rem;
         z-index: 1;
         color: #fff; }
+
+.tomochain-events-item {
+  text-align: center;
+  margin-bottom: 3.75rem; }
+  .tomochain-events-item:hover .event-thumbnail {
+    -webkit-transform: translateY(-0.625rem);
+            transform: translateY(-0.625rem); }
+  .tomochain-events-item:hover .event-thumbnail a:before,
+  .tomochain-events-item:hover .event-date {
+    opacity: 1;
+    visibility: visible; }
+  .tomochain-events-item:hover .event-thumbnail a:before {
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#1e2242), color-stop(33%, rgba(30, 34, 66, 0)));
+    background-image: linear-gradient(to top, #1e2242 0%, rgba(30, 34, 66, 0) 33%); }
+  .tomochain-events-item .event-thumbnail {
+    position: relative;
+    margin-bottom: -8.75rem; }
+    .tomochain-events-item .event-thumbnail a:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      height: 100%;
+      width: 100%;
+      max-width: 12.5rem;
+      opacity: 0;
+      visibility: hidden;
+      -webkit-transform: translateX(-50%);
+              transform: translateX(-50%); }
+    .tomochain-events-item .event-thumbnail img {
+      max-width: 12.5rem;
+      -webkit-box-shadow: 0 0.125rem 0.625rem 0.3125rem #1e2242;
+              box-shadow: 0 0.125rem 0.625rem 0.3125rem #1e2242;
+      border-radius: 0.5rem; }
+  .tomochain-events-item .event-date {
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    padding-bottom: 0.625rem;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+            backface-visibility: hidden;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+  .tomochain-events-item .event-info {
+    padding: 10rem 1.875rem 1.875rem;
+    max-width: 15.625rem;
+    min-height: 14.6875rem;
+    margin: 0 auto;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(#191d34));
+    background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
+    border-radius: 0.5rem; }
+  .tomochain-events-item .event-title {
+    font-size: 1.125rem;
+    font-weight: 200; }
+    .tomochain-events-item .event-title a {
+      color: #ebeaf5; }
+  .tomochain-events-item .event-venue {
+    color: #808aa9;
+    margin-bottom: 0; }
+    .tomochain-events-item .event-venue:before {
+      content: "\f3c5";
+      margin-right: 0.625rem; }
+
+.see-all-events {
+  display: block;
+  text-align: center;
+  font-size: 1.125rem;
+  margin-bottom: 1.875rem; }
+  .see-all-events a {
+    color: #e68b71; }
+    .see-all-events a:hover {
+      color: #dee2ee; }
 
 .tomochain-roadmap {
   margin-bottom: 1.875rem; }
