@@ -4,13 +4,12 @@
             var $roadmap = $('.tomochain-roadmap'),
                 index = $roadmap.find('.tomochain-roadmap-item--current').index();
 
-            $('.tomochain-roadmap').slick({
+            var slider = $('.tomochain-roadmap').slick({
                 arrows: false,
                 infinite: false,
                 initialSlide: index,
                 slidesToScroll: 1,
                 slidesToShow: 4,
-                dots: true,
                 responsive: [
                     {
                         breakpoint: 1201,
@@ -29,6 +28,16 @@
                         settings: 'unslick'
                     }
                 ]
+            });
+
+            slider.on('wheel', function(e) {
+                e.preventDefault();
+
+                if (e.originalEvent.deltaY < 0) {
+                    $(this).slick('slickNext');
+                } else {
+                    $(this).slick('slickPrev');
+                }
             });
         }
 })(jQuery);
