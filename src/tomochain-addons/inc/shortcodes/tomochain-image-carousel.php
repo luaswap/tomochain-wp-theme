@@ -28,38 +28,6 @@ vc_map( array(
             'description' => esc_html__( 'Enter image size . Example: "thumbnail", "medium", "large", "full" or other sizes defined by current theme . Alternatively enter image size in pixels: 200x100( Width x Height). Leave empty to use "thumbnail" size . ', 'tomochain-addons' ),
         ),
         array(
-            'type'        => 'dropdown',
-            'heading'     => esc_html__( 'On click action', 'tomochain-addons' ),
-            'param_name'  => 'onclick',
-            'value'       => array(
-                esc_html__( 'None', 'tomochain-addons' )              => 'link_no',
-                esc_html__( 'Open lightbox', 'tomochain-addons' )     => 'link_image',
-                esc_html__( 'Open custom links', 'tomochain-addons' ) => 'custom_link',
-            ),
-            'description' => esc_html__( 'Select action for click event. ', 'tomochain-addons' ),
-        ),
-        array(
-            'type'        => 'dropdown',
-            'heading'     => esc_html__( 'Custom link target', 'tomochain-addons' ),
-            'param_name'  => 'custom_links_target',
-            'description' => esc_html__( 'Select how to open custom links . ', 'tomochain-addons' ),
-            'dependency'  => array(
-                'element' => 'onclick',
-                'value'   => array( 'custom_link' ),
-            ),
-            'value'       => vc_target_param_list(),
-        ),
-        array(
-            'type'        => 'exploded_textarea_safe',
-            'heading'     => esc_html__( 'Custom links', 'tomochain-addons' ),
-            'param_name'  => 'custom_links',
-            'description' => esc_html__( 'Enter links for each slide( Note: divide links with linebreaks( Enter ).', 'tomochain-addons' ),
-            'dependency'  => array(
-                'element' => 'onclick',
-                'value'   => array( 'custom_link' ),
-            ),
-        ),
-        array(
             'type'       => 'dropdown',
             'heading'    => esc_html__( 'Number of images to show', 'tomochain-addons' ),
             'param_name' => 'number_of_images_to_show',

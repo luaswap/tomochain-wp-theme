@@ -5,7 +5,6 @@
  * @var $atts
  * @var $images
  * @var $img_size
- * @var $onclick
  * @var $custom_links
  * @var $custom_links_target
  * @var $loop
@@ -26,7 +25,6 @@ $el_class = $this->getExtraClass( $el_class );
 $css_class = array(
     'tomochain-shortcode',
     'tomochain-image-carousel',
-    $onclick,
     $el_class,
     vc_shortcode_custom_css_class( $css ),
 );
@@ -43,10 +41,6 @@ if ( $images == '' ) {
 $images = explode( ',', $images );
 $i      = - 1;
 
-if ( 'custom_link' == $onclick ) {
-    $custom_links = vc_value_from_safe( $custom_links );
-    $custom_links = explode( ',', $custom_links );
-}
 ?>
 
 <div class="<?php echo esc_attr( trim( $css_class ) ); ?>" data-atts="<?php echo esc_attr( json_encode( $atts ) ); ?>">
@@ -63,18 +57,7 @@ if ( 'custom_link' == $onclick ) {
         $thumbnail = $post_thumbnail['thumbnail'];
     ?>
         <div class="carousel-item">
-        <?php if ( 'link_image' === $onclick ): ?>
-            <?php $p_img_large = $post_thumbnail['p_img_large']; ?>
-            <a class="tm-carousel-open-popup" href="<?php echo '' . $p_img_large[0] ?>">
-                <?php echo '' . $thumbnail; ?>
-            </a>
-        <?php elseif ('custom_link' === $onclick && isset( $custom_links[ $i ] ) && '' !== $custom_links[ $i ]) : ?>
-            <a href="<?php echo esc_attr( $custom_links[ $i ] ) ?>"<?php echo( ! empty( $custom_links_target ) ? ' target="' . $custom_links_target . '"' : '' ) ?>>
-                <?php echo '' . $thumbnail; ?>
-            </a>
-        <?php else: ?>
             <?php echo '' . $thumbnail; ?>
-        <?php endif; ?>
         </div>
     <?php
     endforeach;
