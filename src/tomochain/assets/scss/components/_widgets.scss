@@ -33,6 +33,10 @@
         display: none;
     }
 
+    .sendgrid_widget_text.sendgrid_widget_success {
+        display: block;
+    }
+
     .mc_email_form {
         position: relative;
         max-width: 530px;

@@ -9185,6 +9185,8 @@ This is where majority of our work takes place and our UI components are often c
   .widget_sendgrid_nlvx_widget .sendgrid_widget_text,
   .widget_sendgrid_nlvx_widget .sendgrid_mc_label_div {
     display: none; }
+  .widget_sendgrid_nlvx_widget .sendgrid_widget_text.sendgrid_widget_success {
+    display: block; }
   .widget_sendgrid_nlvx_widget .mc_email_form {
     position: relative;
     max-width: 33.125rem;
