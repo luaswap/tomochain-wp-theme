@@ -65,6 +65,10 @@ msgstr ""
 msgid "Add widgets here."
 msgstr ""
 
+#: src/tomochain/functions.php:202
+msgid "Enter your email to get more details"
+msgstr ""
+
 #: src/tomochain/header.php:34
 msgid "Skip to content"
 msgstr ""

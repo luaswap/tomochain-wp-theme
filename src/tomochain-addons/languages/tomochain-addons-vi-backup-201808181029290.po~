@@ -150,7 +150,7 @@ msgstr ""
 
 #: src/tomochain-addons/inc/templates/tomochain_events.php:64
 msgid "See all our events"
-msgstr "Theo dõi tất cả các sự kiện của chúng tôi"
+msgstr "http://tomochain.local/vi/trang-chu/"
 
 #: src/tomochain-addons/inc/templates/tomochain_social.php:32
 msgid "TomoChain addons plugin only works with the TomoChain theme."
