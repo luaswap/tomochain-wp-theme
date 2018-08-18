@@ -10934,8 +10934,12 @@ utilities and helper classes with ability to override anything which goes before
       width: 10%; }
       .site-header .site-branding img {
         max-width: none; }
+    .site-header .header-tools {
+      width: 10%; }
     .tomochain-image-carousel .slick-slide {
       text-align: left; }
+    .main-menu {
+      text-align: center; }
     .widget_sendgrid_nlvx_widget .sendgrid_mc_input {
       font-size: 1rem;
       padding: 0.9375rem 5rem 0.9375rem 2.5rem; }

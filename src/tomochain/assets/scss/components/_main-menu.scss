@@ -161,4 +161,8 @@
             left: 100%;
         }
     }
+
+    @include media-breakpoint-up(lg) {
+        text-align: center;
+    }
 }
