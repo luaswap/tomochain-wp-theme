@@ -29,7 +29,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => 'strip_tags|esc_attr'
                 ),
                 array(
-                    'name'   => esc_html__( 'Address', 'lezada' ),
+                    'name'   => esc_html__( 'Address', 'tomochain' ),
                     'id'     => 'address',
                     'type'   => 'textarea',
                     'class'  => 'widefat',
