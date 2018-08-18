@@ -11,6 +11,7 @@ vc_map( array(
     'icon'        => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
     'category'    => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'params'      => array(
+        tomochain_get_param('animation'),
         tomochain_get_param('el_class'),
         tomochain_get_param('css')
     )

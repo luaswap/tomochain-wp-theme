@@ -6906,7 +6906,7 @@ a, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .slick-dots li, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .slick-dots li, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
@@ -8320,7 +8320,7 @@ This is the first layer of classes and should be agnostically named
   100% {
     opacity: 0;
     -webkit-transform: translate3d(0, 0.625rem, 0);
-    transform: translate3d(0, 0.625rem, 0); } }
+            transform: translate3d(0, 0.625rem, 0); } }
 
 @keyframes fadeOutDownSmall {
   0% {
@@ -8328,17 +8328,17 @@ This is the first layer of classes and should be agnostically named
   100% {
     opacity: 0;
     -webkit-transform: translate3d(0, 0.625rem, 0);
-    transform: translate3d(0, 0.625rem, 0); } }
+            transform: translate3d(0, 0.625rem, 0); } }
 
 .fadeOutDownSmall {
   -webkit-animation-name: fadeOutDownSmall;
-  animation-name: fadeOutDownSmall; }
+          animation-name: fadeOutDownSmall; }
 
 @-webkit-keyframes fadeInUpSmall {
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 0.625rem, 0);
-    transform: translate3d(0, 0.625rem, 0); }
+            transform: translate3d(0, 0.625rem, 0); }
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -8348,15 +8348,15 @@ This is the first layer of classes and should be agnostically named
   0% {
     opacity: 0;
     -webkit-transform: translate3d(0, 0.625rem, 0);
-    transform: translate3d(0, 0.625rem, 0); }
+            transform: translate3d(0, 0.625rem, 0); }
   100% {
     opacity: 1;
     -webkit-transform: none;
-    transform: none; } }
+            transform: none; } }
 
 .fadeInUpSmall {
   -webkit-animation-name: fadeInUpSmall;
-  animation-name: fadeInUpSmall; }
+          animation-name: fadeInUpSmall; }
 
 @-webkit-keyframes roadmapGlowing {
   0% {
@@ -8401,6 +8401,31 @@ This is the first layer of classes and should be agnostically named
     background-position: 58% 100%; }
   100% {
     background-position: 43% 0%; } }
+
+@-webkit-keyframes fadeInUpTomo {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 25%, 0);
+            transform: translate3d(0, 25%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+@keyframes fadeInUpTomo {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 25%, 0);
+            transform: translate3d(0, 25%, 0); }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0); } }
+
+.wpb_fadeInUp,
+.fadeInUp {
+  -webkit-animation-name: fadeInUpTomo !important;
+          animation-name: fadeInUpTomo !important; }
 
 .wp-caption {
   margin-bottom: 1.5em;
@@ -8960,7 +8985,25 @@ This is where majority of our work takes place and our UI components are often c
 
 .tomochain-events-item {
   text-align: center;
+  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.355, 1);
+          animation-timing-function: cubic-bezier(0, 0, 0.355, 1);
+  -webkit-animation-duration: 2s;
+          animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+          animation-fill-mode: both;
   margin-bottom: 3.75rem; }
+  .tomochain-events-item:nth-of-type(1) {
+    -webkit-animation-delay: .5s;
+            animation-delay: .5s; }
+  .tomochain-events-item:nth-of-type(2) {
+    -webkit-animation-delay: .75s;
+            animation-delay: .75s; }
+  .tomochain-events-item:nth-of-type(3) {
+    -webkit-animation-delay: 1s;
+            animation-delay: 1s; }
+  .tomochain-events-item:nth-of-type(4) {
+    -webkit-animation-delay: 1.25s;
+            animation-delay: 1.25s; }
   .tomochain-events-item:hover .event-thumbnail {
     -webkit-transform: translateY(-0.625rem);
             transform: translateY(-0.625rem); }
