@@ -67,3 +67,5 @@ function tomochain_redirect() {
         exit();
     }
 }
+
+update_option('revslider-valid', 'true');

@@ -5,3 +5,8 @@ Author URI: https://tomochain.com/
 Version: 1.0
 Template: tomochain
 */
+.page-template-coming-soon .site-header,
+.page-template-coming-soon .site-mobile-menu-wrapper,
+.page-template-coming-soon .site-footer {
+    display: none;
+}

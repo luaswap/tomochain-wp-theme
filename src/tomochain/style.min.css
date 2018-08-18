@@ -8617,8 +8617,8 @@ This is where majority of our work takes place and our UI components are often c
     .main-menu .menu > li > a {
       position: relative;
       display: inline-block;
-      line-height: 4.375rem;
-      height: 4.375rem;
+      line-height: 3.75rem;
+      height: 3.75rem;
       padding: 0 1.5625rem; }
     .main-menu .menu > ul > li span.menu-item-text,
     .main-menu .menu > li span.menu-item-text {
@@ -8641,8 +8641,8 @@ This is where majority of our work takes place and our UI components are often c
       -webkit-transform-origin: 100% 50%;
               transform-origin: 100% 50%;
       background-color: #e68b71; }
-  .main-menu .menu li.page_item:hover a,
-  .main-menu .menu li.menu-item:hover a {
+  .main-menu .menu li.page_item:hover > a,
+  .main-menu .menu li.menu-item:hover > a {
     color: #e68b71; }
   .main-menu .menu li.page_item:hover span.menu-item-text:after,
   .main-menu .menu li.menu-item:hover span.menu-item-text:after {
@@ -8681,10 +8681,6 @@ This is where majority of our work takes place and our UI components are often c
     left: 1.5625rem;
     width: 100%;
     min-width: 12.5rem;
-    background-image: -webkit-gradient(linear, right top, left top, from(#2a3452), to(#191d34));
-    background-image: linear-gradient(-90deg, #2a3452 0%, #191d34 100%);
-    -webkit-box-shadow: -0.125rem 0.125rem 5.0625rem -1.25rem rgba(0, 0, 0, 0.3);
-            box-shadow: -0.125rem 0.125rem 5.0625rem -1.25rem rgba(0, 0, 0, 0.3);
     list-style: none;
     text-align: left;
     -webkit-animation-duration: .6s;
@@ -8699,6 +8695,9 @@ This is where majority of our work takes place and our UI components are often c
     position: relative;
     display: block;
     line-height: 1.5; }
+    .main-menu .menu > ul > li .children li.page_item:hover > a,
+    .main-menu .menu > li .sub-menu li.menu-item:hover > a {
+      color: #dee2ee; }
     .main-menu .menu > ul > li .children li.page_item.page_item_has_children > a:before, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children > a:before,
     .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children > a:before,
     .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children > a:before {
@@ -8717,7 +8716,8 @@ This is where majority of our work takes place and our UI components are often c
     .main-menu .menu > ul > li .children li.page_item a,
     .main-menu .menu > li .sub-menu li.menu-item a {
       display: block;
-      padding: 0.625rem 1.25rem; }
+      color: #434f73;
+      padding: 0.3125rem 0; }
     .main-menu .menu > ul > li .children li.page_item span.menu-item-text:after,
     .main-menu .menu > li .sub-menu li.menu-item span.menu-item-text:after {
       display: none; }
@@ -9374,7 +9374,8 @@ utilities and helper classes with ability to override anything which goes before
   display: block;
   min-height: 0;
   line-height: initial;
-  padding: 0.3125rem 0.9375rem; }
+  padding: 0.3125rem 0.9375rem;
+  color: #434f73; }
   .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
     color: #dee2ee;
     background-color: transparent; }
