@@ -6906,7 +6906,7 @@ a, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .slick-dots li, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .slick-dots li, #join-testnet:before, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
@@ -9328,6 +9328,24 @@ utilities and helper classes with ability to override anything which goes before
   cursor: -ms-grabbing;
   cursor: grabbing; }
 
+#join-testnet {
+  position: relative;
+  background-image: linear-gradient(-123deg, #F66B50 0%, #FFC44D 100%); }
+  #join-testnet:before {
+    content: '';
+    position: absolute;
+    top: 0.125rem;
+    right: 0.125rem;
+    height: calc(100% - 0.25rem);
+    width: calc(100% - 0.25rem);
+    z-index: -1;
+    border-radius: 0.5rem;
+    background-color: #272f4b; }
+  #join-testnet:hover {
+    color: #272f4b !important; }
+  #join-testnet:hover:before {
+    width: 0; }
+
 .nice-select {
   font-family: 'Quicksand';
   text-transform: lowercase;
@@ -10913,7 +10931,7 @@ utilities and helper classes with ability to override anything which goes before
   .hidden-lg-up {
     display: none !important; }
     .site-header .site-branding {
-      width: 20%; }
+      width: 10%; }
       .site-header .site-branding img {
         max-width: none; }
     .tomochain-image-carousel .slick-slide {

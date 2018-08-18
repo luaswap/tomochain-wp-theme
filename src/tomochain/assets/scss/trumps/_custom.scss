@@ -92,3 +92,30 @@
     cursor: -ms-grabbing;
     cursor: grabbing;
 }
+
+#join-testnet {
+    position: relative;
+    background-image: linear-gradient(-123deg, #F66B50 0%, #FFC44D 100%);
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 2px;
+        right: 2px;
+        height: calc(100% - 4px);
+        width: calc(100% - 4px);
+        z-index: -1;
+        border-radius: 8px;
+        background-color: #272f4b;
+
+        @extend %transit;
+    }
+
+    &:hover {
+        color: #272f4b !important;
+    }
+
+    &:hover:before {
+        width: 0;
+    }
+}
