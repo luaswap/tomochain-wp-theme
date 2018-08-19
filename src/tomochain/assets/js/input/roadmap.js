@@ -31,14 +31,16 @@
                 ]
             });
 
-            slider.on('wheel', function(e) {
-                e.preventDefault();
+            if ($(window).width() >= 426) {
+                slider.on('wheel', function(e) {
+                    e.preventDefault();
 
-                if (e.originalEvent.deltaY < 0) {
-                    $(this).slick('slickNext');
-                } else {
-                    $(this).slick('slickPrev');
-                }
-            });
+                    if (e.originalEvent.deltaY < 0) {
+                        $(this).slick('slickNext');
+                    } else {
+                        $(this).slick('slickPrev');
+                    }
+                });
+            }
         }
 })(jQuery);
