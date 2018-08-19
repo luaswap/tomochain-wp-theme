@@ -41,6 +41,7 @@ function tomochain_get_pages_ids_from_template($name) {
     $pages = get_pages( array(
         'meta_key'   => '_wp_page_template',
         'meta_value' => $name . '.php',
+        'lang'       => 'en'
     ) );
 
     $arr = array();
