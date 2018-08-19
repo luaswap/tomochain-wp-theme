@@ -9309,7 +9309,8 @@ utilities and helper classes with ability to override anything which goes before
   padding-right: 0.9375rem;
   background-color: transparent;
   border: none;
-  border-radius: 0; }
+  border-radius: 0;
+  height: 2.5rem; }
   .nice-select:after {
     content: '\e900';
     font-size: 0.3125rem;
