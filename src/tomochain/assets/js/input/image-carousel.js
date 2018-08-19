@@ -34,10 +34,10 @@
                         },
                     },
                     {
-                    breakpoint: 544,
-                    settings  : {
-                            slidesToShow  : 1
-                    },
+                        breakpoint: 544,
+                        settings  : {
+                            slidesToShow  : 2
+                        },
                     }
                 ],
             };
@@ -47,14 +47,14 @@
                     breakpoint: 1200,
                     settings  : {
                         adaptiveHeight: true,
-                        slidesToShow  : 1
+                        slidesToShow  : 2
                     },
                 },
                 {
                     breakpoint: 544,
                     settings  : {
                         adaptiveHeight: true,
-                        slidesToShow  : 1
+                        slidesToShow  : 2
                     },
                 }];
             }
