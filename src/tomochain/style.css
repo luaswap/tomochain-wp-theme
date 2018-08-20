@@ -8641,9 +8641,6 @@ This is where majority of our work takes place and our UI components are often c
       -webkit-transform-origin: 100% 50%;
               transform-origin: 100% 50%;
       background-color: #e68b71; }
-  .main-menu .menu li.page_item:hover > a,
-  .main-menu .menu li.menu-item:hover > a {
-    color: #e68b71; }
   .main-menu .menu li.page_item:hover span.menu-item-text:after,
   .main-menu .menu li.menu-item:hover span.menu-item-text:after {
     -webkit-transform: scale3d(1, 1, 1);
@@ -9380,6 +9377,8 @@ utilities and helper classes with ability to override anything which goes before
     margin: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-box-shadow: none;
+            box-shadow: none;
     background-color: transparent; }
   .nice-select.open .list {
     top: 100%; }
