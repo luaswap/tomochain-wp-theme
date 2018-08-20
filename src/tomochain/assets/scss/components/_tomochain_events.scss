@@ -6,7 +6,7 @@
 
     &:hover {
 
-        .event-thumbnail {
+        .event-thumbnail img {
             transform: translateY(-10px);
         }
 
@@ -17,7 +17,6 @@
         }
 
         .event-thumbnail a:before {
-            background-image: linear-gradient(to top, #1e2242 0%, rgba(30, 34, 66, 0) 33%);
         }
     }
 
@@ -37,12 +36,15 @@
             max-width: 200px;
             opacity: 0;
             visibility: hidden;
+            background-image: linear-gradient(to top, #1e2242 0%, rgba(30, 34, 66, 0) 50%);
             transform: translateX(-50%);
+            z-index: 1;
 
             @extend %transit;
         }
 
         img {
+            backface-visibility: hidden;
             max-width: 200px;
             box-shadow: 0 2px 10px 5px #1e2242;
             border-radius: 8px;
@@ -54,12 +56,13 @@
     .event-date {
         position: absolute;
         left: 50%;
-        bottom: 0;
+        bottom: 10px;
         padding-bottom: 10px;
         opacity: 0;
         visibility: hidden;
         backface-visibility: hidden;
         transform: translateX(-50%);
+        z-index: 2;
 
         @extend %transit;
     }

@@ -8,8 +8,9 @@ var tomochain
             function () {
                 return {
                     init: function () {
-                        this.langSwitcher();
+                        this.header();
                         this.imageCarousel();
+                        this.langSwitcher();
                         this.mainMenu();
                         this.mobileMenu();
                         this.roadmap();
@@ -20,6 +21,14 @@ var tomochain
         )
     }
 )(jQuery);
+(
+    function ($) {
+        tomochain.header = function () {
+            $('.site-header').headroom();
+        }
+    }
+)(jQuery);
+
 (function( $ ) {
     tomochain.imageCarousel = function() {
         $( '.tomochain-image-carousel' ).each( function() {

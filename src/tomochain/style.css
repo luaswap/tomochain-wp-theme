@@ -6901,7 +6901,7 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
-a, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
+a, .site-header, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
 .main-menu .menu li.menu-item.page_item_has_children > a:before,
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
@@ -8402,6 +8402,22 @@ This is the first layer of classes and should be agnostically named
   100% {
     background-position: 43% 0%; } }
 
+@-webkit-keyframes sliderButtonAnimation {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
+@keyframes sliderButtonAnimation {
+  0% {
+    background-position: 0% 50%; }
+  50% {
+    background-position: 100% 50%; }
+  100% {
+    background-position: 0% 50%; } }
+
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%; }
@@ -8546,6 +8562,29 @@ This is where majority of our work takes place and our UI components are often c
       display: inline-block;
       vertical-align: middle;
       text-align: left; }
+  .site-header.headroom--not-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    will-change: transform;
+    padding: 0;
+    z-index: 999;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    background-color: #202741; }
+    .admin-bar .site-header.headroom--not-top {
+      top: 2rem; }
+    .site-header.headroom--not-top .custom-logo {
+      padding: 0;
+      max-width: 2.1875rem; }
+    .site-header.headroom--not-top .main-menu .menu > ul > li > a,
+    .site-header.headroom--not-top .main-menu .menu > li > a {
+      height: 3.125rem;
+      line-height: 3.125rem; }
+  .site-header.headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
 
 .tomochain-image-carousel {
   margin: 1.875rem 0; }
@@ -8616,9 +8655,6 @@ This is where majority of our work takes place and our UI components are often c
       -webkit-transform-origin: 100% 50%;
               transform-origin: 100% 50%;
       background-color: #e68b71; }
-  .main-menu .menu li.page_item:hover > a,
-  .main-menu .menu li.menu-item:hover > a {
-    color: #e68b71; }
   .main-menu .menu li.page_item:hover span.menu-item-text:after,
   .main-menu .menu li.menu-item:hover span.menu-item-text:after {
     -webkit-transform: scale3d(1, 1, 1);
@@ -8961,16 +8997,13 @@ This is where majority of our work takes place and our UI components are often c
 .tomochain-events-item {
   text-align: center;
   margin-bottom: 3.75rem; }
-  .tomochain-events-item:hover .event-thumbnail {
+  .tomochain-events-item:hover .event-thumbnail img {
     -webkit-transform: translateY(-0.625rem);
             transform: translateY(-0.625rem); }
   .tomochain-events-item:hover .event-thumbnail a:before,
   .tomochain-events-item:hover .event-date {
     opacity: 1;
     visibility: visible; }
-  .tomochain-events-item:hover .event-thumbnail a:before {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#1e2242), color-stop(33%, rgba(30, 34, 66, 0)));
-    background-image: linear-gradient(to top, #1e2242 0%, rgba(30, 34, 66, 0) 33%); }
   .tomochain-events-item .event-thumbnail {
     position: relative;
     margin-bottom: -8.75rem; }
@@ -8984,9 +9017,14 @@ This is where majority of our work takes place and our UI components are often c
       max-width: 12.5rem;
       opacity: 0;
       visibility: hidden;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#1e2242), color-stop(50%, rgba(30, 34, 66, 0)));
+      background-image: linear-gradient(to top, #1e2242 0%, rgba(30, 34, 66, 0) 50%);
       -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
+              transform: translateX(-50%);
+      z-index: 1; }
     .tomochain-events-item .event-thumbnail img {
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
       max-width: 12.5rem;
       -webkit-box-shadow: 0 0.125rem 0.625rem 0.3125rem #1e2242;
               box-shadow: 0 0.125rem 0.625rem 0.3125rem #1e2242;
@@ -8994,14 +9032,15 @@ This is where majority of our work takes place and our UI components are often c
   .tomochain-events-item .event-date {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 0.625rem;
     padding-bottom: 0.625rem;
     opacity: 0;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
+            transform: translateX(-50%);
+    z-index: 2; }
   .tomochain-events-item .event-info {
     padding: 10rem 1.875rem 1.875rem;
     max-width: 15.625rem;
@@ -9287,7 +9326,10 @@ utilities and helper classes with ability to override anything which goes before
 
 .slider-button {
   position: relative;
-  background-image: linear-gradient(-123deg, #F66B50 0%, #FFC44D 100%); }
+  background-image: linear-gradient(-123deg, #ffc44d 0%, #f66b50 100%);
+  background-size: 400% 400%;
+  -webkit-animation: sliderButtonAnimation 3s ease infinite;
+          animation: sliderButtonAnimation 3s ease infinite; }
   .slider-button:before {
     content: '';
     position: absolute;
@@ -9296,7 +9338,7 @@ utilities and helper classes with ability to override anything which goes before
     height: calc(100% - 0.25rem);
     width: calc(100% - 0.25rem);
     z-index: -1;
-    border-radius: 0.5rem;
+    border-radius: 0.375rem;
     background-color: #272f4b; }
   .slider-button:hover {
     color: #272f4b !important; }
@@ -9305,6 +9347,9 @@ utilities and helper classes with ability to override anything which goes before
   .slider-button.slider-button-2:before {
     border-radius: 0.5rem;
     background-color: #0d0c27 !important; }
+
+.wpb_revslider_element.homepage-slider {
+  min-height: 43.4375rem; }
 
 .nice-select {
   font-family: 'Quicksand';
@@ -9341,6 +9386,8 @@ utilities and helper classes with ability to override anything which goes before
     margin: 0;
     -webkit-transform: translateY(0);
             transform: translateY(0);
+    -webkit-box-shadow: none;
+            box-shadow: none;
     background-color: transparent; }
   .nice-select.open .list {
     top: 100%; }
