@@ -8958,16 +8958,13 @@ This is where majority of our work takes place and our UI components are often c
 .tomochain-events-item {
   text-align: center;
   margin-bottom: 3.75rem; }
-  .tomochain-events-item:hover .event-thumbnail {
+  .tomochain-events-item:hover .event-thumbnail img {
     -webkit-transform: translateY(-0.625rem);
             transform: translateY(-0.625rem); }
   .tomochain-events-item:hover .event-thumbnail a:before,
   .tomochain-events-item:hover .event-date {
     opacity: 1;
     visibility: visible; }
-  .tomochain-events-item:hover .event-thumbnail a:before {
-    background-image: -webkit-gradient(linear, left bottom, left top, from(#1e2242), color-stop(33%, rgba(30, 34, 66, 0)));
-    background-image: linear-gradient(to top, #1e2242 0%, rgba(30, 34, 66, 0) 33%); }
   .tomochain-events-item .event-thumbnail {
     position: relative;
     margin-bottom: -8.75rem; }
@@ -8981,9 +8978,14 @@ This is where majority of our work takes place and our UI components are often c
       max-width: 12.5rem;
       opacity: 0;
       visibility: hidden;
+      background-image: -webkit-gradient(linear, left bottom, left top, from(#1e2242), color-stop(50%, rgba(30, 34, 66, 0)));
+      background-image: linear-gradient(to top, #1e2242 0%, rgba(30, 34, 66, 0) 50%);
       -webkit-transform: translateX(-50%);
-              transform: translateX(-50%); }
+              transform: translateX(-50%);
+      z-index: 1; }
     .tomochain-events-item .event-thumbnail img {
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
       max-width: 12.5rem;
       -webkit-box-shadow: 0 0.125rem 0.625rem 0.3125rem #1e2242;
               box-shadow: 0 0.125rem 0.625rem 0.3125rem #1e2242;
@@ -8991,14 +8993,15 @@ This is where majority of our work takes place and our UI components are often c
   .tomochain-events-item .event-date {
     position: absolute;
     left: 50%;
-    bottom: 0;
+    bottom: 0.625rem;
     padding-bottom: 0.625rem;
     opacity: 0;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
             backface-visibility: hidden;
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
+            transform: translateX(-50%);
+    z-index: 2; }
   .tomochain-events-item .event-info {
     padding: 10rem 1.875rem 1.875rem;
     max-width: 15.625rem;
