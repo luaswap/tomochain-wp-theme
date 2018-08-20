@@ -56,10 +56,10 @@ var tomochain
                         },
                     },
                     {
-                    breakpoint: 544,
-                    settings  : {
-                            slidesToShow  : 1
-                    },
+                        breakpoint: 544,
+                        settings  : {
+                            slidesToShow  : 2
+                        },
                     }
                 ],
             };
@@ -69,14 +69,14 @@ var tomochain
                     breakpoint: 1200,
                     settings  : {
                         adaptiveHeight: true,
-                        slidesToShow  : 1
+                        slidesToShow  : 2
                     },
                 },
                 {
                     breakpoint: 544,
                     settings  : {
                         adaptiveHeight: true,
-                        slidesToShow  : 1
+                        slidesToShow  : 2
                     },
                 }];
             }
@@ -190,15 +190,17 @@ var tomochain
                 ]
             });
 
-            slider.on('wheel', function(e) {
-                e.preventDefault();
+            if ($(window).width() >= 426) {
+                slider.on('wheel', function(e) {
+                    e.preventDefault();
 
-                if (e.originalEvent.deltaY < 0) {
-                    $(this).slick('slickNext');
-                } else {
-                    $(this).slick('slickPrev');
-                }
-            });
+                    if (e.originalEvent.deltaY < 0) {
+                        $(this).slick('slickNext');
+                    } else {
+                        $(this).slick('slickPrev');
+                    }
+                });
+            }
         }
 })(jQuery);
 

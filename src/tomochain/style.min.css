@@ -8402,31 +8402,6 @@ This is the first layer of classes and should be agnostically named
   100% {
     background-position: 43% 0%; } }
 
-@-webkit-keyframes fadeInUpTomo {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 25%, 0);
-            transform: translate3d(0, 25%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); } }
-
-@keyframes fadeInUpTomo {
-  from {
-    opacity: 0;
-    -webkit-transform: translate3d(0, 25%, 0);
-            transform: translate3d(0, 25%, 0); }
-  to {
-    opacity: 1;
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0); } }
-
-.wpb_fadeInUp,
-.fadeInUp {
-  -webkit-animation-name: fadeInUpTomo !important;
-          animation-name: fadeInUpTomo !important; }
-
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%; }
@@ -8982,25 +8957,7 @@ This is where majority of our work takes place and our UI components are often c
 
 .tomochain-events-item {
   text-align: center;
-  -webkit-animation-timing-function: cubic-bezier(0, 0, 0.355, 1);
-          animation-timing-function: cubic-bezier(0, 0, 0.355, 1);
-  -webkit-animation-duration: 2s;
-          animation-duration: 2s;
-  -webkit-animation-fill-mode: both;
-          animation-fill-mode: both;
   margin-bottom: 3.75rem; }
-  .tomochain-events-item:nth-of-type(1) {
-    -webkit-animation-delay: .5s;
-            animation-delay: .5s; }
-  .tomochain-events-item:nth-of-type(2) {
-    -webkit-animation-delay: .75s;
-            animation-delay: .75s; }
-  .tomochain-events-item:nth-of-type(3) {
-    -webkit-animation-delay: 1s;
-            animation-delay: 1s; }
-  .tomochain-events-item:nth-of-type(4) {
-    -webkit-animation-delay: 1.25s;
-            animation-delay: 1.25s; }
   .tomochain-events-item:hover .event-thumbnail {
     -webkit-transform: translateY(-0.625rem);
             transform: translateY(-0.625rem); }
@@ -9349,7 +9306,8 @@ utilities and helper classes with ability to override anything which goes before
   padding-right: 0.9375rem;
   background-color: transparent;
   border: none;
-  border-radius: 0; }
+  border-radius: 0;
+  height: 2.5rem; }
   .nice-select:after {
     content: '\e900';
     font-size: 0.3125rem;

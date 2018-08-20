@@ -22,13 +22,6 @@ function tomochain_get_param($param_name, $group = '', $dependency = '') {
     $param = array();
 
     switch ( $param_name ) {
-        case 'animation':
-            $param = array(
-                'type'       => 'animation_style',
-                'heading'    => esc_html__( 'Animation', 'tomochain-addons' ),
-                'param_name' => 'animation',
-            );
-            break;
         case 'css':
             $param = array(
                 'group'      => esc_html__( 'Design Options', 'tomochain-addons' ),

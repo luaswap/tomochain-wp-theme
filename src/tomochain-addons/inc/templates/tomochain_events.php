@@ -2,7 +2,6 @@
 /**
  * Shortcode attributes
  *
- * @var $animation
  * @var $el_class
  * @var $css
  * Shortcode class
@@ -41,7 +40,7 @@ if (function_exists('pll_get_term')) {
 <div class="<?php echo esc_attr( trim( $css_class ) ); ?>">
     <div class="row">
         <?php foreach($posts as $post): ?>
-            <div class="col-sm-6 col-lg-3 tomochain-events-item <?php echo $this->getCSSAnimation($animation)?>">
+            <div class="col-sm-6 col-lg-3 tomochain-events-item">
                 <div class="event-thumbnail">
                     <a href="<?php echo esc_url(get_permalink($post)); ?>">
                         <?php echo get_the_post_thumbnail($post, 'full'); ?>
