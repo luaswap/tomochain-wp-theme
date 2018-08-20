@@ -11448,6 +11448,9 @@ utilities and helper classes with ability to override anything which goes before
     margin-left: 91.66667%; }
   .hidden-xl-up {
     display: none !important; } }
+  @media (min-width: 90rem) {
+  .wpb_revslider_element.homepage-slider {
+    min-height: 43.4375rem; } }
   @media print {
   .d-print-none {
     display: none !important; }

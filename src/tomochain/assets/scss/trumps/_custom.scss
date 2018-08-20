@@ -121,3 +121,9 @@
         width: 0;
     }
 }
+
+.wpb_revslider_element.homepage-slider {
+    @media (min-width: 1440px) {
+        min-height: 695px;
+    }
+}
