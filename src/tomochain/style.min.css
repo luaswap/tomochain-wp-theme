@@ -6901,7 +6901,7 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
-a, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
+a, .site-header, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
 .main-menu .menu li.menu-item.page_item_has_children > a:before,
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
@@ -8562,6 +8562,29 @@ This is where majority of our work takes place and our UI components are often c
       display: inline-block;
       vertical-align: middle;
       text-align: left; }
+  .site-header.headroom--not-top {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    will-change: transform;
+    padding: 0;
+    z-index: 999;
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    background-color: #202741; }
+    .admin-bar .site-header.headroom--not-top {
+      top: 2rem; }
+    .site-header.headroom--not-top .custom-logo {
+      padding: 0;
+      max-width: 2.1875rem; }
+    .site-header.headroom--not-top .main-menu .menu > ul > li > a,
+    .site-header.headroom--not-top .main-menu .menu > li > a {
+      height: 3.125rem;
+      line-height: 3.125rem; }
+  .site-header.headroom--unpinned {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%); }
 
 .tomochain-image-carousel {
   margin: 1.875rem 0; }

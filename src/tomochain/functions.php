@@ -169,6 +169,18 @@ function tomochain_enqueue_libs() {
         array(),
         null,
         true );
+
+    wp_enqueue_script( 'headroom-js',
+        TOMOCHAIN_LIBS_URI . '/headroom-js/js/headroom.min.js',
+        array(),
+        null,
+        true );
+
+    wp_enqueue_script( 'jquery-headroom-js',
+        TOMOCHAIN_LIBS_URI . '/headroom-js/js/jquery.headroom.min.js',
+        array(),
+        null,
+        true );
 }
 add_action( 'wp_enqueue_scripts', 'tomochain_enqueue_libs', 1 );
 

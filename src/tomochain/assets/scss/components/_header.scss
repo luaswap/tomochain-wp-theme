@@ -3,6 +3,8 @@
     transition: all .5s ease, background 1.2s ease;
     padding: 20px 0;
 
+    @extend %transit;
+
     > .container > .row {
         display: table;
         margin: 0;
@@ -32,6 +34,37 @@
             vertical-align: middle;
             text-align: left;
         }
+    }
+
+    &.headroom--not-top {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        will-change: transform;
+        padding: 0;
+        z-index: 999;
+        transform: translateY(0);
+        background-color: #202741;
+
+        .admin-bar & {
+            top: 32px;
+        }
+
+        .custom-logo {
+            padding: 0;
+            max-width: 35px;
+        }
+
+        .main-menu .menu > ul > li > a,
+        .main-menu .menu > li > a {
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+
+    &.headroom--unpinned {
+        transform: translateY(-100%);
     }
 
     @include media-breakpoint-up(lg) {
