@@ -8525,25 +8525,14 @@ This is where majority of our work takes place and our UI components are often c
 .site-footer {
   position: relative;
   z-index: 2;
-  background-image: linear-gradient(-225deg, #242c47 0%, #1e243d 100%); }
+  background: url(assets/images/bg-footer.png) no-repeat;
+  background-size: cover; }
   .site-footer:before {
     content: '';
     display: block;
     height: 0.125rem;
     background-image: -webkit-gradient(linear, left top, right top, from(#181631), color-stop(51%, #fcb168), to(#181c34));
     background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%); }
-  .site-footer:after {
-    content: '';
-    display: block;
-    position: absolute;
-    bottom: 0;
-    width: 100%;
-    height: 50%;
-    background: url(assets/images/footer-bg.png) no-repeat;
-    background-size: cover;
-    mix-blend-mode: multiply;
-    left: 0;
-    z-index: -1; }
   .site-footer .custom-logo {
     padding-top: 3.75rem;
     width: 2.5rem;
