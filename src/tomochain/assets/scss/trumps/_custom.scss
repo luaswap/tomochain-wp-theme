@@ -93,7 +93,7 @@
     cursor: grabbing;
 }
 
-#join-testnet {
+.slider-button {
     position: relative;
     background-image: linear-gradient(-123deg, #ffc44d 0%, #f66b50 100%);
     background-size: 400% 400%;
@@ -119,6 +119,11 @@
 
     &:hover:before {
         width: 0;
+    }
+
+    &.slider-button-2:before {
+        border-radius: 8px;
+        background-color: #0d0c27 !important;
     }
 }
 
