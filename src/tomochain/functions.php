@@ -225,6 +225,9 @@ add_action( 'wp_enqueue_scripts', 'tomochain_scripts' );
  */
 require TOMOCHAIN_THEME_DIR . '/inc/widgets/wph-widget-class.php';
 require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-address.php';
+if (defined('SENDGRID_CATEGORY')) {
+    require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-sendgrid.php';
+}
 
 /**
  * Add Theme Options page
