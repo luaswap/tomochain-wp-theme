@@ -73,19 +73,11 @@ if ( ! class_exists( 'TomoChain_Sendgrid_Widget' ) ) {
             $success_text     = isset( $instance['success_text'] ) ? $instance['success_text'] : '';
 
             echo '' . $args['before_widget'];
-            $this->display_form();
-            echo '' . $args['after_widget'];
-        }
-
-        private function display_form() {
-
             echo '<form method="post" id="sendgrid_mc_email_form" class="mc_email_form" action="#sendgrid_mc_email_subscribe">';
-            echo '<div class="sendgrid_mc_fields">';
-            echo '  <div class="sendgrid_mc_input_div">';
-            echo '    <input class="sendgrid_mc_input sendgrid_mc_input_email" id="sendgrid_mc_email" name="sendgrid_mc_email" type="text" value="" required/>';
-            echo '  </div>';
-            echo '</div>';
+            echo '  <input class="sendgrid_mc_input sendgrid_mc_input_email" id="sendgrid_mc_email" name="sendgrid_mc_email" type="text" value="" required placeholder="' . $text . '" />';
+            echo '  <button class="sendgrid_mc_button" type="submit" id="sendgrid_mc_email_submit">' . esc_html__('Subscribe', 'tomochain') . '</button>';
             echo '</form>';
+            echo '' . $args['after_widget'];
         }
     }
 }
