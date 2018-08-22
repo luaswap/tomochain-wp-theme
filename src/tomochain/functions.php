@@ -286,3 +286,12 @@ if ( function_exists('pll_languages_list') ) {
 	add_action('wpml_loaded', '__return_true', 10, 0);
 	do_action('wpml_loaded');
 }
+
+/**
+ * Remove default page of SendGrid plugin
+ */
+if (defined('SENDGRID_CATEGORY')) {
+    remove_action( 'init', 'sg_create_subscribe_general_error_page' );
+    remove_action( 'init', 'sg_create_subscribe_missing_token_error_page' );
+    remove_action( 'init', 'sg_create_subscribe_invalid_token_error_page' );
+}
