@@ -211,7 +211,7 @@ function tomochain_scripts() {
     wp_localize_script( 'tomochain-js',
         'tomochainConfigs',
         array(
-            'placeholder_subscribe_text' => esc_html__( 'Enter your email to get more details', 'tomochain' )
+            'ajax_url' => admin_url( 'admin-ajax.php' )
         ));
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -272,7 +272,7 @@ function my_acf_init() {
 }
 add_action('acf/init', 'my_acf_init');
 
-/*
+/**
  * Code Snippet to make Revolution Slider enable WPML support when Polylang
  * is enabled. Polylang has the required WPML compatibility functions to
  * make Revslider work.

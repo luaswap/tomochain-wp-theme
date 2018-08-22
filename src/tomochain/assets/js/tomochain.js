@@ -14,7 +14,7 @@ var tomochain
                         this.mainMenu();
                         this.mobileMenu();
                         this.roadmap();
-                        this.utils();
+                        this.sendgrid();
                     }
                 }
             }()
@@ -354,16 +354,32 @@ var tomochain
 
 (
     function ($) {
-        tomochain.utils = function () {
-            this.addPlaceHolder();
-        },
-        // add place holder text for subscribe widget
-        tomochain.addPlaceHolder = function () {
-            var text = tomochainConfigs.placeholder_subscribe_text;
+        tomochain.sendgrid = function () {
+            $('#tomo-sendgrid-form').on('submit', function(e) {
+                e.preventDefault();
 
-            if (text) {
-                $('#sendgrid_mc_email').attr('placeholder', text);
-            }
+                var $form = $(this),
+                    email = $form.find('#tomo-sendgrid-email').val();
+
+                $form.addClass('loading');
+
+                $.ajax({
+                    type: 'POST',
+                    url: tomochainConfigs.ajax_url,
+                    data: {
+                        action: 'tomochain_process_subscription',
+                        email: email
+                    },
+                    success: function (response) {
+                        $form.removeClass('loading');
+
+                        if (response.code && response.message) {
+                            $form.addClass(response.code);
+                            $('.tomo-sendgrid-text').text(response.message).addClass('show');
+                        }
+                    }
+                });
+            });
         }
     }
 )(jQuery);

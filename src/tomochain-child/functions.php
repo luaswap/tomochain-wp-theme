@@ -53,7 +53,7 @@ function tomochain_get_pages_ids_from_template($name) {
     return $arr;
 }
 
-add_action( 'template_redirect', 'tomochain_redirect');
+// add_action( 'template_redirect', 'tomochain_redirect');
 function tomochain_redirect() {
 
     if (is_user_logged_in()) {

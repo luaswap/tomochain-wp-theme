@@ -24,59 +24,109 @@
     }
 }
 
-.widget_sendgrid_nlvx_widget {
+.widget_tomo_sendgrid {
     margin-bottom: 0;
 
-    .widget-title,
-    .sendgrid_widget_text,
-    .sendgrid_mc_label_div {
-        display: none;
+    .tomo-sendgrid-text {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0;
+
+        @extend %transit;
+
+        &.show {
+            margin-bottom: 15px;
+        }
     }
 
-    .sendgrid_widget_text.sendgrid_widget_success {
-        display: block;
-    }
-
-    .mc_email_form {
+    #tomo-sendgrid-form {
         position: relative;
-        max-width: 530px;
+        max-width: 70%;
         padding-top: 0 !important;
         margin: 0 auto;
+
+        &.loading {
+            #tomo-sendgrid-button:after {
+                content: url(assets/images/loading-alt.svg);
+            }
+        }
+
+        &.email_invalid {
+            #tomo-sendgrid-button:after {
+                content: fa-content($fa-var-exclamation);
+                font-size: 16px;
+
+                @extend .fas;
+                @extend %transit;
+            }
+        }
+
+        &.email_error_send {
+            #tomo-sendgrid-button:after {
+                content: fa-content($fa-var-times);
+                font-size: 16px;
+
+                @extend .fas;
+                @extend %transit;
+            }
+        }
+
+        &.email_sent,
+        &.email_error_sent {
+            #tomo-sendgrid-button:after {
+                content: fa-content($fa-var-check);
+                font-size: 16px;
+
+                @extend .fas;
+                @extend %transit;
+            }
+        }
     }
 
-    .sendgrid_mc_fields {
-        padding: 0 !important;
+    #tomo-sendgrid-email {
+        padding: 9px 50px 10px 25px;
     }
 
-    .sendgrid_mc_input {
-        padding: 9px 40px 10px 15px;
-    }
-
-    .sendgrid_mc_button_div:after {
-        content: '\e901';
-        font-size: 10px;
+    #tomo-sendgrid-button {
+        font-size: 0;
+        border: none;
+        cursor: pointer;
         position: absolute;
         top: 50%;
-        right: 10px;
+        right: 0;
         transform: translateY(-50%);
-        color: #6a6beb;
-        @extend %tm-icon;
+        height: 100%;
+        width: 50px;
+        background-color: transparent;
     }
 
-    .sendgrid_mc_button {
-        display: none;
+    #tomo-sendgrid-button:after {
+        content: '\e901';
+        font-size: 10px;
+        color: #6a6beb;
+
+        @extend %tm-icon;
     }
 
     @include media-breakpoint-up(lg) {
 
-        .sendgrid_mc_input {
-            font-size: 16px;
-            padding: 15px 80px 15px 40px;
+        .tomo-sendgrid-text,
+        #tomo-sendgrid-form {
+            max-width: 530px;
         }
 
-        .sendgrid_mc_button_div:after {
+        #tomo-sendgrid-email {
+            font-size: 16px;
+            padding: 15px 70px 15px 40px;
+        }
+
+        #tomo-sendgrid-button {
+            padding-right: 40px;
+        }
+
+        #tomo-sendgrid-button:after {
             font-size: 12px;
-            right: 40px;
         }
     }
 }

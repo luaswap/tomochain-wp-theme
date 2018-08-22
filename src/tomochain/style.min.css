@@ -1002,6 +1002,10 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
 .tomochain-events-item .event-venue:before,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after,
 .far,
 .fal,
 .fab {
@@ -1097,6 +1101,10 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-left.menu-back:before,
 .tomochain-events-item .fa-pull-left.event-venue:before,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid .fa-pull-left#tomo-sendgrid-button:after,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send .fa-pull-left#tomo-sendgrid-button:after,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_sent .fa-pull-left#tomo-sendgrid-button:after,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent .fa-pull-left#tomo-sendgrid-button:after,
 .far.fa-pull-left,
 .fal.fa-pull-left,
 .fab.fa-pull-left {
@@ -1116,6 +1124,10 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-right.menu-back:before,
 .tomochain-events-item .fa-pull-right.event-venue:before,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid .fa-pull-right#tomo-sendgrid-button:after,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send .fa-pull-right#tomo-sendgrid-button:after,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_sent .fa-pull-right#tomo-sendgrid-button:after,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent .fa-pull-right#tomo-sendgrid-button:after,
 .far.fa-pull-right,
 .fal.fa-pull-right,
 .fab.fa-pull-right {
@@ -4715,7 +4727,11 @@ readers do not read off random characters that represent icons */
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
-.tomochain-events-item .event-venue:before {
+.tomochain-events-item .event-venue:before,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after,
+.widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after {
   font-family: 'Font Awesome 5 Free';
   font-weight: 900; }
 
@@ -6906,11 +6922,11 @@ a, .site-header, .main-menu .menu li.page_item.page_item_has_children > a:before
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
-.widget_sendgrid_nlvx_widget .sendgrid_mc_button_div:after, .nice-select:after {
+.widget_tomo_sendgrid #tomo-sendgrid-button:after, .nice-select:after {
   font-family: 'tomochain';
   font-weight: normal;
   font-style: normal;
@@ -9221,34 +9237,49 @@ This is where majority of our work takes place and our UI components are often c
     margin: 0 auto;
     max-width: 20rem; }
 
-.widget_sendgrid_nlvx_widget {
+.widget_tomo_sendgrid {
   margin-bottom: 0; }
-  .widget_sendgrid_nlvx_widget .widget-title,
-  .widget_sendgrid_nlvx_widget .sendgrid_widget_text,
-  .widget_sendgrid_nlvx_widget .sendgrid_mc_label_div {
-    display: none; }
-  .widget_sendgrid_nlvx_widget .sendgrid_widget_text.sendgrid_widget_success {
-    display: block; }
-  .widget_sendgrid_nlvx_widget .mc_email_form {
+  .widget_tomo_sendgrid .tomo-sendgrid-text {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0; }
+    .widget_tomo_sendgrid .tomo-sendgrid-text.show {
+      margin-bottom: 0.9375rem; }
+  .widget_tomo_sendgrid #tomo-sendgrid-form {
     position: relative;
-    max-width: 33.125rem;
+    max-width: 70%;
     padding-top: 0 !important;
     margin: 0 auto; }
-  .widget_sendgrid_nlvx_widget .sendgrid_mc_fields {
-    padding: 0 !important; }
-  .widget_sendgrid_nlvx_widget .sendgrid_mc_input {
-    padding: 0.5625rem 2.5rem 0.625rem 0.9375rem; }
-  .widget_sendgrid_nlvx_widget .sendgrid_mc_button_div:after {
-    content: '\e901';
-    font-size: 0.625rem;
+    .widget_tomo_sendgrid #tomo-sendgrid-form.loading #tomo-sendgrid-button:after {
+      content: url(assets/images/loading-alt.svg); }
+    .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after {
+      content: "\f12a";
+      font-size: 1rem; }
+    .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after {
+      content: "\f00d";
+      font-size: 1rem; }
+    .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after {
+      content: "\f00c";
+      font-size: 1rem; }
+  .widget_tomo_sendgrid #tomo-sendgrid-email {
+    padding: 0.5625rem 3.125rem 0.625rem 1.5625rem; }
+  .widget_tomo_sendgrid #tomo-sendgrid-button {
+    font-size: 0;
+    border: none;
+    cursor: pointer;
     position: absolute;
     top: 50%;
-    right: 0.625rem;
+    right: 0;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
+    height: 100%;
+    width: 3.125rem;
+    background-color: transparent; }
+  .widget_tomo_sendgrid #tomo-sendgrid-button:after {
+    content: '\e901';
+    font-size: 0.625rem;
     color: #6a6beb; }
-  .widget_sendgrid_nlvx_widget .sendgrid_mc_button {
-    display: none; }
 
 /*
 Trumps
@@ -10951,12 +10982,16 @@ utilities and helper classes with ability to override anything which goes before
       text-align: left; }
     .main-menu {
       text-align: center; }
-    .widget_sendgrid_nlvx_widget .sendgrid_mc_input {
+    .widget_tomo_sendgrid .tomo-sendgrid-text,
+    .widget_tomo_sendgrid #tomo-sendgrid-form {
+      max-width: 33.125rem; }
+    .widget_tomo_sendgrid #tomo-sendgrid-email {
       font-size: 1rem;
-      padding: 0.9375rem 5rem 0.9375rem 2.5rem; }
-    .widget_sendgrid_nlvx_widget .sendgrid_mc_button_div:after {
-      font-size: 0.75rem;
-      right: 2.5rem; } }
+      padding: 0.9375rem 4.375rem 0.9375rem 2.5rem; }
+    .widget_tomo_sendgrid #tomo-sendgrid-button {
+      padding-right: 2.5rem; }
+    .widget_tomo_sendgrid #tomo-sendgrid-button:after {
+      font-size: 0.75rem; } }
   @media (min-width: 75rem) {
   .d-xl-none {
     display: none !important; }
