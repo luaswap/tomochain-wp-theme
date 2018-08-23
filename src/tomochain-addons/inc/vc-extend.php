@@ -13,9 +13,10 @@ add_action('vc_after_init', 'tomochain_load_shortcodes');
 function tomochain_load_shortcodes() {
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-events.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-image-carousel.php';
-    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-social.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-list.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-roadmap.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-roadmap-item.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-social.php';
 }
 
 function tomochain_get_param($param_name, $group = '', $dependency = '') {
@@ -55,8 +56,22 @@ function tomochain_update_shortcodes() {
     vc_add_param( 'vc_custom_heading',
         array(
             'type'       => 'colorpicker',
-            'heading'    => esc_html('Line Color', 'tomochain-addons'),
+            'heading'    => esc_html( 'Line Color', 'tomochain-addons' ),
             'param_name' => 'line_color',
             'weight'     => 1
     ) );
+}
+
+function tomochain_get_shortcode_id($name) {
+    global $tomochain_shortcode_id;
+
+    if ( ! $tomochain_shortcode_id ) {
+        $tomochain_shortcode_id = 1;
+    }
+
+    return $name . '-' . ( $tomochain_shortcode_id ++ );
+}
+
+function tomochain_text2line( $str ) {
+    return trim( preg_replace( "/[\r\v\n\t]*/", '', $str ) );
 }

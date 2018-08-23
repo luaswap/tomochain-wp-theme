@@ -9090,6 +9090,38 @@ This is where majority of our work takes place and our UI components are often c
     .see-all-events a:hover {
       color: #dee2ee; }
 
+.tomochain-list {
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.tomochain-list__item {
+  position: relative;
+  font-weight: 300;
+  text-indent: 0.9375rem;
+  margin-bottom: 0.9375rem;
+  color: #c5cde3; }
+  .tomochain-list__item:before, .tomochain-list__item:after {
+    content: '';
+    position: absolute; }
+  .tomochain-list__item:before {
+    top: 0.5rem;
+    left: 0;
+    height: 0.375rem;
+    width: 0.375rem;
+    background-color: #2977c2;
+    border-radius: 0.1875rem; }
+  .tomochain-list__item:after {
+    opacity: 0.2;
+    top: 0.1875rem;
+    left: -0.25rem;
+    height: 0.9375rem;
+    width: 0.9375rem;
+    -webkit-filter: blur(0.5rem);
+            filter: blur(0.5rem);
+    border-radius: 100%;
+    background-image: radial-gradient(50% 112%, #ffb567 50%, #348099 100%); }
+
 .tomochain-roadmap {
   margin-bottom: 1.875rem; }
 
@@ -9384,37 +9416,6 @@ utilities and helper classes with ability to override anything which goes before
 
 .wpb_revslider_element.homepage-slider {
   min-height: 43.4375rem; }
-
-.tomochain-list {
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-  .tomochain-list li {
-    position: relative;
-    font-weight: 300;
-    text-indent: 0.9375rem;
-    margin-bottom: 0.9375rem;
-    color: #c5cde3; }
-    .tomochain-list li:before, .tomochain-list li:after {
-      content: '';
-      position: absolute; }
-    .tomochain-list li:before {
-      top: 0.5rem;
-      left: 0;
-      height: 0.375rem;
-      width: 0.375rem;
-      background-color: #2977c2;
-      border-radius: 0.1875rem; }
-    .tomochain-list li:after {
-      opacity: 0.2;
-      top: 0.1875rem;
-      left: -0.25rem;
-      height: 0.9375rem;
-      width: 0.9375rem;
-      -webkit-filter: blur(0.5rem);
-              filter: blur(0.5rem);
-      border-radius: 100%;
-      background-image: radial-gradient(50% 112%, #FFB567 50%, #348099 100%); }
 
 #posv-row {
   letter-spacing: 0.025em; }

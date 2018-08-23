@@ -1,0 +1,40 @@
+
+.tomochain-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.tomochain-list__item {
+    position: relative;
+    font-weight: 300;
+    text-indent: 15px;
+    margin-bottom: 15px;
+    color: #c5cde3;
+
+    &:before,
+    &:after {
+        content: '';
+        position: absolute;
+    }
+
+    &:before {
+        top: 8px;
+        left: 0;
+        height: 6px;
+        width: 6px;
+        background-color: #2977c2;
+        border-radius: 3px;
+    }
+
+    &:after {
+        opacity: 0.2;
+        top: 3px;
+        left: -4px;
+        height: 15px;
+        width: 15px;
+        filter: blur(8px);
+        border-radius: 100%;
+        background-image: radial-gradient(50% 112%, #ffb567 50%, #348099 100%);
+    }
+}
