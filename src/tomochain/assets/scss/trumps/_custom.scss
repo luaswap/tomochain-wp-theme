@@ -134,6 +134,11 @@
 // POSV page
 #posv-row {
     letter-spacing: 0.025em;
+    margin-bottom: 60px;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 0;
+    }
 }
 
 #posv-row .wpb_column:first-child {
@@ -174,8 +179,14 @@
         &:before {
             width: 700px;
             height: 500px;
-            top: -50px;
+            top: -100px;
             left: -160px;
         }
+    }
+}
+
+#tps-column {
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 90px;
     }
 }

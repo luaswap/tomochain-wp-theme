@@ -9418,7 +9418,8 @@ utilities and helper classes with ability to override anything which goes before
   min-height: 43.4375rem; }
 
 #posv-row {
-  letter-spacing: 0.025em; }
+  letter-spacing: 0.025em;
+  margin-bottom: 3.75rem; }
 
 #posv-row .wpb_column:first-child {
   position: relative;
@@ -10494,6 +10495,8 @@ utilities and helper classes with ability to override anything which goes before
     margin-left: 91.66667%; }
   .hidden-md-up {
     display: none !important; }
+    #posv-row {
+      margin-bottom: 0; }
   #posv-img {
     position: relative;
     z-index: 0; }
@@ -11049,7 +11052,9 @@ utilities and helper classes with ability to override anything which goes before
   #posv-img:before {
     width: 31.25rem;
     height: 25rem;
-    left: -6.25rem; } }
+    left: -6.25rem; }
+  #tps-column {
+    margin-bottom: 5.625rem; } }
   @media (min-width: 75rem) {
   .d-xl-none {
     display: none !important; }
@@ -11555,7 +11560,7 @@ utilities and helper classes with ability to override anything which goes before
     #posv-img:before {
       width: 43.75rem;
       height: 31.25rem;
-      top: -3.125rem;
+      top: -6.25rem;
       left: -10rem; } }
   @media print {
   .d-print-none {
