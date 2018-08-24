@@ -8546,6 +8546,7 @@ This is where majority of our work takes place and our UI components are often c
   .site-footer:before {
     content: '';
     display: block;
+    width: 100%;
     height: 0.125rem;
     background-image: -webkit-gradient(linear, left top, right top, from(#181631), color-stop(51%, #fcb168), to(#181c34));
     background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%); }
@@ -9424,6 +9425,18 @@ utilities and helper classes with ability to override anything which goes before
 #posv-row .wpb_column:first-child {
   position: relative;
   z-index: 2; }
+
+.vc_separator {
+  margin-bottom: 0 !important; }
+  .vc_separator .vc_sep_line {
+    border: none !important;
+    background-color: transparent !important; }
+  .vc_separator .vc_sep_holder {
+    height: 0.125rem !important; }
+  .vc_separator .vc_sep_holder_l {
+    height: 0.125rem;
+    background-image: -webkit-gradient(linear, left top, right top, from(#181631), color-stop(51%, #fcb168), to(#181c34));
+    background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%); }
 
 .nice-select {
   font-family: 'Quicksand';
@@ -11053,6 +11066,8 @@ utilities and helper classes with ability to override anything which goes before
     width: 31.25rem;
     height: 25rem;
     left: -6.25rem; }
+  #tps-row {
+    margin-bottom: 5.625rem; }
   #tps-column {
     margin-bottom: 5.625rem; } }
   @media (min-width: 75rem) {

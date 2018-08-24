@@ -185,8 +185,32 @@
     }
 }
 
+#tps-row {
+    @include media-breakpoint-up(lg) {
+        margin-bottom: 90px;
+    }
+}
+
 #tps-column {
     @include media-breakpoint-up(lg) {
         margin-bottom: 90px;
+    }
+}
+
+.vc_separator {
+    margin-bottom: 0 !important;
+
+    .vc_sep_line {
+        border: none !important;
+        background-color: transparent !important;
+    }
+
+    .vc_sep_holder {
+        height: 2px !important;
+    }
+
+    .vc_sep_holder_l {
+        height: 2px;
+        background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%);
     }
 }
