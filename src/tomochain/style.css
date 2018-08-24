@@ -9426,6 +9426,9 @@ utilities and helper classes with ability to override anything which goes before
   position: relative;
   z-index: 2; }
 
+#tps-column {
+  margin-bottom: 3.75rem; }
+
 .vc_separator {
   margin-bottom: 0 !important; }
   .vc_separator .vc_sep_line {
@@ -9437,6 +9440,17 @@ utilities and helper classes with ability to override anything which goes before
     height: 0.125rem;
     background-image: -webkit-gradient(linear, left top, right top, from(#181631), color-stop(51%, #fcb168), to(#181c34));
     background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%); }
+
+#double-validation-row {
+  max-height: 53.125rem;
+  padding-top: 3.75rem !important;
+  padding-bottom: 3.75rem !important; }
+
+#double-validation-column .vc_column-inner {
+  padding-right: 0; }
+
+#double-validation-text {
+  letter-spacing: .05em; }
 
 .nice-select {
   font-family: 'Quicksand';
@@ -10524,7 +10538,11 @@ utilities and helper classes with ability to override anything which goes before
       -webkit-box-shadow: 0.625rem 0.625rem 1.25rem 0.625rem #151a2d;
               box-shadow: 0.625rem 0.625rem 1.25rem 0.625rem #151a2d;
       border-radius: 0.375rem;
-      z-index: -1; } }
+      z-index: -1; }
+    #double-validation-row {
+      padding-top: 0 !important;
+      padding-bottom: 0 !important;
+      padding-right: 0 !important; } }
   @media (min-width: 62rem) {
   .d-lg-none {
     display: none !important; }
@@ -11068,8 +11086,10 @@ utilities and helper classes with ability to override anything which goes before
     left: -6.25rem; }
   #tps-row {
     margin-bottom: 5.625rem; }
-  #tps-column {
-    margin-bottom: 5.625rem; } }
+    #tps-column {
+      margin-bottom: 5.625rem; }
+  #double-validation-column .wpb_single_image {
+    padding-bottom: 9.375rem; } }
   @media (min-width: 75rem) {
   .d-xl-none {
     display: none !important; }
