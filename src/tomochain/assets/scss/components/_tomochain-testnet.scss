@@ -1,3 +1,15 @@
+.tomochain-testnet {
+    opacity: 0;
+    visibility: hidden;
+
+    @extend %transit;
+
+    &.slick-initialized {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
 .tomochain-testnet-item {
     padding: 25px 0;
     border: none !important;
