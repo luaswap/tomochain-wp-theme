@@ -28,35 +28,33 @@
             font-family: Quicksand;
             font-size: 14px;
             font-weight: 700;
+            margin-left: 10px;
+            margin-right: 10px;
             color: #6b6ced;
         }
 
+        a:before {
+            margin-right: 10px;
+            @extend .fas;
+        }
+
         a:hover {
-            color: #72B8fd;
+            color: #72b8fd;
+        }
+
+        @include media-breakpoint-up(md) {
+            a {
+                margin-left: 20px;
+                margin-right: 20px;
+            }
         }
     }
 
-    &__url {
-        margin-left: 20px;
-        margin-right: 20px;
-
-        &:before {
-            content: fa-content($fa-var-arrow-right);
-            margin-right: 10px;
-
-            @extend .fas;
-        }
+    &__run:before {
+        content: fa-content($fa-var-arrow-right);
     }
 
-    &__source-url {
-        margin-left: 20px;
-        margin-right: 20px;
-
-        &:before {
-            content: fa-content($fa-var-code);
-            margin-right: 10px;
-
-            @extend .fas;
-        }
+    &__source:before {
+        content: fa-content($fa-var-code);
     }
 }

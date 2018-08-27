@@ -9,7 +9,8 @@
   "devDependencies": {
     "jquery-nice-select": "^1.1.0",
     "slick-carousel": "^1.8.1",
-    "superfish": "^1.7.9"
+    "superfish": "^1.7.9",
+    "hint.css": "^2.5.0"
   },
   "install": {
     "options": {
@@ -28,6 +29,9 @@
       "woff": "{name}/fonts"
     },
     "sources": {
+      "hint.css": [
+        "bower_components/hint.css/hint.min.css"
+      ],
       "jquery-nice-select": [
         "bower_components/jquery-nice-select/css/nice-select.css",
         "bower_components/jquery-nice-select/js/jquery.nice-select.min.js"

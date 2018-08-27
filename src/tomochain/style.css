@@ -1001,9 +1001,9 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
-.tomochain-dapp__url:before,
-.tomochain-dapp__source-url:before,
+.tomochain-dapp__links a:before,
 .tomochain-events-item .event-venue:before,
+.tomochain-testnet-item__links a:before,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after,
@@ -1102,9 +1102,9 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-left.menu-back:before,
-.fa-pull-left.tomochain-dapp__url:before,
-.fa-pull-left.tomochain-dapp__source-url:before,
+.tomochain-dapp__links a.fa-pull-left:before,
 .tomochain-events-item .fa-pull-left.event-venue:before,
+.tomochain-testnet-item__links a.fa-pull-left:before,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid .fa-pull-left#tomo-sendgrid-button:after,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send .fa-pull-left#tomo-sendgrid-button:after,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent .fa-pull-left#tomo-sendgrid-button:after,
@@ -1127,9 +1127,9 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-right.menu-back:before,
-.fa-pull-right.tomochain-dapp__url:before,
-.fa-pull-right.tomochain-dapp__source-url:before,
+.tomochain-dapp__links a.fa-pull-right:before,
 .tomochain-events-item .fa-pull-right.event-venue:before,
+.tomochain-testnet-item__links a.fa-pull-right:before,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid .fa-pull-right#tomo-sendgrid-button:after,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send .fa-pull-right#tomo-sendgrid-button:after,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent .fa-pull-right#tomo-sendgrid-button:after,
@@ -4733,9 +4733,9 @@ readers do not read off random characters that represent icons */
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
-.tomochain-dapp__url:before,
-.tomochain-dapp__source-url:before,
+.tomochain-dapp__links a:before,
 .tomochain-events-item .event-venue:before,
+.tomochain-testnet-item__links a:before,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after,
@@ -6930,7 +6930,7 @@ a, .site-header, .main-menu .menu li.page_item.page_item_has_children > a:before
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
@@ -9044,21 +9044,17 @@ This is where majority of our work takes place and our UI components are often c
       font-family: Quicksand;
       font-size: 0.875rem;
       font-weight: 700;
+      margin-left: 0.625rem;
+      margin-right: 0.625rem;
       color: #6b6ced; }
+    .tomochain-dapp__links a:before {
+      margin-right: 0.625rem; }
     .tomochain-dapp__links a:hover {
-      color: #72B8fd; }
-  .tomochain-dapp__url {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem; }
-    .tomochain-dapp__url:before {
-      content: "\f061";
-      margin-right: 0.625rem; }
-  .tomochain-dapp__source-url {
-    margin-left: 1.25rem;
-    margin-right: 1.25rem; }
-    .tomochain-dapp__source-url:before {
-      content: "\f121";
-      margin-right: 0.625rem; }
+      color: #72b8fd; }
+  .tomochain-dapp__run:before {
+    content: "\f061"; }
+  .tomochain-dapp__source:before {
+    content: "\f121"; }
 
 .tomochain-events-item {
   text-align: center;
@@ -9285,6 +9281,54 @@ This is where majority of our work takes place and our UI components are often c
   -webkit-animation: roadmapAnimation 1.5s infinite;
           animation: roadmapAnimation 1.5s infinite; }
 
+.tomochain-testnet-item {
+  padding: 1.5625rem 0;
+  border: none !important;
+  border-bottom: 0.0625rem solid #3d4462 !important; }
+  .tomochain-testnet-item.slick-slide {
+    opacity: .3; }
+  .tomochain-testnet-item.slick-slide.slick-current {
+    opacity: 1; }
+  .tomochain-testnet-item__status {
+    display: inline-block;
+    vertical-align: middle;
+    font-family: Quicksand;
+    font-size: 0.75rem;
+    letter-spacing: .05em;
+    text-transform: uppercase;
+    padding: 0.25rem 0.625rem;
+    margin-right: 0.9375rem;
+    border-radius: 0.375rem;
+    border: 0.0625rem solid #6B6ced;
+    color: #eee; }
+  .tomochain-testnet-item__status--live {
+    border-color: #22d89e; }
+  .tomochain-testnet-item__title {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 300;
+    color: #eee;
+    width: calc(100% - 7.8125rem); }
+  .tomochain-testnet-item__links {
+    float: right;
+    margin-top: 0.3125rem; }
+    .tomochain-testnet-item__links div {
+      display: inline-block;
+      vertical-align: middle; }
+    .tomochain-testnet-item__links a {
+      font-size: 0;
+      color: #22d89e; }
+    .tomochain-testnet-item__links a:before {
+      font-size: 0.9375rem; }
+    .tomochain-testnet-item__links a:hover {
+      color: #eee; }
+  .tomochain-testnet-item__run {
+    margin-right: 1.25rem; }
+    .tomochain-testnet-item__run a:before {
+      content: "\f061"; }
+  .tomochain-testnet-item__source a:before {
+    content: "\f121"; }
+
 .vc_custom_heading {
   font-weight: 200; }
   .vc_custom_heading.text-align--right .heading-line {
@@ -9488,7 +9532,6 @@ utilities and helper classes with ability to override anything which goes before
     background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%); }
 
 #double-validation-row {
-  max-height: 53.125rem;
   padding-top: 3.75rem !important;
   padding-bottom: 3.75rem !important; }
 
@@ -10568,6 +10611,13 @@ utilities and helper classes with ability to override anything which goes before
     margin-left: 91.66667%; }
   .hidden-md-up {
     display: none !important; }
+      .tomochain-dapp__links a {
+        margin-left: 1.25rem;
+        margin-right: 1.25rem; }
+      .tomochain-testnet-item__status {
+        margin-right: 1.5625rem; }
+      .tomochain-testnet-item__title {
+        width: calc(100% - 8.75rem); }
     #posv-row {
       margin-bottom: 0; }
   #posv-img {
@@ -10586,6 +10636,7 @@ utilities and helper classes with ability to override anything which goes before
       border-radius: 0.375rem;
       z-index: -1; }
     #double-validation-row {
+      max-height: 53.125rem;
       padding-top: 0 !important;
       padding-bottom: 0 !important;
       padding-right: 0 !important; } }
@@ -11116,6 +11167,10 @@ utilities and helper classes with ability to override anything which goes before
       text-align: left; }
     .main-menu {
       text-align: center; }
+      .tomochain-testnet-item__title {
+        width: calc(100% - 11.25rem); }
+      .tomochain-testnet-item__run {
+        margin-right: 3.75rem; }
     .widget_tomo_sendgrid .tomo-sendgrid-text,
     .widget_tomo_sendgrid #tomo-sendgrid-form {
       max-width: 33.125rem; }

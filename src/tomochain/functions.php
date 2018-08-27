@@ -181,6 +181,8 @@ function tomochain_enqueue_libs() {
         array(),
         null,
         true );
+
+    wp_register_style( 'hint-css', TOMOCHAIN_LIBS_URI . '/hint.css/css/hint.min.css' );
 }
 add_action( 'wp_enqueue_scripts', 'tomochain_enqueue_libs', 1 );
 

@@ -15,6 +15,7 @@ var tomochain
                         this.mobileMenu();
                         this.roadmap();
                         this.sendgrid();
+                        this.testnet();
                     }
                 }
             }()
@@ -172,7 +173,7 @@ var tomochain
             var $roadmap = $('.tomochain-roadmap'),
                 index = $roadmap.find('.tomochain-roadmap-item--current').index();
 
-            var slider = $('.tomochain-roadmap').slick({
+            var slider = $roadmap.slick({
                 accessibility : false,
                 arrows: false,
                 infinite: false,
@@ -380,6 +381,28 @@ var tomochain
                     }
                 });
             });
+        }
+    }
+)(jQuery);
+
+(
+    function ($) {
+        tomochain.testnet = function () {
+            var $testnet = $('.tomochain-testnet');
+
+            $testnet.slick({
+                accessibility : false,
+                adaptiveHeight: true,
+                arrows: false,
+                centerMode: true,
+                centerPadding: '2px',
+                vertical: true,
+                slidesToScroll: 1,
+                slidesToShow: 3,
+                autoplay: true,
+                autoplaySpeed: 1000,
+                focusOnSelect: true
+            })
         }
     }
 )(jQuery);

@@ -18,6 +18,8 @@ function tomochain_load_shortcodes() {
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-roadmap.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-roadmap-item.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-social.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-testnet.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-testnet-item.php';
 }
 
 function tomochain_get_param($param_name, $group = '', $dependency = '') {

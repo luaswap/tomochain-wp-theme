@@ -15,6 +15,7 @@ var tomochain
                         this.mobileMenu();
                         this.roadmap();
                         this.sendgrid();
+                        this.testnet();
                     }
                 }
             }()
@@ -28,6 +29,7 @@ var tomochain
 //@include('roadmap.js')
 //@include('mobile-menu.js')
 //@include('sendgrid.js')
+//@include('testnet.js')
 jQuery (document).ready(function() {
     tomochain.init()
 })

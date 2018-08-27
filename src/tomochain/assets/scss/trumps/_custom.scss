@@ -218,11 +218,11 @@
 }
 
 #double-validation-row {
-    max-height: 850px;
     padding-top: 60px !important;
     padding-bottom: 60px !important;
 
     @include media-breakpoint-up(md) {
+        max-height: 850px;
         padding-top: 0 !important;
         padding-bottom: 0 !important;
         padding-right: 0 !important;

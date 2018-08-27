@@ -54,10 +54,10 @@ if ( ! empty( $sourcecode_url ) && "||" !== $sourcecode_url && "|||" !== $source
         <p class="tomochain-dapp__description"><?php echo $description; ?></p>
         <div class="tomochain-dapp__links">
             <?php if ( is_array($url) ) : ?>
-            <a href="<?php echo esc_url($url['url']) ?>" class="tomochain-dapp__url" target="<?php echo esc_attr($url['target']); ?>"><?php esc_html_e('Run App', 'tomochain-addons')?></a>
+            <a href="<?php echo esc_url($url['url']) ?>" class="tomochain-dapp__run" target="<?php echo esc_attr($url['target']); ?>"><?php esc_html_e('Run App', 'tomochain-addons')?></a>
             <?php endif; ?>
             <?php if ( is_array($sourcecode_url) ) : ?>
-            <a href="<?php echo esc_url($sourcecode_url['url']) ?>" class="tomochain-dapp__source-url" target="<?php echo esc_attr($sourcecode_url['target']); ?>"><?php esc_html_e('Source Code', 'tomochain-addons')?></a>
+            <a href="<?php echo esc_url($sourcecode_url['url']) ?>" class="tomochain-dapp__source" target="<?php echo esc_attr($sourcecode_url['target']); ?>"><?php esc_html_e('Source Code', 'tomochain-addons')?></a>
             <?php endif; ?>
         </div>
         <?php endif; ?>
