@@ -1001,6 +1001,8 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
+.tomochain-dapp__url:before,
+.tomochain-dapp__source-url:before,
 .tomochain-events-item .event-venue:before,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after,
@@ -1100,6 +1102,8 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-left.menu-back:before,
+.fa-pull-left.tomochain-dapp__url:before,
+.fa-pull-left.tomochain-dapp__source-url:before,
 .tomochain-events-item .fa-pull-left.event-venue:before,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid .fa-pull-left#tomo-sendgrid-button:after,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send .fa-pull-left#tomo-sendgrid-button:after,
@@ -1123,6 +1127,8 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-right.menu-back:before,
+.fa-pull-right.tomochain-dapp__url:before,
+.fa-pull-right.tomochain-dapp__source-url:before,
 .tomochain-events-item .fa-pull-right.event-venue:before,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid .fa-pull-right#tomo-sendgrid-button:after,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send .fa-pull-right#tomo-sendgrid-button:after,
@@ -4727,6 +4733,8 @@ readers do not read off random characters that represent icons */
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
+.tomochain-dapp__url:before,
+.tomochain-dapp__source-url:before,
 .tomochain-events-item .event-venue:before,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after,
 .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after,
@@ -9013,6 +9021,44 @@ This is where majority of our work takes place and our UI components are often c
         line-height: 2.5rem;
         z-index: 1;
         color: #fff; }
+
+.tomochain-dapp {
+  text-align: center;
+  margin-top: 1.875rem;
+  margin-bottom: 3.125rem; }
+  .tomochain-dapp__image {
+    margin-bottom: 0.625rem; }
+  .tomochain-dapp__name {
+    font-size: 1.125rem;
+    font-weight: 600;
+    color: #66708a;
+    margin-bottom: 0.625rem; }
+  .tomochain-dapp__description {
+    text-align: justify;
+    margin-bottom: 1.5625rem; }
+  .tomochain-dapp__links {
+    text-transform: uppercase;
+    color: #6b6ced; }
+    .tomochain-dapp__links a {
+      letter-spacing: 0.05em;
+      font-family: Quicksand;
+      font-size: 0.875rem;
+      font-weight: 700;
+      color: #6b6ced; }
+    .tomochain-dapp__links a:hover {
+      color: #72B8fd; }
+  .tomochain-dapp__url {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem; }
+    .tomochain-dapp__url:before {
+      content: "\f061";
+      margin-right: 0.625rem; }
+  .tomochain-dapp__source-url {
+    margin-left: 1.25rem;
+    margin-right: 1.25rem; }
+    .tomochain-dapp__source-url:before {
+      content: "\f121";
+      margin-right: 0.625rem; }
 
 .tomochain-events-item {
   text-align: center;

@@ -1,0 +1,62 @@
+.tomochain-dapp {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 50px;
+
+    &__image {
+        margin-bottom: 10px;
+    }
+
+    &__name {
+        font-size: 18px;
+        font-weight: 600;
+        color: #66708a;
+        margin-bottom: 10px;
+    }
+
+    &__description {
+        text-align: justify;
+        margin-bottom: 25px;
+    }
+
+    &__links {
+        text-transform: uppercase;
+        color: #6b6ced;
+
+        a {
+            letter-spacing: 0.05em;
+            font-family: Quicksand;
+            font-size: 14px;
+            font-weight: 700;
+            color: #6b6ced;
+        }
+
+        a:hover {
+            color: #72B8fd;
+        }
+    }
+
+    &__url {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        &:before {
+            content: fa-content($fa-var-arrow-right);
+            margin-right: 10px;
+
+            @extend .fas;
+        }
+    }
+
+    &__source-url {
+        margin-left: 20px;
+        margin-right: 20px;
+
+        &:before {
+            content: fa-content($fa-var-code);
+            margin-right: 10px;
+
+            @extend .fas;
+        }
+    }
+}
