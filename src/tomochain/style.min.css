@@ -9548,6 +9548,25 @@ utilities and helper classes with ability to override anything which goes before
 #double-validation-text {
   letter-spacing: .05em; }
 
+body.page-id-31 .site-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99; }
+
+body.page-id-31 #post-31 > .entry-content {
+  margin-top: 0; }
+
+body.page-id-31.admin-bar .site-header {
+  top: 2rem; }
+
+#about-us-row {
+  padding-top: 8.4375rem;
+  padding-bottom: 6.25rem; }
+  #about-us-row .vc_custom_heading {
+    letter-spacing: .025em; }
+
 .nice-select {
   font-family: 'Quicksand';
   text-transform: lowercase;
@@ -10646,7 +10665,10 @@ utilities and helper classes with ability to override anything which goes before
       max-height: 53.125rem;
       padding-top: 0 !important;
       padding-bottom: 0 !important;
-      padding-right: 0 !important; } }
+      padding-right: 0 !important; }
+    #about-us-row #about-us-text-left,
+    #about-us-row #about-us-text-right {
+      max-width: 18.75rem; } }
   @media (min-width: 62rem) {
   .d-lg-none {
     display: none !important; }
@@ -11197,7 +11219,10 @@ utilities and helper classes with ability to override anything which goes before
     #tps-column {
       margin-bottom: 5.625rem; }
   #double-validation-column .wpb_single_image {
-    padding-bottom: 9.375rem; } }
+    padding-bottom: 9.375rem; }
+    #about-us-row #about-us-text-left,
+    #about-us-row #about-us-text-right {
+      max-width: 25.625rem; } }
   @media (min-width: 75rem) {
   .d-xl-none {
     display: none !important; }
@@ -11704,7 +11729,10 @@ utilities and helper classes with ability to override anything which goes before
       width: 43.75rem;
       height: 31.25rem;
       top: -6.25rem;
-      left: -10rem; } }
+      left: -10rem; }
+    #about-us-row #about-us-text-left,
+    #about-us-row #about-us-text-right {
+      max-width: 31.25rem; } }
   @media print {
   .d-print-none {
     display: none !important; }

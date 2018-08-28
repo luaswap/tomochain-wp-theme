@@ -131,7 +131,7 @@
     min-height: 695px;
 }
 
-// POSV page
+// POSV PAGE
 #posv-row {
     letter-spacing: 0.025em;
     margin-bottom: 60px;
@@ -245,4 +245,55 @@
 
 #double-validation-text {
     letter-spacing: .05em;
+}
+
+
+// TEAM PAGE
+body.page-id-31 {
+
+    .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+    }
+
+    #post-31 > .entry-content {
+        margin-top: 0;
+    }
+
+    &.admin-bar .site-header {
+        top: 32px;
+    }
+}
+
+#about-us-row {
+    padding-top: 135px;
+    padding-bottom: 100px;
+
+    .vc_custom_heading {
+        letter-spacing: .025em;
+    }
+
+    @include media-breakpoint-up(md) {
+        #about-us-text-left,
+        #about-us-text-right, {
+            max-width: 300px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        #about-us-text-left,
+        #about-us-text-right, {
+            max-width: 410px;
+        }
+    }
+
+    @include media-breakpoint-up(xl) {
+        #about-us-text-left,
+        #about-us-text-right, {
+            max-width: 500px;
+        }
+    }
 }
