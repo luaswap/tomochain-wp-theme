@@ -93,6 +93,15 @@
     cursor: grabbing;
 }
 
+[class*=hint--]:after {
+    font-family: QuickSand !important;
+    background-color: #272f4b !important;
+}
+
+.hint--top-left:before, .hint--top-right:before, .hint--top:before {
+    border-top-color: #272f4b !important;
+}
+
 .slider-button {
     position: relative;
     background-image: linear-gradient(-123deg, #ffc44d 0%, #f66b50 100%);
@@ -271,10 +280,6 @@ body.page-id-31 {
 #about-us-row {
     padding-top: 135px;
     padding-bottom: 100px;
-
-    .vc_custom_heading {
-        letter-spacing: .025em;
-    }
 
     @include media-breakpoint-up(md) {
         #about-us-text-left,

@@ -1,8 +1,11 @@
 <?php
+
 /**
- * List Shortcode
+ * TomoChain Team Member Shortcode
+ *
+ * @version 1.0
  */
-class WPBakeryShortCode_TomoChain_DApp extends WPBakeryShortCode {
+class WPBakeryShortCode_TomoChain_Team_Member extends WPBakeryShortCode {
 
     public function singleParamHtmlHolder( $param, $value ) {
 
@@ -54,9 +57,9 @@ class WPBakeryShortCode_TomoChain_DApp extends WPBakeryShortCode {
     }
 }
 vc_map( array(
-    'name'        => esc_html__( 'DApp', 'tomochain-addons' ),
-    'description' => esc_html__( 'Show information of a DApp', 'tomochain-addons' ),
-    'base'        => 'tomochain_dapp',
+    'name'        => esc_html__( 'Team Member', 'tomochain-addons' ),
+    'description' => esc_html__( 'Member of TomoChain', 'tomochain-addons' ),
+    'base'        => 'tomochain_team_member',
     'icon'        => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
     'category'    => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'params'      => array(
@@ -66,7 +69,6 @@ vc_map( array(
             'param_name'  => 'image',
             'value'       => '',
             'description' => esc_html__( 'Select image from media library . ', 'tomochain-addons' ),
-            'save_always' => true,
         ),
         array(
             'type'        => 'textfield',
@@ -76,23 +78,39 @@ vc_map( array(
             'value'       => '',
         ),
         array(
-            'type'        => 'vc_link',
-            'heading'     => esc_html__( 'URL', 'tomochain-addons' ),
-            'param_name'  => 'url',
+            'type'        => 'textfield',
+            'heading'     => esc_html__( 'Role', 'tomochain-addons' ),
+            'description' => esc_html__( 'Add a role.', 'tomochain-addons' ),
+            'param_name'  => 'role',
             'value'       => '',
         ),
         array(
-            'type'        => 'vc_link',
-            'heading'     => esc_html__( 'Source code URL', 'tomochain-addons' ),
-            'param_name'  => 'sourcecode_url',
+            'type'        => 'textfield',
+            'heading'     => esc_html__( 'Twitter', 'tomochain-addons' ),
+            'param_name'  => 'twitter',
             'value'       => '',
         ),
         array(
-            'type'        => 'textarea_html',
+            'type'        => 'textfield',
+            'heading'     => esc_html__( 'Linkedin', 'tomochain-addons' ),
+            'param_name'  => 'linkedin',
+            'value'       => '',
+        ),
+        array(
+            'type'        => 'textfield',
+            'heading'     => esc_html__( 'Github', 'tomochain-addons' ),
+            'param_name'  => 'github',
+            'value'       => '',
+        ),
+        array(
+            'type'        => 'textarea',
             'heading'     => esc_html__( 'Description', 'tomochain-addons' ),
-            'param_name'  => 'description'
+            'param_name'  => 'description',
+            'value'       => '',
         ),
+        vc_map_add_css_animation(),
         tomochain_get_param('el_class'),
         tomochain_get_param('css')
     )
 ));
+

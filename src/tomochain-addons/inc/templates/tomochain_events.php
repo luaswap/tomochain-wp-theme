@@ -43,7 +43,7 @@ if (function_exists('pll_get_term')) {
             <div class="col-sm-6 col-lg-3 tomochain-events-item">
                 <div class="event-thumbnail">
                     <a href="<?php echo esc_url(get_permalink($post)); ?>">
-                        <?php echo get_the_post_thumbnail($post, 'full'); ?>
+                        <?php echo get_the_post_thumbnail($post, array(200, 200)); ?>
                     </a>
                     <div class="event-date">
                         <?php

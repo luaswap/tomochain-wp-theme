@@ -43,12 +43,12 @@ if ( ! empty( $sourcecode_url ) && "||" !== $sourcecode_url && "|||" !== $source
     <span class="tomochain-testnet-item__title"><?php echo $title; ?></span>
     <div class="tomochain-testnet-item__links">
         <?php if ( is_array($url) ) : ?>
-            <div class="tomochain-testnet-item__run hint--top" aria-label="<?php esc_html_e('More Info', 'tomochain-addons')?>">
+            <div class="tomochain-testnet-item__run hint--top hint--bounce" aria-label="<?php esc_html_e ( 'More Info', 'tomochain-addons'); ?>">
                 <a href="<?php echo esc_url($url['url']) ?>" target="<?php echo esc_attr($url['target']); ?>"><?php esc_html_e('More Info', 'tomochain-addons')?></a>
             </div>
         <?php endif; ?>
         <?php if ( is_array($sourcecode_url) ) : ?>
-            <div class="tomochain-testnet-item__source" aria-label="<?php esc_html_e('Source Code', 'tomochain-addons')?>">
+            <div class="tomochain-testnet-item__source hint--top-left hint--bounce" aria-label="<?php esc_html_e ( 'Source Code', 'tomochain-addons'); ?>">
                 <a href="<?php echo esc_url($sourcecode_url['url']) ?>" target="<?php echo esc_attr($sourcecode_url['target']); ?>"><?php esc_html_e('Source Code', 'tomochain-addons')?></a>
             </div>
         <?php endif; ?>

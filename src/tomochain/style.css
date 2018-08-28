@@ -6930,7 +6930,7 @@ a, .site-header, .main-menu .menu li.page_item.page_item_has_children > a:before
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .tomochain-team__see-all:before, .tomochain-team-member__image a:after, .tomochain-team-member__image img, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
@@ -8610,6 +8610,9 @@ This is where majority of our work takes place and our UI components are often c
     .site-header.headroom--not-top .main-menu .menu > li > a {
       height: 3.125rem;
       line-height: 3.125rem; }
+    .site-header.headroom--not-top .main-menu .menu > ul > li span.menu-item-text:after,
+    .site-header.headroom--not-top .main-menu .menu > li span.menu-item-text:after {
+      bottom: -0.9375rem; }
   .site-header.headroom--unpinned {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%); }
@@ -8634,6 +8637,9 @@ This is where majority of our work takes place and our UI components are often c
   -webkit-transform: scale(0.7);
           transform: scale(0.7);
   width: 100%; }
+
+.tomochain-lang-switcher-wrapper .nice-select {
+  padding-right: 0; }
 
 .tomochain-lang-switcher-wrapper select {
   display: none; }
@@ -9108,8 +9114,8 @@ This is where majority of our work takes place and our UI components are often c
     max-width: 15.625rem;
     min-height: 14.6875rem;
     margin: 0 auto;
-    background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(#191d34));
-    background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(rgba(25, 29, 52, 0)));
+    background-image: linear-gradient(-180deg, #2a3452 0%, rgba(25, 29, 52, 0) 100%);
     border-radius: 0.5rem; }
   .tomochain-events-item .event-title {
     font-size: 1.125rem;
@@ -9280,6 +9286,101 @@ This is where majority of our work takes place and our UI components are often c
   background-size: 400% 400%;
   -webkit-animation: roadmapAnimation 1.5s infinite;
           animation: roadmapAnimation 1.5s infinite; }
+
+.tomochain-team {
+  display: grid;
+  grid-template-columns: 100%; }
+  .tomochain-team--hide {
+    display: block;
+    text-align: center;
+    margin-top: 1.25rem;
+    margin-bottom: 3.75rem; }
+  .tomochain-team__see-all {
+    position: relative;
+    border-radius: 0.5rem;
+    padding: 0.625rem 0.9375rem;
+    background-image: linear-gradient(-123deg, #ffc44d 0%, #f66b50 100%);
+    background-size: 400% 400%;
+    -webkit-animation: sliderButtonAnimation 3s ease infinite;
+            animation: sliderButtonAnimation 3s ease infinite; }
+    .tomochain-team__see-all span {
+      position: relative;
+      font-family: Quicksand;
+      font-size: 0.875rem;
+      font-weight: 500;
+      text-transform: uppercase;
+      z-index: 2; }
+    .tomochain-team__see-all:before {
+      content: '';
+      position: absolute;
+      top: 0.125rem;
+      right: 0.125rem;
+      height: calc(100% - 0.25rem);
+      width: calc(100% - 0.25rem);
+      z-index: 1;
+      border-radius: 0.375rem;
+      background-color: #161530; }
+    .tomochain-team__see-all:hover {
+      color: #272f4b !important; }
+    .tomochain-team__see-all:hover:before {
+      width: 0; }
+
+.tomochain-team-member {
+  text-align: center;
+  margin: 1.875rem 0 3.4375rem;
+  padding: 0 0.9375rem; }
+  .tomochain-team-member:hover .tomochain-team-member__image a:after {
+    top: -2.5rem; }
+  .tomochain-team-member:hover .tomochain-team-member__image img {
+    opacity: 0.8;
+    margin-top: -2.5rem; }
+  .tomochain-team-member.hint--top:after, .tomochain-team-member.hint--top:before {
+    bottom: 115%; }
+  .tomochain-team-member__image {
+    border-radius: 0.5rem;
+    max-width: 15.625rem;
+    height: 12.5rem;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(rgba(25, 29, 52, 0)));
+    background-image: linear-gradient(-180deg, #2a3452 0%, rgba(25, 29, 52, 0) 100%);
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.625rem; }
+    .tomochain-team-member__image a {
+      position: relative;
+      display: block;
+      height: 12.5rem;
+      width: 12.5rem;
+      margin-left: auto;
+      margin-right: auto; }
+    .tomochain-team-member__image a:after {
+      content: '';
+      position: absolute;
+      top: -1.5625rem;
+      left: 0;
+      height: 100%;
+      width: 100%;
+      border-radius: 0.5rem;
+      z-index: 1;
+      background-color: #202640; }
+    .tomochain-team-member__image img {
+      position: relative;
+      opacity: .5;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden;
+      max-width: 12.5rem;
+      border-radius: 0.5rem;
+      margin-top: -1.5625rem;
+      -webkit-box-shadow: 0 0.125rem 0.625rem 0.3125rem #1e2242;
+              box-shadow: 0 0.125rem 0.625rem 0.3125rem #1e2242;
+      z-index: 2; }
+  .tomochain-team-member__name {
+    font-size: 1.125rem; }
+    .tomochain-team-member__name a {
+      color: #ebeaf5; }
+  .tomochain-team-member__role {
+    font-weight: 300;
+    color: #8b96b5;
+    margin-bottom: 0; }
 
 .tomochain-testnet {
   opacity: 0;
@@ -9488,6 +9589,13 @@ utilities and helper classes with ability to override anything which goes before
   cursor: -ms-grabbing;
   cursor: grabbing; }
 
+[class*=hint--]:after {
+  font-family: QuickSand !important;
+  background-color: #272f4b !important; }
+
+.hint--top-left:before, .hint--top-right:before, .hint--top:before {
+  border-top-color: #272f4b !important; }
+
 .slider-button {
   position: relative;
   background-image: linear-gradient(-123deg, #ffc44d 0%, #f66b50 100%);
@@ -9564,8 +9672,6 @@ body.page-id-31.admin-bar .site-header {
 #about-us-row {
   padding-top: 8.4375rem;
   padding-bottom: 6.25rem; }
-  #about-us-row .vc_custom_heading {
-    letter-spacing: .025em; }
 
 .nice-select {
   font-family: 'Quicksand';
@@ -10640,6 +10746,8 @@ body.page-id-31.admin-bar .site-header {
       .tomochain-dapp__links a {
         margin-left: 1.25rem;
         margin-right: 1.25rem; }
+    .tomochain-team {
+      grid-template-columns: 50% 50%; }
       .tomochain-testnet-item__status {
         margin-right: 1.5625rem; }
       .tomochain-testnet-item__title {
@@ -11196,10 +11304,12 @@ body.page-id-31.admin-bar .site-header {
       text-align: left; }
     .main-menu {
       text-align: center; }
+    .tomochain-team {
+      grid-template-columns: 25% 25% 25% 25%; }
       .tomochain-testnet-item__title {
         width: calc(100% - 11.25rem); }
       .tomochain-testnet-item__run {
-        margin-right: 3.75rem; }
+        margin-right: 3.125rem; }
     .widget_tomo_sendgrid .tomo-sendgrid-text,
     .widget_tomo_sendgrid #tomo-sendgrid-form {
       max-width: 33.125rem; }
