@@ -81,8 +81,8 @@ used with preprocessors and contain font, colors definitions, etc
 
 @font-face {
   font-family: 'tomochain';
-  src: url("assets/fonts/TomoChain/tomochain.eot?gujivw");
-  src: url("assets/fonts/TomoChain/tomochain.eot?gujivw#iefix") format("embedded-opentype"), url("assets/fonts/TomoChain/tomochain.ttf?gujivw") format("truetype"), url("assets/fonts/TomoChain/tomochain.woff?gujivw") format("woff"), url("assets/fonts/TomoChain/tomochain.svg?gujivw#tomochain") format("svg");
+  src: url("assets/fonts/TomoChain/tomochain.eot?i3vkkf");
+  src: url("assets/fonts/TomoChain/tomochain.eot?i3vkkf#iefix") format("embedded-opentype"), url("assets/fonts/TomoChain/tomochain.ttf?i3vkkf") format("truetype"), url("assets/fonts/TomoChain/tomochain.woff?i3vkkf") format("woff"), url("assets/fonts/TomoChain/tomochain.svg?i3vkkf#tomochain") format("svg");
   font-weight: normal;
   font-style: normal; }
 
@@ -98,6 +98,9 @@ used with preprocessors and contain font, colors definitions, etc
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
+
+.tm-times:before {
+  content: "\e902"; }
 
 .tm-angle-down:before {
   content: "\e900"; }
@@ -6930,11 +6933,11 @@ a, .site-header, .main-menu .menu li.page_item.page_item_has_children > a:before
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .tomochain-team__see-all:before, .tomochain-team-member__image a:after, .tomochain-team-member__image img, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-events-item, .tomochain-events-item .event-thumbnail, .tomochain-events-item .event-thumbnail a:before, .tomochain-events-item .event-thumbnail img, .tomochain-events-item .event-date, .tomochain-roadmap, .tomochain-team__see-all:before, .tomochain-team-member__image a:after, .team-member-info__close:before, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, body:after, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
-.widget_tomo_sendgrid #tomo-sendgrid-button:after, .nice-select:after {
+.team-member-info__close:before, .widget_tomo_sendgrid #tomo-sendgrid-button:after, .nice-select:after {
   font-family: 'tomochain';
   font-weight: normal;
   font-style: normal;
@@ -8442,6 +8445,21 @@ This is the first layer of classes and should be agnostically named
   100% {
     background-position: 0% 50%; } }
 
+/* Slide in for team meberm info */
+@-webkit-keyframes team-member-info-slide-in {
+  0% {
+    -webkit-transform: translate3d(-2.5rem, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0); } }
+
+@keyframes team-member-info-slide-in {
+  0% {
+    -webkit-transform: translate3d(-2.5rem, 0, 0);
+    transform: translate3d(-2.5rem, 0, 0); }
+  100% {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0); } }
+
 .wp-caption {
   margin-bottom: 1.5em;
   max-width: 100%; }
@@ -9329,13 +9347,14 @@ This is where majority of our work takes place and our UI components are often c
   text-align: center;
   margin: 1.875rem 0 3.4375rem;
   padding: 0 0.9375rem; }
-  .tomochain-team-member:hover .tomochain-team-member__image a:after {
-    top: -2.5rem; }
   .tomochain-team-member:hover .tomochain-team-member__image img {
-    opacity: 0.8;
-    margin-top: -2.5rem; }
+    opacity: 0.8; }
   .tomochain-team-member.hint--top:after, .tomochain-team-member.hint--top:before {
     bottom: 115%; }
+  .tomochain-team-member.empty-box .tomochain-team-member__image,
+  .tomochain-team-member.empty-box .tomochain-team-member__info {
+    opacity: 0;
+    visibility: hidden; }
   .tomochain-team-member__image {
     border-radius: 0.5rem;
     max-width: 15.625rem;
@@ -9381,6 +9400,106 @@ This is where majority of our work takes place and our UI components are often c
     font-weight: 300;
     color: #8b96b5;
     margin-bottom: 0; }
+
+.team-member-info__wrapper {
+  position: relative; }
+
+.team-member-info__basic-info, .team-member-info__close, .team-member-info__description, .team-member-info__social {
+  position: absolute;
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transition: opacity .3s, visibility 0s;
+  transition: opacity .3s, visibility 0s; }
+
+.team-member-info__close {
+  cursor: pointer;
+  position: absolute;
+  top: 2.1875rem;
+  right: 2.1875rem;
+  font-size: 0;
+  z-index: 1; }
+  .team-member-info__close:before {
+    content: '\e902';
+    font-size: 1rem;
+    color: #424e73; }
+  .team-member-info__close:hover:before {
+    color: #fff; }
+
+.team-member-info__image {
+  text-align: center; }
+  .team-member-info__image img {
+    max-width: 12.5rem; }
+
+.team-member-info__basic-info {
+  text-align: center;
+  margin-top: 0.625rem; }
+
+.team-member-info__name {
+  font-size: 1.125rem;
+  font-weight: 500;
+  letter-spacing: .05em;
+  margin-bottom: 0.3125rem;
+  color: #ebeaf5; }
+
+.team-member-info__role {
+  font-weight: 300;
+  margin-bottom: 0; }
+
+.team-member-info__description {
+  font-weight: 300;
+  letter-spacing: .025em;
+  margin-top: 1.875rem;
+  margin-bottom: 1.5625rem; }
+
+.team-member-info__social a {
+  display: inline-block;
+  font-size: 1.0625rem;
+  height: 2.5rem;
+  width: 2.5rem;
+  line-height: 2.5rem;
+  border-radius: 100%;
+  text-align: center;
+  margin-right: 1.25rem;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  -webkit-transition: opacity .3s, visibility 0s;
+  transition: opacity .3s, visibility 0s; }
+  .team-member-info__social a:hover {
+    background-color: rgba(255, 255, 255, 0.3); }
+
+#team-member-info {
+  position: fixed;
+  max-width: 45.3125rem;
+  visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+  will-change: left, top, width;
+  z-index: 1000;
+  -webkit-transform: translateZ(0);
+          transform: translateZ(0); }
+  #team-member-info.is-visible {
+    visibility: visible; }
+  #team-member-info.animate-width {
+    background-image: linear-gradient(-176deg, #2c3553 0%, #1b2038 100%);
+    border-radius: 0.375rem; }
+  #team-member-info.add-content .team-member-info__wrapper {
+    padding: 1.25rem; }
+  #team-member-info.add-content .team-member-info__close {
+    opacity: 1;
+    visibility: visible; }
+  #team-member-info.add-content .team-member-info__basic-info,
+  #team-member-info.add-content .team-member-info__description,
+  #team-member-info.add-content .team-member-info__social {
+    opacity: 1;
+    visibility: visible;
+    position: relative; }
+  #team-member-info.add-content .team-member-info__name,
+  #team-member-info.add-content .team-member-info__role,
+  #team-member-info.add-content .team-member-info__description,
+  #team-member-info.add-content .team-member-info__social,
+  #team-member-info.add-content .team-member-info__close {
+    -webkit-animation: team-member-info-slide-in .5s;
+            animation: team-member-info-slide-in .5s; }
 
 .tomochain-testnet {
   opacity: 0;
@@ -9517,6 +9636,21 @@ Trumps
 ================================================
 utilities and helper classes with ability to override anything which goes before in the triangle, eg. hide helper class
 */
+body:after {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0;
+  background-color: #576284; }
+
+body.info-opened:after {
+  opacity: .8;
+  z-index: 999; }
+
 .slick-dots {
   list-style: none;
   display: block;
@@ -10242,7 +10376,9 @@ body.page-id-31.admin-bar .site-header {
       opacity: 1;
       visibility: visible; }
   .tomochain-roadmap-item {
-    padding: 0 0.9375rem; } }
+    padding: 0 0.9375rem; }
+      #team-member-info.add-content .team-member-info__wrapper {
+        padding: 1.875rem; } }
   @media (min-width: 48rem) {
   .d-md-none {
     display: none !important; }
@@ -10748,6 +10884,20 @@ body.page-id-31.admin-bar .site-header {
         margin-right: 1.25rem; }
     .tomochain-team {
       grid-template-columns: 50% 50%; }
+  .team-member-info__image {
+    text-align: left;
+    position: absolute;
+    top: 0;
+    left: 0;
+    max-width: 5rem; }
+  .team-member-info__basic-info {
+    text-align: left; }
+  .team-member-info__name, .team-member-info__role {
+    margin-left: 6.25rem; }
+  .team-member-info__description {
+    margin-top: 3.125rem; }
+      #team-member-info.add-content .team-member-info__wrapper {
+        padding: 2.1875rem 2.1875rem 2.8125rem 2.1875rem; }
       .tomochain-testnet-item__status {
         margin-right: 1.5625rem; }
       .tomochain-testnet-item__title {

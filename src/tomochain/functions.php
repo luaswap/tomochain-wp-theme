@@ -183,6 +183,12 @@ function tomochain_enqueue_libs() {
         true );
 
     wp_register_style( 'hint-css', TOMOCHAIN_LIBS_URI . '/hint.css/css/hint.min.css' );
+
+    wp_register_script( 'animejs',
+        TOMOCHAIN_LIBS_URI . '/animejs/js/anime.min.js',
+        array(),
+        null,
+        true );
 }
 add_action( 'wp_enqueue_scripts', 'tomochain_enqueue_libs', 1 );
 

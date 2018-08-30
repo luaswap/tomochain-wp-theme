@@ -66,12 +66,12 @@
     &:hover {
         .tomochain-team-member__image {
             a:after {
-                top: -40px;
+                // top: -40px;
             }
 
             img {
                 opacity: 0.8;
-                margin-top: -40px;
+                // margin-top: -40px;
             }
         }
     }
@@ -79,6 +79,14 @@
     &.hint--top:after,
     &.hint--top:before {
         bottom: 115%;
+    }
+
+    &.empty-box {
+        .tomochain-team-member__image,
+        .tomochain-team-member__info {
+            opacity: 0;
+            visibility: hidden;
+        }
     }
 
     &__image {
@@ -122,8 +130,6 @@
             margin-top: -25px;
             box-shadow: 0 2px 10px 5px #1e2242;
             z-index: 2;
-
-            @extend %transit;
         }
     }
 
@@ -139,5 +145,175 @@
         font-weight: 300;
         color: #8b96b5;
         margin-bottom: 0;
+    }
+}
+
+.team-member-info {
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__basic-info,
+    &__close,
+    &__description,
+    &__social {
+        position: absolute;
+        opacity: 0;
+        visibility: hidden;
+        transition: opacity .3s, visibility 0s;
+    }
+
+    &__close {
+        cursor: pointer;
+        position: absolute;
+        top: 35px;
+        right: 35px;
+        font-size: 0;
+        z-index: 1;
+
+        &:before {
+            content: '\e902';
+            font-size: 16px;
+            color: #424e73;
+
+            @extend %tm-icon;
+            @extend %transit;
+        }
+
+        &:hover:before {
+            color: #fff;
+        }
+    }
+
+    &__image {
+        text-align: center;
+
+        img {
+            max-width: 200px;
+        }
+    }
+
+    &__basic-info {
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    &__name {
+        font-size: 18px;
+        font-weight: 500;
+        letter-spacing: .05em;
+        margin-bottom: 5px;
+        color: #ebeaf5;
+    }
+
+    &__role {
+        font-weight: 300;
+        margin-bottom: 0;
+    }
+
+    &__description {
+        font-weight: 300;
+        letter-spacing: .025em;
+        margin-top: 30px;
+        margin-bottom: 25px;
+    }
+
+    &__social a {
+        display: inline-block;
+        font-size: 17px;
+        height: 40px;
+        width: 40px;
+        line-height: 40px;
+        border-radius: 100%;
+        text-align: center;
+        margin-right: 20px;
+        color: #fff;
+        background-color: rgba(255, 255, 255, .1);
+        transition: opacity .3s, visibility 0s;
+
+        &:hover {
+            background-color: rgba(255, 255, 255, .3);
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+
+        &__image {
+            text-align: left;
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 80px;
+        }
+
+        &__basic-info {
+            text-align: left;
+        }
+
+        &__name,
+        &__role {
+            margin-left: 100px;
+        }
+
+        &__description {
+            margin-top: 50px;
+        }
+    }
+}
+
+#team-member-info {
+    position: fixed;
+    max-width: 725px;
+    visibility: hidden;
+    -webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	will-change: left, top, width;
+    z-index: 1000;
+    transform: translateZ(0);
+
+    &.is-visible {
+        visibility: visible;
+    }
+
+    &.animate-width {
+        background-image: linear-gradient(-176deg, #2c3553 0%, #1b2038 100%);
+        border-radius: 6px;
+    }
+
+    &.add-content {
+
+        .team-member-info__wrapper {
+            padding: 20px;
+
+            @include media-breakpoint-up(sm) {
+                padding: 30px;
+            }
+
+            @include media-breakpoint-up(md) {
+                padding: 35px 35px 45px 35px;
+            }
+        }
+
+        .team-member-info__close {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .team-member-info__basic-info,
+        .team-member-info__description,
+        .team-member-info__social {
+            opacity: 1;
+            visibility: visible;
+            position: relative;
+        }
+
+        .team-member-info__name,
+        .team-member-info__role,
+        .team-member-info__description,
+        .team-member-info__social,
+        .team-member-info__close {
+            animation: team-member-info-slide-in .5s;
+        }
     }
 }

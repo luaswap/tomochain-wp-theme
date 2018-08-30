@@ -10,7 +10,8 @@
     "jquery-nice-select": "^1.1.0",
     "slick-carousel": "^1.8.1",
     "superfish": "^1.7.9",
-    "hint.css": "^2.5.0"
+    "hint.css": "^2.5.0",
+    "animejs": "^2.2.0"
   },
   "install": {
     "options": {
@@ -29,6 +30,9 @@
       "woff": "{name}/fonts"
     },
     "sources": {
+      "animejs": [
+        "bower_components/animejs/anime.min.js"
+      ],
       "hint.css": [
         "bower_components/hint.css/hint.min.css"
       ],

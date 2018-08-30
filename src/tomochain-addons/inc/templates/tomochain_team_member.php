@@ -9,6 +9,7 @@
  * @var $twitter
  * @var $linkedin
  * @var $github
+ * @var $description
  * @var $css_animation
  * @var $el_class
  * @var $css
@@ -20,6 +21,9 @@ $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
 
 $el_class = $this->getExtraClass( $el_class );
+
+$image_url = wp_get_attachment_url($image);
+$atts['image_url'] = $image_url;
 
 $css_class = array(
     'tomochain-shortcode',
@@ -34,20 +38,10 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
     implode( ' ', $css_class ),
     $this->settings['base'],
     $atts );
-
-if ( ! empty( $twitter ) && "||" !== $twitter && "|||" !== $twitter ) {
-    $url = vc_build_link( $twitter );
-}
-
-if ( ! empty( $linkedin ) && "||" !== $linkedin && "|||" !== $linkedin ) {
-    $linkedin = vc_build_link( $linkedin );
-}
-
-if ( ! empty( $github ) && "||" !== $github && "|||" !== $github ) {
-    $github = vc_build_link( $github );
-}
 ?>
-<div class="<?php echo esc_attr( trim( $css_class ) ); ?>" aria-label="<?php esc_html_e ( 'Click on image to see details', 'tomochain-addons'); ?>">
+<div class="<?php echo esc_attr( trim( $css_class ) ); ?>"
+    aria-label="<?php esc_html_e ( 'Click on image to see details', 'tomochain-addons'); ?>"
+    atts="<?php echo esc_attr(json_encode($atts)); ?>">
     <div class="tomochain-team-member__image">
         <a href="#" class="tomochain-team-member__open-popup">
             <?php

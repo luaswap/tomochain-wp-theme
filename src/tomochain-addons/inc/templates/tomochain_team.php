@@ -11,6 +11,8 @@
  * Shortcode class
  * @var $this WPBakeryShortCode_TomoChain_Team
  */
+wp_enqueue_script( 'animejs' );
+
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
 
@@ -38,5 +40,21 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
     <?php
         else :
             echo do_shortcode( $content );
+    ?>
+    <div id="team-member-info">
+        <a href="#" class="team-member-info__close">Close</a>
+        <div class="team-member-info__wrapper">
+            <div class="team-member-info__image">
+                <img src="" alt="">
+            </div>
+            <div class="team-member-info__basic-info">
+                <p class="team-member-info__name"></p>
+                <p class="team-member-info__role"></p>
+            </div>
+            <div class="team-member-info__description"></div>
+            <div class="team-member-info__social"></div>
+        </div>
+    </div>
+    <?php
         endif; ?>
 </div>

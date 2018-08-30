@@ -66,11 +66,11 @@
 
 @font-face {
     font-family: 'tomochain';
-    src:  url('assets/fonts/TomoChain/tomochain.eot?gujivw');
-    src:  url('assets/fonts/TomoChain/tomochain.eot?gujivw#iefix') format('embedded-opentype'),
-      url('assets/fonts/TomoChain/tomochain.ttf?gujivw') format('truetype'),
-      url('assets/fonts/TomoChain/tomochain.woff?gujivw') format('woff'),
-      url('assets/fonts/TomoChain/tomochain.svg?gujivw#tomochain') format('svg');
+    src:  url('assets/fonts/TomoChain/tomochain.eot?i3vkkf');
+    src:  url('assets/fonts/TomoChain/tomochain.eot?i3vkkf#iefix') format('embedded-opentype'),
+      url('assets/fonts/TomoChain/tomochain.ttf?i3vkkf') format('truetype'),
+      url('assets/fonts/TomoChain/tomochain.woff?i3vkkf') format('woff'),
+      url('assets/fonts/TomoChain/tomochain.svg?i3vkkf#tomochain') format('svg');
     font-weight: normal;
     font-style: normal;
 }
@@ -90,6 +90,9 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.tm-times:before {
+    content: "\e902";
+}
 .tm-angle-down:before {
     content: "\e900";
 }
