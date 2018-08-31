@@ -64,6 +64,12 @@ vc_map( array(
     'category'    => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'params'      => array(
         array(
+            'type'       => 'checkbox',
+            'param_name' => 'hide_info',
+            'value'      => array( esc_html__( 'Hide information', 'tomochain-addons' ) => 'yes' ),
+            'std'        => 'yes'
+        ),
+        array(
             'type'        => 'attach_image',
             'heading'     => esc_html__( 'Image', 'tomochain-addons' ),
             'param_name'  => 'image',
@@ -89,24 +95,40 @@ vc_map( array(
             'heading'     => esc_html__( 'Twitter', 'tomochain-addons' ),
             'param_name'  => 'twitter',
             'value'       => '',
+            'dependency' => array(
+                'element'            => 'hide_info',
+                'value_not_equal_to' => 'yes',
+            ),
         ),
         array(
             'type'        => 'textfield',
             'heading'     => esc_html__( 'Linkedin', 'tomochain-addons' ),
             'param_name'  => 'linkedin',
             'value'       => '',
+            'dependency' => array(
+                'element'            => 'hide_info',
+                'value_not_equal_to' => 'yes',
+            ),
         ),
         array(
             'type'        => 'textfield',
             'heading'     => esc_html__( 'Github', 'tomochain-addons' ),
             'param_name'  => 'github',
             'value'       => '',
+            'dependency' => array(
+                'element'            => 'hide_info',
+                'value_not_equal_to' => 'yes',
+            ),
         ),
         array(
             'type'        => 'textarea',
             'heading'     => esc_html__( 'Description', 'tomochain-addons' ),
             'param_name'  => 'description',
             'value'       => '',
+            'dependency' => array(
+                'element'            => 'hide_info',
+                'value_not_equal_to' => 'yes',
+            ),
         ),
         vc_map_add_css_animation(),
         tomochain_get_param('el_class'),

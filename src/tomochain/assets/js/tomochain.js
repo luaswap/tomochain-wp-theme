@@ -403,6 +403,10 @@ var tomochain
 
                 e.preventDefault();
 
+                if ($member.hasClass('tomochain-team-member--hide-info')) {
+                    return;
+                }
+
                 setContent($(this).closest('.tomochain-team-member'));
 
                 animateProfile($image, 200, maxQuickWidth, 'open');
@@ -412,6 +416,25 @@ var tomochain
                 e.preventDefault();
                 closeQuickView( 200, maxQuickWidth );
             });
+
+            $body.on('click', function(e) {
+                if (!$(e.target).closest('#team-member-info').length
+                    && $body.hasClass('info-opened')) {
+                    closeQuickView( 200, maxQuickWidth );
+                }
+            });
+
+            $('.tomochain-team__see-all').on('click', function(e){
+                e.preventDefault();
+
+                if (!$(this).hasClass('tomochain-team__see-all--collapse')) {
+                    $(this).addClass('tomochain-team__see-all--collapse');
+                    $('.tomochain-team--hide .tomochain-team__wrapper').show(300).css('display', 'grid');
+                } else {
+                    $(this).removeClass('tomochain-team__see-all--collapse');
+                    $('.tomochain-team--hide .tomochain-team__wrapper').hide(300);
+                }
+            })
 
             // if user has pressed 'Esc'
             $document.keyup( function( event ) {
@@ -528,7 +551,6 @@ var tomochain
                     'left': infoLeft,
                 } );
             };
-
 
             var animateProfile = function( image, finalWidth, maxQuickWidth, animationType ) {
                 var target         = '#team-member-info',

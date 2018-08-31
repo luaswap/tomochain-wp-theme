@@ -28,7 +28,8 @@ $atts['image_url'] = $image_url;
 $css_class = array(
     'tomochain-shortcode',
     'tomochain-team-member',
-    'hint--top hint--bounce',
+    $hide_info == 'yes' ? 'tomochain-team-member--hide-info' : '',
+    $hide_info != 'yes' ? 'hint--top hint--bounce' : '',
     $this->getCSSAnimation( $css_animation ),
     $el_class,
     vc_shortcode_custom_css_class( $css ),

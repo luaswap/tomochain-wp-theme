@@ -35,12 +35,15 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
     $atts );
 ?>
 <div class="<?php echo esc_attr( trim( $css_class ) ); ?>">
+    <div class="tomochain-team__wrapper">
+        <?php echo do_shortcode( $content ); ?>
+    </div>
     <?php if ( $hide ) : ?>
-        <a href="#" class="tomochain-team__see-all"><span><?php esc_html_e ( 'See all our team', 'tomochain-addons'); ?></span></a>
-    <?php
-        else :
-            echo do_shortcode( $content );
-    ?>
+        <div class="tomochain-team__see-all-wrapper">
+            <a href="#" class="tomochain-team__see-all"><span><?php esc_html_e ( 'See all our team', 'tomochain-addons'); ?></span></a>
+        </div>
+    <?php endif; ?>
+    <?php if ( !$hide ) : ?>
     <div id="team-member-info">
         <a href="#" class="team-member-info__close">Close</a>
         <div class="team-member-info__wrapper">
