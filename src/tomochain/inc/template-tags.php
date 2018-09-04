@@ -26,7 +26,7 @@ if ( ! function_exists( 'tomochain_posted_on' ) ) :
 
 		$posted_on = sprintf(
 			/* translators: %s: post date. */
-			esc_html_x( 'Posted on %s', 'post date', 'tomochain' ),
+			'%s',
 			'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark">' . $time_string . '</a>'
 		);
 
@@ -42,13 +42,22 @@ if ( ! function_exists( 'tomochain_posted_by' ) ) :
 	function tomochain_posted_by() {
 		$byline = sprintf(
 			/* translators: %s: post author. */
-			esc_html_x( 'by %s', 'post author', 'tomochain' ),
-			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
+			esc_html_x( 'By %s', 'post author', 'tomochain' ),
+			'<span class="author vcard"><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author_meta( 'display_name' ) ) . '</a></span>'
 		);
 
 		echo '<span class="byline"> ' . $byline . '</span>'; // WPCS: XSS OK.
 
 	}
+endif;
+
+if ( ! function_exists( 'tomochain_categories' ) ) :
+    function tomochain_categories() {
+        if ( get_the_category_list( ', ' ) && $atts['cats'] ) : ?>
+            <span class="meta-categories"><?php echo get_the_category_list( ', ' ); ?></span>
+        <?php
+        endif;
+    }
 endif;
 
 if ( ! function_exists( 'tomochain_entry_footer' ) ) :
@@ -57,21 +66,48 @@ if ( ! function_exists( 'tomochain_entry_footer' ) ) :
 	 */
 	function tomochain_entry_footer() {
 		// Hide category and tag text for pages.
-		if ( 'post' === get_post_type() ) {
-			/* translators: used between list items, there is a space after the comma */
-			$categories_list = get_the_category_list( esc_html__( ', ', 'tomochain' ) );
-			if ( $categories_list ) {
-				/* translators: 1: list of categories. */
-				printf( '<span class="cat-links">' . esc_html__( 'Posted in %1$s', 'tomochain' ) . '</span>', $categories_list ); // WPCS: XSS OK.
-			}
-
-			/* translators: used between list items, there is a space after the comma */
-			$tags_list = get_the_tag_list( '', esc_html_x( ', ', 'list item separator', 'tomochain' ) );
-			if ( $tags_list ) {
-				/* translators: 1: list of tags. */
-				printf( '<span class="tags-links">' . esc_html__( 'Tagged %1$s', 'tomochain' ) . '</span>', $tags_list ); // WPCS: XSS OK.
-			}
-		}
+        if ( 'post' === get_post_type() ) :
+            global $post;
+        ?>
+            <div class="post-tags col-xs-12 col-sm-6">
+			<?php the_tags( '<ul class="tagcloud"><li class="tag-cloud__item">',
+					'</li><li class="tag-cloud__item">',
+                    '</li></ul>' ); ?>
+            </div>
+            <div class="post-share col-xs-12 col-sm-6 text-sm-right">
+                <ul class="list-inline share-list">
+                    <li class="list-inline-item">
+                        <h3 class="share-list__title"><?php echo esc_html__( 'Share this post:', 'tomochain' ); ?>
+                            <div class="post-share-buttons">
+                                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"
+                                    onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                                <a href="https://twitter.com/home?status=Check%20out%20this%20article:%20<?php echo rawurlencode( the_title( '',
+                                    '',
+                                    false ) ); ?>%20-%20<?php the_permalink(); ?>"
+                                    onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                                <?php $pin_image = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>
+                                <a data-pin-do="skipLink"
+                                    href="https://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&amp;media=<?php echo esc_url( $pin_image ); ?>&amp;description=<?php echo rawurlencode( the_title( '',
+                                        '',
+                                        false ) ); ?>"
+                                    onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
+                                    <i class="fa fa-pinterest"></i>
+                                </a>
+                                <a href="https://plus.google.com/share?url=<?php the_permalink(); ?>"
+                                    onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
+                                    <i class="fa fa-google-plus"></i>
+                                </a>
+                            </div>
+                        </h3>
+                    </li>
+                </ul>
+            </div>
+        <?php
+        endif;
 
 		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
 			echo '<span class="comments-link">';

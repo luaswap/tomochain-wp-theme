@@ -10,6 +10,9 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+
+    <?php tomochain_post_thumbnail(); ?>
+
 	<header class="entry-header">
 		<?php
 		if ( is_singular() ) :
@@ -22,14 +25,12 @@
 			?>
 			<div class="entry-meta">
 				<?php
-				tomochain_posted_on();
 				tomochain_posted_by();
+				tomochain_posted_on();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
-
-	<?php tomochain_post_thumbnail(); ?>
 
 	<div class="entry-content">
 		<?php
