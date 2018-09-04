@@ -65,6 +65,11 @@ vc_map( array(
     'params'      => array(
         array(
             'type'       => 'checkbox',
+            'param_name' => 'is_advisor',
+            'value'      => array( esc_html__( 'Advisor?', 'tomochain-addons' ) => 'yes' )
+        ),
+        array(
+            'type'       => 'checkbox',
             'param_name' => 'hide_info',
             'value'      => array( esc_html__( 'Hide information', 'tomochain-addons' ) => 'yes' ),
             'std'        => 'yes'

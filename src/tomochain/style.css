@@ -9366,9 +9366,10 @@ This is where majority of our work takes place and our UI components are often c
   margin: 1.875rem 0 3.4375rem;
   padding: 0 0.9375rem; }
   .tomochain-team-member:hover .tomochain-team-member__image img {
-    opacity: 0.8; }
-  .tomochain-team-member.hint--top:after, .tomochain-team-member.hint--top:before {
-    bottom: 115%; }
+    opacity: 0.8;
+    margin-top: -2.1875rem; }
+  .tomochain-team-member:hover .tomochain-team-member__image a:after {
+    top: -2.1875rem; }
   .tomochain-team-member.empty-box .tomochain-team-member__image,
   .tomochain-team-member.empty-box .tomochain-team-member__info {
     opacity: 0;
@@ -9418,6 +9419,25 @@ This is where majority of our work takes place and our UI components are often c
     font-weight: 300;
     color: #8b96b5;
     margin-bottom: 0; }
+
+.tomochain-team-member--is-advisor:hover .tomochain-team-member__image a:after {
+  top: -1.25rem; }
+
+.tomochain-team-member--is-advisor:hover .tomochain-team-member__image img {
+  margin-top: -1.25rem; }
+
+.tomochain-team-member--is-advisor .tomochain-team-member__image {
+  max-width: 15.625rem; }
+  .tomochain-team-member--is-advisor .tomochain-team-member__image a {
+    width: 15.625rem;
+    height: 12.5rem; }
+  .tomochain-team-member--is-advisor .tomochain-team-member__image a:after {
+    top: -0.625rem; }
+  .tomochain-team-member--is-advisor .tomochain-team-member__image img {
+    max-width: 15.625rem;
+    margin-top: -0.625rem;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 .team-member-info__wrapper {
   position: relative; }
@@ -9664,6 +9684,9 @@ body:after {
   z-index: -1;
   opacity: 0;
   background-color: #576284; }
+
+body.info-opened {
+  overflow: hidden; }
 
 body.info-opened:after {
   opacity: .8;

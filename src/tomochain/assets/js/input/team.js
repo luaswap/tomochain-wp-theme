@@ -41,10 +41,10 @@
 
                 if (!$(this).hasClass('tomochain-team__see-all--collapse')) {
                     $(this).addClass('tomochain-team__see-all--collapse');
-                    $('.tomochain-team--hide .tomochain-team__wrapper').show(300).css('display', 'grid');
+                    $('.tomochain-team--hide .tomochain-team__wrapper').show(500).css('display', 'grid');
                 } else {
                     $(this).removeClass('tomochain-team__see-all--collapse');
-                    $('.tomochain-team--hide .tomochain-team__wrapper').hide(300);
+                    $('.tomochain-team--hide .tomochain-team__wrapper').hide(500);
                 }
             })
 

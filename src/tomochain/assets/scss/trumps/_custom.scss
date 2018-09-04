@@ -12,6 +12,10 @@ body:after {
     @extend %transit;
 }
 
+body.info-opened {
+    overflow: hidden;
+}
+
 body.info-opened:after {
     opacity: .8;
     z-index: 999;
