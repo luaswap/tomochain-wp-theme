@@ -325,3 +325,71 @@ body.page-id-31 {
         }
     }
 }
+
+#dapps-row {
+    position: relative;
+    padding-top: 100px;
+
+    &:before {
+        content: '';
+        position: absolute;
+        top: 20px;
+        left: 100px;
+        height: 10px;
+        width: 10px;
+        background-color: #43c7df;
+        border-radius: 3px;
+        animation: glowingColor1 3s infinite, translate1 10s linear infinite;
+    }
+
+    &:after {
+        position: absolute;
+        top: 30px;
+        left: 30px;
+        height: 4px;
+        width: 4px;
+        background: #ff7db6;
+        border-radius: 3px;
+        animation: glowingColor2 4s infinite, translate2 15s linear infinite;
+    }
+
+    > .vc_column_container {
+        position: static;
+    }
+
+    > .vc_column_container:before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 30%;
+        height: 10px;
+        width: 10px;
+        background-image: linear-gradient(215deg, rgb(79, 185, 255) 0%, rgb(4, 108, 224) 100%);
+        border-radius: 2px;
+        animation: glowingColor8 3s infinite, translate3 10s linear infinite;
+    }
+
+    > .vc_column_container:after {
+        content: '';
+        position: absolute;
+        top: 20px;
+        right: 100px;
+        height: 6px;
+        width: 6px;
+        background: #ffab6e;
+        border-radius: 3px;
+        animation: glowingColor3 3s infinite, translate4 20s linear infinite;
+    }
+
+    @include media-breakpoint-up(sm) {
+        &:before {
+            left: auto;
+            right: 50%;
+        }
+
+        &:after {
+            left: auto;
+            right: 40%;
+        }
+    }
+}
