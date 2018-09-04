@@ -92,7 +92,9 @@ if ( ! function_exists( 'tomochain_setup' ) ) :
 			'width'       => 250,
 			'flex-width'  => true,
 			'flex-height' => true,
-		) );
+        ) );
+
+        add_image_size('tomo-post-thumbnail', 200, 200, true);
 	}
 endif;
 add_action( 'after_setup_theme', 'tomochain_setup' );

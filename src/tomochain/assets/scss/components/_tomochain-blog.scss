@@ -1,4 +1,4 @@
-.tomochain-events-item {
+.tomochain-blog-item {
     text-align: center;
     margin-bottom: 60px;
 
@@ -6,21 +6,18 @@
 
     &:hover {
 
-        .event-thumbnail img {
+        .blog-thumbnail img {
             transform: translateY(-10px);
         }
 
-        .event-thumbnail a:before,
-        .event-date {
+        .blog-thumbnail a:before,
+        .blog-date {
             opacity: 1;
             visibility: visible;
         }
-
-        .event-thumbnail a:before {
-        }
     }
 
-    .event-thumbnail {
+    .blog-thumbnail {
         position: relative;
         margin-bottom: -140px;
 
@@ -53,7 +50,7 @@
         }
     }
 
-    .event-date {
+    .blog-date {
         position: absolute;
         left: 50%;
         bottom: 10px;
@@ -67,7 +64,7 @@
         @extend %transit;
     }
 
-    .event-info {
+    .blog-info {
         padding: 160px 30px 30px;
         max-width: 250px;
         min-height: 235px;
@@ -76,7 +73,7 @@
         border-radius: 8px;
     }
 
-    .event-title {
+    .blog-title {
         font-size: 18px;
         font-weight: 200;
 
@@ -98,7 +95,7 @@
     }
 }
 
-.see-all-events {
+.see-all-blog {
     display: block;
     text-align: center;
     font-size: 18px;

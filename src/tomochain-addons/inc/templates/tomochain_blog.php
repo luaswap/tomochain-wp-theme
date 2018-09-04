@@ -5,7 +5,7 @@
  * @var $el_class
  * @var $css
  * Shortcode class
- * @var $this WPBakeryShortCode_TomoChain_Events
+ * @var $this WPBakeryShortCode_TomoChain_Blog
  */
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
@@ -14,7 +14,7 @@ $el_class = $this->getExtraClass( $el_class );
 
 $css_class = array(
     'tomochain-shortcode',
-    'tomochain-events',
+    'tomochain-blog',
     $el_class,
     vc_shortcode_custom_css_class( $css ),
 );
@@ -24,28 +24,23 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
     $this->settings['base'],
     $atts );
 
-if (function_exists('pll_get_term')) {
-    $posts = get_posts(
-        array(
-            'post_type'      => 'post',
-            'post_status'    => 'publish',
-            'posts_per_page' => 4,
-            'category'       => pll_get_term(11)
-        )
-    );
-} else {
-    $posts = array();
-}
+$posts = get_posts(
+    array(
+        'post_type'      => 'post',
+        'post_status'    => 'publish',
+        'posts_per_page' => 4
+    )
+);
 ?>
 <div class="<?php echo esc_attr( trim( $css_class ) ); ?>">
     <div class="row">
         <?php foreach($posts as $post): ?>
-            <div class="col-sm-6 col-lg-3 tomochain-events-item">
-                <div class="event-thumbnail">
+            <div class="col-sm-6 col-lg-3 tomochain-blog-item">
+                <div class="blog-thumbnail">
                     <a href="<?php echo esc_url(get_permalink($post)); ?>">
-                        <?php echo get_the_post_thumbnail($post, array(200, 200)); ?>
+                        <?php echo get_the_post_thumbnail($post, 'tomo-post-thumbnail'); ?>
                     </a>
-                    <div class="event-date">
+                    <div class="blog-date">
                         <?php
                         $start_date = date_i18n('d M', strtotime(get_field('start_date', $post->ID)));
                         $end_date   = date_i18n('d M', strtotime(get_field('end_date', $post->ID)));
@@ -53,15 +48,17 @@ if (function_exists('pll_get_term')) {
                         echo $start_date . (strcmp($start_date, $end_date) ? ' - ' . $end_date : ''); ?>
                     </div>
                 </div>
-                <div class="event-info">
-                    <h4 class="event-title text-truncate"><a href="<?php echo esc_url(get_permalink($post)); ?>"><?php echo get_the_title($post); ?></a></h4>
-                    <p class="event-venue"><?php the_field('venue', $post); ?></p>
+                <div class="blog-info">
+                    <h4 class="blog-title text-truncate"><a href="<?php echo esc_url(get_permalink($post)); ?>"><?php echo get_the_title($post); ?></a></h4>
+                    <?php if (function_exists('pll_get_term') && in_category(pll_get_term(11), $post)) : ?>
+                        <p class="event-venue"><?php the_field('venue', $post); ?></p>
+                    <?php endif; ?>
                 </div>
             </div>
         <?php endforeach; ?>
         <div class="col-12">
-            <p class="see-all-events">
-                <a href="<?php echo esc_url(get_category_link(pll_get_term(11)))?>"><?php esc_html_e('See all our events', 'tomochain-addons'); ?></a>
+            <p class="see-all-blog">
+                <a href="<?php echo esc_url(get_permalink(get_option( 'page_for_posts' )))?>"><?php esc_html_e('See all our news', 'tomochain-addons'); ?></a>
             </p>
         </div>
     </div>
