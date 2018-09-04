@@ -2,6 +2,8 @@
 /**
  * Shortcode attributes
  *
+ * @var $dots_color
+ * @var $text_color
  * @var $items
  * @var $el_class
  * @var $css

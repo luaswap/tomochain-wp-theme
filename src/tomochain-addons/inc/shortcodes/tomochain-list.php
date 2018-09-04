@@ -9,6 +9,7 @@ class WPBakeryShortCode_TomoChain_List extends WPBakeryShortCode {
         $css   = '';
 
         $css = $cssID . ' .tomochain-list__item:before{background-color:' . $atts['dots_color'] . ';}';
+        $css .= $cssID . ' .tomochain-list__item{color:' . $atts['text_color'] . '}';
 
         return tomochain_text2line( $css );
     }
@@ -24,6 +25,12 @@ vc_map( array(
             'type'       => 'colorpicker',
             'heading'    => esc_html( 'Dots Color', 'tomochain-addons' ),
             'param_name' => 'dots_color'
+        ),
+        array(
+            'type'       => 'colorpicker',
+            'heading'    => esc_html( 'Text Color', 'tomochain-addons' ),
+            'param_name' => 'text_color',
+            'value'      => '#c5cde3'
         ),
         array(
             'type'        => 'exploded_textarea_safe',
