@@ -8995,6 +8995,23 @@ This is where majority of our work takes place and our UI components are often c
     .site-header.headroom--not-top .main-menu .menu > ul > li span.menu-item-text:after,
     .site-header.headroom--not-top .main-menu .menu > li span.menu-item-text:after {
       bottom: -0.9375rem; }
+    .site-header.headroom--not-top .main-menu .menu > ul > li .children,
+    .site-header.headroom--not-top .main-menu .menu > li .sub-menu {
+      padding: 0.9375rem 1.25rem;
+      background-color: #202741; }
+    .site-header.headroom--not-top .main-menu .menu > ul > li .children li.page_item a,
+    .site-header.headroom--not-top .main-menu .menu > li .sub-menu li.menu-item a {
+      color: #9eaacc; }
+      .site-header.headroom--not-top .main-menu .menu > ul > li .children li.page_item a:hover,
+      .site-header.headroom--not-top .main-menu .menu > li .sub-menu li.menu-item a:hover {
+        color: #dee2ee; }
+    .site-header.headroom--not-top .nice-select .list {
+      padding: 0.625rem 0.3125rem;
+      background-color: #202741; }
+    .site-header.headroom--not-top .nice-select .option:hover,
+    .site-header.headroom--not-top .nice-select .option.focus,
+    .site-header.headroom--not-top .nice-select .option.selected.focus {
+      color: #dee2ee; }
   .site-header.headroom--unpinned {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%); }

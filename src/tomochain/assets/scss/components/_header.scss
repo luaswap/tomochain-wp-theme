@@ -66,6 +66,32 @@
         .main-menu .menu > li span.menu-item-text:after {
             bottom: -15px;
         }
+
+        .main-menu .menu > ul > li .children,
+        .main-menu .menu > li .sub-menu {
+            padding: 15px 20px;
+            background-color: #202741;
+        }
+
+        .main-menu .menu > ul > li .children li.page_item a,
+        .main-menu .menu > li .sub-menu li.menu-item a {
+            color: #9eaacc;
+
+            &:hover {
+                color: #dee2ee;
+            }
+        }
+
+        .nice-select .list {
+            padding: 10px 5px;
+            background-color: #202741;
+        }
+
+        .nice-select .option:hover,
+        .nice-select .option.focus,
+        .nice-select .option.selected.focus {
+            color: #dee2ee;
+        }
     }
 
     &.headroom--unpinned {
