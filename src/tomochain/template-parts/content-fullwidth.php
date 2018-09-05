@@ -12,7 +12,9 @@ $classes = 'col-xs-12 col-md-6';
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($classes); ?>>
 
-    <?php tomochain_post_thumbnail(); ?>
+    <a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+        <?php the_post_thumbnail('tomo-single-thumbnail'); ?>
+    </a>
 
 	<header class="entry-header">
 		<?php
@@ -35,7 +37,18 @@ $classes = 'col-xs-12 col-md-6';
 
 	<div class="entry-content">
 		<?php
-		echo tomochain_excerpt(30);
+		the_content( sprintf(
+			wp_kses(
+				/* translators: %s: Name of current post. Only visible to screen readers */
+				__( 'Continue reading<span class="screen-reader-text"> "%s"</span>', 'tomochain' ),
+				array(
+					'span' => array(
+						'class' => array(),
+					),
+				)
+			),
+			get_the_title()
+		) );
 
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'tomochain' ),

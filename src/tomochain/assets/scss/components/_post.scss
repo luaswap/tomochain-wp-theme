@@ -1,3 +1,7 @@
+.post {
+    margin-bottom: 60px !important;
+}
+
 .post-thumbnail {
     overflow: hidden;
     margin-bottom: 30px;
@@ -11,43 +15,49 @@
     transform: scale(1.05);
 }
 
-.single-post {
+.single-post .site-main {
+    padding-top: 60px;
+}
 
-    .site-main {
-        padding-top: 60px;
+.entry-title {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #ebeaf5;
+    margin-top: 0;
+    margin-bottom: 10px;
+
+    a {
+        color: #ebeaf5;
     }
 
-    .entry-title {
-        font-size: 34px;
-        font-weight: 400;
-        line-height: 1.5;
-        margin-top: 0;
-        margin-bottom: 10px;
+    @include media-breakpoint-up(md) {
+        font-size: 24px;
+    }
+}
+
+.entry-meta {
+    margin-bottom: 10px;
+
+    > span {
+        display: inline-block;
+        margin-right: 25px;
+        color: #808aa9;
     }
 
-    .entry-meta {
-        margin-bottom: 10px;
+    a {
+        color: #808aa9;
+    }
 
-        > span {
-            display: inline-block;
-            margin-right: 25px;
-            color: #808aa9;
-        }
+    a:hover {
+        color: #ebeaf5;
+    }
 
-        a {
-            color: #808aa9;
-        }
-
-        a:hover {
-            color: #ebeaf5;
-        }
-
-        span:before {
-            display: inline-block;
-            vertical-align: baseline;
-            font-size: 12px;
-            margin-right: 8px;
-        }
+    span:before {
+        display: inline-block;
+        vertical-align: baseline;
+        font-size: 12px;
+        margin-right: 8px;
     }
 
     span.byline:before {
@@ -65,7 +75,6 @@
 .entry-content {
     line-height: 1.7;
     font-size: 15px;
-    margin-bottom: 20px !important;
 }
 
 .post-tags .tagcloud {
@@ -113,7 +122,8 @@
     margin-top: 15px;
     margin-bottom: 15px;
 
-    @include media-breakpoint-up(md) {
+    @include media-breakpoint-up(sm) {
+        margin-top: 0;
         margin-bottom: 0;
     }
 }

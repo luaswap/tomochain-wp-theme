@@ -1004,8 +1004,8 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
-.single-post span.byline:before,
-.single-post span.posted-on:before,
+.entry-meta span.byline:before,
+.entry-meta span.posted-on:before,
 .post-tags .tagcloud:before,
 .post-navigation .nav-previous a:before,
 .post-navigation .nav-next a:after,
@@ -1111,8 +1111,8 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-left.menu-back:before,
-.single-post span.fa-pull-left.byline:before,
-.single-post span.fa-pull-left.posted-on:before,
+.entry-meta span.fa-pull-left.byline:before,
+.entry-meta span.fa-pull-left.posted-on:before,
 .post-tags .fa-pull-left.tagcloud:before,
 .post-navigation .nav-previous a.fa-pull-left:before,
 .post-navigation .nav-next a.fa-pull-left:after,
@@ -1142,8 +1142,8 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-right.menu-back:before,
-.single-post span.fa-pull-right.byline:before,
-.single-post span.fa-pull-right.posted-on:before,
+.entry-meta span.fa-pull-right.byline:before,
+.entry-meta span.fa-pull-right.posted-on:before,
 .post-tags .fa-pull-right.tagcloud:before,
 .post-navigation .nav-previous a.fa-pull-right:before,
 .post-navigation .nav-next a.fa-pull-right:after,
@@ -4754,8 +4754,8 @@ readers do not read off random characters that represent icons */
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
-.single-post span.byline:before,
-.single-post span.posted-on:before,
+.entry-meta span.byline:before,
+.entry-meta span.posted-on:before,
 .post-tags .tagcloud:before,
 .post-navigation .nav-previous a:before,
 .post-navigation .nav-next a:after,
@@ -6957,7 +6957,7 @@ a, .site-header, .main-menu .menu li.page_item.page_item_has_children > a:before
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .post-thumbnail img, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-blog-item, .tomochain-blog-item .blog-thumbnail, .tomochain-blog-item .blog-thumbnail a:before, .tomochain-blog-item .blog-thumbnail img, .tomochain-blog-item .blog-date, .tomochain-roadmap, .tomochain-team__see-all:before, .tomochain-team-member__image a:after, .tomochain-team-member__image img, .team-member-info__close:before, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, body:after, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .tomochain-pagination ul li a:after, .woocommerce-pagination ul li a:after, .post-thumbnail img, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-blog-item, .tomochain-blog-item .blog-thumbnail, .tomochain-blog-item .blog-thumbnail a:before, .tomochain-blog-item .blog-thumbnail img, .tomochain-blog-item .blog-date, .tomochain-roadmap, .tomochain-team__see-all:before, .tomochain-team-member__image a:after, .tomochain-team-member__image img, .team-member-info__close:before, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, body:after, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
@@ -8942,6 +8942,19 @@ COMPONENTS
 Specific UI components.
 This is where majority of our work takes place and our UI components are often composed of Objects and Components
 */
+.blog .site-main {
+  padding-top: 3.75rem; }
+
+.blog .post-thumbnail {
+  overflow: hidden;
+  display: block; }
+
+.post-fullwidth article {
+  max-width: 100%;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 100%;
+          flex: 0 0 100%; }
+
 .comment-content a {
   word-wrap: break-word; }
 
@@ -9345,6 +9358,90 @@ This is where majority of our work takes place and our UI components are often c
       font-size: 1rem;
       line-height: 2.5rem; }
 
+.tomochain-pagination, .woocommerce-pagination {
+  margin-bottom: 6.25rem; }
+  .tomochain-pagination.woocommerce-pagination, .woocommerce-pagination {
+    margin-bottom: 1.875rem; }
+
+.tomochain-pagination ul.page-numbers, .woocommerce-pagination ul.page-numbers {
+  font-size: 0;
+  text-align: center;
+  list-style: none;
+  padding: 0;
+  margin: 0; }
+
+.tomochain-pagination ul.page-numbers a, .woocommerce-pagination ul.page-numbers a {
+  font-weight: 500; }
+
+.tomochain-pagination ul li, .woocommerce-pagination ul li {
+  display: inline-block;
+  vertical-align: top;
+  text-align: center;
+  font-size: 0.875rem;
+  line-height: 1.7;
+  border-radius: 100%;
+  margin: 0 0.625rem; }
+
+.tomochain-pagination ul li span, .woocommerce-pagination ul li span {
+  display: block;
+  width: 0.9375rem;
+  line-height: 1.7; }
+
+.tomochain-pagination .current:after, .woocommerce-pagination .current:after,
+.tomochain-pagination ul li a:after,
+.woocommerce-pagination ul li a:after {
+  position: absolute;
+  display: block;
+  content: '';
+  width: 100%;
+  height: 0.0625rem;
+  top: 100%;
+  left: 0;
+  margin-top: -0.1875rem;
+  background-color: rgba(51, 51, 51, 0.2); }
+
+.tomochain-pagination .current, .woocommerce-pagination .current {
+  position: relative;
+  color: #808aa9;
+  font-weight: 500; }
+
+.tomochain-pagination ul li a, .woocommerce-pagination ul li a {
+  position: relative;
+  display: block;
+  width: 0.9375rem;
+  line-height: 1.7; }
+  
+  .tomochain-pagination ul li a:after,
+  .woocommerce-pagination ul li a:after {
+    opacity: 0;
+    visibility: hidden; }
+  .tomochain-pagination ul li a:hover, .woocommerce-pagination ul li a:hover {
+    color: #ebeaf5;
+    -webkit-transition: all .5s ease;
+    transition: all .5s ease; }
+    .tomochain-pagination ul li a:hover:after, .woocommerce-pagination ul li a:hover:after {
+      opacity: 1;
+      visibility: visible; }
+
+.tomochain-pagination .prev, .woocommerce-pagination .prev,
+.tomochain-pagination .next,
+.woocommerce-pagination .next {
+  width: 100%;
+  text-transform: uppercase;
+  letter-spacing: 0.125rem; }
+  .tomochain-pagination .prev:after, .woocommerce-pagination .prev:after,
+  .tomochain-pagination .next:after,
+  .woocommerce-pagination .next:after {
+    display: none; }
+
+.woocommerce-pagination {
+  margin-top: 1.875rem; }
+  .shop-full-width-no-space .woocommerce-pagination {
+    margin-top: 5rem; }
+
+.post {
+  margin-bottom: 3.75rem !important; }
+
 .post-thumbnail {
   overflow: hidden;
   margin-bottom: 1.875rem; }
@@ -9356,40 +9453,40 @@ This is where majority of our work takes place and our UI components are often c
 .single-post .site-main {
   padding-top: 3.75rem; }
 
-.single-post .entry-title {
-  font-size: 2.125rem;
+.entry-title {
+  font-size: 1.25rem;
   font-weight: 400;
   line-height: 1.5;
+  color: #ebeaf5;
   margin-top: 0;
   margin-bottom: 0.625rem; }
+  .entry-title a {
+    color: #ebeaf5; }
 
-.single-post .entry-meta {
+.entry-meta {
   margin-bottom: 0.625rem; }
-  .single-post .entry-meta > span {
+  .entry-meta > span {
     display: inline-block;
     margin-right: 1.5625rem;
     color: #808aa9; }
-  .single-post .entry-meta a {
+  .entry-meta a {
     color: #808aa9; }
-  .single-post .entry-meta a:hover {
+  .entry-meta a:hover {
     color: #ebeaf5; }
-  .single-post .entry-meta span:before {
+  .entry-meta span:before {
     display: inline-block;
     vertical-align: baseline;
     font-size: 0.75rem;
     margin-right: 0.5rem; }
-
-.single-post span.byline:before {
-  margin-right: 0.25rem;
-  content: "\f007"; }
-
-.single-post span.posted-on:before {
-  content: "\f073"; }
+  .entry-meta span.byline:before {
+    margin-right: 0.25rem;
+    content: "\f007"; }
+  .entry-meta span.posted-on:before {
+    content: "\f073"; }
 
 .entry-content {
   line-height: 1.7;
-  font-size: 0.9375rem;
-  margin-bottom: 1.25rem !important; }
+  font-size: 0.9375rem; }
 
 .post-tags .tagcloud {
   font-size: 0;
@@ -10999,6 +11096,11 @@ body.page-id-31.admin-bar .site-header {
     margin-left: 91.66667%; }
   .hidden-sm-up {
     display: none !important; }
+  .post-fullwidth {
+    text-align: center; }
+    .post-share {
+      margin-top: 0;
+      margin-bottom: 0; }
     .post-navigation .nav-links {
       display: grid;
       grid-template-columns: 50% 50%; }
@@ -11522,8 +11624,13 @@ body.page-id-31.admin-bar .site-header {
     margin-left: 91.66667%; }
   .hidden-md-up {
     display: none !important; }
-    .post-share {
-      margin-bottom: 0; }
+  .post-fullwidth .entry-content,
+  .post-fullwidth .entry-footer {
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 80%; }
+    .entry-title {
+      font-size: 1.5rem; }
       .tomochain-dapp__description {
         text-align: justify; }
       .tomochain-dapp__links a {

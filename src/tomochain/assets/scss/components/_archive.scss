@@ -1,0 +1,30 @@
+.blog {
+
+    .site-main {
+        padding-top: 60px;
+    }
+
+    .post-thumbnail {
+        overflow: hidden;
+        display: block;
+    }
+}
+
+.post-fullwidth {
+    article {
+        max-width: 100%;
+        flex: 0 0 100%;
+    }
+    @include media-breakpoint-up(sm) {
+        text-align: center;
+    }
+
+    @include media-breakpoint-up(md) {
+        .entry-content,
+        .entry-footer {
+            margin-left: auto;
+            margin-right: auto;
+            max-width: 80%;
+        }
+    }
+}

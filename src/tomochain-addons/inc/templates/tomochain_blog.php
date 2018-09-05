@@ -40,9 +40,9 @@ $posts = get_posts(
                     <a href="<?php echo esc_url(get_permalink($post)); ?>">
                         <?php
                         if (get_field('image', $post)) {
-                            echo wp_get_attachment_image(get_field('image', $post), 'tomo-post-thumbnail');
+                            echo wp_get_attachment_image(get_field('image', $post), 'tomo-post-small-thumbnail');
                         } else {
-                            echo get_the_post_thumbnail($post, 'tomo-post-thumbnail');
+                            echo get_the_post_thumbnail($post, 'tomo-post-small-thumbnail');
                         } ?>
                     </a>
                     <div class="blog-date">

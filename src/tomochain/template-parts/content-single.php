@@ -6,13 +6,13 @@
  *
  * @package tomochain
  */
-
-$classes = 'col-xs-12 col-md-6';
 ?>
 
-<article id="post-<?php the_ID(); ?>" <?php post_class($classes); ?>>
+<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <?php tomochain_post_thumbnail(); ?>
+    <div class="post-thumbnail">
+        <?php the_post_thumbnail('tomo-single-thumbnail'); ?>
+    </div>
 
 	<header class="entry-header">
 		<?php
