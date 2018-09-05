@@ -9451,7 +9451,8 @@ This is where majority of our work takes place and our UI components are often c
           transform: scale(1.05); }
 
 .single-post .site-main {
-  padding-top: 3.75rem; }
+  padding-top: 3.75rem;
+  margin-bottom: 5rem; }
 
 .entry-title {
   font-size: 1.25rem;
