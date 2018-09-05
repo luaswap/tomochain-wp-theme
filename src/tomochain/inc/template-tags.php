@@ -75,36 +75,30 @@ if ( ! function_exists( 'tomochain_entry_footer' ) ) :
                     '</li></ul>' ); ?>
             </div>
             <div class="post-share col-xs-12 col-sm-6 text-sm-right">
-                <ul class="list-inline share-list">
-                    <li class="list-inline-item">
-                        <h3 class="share-list__title"><?php echo esc_html__( 'Share this post:', 'tomochain' ); ?>
-                            <div class="post-share-buttons">
-                                <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"
-                                    onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
-                                    <i class="fa fa-facebook"></i>
-                                </a>
-                                <a href="https://twitter.com/home?status=Check%20out%20this%20article:%20<?php echo rawurlencode( the_title( '',
-                                    '',
-                                    false ) ); ?>%20-%20<?php the_permalink(); ?>"
-                                    onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
-                                    <i class="fa fa-twitter"></i>
-                                </a>
-                                <?php $pin_image = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>
-                                <a data-pin-do="skipLink"
-                                    href="https://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&amp;media=<?php echo esc_url( $pin_image ); ?>&amp;description=<?php echo rawurlencode( the_title( '',
-                                        '',
-                                        false ) ); ?>"
-                                    onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
-                                    <i class="fa fa-pinterest"></i>
-                                </a>
-                                <a href="https://plus.google.com/share?url=<?php the_permalink(); ?>"
-                                    onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
-                                    <i class="fa fa-google-plus"></i>
-                                </a>
-                            </div>
-                        </h3>
-                    </li>
-                </ul>
+                <div class="post-share-buttons">
+                    <a href="https://www.facebook.com/sharer/sharer.php?u=<?php the_permalink(); ?>"
+                        onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
+                        <i class="fa fa-facebook"></i>
+                    </a>
+                    <a href="https://twitter.com/home?status=Check%20out%20this%20article:%20<?php echo rawurlencode( the_title( '',
+                        '',
+                        false ) ); ?>%20-%20<?php the_permalink(); ?>"
+                        onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
+                        <i class="fa fa-twitter"></i>
+                    </a>
+                    <?php $pin_image = wp_get_attachment_url( get_post_thumbnail_id( $post->ID ) ); ?>
+                    <a data-pin-do="skipLink"
+                        href="https://pinterest.com/pin/create/button/?url=<?php the_permalink(); ?>&amp;media=<?php echo esc_url( $pin_image ); ?>&amp;description=<?php echo rawurlencode( the_title( '',
+                            '',
+                            false ) ); ?>"
+                        onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
+                        <i class="fa fa-pinterest"></i>
+                    </a>
+                    <a href="https://plus.google.com/share?url=<?php the_permalink(); ?>"
+                        onclick="window.open(this.href, '', 'menubar=no,toolbar=no,resizable=no,scrollbars=no,height=455,width=600'); return false;">
+                        <i class="fa fa-google-plus"></i>
+                    </a>
+                </div>
             </div>
         <?php
         endif;
