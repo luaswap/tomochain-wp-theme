@@ -1,25 +1,19 @@
 <?php
 /**
- * TomoChain Image Carousel
+ * Image Carousel Shortcode
  */
-class WPBakeryShortCode_TomoChain_Image_Carousel extends WPBakeryShortCode {
+class WPBakeryShortCode_TomoChain_Image_Carousel extends WPBakeryShortCodesContainer {
 }
-
 vc_map( array(
-    'name'        => esc_html__( 'Image Carousel', 'tomochain-addons' ),
-    'base'        => 'tomochain_image_carousel',
-    'icon'        => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
-    'description' => esc_html__( 'Animated carousel with images', 'tomochain-addons' ),
-    'category'    => esc_html__( 'TomoChain', 'tomochain-addons' ),
-    'params'      => array(
-        array(
-            'type'        => 'attach_images',
-            'heading'     => esc_html__( 'Images', 'tomochain-addons' ),
-            'param_name'  => 'images',
-            'value'       => '',
-            'description' => esc_html__( 'Select images from media library . ', 'tomochain-addons' ),
-            'save_always' => true,
-        ),
+    'name'            => esc_html__( 'Image Carousel', 'tomochain-addons' ),
+    'base'            => 'tomochain_image_carousel',
+    'icon'            => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
+    'description'     => esc_html__( 'Animated carousel with images', 'tomochain-addons' ),
+    'category'        => esc_html__( 'TomoChain', 'tomochain-addons' ),
+    'js_view'         => 'VcColumnView',
+	'content_element' => true,
+    'as_parent'       => array( 'only' => 'tomochain_image_carousel_item' ),
+    'params'          => array(
         array(
             'type'        => 'textfield',
             'heading'     => esc_html__( 'Carousel image size', 'tomochain-addons' ),
@@ -39,6 +33,7 @@ vc_map( array(
                 5,
                 6,
             ),
+            'std'       => 6
         ),
         array(
             'type'       => 'checkbox',

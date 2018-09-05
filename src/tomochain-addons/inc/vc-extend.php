@@ -14,6 +14,7 @@ function tomochain_load_shortcodes() {
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-blog.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-dapp.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-dapp2.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-image-carousel-item.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-image-carousel.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-list.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-roadmap.php';
