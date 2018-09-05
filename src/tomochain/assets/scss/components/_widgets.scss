@@ -131,3 +131,44 @@
     }
 }
 
+.widget_tomo_recent_posts {
+
+    .recent-post {
+        display: table;
+        padding-top: 0;
+        padding-bottom: 20px;
+        margin-bottom: 20px;
+        border-bottom: 1px solid #2a3452;
+
+        &:last-of-type {
+            padding-bottom: 0;
+            margin-bottom: 0;
+            border-bottom: none;
+        }
+    }
+
+    .recent-post__thumb {
+        display: table-cell;
+        vertical-align: top;
+        width: 100px;
+        padding-right: 20px;
+    }
+
+    .recent-post__info {
+        display: table-cell;
+        vertical-align: top;
+
+        p {
+            font-size: 15px;
+            line-height: 1.6;
+            max-width: 150px;
+            margin-top: -5px;
+            margin-bottom: 5px;
+        }
+
+        .post-meta {
+            font-size: 13px;
+            color: #808aa9;
+        }
+    }
+}

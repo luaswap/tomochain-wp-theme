@@ -244,6 +244,7 @@ add_action( 'wp_enqueue_scripts', 'tomochain_scripts' );
  */
 require TOMOCHAIN_THEME_DIR . '/inc/widgets/wph-widget-class.php';
 require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-address.php';
+require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-recent-posts.php';
 if (defined('SENDGRID_CATEGORY')) {
     require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-sendgrid.php';
 }

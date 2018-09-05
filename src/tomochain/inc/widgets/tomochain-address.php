@@ -15,7 +15,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
         function __construct() {
             $args = array(
                 'slug'  => 'tomo_address',
-                'label' => '📮 &nbsp;' . esc_html__( 'TOMOCHAIN Address', 'tomochain' ),
+                'label' => '&#x1f4cc; &nbsp;' . esc_html__( 'TOMOCHAIN Address', 'tomochain' ),
                 'description' => esc_html__( 'Display contact information on footer.', 'tomochain' )
             );
 

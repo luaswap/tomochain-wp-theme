@@ -9424,22 +9424,23 @@ This is where majority of our work takes place and our UI components are often c
 .post-share-buttons a {
   margin-right: 0.625rem; }
 
-.post-navigation a {
-  display: inline-block;
-  margin-bottom: 0.625rem;
-  color: #808aa9; }
-  .post-navigation a:hover {
-    color: #ebeaf5; }
-
-.post-navigation .nav-previous a:before {
-  content: "\f100";
-  font-size: 0.375rem;
-  margin-right: 0.3125rem; }
-
-.post-navigation .nav-next a:after {
-  content: "\f101";
-  font-size: 0.375rem;
-  margin-left: 0.3125rem; }
+.post-navigation {
+  margin-top: 3.75rem;
+  margin-bottom: 3.75rem; }
+  .post-navigation a {
+    display: inline-block;
+    margin-bottom: 0.625rem;
+    color: #808aa9; }
+    .post-navigation a:hover {
+      color: #ebeaf5; }
+  .post-navigation .nav-previous a:before {
+    content: "\f100";
+    font-size: 0.375rem;
+    margin-right: 0.3125rem; }
+  .post-navigation .nav-next a:after {
+    content: "\f101";
+    font-size: 0.375rem;
+    margin-left: 0.3125rem; }
 
 .sticky {
   display: block; }
@@ -10179,6 +10180,36 @@ This is where majority of our work takes place and our UI components are often c
     content: '\e901';
     font-size: 0.625rem;
     color: #6a6beb; }
+
+.widget_tomo_recent_posts .recent-post {
+  display: table;
+  padding-top: 0;
+  padding-bottom: 1.25rem;
+  margin-bottom: 1.25rem;
+  border-bottom: 0.0625rem solid #2a3452; }
+  .widget_tomo_recent_posts .recent-post:last-of-type {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    border-bottom: none; }
+
+.widget_tomo_recent_posts .recent-post__thumb {
+  display: table-cell;
+  vertical-align: top;
+  width: 6.25rem;
+  padding-right: 1.25rem; }
+
+.widget_tomo_recent_posts .recent-post__info {
+  display: table-cell;
+  vertical-align: top; }
+  .widget_tomo_recent_posts .recent-post__info p {
+    font-size: 0.9375rem;
+    line-height: 1.6;
+    max-width: 9.375rem;
+    margin-top: -0.3125rem;
+    margin-bottom: 0.3125rem; }
+  .widget_tomo_recent_posts .recent-post__info .post-meta {
+    font-size: 0.8125rem;
+    color: #808aa9; }
 
 /*
 Trumps
@@ -10968,11 +10999,11 @@ body.page-id-31.admin-bar .site-header {
     margin-left: 91.66667%; }
   .hidden-sm-up {
     display: none !important; }
-  .post-navigation .nav-links {
-    display: grid;
-    grid-template-columns: 50% 50%; }
-  .post-navigation .nav-next {
-    text-align: right; }
+    .post-navigation .nav-links {
+      display: grid;
+      grid-template-columns: 50% 50%; }
+    .post-navigation .nav-next {
+      text-align: right; }
   .tomochain-roadmap {
     opacity: 0;
     visibility: hidden;

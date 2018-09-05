@@ -24,7 +24,7 @@ if ( ! class_exists( 'TomoChain_Sendgrid_Widget' ) ) {
         function __construct() {
             $args = array(
                 'slug'  => 'tomo_sendgrid',
-                'label' => '📮 &nbsp;' . esc_html__( 'TOMOCHAIN Sendgrid', 'tomochain' ),
+                'label' => '&#x1f4cc; &nbsp;' . esc_html__( 'TOMOCHAIN Sendgrid', 'tomochain' ),
                 'description' => esc_html__( 'SendGrid Marketing Campaigns Subscription Widget.', 'tomochain' )
             );
 
