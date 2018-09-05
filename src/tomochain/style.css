@@ -9353,7 +9353,7 @@ This is where majority of our work takes place and our UI components are often c
   -webkit-transform: scale(1.05);
           transform: scale(1.05); }
 
-.single-post .post {
+.single-post .site-main {
   padding-top: 3.75rem; }
 
 .single-post .entry-title {

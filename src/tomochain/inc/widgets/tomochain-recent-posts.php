@@ -28,7 +28,9 @@ if ( ! class_exists( 'TomoChain_Recent_Posts_Widget' ) ) {
 
 			echo $args['before_widget'];
 
-			$output = array( '<h3 class="widget-title">' . $instance['title'] . '</h3>' );
+            if ( $instance['title'] ) {
+                $output = array( '<h3 class="widget-title">' . $instance['title'] . '</h3>' );
+            }
 
 			$query_args = array( 'post_type' => 'post', 'posts_per_page' => $instance['number'] );
 			$loop       = new WP_Query( $query_args );
