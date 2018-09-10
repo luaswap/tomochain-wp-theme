@@ -8,6 +8,7 @@ var tomochain
             function () {
                 return {
                     init: function () {
+                        this.blog();
                         this.header();
                         this.imageCarousel();
                         this.langSwitcher();
@@ -23,6 +24,7 @@ var tomochain
         )
     }
 )(jQuery);
+//@include('blog.js')
 //@include('header.js')
 //@include('image-carousel.js')
 //@include('lang-switcher.js')

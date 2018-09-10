@@ -2,6 +2,9 @@
 /**
  * Shortcode attributes
  *
+ * @var $loop
+ * @var $auto_play
+ * @var $auto_play_speed
  * @var $el_class
  * @var $css
  * Shortcode class
@@ -28,12 +31,12 @@ $posts = get_posts(
     array(
         'post_type'      => 'post',
         'post_status'    => 'publish',
-        'posts_per_page' => 4
+        'posts_per_page' => -1
     )
 );
 ?>
 <div class="<?php echo esc_attr( trim( $css_class ) ); ?>">
-    <div class="row">
+    <div class="row blog-carousel" data-atts="<?php echo esc_attr( json_encode( $atts ) ); ?>">
         <?php foreach($posts as $post): ?>
             <div class="col-sm-6 col-lg-3 tomochain-blog-item">
                 <div class="blog-thumbnail">
@@ -61,6 +64,8 @@ $posts = get_posts(
                 </div>
             </div>
         <?php endforeach; ?>
+    </div>
+    <div class="row">
         <div class="col-12">
             <p class="see-all-blog">
                 <a href="<?php echo esc_url(get_permalink(get_option( 'page_for_posts' )))?>"><?php esc_html_e('See all our news', 'tomochain-addons'); ?></a>

@@ -1,3 +1,49 @@
+.tomochain-blog {
+
+    .blog-carousel:hover .slick-arrow:not(.slick-disabled) {
+        opacity: 1;
+        visibility: visible;
+    }
+
+    .slick-arrow {
+        height: 100%;
+        opacity: 0;
+        visibility: hidden;
+
+        &.slick-prev {
+            left: -20px;
+        }
+
+        &.slick-next {
+            right: -20px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+
+        .blog-carousel {
+            opacity: 0;
+            visibility: hidden;
+
+            &.slick-initialized {
+                opacity: 1;
+                visibility: visible;
+            }
+        }
+
+        .slick-arrow {
+
+            &.slick-prev {
+                left: -30px;
+            }
+
+            &.slick-next {
+                right: -30px;
+            }
+        }
+    }
+}
+
 .tomochain-blog-item {
     text-align: center;
     margin-bottom: 60px;
@@ -5,10 +51,6 @@
     @extend %transit;
 
     &:hover {
-
-        .blog-thumbnail img {
-            transform: translateY(-10px);
-        }
 
         .blog-thumbnail a:before,
         .blog-date {
@@ -19,6 +61,7 @@
 
     .blog-thumbnail {
         position: relative;
+        overflow: hidden;
         margin-bottom: -140px;
 
         @extend %transit;
@@ -45,6 +88,8 @@
             max-width: 200px;
             box-shadow: 0 2px 10px 5px #1e2242;
             border-radius: 8px;
+            margin-left: auto;
+            margin-right: auto;
 
             @extend %transit;
         }
@@ -53,7 +98,7 @@
     .blog-date {
         position: absolute;
         left: 50%;
-        bottom: 10px;
+        bottom: 0;
         padding-bottom: 10px;
         opacity: 0;
         visibility: hidden;
