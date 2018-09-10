@@ -30,6 +30,7 @@ $classes = 'col-xs-12 col-md-6';
 				<?php
 				tomochain_posted_by();
 				tomochain_posted_on();
+                tomochain_categories();
 				?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>

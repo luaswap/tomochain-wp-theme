@@ -17,13 +17,14 @@ get_header();
             <div class="row">
             <?php if ( have_posts() ) :
                 $index = 0;
+                $paged = (get_query_var('paged')) ? get_query_var('paged') : 1;
                 /* Start the Loop */
                 while ( have_posts() ) :
                     the_post();
                     $index++;
 
-                    if ($index == 1) : ?>
-                        <div class="col-xs-12 post-fullwidth">
+                    if ($index == 1 && $paged == 1) : ?>
+                        <div class="col-12 post-fullwidth">
                             <?php get_template_part( 'template-parts/content', 'fullwidth' ); ?>
                         </div>
                     <?php

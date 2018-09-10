@@ -1004,8 +1004,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
-.entry-meta span.byline:before,
-.entry-meta span.posted-on:before,
+.entry-meta span:before,
 .post-tags .tagcloud:before,
 .post-navigation .nav-previous a:before,
 .post-navigation .nav-next a:after,
@@ -1111,8 +1110,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-left.menu-back:before,
-.entry-meta span.fa-pull-left.byline:before,
-.entry-meta span.fa-pull-left.posted-on:before,
+.entry-meta span.fa-pull-left:before,
 .post-tags .fa-pull-left.tagcloud:before,
 .post-navigation .nav-previous a.fa-pull-left:before,
 .post-navigation .nav-next a.fa-pull-left:after,
@@ -1142,8 +1140,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu > ul li.page_item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-right.menu-back:before,
-.entry-meta span.fa-pull-right.byline:before,
-.entry-meta span.fa-pull-right.posted-on:before,
+.entry-meta span.fa-pull-right:before,
 .post-tags .fa-pull-right.tagcloud:before,
 .post-navigation .nav-previous a.fa-pull-right:before,
 .post-navigation .nav-next a.fa-pull-right:after,
@@ -4754,8 +4751,7 @@ readers do not read off random characters that represent icons */
 .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
-.entry-meta span.byline:before,
-.entry-meta span.posted-on:before,
+.entry-meta span:before,
 .post-tags .tagcloud:before,
 .post-navigation .nav-previous a:before,
 .post-navigation .nav-next a:after,
@@ -9454,6 +9450,13 @@ This is where majority of our work takes place and our UI components are often c
   padding-top: 3.75rem;
   margin-bottom: 5rem; }
 
+.entry-footer {
+  display: none; }
+  .single-post .entry-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+
 .entry-title {
   font-size: 1.25rem;
   font-weight: 400;
@@ -9484,6 +9487,8 @@ This is where majority of our work takes place and our UI components are often c
     content: "\f007"; }
   .entry-meta span.posted-on:before {
     content: "\f073"; }
+  .entry-meta span.categories:before {
+    content: "\f02b"; }
 
 .entry-content {
   line-height: 1.7;

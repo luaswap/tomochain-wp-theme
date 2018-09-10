@@ -53,8 +53,8 @@ endif;
 
 if ( ! function_exists( 'tomochain_categories' ) ) :
     function tomochain_categories() {
-        if ( get_the_category_list( ', ' ) && $atts['cats'] ) : ?>
-            <span class="meta-categories"><?php echo get_the_category_list( ', ' ); ?></span>
+        if ( get_the_category_list( ', ' )) : ?>
+            <span class="categories"><?php echo get_the_category_list( ', ' ); ?></span>
         <?php
         endif;
     }

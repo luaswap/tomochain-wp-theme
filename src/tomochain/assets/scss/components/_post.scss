@@ -20,6 +20,14 @@
     margin-bottom: 80px;
 }
 
+.entry-footer {
+    display: none;
+
+    .single-post & {
+        display: flex;
+    }
+}
+
 .entry-title {
     font-size: 20px;
     font-weight: 400;
@@ -59,17 +67,20 @@
         vertical-align: baseline;
         font-size: 12px;
         margin-right: 8px;
+        @extend .fas;
     }
 
     span.byline:before {
         margin-right: 4px;
         content: fa-content($fa-var-user);
-        @extend .fas;
     }
 
     span.posted-on:before {
         content: fa-content($fa-var-calendar-alt);
-        @extend .fas;
+    }
+
+    span.categories:before {
+        content: fa-content($fa-var-tag);
     }
 }
 
