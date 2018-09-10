@@ -152,7 +152,7 @@ function tomochain_enqueue_libs() {
     */
     $font_url = add_query_arg( 'family',
             'Open+Sans:300,400,600,700|Quicksand:400,500&amp;subset=latin-ext,vietnamese',
-            'http://fonts.googleapis.com/css' );
+            'https://fonts.googleapis.com/css' );
     wp_enqueue_style( 'google-fonts', $font_url, null, TOMOCHAIN_THEME_VERSION );
 
     wp_enqueue_script( 'superfish',
