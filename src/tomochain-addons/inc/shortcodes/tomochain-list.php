@@ -9,7 +9,7 @@ class WPBakeryShortCode_TomoChain_List extends WPBakeryShortCode {
         $css   = '';
 
         $css = $cssID . ' .tomochain-list__item:before{background-color:' . $atts['dots_color'] . ';}';
-        $css .= $cssID . ' .tomochain-list__item{color:' . $atts['text_color'] . '}';
+        $css .= $cssID . ' .tomochain-list__item,' . $cssID . ' .tomochain-list__item a{color:' . $atts['text_color'] . '}';
 
         return tomochain_text2line( $css );
     }

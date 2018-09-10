@@ -35,6 +35,6 @@ $items = explode( ',', $items );
 <style><?php echo $this->shortcode_css( $css_id ); ?></style>
 <ul class="<?php echo esc_attr( trim( $css_class ) ); ?>" id="<?php echo esc_attr(  $css_id ); ?>">
     <?php foreach($items as $item): ?>
-        <li class="tomochain-list__item"><?php echo '' . $item; ?></li>
+        <li class="tomochain-list__item"><?php echo '' . wpb_js_remove_wpautop($item); ?></li>
     <?php endforeach; ?>
 </ul>

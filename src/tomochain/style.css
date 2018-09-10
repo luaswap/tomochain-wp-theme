@@ -9359,7 +9359,7 @@ This is where majority of our work takes place and our UI components are often c
       line-height: 2.5rem; }
 
 .tomochain-pagination, .woocommerce-pagination {
-  margin-bottom: 6.25rem; }
+  margin-bottom: 5rem; }
   .tomochain-pagination.woocommerce-pagination, .woocommerce-pagination {
     margin-bottom: 1.875rem; }
 
@@ -10332,6 +10332,9 @@ body.info-opened:after {
   opacity: .8;
   z-index: 999; }
 
+.edit-link {
+  display: none; }
+
 .slick-dots {
   list-style: none;
   display: block;
@@ -10536,6 +10539,18 @@ body.page-id-31.admin-bar .site-header {
     border-radius: 0.1875rem;
     -webkit-animation: glowingColor3 3s infinite, translate4 20s linear infinite;
             animation: glowingColor3 3s infinite, translate4 20s linear infinite; }
+
+.tomochain-list.remove-p p {
+  display: none; }
+
+.tomochain-list.remove-p pre {
+  display: inline-block;
+  font-size: 1rem;
+  vertical-align: -0.5rem;
+  background-color: transparent;
+  padding: 0;
+  margin-left: -0.625rem;
+  margin-bottom: 0; }
 
 .nice-select {
   font-family: 'Quicksand';
@@ -11699,7 +11714,9 @@ body.page-id-31.admin-bar .site-header {
       padding-right: 0 !important; }
     #about-us-row #about-us-text-left,
     #about-us-row #about-us-text-right {
-      max-width: 18.75rem; } }
+      max-width: 18.75rem; }
+  .exchanges-row {
+    margin-bottom: 3.125rem; } }
   @media (min-width: 62rem) {
   .d-lg-none {
     display: none !important; }

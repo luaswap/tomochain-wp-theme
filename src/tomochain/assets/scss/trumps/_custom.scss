@@ -21,6 +21,10 @@ body.info-opened:after {
     z-index: 999;
 }
 
+.edit-link {
+    display: none;
+}
+
 .slick-dots {
     list-style: none;
     display: block;
@@ -391,5 +395,28 @@ body.page-id-31 {
             left: auto;
             right: 40%;
         }
+    }
+}
+
+.exchanges-row {
+    @include media-breakpoint-up(md) {
+        margin-bottom: 50px;
+    }
+}
+
+.tomochain-list.remove-p {
+
+    p {
+        display: none;
+    }
+
+    pre {
+        display: inline-block;
+        font-size: 16px;
+        vertical-align: -8px;
+        background-color: transparent;
+        padding: 0;
+        margin-left: -10px;
+        margin-bottom: 0;
     }
 }
