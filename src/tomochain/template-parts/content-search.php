@@ -16,8 +16,9 @@
 		<?php if ( 'post' === get_post_type() ) : ?>
 		<div class="entry-meta">
 			<?php
-			tomochain_posted_on();
-			tomochain_posted_by();
+            tomochain_posted_by();
+            tomochain_posted_on();
+            tomochain_categories();
 			?>
 		</div><!-- .entry-meta -->
 		<?php endif; ?>

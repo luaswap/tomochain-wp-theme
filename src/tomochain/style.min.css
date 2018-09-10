@@ -8947,10 +8947,6 @@ This is where majority of our work takes place and our UI components are often c
 .blog .site-main {
   padding-top: 3.75rem; }
 
-.blog .post-thumbnail {
-  overflow: hidden;
-  display: block; }
-
 .post-fullwidth article {
   max-width: 100%;
   -webkit-box-flex: 0;
@@ -9445,6 +9441,7 @@ This is where majority of our work takes place and our UI components are often c
   margin-bottom: 3.75rem !important; }
 
 .post-thumbnail {
+  display: block;
   overflow: hidden;
   margin-bottom: 1.875rem; }
 

@@ -65,6 +65,7 @@ if ( ! function_exists( 'tomochain_entry_footer' ) ) :
 	 * Prints HTML with meta information for the categories, tags and comments.
 	 */
 	function tomochain_entry_footer() {
+        return;
 		// Hide category and tag text for pages.
         if ( 'post' === get_post_type() ) :
             global $post;
@@ -151,7 +152,10 @@ if ( ! function_exists( 'tomochain_post_thumbnail' ) ) :
 	function tomochain_post_thumbnail() {
 		if ( post_password_required() || is_attachment() || ! has_post_thumbnail() ) {
 			return;
-		}
+        }
+
+        $custom_url = get_field('custom_url');
+        $open_new_tab = get_field('open_in_new_tab') ? '__blank' : '';
 
 		if ( is_singular() ) :
 			?>
@@ -162,7 +166,7 @@ if ( ! function_exists( 'tomochain_post_thumbnail' ) ) :
 
 		<?php else : ?>
 
-		<a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
+		<a class="post-thumbnail" href="<?php echo esc_url($custom_url); ?>" target="<?php echo esc_attr($open_new_tab); ?>" aria-hidden="true" tabindex="-1">
 			<?php
 			the_post_thumbnail( 'tomo-post-thumbnail', array(
 				'alt' => the_title_attribute( array(

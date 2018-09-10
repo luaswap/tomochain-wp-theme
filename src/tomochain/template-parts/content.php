@@ -8,6 +8,8 @@
  */
 
 $classes = 'col-xs-12 col-md-6';
+$custom_url = get_field('custom_url');
+$open_new_tab = get_field('open_in_new_tab') ? '__blank' : '';
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($classes); ?>>
@@ -19,7 +21,7 @@ $classes = 'col-xs-12 col-md-6';
 		if ( is_singular() ) :
 			the_title( '<h1 class="entry-title">', '</h1>' );
 		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
+            the_title('<h2 class="entry-title"><a href="' . ($custom_url ? esc_url($custom_url) : '#') . '" target="' . esc_attr($open_new_tab) . '" rel="bookmark">', '</a></h2>');
 		endif;
 
 		if ( 'post' === get_post_type() ) :
