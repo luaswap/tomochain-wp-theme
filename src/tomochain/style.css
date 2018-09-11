@@ -9650,19 +9650,6 @@ This is where majority of our work takes place and our UI components are often c
         z-index: 1;
         color: #fff; }
 
-.tomochain-blog .blog-carousel:hover .slick-arrow:not(.slick-disabled) {
-  opacity: 1;
-  visibility: visible; }
-
-.tomochain-blog .slick-arrow {
-  height: 100%;
-  opacity: 0;
-  visibility: hidden; }
-  .tomochain-blog .slick-arrow.slick-prev {
-    left: -1.25rem; }
-  .tomochain-blog .slick-arrow.slick-next {
-    right: -1.25rem; }
-
 .tomochain-blog-item {
   text-align: center;
   margin-bottom: 3.75rem; }
@@ -10360,6 +10347,9 @@ body.info-opened:after {
   cursor: pointer;
   position: absolute;
   top: 50%;
+  height: 100%;
+  opacity: 0;
+  visibility: hidden;
   font-size: 0;
   text-align: center;
   height: 2.5rem;
@@ -10383,15 +10373,19 @@ body.info-opened:after {
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
   .slick-arrow.slick-prev {
-    left: 0; }
+    left: -1.25rem; }
     .slick-arrow.slick-prev:before {
       content: '\e903'; }
   .slick-arrow.slick-next {
-    right: 0; }
+    right: -1.25rem; }
     .slick-arrow.slick-next:before {
       content: '\e904'; }
   .slick-arrow.slick-disabled {
     opacity: 0; }
+
+.slick-slider:hover .slick-arrow:not(.slick-disabled) {
+  opacity: 1;
+  visibility: visible; }
 
 .slick-dots {
   list-style: none;
@@ -11711,10 +11705,6 @@ body.page-id-31.admin-bar .site-header {
     .tomochain-blog .blog-carousel.slick-initialized {
       opacity: 1;
       visibility: visible; }
-  .tomochain-blog .slick-arrow.slick-prev {
-    left: -1.875rem; }
-  .tomochain-blog .slick-arrow.slick-next {
-    right: -1.875rem; }
       .tomochain-dapp__description {
         text-align: justify; }
       .tomochain-dapp__links a {
@@ -11758,6 +11748,10 @@ body.page-id-31.admin-bar .site-header {
         margin-right: 1.5625rem; }
       .tomochain-testnet-item__title {
         width: calc(100% - 8.75rem); }
+    .slick-arrow.slick-prev {
+      left: -1.875rem; }
+    .slick-arrow.slick-next {
+      right: -1.875rem; }
     #posv-row {
       margin-bottom: 0; }
   #posv-img {

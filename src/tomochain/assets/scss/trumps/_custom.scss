@@ -29,6 +29,9 @@ body.info-opened:after {
     cursor: pointer;
     position: absolute;
     top: 50%;
+    height: 100%;
+    opacity: 0;
+    visibility: hidden;
     font-size: 0;
     text-align: center;
 	height: 40px;
@@ -61,7 +64,7 @@ body.info-opened:after {
 	}
 
     &.slick-prev {
-        left: 0;
+        left: -20px;
 
         &:before {
             content:  '\e903';
@@ -69,7 +72,7 @@ body.info-opened:after {
     }
 
     &.slick-next {
-        right: 0;
+        right: -20px;
 
         &:before {
             content: '\e904';
@@ -79,6 +82,21 @@ body.info-opened:after {
     &.slick-disabled {
         opacity: 0;
     }
+
+    @include media-breakpoint-up(md) {
+        &.slick-prev {
+            left: -30px;
+        }
+
+        &.slick-next {
+            right: -30px;
+        }
+    }
+}
+
+.slick-slider:hover .slick-arrow:not(.slick-disabled) {
+    opacity: 1;
+    visibility: visible;
 }
 
 .slick-dots {

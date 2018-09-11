@@ -1,24 +1,5 @@
 .tomochain-blog {
 
-    .blog-carousel:hover .slick-arrow:not(.slick-disabled) {
-        opacity: 1;
-        visibility: visible;
-    }
-
-    .slick-arrow {
-        height: 100%;
-        opacity: 0;
-        visibility: hidden;
-
-        &.slick-prev {
-            left: -20px;
-        }
-
-        &.slick-next {
-            right: -20px;
-        }
-    }
-
     @include media-breakpoint-up(md) {
 
         .blog-carousel {
@@ -28,17 +9,6 @@
             &.slick-initialized {
                 opacity: 1;
                 visibility: visible;
-            }
-        }
-
-        .slick-arrow {
-
-            &.slick-prev {
-                left: -30px;
-            }
-
-            &.slick-next {
-                right: -30px;
             }
         }
     }

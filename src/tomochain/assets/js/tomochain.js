@@ -108,7 +108,6 @@ var tomochain
 
             var configs = {
                 accessibility : false,
-                arrows        : false,
                 slidesToShow  : parseInt( atts.number_of_images_to_show ),
                 slidesToScroll: 1,
                 infinite      : atts.loop == 'yes',
