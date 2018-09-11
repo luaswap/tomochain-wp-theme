@@ -10318,6 +10318,36 @@ This is where majority of our work takes place and our UI components are often c
     font-size: 0.8125rem;
     color: #808aa9; }
 
+body.error404 {
+  height: 100vh;
+  overflow: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center; }
+  body.error404 #page {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-item-align: center;
+        align-self: center; }
+
+.error-404 {
+  height: 100%;
+  text-align: center; }
+  .error-404 img {
+    max-width: 100%;
+    margin-bottom: 3.125rem; }
+  .error-404 p {
+    text-transform: uppercase;
+    font-size: 1.75rem;
+    font-weight: 600;
+    color: #ebeaf5; }
+
 /*
 Trumps
 ================================================
@@ -11225,6 +11255,8 @@ body.page-template-revslider-page-template {
     padding: 0 0.9375rem; }
       #team-member-info.add-content .team-member-info__wrapper {
         padding: 1.875rem; }
+    .error-404 img {
+      max-width: 18.75rem; }
     #dapps-row:before {
       left: auto;
       right: 50%; }
@@ -11787,6 +11819,8 @@ body.page-template-revslider-page-template {
         margin-right: 1.5625rem; }
       .tomochain-testnet-item__title {
         width: calc(100% - 8.75rem); }
+    .error-404 img {
+      max-width: 25rem; }
     .slick-arrow.slick-prev {
       left: -1.875rem; }
     .slick-arrow.slick-next {
@@ -12372,6 +12406,8 @@ body.page-template-revslider-page-template {
       padding-right: 2.5rem; }
     .widget_tomo_sendgrid #tomo-sendgrid-button:after {
       font-size: 0.75rem; }
+    .error-404 img {
+      max-width: 28.125rem; }
   #posv-img:before {
     width: 31.25rem;
     height: 25rem;

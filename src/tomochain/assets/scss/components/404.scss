@@ -1,0 +1,47 @@
+body.error404 {
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+
+    #page {
+        display: flex;
+        align-self: center;
+    }
+}
+
+.error-404 {
+    height: 100%;
+    text-align: center;
+
+    img {
+        max-width: 100%;
+        margin-bottom: 50px;
+    }
+
+    p {
+        text-transform: uppercase;
+        font-size: 28px;
+        font-weight: 600;
+        color: #ebeaf5;
+    }
+
+    @include media-breakpoint-up(sm) {
+        img {
+            max-width: 300px;
+        }
+    }
+
+    @include media-breakpoint-up(md) {
+        img {
+            max-width: 400px;
+        }
+    }
+
+    @include media-breakpoint-up(lg) {
+        img {
+            max-width: 450px;
+        }
+    }
+}

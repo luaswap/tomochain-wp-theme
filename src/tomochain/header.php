@@ -21,6 +21,7 @@
 </head>
 
 <body <?php body_class(); ?>>
+<?php if (!is_404()): ?>
 <div class="site-mobile-menu-wrapper">
 	<?php
 	wp_nav_menu( array(
@@ -30,9 +31,10 @@
     tomochain_social_links();
 	?>
 </div>
+<?php endif; ?>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tomochain' ); ?></a>
-
+    <?php if (!is_404()): ?>
 	<header id="masthead" class="site-header">
 		<div class="container">
 			<div class="row">
@@ -59,6 +61,7 @@
 				</div><!-- .header-tools-->
 			</div>
 		</div>
-	</header><!-- #masthead -->
+    </header><!-- #masthead -->
+    <?php endif; ?>
 
 	<div id="content" class="site-content">

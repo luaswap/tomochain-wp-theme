@@ -12,7 +12,7 @@
 ?>
 
     </div><!-- #content -->
-
+    <?php if (!is_404()): ?>
     <footer id="colophon" class="site-footer text-center">
         <div class="container">
             <div class="row">
@@ -29,6 +29,7 @@
             </div>
         </div>
     </footer><!-- #colophon -->
+    <?php endif; ?>
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
