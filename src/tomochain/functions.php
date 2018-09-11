@@ -202,6 +202,12 @@ function tomochain_enqueue_libs() {
         array(),
         null,
         true );
+
+    wp_register_script( 'lottie',
+        TOMOCHAIN_LIBS_URI . '/lottie/js/lottie.js',
+        array(),
+        null,
+        true );
 }
 add_action( 'wp_enqueue_scripts', 'tomochain_enqueue_libs', 1 );
 

@@ -357,6 +357,25 @@ body.info-opened:after {
     letter-spacing: .05em;
 }
 
+#testnet-row {
+    padding-top: 50px;
+    padding-bottom: 30px;
+
+    @include media-breakpoint-up(lg) {
+        padding-top: 100px;
+    }
+
+    @include media-breakpoint-only(md) {
+        .tomochain-lottie {
+            text-align: center;
+
+            svg {
+                max-width: 420px;
+            }
+        }
+    }
+}
+
 
 // TEAM PAGE
 body.page-id-31 {

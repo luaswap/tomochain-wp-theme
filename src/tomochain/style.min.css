@@ -10526,6 +10526,10 @@ body.info-opened:after {
 #double-validation-text {
   letter-spacing: .05em; }
 
+#testnet-row {
+  padding-top: 3.125rem;
+  padding-bottom: 1.875rem; }
+
 body.page-id-31 .site-header {
   position: fixed;
   top: 0;
@@ -11779,6 +11783,11 @@ body.page-id-31.admin-bar .site-header {
       max-width: 18.75rem; }
   .exchanges-row {
     margin-bottom: 3.125rem; } }
+  @media (min-width: 48rem) and (max-width: 61.99875rem) {
+    #testnet-row .tomochain-lottie {
+      text-align: center; }
+      #testnet-row .tomochain-lottie svg {
+        max-width: 26.25rem; } }
   @media (min-width: 62rem) {
   .d-lg-none {
     display: none !important; }
@@ -12338,6 +12347,8 @@ body.page-id-31.admin-bar .site-header {
       margin-bottom: 5.625rem; }
   #double-validation-column .wpb_single_image {
     padding-bottom: 9.375rem; }
+    #testnet-row {
+      padding-top: 6.25rem; }
     #about-us-row #about-us-text-left,
     #about-us-row #about-us-text-right {
       max-width: 25.625rem; } }

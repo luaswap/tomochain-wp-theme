@@ -18,6 +18,7 @@ var tomochain
                         this.sendgrid();
                         this.team();
                         this.testnet();
+                        this.tomo_lottie();
                     }
                 }
             }()
@@ -34,6 +35,7 @@ var tomochain
 //@include('sendgrid.js')
 //@include('team.js')
 //@include('testnet.js')
+//@include('tomo_lottie.js')
 jQuery (document).ready(function() {
     tomochain.init()
 })
