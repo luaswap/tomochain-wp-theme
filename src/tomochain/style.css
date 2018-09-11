@@ -6959,7 +6959,7 @@ a, .site-header, .main-menu .menu li.page_item.page_item_has_children > a:before
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .tomochain-pagination ul li a:after, .woocommerce-pagination ul li a:after, .post-thumbnail img, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-blog-item, .tomochain-blog-item .blog-thumbnail, .tomochain-blog-item .blog-thumbnail a:before, .tomochain-blog-item .blog-thumbnail img, .tomochain-blog-item .blog-date, .tomochain-roadmap, .tomochain-team__see-all:before, .tomochain-team-member__image a:after, .tomochain-team-member__image img, .team-member-info__close:before, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, body:after, .slick-arrow, .slick-arrow:before, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .tomochain-pagination ul li a:after, .woocommerce-pagination ul li a:after, .post-thumbnail img, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-blog-item, .tomochain-blog-item .blog-thumbnail, .tomochain-blog-item .blog-thumbnail a:before, .tomochain-blog-item .blog-thumbnail img, .tomochain-blog-item .blog-date, .tomochain-roadmap, .tomochain-team__see-all span, .tomochain-button span, .tomochain-team__see-all:before, .tomochain-button:before, .tomochain-team-member__image a:after, .tomochain-team-member__image img, .team-member-info__close:before, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, body:after, .slick-arrow, .slick-arrow:before, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
@@ -9940,7 +9940,7 @@ This is where majority of our work takes place and our UI components are often c
   margin-top: 1.25rem;
   margin-bottom: 3.75rem; }
 
-.tomochain-team__see-all {
+.tomochain-team__see-all, .tomochain-button {
   position: relative;
   display: inline-block;
   border-radius: 0.5rem;
@@ -9949,14 +9949,15 @@ This is where majority of our work takes place and our UI components are often c
   background-size: 400% 400%;
   -webkit-animation: sliderButtonAnimation 3s ease infinite;
           animation: sliderButtonAnimation 3s ease infinite; }
-  .tomochain-team__see-all span {
+  .tomochain-team__see-all span, .tomochain-button span {
+    color: #d5d9e5;
     position: relative;
     font-family: Quicksand;
     font-size: 0.875rem;
     font-weight: 500;
     text-transform: uppercase;
     z-index: 2; }
-  .tomochain-team__see-all:before {
+  .tomochain-team__see-all:before, .tomochain-button:before {
     content: '';
     position: absolute;
     top: 0.125rem;
@@ -9966,9 +9967,9 @@ This is where majority of our work takes place and our UI components are often c
     z-index: 1;
     border-radius: 0.375rem;
     background-color: #161530; }
-  .tomochain-team__see-all:hover {
+  .tomochain-team__see-all:hover span, .tomochain-button:hover span {
     color: #272f4b !important; }
-  .tomochain-team__see-all:hover:before {
+  .tomochain-team__see-all:hover:before, .tomochain-button:hover:before {
     width: 0; }
   .tomochain-team__see-all--collapse {
     min-width: 9.375rem; }
@@ -10607,6 +10608,40 @@ body.page-id-31.admin-bar .site-header {
   padding: 0;
   margin-left: -0.625rem;
   margin-bottom: 0; }
+
+.tomochain-button {
+  min-width: 11.875rem; }
+
+body.page-template-revslider-page-template {
+  height: 100vh;
+  overflow: hidden;
+  background-image: linear-gradient(-225deg, #272F4B 0%, #1A1F36 42%, #15152D 82%, #211841 100%) !important; }
+  body.page-template-revslider-page-template > div {
+    padding: 0 0.9375rem; }
+  body.page-template-revslider-page-template > div,
+  body.page-template-revslider-page-template #subscribe-row {
+    height: 100%; }
+  body.page-template-revslider-page-template #subscribe-row > .wpb_column {
+    height: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    text-align: center; }
+  body.page-template-revslider-page-template .vc_custom_heading {
+    margin: 0 auto;
+    max-width: 38.75rem; }
+  body.page-template-revslider-page-template #copyright-bottom {
+    position: absolute;
+    left: 50%;
+    bottom: 3.75rem;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
 
 .nice-select {
   font-family: 'Quicksand';

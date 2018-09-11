@@ -513,3 +513,44 @@ body.page-id-31 {
         margin-bottom: 0;
     }
 }
+
+.tomochain-button {
+    min-width: 190px;
+
+    @extend .tomochain-team__see-all;
+}
+
+body.page-template-revslider-page-template {
+    height: 100vh;;
+    overflow: hidden;
+    background-image: linear-gradient(-225deg, #272F4B 0%, #1A1F36 42%, #15152D 82%, #211841 100%) !important;
+
+    > div {
+        padding: 0 15px;
+    }
+
+    > div,
+    #subscribe-row {
+        height: 100%;
+    }
+
+    #subscribe-row > .wpb_column {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    .vc_custom_heading {
+        margin: 0 auto;
+        max-width: 620px;
+    }
+
+    #copyright-bottom {
+        position: absolute;
+        left: 50%;
+        bottom: 60px;
+        transform: translateX(-50%);
+    }
+}
