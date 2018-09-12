@@ -347,6 +347,10 @@
 
     &.add-content {
 
+        @include media-breakpoint-up(md) {
+            height: auto !important;
+        }
+
         .team-member-info__wrapper {
             padding: 20px;
 

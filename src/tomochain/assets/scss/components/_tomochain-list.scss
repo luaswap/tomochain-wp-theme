@@ -9,6 +9,7 @@
     position: relative;
     font-weight: 300;
     text-indent: 15px;
+    padding-left: 8px;
     margin-bottom: 15px;
     color: #c5cde3;
 
@@ -19,7 +20,7 @@
     }
 
     &:before {
-        top: 8px;
+        top: 9px;
         left: 0;
         height: 6px;
         width: 6px;
