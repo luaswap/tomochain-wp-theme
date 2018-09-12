@@ -9222,15 +9222,15 @@ This is where majority of our work takes place and our UI components are often c
     stroke-linecap: round;
     stroke-dashoffset: 0; }
     .mobile-menu-btn path#top, .mobile-menu-btn path#bottom {
-      stroke-dasharray: 15rem 59.375rem; }
+      stroke-dasharray: 240px 950px; }
     .mobile-menu-btn path#middle {
-      stroke-dasharray: 15rem 15rem; }
+      stroke-dasharray: 240px 240px; }
   .mobile-menu-btn.is-active path#top,
   .mobile-menu-btn.is-active path#bottom {
     stroke-dashoffset: -40.625rem; }
   .mobile-menu-btn.is-active path#middle {
     stroke-dashoffset: -7.1875rem;
-    stroke-dasharray: 0.0625rem 13.75rem; }
+    stroke-dasharray: 1px 220px; }
 
 .site-mobile-menu-wrapper {
   position: fixed;

@@ -99,7 +99,7 @@ gulp.task('sass', function () {
                         loadPaths: ['src/' + theme + 'assets/images/']
                     }),
                     pxtorem({
-                        propList: ['*'],
+                        propList: ['*', '!stroke-dasharray'],
                         mediaQuery: true
                     })
                 ]))
