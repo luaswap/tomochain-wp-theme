@@ -10329,7 +10329,9 @@ body.error404 {
       -ms-flex-pack: center;
           justify-content: center;
   -ms-flex-line-pack: center;
-      align-content: center; }
+      align-content: center;
+  background-image: url("assets/images/404-bg.jpg");
+  background-size: cover; }
   body.error404 #page {
     display: -webkit-box;
     display: -ms-flexbox;

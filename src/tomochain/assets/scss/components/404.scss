@@ -4,6 +4,8 @@ body.error404 {
     display: flex;
     justify-content: center;
     align-content: center;
+    background-image: url('assets/images/404-bg.jpg');
+    background-size: cover;
 
     #page {
         display: flex;
