@@ -10255,7 +10255,7 @@ This is where majority of our work takes place and our UI components are often c
       margin-bottom: 0.9375rem; }
   .widget_tomo_sendgrid #tomo-sendgrid-form {
     position: relative;
-    max-width: 70%;
+    max-width: 90%;
     padding-top: 0 !important;
     margin: 0 auto; }
     .widget_tomo_sendgrid #tomo-sendgrid-form.loading #tomo-sendgrid-button:after {
@@ -10270,7 +10270,7 @@ This is where majority of our work takes place and our UI components are often c
       content: "\f00c";
       font-size: 1rem; }
   .widget_tomo_sendgrid #tomo-sendgrid-email {
-    padding: 0.5625rem 3.125rem 0.625rem 1.5625rem; }
+    padding: 0.5625rem 1.875rem 0.625rem 0.9375rem; }
   .widget_tomo_sendgrid #tomo-sendgrid-button {
     font-size: 0;
     border: none;
@@ -10281,11 +10281,11 @@ This is where majority of our work takes place and our UI components are often c
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     height: 100%;
-    width: 3.125rem;
+    width: 1.875rem;
     background-color: transparent; }
   .widget_tomo_sendgrid #tomo-sendgrid-button:after {
     content: '\e901';
-    font-size: 0.625rem;
+    font-size: 0.5rem;
     color: #6a6beb; }
 
 .widget_tomo_recent_posts .recent-post {

@@ -42,7 +42,7 @@
 
     #tomo-sendgrid-form {
         position: relative;
-        max-width: 70%;
+        max-width: 90%;
         padding-top: 0 !important;
         margin: 0 auto;
 
@@ -85,7 +85,7 @@
     }
 
     #tomo-sendgrid-email {
-        padding: 9px 50px 10px 25px;
+        padding: 9px 30px 10px 15px;
     }
 
     #tomo-sendgrid-button {
@@ -97,13 +97,13 @@
         right: 0;
         transform: translateY(-50%);
         height: 100%;
-        width: 50px;
+        width: 30px;
         background-color: transparent;
     }
 
     #tomo-sendgrid-button:after {
         content: '\e901';
-        font-size: 10px;
+        font-size: 8px;
         color: #6a6beb;
 
         @extend %tm-icon;
