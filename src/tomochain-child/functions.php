@@ -22,14 +22,17 @@ if ( ! function_exists( 'tomochain_child_enqueue_scripts' ) ) {
         // 	true );
 
         // Enqueue BS Script for Dev.
-        $url = sprintf( 'http://%s:3000/browser-sync/browser-sync-client.js', $_SERVER['SERVER_NAME'] );
-        $ch  = curl_init();
-        curl_setopt( $ch, CURLOPT_URL, $url );
-        curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
-        $header = curl_exec( $ch );
-        curl_close( $ch );
-        if ( $header && strpos( $header[0], '400' ) === false ) {
-            wp_enqueue_script( '__bs_script__', $url, array(), null, true );
+        $whitelist = array('127.0.0.1', "::1");
+        if( in_array($_SERVER['REMOTE_ADDR'], $whitelist) ){
+            $url = sprintf( 'http://%s:3000/browser-sync/browser-sync-client.js', $_SERVER['SERVER_NAME'] );
+            $ch  = curl_init();
+            curl_setopt( $ch, CURLOPT_URL, $url );
+            curl_setopt( $ch, CURLOPT_RETURNTRANSFER, 1 );
+            $header = curl_exec( $ch );
+            curl_close( $ch );
+            if ( $header && strpos( $header[0], '400' ) === false ) {
+                wp_enqueue_script( '__bs_script__', $url, array(), null, true );
+            }
         }
     }
 }
@@ -70,3 +73,10 @@ function tomochain_redirect() {
 }
 
 update_option('revslider-valid', 'true');
+
+// Remove post page
+add_action( 'pre_get_posts', 'tomochain_single_post_404' );
+function tomochain_single_post_404( $query ) {
+    if ( $query->is_main_query() && $query->is_single() )
+        $query->is_404 = true;
+}
