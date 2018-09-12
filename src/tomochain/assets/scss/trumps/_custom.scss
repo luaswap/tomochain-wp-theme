@@ -490,6 +490,22 @@ body.page-id-31 {
     }
 }
 
+#dapp-image {
+    @include media-breakpoint-only(sm) {
+        text-align: center;
+
+        img {
+            max-width: 400px;
+        }
+    }
+    @include media-breakpoint-up(lg) {
+
+        img {
+            max-width: 400px;
+        }
+    }
+}
+
 .exchanges-row {
     @include media-breakpoint-up(md) {
         margin-bottom: 50px;

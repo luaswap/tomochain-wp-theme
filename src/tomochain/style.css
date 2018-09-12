@@ -11265,6 +11265,11 @@ body.page-template-revslider-page-template {
     #dapps-row:after {
       left: auto;
       right: 40%; } }
+  @media (min-width: 36rem) and (max-width: 47.99875rem) {
+  #dapp-image {
+    text-align: center; }
+    #dapp-image img {
+      max-width: 25rem; } }
   @media (min-width: 48rem) {
   .d-md-none {
     display: none !important; }
@@ -12426,7 +12431,9 @@ body.page-template-revslider-page-template {
       padding-top: 6.25rem; }
     #about-us-row #about-us-text-left,
     #about-us-row #about-us-text-right {
-      max-width: 25.625rem; } }
+      max-width: 25.625rem; }
+  #dapp-image img {
+    max-width: 25rem; } }
   @media (min-width: 75rem) {
   .d-xl-none {
     display: none !important; }
@@ -13017,17 +13024,6 @@ body.page-template-revslider-page-template {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-  @media (max-width: 35.99875rem) {
-  .table-responsive-sm {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar; }
-    .table-responsive-sm > .table-bordered {
-      border: 0; }
-  .hidden-xs-down {
-    display: none !important; } }
   @media (max-width: 47.99875rem) {
   .table-responsive-md {
     display: block;
@@ -13060,6 +13056,17 @@ body.page-template-revslider-page-template {
     .table-responsive-xl > .table-bordered {
       border: 0; }
   .hidden-lg-down {
+    display: none !important; } }
+  @media (max-width: 35.99875rem) {
+  .table-responsive-sm {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
+    .table-responsive-sm > .table-bordered {
+      border: 0; }
+  .hidden-xs-down {
     display: none !important; } }
 
 /*# sourceMappingURL=assets/scss/sourcemap/style.css.map */
