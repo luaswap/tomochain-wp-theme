@@ -67,19 +67,7 @@ var tomochain
                     ],
                 };
 
-                var slider = $this.slick( configs );
-
-                if ($(window).width() >= 768) {
-                    slider.on('wheel', function(e) {
-                        e.preventDefault();
-
-                        if (e.originalEvent.deltaY < 0) {
-                            $(this).slick('slickNext');
-                        } else {
-                            $(this).slick('slickPrev');
-                        }
-                    });
-                }
+                $this.slick( configs );
             })
         }
     }
@@ -153,17 +141,7 @@ var tomochain
                 }];
             }
 
-            var slider = $this.slick( configs );
-
-            slider.on('wheel', function(e) {
-                e.preventDefault();
-
-                if (e.originalEvent.deltaY < 0) {
-                    $(this).slick('slickNext');
-                } else {
-                    $(this).slick('slickPrev');
-                }
-            });
+            $this.slick( configs );
         });
     }
 })(jQuery);
@@ -237,7 +215,7 @@ var tomochain
 
             var slider = $roadmap.slick({
                 accessibility : false,
-                arrows: false,
+                // arrows: false,
                 infinite: false,
                 initialSlide: index,
                 slidesToScroll: 1,
@@ -262,17 +240,17 @@ var tomochain
                 ]
             });
 
-            if ($(window).width() >= 426) {
-                slider.on('wheel', function(e) {
-                    e.preventDefault();
+            // if ($(window).width() >= 426) {
+            //     slider.on('wheel', function(e) {
+            //         e.preventDefault();
 
-                    if (e.originalEvent.deltaY < 0) {
-                        $(this).slick('slickNext');
-                    } else {
-                        $(this).slick('slickPrev');
-                    }
-                });
-            }
+            //         if (e.originalEvent.deltaY < 0) {
+            //             $(this).slick('slickNext');
+            //         } else {
+            //             $(this).slick('slickPrev');
+            //         }
+            //     });
+            // }
         }
 })(jQuery);
 

@@ -6,7 +6,7 @@
 
             var slider = $roadmap.slick({
                 accessibility : false,
-                arrows: false,
+                // arrows: false,
                 infinite: false,
                 initialSlide: index,
                 slidesToScroll: 1,
@@ -31,16 +31,16 @@
                 ]
             });
 
-            if ($(window).width() >= 426) {
-                slider.on('wheel', function(e) {
-                    e.preventDefault();
+            // if ($(window).width() >= 426) {
+            //     slider.on('wheel', function(e) {
+            //         e.preventDefault();
 
-                    if (e.originalEvent.deltaY < 0) {
-                        $(this).slick('slickNext');
-                    } else {
-                        $(this).slick('slickPrev');
-                    }
-                });
-            }
+            //         if (e.originalEvent.deltaY < 0) {
+            //             $(this).slick('slickNext');
+            //         } else {
+            //             $(this).slick('slickPrev');
+            //         }
+            //     });
+            // }
         }
 })(jQuery);

@@ -10378,12 +10378,11 @@ body.info-opened:after {
   cursor: pointer;
   position: absolute;
   top: 50%;
-  height: 100%;
   opacity: 0;
   visibility: hidden;
   font-size: 0;
   text-align: center;
-  height: 2.5rem;
+  height: 100%;
   width: 2.5rem;
   z-index: 1;
   border: none;
