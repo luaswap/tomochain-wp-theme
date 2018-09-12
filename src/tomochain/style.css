@@ -11859,7 +11859,7 @@ body.page-template-revslider-page-template {
     #about-us-row #about-us-text-left,
     #about-us-row #about-us-text-right {
       max-width: 18.75rem; }
-  .exchanges-row {
+  .exchanges-inner-row {
     margin-bottom: 3.125rem; } }
   @media (min-width: 48rem) and (max-width: 61.99875rem) {
     #testnet-row .tomochain-lottie {
@@ -12433,7 +12433,9 @@ body.page-template-revslider-page-template {
     #about-us-row #about-us-text-right {
       max-width: 25.625rem; }
   #dapp-image img {
-    max-width: 25rem; } }
+    max-width: 25rem; }
+  #token-details-row .wpb_column:nth-child(2) .tomochain-list {
+    padding-left: 2.5rem; } }
   @media (min-width: 75rem) {
   .d-xl-none {
     display: none !important; }
@@ -12943,7 +12945,9 @@ body.page-template-revslider-page-template {
       left: -10rem; }
     #about-us-row #about-us-text-left,
     #about-us-row #about-us-text-right {
-      max-width: 31.25rem; } }
+      max-width: 31.25rem; }
+  #token-details-row .wpb_column:nth-child(2) .tomochain-list {
+    padding-left: 6.25rem; } }
   @media print {
   .d-print-none {
     display: none !important; }

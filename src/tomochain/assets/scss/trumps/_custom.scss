@@ -506,9 +506,19 @@ body.page-id-31 {
     }
 }
 
-.exchanges-row {
+.exchanges-inner-row {
     @include media-breakpoint-up(md) {
         margin-bottom: 50px;
+    }
+}
+
+#token-details-row .wpb_column:nth-child(2) .tomochain-list {
+    @include media-breakpoint-up(lg) {
+        padding-left: 40px;
+    }
+
+    @include media-breakpoint-up(xl) {
+        padding-left: 100px;
     }
 }
 
