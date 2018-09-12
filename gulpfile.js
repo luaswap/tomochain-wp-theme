@@ -113,6 +113,11 @@ gulp.task('sass', function () {
                    basename: 'style',
                    suffix: '.min'
                }))
+               .pipe($.cleanCss())
+               .pipe($.sourcemaps.write('./assets/scss/sourcemap/', {
+                   includeContent: false,
+                   sourceRoot    : '../../scss/'
+               }))
                .pipe(gulp.dest('src/' + theme + '/'))
 })
 
