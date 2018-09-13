@@ -10046,18 +10046,13 @@ This is where majority of our work takes place and our UI components are often c
 .tomochain-team-member--is-advisor:hover .tomochain-team-member__image img {
   margin-top: -1.25rem; }
 
-.tomochain-team-member--is-advisor .tomochain-team-member__image {
-  max-width: 15.625rem; }
-  .tomochain-team-member--is-advisor .tomochain-team-member__image a {
-    width: 15.625rem;
-    height: 12.5rem; }
-  .tomochain-team-member--is-advisor .tomochain-team-member__image a:after {
-    top: -0.625rem; }
-  .tomochain-team-member--is-advisor .tomochain-team-member__image img {
-    max-width: 15.625rem;
-    margin-top: -0.625rem;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+.tomochain-team-member--is-advisor .tomochain-team-member__image a:after {
+  top: -0.625rem; }
+
+.tomochain-team-member--is-advisor .tomochain-team-member__image img {
+  margin-top: -0.625rem;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .team-member-info__wrapper {
   position: relative; }
@@ -12435,7 +12430,9 @@ body.page-template-revslider-page-template {
   #dapp-image img {
     max-width: 25rem; }
   #token-details-row .wpb_column:nth-child(2) .tomochain-list {
-    padding-left: 2.5rem; } }
+    padding-left: 2.5rem; }
+  .tomochain-team.five-columns .tomochain-team__wrapper {
+    grid-template-columns: 20% 20% 20% 20% 20%; } }
   @media (min-width: 75rem) {
   .d-xl-none {
     display: none !important; }

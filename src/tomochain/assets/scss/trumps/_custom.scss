@@ -579,3 +579,9 @@ body.page-template-revslider-page-template {
         transform: translateX(-50%);
     }
 }
+
+.tomochain-team.five-columns .tomochain-team__wrapper {
+    @include media-breakpoint-up(lg) {
+        grid-template-columns: 20% 20% 20% 20% 20%;
+    }
+}
