@@ -512,16 +512,6 @@ body.page-id-31 {
     }
 }
 
-#token-details-row .wpb_column:nth-child(2) .tomochain-list {
-    @include media-breakpoint-up(lg) {
-        padding-left: 40px;
-    }
-
-    @include media-breakpoint-up(xl) {
-        padding-left: 100px;
-    }
-}
-
 .tomochain-list.remove-p {
 
     p {
@@ -537,12 +527,6 @@ body.page-id-31 {
         margin-left: -10px;
         margin-bottom: 0;
     }
-}
-
-.tomochain-button {
-    min-width: 190px;
-
-    @extend .tomochain-team__see-all;
 }
 
 body.page-template-revslider-page-template {
