@@ -529,6 +529,11 @@ body.page-id-31 {
     }
 }
 
+.tomochain-button {
+    min-width: 190px;
+    @extend .tomochain-team__see-all;
+}
+
 body.page-template-revslider-page-template {
     height: 100vh;;
     overflow: hidden;
