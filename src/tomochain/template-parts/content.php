@@ -29,7 +29,6 @@ $open_new_tab = get_field('open_in_new_tab') ? '__blank' : '';
 			<div class="entry-meta">
 				<?php
 				tomochain_posted_by();
-                tomochain_posted_on();
                 tomochain_categories();
 				?>
 			</div><!-- .entry-meta -->
