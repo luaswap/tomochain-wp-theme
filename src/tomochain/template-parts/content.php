@@ -27,10 +27,7 @@ $open_new_tab = get_field('open_in_new_tab') ? '__blank' : '';
 		if ( 'post' === get_post_type() ) :
 			?>
 			<div class="entry-meta">
-				<?php
-				tomochain_posted_by();
-                tomochain_categories();
-				?>
+				<?php tomochain_event_date(); ?>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
