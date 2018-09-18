@@ -15,21 +15,12 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/tomochain/404.php:18
-msgid "Oops! That page can&rsquo;t be found."
+#: src/tomochain/404.php:19
+msgid "Page not found"
 msgstr ""
 
-#: src/tomochain/404.php:22
-msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
-msgstr ""
-
-#: src/tomochain/404.php:31
-msgid "Most Used Categories"
-msgstr ""
-
-#. translators: %1$s: smiley
-#: src/tomochain/404.php:47
-msgid "Try looking in the monthly archives. %1$s"
+#: src/tomochain/404.php:20
+msgid "Go Home"
 msgstr ""
 
 #. translators: 1: title.
@@ -57,19 +48,19 @@ msgstr ""
 msgid "Primary"
 msgstr ""
 
-#: src/tomochain/functions.php:122
-msgid "Footer Sidebar"
+#: src/tomochain/functions.php:126
+msgid "Sidebar"
 msgstr ""
 
-#: src/tomochain/functions.php:124
+#: src/tomochain/functions.php:128, src/tomochain/functions.php:137
 msgid "Add widgets here."
 msgstr ""
 
-#: src/tomochain/functions.php:202
-msgid "Enter your email to get more details"
+#: src/tomochain/functions.php:135
+msgid "Footer Sidebar"
 msgstr ""
 
-#: src/tomochain/header.php:34
+#: src/tomochain/header.php:36
 msgid "Skip to content"
 msgstr ""
 
@@ -78,48 +69,30 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#. translators: %s: post date.
-#: src/tomochain/inc/template-tags.php:29
-msgctxt "post date"
-msgid "Posted on %s"
-msgstr ""
-
 #. translators: %s: post author.
-#: src/tomochain/inc/template-tags.php:45
+#: src/tomochain/inc/template-tags.php:63
 msgctxt "post author"
-msgid "by %s"
-msgstr ""
-
-#. translators: used between list items, there is a space after the comma
-#: src/tomochain/inc/template-tags.php:62
-msgid ", "
-msgstr ""
-
-#. translators: 1: list of categories.
-#: src/tomochain/inc/template-tags.php:65
-msgid "Posted in %1$s"
-msgstr ""
-
-#. translators: used between list items, there is a space after the comma
-#: src/tomochain/inc/template-tags.php:69
-msgctxt "list item separator"
-msgid ", "
-msgstr ""
-
-#. translators: 1: list of tags.
-#: src/tomochain/inc/template-tags.php:72
-msgid "Tagged %1$s"
+msgid "By %s"
 msgstr ""
 
 #. translators: %s: post title
-#: src/tomochain/inc/template-tags.php:82
+#: src/tomochain/inc/template-tags.php:131
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #. translators: %s: Name of current post. Only visible to screen readers
-#: src/tomochain/inc/template-tags.php:99, src/tomochain/template-parts/content-page.php:34
+#: src/tomochain/inc/template-tags.php:148, src/tomochain/template-parts/content-page.php:34
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: src/tomochain/template-parts/content-fullwidth.php:42
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: src/tomochain/template-parts/content-fullwidth.php:53, src/tomochain/template-parts/content-page.php:21, src/tomochain/template-parts/content-single.php:41, src/tomochain/template-parts/content.php:40
+msgid "Pages:"
 msgstr ""
 
 #: src/tomochain/template-parts/content-none.php:14
@@ -139,15 +112,6 @@ msgstr ""
 msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
 msgstr ""
 
-#: src/tomochain/template-parts/content-page.php:21, src/tomochain/template-parts/content.php:50
-msgid "Pages:"
-msgstr ""
-
-#. translators: %s: Name of current post. Only visible to screen readers
-#: src/tomochain/template-parts/content.php:39
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
-msgstr ""
-
 #: src/tomochain/inc/widgets/tomochain-address.php:18
 msgid "TOMOCHAIN Address"
 msgstr ""
@@ -156,12 +120,80 @@ msgstr ""
 msgid "Display contact information on footer."
 msgstr ""
 
-#: src/tomochain/inc/widgets/tomochain-address.php:24
+#: src/tomochain/inc/widgets/tomochain-address.php:24, src/tomochain/inc/widgets/tomochain-recent-posts.php:110
 msgid "Title"
 msgstr ""
 
 #: src/tomochain/inc/widgets/tomochain-address.php:32
 msgid "Address"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:22
+msgid "TOMOCHAIN - Recent Posts"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:23
+msgid "Your site's most recent Posts."
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:121
+msgid "Show post thumbnail"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:129
+msgid "Show post title"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:136
+msgid "Show excerpt"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:143
+msgid "Show meta"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:148
+msgid "Enter numbers of articles"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:27
+msgid "TOMOCHAIN Sendgrid"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:28
+msgid "SendGrid Marketing Campaigns Subscription Widget."
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:33
+msgid "Message to display before subscription form:"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:41
+msgid "Message to display for errors:"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:49
+msgid "Message to display for invalid email address:"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:57
+msgid "Message to display for success:"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:83
+msgid "Subscribe"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:113
+msgid "Invalid Email."
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:122, src/tomochain/inc/widgets/tomochain-sendgrid.php:130
+msgid "Confirmation email has been sent, please check your inbox."
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:127
+msgid "Confirmation email has been sent succesfully, please check your inbox."
 msgstr ""
 
 #: src/tomochain/inc/widgets/wph-widget-class.php:843

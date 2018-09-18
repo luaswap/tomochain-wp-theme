@@ -8,8 +8,12 @@ class WPBakeryShortCode_TomoChain_List extends WPBakeryShortCode {
         $cssID = '#' . $css_id;
         $css   = '';
 
-        $css = $cssID . ' .tomochain-list__item:before{background-color:' . $atts['dots_color'] . ';}';
-        $css .= $cssID . ' .tomochain-list__item,' . $cssID . ' .tomochain-list__item a{color:' . $atts['text_color'] . '}';
+        if ($atts['dots_color']) {
+            $css = $cssID . ' .tomochain-list__item:before{background-color:' . $atts['dots_color'] . ';}';
+        }
+        if ($atts['text_color']) {
+            $css .= $cssID . ' .tomochain-list__item,' . $cssID . ' .tomochain-list__item a{color:' . $atts['text_color'] . '}';
+        }
 
         return tomochain_text2line( $css );
     }

@@ -9787,15 +9787,14 @@ This is where majority of our work takes place and our UI components are often c
 .tomochain-list__item {
   position: relative;
   font-weight: 300;
-  text-indent: 0.9375rem;
-  padding-left: 0.5rem;
+  text-indent: 1.25rem;
   margin-bottom: 0.9375rem;
   color: #c5cde3; }
   .tomochain-list__item:before, .tomochain-list__item:after {
     content: '';
     position: absolute; }
   .tomochain-list__item:before {
-    top: 0.5625rem;
+    top: 0.625rem;
     left: 0;
     height: 0.375rem;
     width: 0.375rem;
@@ -10046,18 +10045,13 @@ This is where majority of our work takes place and our UI components are often c
 .tomochain-team-member--is-advisor:hover .tomochain-team-member__image img {
   margin-top: -1.25rem; }
 
-.tomochain-team-member--is-advisor .tomochain-team-member__image {
-  max-width: 15.625rem; }
-  .tomochain-team-member--is-advisor .tomochain-team-member__image a {
-    width: 15.625rem;
-    height: 12.5rem; }
-  .tomochain-team-member--is-advisor .tomochain-team-member__image a:after {
-    top: -0.625rem; }
-  .tomochain-team-member--is-advisor .tomochain-team-member__image img {
-    max-width: 15.625rem;
-    margin-top: -0.625rem;
-    -webkit-box-shadow: none;
-            box-shadow: none; }
+.tomochain-team-member--is-advisor .tomochain-team-member__image a:after {
+  top: -0.625rem; }
+
+.tomochain-team-member--is-advisor .tomochain-team-member__image img {
+  margin-top: -0.625rem;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
 
 .team-member-info__wrapper {
   position: relative; }
@@ -12434,8 +12428,8 @@ body.page-template-revslider-page-template {
       max-width: 25.625rem; }
   #dapp-image img {
     max-width: 25rem; }
-  #token-details-row .wpb_column:nth-child(2) .tomochain-list {
-    padding-left: 2.5rem; } }
+  .tomochain-team.five-columns .tomochain-team__wrapper {
+    grid-template-columns: 20% 20% 20% 20% 20%; } }
   @media (min-width: 75rem) {
   .d-xl-none {
     display: none !important; }
@@ -12945,9 +12939,7 @@ body.page-template-revslider-page-template {
       left: -10rem; }
     #about-us-row #about-us-text-left,
     #about-us-row #about-us-text-right {
-      max-width: 31.25rem; }
-  #token-details-row .wpb_column:nth-child(2) .tomochain-list {
-    padding-left: 6.25rem; } }
+      max-width: 31.25rem; } }
   @media print {
   .d-print-none {
     display: none !important; }
