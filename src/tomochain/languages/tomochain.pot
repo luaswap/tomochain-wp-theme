@@ -19,6 +19,10 @@ msgstr ""
 msgid "Page not found"
 msgstr ""
 
+#: src/tomochain/404.php:20
+msgid "Go Home"
+msgstr ""
+
 #. translators: 1: title.
 #: src/tomochain/comments.php:35
 msgid "One thought on &ldquo;%1$s&rdquo;"
@@ -66,28 +70,28 @@ msgid "Search Results for: %s"
 msgstr ""
 
 #. translators: %s: post author.
-#: src/tomochain/inc/template-tags.php:45
+#: src/tomochain/inc/template-tags.php:63
 msgctxt "post author"
 msgid "By %s"
 msgstr ""
 
 #. translators: %s: post title
-#: src/tomochain/inc/template-tags.php:113
+#: src/tomochain/inc/template-tags.php:131
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #. translators: %s: Name of current post. Only visible to screen readers
-#: src/tomochain/inc/template-tags.php:130, src/tomochain/template-parts/content-page.php:34
+#: src/tomochain/inc/template-tags.php:148, src/tomochain/template-parts/content-page.php:34
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
-#: src/tomochain/template-parts/content-fullwidth.php:45
+#: src/tomochain/template-parts/content-fullwidth.php:42
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: src/tomochain/template-parts/content-fullwidth.php:56, src/tomochain/template-parts/content-page.php:21, src/tomochain/template-parts/content-single.php:41, src/tomochain/template-parts/content.php:43
+#: src/tomochain/template-parts/content-fullwidth.php:53, src/tomochain/template-parts/content-page.php:21, src/tomochain/template-parts/content-single.php:41, src/tomochain/template-parts/content.php:40
 msgid "Pages:"
 msgstr ""
 

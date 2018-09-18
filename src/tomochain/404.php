@@ -17,7 +17,7 @@ get_header();
                     <div class="col-12">
                         <img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/404.png'); ?>" alt="404">
                         <p><?php esc_html_e('Page not found', 'tomochain'); ?></p>
-                        <a href="/" class="tomochain-button"><span>Go Home</span></a>
+                        <a href="/" class="tomochain-button"><span><?php esc_html_e('Go Home', 'tomochain') ?></span></a>
                     </div>
                 </div>
             </div>
