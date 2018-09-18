@@ -199,11 +199,6 @@ if( function_exists('acf_add_local_field_group') ) {
                     'operator' => '==',
                     'value' => 'post',
                 ),
-                array (
-                    'param' => 'post_taxonomy',
-                    'operator' => '==',
-                    'value' => 'category:events',
-                ),
             ),
         ),
         'menu_order' => 0,
