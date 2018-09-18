@@ -27,10 +27,10 @@ vc_map( array(
             'param_name'  => 'quarter',
             'value'       => array(
                 '--' => 0,
-                'Q1' => 1,
-                'Q2' => 2,
-                'Q3' => 3,
-                'Q4' => 4,
+                esc_html__('Q1', 'tomochain-addons' ) => 1,
+                esc_html__('Q2', 'tomochain-addons' ) => 2,
+                esc_html__('Q3', 'tomochain-addons' ) => 3,
+                esc_html__('Q4', 'tomochain-addons' ) => 4,
             ),
         ),
         array(

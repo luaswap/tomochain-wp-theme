@@ -175,6 +175,22 @@ msgstr ""
 msgid "Select the quarter"
 msgstr ""
 
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:30
+msgid "Q1"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:31
+msgid "Q2"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:32
+msgid "Q3"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:33
+msgid "Q4"
+msgstr ""
+
 #: src/tomochain-addons/inc/shortcodes/tomochain-roadmap.php:8
 msgid "Roadmap"
 msgstr ""
