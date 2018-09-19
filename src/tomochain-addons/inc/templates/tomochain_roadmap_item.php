@@ -17,6 +17,13 @@ extract( $atts );
 $el_class = $this->getExtraClass( $el_class );
 $current_quarter = ceil(intval(date('m')) / 3);
 
+$quarters = array(
+    1 => esc_html__('Q1', 'tomochain-addons' ),
+    2 => esc_html__('Q2', 'tomochain-addons' ),
+    3 => esc_html__('Q3', 'tomochain-addons' ),
+    4 => esc_html__('Q4', 'tomochain-addons' ),
+);
+
 $css_class = array(
     'tomochain-shortcode',
     'tomochain-roadmap-item',
@@ -35,6 +42,6 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
     <div class="roadmap-deco">
         <span class="roadmap-dot"><i>&nbsp;</i></span>
     </div>
-    <h5 class="roadmap-title"><?php echo 'Q' . $quarter . ' / ' . $year; ?></h5>
+    <h5 class="roadmap-title"><?php echo $quarters[$quarter] . ' / ' . $year; ?></h5>
     <div class="roadmap-description"><?php echo '' . $description; ?></div>
 </div>
