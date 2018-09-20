@@ -10557,17 +10557,17 @@ body.info-opened:after {
   padding-top: 3.125rem;
   padding-bottom: 1.875rem; }
 
-body.page-id-31 .site-header {
+body.about-us-page .site-header {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   z-index: 99; }
 
-body.page-id-31 #post-31 > .entry-content {
+body.about-us-page article.page > .entry-content {
   margin-top: 0; }
 
-body.page-id-31.admin-bar .site-header {
+body.about-us-page.admin-bar .site-header {
   top: 2rem; }
 
 #about-us-row {

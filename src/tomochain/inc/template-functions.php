@@ -19,7 +19,11 @@ function tomochain_body_classes( $classes ) {
 
 	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 		$classes[] = 'no-sidebar';
-	}
+    }
+
+    if ( function_exists('get_field') && get_field('custom_css_class') ) {
+        $classes[] = get_field('custom_css_class');
+    }
 
 	return $classes;
 }
