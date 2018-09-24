@@ -45,7 +45,7 @@
             font-size: 16px;
             line-height: 50px;
             color: #fff;
-            margin-left: 5px;
+            margin-left: 2px;
         }
 
         @include media-breakpoint-up(sm) {
@@ -55,6 +55,7 @@
             i {
                 font-size: 22px;
                 line-height: 70px;
+                margin-left: 5px;
             }
         }
 
