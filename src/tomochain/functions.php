@@ -208,6 +208,22 @@ function tomochain_enqueue_libs() {
         array(),
         null,
         true );
+
+    wp_register_style( 'magnific-popup', TOMOCHAIN_LIBS_URI . '/magnific-popup/css/magnific-popup.css' );
+
+    wp_register_script( 'magnific-popup',
+        TOMOCHAIN_LIBS_URI . '/magnific-popup/js/jquery.magnific-popup.min.js',
+        array(),
+        null,
+        true );
+
+    wp_register_style( 'jquery-flipster', TOMOCHAIN_LIBS_URI . '/jquery-flipster/css/jquery.flipster.min.css' );
+
+    wp_register_script( 'jquery-flipster',
+        TOMOCHAIN_LIBS_URI . '/jquery-flipster/js/jquery.flipster.min.js',
+        array(),
+        null,
+        true );
 }
 add_action( 'wp_enqueue_scripts', 'tomochain_enqueue_libs', 1 );
 

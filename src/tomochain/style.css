@@ -10208,6 +10208,49 @@ This is where majority of our work takes place and our UI components are often c
   .tomochain-testnet-item__source a:before {
     content: "\f121"; }
 
+.tomochain-videos {
+  opacity: 0;
+  visibility: hidden; }
+  .tomochain-videos.flipster {
+    opacity: 1;
+    visibility: visible; }
+
+.tomochain-video-item {
+  position: relative; }
+  .tomochain-video-item img {
+    max-width: 15.625rem !important; }
+  .tomochain-video-item .video-link {
+    opacity: 0;
+    visibility: hidden;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 3.125rem;
+    width: 3.125rem;
+    border-radius: 100%;
+    text-align: center;
+    font-size: 0;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    background-image: linear-gradient(-133deg, #6658ff 5%, #887ffe 100%); }
+    .tomochain-video-item .video-link i {
+      font-size: 1rem;
+      line-height: 3.125rem;
+      color: #fff;
+      margin-left: 0.3125rem; }
+  .tomochain-video-item.flipster__item img {
+    border-radius: 0.375rem; }
+  .tomochain-video-item.flipster__item--past, .tomochain-video-item.flipster__item--future {
+    opacity: 0 !important; }
+  .tomochain-video-item.flipster__item--past-1, .tomochain-video-item.flipster__item--future-1 {
+    opacity: .6 !important; }
+  .tomochain-video-item.flipster__item--current {
+    -webkit-box-shadow: 0.625rem 0.625rem 1.25rem 0.625rem rgba(28, 33, 57, 0.5);
+            box-shadow: 0.625rem 0.625rem 1.25rem 0.625rem rgba(28, 33, 57, 0.5); }
+    .tomochain-video-item.flipster__item--current .video-link {
+      opacity: 1;
+      visibility: visible; }
+
 .vc_custom_heading {
   font-weight: 200; }
   .vc_custom_heading.text-align--right .heading-line {
@@ -11251,6 +11294,14 @@ body.page-template-revslider-page-template {
     padding: 0 0.9375rem; }
       #team-member-info.add-content .team-member-info__wrapper {
         padding: 1.875rem; }
+      .tomochain-video-item img {
+        max-width: 25rem !important; }
+      .tomochain-video-item .video-link {
+        height: 4.375rem;
+        width: 4.375rem; }
+        .tomochain-video-item .video-link i {
+          font-size: 1.375rem;
+          line-height: 4.375rem; }
     .error-404 img {
       max-width: 18.75rem; }
     #dapps-row:before {
@@ -11822,6 +11873,14 @@ body.page-template-revslider-page-template {
         margin-right: 1.5625rem; }
       .tomochain-testnet-item__title {
         width: calc(100% - 8.75rem); }
+      .tomochain-video-item img {
+        max-width: 31.25rem !important; }
+      .tomochain-video-item .video-link {
+        height: 5rem;
+        width: 5rem; }
+        .tomochain-video-item .video-link i {
+          font-size: 1.5rem;
+          line-height: 5rem; }
     .error-404 img {
       max-width: 25rem; }
     .slick-arrow.slick-prev {
@@ -12399,6 +12458,14 @@ body.page-template-revslider-page-template {
         width: calc(100% - 11.25rem); }
       .tomochain-testnet-item__run {
         margin-right: 3.125rem; }
+      .tomochain-video-item img {
+        max-width: 100% !important; }
+      .tomochain-video-item .video-link {
+        height: 6.25rem;
+        width: 6.25rem; }
+        .tomochain-video-item .video-link i {
+          font-size: 1.875rem;
+          line-height: 6.25rem; }
     .widget_tomo_sendgrid .tomo-sendgrid-text,
     .widget_tomo_sendgrid #tomo-sendgrid-form {
       max-width: 33.125rem; }

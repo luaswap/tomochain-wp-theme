@@ -1,0 +1,104 @@
+.tomochain-videos {
+    opacity: 0;
+    visibility: hidden;
+
+    &.flipster {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+.tomochain-video-item {
+    position: relative;
+
+    img {
+        max-width: 250px !important;
+
+        @include media-breakpoint-up(sm) {
+            max-width: 400px !important;
+        }
+
+        @include media-breakpoint-up(md) {
+            max-width: 500px !important;
+        }
+
+        @include media-breakpoint-up(lg) {
+            max-width: 100% !important;
+        }
+    }
+
+    .video-link {
+        opacity: 0;
+        visibility: hidden;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        height: 50px;
+        width: 50px;
+        border-radius: 100%;
+        text-align: center;
+        font-size: 0;
+        transform: translate(-50%, -50%);
+        background-image: linear-gradient(-133deg, #6658ff 5%, #887ffe 100%);
+
+        i {
+            font-size: 16px;
+            line-height: 50px;
+            color: #fff;
+            margin-left: 5px;
+        }
+
+        @include media-breakpoint-up(sm) {
+            height: 70px;
+            width: 70px;
+
+            i {
+                font-size: 22px;
+                line-height: 70px;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            height: 80px;
+            width: 80px;
+
+            i {
+                font-size: 24px;
+                line-height: 80px;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            height: 100px;
+            width: 100px;
+
+            i {
+                font-size: 30px;
+                line-height: 100px;
+            }
+        }
+    }
+
+    &.flipster__item img {
+        border-radius: 6px;
+    }
+
+    &.flipster__item--past,
+    &.flipster__item--future {
+        opacity: 0 !important;
+    }
+
+    &.flipster__item--past-1,
+    &.flipster__item--future-1 {
+        opacity: .6 !important;
+    }
+
+    &.flipster__item--current {
+        box-shadow: 10px 10px 20px 10px rgba(28, 33, 57, .5);
+
+        .video-link {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
+}

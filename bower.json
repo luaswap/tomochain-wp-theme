@@ -11,7 +11,8 @@
     "slick-carousel": "^1.8.1",
     "superfish": "^1.7.9",
     "hint.css": "^2.5.0",
-    "animejs": "^2.2.0"
+    "animejs": "^2.2.0",
+    "magnific-popup": "^1.1.0"
   },
   "install": {
     "options": {
@@ -39,6 +40,10 @@
       "jquery-nice-select": [
         "bower_components/jquery-nice-select/css/nice-select.css",
         "bower_components/jquery-nice-select/js/jquery.nice-select.min.js"
+      ],
+      "magnific-popup": [
+        "bower_components/magnific-popup/dist/magnific-popup.css",
+        "bower_components/magnific-popup/dist/jquery.magnific-popup.min.js"
       ],
       "slick-carousel": [
         "bower_components/slick-carousel/slick/slick.css",

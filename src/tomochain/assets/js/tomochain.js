@@ -19,6 +19,7 @@ var tomochain
                         this.team();
                         this.testnet();
                         this.tomo_lottie();
+                        this.video();
                     }
                 }
             }()
@@ -213,7 +214,7 @@ var tomochain
             var $roadmap = $('.tomochain-roadmap'),
                 index = $roadmap.find('.tomochain-roadmap-item--current').index();
 
-            var slider = $roadmap.slick({
+            $roadmap.slick({
                 accessibility : false,
                 // arrows: false,
                 infinite: false,
@@ -739,6 +740,27 @@ var tomochain
         }
     }
 )(jQuery);
+
+(function( $ ) {
+    tomochain.video = function() {
+
+        var $videos = $('.tomochain-videos');
+
+        $videos.flipster({
+            style: 'flat',
+            spacing: -0.45,
+            keyboard: false,
+            scrollwheel: false
+        });
+
+        $('.tomochain-video-item .video-link').magnificPopup({
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false
+        });
+    }
+})(jQuery);
 
 jQuery (document).ready(function() {
     tomochain.init()

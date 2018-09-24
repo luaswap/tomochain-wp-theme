@@ -19,6 +19,7 @@ var tomochain
                         this.team();
                         this.testnet();
                         this.tomo_lottie();
+                        this.video();
                     }
                 }
             }()
@@ -36,6 +37,7 @@ var tomochain
 //@include('team.js')
 //@include('testnet.js')
 //@include('tomo_lottie.js')
+//@include('video.js')
 jQuery (document).ready(function() {
     tomochain.init()
 })
