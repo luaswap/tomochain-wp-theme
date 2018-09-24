@@ -10045,13 +10045,18 @@ This is where majority of our work takes place and our UI components are often c
 .tomochain-team-member--is-advisor:hover .tomochain-team-member__image img {
   margin-top: -1.25rem; }
 
-.tomochain-team-member--is-advisor .tomochain-team-member__image a:after {
-  top: -0.625rem; }
-
-.tomochain-team-member--is-advisor .tomochain-team-member__image img {
-  margin-top: -0.625rem;
-  -webkit-box-shadow: none;
-          box-shadow: none; }
+.tomochain-team-member--is-advisor .tomochain-team-member__image {
+  max-width: 15.625rem; }
+  .tomochain-team-member--is-advisor .tomochain-team-member__image a {
+    width: 15.625rem;
+    height: 12.5rem; }
+  .tomochain-team-member--is-advisor .tomochain-team-member__image a:after {
+    top: -0.625rem; }
+  .tomochain-team-member--is-advisor .tomochain-team-member__image img {
+    max-width: 15.625rem;
+    margin-top: -0.625rem;
+    -webkit-box-shadow: none;
+            box-shadow: none; }
 
 .team-member-info__wrapper {
   position: relative; }
