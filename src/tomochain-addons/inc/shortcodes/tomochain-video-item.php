@@ -18,7 +18,7 @@ vc_map( array(
             'heading'     => esc_html__( 'Thumbnail image', 'tomochain-addons' ),
             'param_name'  => 'image',
             'value'       => '',
-            'description' => esc_html__( 'Select image from media library . ', 'tomochain-addons' ),
+            'description' => esc_html__( 'Select image from media library (size 600x350). ', 'tomochain-addons' ),
             'save_always' => true,
         ),
         array(
