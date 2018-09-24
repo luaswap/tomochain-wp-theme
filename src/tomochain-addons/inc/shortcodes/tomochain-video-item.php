@@ -27,6 +27,13 @@ vc_map( array(
             'param_name'  => 'url',
             'value'       => '',
         ),
+        array(
+            'type'        => 'textfield',
+            'heading'     => esc_html__( 'Note', 'tomochain-addons' ),
+            'param_name'  => 'note',
+            'admin_label' => true,
+            'value'       => '',
+        ),
         tomochain_get_param('el_class'),
         tomochain_get_param('css')
     )
