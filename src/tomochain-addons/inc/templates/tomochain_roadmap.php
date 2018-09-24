@@ -9,6 +9,8 @@
  * Shortcode class
  * @var $this WPBakeryShortCode_TomoChain_Roadmap
  */
+wp_enqueue_script( 'slick-carousel' );
+
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
 

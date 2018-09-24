@@ -177,7 +177,7 @@ function tomochain_enqueue_libs() {
 
     wp_enqueue_style( 'slick-carousel', TOMOCHAIN_LIBS_URI . '/slick-carousel/css/slick.css' );
 
-    wp_enqueue_script( 'slick-carousel',
+    wp_register_script( 'slick-carousel',
         TOMOCHAIN_LIBS_URI . '/slick-carousel/js/slick.min.js',
         array(),
         null,

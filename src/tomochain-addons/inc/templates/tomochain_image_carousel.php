@@ -13,6 +13,7 @@
  * Shortcode class
  * @var $this WPBakeryShortCode_TomoChain_Image_Carousel
  */
+wp_enqueue_script( 'slick-carousel' );
 
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
