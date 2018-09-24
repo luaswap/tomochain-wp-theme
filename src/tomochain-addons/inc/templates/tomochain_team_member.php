@@ -49,7 +49,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
             <?php
                 $post_thumbnail = wpb_getImageBySize( array(
                     'attach_id'  => $image,
-                    'thumb_size' => '200x200'
+                    'thumb_size' => '250x200'
                 ) );
                 $thumbnail = $post_thumbnail['thumbnail'];
                 echo $thumbnail;
