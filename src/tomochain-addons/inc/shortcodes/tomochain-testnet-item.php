@@ -11,6 +11,7 @@ vc_map( array(
     'base'        => 'tomochain_testnet_item',
     'icon'        => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
     'category'    => esc_html__( 'TomoChain', 'tomochain-addons' ),
+    'as_parent'   => array( 'only' => 'tomochain_testnet' ),
     'params'      => array(
         array(
             'type'        => 'textfield',

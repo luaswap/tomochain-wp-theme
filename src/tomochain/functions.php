@@ -177,7 +177,7 @@ function tomochain_enqueue_libs() {
 
     wp_enqueue_style( 'slick-carousel', TOMOCHAIN_LIBS_URI . '/slick-carousel/css/slick.css' );
 
-    wp_enqueue_script( 'slick-carousel',
+    wp_register_script( 'slick-carousel',
         TOMOCHAIN_LIBS_URI . '/slick-carousel/js/slick.min.js',
         array(),
         null,
@@ -205,6 +205,22 @@ function tomochain_enqueue_libs() {
 
     wp_register_script( 'lottie',
         TOMOCHAIN_LIBS_URI . '/lottie/js/lottie.js',
+        array(),
+        null,
+        true );
+
+    wp_register_style( 'magnific-popup', TOMOCHAIN_LIBS_URI . '/magnific-popup/css/magnific-popup.css' );
+
+    wp_register_script( 'magnific-popup',
+        TOMOCHAIN_LIBS_URI . '/magnific-popup/js/jquery.magnific-popup.min.js',
+        array(),
+        null,
+        true );
+
+    wp_register_style( 'jquery-flipster', TOMOCHAIN_LIBS_URI . '/jquery-flipster/css/jquery.flipster.min.css' );
+
+    wp_register_script( 'jquery-flipster',
+        TOMOCHAIN_LIBS_URI . '/jquery-flipster/js/jquery.flipster.min.js',
         array(),
         null,
         true );

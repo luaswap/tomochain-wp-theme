@@ -18,13 +18,15 @@ function tomochain_load_shortcodes() {
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-image-carousel.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-list.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-lottie.php';
-    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-roadmap.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-roadmap-item.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-roadmap.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-social.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-team.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-team-member.php';
-    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-testnet.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-testnet-item.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-testnet.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-video-item.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-videos.php';
 }
 
 function tomochain_get_param($param_name, $group = '', $dependency = '') {
