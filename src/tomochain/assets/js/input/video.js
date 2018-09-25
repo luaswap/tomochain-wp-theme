@@ -3,6 +3,10 @@
 
         var $videos = $('.tomochain-videos');
 
+        if (!$videos.length) {
+            return;
+        }
+
         $videos.flipster({
             style: 'flat',
             spacing: -0.45,
