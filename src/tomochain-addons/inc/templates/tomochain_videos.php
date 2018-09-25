@@ -9,7 +9,8 @@
  * Shortcode class
  * @var $this WPBakeryShortCode_TomoChain_Videos
  */
-wp_enqueue_script( 'slick-carousel' );
+wp_enqueue_style( 'jquery-flipster' );
+wp_enqueue_script( 'jquery-flipster' );
 
 $atts = vc_map_get_attributes( $this->getShortcode(), $atts );
 extract( $atts );
