@@ -8,8 +8,6 @@
  * Shortcode class
  * @var $this WPBakeryShortCode_TomoChain_Video_Item
  */
-wp_enqueue_style( 'jquery-flipster' );
-wp_enqueue_script( 'jquery-flipster' );
 wp_enqueue_style( 'magnific-popup' );
 wp_enqueue_script( 'magnific-popup' );
 

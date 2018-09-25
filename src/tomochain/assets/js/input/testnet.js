@@ -3,6 +3,10 @@
         tomochain.testnet = function () {
             var $testnet = $('.tomochain-testnet');
 
+            if (!$testnet.length) {
+                return;
+            }
+
             $testnet.slick({
                 accessibility : false,
                 adaptiveHeight: true,

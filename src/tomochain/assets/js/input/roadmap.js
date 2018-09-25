@@ -4,6 +4,10 @@
             var $roadmap = $('.tomochain-roadmap'),
                 index = $roadmap.find('.tomochain-roadmap-item--current').index();
 
+            if (!$roadmap.length) {
+                return;
+            }
+
             $roadmap.slick({
                 accessibility : false,
                 // arrows: false,
