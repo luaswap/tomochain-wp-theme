@@ -1,0 +1,220 @@
+# Copyright (C) 2018 tomochain
+# This file is distributed under the same license as the tomochain package.
+msgid ""
+msgstr ""
+"Project-Id-Version: tomochain\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language-Team: Vietnamese\n"
+"Report-Msgid-Bugs-To: https://tomochain.com\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:"
+"1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
+"esc_html_x:1,2c\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"POT-Creation-Date: 2018-09-25 08:40+0000\n"
+"PO-Revision-Date: 2018-09-25 08:40+0000\n"
+"Last-Translator: TomoChain <hka@tomochain.com>\n"
+"Language: vi\n"
+"X-Generator: Loco https://localise.biz/"
+
+#: src/tomochain/404.php:19
+msgid "Page not found"
+msgstr ""
+
+#: src/tomochain/404.php:20
+msgid "Go Home"
+msgstr ""
+
+#. translators: 1: title.
+#: src/tomochain/comments.php:35
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: src/tomochain/comments.php:41
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: src/tomochain/comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#: src/tomochain/footer.php:25
+msgid "Copyright &copy; %1$s by %2$s."
+msgstr ""
+
+#: src/tomochain/functions.php:61
+msgid "Primary"
+msgstr ""
+
+#: src/tomochain/functions.php:126
+msgid "Sidebar"
+msgstr ""
+
+#: src/tomochain/functions.php:128, src/tomochain/functions.php:137
+msgid "Add widgets here."
+msgstr ""
+
+#: src/tomochain/functions.php:135
+msgid "Footer Sidebar"
+msgstr ""
+
+#: src/tomochain/header.php:36
+msgid "Skip to content"
+msgstr ""
+
+#. translators: %s: search query.
+#: src/tomochain/search.php:22
+msgid "Search Results for: %s"
+msgstr ""
+
+#. translators: %s: post author.
+#: src/tomochain/inc/template-tags.php:63
+msgctxt "post author"
+msgid "By %s"
+msgstr ""
+
+#. translators: %s: post title
+#: src/tomochain/inc/template-tags.php:131
+msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#. translators: %s: Name of current post. Only visible to screen readers
+#: src/tomochain/inc/template-tags.php:148,
+#: src/tomochain/template-parts/content-page.php:34
+msgid "Edit <span class=\"screen-reader-text\">%s</span>"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: src/tomochain/template-parts/content-fullwidth.php:42
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: src/tomochain/template-parts/content-fullwidth.php:53,
+#: src/tomochain/template-parts/content-page.php:21,
+#: src/tomochain/template-parts/content-single.php:41,
+#: src/tomochain/template-parts/content.php:40
+msgid "Pages:"
+msgstr ""
+
+#: src/tomochain/template-parts/content-none.php:14
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: src/tomochain/template-parts/content-none.php:24
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: src/tomochain/template-parts/content-none.php:37
+msgid ""
+"Sorry, but nothing matched your search terms. Please try again with some "
+"different keywords."
+msgstr ""
+
+#: src/tomochain/template-parts/content-none.php:44
+msgid ""
+"It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
+"searching can help."
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:18
+msgid "TOMOCHAIN Address"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:19
+msgid "Display contact information on footer."
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:24,
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:110
+msgid "Title"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:32
+msgid "Address"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:22
+msgid "TOMOCHAIN - Recent Posts"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:23
+msgid "Your site's most recent Posts."
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:121
+msgid "Show post thumbnail"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:129
+msgid "Show post title"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:136
+msgid "Show excerpt"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:143
+msgid "Show meta"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-recent-posts.php:148
+msgid "Enter numbers of articles"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:27
+msgid "TOMOCHAIN Sendgrid"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:28
+msgid "SendGrid Marketing Campaigns Subscription Widget."
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:33
+msgid "Message to display before subscription form:"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:41
+msgid "Message to display for errors:"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:49
+msgid "Message to display for invalid email address:"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:57
+msgid "Message to display for success:"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:83
+msgid "Subscribe"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:113
+msgid "Invalid Email."
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:122,
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:130
+msgid "Confirmation email has been sent, please check your inbox."
+msgstr "Email xác nhận đã được gửi, vui lòng kiểm tra hộp thư đến của bạn"
+
+#: src/tomochain/inc/widgets/tomochain-sendgrid.php:127
+msgid "Confirmation email has been sent succesfully, please check your inbox."
+msgstr ""
+"Email xác nhận đã được gửi thành công, vui lòng kiểm tra hộp thư đến của bạn"
+
+#: src/tomochain/inc/widgets/wph-widget-class.php:843
+msgid "Any Categories"
+msgstr ""
