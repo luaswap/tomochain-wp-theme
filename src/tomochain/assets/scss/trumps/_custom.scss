@@ -546,11 +546,13 @@ body.about-us-page {
     }
 
     pre {
-        display: inline-block;
         font-size: 16px;
-        vertical-align: -8px;
+        display: inline-block;
+        vertical-align: middle;
+        line-height: 1.7;
         background-color: transparent;
         padding: 0;
+        margin-top: -1px;
         margin-left: -10px;
         margin-bottom: 0;
     }

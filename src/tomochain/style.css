@@ -10675,11 +10675,13 @@ body.about-us-page.admin-bar .site-header {
   display: none; }
 
 .tomochain-list.remove-p pre {
-  display: inline-block;
   font-size: 1rem;
-  vertical-align: -0.5rem;
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 1.7;
   background-color: transparent;
   padding: 0;
+  margin-top: -0.0625rem;
   margin-left: -0.625rem;
   margin-bottom: 0; }
 
