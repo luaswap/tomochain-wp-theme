@@ -521,13 +521,14 @@ body.about-us-page {
     @include media-breakpoint-only(sm) {
         text-align: center;
 
-        img {
+        svg {
             max-width: 400px;
         }
     }
     @include media-breakpoint-up(lg) {
+        text-align: right;
 
-        img {
+        svg {
             max-width: 400px;
         }
     }
