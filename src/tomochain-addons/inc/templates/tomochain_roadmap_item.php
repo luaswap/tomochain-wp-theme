@@ -20,7 +20,7 @@ $current_quarter = ceil(intval(date('m')) / 3);
 $css_class = array(
     'tomochain-shortcode',
     'tomochain-roadmap-item',
-    floatval($quarter) == $current_quarter ? 'tomochain-roadmap-item--current' : '',
+    (floatval($quarter) == $current_quarter && date("Y") == $year) ? 'tomochain-roadmap-item--current' : '',
     $el_class,
     vc_shortcode_custom_css_class( $css ),
 );
