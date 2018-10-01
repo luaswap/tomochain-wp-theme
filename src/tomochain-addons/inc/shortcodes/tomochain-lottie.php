@@ -6,7 +6,7 @@ class WPBakeryShortCode_TomoChain_Lottie extends WPBakeryShortCode {
 }
 vc_map( array(
     'name'        => esc_html__( 'Lottie', 'tomochain-addons' ),
-    'description' => esc_html__( 'Display a list', 'tomochain-addons' ),
+    'description' => esc_html__( 'Display a animation image from Adobe After Effect', 'tomochain-addons' ),
     'base'        => 'tomochain_lottie',
     'icon'        => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
     'category'    => esc_html__( 'TomoChain', 'tomochain-addons' ),
