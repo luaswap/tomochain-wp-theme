@@ -11327,9 +11327,9 @@ body.page-template-revslider-page-template {
       left: auto;
       right: 40%; } }
   @media (min-width: 36rem) and (max-width: 47.99875rem) {
-  #dapp-image {
+  .tomochain-lottie.dapp-image {
     text-align: center; }
-    #dapp-image img {
+    .tomochain-lottie.dapp-image img {
       max-width: 25rem; } }
   @media (min-width: 48rem) {
   .d-md-none {
@@ -12522,7 +12522,7 @@ body.page-template-revslider-page-template {
       max-width: 25.625rem; }
     #about-us-row #about-us-text-left:after {
       right: -1.25rem; }
-  #dapp-image img {
+  .tomochain-lottie.dapp-image img {
     max-width: 25rem; }
   .tomochain-team.five-columns .tomochain-team__wrapper {
     grid-template-columns: 20% 20% 20% 20% 20%; } }
