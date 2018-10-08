@@ -56,13 +56,19 @@ $posts = get_posts(
                     </a>
                     <div class="blog-date">
                         <?php
+                        $format = 'd M';
+
+                        if ( function_exists('pll__') ) {
+                            $format = pll__('d M');
+                        }
+
                         if (function_exists('pll_get_term') && in_category(pll_get_term(11), $post)) {
-                            $start_date = date_i18n('d M', strtotime(get_field('start_date', $post)));
-                            $end_date   = date_i18n('d M', strtotime(get_field('end_date', $post)));
+                            $start_date = date($format, strtotime(get_field('start_date', $post)));
+                            $end_date   = date($format, strtotime(get_field('end_date', $post)));
 
                             echo $start_date . (strcmp($start_date, $end_date) ? ' - ' . $end_date : '');
                         } else {
-                            echo get_the_date('d M');
+                            echo get_the_date($format);
                         } ?>
                     </div>
                 </div>
