@@ -119,15 +119,15 @@ if ( ! class_exists( 'TomoChain_Sendgrid_Widget' ) ) {
 
             if ( $transient and isset( $transient['email'] ) ) {
                 $result['code']    = self::ERROR_EMAIL_SENT;
-                $result['message'] = esc_html__('Confirmation email has been sent, please check your inbox.', 'tomochain');
+                $result['message'] = esc_html__('A confirmation email has been sent, please check your inbox.', 'tomochain');
             } else {
                 $rs = Sendgrid_OptIn_API_Endpoint::send_confirmation_email( $email );
                 if ($rs) {
                     $result['code']    = self::SUCCESS_EMAIL_SEND;
-                    $result['message'] = esc_html__('Confirmation email has been sent succesfully, please check your inbox.', 'tomochain');
+                    $result['message'] = esc_html__('A confirmation email has been sent successfully, please check your inbox.', 'tomochain');
                 } else {
                     $result['code']    = self::ERROR_EMAIL_SEND;
-                    $result['message'] = esc_html__('Confirmation email has been sent, please check your inbox.', 'tomochain');
+                    $result['message'] = esc_html__('A confirmation email has been sent, please check your inbox.', 'tomochain');
                 }
             }
 

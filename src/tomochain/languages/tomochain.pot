@@ -15,11 +15,11 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/tomochain/404.php:19
+#: src/tomochain/404.php:24
 msgid "Page not found"
 msgstr ""
 
-#: src/tomochain/404.php:20
+#: src/tomochain/404.php:25
 msgid "Go Home"
 msgstr ""
 
@@ -70,19 +70,19 @@ msgid "Search Results for: %s"
 msgstr ""
 
 #. translators: %s: post author.
-#: src/tomochain/inc/template-tags.php:63
+#: src/tomochain/inc/template-tags.php:61
 msgctxt "post author"
 msgid "By %s"
 msgstr ""
 
 #. translators: %s: post title
-#: src/tomochain/inc/template-tags.php:131
+#: src/tomochain/inc/template-tags.php:129
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #. translators: %s: Name of current post. Only visible to screen readers
-#: src/tomochain/inc/template-tags.php:148, src/tomochain/template-parts/content-page.php:34
+#: src/tomochain/inc/template-tags.php:146, src/tomochain/template-parts/content-page.php:34
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
@@ -189,11 +189,11 @@ msgid "Invalid Email."
 msgstr ""
 
 #: src/tomochain/inc/widgets/tomochain-sendgrid.php:122, src/tomochain/inc/widgets/tomochain-sendgrid.php:130
-msgid "Confirmation email has been sent, please check your inbox."
+msgid "A confirmation email has been sent, please check your inbox."
 msgstr ""
 
 #: src/tomochain/inc/widgets/tomochain-sendgrid.php:127
-msgid "Confirmation email has been sent succesfully, please check your inbox."
+msgid "A confirmation email has been sent successfully, please check your inbox."
 msgstr ""
 
 #: src/tomochain/inc/widgets/wph-widget-class.php:843

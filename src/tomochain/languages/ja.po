@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language-Team: Vietnamese\n"
+"Language-Team: Japanese\n"
 "Report-Msgid-Bugs-To: https://tomochain.com\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:"
@@ -16,10 +16,10 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"POT-Creation-Date: 2018-10-08 08:41+0000\n"
-"PO-Revision-Date: 2018-10-08 08:41+0000\n"
+"POT-Creation-Date: 2018-10-08 08:42+0000\n"
+"PO-Revision-Date: 2018-10-08 08:45+0000\n"
 "Last-Translator: TomoChain <hka@tomochain.com>\n"
-"Language: vi\n"
+"Language: ja\n"
 "X-Generator: Loco https://localise.biz/"
 
 #: src/tomochain/404.php:24
@@ -208,13 +208,12 @@ msgstr ""
 #: src/tomochain/inc/widgets/tomochain-sendgrid.php:122,
 #: src/tomochain/inc/widgets/tomochain-sendgrid.php:130
 msgid "A confirmation email has been sent, please check your inbox."
-msgstr "Email xác nhận đã được gửi, vui lòng kiểm tra hộp thư đến của bạn"
+msgstr "確認メールが送信されました。受信トレイを確認してください。"
 
 #: src/tomochain/inc/widgets/tomochain-sendgrid.php:127
 msgid ""
 "A confirmation email has been sent successfully, please check your inbox."
-msgstr ""
-"Email xác nhận đã được gửi thành công, vui lòng kiểm tra hộp thư đến của bạn"
+msgstr "確認メールが正常に送信されました。受信トレイを確認してください。"
 
 #: src/tomochain/inc/widgets/wph-widget-class.php:843
 msgid "Any Categories"

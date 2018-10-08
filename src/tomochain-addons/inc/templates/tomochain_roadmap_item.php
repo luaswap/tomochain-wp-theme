@@ -30,17 +30,12 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
     $this->settings['base'],
     $atts );
 
-$quarters = array(
-    1 => esc_html__('Q1', 'tomochain-addons' ),
-    2 => esc_html__('Q2', 'tomochain-addons' ),
-    3 => esc_html__('Q3', 'tomochain-addons' ),
-    4 => esc_html__('Q4', 'tomochain-addons' ),
-);
-
-$year_str = $quarters[$quarter] . ' / ' . $year;
-
-if (function_exists('pll_current_language') && pll_current_language() == 'cn') {
-    $year_str = $year . '年第' . $quarters[$quarter];
+$year_str = 'Q' . $quarter . ' / ' . $year;
+if (function_exists('pll__') && is_user_logged_in()) {
+    $pll_year   = pll__('%%quarter%% / %%year%%');
+    $pll_quater = pll__( 'Q'.$quarter );
+    $year_str   = str_replace( '%%year%%', $year, $pll_year );
+    $year_str   = str_replace( '%%quarter%%', $pll_quater, $year_str );
 }
 
 ?>
