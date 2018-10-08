@@ -9696,7 +9696,8 @@ This is where majority of our work takes place and our UI components are often c
             backface-visibility: hidden;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%);
-    z-index: 2; }
+    z-index: 2;
+    width: 80%; }
   .tomochain-blog-item .blog-info {
     padding: 10rem 1.875rem 1.875rem;
     max-width: 15.625rem;
@@ -11329,7 +11330,7 @@ body.page-template-revslider-page-template {
   @media (min-width: 36rem) and (max-width: 47.99875rem) {
   .tomochain-lottie.dapp-image {
     text-align: center; }
-    .tomochain-lottie.dapp-image img {
+    .tomochain-lottie.dapp-image svg {
       max-width: 25rem; } }
   @media (min-width: 48rem) {
   .d-md-none {
@@ -12522,8 +12523,10 @@ body.page-template-revslider-page-template {
       max-width: 25.625rem; }
     #about-us-row #about-us-text-left:after {
       right: -1.25rem; }
-  .tomochain-lottie.dapp-image img {
-    max-width: 25rem; }
+  .tomochain-lottie.dapp-image {
+    text-align: right; }
+    .tomochain-lottie.dapp-image svg {
+      max-width: 25rem; }
   .tomochain-team.five-columns .tomochain-team__wrapper {
     grid-template-columns: 20% 20% 20% 20% 20%; } }
   @media (min-width: 75rem) {
