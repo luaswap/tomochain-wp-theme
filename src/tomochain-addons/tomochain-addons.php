@@ -26,6 +26,7 @@ class TomoChain_Addons {
 
     public function init() {
         add_action( 'admin_notices', array( $this, 'check_dependencies' ) );
+        add_action('init',array( $this, 'register_strings') );
         load_plugin_textdomain( 'tomochain-addons', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
     }
 

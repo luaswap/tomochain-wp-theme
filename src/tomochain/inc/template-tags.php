@@ -40,11 +40,9 @@ if ( ! function_exists( 'tomochain_event_date' ) ) :
 
         global $post;
 
-        $date = get_the_date('d M Y');
-
         if (function_exists('pll_get_term') && in_category(pll_get_term(11))) {
-            $start_date = date_i18n('d M Y', strtotime(get_field('start_date')));
-            $end_date   = date_i18n('d M Y', strtotime(get_field('end_date')));
+            $start_date = date_i18n(get_option( 'date_format' ), strtotime(get_field('start_date')));
+            $end_date   = date_i18n(get_option( 'date_format' ), strtotime(get_field('end_date')));
 
             $date = $start_date . (strcmp($start_date, $end_date) ? ' - ' . $end_date : '');
         }
