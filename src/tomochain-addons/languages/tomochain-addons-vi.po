@@ -16,354 +16,364 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"POT-Creation-Date: 2018-10-08 08:30+0000\n"
-"PO-Revision-Date: 2018-10-08 08:30+0000\n"
+"POT-Creation-Date: 2018-10-08 08:52+0000\n"
+"PO-Revision-Date: 2018-10-08 08:52+0000\n"
 "Last-Translator: TomoChain <hka@tomochain.com>\n"
 "Language: vi\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: tomochain-addons.php:42
-#, php-format
+#: src/tomochain-addons/tomochain-addons.php:42
 msgid ""
 "<strong>%s</strong> requires <strong><a href=\"http://bit.ly/vcomposer\" "
 "target=\"_blank\">WPBakery Page Builder</a></strong> plugin to be installed "
 "and activated on your site."
 msgstr ""
 
-#: tomochain-addons.php:50
-#, php-format
+#: src/tomochain-addons/tomochain-addons.php:50
 msgid ""
 "<strong>%s</strong> requires <strong>TomoChain</strong> theme to be "
 "installed and activated on your site."
 msgstr ""
 
-#: inc/vc-extend.php:38
+#: src/tomochain-addons/inc/vc-extend.php:38
 msgid "Design Options"
 msgstr ""
 
-#: inc/vc-extend.php:40
+#: src/tomochain-addons/inc/vc-extend.php:40
 msgid "CSS box"
 msgstr ""
 
-#: inc/vc-extend.php:47
+#: src/tomochain-addons/inc/vc-extend.php:47
 msgid "Extra class name"
 msgstr ""
 
-#: inc/vc-extend.php:49
+#: src/tomochain-addons/inc/vc-extend.php:49
 msgid ""
 "Style particular content element differently - add a class name and refer to "
 "it in custom CSS."
 msgstr ""
 
-#: inc/shortcodes/tomochain-image-carousel-item.php:9
-msgid "Image Carousel Item"
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:9
+msgid "Blog"
 msgstr ""
 
-#: inc/shortcodes/tomochain-image-carousel-item.php:12
-#: inc/shortcodes/tomochain-lottie.php:12
-#: inc/shortcodes/tomochain-team-member.php:64
-#: inc/shortcodes/tomochain-video-item.php:13
-#: inc/shortcodes/tomochain-roadmap.php:12 inc/shortcodes/tomochain-list.php:26
-#: inc/shortcodes/tomochain-videos.php:11
-#: inc/shortcodes/tomochain-roadmap-item.php:12
-#: inc/shortcodes/tomochain-blog.php:12 inc/shortcodes/tomochain-team.php:11
-#: inc/shortcodes/tomochain-image-carousel.php:12
-#: inc/shortcodes/tomochain-social.php:12 inc/shortcodes/tomochain-dapp2.php:61
-#: inc/shortcodes/tomochain-dapp.php:61 inc/shortcodes/tomochain-testnet.php:11
-#: inc/shortcodes/tomochain-testnet-item.php:13
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:12,
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:61,
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp2.php:61,
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:12,
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:12,
+#: src/tomochain-addons/inc/shortcodes/tomochain-list.php:26,
+#: src/tomochain-addons/inc/shortcodes/tomochain-lottie.php:12,
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:12,
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap.php:12,
+#: src/tomochain-addons/inc/shortcodes/tomochain-social.php:12,
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:64,
+#: src/tomochain-addons/inc/shortcodes/tomochain-team.php:11,
+#: src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:13,
+#: src/tomochain-addons/inc/shortcodes/tomochain-testnet.php:11,
+#: src/tomochain-addons/inc/shortcodes/tomochain-video-item.php:13,
+#: src/tomochain-addons/inc/shortcodes/tomochain-videos.php:11
 msgid "TomoChain"
 msgstr ""
 
-#: inc/shortcodes/tomochain-image-carousel-item.php:17
-#: inc/shortcodes/tomochain-team-member.php:79
-#: inc/shortcodes/tomochain-dapp2.php:65 inc/shortcodes/tomochain-dapp.php:65
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:17,
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:41
+msgid "Enable carousel loop mode"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:23,
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:47
+msgid "Enable carousel autolay"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:29,
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:53
+msgid "Auto play speed (in seconds)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:57
+msgid "DApp"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:58,
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp2.php:58
+msgid "Show information of a DApp"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:65,
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp2.php:65,
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:17,
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:79
 msgid "Image"
 msgstr ""
 
-#: inc/shortcodes/tomochain-image-carousel-item.php:20
-#: inc/shortcodes/tomochain-team-member.php:82
-#: inc/shortcodes/tomochain-dapp2.php:68 inc/shortcodes/tomochain-dapp.php:68
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:68,
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp2.php:68,
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:20,
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:82
 msgid "Select image from media library . "
 msgstr ""
 
-#: inc/shortcodes/tomochain-image-carousel-item.php:25
-#: inc/shortcodes/tomochain-image-carousel.php:19
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:73,
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:86
+msgid "Name"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:80,
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp2.php:73,
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:32,
+#: src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:35
+msgid "URL"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:86,
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp2.php:79,
+#: src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:41
+msgid "Source code URL"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:92,
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp2.php:85,
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:39,
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:130
+msgid "Description"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-dapp2.php:57
+msgid "DApp 2"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:9
+msgid "Image Carousel Item"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:25,
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:19
 msgid "Carousel image size"
 msgstr ""
 
-#: inc/shortcodes/tomochain-image-carousel-item.php:28
-#: inc/shortcodes/tomochain-image-carousel.php:22
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:28,
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:22
 msgid ""
 "Enter image size . Example: \"thumbnail\", \"medium\", \"large\", \"full\" "
 "or other sizes defined by current theme . Alternatively enter image size in "
 "pixels: 200x100( Width x Height). Leave empty to use \"thumbnail\" size . "
 msgstr ""
 
-#: inc/shortcodes/tomochain-image-carousel-item.php:32
-#: inc/shortcodes/tomochain-dapp2.php:73 inc/shortcodes/tomochain-dapp.php:80
-#: inc/shortcodes/tomochain-testnet-item.php:35
-msgid "URL"
-msgstr ""
-
-#: inc/shortcodes/tomochain-image-carousel-item.php:37
-#: inc/shortcodes/tomochain-video-item.php:32
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:37,
+#: src/tomochain-addons/inc/shortcodes/tomochain-video-item.php:32
 msgid "Note"
 msgstr ""
 
-#: inc/shortcodes/tomochain-lottie.php:8
-msgid "Lottie"
-msgstr ""
-
-#: inc/shortcodes/tomochain-lottie.php:9
-msgid "Display a animation image from Adobe After Effect"
-msgstr ""
-
-#: inc/shortcodes/tomochain-lottie.php:16
-msgid "Images"
-msgstr ""
-
-#: inc/shortcodes/tomochain-lottie.php:19
-msgid "Select images from media library . "
-msgstr ""
-
-#: inc/shortcodes/tomochain-lottie.php:24
-msgid "JSON code"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:60
-msgid "Team Member"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:61
-msgid "Member of TomoChain"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:69
-msgid "Advisor?"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:74
-msgid "Hide information"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:86
-#: inc/shortcodes/tomochain-dapp.php:73
-msgid "Name"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:93
-msgid "Role"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:94
-msgid "Add a role."
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:100
-msgid "Twitter"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:110
-msgid "Linkedin"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:120
-msgid "Github"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:130
-#: inc/shortcodes/tomochain-roadmap-item.php:39
-#: inc/shortcodes/tomochain-dapp2.php:85 inc/shortcodes/tomochain-dapp.php:92
-msgid "Description"
-msgstr ""
-
-#: inc/shortcodes/tomochain-video-item.php:10
-msgid "Video Item"
-msgstr ""
-
-#: inc/shortcodes/tomochain-video-item.php:18
-msgid "Thumbnail image"
-msgstr ""
-
-#: inc/shortcodes/tomochain-video-item.php:21
-msgid "Select image from media library (size 600x350). "
-msgstr ""
-
-#: inc/shortcodes/tomochain-video-item.php:26
-msgid "Youtube URL"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap.php:8
-msgid "Roadmap"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap.php:9
-msgid "TomoChain's Roadmap"
-msgstr ""
-
-#: inc/shortcodes/tomochain-list.php:22
-msgid "List"
-msgstr ""
-
-#: inc/shortcodes/tomochain-list.php:23
-msgid "Display a list"
-msgstr ""
-
-#: inc/shortcodes/tomochain-list.php:41
-msgid "List items"
-msgstr ""
-
-#: inc/shortcodes/tomochain-list.php:43
-msgid "Enter list item ( Note: divide items with linebreaks( Enter )."
-msgstr ""
-
-#: inc/shortcodes/tomochain-videos.php:8
-msgid "Videos"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-item.php:9
-msgid "Roadmap Item"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-item.php:17
-msgid "Year"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-item.php:18
-msgid "Enter the year (e.g. 2018)"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-item.php:25
-msgid "Quarter"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-item.php:26
-msgid "Select the quarter"
-msgstr ""
-
-#: inc/shortcodes/tomochain-blog.php:9
-msgid "Blog"
-msgstr ""
-
-#: inc/shortcodes/tomochain-blog.php:17
-#: inc/shortcodes/tomochain-image-carousel.php:41
-msgid "Enable carousel loop mode"
-msgstr ""
-
-#: inc/shortcodes/tomochain-blog.php:23
-#: inc/shortcodes/tomochain-image-carousel.php:47
-msgid "Enable carousel autolay"
-msgstr ""
-
-#: inc/shortcodes/tomochain-blog.php:29
-#: inc/shortcodes/tomochain-image-carousel.php:53
-msgid "Auto play speed (in seconds)"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team.php:8
-msgid "Team"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team.php:20
-msgid "Hide by default"
-msgstr ""
-
-#: inc/shortcodes/tomochain-image-carousel.php:8
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:8
 msgid "Image Carousel"
 msgstr ""
 
-#: inc/shortcodes/tomochain-image-carousel.php:11
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:11
 msgid "Animated carousel with images"
 msgstr ""
 
-#: inc/shortcodes/tomochain-image-carousel.php:26
+#: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:26
 msgid "Number of images to show"
 msgstr ""
 
-#: inc/shortcodes/tomochain-social.php:8
+#: src/tomochain-addons/inc/shortcodes/tomochain-list.php:22
+msgid "List"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-list.php:23
+msgid "Display a list"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-list.php:41
+msgid "List items"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-list.php:43
+msgid "Enter list item ( Note: divide items with linebreaks( Enter )."
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-lottie.php:8
+msgid "Lottie"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-lottie.php:9
+msgid "Display a animation image from Adobe After Effect"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-lottie.php:16
+msgid "Images"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-lottie.php:19
+msgid "Select images from media library . "
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-lottie.php:24
+msgid "JSON code"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:9
+msgid "Roadmap Item"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:17
+msgid "Year"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:18
+msgid "Enter the year (e.g. 2018)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:25
+msgid "Quarter"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:26
+msgid "Select the quarter"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:31
+msgid "Q1"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:32
+msgid "Q2"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:33
+msgid "Q3"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:34
+msgid "Q4"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap.php:8
+msgid "Roadmap"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap.php:9
+msgid "TomoChain's Roadmap"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-social.php:8
 msgid "Social Links"
 msgstr ""
 
-#: inc/shortcodes/tomochain-social.php:9
+#: src/tomochain-addons/inc/shortcodes/tomochain-social.php:9
 msgid "Social links of TomoChain"
 msgstr ""
 
-#: inc/shortcodes/tomochain-dapp2.php:57
-msgid "DApp 2"
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:60
+msgid "Team Member"
 msgstr ""
 
-#: inc/shortcodes/tomochain-dapp2.php:58 inc/shortcodes/tomochain-dapp.php:58
-msgid "Show information of a DApp"
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:61
+msgid "Member of TomoChain"
 msgstr ""
 
-#: inc/shortcodes/tomochain-dapp2.php:79 inc/shortcodes/tomochain-dapp.php:86
-#: inc/shortcodes/tomochain-testnet-item.php:41
-msgid "Source code URL"
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:69
+msgid "Advisor?"
 msgstr ""
 
-#: inc/shortcodes/tomochain-dapp.php:57
-msgid "DApp"
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:74
+msgid "Hide information"
 msgstr ""
 
-#: inc/shortcodes/tomochain-testnet.php:8
-msgid "Testnet"
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:93
+msgid "Role"
 msgstr ""
 
-#: inc/shortcodes/tomochain-testnet-item.php:10
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:94
+msgid "Add a role."
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:100
+msgid "Twitter"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:110
+msgid "Linkedin"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:120
+msgid "Github"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-team.php:8
+msgid "Team"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-team.php:20
+msgid "Hide by default"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:10
 msgid "Testnet Item"
 msgstr ""
 
-#: inc/shortcodes/tomochain-testnet-item.php:18
+#: src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:18
 msgid "Title"
 msgstr ""
 
-#: inc/shortcodes/tomochain-testnet-item.php:25
+#: src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:25
 msgid "Status"
 msgstr ""
 
-#: inc/templates/tomochain_dapp.php:57
-msgid "Run App"
-msgstr "Chạy App"
-
-#: inc/templates/tomochain_dapp.php:60
-#: inc/templates/tomochain_testnet_item.php:51
-#: inc/templates/tomochain_testnet_item.php:52
-#: inc/templates/tomochain_dapp2.php:61
-msgid "Source Code"
-msgstr "Mã nguồn"
-
-#: inc/templates/tomochain_team.php:43
-msgid "See all our team"
+#: src/tomochain-addons/inc/shortcodes/tomochain-testnet.php:8
+msgid "Testnet"
 msgstr ""
 
-#: inc/templates/tomochain_blog.php:91
+#: src/tomochain-addons/inc/shortcodes/tomochain-video-item.php:10
+msgid "Video Item"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-video-item.php:18
+msgid "Thumbnail image"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-video-item.php:21
+msgid "Select image from media library (size 600x350). "
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-video-item.php:26
+msgid "Youtube URL"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-videos.php:8
+msgid "Videos"
+msgstr ""
+
+#: src/tomochain-addons/inc/templates/tomochain_blog.php:91
 msgid "See all our news"
 msgstr "Tất cả các sự kiện của chúng tôi"
 
-#: inc/templates/tomochain_testnet_item.php:46
-#: inc/templates/tomochain_testnet_item.php:47
-#: inc/templates/tomochain_dapp2.php:58
+#: src/tomochain-addons/inc/templates/tomochain_dapp.php:57
+msgid "Run App"
+msgstr "Chạy App"
+
+#: src/tomochain-addons/inc/templates/tomochain_dapp.php:60,
+#: src/tomochain-addons/inc/templates/tomochain_dapp2.php:61,
+#: src/tomochain-addons/inc/templates/tomochain_testnet_item.php:51,
+#: src/tomochain-addons/inc/templates/tomochain_testnet_item.php:52
+msgid "Source Code"
+msgstr "Mã nguồn"
+
+#: src/tomochain-addons/inc/templates/tomochain_dapp2.php:58,
+#: src/tomochain-addons/inc/templates/tomochain_testnet_item.php:46,
+#: src/tomochain-addons/inc/templates/tomochain_testnet_item.php:47
 msgid "More Info"
 msgstr "Thông tin thêm"
 
-#: inc/templates/tomochain_video_item.php:40
-msgid "Play"
-msgstr ""
-
-#: inc/templates/tomochain_social.php:32
+#: src/tomochain-addons/inc/templates/tomochain_social.php:32
 msgid "TomoChain addons plugin only works with the TomoChain theme."
 msgstr ""
 
-#. Name of the plugin
-msgid "TomoChain Addons"
+#: src/tomochain-addons/inc/templates/tomochain_team.php:43
+msgid "See all our team"
 msgstr ""
 
-#. Description of the plugin
-msgid ""
-"A collection of shortcodes for WPBakery Pabe Builder. It was made for "
-"TomoChain website."
-msgstr ""
-
-#. Author URI of the plugin
-msgid "http://tomochain.com"
+#: src/tomochain-addons/inc/templates/tomochain_video_item.php:40
+msgid "Play"
 msgstr ""
