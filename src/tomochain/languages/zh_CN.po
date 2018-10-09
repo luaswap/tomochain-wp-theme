@@ -16,17 +16,17 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"POT-Creation-Date: 2018-09-25 03:47+0000\n"
-"PO-Revision-Date: 2018-09-25 03:49+0000\n"
+"POT-Creation-Date: 2018-10-08 08:42+0000\n"
+"PO-Revision-Date: 2018-10-08 08:42+0000\n"
 "Last-Translator: TomoChain <hka@tomochain.com>\n"
 "Language: zh_CN\n"
 "X-Generator: Loco https://localise.biz/"
 
-#: src/tomochain/404.php:19
+#: src/tomochain/404.php:24
 msgid "Page not found"
 msgstr ""
 
-#: src/tomochain/404.php:20
+#: src/tomochain/404.php:25
 msgid "Go Home"
 msgstr ""
 
@@ -77,19 +77,19 @@ msgid "Search Results for: %s"
 msgstr ""
 
 #. translators: %s: post author.
-#: src/tomochain/inc/template-tags.php:63
+#: src/tomochain/inc/template-tags.php:61
 msgctxt "post author"
 msgid "By %s"
 msgstr ""
 
 #. translators: %s: post title
-#: src/tomochain/inc/template-tags.php:131
+#: src/tomochain/inc/template-tags.php:129
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #. translators: %s: Name of current post. Only visible to screen readers
-#: src/tomochain/inc/template-tags.php:148,
+#: src/tomochain/inc/template-tags.php:146,
 #: src/tomochain/template-parts/content-page.php:34
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
@@ -207,11 +207,12 @@ msgstr ""
 
 #: src/tomochain/inc/widgets/tomochain-sendgrid.php:122,
 #: src/tomochain/inc/widgets/tomochain-sendgrid.php:130
-msgid "Confirmation email has been sent, please check your inbox."
+msgid "A confirmation email has been sent, please check your inbox."
 msgstr "确认邮件已发送，请检查您的收件箱。"
 
 #: src/tomochain/inc/widgets/tomochain-sendgrid.php:127
-msgid "Confirmation email has been sent succesfully, please check your inbox."
+msgid ""
+"A confirmation email has been sent successfully, please check your inbox."
 msgstr "确认邮件已成功发送，请检查您的收件箱。"
 
 #: src/tomochain/inc/widgets/wph-widget-class.php:843
