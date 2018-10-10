@@ -9026,23 +9026,6 @@ This is where majority of our work takes place and our UI components are often c
     .site-header.headroom--not-top .main-menu .menu > ul > li span.menu-item-text:after,
     .site-header.headroom--not-top .main-menu .menu > li span.menu-item-text:after {
       bottom: -0.9375rem; }
-    .site-header.headroom--not-top .main-menu .menu > ul > li .children,
-    .site-header.headroom--not-top .main-menu .menu > li .sub-menu {
-      padding: 0.9375rem 1.25rem;
-      background-color: #202741; }
-    .site-header.headroom--not-top .main-menu .menu > ul > li .children li.page_item a,
-    .site-header.headroom--not-top .main-menu .menu > li .sub-menu li.menu-item a {
-      color: #9eaacc; }
-      .site-header.headroom--not-top .main-menu .menu > ul > li .children li.page_item a:hover,
-      .site-header.headroom--not-top .main-menu .menu > li .sub-menu li.menu-item a:hover {
-        color: #dee2ee; }
-    .site-header.headroom--not-top .nice-select .list {
-      padding: 0.625rem 0.3125rem;
-      background-color: #202741; }
-    .site-header.headroom--not-top .nice-select .option:hover,
-    .site-header.headroom--not-top .nice-select .option.focus,
-    .site-header.headroom--not-top .nice-select .option.selected.focus {
-      color: #dee2ee; }
   .site-header.headroom--unpinned {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%); }
@@ -9070,6 +9053,13 @@ This is where majority of our work takes place and our UI components are often c
 
 .tomochain-lang-switcher-wrapper .nice-select {
   padding-right: 0; }
+  .tomochain-lang-switcher-wrapper .nice-select .list {
+    padding: 0.625rem 0.3125rem;
+    background-color: #1a1c34; }
+  .tomochain-lang-switcher-wrapper .nice-select .option:hover,
+  .tomochain-lang-switcher-wrapper .nice-select .option.focus,
+  .tomochain-lang-switcher-wrapper .nice-select .option.selected.focus {
+    color: #dee2ee; }
 
 .tomochain-lang-switcher-wrapper select {
   display: none; }
@@ -9163,7 +9153,8 @@ This is where majority of our work takes place and our UI components are often c
     -webkit-transition: left .5s ease, right .5s ease;
     transition: left .5s ease, right .5s ease;
     margin: 0;
-    padding: 0;
+    padding: 0.9375rem 1.25rem;
+    background-color: #1a1c34;
     z-index: 999; }
   .main-menu .menu > ul > li .children li.page_item,
   .main-menu .menu > li .sub-menu li.menu-item {
@@ -9191,8 +9182,11 @@ This is where majority of our work takes place and our UI components are often c
     .main-menu .menu > ul > li .children li.page_item a,
     .main-menu .menu > li .sub-menu li.menu-item a {
       display: block;
-      color: #434f73;
+      color: #9eaacc;
       padding: 0.3125rem 0; }
+      .main-menu .menu > ul > li .children li.page_item a:hover,
+      .main-menu .menu > li .sub-menu li.menu-item a:hover {
+        color: #dee2ee; }
     .main-menu .menu > ul > li .children li.page_item span.menu-item-text:after,
     .main-menu .menu > li .sub-menu li.menu-item span.menu-item-text:after {
       display: none; }
