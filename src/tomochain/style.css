@@ -9145,7 +9145,7 @@ This is where majority of our work takes place and our UI components are often c
     top: 100%;
     left: 1.5625rem;
     width: 100%;
-    min-width: 12.5rem;
+    min-width: 15.625rem;
     list-style: none;
     text-align: left;
     -webkit-animation-duration: .6s;
