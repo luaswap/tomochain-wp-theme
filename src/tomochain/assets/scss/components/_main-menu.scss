@@ -103,7 +103,8 @@
         animation-duration: .6s;
         transition: left .5s ease, right .5s ease;
         margin: 0;
-        padding: 0;
+        padding: 15px 20px;
+        background-color: #1a1c34;
         z-index: 999;
     }
 
@@ -143,8 +144,12 @@
 
         a {
             display: block;
-            color: #434f73;
+            color: #9eaacc;
             padding: 5px 0;
+
+            &:hover {
+                color: #dee2ee;
+            }
         }
 
         span.menu-item-text:after {
