@@ -360,6 +360,11 @@
 
             @include media-breakpoint-up(md) {
                 padding: 35px 35px 45px 35px;
+
+                html[lang="ja"] & {
+                    padding-left: 30px;
+                    padding-right: 30px;
+                }
             }
         }
 

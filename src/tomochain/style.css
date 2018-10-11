@@ -11880,6 +11880,9 @@ body.page-template-revslider-page-template {
       height: auto !important; }
       #team-member-info.add-content .team-member-info__wrapper {
         padding: 2.1875rem 2.1875rem 2.8125rem 2.1875rem; }
+        html[lang="ja"] #team-member-info.add-content .team-member-info__wrapper {
+          padding-left: 1.875rem;
+          padding-right: 1.875rem; }
       .tomochain-testnet-item__status {
         margin-right: 1.5625rem; }
       .tomochain-testnet-item__title {
