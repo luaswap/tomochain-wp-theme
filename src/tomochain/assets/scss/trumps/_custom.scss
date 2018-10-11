@@ -285,10 +285,17 @@ body.info-opened:after {
     @include media-breakpoint-up(xl) {
         margin: 0 -35px;
 
+        html[lang="ja"] & {
+            margin-right: -100px;
+
+            &:before {
+                left: -190px;
+            }
+        }
+
         &:before {
             width: 700px;
             height: 500px;
-            top: -100px;
             left: -160px;
         }
     }
@@ -408,7 +415,7 @@ body.about-us-page {
         padding-bottom: 250px;
 
         #about-us-text-left,
-        #about-us-text-right, {
+        #about-us-text-right {
             max-width: 300px;
         }
 
@@ -428,7 +435,7 @@ body.about-us-page {
     @include media-breakpoint-up(lg) {
 
         #about-us-text-left,
-        #about-us-text-right, {
+        #about-us-text-right {
             max-width: 410px;
         }
 
@@ -439,12 +446,23 @@ body.about-us-page {
 
     @include media-breakpoint-up(xl) {
         #about-us-text-left,
-        #about-us-text-right, {
+        #about-us-text-right {
             max-width: 500px;
         }
 
         #about-us-text-left:after {
             right: -25px;
+        }
+
+        html[lang="ja"] & {
+            #about-us-text-left,
+            #about-us-text-right {
+                max-width: 100%;
+            }
+
+            #about-us-text-left:after {
+                right: 15px;
+            }
         }
     }
 }
