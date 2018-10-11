@@ -45,6 +45,8 @@ if ( ! function_exists( 'tomochain_event_date' ) ) :
             $end_date   = date_i18n(get_option( 'date_format' ), strtotime(get_field('end_date')));
 
             $date = $start_date . (strcmp($start_date, $end_date) ? ' - ' . $end_date : '');
+        } else {
+            $date = get_the_date(get_option( 'date_format' ));
         }
 
         echo '<span class="posted-on">' . $date . '</span>';
