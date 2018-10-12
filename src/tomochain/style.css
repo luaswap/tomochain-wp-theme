@@ -13143,7 +13143,12 @@ body.page-template-revslider-page-template {
     .table-responsive-md > .table-bordered {
       border: 0; }
   .hidden-sm-down {
-    display: none !important; } }
+    display: none !important; }
+  #tps-image-col {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 3.125rem; } }
   @media (max-width: 61.99875rem) {
   .table-responsive-lg {
     display: block;
