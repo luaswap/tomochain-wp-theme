@@ -307,6 +307,13 @@ body.info-opened:after {
     }
 }
 
+#tps-image-col {
+    @include media-breakpoint-down(sm) {
+        order: 2;
+        margin-bottom: 50px;
+    }
+}
+
 #tps-column {
     margin-bottom: 60px;
 
