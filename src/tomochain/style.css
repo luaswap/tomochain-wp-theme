@@ -10281,8 +10281,11 @@ This is where majority of our work takes place and our UI components are often c
   .widget_tomo_address .address {
     font-weight: 300;
     line-height: 1.7;
-    margin: 0 auto;
-    max-width: 20rem; }
+    margin: 0 auto; }
+    .widget_tomo_address .address span {
+      display: inline-block;
+      max-width: 20rem;
+      margin: 0.625rem; }
 
 .widget_tomo_sendgrid {
   margin-bottom: 0; }
