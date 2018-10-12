@@ -10142,7 +10142,7 @@ This is where majority of our work takes place and our UI components are often c
     opacity: 1;
     visibility: visible; }
   #team-member-info.add-content .team-member-info__basic-info,
-  #team-member-info.add-content .team-member-description,
+  #team-member-info.add-content .team-member-info__description,
   #team-member-info.add-content .team-member-info__social {
     opacity: 1;
     visibility: visible;
@@ -11881,6 +11881,8 @@ body.page-template-revslider-page-template {
     margin-left: 6.25rem; }
   .team-member-info__description {
     margin-top: 3.125rem; }
+  html[lang="ja"] .team-member-info__description {
+    margin-top: 1.875rem; }
     #team-member-info.add-content {
       height: auto !important; }
       #team-member-info.add-content .team-member-info__wrapper {
