@@ -10142,7 +10142,7 @@ This is where majority of our work takes place and our UI components are often c
     opacity: 1;
     visibility: visible; }
   #team-member-info.add-content .team-member-info__basic-info,
-  #team-member-info.add-content .team-member-info__description,
+  #team-member-info.add-content .team-member-cription,
   #team-member-info.add-content .team-member-info__social {
     opacity: 1;
     visibility: visible;
@@ -11862,6 +11862,8 @@ body.page-template-revslider-page-template {
       padding-left: 1.875rem; }
     .tomochain-dapp--2 .tomochain-dapp__description {
       text-align: justify; }
+    html[lang="ja"] .tomochain-dapp--2 {
+      grid-template-columns: 22% 78%; }
   .tomochain-team__wrapper {
     grid-template-columns: 50% 50%; }
   .team-member-info__image {
@@ -11880,6 +11882,9 @@ body.page-template-revslider-page-template {
       height: auto !important; }
       #team-member-info.add-content .team-member-info__wrapper {
         padding: 2.1875rem 2.1875rem 2.8125rem 2.1875rem; }
+        html[lang="ja"] #team-member-info.add-content .team-member-info__wrapper {
+          padding-left: 1.875rem;
+          padding-right: 1.875rem; }
       .tomochain-testnet-item__status {
         margin-right: 1.5625rem; }
       .tomochain-testnet-item__title {
@@ -13025,16 +13030,24 @@ body.page-template-revslider-page-template {
     display: none !important; }
   #posv-img {
     margin: 0 -2.1875rem; }
+    html[lang="ja"] #posv-img {
+      margin-right: -6.25rem; }
+      html[lang="ja"] #posv-img:before {
+        left: -11.875rem; }
     #posv-img:before {
       width: 43.75rem;
       height: 31.25rem;
-      top: -6.25rem;
       left: -10rem; }
     #about-us-row #about-us-text-left,
     #about-us-row #about-us-text-right {
       max-width: 31.25rem; }
     #about-us-row #about-us-text-left:after {
-      right: -1.5625rem; } }
+      right: -1.5625rem; }
+    html[lang="ja"] #about-us-row #about-us-text-left,
+    html[lang="ja"] #about-us-row #about-us-text-right {
+      max-width: 100%; }
+    html[lang="ja"] #about-us-row #about-us-text-left:after {
+      right: 0.9375rem; } }
   @media print {
   .d-print-none {
     display: none !important; }

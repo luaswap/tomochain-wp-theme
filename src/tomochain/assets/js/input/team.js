@@ -82,9 +82,9 @@
                 var atts = JSON.parse($el.attr('atts'));
 
                 $('.team-member-info__image img').attr('src', atts.image_url);
-                $('.team-member-info__name').text(atts.name);
-                $('.team-member-info__role').text(atts.role);
-                $('.team-member-info__description').text(atts.description);
+                $('.team-member-info__name').html(atts.name);
+                $('.team-member-info__role').html(atts.role);
+                $('.team-member-info__description').html(atts.description);
 
                 if (atts.twitter) {
                     $('.team-member-info__social').append('<a href="' + atts.twitter + '" class="tomochain-team-member__twitter" target="_blank"><i class="fab fa-twitter"/></a>')
@@ -113,9 +113,9 @@
                 }
 
                 $('.team-member-info__image img').attr('src', '');
-                $('.team-member-info__name').text('');
-                $('.team-member-info__role').text('');
-                $('.team-member-info__description').text('');
+                $('.team-member-info__name').html('');
+                $('.team-member-info__role').html('');
+                $('.team-member-info__description').html('');
             }
 
             var closeQuickView = function(finalWidth, maxQuickWidth) {

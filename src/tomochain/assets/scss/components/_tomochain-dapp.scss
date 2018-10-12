@@ -113,6 +113,10 @@
         .tomochain-dapp__description {
             text-align: justify;
         }
+
+        html[lang="ja"] & {
+            grid-template-columns: 22% 78%;
+        }
     }
 
     @include media-breakpoint-up(lg) {
