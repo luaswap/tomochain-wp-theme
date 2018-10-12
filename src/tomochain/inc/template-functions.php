@@ -106,8 +106,6 @@ function tomochain_lang_switcher() {
                                 $html .= '<option';
                             endif;
 
-                            $html .= ' data-imagesrc="' . esc_url( $l['flag'] ) . '"';
-
                             $html .= ' value="' . esc_url( $l['url'] ) . '"';
                             $html .= '>' . $l['name'] . '</option>';
                         endforeach;
