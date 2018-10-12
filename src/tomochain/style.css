@@ -9056,6 +9056,8 @@ This is where majority of our work takes place and our UI components are often c
   .tomochain-lang-switcher-wrapper .nice-select .list {
     padding: 0.625rem 0.3125rem;
     background-color: #1a1c34; }
+  .tomochain-lang-switcher-wrapper .nice-select img {
+    margin-right: 0.3125rem; }
   .tomochain-lang-switcher-wrapper .nice-select .option:hover,
   .tomochain-lang-switcher-wrapper .nice-select .option.focus,
   .tomochain-lang-switcher-wrapper .nice-select .option.selected.focus {
