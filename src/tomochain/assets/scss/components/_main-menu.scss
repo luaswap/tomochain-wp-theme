@@ -98,13 +98,14 @@
         left: 25px;
         width: 100%;
         min-width: 260px;
+        border-radius: 8px;
         list-style: none;
         text-align: left;
         animation-duration: .6s;
         transition: left .5s ease, right .5s ease;
         margin: 0;
         padding: 15px 20px;
-        background-color: #1a1c34;
+        background-color: #202640;
         z-index: 999;
     }
 
