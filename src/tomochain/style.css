@@ -8023,6 +8023,9 @@ textarea {
 p {
   margin-bottom: 1.5em; }
 
+strong {
+  font-weight: 700; }
+
 dfn, cite, em, i {
   font-style: italic; }
 
@@ -10280,14 +10283,19 @@ This is where majority of our work takes place and our UI components are often c
     font-size: 1.125rem;
     font-weight: 400;
     color: #ebeaf5; }
-  .widget_tomo_address .address {
+  .widget_tomo_address .addresses {
     font-weight: 300;
     line-height: 1.7;
-    margin: 0 auto; }
-    .widget_tomo_address .address span {
+    margin: 1.875rem auto; }
+    .widget_tomo_address .addresses .address {
+      text-align: left;
       display: inline-block;
+      vertical-align: top;
       max-width: 20rem;
       margin: 0.625rem; }
+    .widget_tomo_address .addresses .address-title {
+      font-size: 0.875rem;
+      text-transform: uppercase; }
 
 .widget_tomo_sendgrid {
   margin-bottom: 0; }
