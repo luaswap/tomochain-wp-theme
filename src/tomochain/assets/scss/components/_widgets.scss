@@ -26,7 +26,12 @@
             display: inline-block;
             vertical-align: top;
             max-width: 320px;
+            width: 100%;
             margin: 10px;
+
+            @include media-breakpoint-between(md, lg) {
+                max-width: calc(33.33% - 20px);
+            }
         }
 
         .address-title {
