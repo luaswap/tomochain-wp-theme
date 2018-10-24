@@ -19,14 +19,14 @@
     .addresses {
         font-weight: 300;
         line-height: 1.7;
-        margin: 30px auto;
+        margin: 20px auto;
 
         .address {
             display: inline-block;
             vertical-align: top;
             max-width: 320px;
             width: 100%;
-            margin: 10px;
+            margin: 20px 10px;
 
             @include media-breakpoint-between(md, lg) {
                 max-width: calc(33.33% - 20px);
