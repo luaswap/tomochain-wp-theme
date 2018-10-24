@@ -42,7 +42,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'type'   => 'textarea',
                     'class'  => 'widefat',
                     'std'    => '',
-                    'filter' => 'strip_tags|esc_attr'
+                    'filter' => ''
                 ),
                 array(
                     'name'   => esc_html__( 'Address Title 2', 'tomochain' ),
@@ -58,7 +58,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'type'   => 'textarea',
                     'class'  => 'widefat',
                     'std'    => '',
-                    'filter' => 'strip_tags|esc_attr'
+                    'filter' => ''
                 ),
                 array(
                     'name'   => esc_html__( 'Address Title 3', 'tomochain' ),
@@ -74,7 +74,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'type'   => 'textarea',
                     'class'  => 'widefat',
                     'std'    => '',
-                    'filter' => 'strip_tags|esc_attr'
+                    'filter' => ''
                 ),
                 array(
                     'name'   => esc_html__( 'Address Title 4', 'tomochain' ),
@@ -90,7 +90,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'type'   => 'textarea',
                     'class'  => 'widefat',
                     'std'    => '',
-                    'filter' => 'strip_tags|esc_attr'
+                    'filter' => ''
                 ),
                 array(
                     'name'   => esc_html__( 'Address Title 5', 'tomochain' ),
@@ -106,15 +106,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'type'   => 'textarea',
                     'class'  => 'widefat',
                     'std'    => '',
-                    'filter' => 'strip_tags|esc_attr'
-                ),
-                array(
-                    'name'   => esc_html__( 'Address 6', 'tomochain' ),
-                    'id'     => 'address6',
-                    'type'   => 'textarea',
-                    'class'  => 'widefat',
-                    'std'    => '',
-                    'filter' => 'strip_tags|esc_attr'
+                    'filter' => ''
                 ),
                 array(
                     'name'   => esc_html__( 'Address Title 6', 'tomochain' ),
@@ -123,6 +115,14 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'class'  => 'widefat',
                     'std'    => '',
                     'filter' => 'strip_tags|esc_attr'
+                ),
+                array(
+                    'name'   => esc_html__( 'Address 6', 'tomochain' ),
+                    'id'     => 'address6',
+                    'type'   => 'textarea',
+                    'class'  => 'widefat',
+                    'std'    => '',
+                    'filter' => ''
                 ),
             );
 
