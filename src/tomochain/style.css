@@ -10292,6 +10292,7 @@ This is where majority of our work takes place and our UI components are often c
       display: inline-block;
       vertical-align: top;
       max-width: 20rem;
+      width: 100%;
       margin: 0.625rem; }
     .widget_tomo_address .addresses .address-title {
       font-size: 0.875rem;
@@ -11956,6 +11957,9 @@ body.page-template-revslider-page-template {
                 transform: translateY(-50%); }
   .exchanges-inner-row {
     margin-bottom: 3.125rem; } }
+  @media (min-width: 48rem) and (max-width: 74.99875rem) {
+        .widget_tomo_address .addresses .address {
+          max-width: calc(33.33% - 1.25rem); } }
   @media (min-width: 48rem) and (max-width: 61.99875rem) {
     #testnet-row .tomochain-lottie {
       text-align: center; }
@@ -13143,22 +13147,17 @@ body.page-template-revslider-page-template {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-  @media (max-width: 47.99875rem) {
-  .table-responsive-md {
+  @media (max-width: 35.99875rem) {
+  .table-responsive-sm {
     display: block;
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar; }
-    .table-responsive-md > .table-bordered {
+    .table-responsive-sm > .table-bordered {
       border: 0; }
-  .hidden-sm-down {
-    display: none !important; }
-  #tps-image-col {
-    -webkit-box-ordinal-group: 3;
-        -ms-flex-order: 2;
-            order: 2;
-    margin-bottom: 3.125rem; } }
+  .hidden-xs-down {
+    display: none !important; } }
   @media (max-width: 61.99875rem) {
   .table-responsive-lg {
     display: block;
@@ -13181,16 +13180,21 @@ body.page-template-revslider-page-template {
       border: 0; }
   .hidden-lg-down {
     display: none !important; } }
-  @media (max-width: 35.99875rem) {
-  .table-responsive-sm {
+  @media (max-width: 47.99875rem) {
+  .table-responsive-md {
     display: block;
     width: 100%;
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     -ms-overflow-style: -ms-autohiding-scrollbar; }
-    .table-responsive-sm > .table-bordered {
+    .table-responsive-md > .table-bordered {
       border: 0; }
-  .hidden-xs-down {
-    display: none !important; } }
+  .hidden-sm-down {
+    display: none !important; }
+  #tps-image-col {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-bottom: 3.125rem; } }
 
 /*# sourceMappingURL=assets/scss/sourcemap/style.css.map */
