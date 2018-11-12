@@ -140,10 +140,6 @@ gulp.task('sass-plugin', function () {
                         mediaQuery: true
                     })
                 ]))
-               .pipe($.sourcemaps.write('./assets/scss/sourcemap/', {
-                   includeContent: false,
-                   sourceRoot    : '../../scss/'
-               }))
                .pipe($.lineEndingCorrector())
                .pipe(gulp.dest('src/' + plugin + '/assets/css'))
                .pipe( $.rename( {
@@ -153,11 +149,7 @@ gulp.task('sass-plugin', function () {
                .pipe($.cleanCss({
                    rebase: false
                }))
-               .pipe($.sourcemaps.write('./assets/scss/sourcemap/', {
-                   includeContent: false,
-                   sourceRoot    : '../../scss/'
-               }))
-               .pipe(gulp.dest('src/' + plugin + '/assets/css/'))
+               .pipe(gulp.dest('src/' + plugin + '/assets/css'))
 })
 
 gulp.task('js', function () {
@@ -200,7 +192,10 @@ gulp.task('js-plugin', function () {
 
 gulp.task('bs', function () {
     bs.init({
-        files: 'src/' + theme + '/style.css'
+        files: [
+            'src/' + theme + '/style.css',
+            'src/' + plugin + '/assets/css/tomochain-addons.css'
+        ]
     })
 })
 
@@ -216,4 +211,4 @@ gulp.task('watch', function () {
     gulp.watch('src/' + '/**/*.php', ['bs-reload'])
 })
 
-gulp.task('default', ['bs', 'sass', 'watch'])
+gulp.task('default', ['bs', 'sass', 'sass-plugin', 'watch'])
