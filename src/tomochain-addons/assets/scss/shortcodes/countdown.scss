@@ -1,2 +1,27 @@
 .tomochain-countdown {
+    opacity: 0;
+    visibility: hidden;
+
+    &.is-countdown {
+        opacity: 1;
+        visibility: visible;
+        border: none;
+        background-color: transparent;
+    }
+
+    .countdown-amount {
+        font-size: 40px;
+        font-weight: 300;
+        line-height: 70px;
+        padding-bottom: 5px;
+        color: #fff;
+        border-bottom: 2px solid #f08b89;
+    }
+
+    .countdown-period {
+        font-size: 12px;
+        color: #fff;
+        text-transform: lowercase;
+        margin-top: 15px;
+    }
 }

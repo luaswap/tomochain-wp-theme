@@ -1,2 +1,20 @@
-
-/*# sourceMappingURL=assets/scss/sourcemap/tomochain-addons.css.map */
+.tomochain-countdown {
+  opacity: 0;
+  visibility: hidden; }
+  .tomochain-countdown.is-countdown {
+    opacity: 1;
+    visibility: visible;
+    border: none;
+    background-color: transparent; }
+  .tomochain-countdown .countdown-amount {
+    font-size: 2.5rem;
+    font-weight: 300;
+    line-height: 4.375rem;
+    padding-bottom: 0.3125rem;
+    color: #fff;
+    border-bottom: 0.125rem solid #f08b89; }
+  .tomochain-countdown .countdown-period {
+    font-size: 0.75rem;
+    color: #fff;
+    text-transform: lowercase;
+    margin-top: 0.9375rem; }
