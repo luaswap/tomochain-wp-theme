@@ -85,15 +85,6 @@ vc_map( array(
             'admin_label' => true,
         ),
         array(
-            'type'       => 'dropdown',
-            'heading'    => esc_html__( 'Countdown timer depends on', 'tomochain-addons' ),
-            'param_name' => 'time_zone',
-            'value'      => array(
-                esc_html__( 'WordPress Defined Timezone', 'tomochain-addons' ) => 'wp',
-                __( 'User\'s System Timezone', 'tomochain-addons' )            => 'user',
-            ),
-        ),
-        array(
             'type'       => 'checkbox',
             'heading'    => esc_html__( 'Select time units to display in countdown timer', 'tomochain-addons' ),
             'param_name' => 'countdown_opts',

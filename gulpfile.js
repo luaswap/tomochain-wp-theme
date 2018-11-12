@@ -142,6 +142,25 @@ gulp.task('js', function () {
         .pipe( gulp.dest( 'src/' + theme + '/assets/js/' ) )
 })
 
+gulp.task('js-plugin', function () {
+    return gulp.src( 'src/' + plugin + '/assets/js/input/_tomochain-addons.js' )
+        .pipe( $.plumber( { errorHandler: reportError } ) )
+        .pipe( $.fileInclude({
+            prefix: '//@',
+            basepath: '@file'
+        }))
+        .pipe( $.rename( {
+            basename: 'tomochain-addons',
+        }))
+        .pipe( gulp.dest( 'src/' + plugin + '/assets/js/' ) )
+        .pipe( $.rename( {
+            basename: 'tomochain-addons',
+            suffix: '.min'
+        }))
+        .pipe( $.uglify() )
+        .pipe( gulp.dest( 'src/' + plugin + '/assets/js/' ) )
+})
+
 gulp.task('bs', function () {
     bs.init({
         files: 'src/' + theme + '/style.css'
@@ -155,6 +174,7 @@ gulp.task('bs-reload', function () {
 gulp.task('watch', function () {
     gulp.watch('src/' + theme + '/assets/scss/**/*.scss', ['sass'])
     gulp.watch('src/' + theme + '/assets/**/*.js', ['bs-reload', 'js'])
+    gulp.watch('src/' + plugin + '/assets/**/*.js', ['bs-reload', 'js-plugin'])
     gulp.watch('src/' + '/**/*.php', ['bs-reload'])
 })
 
