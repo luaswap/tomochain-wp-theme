@@ -10733,6 +10733,10 @@ body.page-template-revslider-page-template {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%); }
 
+body.mainnet-page {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#272F4B), color-stop(21%, #1A1F36), color-stop(52%, #15152D), to(#211841));
+  background-image: linear-gradient(180deg, #272F4B 0%, #1A1F36 21%, #15152D 52%, #211841 100%); }
+
 .nice-select {
   font-family: 'Quicksand';
   text-transform: lowercase;
