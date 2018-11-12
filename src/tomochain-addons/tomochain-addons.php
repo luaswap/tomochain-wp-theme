@@ -76,7 +76,9 @@ class TomoChain_Addons {
 
         $suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
 
-        wp_enqueue_script( 'tomochain-js',
+        wp_enqueue_style( 'tomochain-addons-css', TOMOCHAIN_ADDONS_URI . 'assets/css/tomochain-addons' . $suffix . '.css' );
+
+        wp_enqueue_script( 'tomochain-addons-js',
             TOMOCHAIN_ADDONS_URI . 'assets/js/tomochain-addons' . $suffix . '.js',
             array('jquery'),
             null,

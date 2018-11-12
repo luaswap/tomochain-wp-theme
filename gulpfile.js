@@ -123,6 +123,43 @@ gulp.task('sass', function () {
                .pipe(gulp.dest('src/' + theme + '/'))
 })
 
+gulp.task('sass-plugin', function () {
+    return gulp.src('src/' + plugin + '/assets/scss/*.scss')
+               .pipe($.plumber({errorHandler: reportError}))
+               .pipe($.sourcemaps.init())
+               .pipe($.sassGlobImport())
+               .pipe($.sass())
+               .pipe($.postcss([
+                    autoprefixer({browsers: ['last 2 versions']}),
+                    mqpacker({sort: true}),
+                    assets({
+                        loadPaths: ['src/' + plugin + 'assets/images/']
+                    }),
+                    pxtorem({
+                        propList: ['*', '!stroke-dasharray'],
+                        mediaQuery: true
+                    })
+                ]))
+               .pipe($.sourcemaps.write('./assets/scss/sourcemap/', {
+                   includeContent: false,
+                   sourceRoot    : '../../scss/'
+               }))
+               .pipe($.lineEndingCorrector())
+               .pipe(gulp.dest('src/' + plugin + '/assets/css'))
+               .pipe( $.rename( {
+                   basename: 'tomochain-addons',
+                   suffix: '.min'
+               }))
+               .pipe($.cleanCss({
+                   rebase: false
+               }))
+               .pipe($.sourcemaps.write('./assets/scss/sourcemap/', {
+                   includeContent: false,
+                   sourceRoot    : '../../scss/'
+               }))
+               .pipe(gulp.dest('src/' + plugin + '/assets/css/'))
+})
+
 gulp.task('js', function () {
     return gulp.src( 'src/' + theme + '/assets/js/input/_tomochain.js' )
         .pipe( $.plumber( { errorHandler: reportError } ) )
@@ -173,6 +210,7 @@ gulp.task('bs-reload', function () {
 
 gulp.task('watch', function () {
     gulp.watch('src/' + theme + '/assets/scss/**/*.scss', ['sass'])
+    gulp.watch('src/' + plugin + '/assets/scss/**/*.scss', ['sass-plugin'])
     gulp.watch('src/' + theme + '/assets/**/*.js', ['bs-reload', 'js'])
     gulp.watch('src/' + plugin + '/assets/**/*.js', ['bs-reload', 'js-plugin'])
     gulp.watch('src/' + '/**/*.php', ['bs-reload'])
