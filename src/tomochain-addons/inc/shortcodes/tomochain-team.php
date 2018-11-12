@@ -7,7 +7,7 @@ class WPBakeryShortCode_TomoChain_Team extends WPBakeryShortCodesContainer {
 vc_map( array(
     'name'                    => esc_html__( 'Team', 'tomochain-addons' ),
     'base'                    => 'tomochain_team',
-    'icon'                    => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
+    'icon'                    => TOMOCHAIN_ADDONS_URI . '/assets/images/icon.png',
     'category'                => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'js_view'                 => 'VcColumnView',
 	'content_element'         => true,

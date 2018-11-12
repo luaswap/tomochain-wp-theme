@@ -13,14 +13,14 @@ if ( ! class_exists( 'TomoChain_Datetime_Picker' ) ) {
 				WpbakeryShortcodeParams::addField( 'datetimepicker', array(
 					$this,
 					'render'
-				), TOMOCHAIN_ADDONS_URL . '/inc/params/datetime-picker/bootstrap-datetimepicker.min.js' );
+				), TOMOCHAIN_ADDONS_URI . '/inc/params/datetime-picker/bootstrap-datetimepicker.min.js' );
 			}
 
 			add_action( 'admin_enqueue_scripts', array( $this, 'admin_scripts' ) );
 		}
 
 		function admin_scripts() {
-			wp_enqueue_style( 'TomoChain-datetimepicker', TOMOCHAIN_ADDONS_URL . '/inc/params/datetime-picker/bootstrap-datetimepicker.min.css' );
+			wp_enqueue_style( 'TomoChain-datetimepicker', TOMOCHAIN_ADDONS_URI . '/inc/params/datetime-picker/bootstrap-datetimepicker.min.css' );
 		}
 
 		public function render( $settings, $value ) {

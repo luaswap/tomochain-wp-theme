@@ -7,7 +7,7 @@ class WPBakeryShortCode_TomoChain_Testnet extends WPBakeryShortCodesContainer {
 vc_map( array(
     'name'                    => esc_html__( 'Testnet', 'tomochain-addons' ),
     'base'                    => 'tomochain_testnet',
-    'icon'                    => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
+    'icon'                    => TOMOCHAIN_ADDONS_URI . '/assets/images/icon.png',
     'category'                => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'js_view'                 => 'VcColumnView',
 	'content_element'         => true,

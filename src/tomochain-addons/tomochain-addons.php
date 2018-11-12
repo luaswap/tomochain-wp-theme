@@ -15,7 +15,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'TOMOCHAIN_ADDONS_DIR', plugin_dir_path( __FILE__ ) );
-define( 'TOMOCHAIN_ADDONS_URL', plugin_dir_url( __FILE__ ) );
+define( 'TOMOCHAIN_ADDONS_URI', plugin_dir_url( __FILE__ ) );
 
 class TomoChain_Addons {
 

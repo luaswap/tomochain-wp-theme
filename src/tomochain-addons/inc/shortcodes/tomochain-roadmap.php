@@ -8,7 +8,7 @@ vc_map( array(
     'name'                    => esc_html__( 'Roadmap', 'tomochain-addons' ),
     'description'             => __( 'TomoChain\'s Roadmap', 'tomochain-addons' ),
     'base'                    => 'tomochain_roadmap',
-    'icon'                    => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
+    'icon'                    => TOMOCHAIN_ADDONS_URI . '/assets/images/icon.png',
     'category'                => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'js_view'                 => 'VcColumnView',
 	'content_element'         => true,

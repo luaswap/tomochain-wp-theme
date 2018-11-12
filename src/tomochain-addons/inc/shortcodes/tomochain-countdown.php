@@ -75,7 +75,7 @@ class WPBakeryShortCode_TomoChain_Countdown extends WPBakeryShortCode {
 vc_map( array(
     'name'        => esc_html__( 'Countdown', 'tomochain-addons' ),
     'base'        => 'tomochain_countdown',
-    'icon'        => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
+    'icon'        => TOMOCHAIN_ADDONS_URI . '/assets/images/icon.png',
     'category'    => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'params'      => array(
         array(
