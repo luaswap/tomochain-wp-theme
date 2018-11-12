@@ -9,9 +9,14 @@ function tomochain_set_as_theme() {
     vc_set_as_theme();
 }
 
+add_action( 'vc_after_init', 'load_params' );function load_params() {
+    require_once TOMOCHAIN_ADDONS_DIR . 'inc/params/datetime-picker/datetime-picker.php';
+}
+
 add_action('vc_after_init', 'tomochain_load_shortcodes');
 function tomochain_load_shortcodes() {
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-blog.php';
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-countdown.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-dapp.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-dapp2.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-image-carousel-item.php';

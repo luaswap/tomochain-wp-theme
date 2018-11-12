@@ -12,7 +12,9 @@
     "superfish": "^1.7.9",
     "hint.css": "^2.5.0",
     "animejs": "^2.2.0",
-    "magnific-popup": "^1.1.0"
+    "magnific-popup": "^1.1.0",
+    "kbw-countdown": "latest",
+    "kbw-plugin": "latest"
   },
   "install": {
     "options": {
@@ -40,6 +42,13 @@
       "jquery-nice-select": [
         "bower_components/jquery-nice-select/css/nice-select.css",
         "bower_components/jquery-nice-select/js/jquery.nice-select.min.js"
+      ],
+      "kbw-countdown": [
+        "bower_components/kbw-countdown/dist/css/jquery.countdown.css",
+        "bower_components/kbw-countdown/dist/js/jquery.countdown.min.js"
+      ],
+      "kbw-plugin": [
+        "bower_components/kbw-plugin/dist/js/jquery.plugin.min.js"
       ],
       "magnific-popup": [
         "bower_components/magnific-popup/dist/magnific-popup.css",
