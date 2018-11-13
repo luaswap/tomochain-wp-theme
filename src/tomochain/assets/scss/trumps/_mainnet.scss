@@ -1,3 +1,54 @@
 body.mainnet-page {
     background-image: linear-gradient(131deg, #272f4b 0%, #1a1f36 21%, #15152d 52%, #211841 100%);
+
+    .site-header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 99;
+    }
+
+    #main .entry-content {
+        margin-top: 0;
+    }
+
+    .tomochain-videos {
+        position: relative;
+        opacity: 1;
+        visibility: visible;
+
+        &:before {
+            content: '';
+            position: absolute;
+            top: -12px;
+            left: -12px;
+            bottom: -12px;
+            right: -12px;
+            opacity: .1;
+            border-radius: 8px;
+            background-color: #fff;
+        }
+
+        &:after {
+            content: '';
+            position: absolute;
+            top: -28px;
+            left: -28px;
+            bottom: -28px;
+            right: -28px;
+            border-radius: 8px;
+            z-index: -1;
+            background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
+        }
+
+        img {
+            border-radius: 6px;
+        }
+
+        .video-link {
+            opacity: 1;
+            visibility: visible;
+        }
+    }
 }

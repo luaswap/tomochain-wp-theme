@@ -50,6 +50,7 @@ var tomochainAddons
                     labels1   : text_singular,
                     format    : format,
                     until     : date,
+                    padZeroes : true,
                     serverSync: server_date,
                     onTick    : function() {
                         equalWidthForCountdown();

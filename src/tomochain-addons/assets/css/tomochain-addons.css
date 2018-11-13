@@ -6,9 +6,10 @@
     visibility: visible;
     border: none;
     background-color: transparent; }
+  .tomochain-countdown .countdown-section {
+    text-align: center !important; }
   .tomochain-countdown .countdown-amount {
     font-size: 3rem;
-    font-weight: 300;
     line-height: 4.375rem;
     padding-bottom: 0.3125rem;
     color: #fff;
