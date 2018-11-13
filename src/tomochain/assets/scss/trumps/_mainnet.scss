@@ -22,8 +22,8 @@ body.mainnet-page {
             content: '';
             position: absolute;
             top: -12px;
-            left: -12px;
             bottom: -12px;
+            left: -12px;
             right: -12px;
             opacity: .1;
             border-radius: 8px;
@@ -34,8 +34,8 @@ body.mainnet-page {
             content: '';
             position: absolute;
             top: -28px;
-            left: -28px;
             bottom: -28px;
+            left: -28px;
             right: -28px;
             border-radius: 8px;
             z-index: -1;
@@ -44,11 +44,81 @@ body.mainnet-page {
 
         img {
             border-radius: 6px;
+            max-width: 100% !important;
         }
 
         .video-link {
             opacity: 1;
             visibility: visible;
+            z-index: 0;
+
+            &:before {
+                content: '';
+                position: absolute;
+                top: -10px;
+                bottom: -10px;
+                left: -10px;
+                right: -10px;
+                opacity: .2;
+                border-radius: 100%;
+                background-color: #fff;
+                z-index: -1;
+                transition: .5s all ease;
+            }
+
+            &:after {
+                content: '';
+                position: absolute;
+                top: -20px;
+                bottom: -20px;
+                left: -20px;
+                right: -20px;
+                opacity: .2;
+                border-radius: 100%;
+                background-color: #fff;
+                z-index: -1;
+                transition: .7s all ease;
+            }
+
+            i {
+                background-image: linear-gradient(133deg, #6658FF 5%, #887FFE 100%);
+            }
+
+            &:hover:before {
+                top: -20px;
+                bottom: -20px;
+                left: -20px;
+                right: -20px;
+                opacity: 0;
+            }
+
+            &:hover:after {
+                top: -40px;
+                bottom: -40px;
+                left: -40px;
+                right: -40px;
+                opacity: 0;
+            }
+
+            @include media-breakpoint-up(md) {
+                height: 77px;
+                width: 77px;
+
+                i {
+                    font-size: 24px;
+                    line-height: 77px;
+                }
+            }
+        }
+    }
+
+    #video-row {
+        margin-top: 100px;
+        margin-bottom: 100px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 250px;
+            margin-bottom: 250px;
         }
     }
 }
