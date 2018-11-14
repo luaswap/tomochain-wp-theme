@@ -21,6 +21,11 @@ body.info-opened:after {
     z-index: 999;
 }
 
+.vc_row:before,
+.vc_row:after {
+    display: none;
+}
+
 .edit-link {
     display: none;
 }

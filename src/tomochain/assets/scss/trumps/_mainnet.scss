@@ -19,7 +19,7 @@ body.mainnet-page {
     }
 
     .tomochain-countdown {
-        @media (min-width: 1024px) and (max-width: 1190px) {
+        @media (min-width: 1024px) and (max-width: 1200px) {
             .countdown-amount {
                 font-size: 32px;
             }
@@ -129,13 +129,37 @@ body.mainnet-page {
         }
     }
 
-    #video-row {
-        margin-top: 100px;
+    #message-row {
+        margin-top: 30px;
         margin-bottom: 100px;
 
+        .tomochain-videos {
+            margin-top: 50px;
+        }
+
+        @include media-breakpoint-only(md) {
+
+            #message-title {
+                font-size: 28px !important;
+            }
+        }
+
         @include media-breakpoint-up(md) {
-            margin-top: 250px;
-            margin-bottom: 100px;
+            margin-top: 50px;
+            margin-bottom: 150px;
+
+            .tomochain-videos {
+                margin-top: 0;
+            }
+        }
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 100px;
+        }
+
+        @media (min-width: 1440px) {
+            margin-top: 150px;
+            margin-bottom: 200px;
         }
     }
 
@@ -179,8 +203,17 @@ body.mainnet-page {
             padding-right: 0;
         }
 
-        img {
-            max-width: none;
+        @include media-breakpoint-up(lg) {
+            img {
+                max-width: none;
+                margin-left: -100px;
+            }
+        }
+
+        @media (min-width: 1440px) {
+            img {
+                margin-left: -50px;
+            }
         }
     }
 
