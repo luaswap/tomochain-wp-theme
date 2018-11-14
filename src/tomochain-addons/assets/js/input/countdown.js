@@ -20,15 +20,14 @@
                 } );
             };
 
-            $( '.tomochain-countdown' ).each( function() {
-                var $this         = $( this ),
-                    format        = $this.attr( 'data-countdown-format' ),
-                    text_singular = $this.attr( 'data-label-singular' ).split( ',' ),
-                    text_plural   = $this.attr( 'data-label-plural' ).split( ',' ),
-                    date          = new Date( $this.text().trim() ),
-                    server_date   = new Date( $this.attr( 'data-server-date' ) );
+            var initCountdown = function($el) {
+                var format    = $el.attr( 'data-countdown-format' ),
+                text_singular = $el.attr( 'data-label-singular' ).split( ',' ),
+                text_plural   = $el.attr( 'data-label-plural' ).split( ',' ),
+                date          = new Date( $el.text().trim() ),
+                server_date   = new Date( $el.attr( 'data-server-date' ) );
 
-                $this.countdown( {
+                $el.countdown( {
                     labels    : text_plural,
                     labels1   : text_singular,
                     format    : format,
@@ -39,6 +38,18 @@
                         equalWidthForCountdown();
                     },
                 } );
+            }
+
+            $( '.tomochain-countdown' ).each( function() {
+                var $this         = $( this );
+
+                if ($this.closest('.rev_slider').length) {
+                    $this.on('initCountdownInSlider', function() { // Trigger in custom JS of the slider settings
+                        initCountdown($this);
+                    });
+                } else {
+                    initCountdown($this);
+                }
 
             } );
         }

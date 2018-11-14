@@ -633,3 +633,46 @@ body.page-template-revslider-page-template {
 #video-row {
     transform: translateY(-50%);
 }
+
+.wpim-marker {
+
+    .wpim-infowindow {
+        color: #fff;
+        border-radius: 6px;
+        background-image: linear-gradient(0deg, #2a3452 0%, #191d34 100%);
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .wpim-infowindow--top:before {
+        border-top-color: #2a3452;
+    }
+
+    .wpim-infowindow--bottom:before {
+        border-bottom-color: #2a3452;
+    }
+
+    .wpim-infowindow--left:before {
+        border-left-color: #2a3452;
+    }
+
+    .wpim-infowindow--right:before {
+        border-right-color: #2a3452;
+    }
+
+    .wpim-infowindow__close {
+        background-color: transparent;
+    }
+
+    .wpim-infowindow__close:before,
+    .wpim-infowindow__close:after {
+        height: 2px;
+        background-color: #ebeaf5;
+    }
+
+    .wpim-infowindow__inner {
+        border: none !important;
+    }
+}

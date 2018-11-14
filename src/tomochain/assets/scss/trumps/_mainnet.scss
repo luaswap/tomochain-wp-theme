@@ -7,6 +7,11 @@ body.mainnet-page {
         left: 0;
         width: 100%;
         z-index: 99;
+
+        &.headroom--not-top {
+            opacity: 0;
+            visibility: hidden;
+        }
     }
 
     #main .entry-content {
@@ -118,15 +123,11 @@ body.mainnet-page {
 
         @include media-breakpoint-up(md) {
             margin-top: 250px;
-            margin-bottom: 50px;
+            margin-bottom: 100px;
         }
     }
 
     #coming-row {
-
-        @include media-breakpoint-up(md) {
-            padding-right: 0 !important;
-        }
 
         .wpb_text_column {
             font-size: 18px;
@@ -164,6 +165,18 @@ body.mainnet-page {
 
         .vc_column-inner {
             padding-right: 0;
+        }
+
+        img {
+            max-width: none;
+        }
+    }
+
+    #meetup-row {
+        margin-top: 150px;
+
+        @include media-breakpoint-up(md) {
+            margin-top: 250px;
         }
     }
 }
