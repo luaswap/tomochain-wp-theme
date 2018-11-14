@@ -118,7 +118,52 @@ body.mainnet-page {
 
         @include media-breakpoint-up(md) {
             margin-top: 250px;
-            margin-bottom: 250px;
+            margin-bottom: 50px;
+        }
+    }
+
+    #coming-row {
+
+        @include media-breakpoint-up(md) {
+            padding-right: 0 !important;
+        }
+
+        .wpb_text_column {
+            font-size: 18px;
+            line-height: 40px;
+            color: #8b96b5;
+
+            a {
+                color: #c67869;
+            }
+
+            a:hover {
+                color: #fff;
+            }
+        }
+
+        #lets-rock-it {
+            display: inline-block;
+
+            &:after {
+                content: '\e901';
+                font-size: 8px;
+                vertical-align: middle;
+                margin-left: 15px;
+
+                @extend %tm-icon;
+            }
+
+            &:hover a {
+                color: #fff;
+            }
+        }
+    }
+
+    #coming-image-column {
+
+        .vc_column-inner {
+            padding-right: 0;
         }
     }
 }
