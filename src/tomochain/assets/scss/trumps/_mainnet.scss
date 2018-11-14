@@ -223,5 +223,13 @@ body.mainnet-page {
         @include media-breakpoint-up(md) {
             margin-top: 250px;
         }
+
+        @include media-breakpoint-down(sm) {
+
+            p.vc_custom_heading {
+                font-size: 14px !important;
+                line-height: 28px !important;
+            }
+        }
     }
 }

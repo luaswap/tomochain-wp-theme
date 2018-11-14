@@ -13695,7 +13695,39 @@ body.mainnet-page {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    margin-bottom: 3.125rem; } }
+    margin-bottom: 3.125rem; }
+      body.mainnet-page #meetup-row p.vc_custom_heading {
+        font-size: 0.875rem !important;
+        line-height: 1.75rem !important; }
+      body.mainnet-page #meetup-row .wpim-image img {
+        max-width: 100%; }
+      body.mainnet-page #meetup-row .wpim-marker__icon {
+        height: 1.875rem !important;
+        width: 1.875rem !important; }
+        body.mainnet-page #meetup-row .wpim-marker__icon > img {
+          max-width: 1.875rem;
+          height: auto; }
+      body.mainnet-page #meetup-row .wpim-345__c5 {
+        top: 3.125rem;
+        left: 3.75rem; }
+      body.mainnet-page #meetup-row .wpim-345__c7 {
+        top: 8.75rem;
+        left: 20.625rem; }
+      body.mainnet-page #meetup-row .wpim-345__c9 {
+        top: 5.625rem;
+        left: 18.25rem; }
+      body.mainnet-page #meetup-row .wpim-345__c11 {
+        top: 6.875rem;
+        left: 18.4375rem; }
+      body.mainnet-page #meetup-row .wpim-345__c13 {
+        top: 3.125rem;
+        left: 11.5rem; }
+      body.mainnet-page #meetup-row .wpim-345__c15 {
+        top: 2.5rem;
+        left: 10.625rem; }
+      body.mainnet-page #meetup-row .wpim-345__c17 {
+        top: 1.25rem;
+        left: 2.5rem; } }
   @media (max-width: 61.99875rem) {
   .table-responsive-lg {
     display: block;
