@@ -13045,6 +13045,11 @@ body.mainnet-page {
       max-width: 25rem; }
   .tomochain-team.five-columns .tomochain-team__wrapper {
     grid-template-columns: 20% 20% 20% 20% 20%; } }
+  @media (min-width: 64rem) and (max-width: 74.375rem) {
+    body.mainnet-page .tomochain-countdown .countdown-amount {
+      font-size: 2rem; }
+    body.mainnet-page .tomochain-countdown .countdown-period {
+      font-size: 0.625rem; } }
   @media (min-width: 75rem) {
   .d-xl-none {
     display: none !important; }

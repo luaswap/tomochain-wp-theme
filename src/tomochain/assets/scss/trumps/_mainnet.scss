@@ -18,6 +18,18 @@ body.mainnet-page {
         margin-top: 0;
     }
 
+    .tomochain-countdown {
+        @media (min-width: 1024px) and (max-width: 1190px) {
+            .countdown-amount {
+                font-size: 32px;
+            }
+
+            .countdown-period {
+                font-size: 10px;
+            }
+        }
+    }
+
     .tomochain-videos {
         position: relative;
         opacity: 1;
