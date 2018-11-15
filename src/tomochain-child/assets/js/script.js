@@ -15,13 +15,13 @@ jQuery(document).ready(function($) {
     });
 
     $( '#station-3' ).waypoint(function(direction) {
-        $image.css('margin-top', direction == 'down' ? -362 : -618);
+        $image.css('margin-top', direction == 'down' ? -375 : -618);
     }, {
         offset: '80%'
     });
 
     $( '#station-4' ).waypoint(function(direction) {
-        $image.css('margin-top', direction == 'down' ? -80 : -362);
+        $image.css('margin-top', direction == 'down' ? -80 : -375);
     }, {
         offset: '80%'
     });

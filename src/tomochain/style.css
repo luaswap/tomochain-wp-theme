@@ -10994,8 +10994,8 @@ body.mainnet-page {
       opacity: 0;
       -webkit-transform: scale(0.15);
               transform: scale(0.15);
-      -webkit-filter: blur(0.75rem);
-              filter: blur(0.75rem); }
+      -webkit-filter: blur(0.875rem);
+              filter: blur(0.875rem); }
     body.mainnet-page #train-column .vc_column-inner:before {
       -webkit-animation: smokeL 10s 0s infinite;
               animation: smokeL 10s 0s infinite; }
