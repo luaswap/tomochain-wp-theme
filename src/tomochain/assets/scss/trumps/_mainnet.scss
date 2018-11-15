@@ -187,8 +187,13 @@ body.mainnet-page {
                 font-size: 8px;
                 vertical-align: middle;
                 margin-left: 15px;
+                transition: all .5s ease;
 
                 @extend %tm-icon;
+            }
+
+            &:hover {
+                color: #fff !important;
             }
 
             &:hover a {
@@ -230,6 +235,83 @@ body.mainnet-page {
                 font-size: 14px !important;
                 line-height: 28px !important;
             }
+        }
+    }
+
+    #journey-row {
+        margin-bottom: 100px;
+    }
+
+    .station-row {
+        margin-bottom: 25px;
+    }
+
+    .station-col {
+        padding-left: 30px;
+
+        @include media-breakpoint-up(sm) {
+            padding-left: 0;
+        }
+
+        .wpb_single_image {
+            margin-bottom: 15px;
+        }
+
+        .vc_custom_heading {
+            margin-bottom: 12px;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            font-size: 14px;
+            line-height: 22px;
+        }
+
+        li:before {
+            content: '•';
+            display: inline-block;
+            vertical-align: middle;
+            margin-right: 5px;
+        }
+    }
+
+    .station-col--left {
+        @include media-breakpoint-up(sm) {
+            padding-left: 45px;
+        }
+
+        @include media-breakpoint-up(md) {
+            padding-left: 90px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-left: 105;
+        }
+    }
+
+    .station-col--right {
+
+        @include media-breakpoint-up(sm) {
+            text-align: right;
+            padding-right: 45px;
+
+            .wpb_single_image,
+            .vc_custom_heading {
+                text-align: right !important;
+            }
+        }
+
+        @include media-breakpoint-up(md) {
+            padding-right: 90px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            padding-right: 105px;
         }
     }
 }
