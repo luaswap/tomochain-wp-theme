@@ -15,11 +15,22 @@ if ( ! function_exists( 'tomochain_child_enqueue_scripts' ) ) {
 
         wp_enqueue_style( 'tomochain-style', trailingslashit( TOMOCHAIN_THEME_URI ) . 'style' . $suffix . '.css' );
         wp_enqueue_style( 'tomochain-child-style', trailingslashit( TOMOCHAIN_CHILD_THEME_URI ) . 'style.css' );
-        // wp_enqueue_script( 'tomochain-child-script',
-        // 	trailingslashit( TOMOCHAIN_CHILD_THEME_URI ) . '/assets/js/script.js',
-        // 	array( 'jquery' ),
-        // 	null,
-        // 	true );
+        wp_enqueue_script( 'tomochain-child-script',
+        	trailingslashit( TOMOCHAIN_CHILD_THEME_URI ) . '/assets/js/script.js',
+        	array( 'jquery' ),
+        	null,
+            true );
+
+        global $post;
+        $post_slug = $post->post_name;
+
+        if ($post_slug == 'mainnet') {
+            wp_enqueue_script( 'scrollmagic',
+                trailingslashit( TOMOCHAIN_CHILD_THEME_URI ) . '/assets/js/ScrollMagic.min.js',
+                null,
+                null,
+                true );
+        }
 
         // Enqueue BS Script for Dev.
         // $whitelist = array('127.0.0.1', '::1');
