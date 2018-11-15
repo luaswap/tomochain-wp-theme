@@ -10891,6 +10891,40 @@ body.mainnet-page {
     padding-right: 0; }
   body.mainnet-page #meetup-row {
     margin-top: 9.375rem; }
+  body.mainnet-page #journey-row {
+    position: relative;
+    margin-top: 5rem;
+    margin-bottom: 6.25rem; }
+  body.mainnet-page .station-row {
+    margin-bottom: 1.5625rem; }
+  body.mainnet-page .station-col {
+    padding-left: 3.4375rem; }
+    body.mainnet-page .station-col .wpb_single_image {
+      margin-bottom: 0.9375rem; }
+    body.mainnet-page .station-col .vc_custom_heading {
+      margin-bottom: 0.75rem; }
+    body.mainnet-page .station-col ul {
+      list-style-type: none;
+      padding: 0;
+      margin: 0; }
+    body.mainnet-page .station-col li {
+      font-size: 0.875rem;
+      line-height: 1.375rem; }
+    body.mainnet-page .station-col li:before {
+      content: '•';
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 0.3125rem; }
+  body.mainnet-page #train-column {
+    position: absolute;
+    top: -3.125rem;
+    left: 0;
+    width: auto;
+    overflow: hidden; }
+  body.mainnet-page #train-image {
+    margin-top: -53.125rem;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
 
 .nice-select {
   font-family: 'Quicksand';
@@ -12133,7 +12167,22 @@ body.mainnet-page {
         body.mainnet-page #message-row .tomochain-videos {
           margin-top: 0; }
       body.mainnet-page #meetup-row {
-        margin-top: 15.625rem; } }
+        margin-top: 15.625rem; }
+      body.mainnet-page .station-col {
+        padding-left: 0; }
+    body.mainnet-page .station-col--left {
+      padding-left: 5.625rem; }
+    body.mainnet-page .station-col--right {
+      text-align: right; }
+      body.mainnet-page .station-col--right .wpb_single_image,
+      body.mainnet-page .station-col--right .vc_custom_heading {
+        text-align: right !important; }
+    body.mainnet-page .station-col--right {
+      padding-right: 5.625rem; }
+      body.mainnet-page #train-column {
+        left: 50%;
+        -webkit-transform: translateX(-50%);
+                transform: translateX(-50%); } }
   @media (min-width: 48rem) and (max-width: 74.99875rem) {
         .widget_tomo_address .addresses .address {
           max-width: calc(33.33% - 1.25rem); } }
@@ -12723,7 +12772,11 @@ body.mainnet-page {
         margin-top: 6.25rem; }
     body.mainnet-page #coming-image-column img {
       max-width: none;
-      margin-left: -6.25rem; } }
+      margin-left: -6.25rem; }
+    body.mainnet-page .station-col--left {
+      padding-left: 105; }
+    body.mainnet-page .station-col--right {
+      padding-right: 6.5625rem; } }
   @media (min-width: 64rem) and (max-width: 75rem) {
     body.mainnet-page .tomochain-countdown .countdown-amount {
       font-size: 2rem; }
