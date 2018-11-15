@@ -11260,7 +11260,9 @@ body.mainnet-page {
     width: auto;
     overflow: hidden; }
   body.mainnet-page #train-image {
-    margin-top: -53.125rem; }
+    margin-top: -53.125rem;
+    -webkit-transition: all 1s ease;
+    transition: all 1s ease; }
 
 .nice-select {
   font-family: 'Quicksand';
