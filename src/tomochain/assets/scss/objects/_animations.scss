@@ -222,3 +222,15 @@
     60% { transform: translate(60px, -40px); }
     100% { transform: translate(10px, -10px); }
 }
+
+@keyframes smokeL {
+	0%   { transform: scale(0.2) translate(0, 0); }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px); }
+	100% { opacity: 0; transform: scale(1) translate(-20px, -130px); }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(0.2) translate(0, 0); }
+	10%  { opacity: 1; transform: scale(0.2) translate(0, -5px); }
+	100% { opacity: 0; transform: scale(1) translate(20px, -130px); }
+}

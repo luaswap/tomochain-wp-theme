@@ -240,6 +240,8 @@ body.mainnet-page {
 
     #journey-row {
         position: relative;
+        overflow: hidden;
+        padding-bottom: 16px;
         margin-top: 80px;
         margin-bottom: 100px;
     }
@@ -318,16 +320,77 @@ body.mainnet-page {
         top: -50px;
         left: 0;
         width: auto;
-        overflow: hidden;
 
         @include media-breakpoint-up(md) {
             left: 50%;
             transform: translateX(-50%);
         }
+
+        .vc_column-inner:before,
+        .vc_column-inner:after,
+        .wpb_wrapper:before,
+        .wpb_wrapper:after,
+        #train-image:before,
+        #train-image:after,
+        .vc_single_image-wrapper:before,
+        .vc_single_image-wrapper:after {
+            content: '';
+            display: block;
+            position: absolute;
+            bottom: -25px;
+            left: -13px;
+            height: 0px;
+            width: 0px;
+            border: 35px solid #fff;
+            border-radius: 100%;
+            opacity: 0;
+            transform: scale(0.15);
+            filter: blur(12px);
+        }
+
+        .vc_column-inner:before {
+            animation: smokeL 10s 0s infinite;
+        }
+
+        .vc_column-inner:after {
+            animation: smokeR 10s 1s infinite;
+        }
+
+        .wpb_wrapper:before {
+            animation: smokeL 10s 2s infinite;
+        }
+        .wpb_wrapper:after {
+            animation: smokeR 10s 3s infinite;
+        }
+
+        #train-image:before {
+            animation: smokeL 10s 4s infinite;
+        }
+
+        #train-image:after {
+            animation: smokeR 10s 5s infinite;
+        }
+
+        .wpb_wrapper.vc_figure:before {
+            animation: smokeL 10s 6s infinite;
+        }
+
+        .wpb_wrapper.vc_figure:after {
+            animation: smokeR 10s 7s infinite;
+        }
+
+        .vc_single_image-wrapper:before {
+            animation: smokeL 10s 8s infinite;
+        }
+
+        .vc_single_image-wrapper:after {
+            animation: smokeR 10s 9s infinite;
+        }
     }
 
     #train-image {
         margin-top: -1160px;
+        margin-bottom: 0;
         transition: all 1.5s cubic-bezier(.17,.64,.37,.85);
     }
 }
