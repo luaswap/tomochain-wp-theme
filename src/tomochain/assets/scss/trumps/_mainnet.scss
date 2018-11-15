@@ -187,8 +187,13 @@ body.mainnet-page {
                 font-size: 8px;
                 vertical-align: middle;
                 margin-left: 15px;
+                transition: all .5s ease;
 
                 @extend %tm-icon;
+            }
+
+            &:hover {
+                color: #fff !important;
             }
 
             &:hover a {
