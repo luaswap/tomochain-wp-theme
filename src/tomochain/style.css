@@ -10922,9 +10922,9 @@ body.mainnet-page {
     width: auto;
     overflow: hidden; }
   body.mainnet-page #train-image {
-    margin-top: -53.125rem;
-    -webkit-transition: all 1s ease;
-    transition: all 1s ease; }
+    margin-top: -72.5rem;
+    -webkit-transition: all 1.5s cubic-bezier(0.17, 0.64, 0.37, 0.85);
+    transition: all 1.5s cubic-bezier(0.17, 0.64, 0.37, 0.85); }
 
 .nice-select {
   font-family: 'Quicksand';

@@ -1,18 +1,28 @@
 jQuery(document).ready(function($) {
-    var controller  = new ScrollMagic.Controller(),
-        animateElem = $('#train-image');
 
-    new ScrollMagic.Scene({
-        triggerElement: '#station-1',
-        duration      : 50
-    })
-    .on( 'enter', function() {
-        let marginTop = parseInt(animateElem.css('margin-top'));
-        animateElem.css('margin-top', marginTop + 244);
-    })
-    .on( 'leave', function() {
-        // let marginTop = parseInt(animateElem.css('margin-top'));
-        animateElem.css('margin-top', -850);
-    })
-    .addTo(controller);
+    var $image = $('#train-image');
+
+    $( '#station-1' ).waypoint(function(direction) {
+        $image.css('margin-top', direction == 'down' ? -850 : -1160);
+    }, {
+        offset: '80%'
+    });
+
+    $( '#station-2' ).waypoint(function(direction) {
+        $image.css('margin-top', direction == 'down' ? -606 : -850);
+    }, {
+        offset: '80%'
+    });
+
+    $( '#station-3' ).waypoint(function(direction) {
+        $image.css('margin-top', direction == 'down' ? -362 : -606);
+    }, {
+        offset: '80%'
+    });
+
+    $( '#station-4' ).waypoint(function(direction) {
+        $image.css('margin-top', direction == 'down' ? -80 : -362);
+    }, {
+        offset: '80%'
+    });
 });

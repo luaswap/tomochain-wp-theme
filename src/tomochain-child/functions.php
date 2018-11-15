@@ -25,11 +25,7 @@ if ( ! function_exists( 'tomochain_child_enqueue_scripts' ) ) {
         $post_slug = $post->post_name;
 
         if ($post_slug == 'mainnet') {
-            wp_enqueue_script( 'scrollmagic',
-                trailingslashit( TOMOCHAIN_CHILD_THEME_URI ) . '/assets/js/ScrollMagic.min.js',
-                null,
-                null,
-                true );
+            wp_enqueue_script( 'waypoints' );
         }
 
         // Enqueue BS Script for Dev.

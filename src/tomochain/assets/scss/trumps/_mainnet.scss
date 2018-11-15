@@ -327,7 +327,7 @@ body.mainnet-page {
     }
 
     #train-image {
-        margin-top: -850px;
-        transition: all 1s ease;
+        margin-top: -1160px;
+        transition: all 1.5s cubic-bezier(.17,.64,.37,.85);
     }
 }
