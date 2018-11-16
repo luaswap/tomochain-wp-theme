@@ -70,19 +70,19 @@ msgid "Search Results for: %s"
 msgstr ""
 
 #. translators: %s: post author.
-#: src/tomochain/inc/template-tags.php:61
+#: src/tomochain/inc/template-tags.php:63
 msgctxt "post author"
 msgid "By %s"
 msgstr ""
 
 #. translators: %s: post title
-#: src/tomochain/inc/template-tags.php:129
+#: src/tomochain/inc/template-tags.php:131
 msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
 msgstr ""
 
 #. translators: %s: Name of current post. Only visible to screen readers
 #. translators: %s: Name of current post. Only visible to screen readers
-#: src/tomochain/inc/template-tags.php:146, src/tomochain/template-parts/content-page.php:34
+#: src/tomochain/inc/template-tags.php:148, src/tomochain/template-parts/content-page.php:34
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
@@ -125,7 +125,51 @@ msgid "Title"
 msgstr ""
 
 #: src/tomochain/inc/widgets/tomochain-address.php:32
-msgid "Address"
+msgid "Address Title 1"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:40
+msgid "Address 1"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:48
+msgid "Address Title 2"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:56
+msgid "Address 2"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:64
+msgid "Address Title 3"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:72
+msgid "Address 3"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:80
+msgid "Address Title 4"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:88
+msgid "Address 4"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:96
+msgid "Address Title 5"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:104
+msgid "Address 5"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:112
+msgid "Address Title 6"
+msgstr ""
+
+#: src/tomochain/inc/widgets/tomochain-address.php:120
+msgid "Address 6"
 msgstr ""
 
 #: src/tomochain/inc/widgets/tomochain-recent-posts.php:22

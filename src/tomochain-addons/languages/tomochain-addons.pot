@@ -15,27 +15,27 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
 
-#: src/tomochain-addons/tomochain-addons.php:42
+#: src/tomochain-addons/tomochain-addons.php:45
 msgid "<strong>%s</strong> requires <strong><a href=\"http://bit.ly/vcomposer\" target=\"_blank\">WPBakery Page Builder</a></strong> plugin to be installed and activated on your site."
 msgstr ""
 
-#: src/tomochain-addons/tomochain-addons.php:50
+#: src/tomochain-addons/tomochain-addons.php:53
 msgid "<strong>%s</strong> requires <strong>TomoChain</strong> theme to be installed and activated on your site."
 msgstr ""
 
-#: src/tomochain-addons/inc/vc-extend.php:38
+#: src/tomochain-addons/inc/vc-extend.php:43
 msgid "Design Options"
 msgstr ""
 
-#: src/tomochain-addons/inc/vc-extend.php:40
+#: src/tomochain-addons/inc/vc-extend.php:45
 msgid "CSS box"
 msgstr ""
 
-#: src/tomochain-addons/inc/vc-extend.php:47
+#: src/tomochain-addons/inc/vc-extend.php:52
 msgid "Extra class name"
 msgstr ""
 
-#: src/tomochain-addons/inc/vc-extend.php:49
+#: src/tomochain-addons/inc/vc-extend.php:54
 msgid "Style particular content element differently - add a class name and refer to it in custom CSS."
 msgstr ""
 
@@ -43,7 +43,7 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
-#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:12, src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:61, src/tomochain-addons/inc/shortcodes/tomochain-dapp2.php:61, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:12, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:12, src/tomochain-addons/inc/shortcodes/tomochain-list.php:26, src/tomochain-addons/inc/shortcodes/tomochain-lottie.php:12, src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:12, src/tomochain-addons/inc/shortcodes/tomochain-roadmap.php:12, src/tomochain-addons/inc/shortcodes/tomochain-social.php:12, src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:64, src/tomochain-addons/inc/shortcodes/tomochain-team.php:11, src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:13, src/tomochain-addons/inc/shortcodes/tomochain-testnet.php:11, src/tomochain-addons/inc/shortcodes/tomochain-video-item.php:13, src/tomochain-addons/inc/shortcodes/tomochain-videos.php:11
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:12, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:79, src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:61, src/tomochain-addons/inc/shortcodes/tomochain-dapp2.php:61, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:12, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:12, src/tomochain-addons/inc/shortcodes/tomochain-list.php:26, src/tomochain-addons/inc/shortcodes/tomochain-lottie.php:12, src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:12, src/tomochain-addons/inc/shortcodes/tomochain-roadmap.php:12, src/tomochain-addons/inc/shortcodes/tomochain-social.php:12, src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:64, src/tomochain-addons/inc/shortcodes/tomochain-team.php:11, src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:13, src/tomochain-addons/inc/shortcodes/tomochain-testnet.php:11, src/tomochain-addons/inc/shortcodes/tomochain-video-item.php:13, src/tomochain-addons/inc/shortcodes/tomochain-videos.php:11
 msgid "TomoChain"
 msgstr ""
 
@@ -57,6 +57,134 @@ msgstr ""
 
 #: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:29, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:53
 msgid "Auto play speed (in seconds)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:76
+msgid "Countdown"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:83
+msgid "Target time for Countdown"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:89
+msgid "Select time units to display in countdown timer"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:92, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:198
+msgid "Years"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:93, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:184
+msgid "Months"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:94, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:170
+msgid "Weeks"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:95, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:156
+msgid "Days"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:96, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:142
+msgid "Hours"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:97, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:128
+msgid "Minutes"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:98, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:114
+msgid "Seconds"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:103, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:110, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:117, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:124, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:131, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:138, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:145, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:152, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:159, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:166, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:173, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:180, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:187, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:194
+msgid "String Translation"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:105
+msgid "Second (Singular)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:107
+msgid "Second"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:112
+msgid "Seconds (Plural)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:119
+msgid "Minute (Singular)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:121
+msgid "Minute"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:126
+msgid "Minutes (Plural)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:133
+msgid "Hour (Singular)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:135
+msgid "Hour"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:140
+msgid "Hours (Plural)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:147
+msgid "Day (Singular)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:149
+msgid "Day"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:154
+msgid "Days (Plural)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:161
+msgid "Week (Singular)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:163
+msgid "Week"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:168
+msgid "Weeks (Plural)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:175
+msgid "Month (Singular)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:177
+msgid "Month"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:182
+msgid "Months (Plural)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:189
+msgid "Year (Singular)"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:191, src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:17
+msgid "Year"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:196
+msgid "Years (Plural)"
 msgstr ""
 
 #: src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:57
@@ -163,10 +291,6 @@ msgstr ""
 msgid "Roadmap Item"
 msgstr ""
 
-#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:17
-msgid "Year"
-msgstr ""
-
 #: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:18
 msgid "Enter the year (e.g. 2018)"
 msgstr ""
@@ -177,22 +301,6 @@ msgstr ""
 
 #: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:26
 msgid "Select the quarter"
-msgstr ""
-
-#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:31
-msgid "Q1"
-msgstr ""
-
-#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:32
-msgid "Q2"
-msgstr ""
-
-#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:33
-msgid "Q3"
-msgstr ""
-
-#: src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:34
-msgid "Q4"
 msgstr ""
 
 #: src/tomochain-addons/inc/shortcodes/tomochain-roadmap.php:8
