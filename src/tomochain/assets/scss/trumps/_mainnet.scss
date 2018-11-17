@@ -21,11 +21,11 @@ body.mainnet-page {
     .tomochain-countdown {
         @media (min-width: 1024px) and (max-width: 1200px) {
             .countdown-amount {
-                font-size: 32px;
+                font-size: 40px;
             }
 
             .countdown-period {
-                font-size: 10px;
+                font-size: 12px;
             }
         }
     }
@@ -408,5 +408,45 @@ body.mainnet-page {
         margin-top: -1160px;
         margin-bottom: 0;
         transition: all 1.5s cubic-bezier(.17,.64,.37,.85);
+    }
+}
+
+/* Slider */
+body.mainnet-page .rev_slider {
+
+    @include media-breakpoint-up(lg) {
+
+        .tp-parallax-wrap:nth-child(20),
+        .tp-parallax-wrap:nth-child(21),
+        .tp-parallax-wrap:nth-child(22) {
+            left: calc(100% - 960px - 15px) !important;
+        }
+
+        .tp-parallax-wrap:nth-child(23) {
+            left: calc(100% - 960px - 25px) !important;
+        }
+
+        .tp-parallax-wrap:nth-child(21) .tp-caption {
+            font-size: 30px !important;
+            line-height: 50px !important;
+        }
+
+        .tp-parallax-wrap:nth-child(22) .tp-caption {
+            font-size: 18px !important;
+            line-height: 50px !important;
+            margin-top: 35px !important;
+        }
+
+        .tp-parallax-wrap:nth-child(23) {
+
+            .tp-caption {
+                width: 310px !important;
+                max-width: none !important;
+            }
+
+            .tomochain-countdown {
+                margin-top: 30px !important;
+            }
+        }
     }
 }
