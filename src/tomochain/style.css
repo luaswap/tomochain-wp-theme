@@ -13407,13 +13407,21 @@ body.mainnet-page {
     html[lang="ja"] #about-us-row #about-us-text-right {
       max-width: 100%; }
     html[lang="ja"] #about-us-row #about-us-text-left:after {
-      right: 0.9375rem; } }
+      right: 0.9375rem; }
+      body.mainnet-page #meetup-row .wpim {
+        margin-left: -5.625rem;
+        -webkit-transform: scale(0.8);
+                transform: scale(0.8); } }
   @media (min-width: 90rem) {
       body.mainnet-page #message-row {
         margin-top: 9.375rem;
         margin-bottom: 12.5rem; }
     body.mainnet-page #coming-image-column img {
-      margin-left: -3.125rem; } }
+      margin-left: -3.125rem; }
+      body.mainnet-page #meetup-row .wpim {
+        margin-left: -5.5625rem;
+        -webkit-transform: scale(1);
+                transform: scale(1); } }
   @media (max-width: 74.99875rem) {
   .table-responsive-xl {
     display: block;

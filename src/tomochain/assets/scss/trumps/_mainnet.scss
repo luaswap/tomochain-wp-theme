@@ -236,6 +236,22 @@ body.mainnet-page {
                 line-height: 28px !important;
             }
         }
+
+        @include media-breakpoint-only(xl) {
+
+            .wpim {
+                margin-left: -90px;
+                transform: scale(0.8);
+            }
+        }
+
+        @media (min-width: 1440px) {
+
+            .wpim {
+                margin-left: -89px;
+                transform: scale(1);
+            }
+        }
     }
 
     #journey-row {
