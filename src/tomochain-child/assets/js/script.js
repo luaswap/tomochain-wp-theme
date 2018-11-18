@@ -6,24 +6,48 @@ jQuery(document).ready(function($) {
 
         $( '#station-1' ).waypoint(function(direction) {
             $image.css('margin-top', direction == 'down' ? -862 : -1160);
+
+            if (direction == 'down') {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
         }, {
             offset: '80%'
         });
 
         $( '#station-2' ).waypoint(function(direction) {
             $image.css('margin-top', direction == 'down' ? -618 : -862);
+
+            if (direction == 'down') {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
         }, {
             offset: '80%'
         });
 
         $( '#station-3' ).waypoint(function(direction) {
             $image.css('margin-top', direction == 'down' ? -375 : -618);
+
+            if (direction == 'down') {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
         }, {
             offset: '80%'
         });
 
         $( '#station-4' ).waypoint(function(direction) {
             $image.css('margin-top', direction == 'down' ? -80 : -375);
+
+            if (direction == 'down') {
+                $(this).addClass('active');
+            } else {
+                $(this).removeClass('active');
+            }
         }, {
             offset: '80%'
         });
