@@ -203,19 +203,19 @@ button.bg-dark:focus {
   background-color: transparent !important; }
 
 .border {
-  border: 0.0625rem solid #dee2e6 !important; }
+  border: 1px solid #dee2e6 !important; }
 
 .border-top {
-  border-top: 0.0625rem solid #dee2e6 !important; }
+  border-top: 1px solid #dee2e6 !important; }
 
 .border-right {
-  border-right: 0.0625rem solid #dee2e6 !important; }
+  border-right: 1px solid #dee2e6 !important; }
 
 .border-bottom {
-  border-bottom: 0.0625rem solid #dee2e6 !important; }
+  border-bottom: 1px solid #dee2e6 !important; }
 
 .border-left {
-  border-left: 0.0625rem solid #dee2e6 !important; }
+  border-left: 1px solid #dee2e6 !important; }
 
 .border-0 {
   border: 0 !important; }
@@ -558,8 +558,8 @@ button.bg-dark:focus {
 
 .sr-only {
   position: absolute;
-  width: 0.0625rem;
-  height: 0.0625rem;
+  width: 1px;
+  height: 1px;
   padding: 0;
   overflow: hidden;
   clip: rect(0, 0, 0, 0);
@@ -4689,12 +4689,12 @@ readers do not read off random characters that represent icons */
 .sr-only {
   border: 0;
   clip: rect(0, 0, 0, 0);
-  height: 0.0625rem;
-  margin: -0.0625rem;
+  height: 1px;
+  margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute;
-  width: 0.0625rem; }
+  width: 1px; }
 
 .sr-only-focusable:active, .sr-only-focusable:focus {
   clip: auto;
@@ -7146,8 +7146,8 @@ button {
   border-radius: 0; }
 
 button:focus {
-  outline: 0.0625rem dotted;
-  outline: 0.3125rem auto -webkit-focus-ring-color; }
+  outline: 1px dotted;
+  outline: 5px auto -webkit-focus-ring-color; }
 
 input,
 button,
@@ -7221,7 +7221,7 @@ progress {
   height: auto; }
 
 [type="search"] {
-  outline-offset: -0.125rem;
+  outline-offset: -2px;
   -webkit-appearance: none; }
 
 [type="search"]::-webkit-search-cancel-button,
@@ -7434,7 +7434,7 @@ button:-moz-focusring,
 [type="button"]:-moz-focusring,
 [type="reset"]:-moz-focusring,
 [type="submit"]:-moz-focusring {
-  outline: 0.0625rem dotted ButtonText; }
+  outline: 1px dotted ButtonText; }
 
 /**
  * Correct the padding in Firefox.
@@ -7501,7 +7501,7 @@ textarea {
 [type="search"] {
   -webkit-appearance: textfield;
   /* 1 */
-  outline-offset: -0.125rem;
+  outline-offset: -2px;
   /* 2 */ }
 
 /**
@@ -7608,7 +7608,7 @@ hr {
   margin-top: 1rem;
   margin-bottom: 1rem;
   border: 0;
-  border-top: 0.0625rem solid rgba(0, 0, 0, 0.1); }
+  border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
 small,
 .small {
@@ -7655,7 +7655,7 @@ mark,
 .img-thumbnail {
   padding: 0.25rem;
   background-color: #fff;
-  border: 0.0625rem solid #dee2e6;
+  border: 1px solid #dee2e6;
   border-radius: 0.25rem;
   max-width: 100%;
   height: auto; }
@@ -7699,7 +7699,7 @@ pre {
     word-break: normal; }
 
 .pre-scrollable {
-  max-height: 21.25rem;
+  max-height: 340px;
   overflow-y: scroll; }
 
 .table {
@@ -7710,12 +7710,12 @@ pre {
   .table td {
     padding: 0.75rem;
     vertical-align: top;
-    border-top: 0.0625rem solid #dee2e6; }
+    border-top: 1px solid #dee2e6; }
   .table thead th {
     vertical-align: bottom;
-    border-bottom: 0.125rem solid #dee2e6; }
+    border-bottom: 2px solid #dee2e6; }
   .table tbody + tbody {
-    border-top: 0.125rem solid #dee2e6; }
+    border-top: 2px solid #dee2e6; }
   .table .table {
     background-color: #fff; }
 
@@ -7724,13 +7724,13 @@ pre {
   padding: 0.3rem; }
 
 .table-bordered {
-  border: 0.0625rem solid #dee2e6; }
+  border: 1px solid #dee2e6; }
   .table-bordered th,
   .table-bordered td {
-    border: 0.0625rem solid #dee2e6; }
+    border: 1px solid #dee2e6; }
   .table-bordered thead th,
   .table-bordered thead td {
-    border-bottom-width: 0.125rem; }
+    border-bottom-width: 2px; }
 
 .table-borderless th,
 .table-borderless td,
@@ -7880,9 +7880,9 @@ button,
 input[type="button"],
 input[type="reset"],
 input[type="submit"] {
-  border: 0.0625rem solid;
+  border: 1px solid;
   border-color: #ccc;
-  border-radius: 0.1875rem;
+  border-radius: 3px;
   background: #e6e6e6;
   color: rgba(0, 0, 0, 0.8);
   font-size: 12px;
@@ -7915,7 +7915,7 @@ body {
 hr {
   background-color: #3b4669;
   border: 0;
-  height: 0.0625rem;
+  height: 1px;
   margin-bottom: 1.5em; }
 
 img {
@@ -7947,9 +7947,9 @@ textarea {
   color: #757f9c;
   background-color: #dee2ee;
   border: none;
-  border-radius: 0.5rem;
+  border-radius: 8px;
   width: 100%;
-  padding: 0.625rem 1.25rem; }
+  padding: 10px 20px; }
   input[type="text"]:focus,
   input[type="email"]:focus,
   input[type="url"]:focus,
@@ -8052,7 +8052,7 @@ code, kbd, tt, var {
   font-size: 0.9375rem; }
 
 abbr, acronym {
-  border-bottom: 0.0625rem dotted #666;
+  border-bottom: 1px dotted #666;
   cursor: help; }
 
 mark, ins {
@@ -8076,15 +8076,15 @@ This is the first layer of classes and should be agnostically named
 */
 .container {
   width: 100%;
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
 
 .container-fluid {
   width: 100%;
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto; }
 
@@ -8094,8 +8094,8 @@ This is the first layer of classes and should be agnostically named
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  margin-right: -0.9375rem;
-  margin-left: -0.9375rem; }
+  margin-right: -15px;
+  margin-left: -15px; }
 
 .no-gutters {
   margin-right: 0;
@@ -8113,9 +8113,9 @@ This is the first layer of classes and should be agnostically named
 .col-xl-auto {
   position: relative;
   width: 100%;
-  min-height: 0.0625rem;
-  padding-right: 0.9375rem;
-  padding-left: 0.9375rem; }
+  min-height: 1px;
+  padding-right: 15px;
+  padding-left: 15px; }
 
 .col {
   -ms-flex-preferred-size: 0;
@@ -8315,22 +8315,22 @@ This is the first layer of classes and should be agnostically named
 /* Text meant only for screen readers. */
 .screen-reader-text {
   border: 0;
-  clip: rect(0.0625rem, 0.0625rem, 0.0625rem, 0.0625rem);
+  clip: rect(1px, 1px, 1px, 1px);
   -webkit-clip-path: inset(50%);
           clip-path: inset(50%);
-  height: 0.0625rem;
-  margin: -0.0625rem;
+  height: 1px;
+  margin: -1px;
   overflow: hidden;
   padding: 0;
   position: absolute !important;
-  width: 0.0625rem;
+  width: 1px;
   word-wrap: normal !important;
   /* Many screen reader and browser combinations announce broken words as they would appear visually. */ }
   .screen-reader-text:focus {
     background-color: #f1f1f1;
-    border-radius: 0.1875rem;
-    -webkit-box-shadow: 0 0 0.125rem 0.125rem rgba(0, 0, 0, 0.6);
-            box-shadow: 0 0 0.125rem 0.125rem rgba(0, 0, 0, 0.6);
+    border-radius: 3px;
+    -webkit-box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
+            box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
     -webkit-clip-path: none;
             clip-path: none;
@@ -8340,11 +8340,11 @@ This is the first layer of classes and should be agnostically named
     font-size: 0.875rem;
     font-weight: bold;
     height: auto;
-    left: 0.3125rem;
+    left: 5px;
     line-height: normal;
-    padding: 0.9375rem 1.4375rem 0.875rem;
+    padding: 15px 23px 14px;
     text-decoration: none;
-    top: 0.3125rem;
+    top: 5px;
     width: auto;
     z-index: 100000;
     /* Above WP toolbar. */ }
@@ -8375,16 +8375,16 @@ This is the first layer of classes and should be agnostically named
     opacity: 1; }
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 0.625rem, 0);
-            transform: translate3d(0, 0.625rem, 0); } }
+    -webkit-transform: translate3d(0, 10px, 0);
+            transform: translate3d(0, 10px, 0); } }
 
 @keyframes fadeOutDownSmall {
   0% {
     opacity: 1; }
   100% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 0.625rem, 0);
-            transform: translate3d(0, 0.625rem, 0); } }
+    -webkit-transform: translate3d(0, 10px, 0);
+            transform: translate3d(0, 10px, 0); } }
 
 .fadeOutDownSmall {
   -webkit-animation-name: fadeOutDownSmall;
@@ -8393,8 +8393,8 @@ This is the first layer of classes and should be agnostically named
 @-webkit-keyframes fadeInUpSmall {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 0.625rem, 0);
-            transform: translate3d(0, 0.625rem, 0); }
+    -webkit-transform: translate3d(0, 10px, 0);
+            transform: translate3d(0, 10px, 0); }
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -8403,8 +8403,8 @@ This is the first layer of classes and should be agnostically named
 @keyframes fadeInUpSmall {
   0% {
     opacity: 0;
-    -webkit-transform: translate3d(0, 0.625rem, 0);
-            transform: translate3d(0, 0.625rem, 0); }
+    -webkit-transform: translate3d(0, 10px, 0);
+            transform: translate3d(0, 10px, 0); }
   100% {
     opacity: 1;
     -webkit-transform: none;
@@ -8416,31 +8416,31 @@ This is the first layer of classes and should be agnostically named
 
 @-webkit-keyframes roadmapGlowing {
   0% {
-    -webkit-box-shadow: 0 0 -0.625rem #ffb567;
-            box-shadow: 0 0 -0.625rem #ffb567; }
+    -webkit-box-shadow: 0 0 -10px #ffb567;
+            box-shadow: 0 0 -10px #ffb567; }
   40% {
-    -webkit-box-shadow: 0 0 1.25rem #ffb567;
-            box-shadow: 0 0 1.25rem #ffb567; }
+    -webkit-box-shadow: 0 0 20px #ffb567;
+            box-shadow: 0 0 20px #ffb567; }
   60% {
-    -webkit-box-shadow: 0 0 1.25rem #ffb567;
-            box-shadow: 0 0 1.25rem #ffb567; }
+    -webkit-box-shadow: 0 0 20px #ffb567;
+            box-shadow: 0 0 20px #ffb567; }
   100% {
-    -webkit-box-shadow: 0 0 -0.625rem #ffb567;
-            box-shadow: 0 0 -0.625rem #ffb567; } }
+    -webkit-box-shadow: 0 0 -10px #ffb567;
+            box-shadow: 0 0 -10px #ffb567; } }
 
 @keyframes roadmapGlowing {
   0% {
-    -webkit-box-shadow: 0 0 -0.625rem #ffb567;
-            box-shadow: 0 0 -0.625rem #ffb567; }
+    -webkit-box-shadow: 0 0 -10px #ffb567;
+            box-shadow: 0 0 -10px #ffb567; }
   40% {
-    -webkit-box-shadow: 0 0 1.25rem #ffb567;
-            box-shadow: 0 0 1.25rem #ffb567; }
+    -webkit-box-shadow: 0 0 20px #ffb567;
+            box-shadow: 0 0 20px #ffb567; }
   60% {
-    -webkit-box-shadow: 0 0 1.25rem #ffb567;
-            box-shadow: 0 0 1.25rem #ffb567; }
+    -webkit-box-shadow: 0 0 20px #ffb567;
+            box-shadow: 0 0 20px #ffb567; }
   100% {
-    -webkit-box-shadow: 0 0 -0.625rem #ffb567;
-            box-shadow: 0 0 -0.625rem #ffb567; } }
+    -webkit-box-shadow: 0 0 -10px #ffb567;
+            box-shadow: 0 0 -10px #ffb567; } }
 
 @-webkit-keyframes roadmapAnimation {
   0% {
@@ -8477,377 +8477,377 @@ This is the first layer of classes and should be agnostically named
 /* Slide in for team meberm info */
 @-webkit-keyframes team-member-info-slide-in {
   0% {
-    -webkit-transform: translate3d(-2.5rem, 0, 0); }
+    -webkit-transform: translate3d(-40px, 0, 0); }
   100% {
     -webkit-transform: translate3d(0, 0, 0); } }
 
 @keyframes team-member-info-slide-in {
   0% {
-    -webkit-transform: translate3d(-2.5rem, 0, 0);
-    transform: translate3d(-2.5rem, 0, 0); }
+    -webkit-transform: translate3d(-40px, 0, 0);
+    transform: translate3d(-40px, 0, 0); }
   100% {
     -webkit-transform: translate3d(0, 0, 0);
     transform: translate3d(0, 0, 0); } }
 
 @-webkit-keyframes glowingColor1 {
   0% {
-    -webkit-box-shadow: 0 0 1.375rem 0.25rem rgba(52, 128, 153, 0.3);
-            box-shadow: 0 0 1.375rem 0.25rem rgba(52, 128, 153, 0.3); }
+    -webkit-box-shadow: 0 0 22px 4px rgba(52, 128, 153, 0.3);
+            box-shadow: 0 0 22px 4px rgba(52, 128, 153, 0.3); }
   40% {
-    -webkit-box-shadow: 0 0 1.375rem 0.5rem rgba(52, 128, 153, 0.3);
-            box-shadow: 0 0 1.375rem 0.5rem rgba(52, 128, 153, 0.3); }
+    -webkit-box-shadow: 0 0 22px 8px rgba(52, 128, 153, 0.3);
+            box-shadow: 0 0 22px 8px rgba(52, 128, 153, 0.3); }
   60% {
-    -webkit-box-shadow: 0 0 1.375rem 0.5rem rgba(52, 128, 153, 0.3);
-            box-shadow: 0 0 1.375rem 0.5rem rgba(52, 128, 153, 0.3); }
+    -webkit-box-shadow: 0 0 22px 8px rgba(52, 128, 153, 0.3);
+            box-shadow: 0 0 22px 8px rgba(52, 128, 153, 0.3); }
   100% {
-    -webkit-box-shadow: 0 0 1.375rem 0.25rem rgba(52, 128, 153, 0.3);
-            box-shadow: 0 0 1.375rem 0.25rem rgba(52, 128, 153, 0.3); } }
+    -webkit-box-shadow: 0 0 22px 4px rgba(52, 128, 153, 0.3);
+            box-shadow: 0 0 22px 4px rgba(52, 128, 153, 0.3); } }
 
 @keyframes glowingColor1 {
   0% {
-    -webkit-box-shadow: 0 0 1.375rem 0.25rem rgba(52, 128, 153, 0.3);
-            box-shadow: 0 0 1.375rem 0.25rem rgba(52, 128, 153, 0.3); }
+    -webkit-box-shadow: 0 0 22px 4px rgba(52, 128, 153, 0.3);
+            box-shadow: 0 0 22px 4px rgba(52, 128, 153, 0.3); }
   40% {
-    -webkit-box-shadow: 0 0 1.375rem 0.5rem rgba(52, 128, 153, 0.3);
-            box-shadow: 0 0 1.375rem 0.5rem rgba(52, 128, 153, 0.3); }
+    -webkit-box-shadow: 0 0 22px 8px rgba(52, 128, 153, 0.3);
+            box-shadow: 0 0 22px 8px rgba(52, 128, 153, 0.3); }
   60% {
-    -webkit-box-shadow: 0 0 1.375rem 0.5rem rgba(52, 128, 153, 0.3);
-            box-shadow: 0 0 1.375rem 0.5rem rgba(52, 128, 153, 0.3); }
+    -webkit-box-shadow: 0 0 22px 8px rgba(52, 128, 153, 0.3);
+            box-shadow: 0 0 22px 8px rgba(52, 128, 153, 0.3); }
   100% {
-    -webkit-box-shadow: 0 0 1.375rem 0.25rem rgba(52, 128, 153, 0.3);
-            box-shadow: 0 0 1.375rem 0.25rem rgba(52, 128, 153, 0.3); } }
+    -webkit-box-shadow: 0 0 22px 4px rgba(52, 128, 153, 0.3);
+            box-shadow: 0 0 22px 4px rgba(52, 128, 153, 0.3); } }
 
 @-webkit-keyframes glowingColor2 {
   0% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 149, 187, 0.4); }
+    -webkit-box-shadow: 0 0 15px 4px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 15px 4px rgba(255, 149, 187, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 149, 187, 0.4); }
+    -webkit-box-shadow: 0 0 15px 8px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 15px 8px rgba(255, 149, 187, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 149, 187, 0.4); }
+    -webkit-box-shadow: 0 0 15px 8px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 15px 8px rgba(255, 149, 187, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 149, 187, 0.4); } }
+    -webkit-box-shadow: 0 0 15px 4px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 15px 4px rgba(255, 149, 187, 0.4); } }
 
 @keyframes glowingColor2 {
   0% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 149, 187, 0.4); }
+    -webkit-box-shadow: 0 0 15px 4px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 15px 4px rgba(255, 149, 187, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 149, 187, 0.4); }
+    -webkit-box-shadow: 0 0 15px 8px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 15px 8px rgba(255, 149, 187, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 149, 187, 0.4); }
+    -webkit-box-shadow: 0 0 15px 8px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 15px 8px rgba(255, 149, 187, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 149, 187, 0.4); } }
+    -webkit-box-shadow: 0 0 15px 4px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 15px 4px rgba(255, 149, 187, 0.4); } }
 
 @-webkit-keyframes glowingColor3 {
   0% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 181, 103, 0.4); }
+    -webkit-box-shadow: 0 0 15px 4px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 15px 4px rgba(255, 181, 103, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 181, 103, 0.4); }
+    -webkit-box-shadow: 0 0 15px 8px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 15px 8px rgba(255, 181, 103, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 181, 103, 0.4); }
+    -webkit-box-shadow: 0 0 15px 8px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 15px 8px rgba(255, 181, 103, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 181, 103, 0.4); } }
+    -webkit-box-shadow: 0 0 15px 4px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 15px 4px rgba(255, 181, 103, 0.4); } }
 
 @keyframes glowingColor3 {
   0% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 181, 103, 0.4); }
+    -webkit-box-shadow: 0 0 15px 4px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 15px 4px rgba(255, 181, 103, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 181, 103, 0.4); }
+    -webkit-box-shadow: 0 0 15px 8px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 15px 8px rgba(255, 181, 103, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 0.9375rem 0.5rem rgba(255, 181, 103, 0.4); }
+    -webkit-box-shadow: 0 0 15px 8px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 15px 8px rgba(255, 181, 103, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 0.9375rem 0.25rem rgba(255, 181, 103, 0.4); } }
+    -webkit-box-shadow: 0 0 15px 4px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 15px 4px rgba(255, 181, 103, 0.4); } }
 
 @-webkit-keyframes glowingColor4 {
   0% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.25rem rgba(98, 208, 183, 0.4);
-            box-shadow: 0 0 1.4375rem 0.25rem rgba(98, 208, 183, 0.4); }
+    -webkit-box-shadow: 0 0 23px 4px rgba(98, 208, 183, 0.4);
+            box-shadow: 0 0 23px 4px rgba(98, 208, 183, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.5rem rgba(98, 208, 183, 0.4);
-            box-shadow: 0 0 1.4375rem 0.5rem rgba(98, 208, 183, 0.4); }
+    -webkit-box-shadow: 0 0 23px 8px rgba(98, 208, 183, 0.4);
+            box-shadow: 0 0 23px 8px rgba(98, 208, 183, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.5rem rgba(98, 208, 183, 0.4);
-            box-shadow: 0 0 1.4375rem 0.5rem rgba(98, 208, 183, 0.4); }
+    -webkit-box-shadow: 0 0 23px 8px rgba(98, 208, 183, 0.4);
+            box-shadow: 0 0 23px 8px rgba(98, 208, 183, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.25rem rgba(98, 208, 183, 0.4);
-            box-shadow: 0 0 1.4375rem 0.25rem rgba(98, 208, 183, 0.4); } }
+    -webkit-box-shadow: 0 0 23px 4px rgba(98, 208, 183, 0.4);
+            box-shadow: 0 0 23px 4px rgba(98, 208, 183, 0.4); } }
 
 @keyframes glowingColor4 {
   0% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.25rem rgba(98, 208, 183, 0.4);
-            box-shadow: 0 0 1.4375rem 0.25rem rgba(98, 208, 183, 0.4); }
+    -webkit-box-shadow: 0 0 23px 4px rgba(98, 208, 183, 0.4);
+            box-shadow: 0 0 23px 4px rgba(98, 208, 183, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.5rem rgba(98, 208, 183, 0.4);
-            box-shadow: 0 0 1.4375rem 0.5rem rgba(98, 208, 183, 0.4); }
+    -webkit-box-shadow: 0 0 23px 8px rgba(98, 208, 183, 0.4);
+            box-shadow: 0 0 23px 8px rgba(98, 208, 183, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.5rem rgba(98, 208, 183, 0.4);
-            box-shadow: 0 0 1.4375rem 0.5rem rgba(98, 208, 183, 0.4); }
+    -webkit-box-shadow: 0 0 23px 8px rgba(98, 208, 183, 0.4);
+            box-shadow: 0 0 23px 8px rgba(98, 208, 183, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.25rem rgba(98, 208, 183, 0.4);
-            box-shadow: 0 0 1.4375rem 0.25rem rgba(98, 208, 183, 0.4); } }
+    -webkit-box-shadow: 0 0 23px 4px rgba(98, 208, 183, 0.4);
+            box-shadow: 0 0 23px 4px rgba(98, 208, 183, 0.4); } }
 
 @-webkit-keyframes glowingColor5 {
   0% {
-    -webkit-box-shadow: 0 0 1.375rem 0.25rem rgba(134, 128, 235, 0.4);
-            box-shadow: 0 0 1.375rem 0.25rem rgba(134, 128, 235, 0.4); }
+    -webkit-box-shadow: 0 0 22px 4px rgba(134, 128, 235, 0.4);
+            box-shadow: 0 0 22px 4px rgba(134, 128, 235, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 1.375rem 0.5rem rgba(134, 128, 235, 0.4);
-            box-shadow: 0 0 1.375rem 0.5rem rgba(134, 128, 235, 0.4); }
+    -webkit-box-shadow: 0 0 22px 8px rgba(134, 128, 235, 0.4);
+            box-shadow: 0 0 22px 8px rgba(134, 128, 235, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 1.375rem 0.5rem rgba(134, 128, 235, 0.4);
-            box-shadow: 0 0 1.375rem 0.5rem rgba(134, 128, 235, 0.4); }
+    -webkit-box-shadow: 0 0 22px 8px rgba(134, 128, 235, 0.4);
+            box-shadow: 0 0 22px 8px rgba(134, 128, 235, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 1.375rem 0.25rem rgba(134, 128, 235, 0.4);
-            box-shadow: 0 0 1.375rem 0.25rem rgba(134, 128, 235, 0.4); } }
+    -webkit-box-shadow: 0 0 22px 4px rgba(134, 128, 235, 0.4);
+            box-shadow: 0 0 22px 4px rgba(134, 128, 235, 0.4); } }
 
 @keyframes glowingColor5 {
   0% {
-    -webkit-box-shadow: 0 0 1.375rem 0.25rem rgba(134, 128, 235, 0.4);
-            box-shadow: 0 0 1.375rem 0.25rem rgba(134, 128, 235, 0.4); }
+    -webkit-box-shadow: 0 0 22px 4px rgba(134, 128, 235, 0.4);
+            box-shadow: 0 0 22px 4px rgba(134, 128, 235, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 1.375rem 0.5rem rgba(134, 128, 235, 0.4);
-            box-shadow: 0 0 1.375rem 0.5rem rgba(134, 128, 235, 0.4); }
+    -webkit-box-shadow: 0 0 22px 8px rgba(134, 128, 235, 0.4);
+            box-shadow: 0 0 22px 8px rgba(134, 128, 235, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 1.375rem 0.5rem rgba(134, 128, 235, 0.4);
-            box-shadow: 0 0 1.375rem 0.5rem rgba(134, 128, 235, 0.4); }
+    -webkit-box-shadow: 0 0 22px 8px rgba(134, 128, 235, 0.4);
+            box-shadow: 0 0 22px 8px rgba(134, 128, 235, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 1.375rem 0.25rem rgba(134, 128, 235, 0.4);
-            box-shadow: 0 0 1.375rem 0.25rem rgba(134, 128, 235, 0.4); } }
+    -webkit-box-shadow: 0 0 22px 4px rgba(134, 128, 235, 0.4);
+            box-shadow: 0 0 22px 4px rgba(134, 128, 235, 0.4); } }
 
 @-webkit-keyframes glowingColor6 {
   0% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.125rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 1.4375rem 0.125rem rgba(255, 181, 103, 0.4); }
+    -webkit-box-shadow: 0 0 23px 2px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 23px 2px rgba(255, 181, 103, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.25rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 1.4375rem 0.25rem rgba(255, 181, 103, 0.4); }
+    -webkit-box-shadow: 0 0 23px 4px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 23px 4px rgba(255, 181, 103, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.25rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 1.4375rem 0.25rem rgba(255, 181, 103, 0.4); }
+    -webkit-box-shadow: 0 0 23px 4px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 23px 4px rgba(255, 181, 103, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.125rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 1.4375rem 0.125rem rgba(255, 181, 103, 0.4); } }
+    -webkit-box-shadow: 0 0 23px 2px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 23px 2px rgba(255, 181, 103, 0.4); } }
 
 @keyframes glowingColor6 {
   0% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.125rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 1.4375rem 0.125rem rgba(255, 181, 103, 0.4); }
+    -webkit-box-shadow: 0 0 23px 2px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 23px 2px rgba(255, 181, 103, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.25rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 1.4375rem 0.25rem rgba(255, 181, 103, 0.4); }
+    -webkit-box-shadow: 0 0 23px 4px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 23px 4px rgba(255, 181, 103, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.25rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 1.4375rem 0.25rem rgba(255, 181, 103, 0.4); }
+    -webkit-box-shadow: 0 0 23px 4px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 23px 4px rgba(255, 181, 103, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 1.4375rem 0.125rem rgba(255, 181, 103, 0.4);
-            box-shadow: 0 0 1.4375rem 0.125rem rgba(255, 181, 103, 0.4); } }
+    -webkit-box-shadow: 0 0 23px 2px rgba(255, 181, 103, 0.4);
+            box-shadow: 0 0 23px 2px rgba(255, 181, 103, 0.4); } }
 
 @-webkit-keyframes glowingColor7 {
   0% {
-    -webkit-box-shadow: 0 0 1.375rem 0.125rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 1.375rem 0.125rem rgba(255, 149, 187, 0.4); }
+    -webkit-box-shadow: 0 0 22px 2px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 22px 2px rgba(255, 149, 187, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 1.375rem 0.25rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 1.375rem 0.25rem rgba(255, 149, 187, 0.4); }
+    -webkit-box-shadow: 0 0 22px 4px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 22px 4px rgba(255, 149, 187, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 1.375rem 0.25rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 1.375rem 0.25rem rgba(255, 149, 187, 0.4); }
+    -webkit-box-shadow: 0 0 22px 4px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 22px 4px rgba(255, 149, 187, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 1.375rem 0.125rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 1.375rem 0.125rem rgba(255, 149, 187, 0.4); } }
+    -webkit-box-shadow: 0 0 22px 2px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 22px 2px rgba(255, 149, 187, 0.4); } }
 
 @keyframes glowingColor7 {
   0% {
-    -webkit-box-shadow: 0 0 1.375rem 0.125rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 1.375rem 0.125rem rgba(255, 149, 187, 0.4); }
+    -webkit-box-shadow: 0 0 22px 2px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 22px 2px rgba(255, 149, 187, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 1.375rem 0.25rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 1.375rem 0.25rem rgba(255, 149, 187, 0.4); }
+    -webkit-box-shadow: 0 0 22px 4px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 22px 4px rgba(255, 149, 187, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 1.375rem 0.25rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 1.375rem 0.25rem rgba(255, 149, 187, 0.4); }
+    -webkit-box-shadow: 0 0 22px 4px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 22px 4px rgba(255, 149, 187, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 1.375rem 0.125rem rgba(255, 149, 187, 0.4);
-            box-shadow: 0 0 1.375rem 0.125rem rgba(255, 149, 187, 0.4); } }
+    -webkit-box-shadow: 0 0 22px 2px rgba(255, 149, 187, 0.4);
+            box-shadow: 0 0 22px 2px rgba(255, 149, 187, 0.4); } }
 
 @-webkit-keyframes glowingColor8 {
   0% {
-    -webkit-box-shadow: 0 0 1.375rem 0.1875rem rgba(67, 173, 250, 0.4);
-            box-shadow: 0 0 1.375rem 0.1875rem rgba(67, 173, 250, 0.4); }
+    -webkit-box-shadow: 0 0 22px 3px rgba(67, 173, 250, 0.4);
+            box-shadow: 0 0 22px 3px rgba(67, 173, 250, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 1.375rem 0.375rem rgba(67, 173, 250, 0.4);
-            box-shadow: 0 0 1.375rem 0.375rem rgba(67, 173, 250, 0.4); }
+    -webkit-box-shadow: 0 0 22px 6px rgba(67, 173, 250, 0.4);
+            box-shadow: 0 0 22px 6px rgba(67, 173, 250, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 1.375rem 0.375rem rgba(67, 173, 250, 0.4);
-            box-shadow: 0 0 1.375rem 0.375rem rgba(67, 173, 250, 0.4); }
+    -webkit-box-shadow: 0 0 22px 6px rgba(67, 173, 250, 0.4);
+            box-shadow: 0 0 22px 6px rgba(67, 173, 250, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 1.375rem 0.1875rem rgba(67, 173, 250, 0.4);
-            box-shadow: 0 0 1.375rem 0.1875rem rgba(67, 173, 250, 0.4); } }
+    -webkit-box-shadow: 0 0 22px 3px rgba(67, 173, 250, 0.4);
+            box-shadow: 0 0 22px 3px rgba(67, 173, 250, 0.4); } }
 
 @keyframes glowingColor8 {
   0% {
-    -webkit-box-shadow: 0 0 1.375rem 0.1875rem rgba(67, 173, 250, 0.4);
-            box-shadow: 0 0 1.375rem 0.1875rem rgba(67, 173, 250, 0.4); }
+    -webkit-box-shadow: 0 0 22px 3px rgba(67, 173, 250, 0.4);
+            box-shadow: 0 0 22px 3px rgba(67, 173, 250, 0.4); }
   40% {
-    -webkit-box-shadow: 0 0 1.375rem 0.375rem rgba(67, 173, 250, 0.4);
-            box-shadow: 0 0 1.375rem 0.375rem rgba(67, 173, 250, 0.4); }
+    -webkit-box-shadow: 0 0 22px 6px rgba(67, 173, 250, 0.4);
+            box-shadow: 0 0 22px 6px rgba(67, 173, 250, 0.4); }
   60% {
-    -webkit-box-shadow: 0 0 1.375rem 0.375rem rgba(67, 173, 250, 0.4);
-            box-shadow: 0 0 1.375rem 0.375rem rgba(67, 173, 250, 0.4); }
+    -webkit-box-shadow: 0 0 22px 6px rgba(67, 173, 250, 0.4);
+            box-shadow: 0 0 22px 6px rgba(67, 173, 250, 0.4); }
   100% {
-    -webkit-box-shadow: 0 0 1.375rem 0.1875rem rgba(67, 173, 250, 0.4);
-            box-shadow: 0 0 1.375rem 0.1875rem rgba(67, 173, 250, 0.4); } }
+    -webkit-box-shadow: 0 0 22px 3px rgba(67, 173, 250, 0.4);
+            box-shadow: 0 0 22px 3px rgba(67, 173, 250, 0.4); } }
 
 @-webkit-keyframes translate1 {
   0% {
-    -webkit-transform: translate(0.625rem, 0.625rem);
-            transform: translate(0.625rem, 0.625rem); }
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); }
   20% {
-    -webkit-transform: translate(2.5rem, 2.5rem);
-            transform: translate(2.5rem, 2.5rem); }
+    -webkit-transform: translate(40px, 40px);
+            transform: translate(40px, 40px); }
   40% {
-    -webkit-transform: translate(3.75rem, 1.875rem);
-            transform: translate(3.75rem, 1.875rem); }
+    -webkit-transform: translate(60px, 30px);
+            transform: translate(60px, 30px); }
   60% {
-    -webkit-transform: translate(2.5rem, 2.5rem);
-            transform: translate(2.5rem, 2.5rem); }
+    -webkit-transform: translate(40px, 40px);
+            transform: translate(40px, 40px); }
   100% {
-    -webkit-transform: translate(0.625rem, 0.625rem);
-            transform: translate(0.625rem, 0.625rem); } }
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); } }
 
 @keyframes translate1 {
   0% {
-    -webkit-transform: translate(0.625rem, 0.625rem);
-            transform: translate(0.625rem, 0.625rem); }
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); }
   20% {
-    -webkit-transform: translate(2.5rem, 2.5rem);
-            transform: translate(2.5rem, 2.5rem); }
+    -webkit-transform: translate(40px, 40px);
+            transform: translate(40px, 40px); }
   40% {
-    -webkit-transform: translate(3.75rem, 1.875rem);
-            transform: translate(3.75rem, 1.875rem); }
+    -webkit-transform: translate(60px, 30px);
+            transform: translate(60px, 30px); }
   60% {
-    -webkit-transform: translate(2.5rem, 2.5rem);
-            transform: translate(2.5rem, 2.5rem); }
+    -webkit-transform: translate(40px, 40px);
+            transform: translate(40px, 40px); }
   100% {
-    -webkit-transform: translate(0.625rem, 0.625rem);
-            transform: translate(0.625rem, 0.625rem); } }
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); } }
 
 @-webkit-keyframes translate2 {
   0% {
-    -webkit-transform: translate(0.625rem, 0.625rem);
-            transform: translate(0.625rem, 0.625rem); }
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); }
   20% {
-    -webkit-transform: translate(0.625rem, -2.5rem);
-            transform: translate(0.625rem, -2.5rem); }
+    -webkit-transform: translate(10px, -40px);
+            transform: translate(10px, -40px); }
   40% {
-    -webkit-transform: translate(3.75rem, -1.875rem);
-            transform: translate(3.75rem, -1.875rem); }
+    -webkit-transform: translate(60px, -30px);
+            transform: translate(60px, -30px); }
   60% {
-    -webkit-transform: translate(3.75rem, -2.5rem);
-            transform: translate(3.75rem, -2.5rem); }
+    -webkit-transform: translate(60px, -40px);
+            transform: translate(60px, -40px); }
   100% {
-    -webkit-transform: translate(0.625rem, 0.625rem);
-            transform: translate(0.625rem, 0.625rem); } }
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); } }
 
 @keyframes translate2 {
   0% {
-    -webkit-transform: translate(0.625rem, 0.625rem);
-            transform: translate(0.625rem, 0.625rem); }
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); }
   20% {
-    -webkit-transform: translate(0.625rem, -2.5rem);
-            transform: translate(0.625rem, -2.5rem); }
+    -webkit-transform: translate(10px, -40px);
+            transform: translate(10px, -40px); }
   40% {
-    -webkit-transform: translate(3.75rem, -1.875rem);
-            transform: translate(3.75rem, -1.875rem); }
+    -webkit-transform: translate(60px, -30px);
+            transform: translate(60px, -30px); }
   60% {
-    -webkit-transform: translate(3.75rem, -2.5rem);
-            transform: translate(3.75rem, -2.5rem); }
+    -webkit-transform: translate(60px, -40px);
+            transform: translate(60px, -40px); }
   100% {
-    -webkit-transform: translate(0.625rem, 0.625rem);
-            transform: translate(0.625rem, 0.625rem); } }
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); } }
 
 @-webkit-keyframes translate3 {
   0% {
-    -webkit-transform: translate(0.625rem, 0.625rem);
-            transform: translate(0.625rem, 0.625rem); }
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); }
   20% {
-    -webkit-transform: translate(7.5rem, 2.5rem);
-            transform: translate(7.5rem, 2.5rem); }
+    -webkit-transform: translate(120px, 40px);
+            transform: translate(120px, 40px); }
   40% {
-    -webkit-transform: translate(8.75rem, 0.625rem);
-            transform: translate(8.75rem, 0.625rem); }
+    -webkit-transform: translate(140px, 10px);
+            transform: translate(140px, 10px); }
   60% {
-    -webkit-transform: translate(10rem, 2.5rem);
-            transform: translate(10rem, 2.5rem); }
+    -webkit-transform: translate(160px, 40px);
+            transform: translate(160px, 40px); }
   100% {
-    -webkit-transform: translate(0.625rem, 0.625rem);
-            transform: translate(0.625rem, 0.625rem); } }
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); } }
 
 @keyframes translate3 {
   0% {
-    -webkit-transform: translate(0.625rem, 0.625rem);
-            transform: translate(0.625rem, 0.625rem); }
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); }
   20% {
-    -webkit-transform: translate(7.5rem, 2.5rem);
-            transform: translate(7.5rem, 2.5rem); }
+    -webkit-transform: translate(120px, 40px);
+            transform: translate(120px, 40px); }
   40% {
-    -webkit-transform: translate(8.75rem, 0.625rem);
-            transform: translate(8.75rem, 0.625rem); }
+    -webkit-transform: translate(140px, 10px);
+            transform: translate(140px, 10px); }
   60% {
-    -webkit-transform: translate(10rem, 2.5rem);
-            transform: translate(10rem, 2.5rem); }
+    -webkit-transform: translate(160px, 40px);
+            transform: translate(160px, 40px); }
   100% {
-    -webkit-transform: translate(0.625rem, 0.625rem);
-            transform: translate(0.625rem, 0.625rem); } }
+    -webkit-transform: translate(10px, 10px);
+            transform: translate(10px, 10px); } }
 
 @-webkit-keyframes translate4 {
   0% {
-    -webkit-transform: translate(0.625rem, -0.625rem);
-            transform: translate(0.625rem, -0.625rem); }
+    -webkit-transform: translate(10px, -10px);
+            transform: translate(10px, -10px); }
   20% {
-    -webkit-transform: translate(1.25rem, -2.5rem);
-            transform: translate(1.25rem, -2.5rem); }
+    -webkit-transform: translate(20px, -40px);
+            transform: translate(20px, -40px); }
   40% {
-    -webkit-transform: translate(2.5rem, -0.625rem);
-            transform: translate(2.5rem, -0.625rem); }
+    -webkit-transform: translate(40px, -10px);
+            transform: translate(40px, -10px); }
   60% {
-    -webkit-transform: translate(3.75rem, -2.5rem);
-            transform: translate(3.75rem, -2.5rem); }
+    -webkit-transform: translate(60px, -40px);
+            transform: translate(60px, -40px); }
   100% {
-    -webkit-transform: translate(0.625rem, -0.625rem);
-            transform: translate(0.625rem, -0.625rem); } }
+    -webkit-transform: translate(10px, -10px);
+            transform: translate(10px, -10px); } }
 
 @keyframes translate4 {
   0% {
-    -webkit-transform: translate(0.625rem, -0.625rem);
-            transform: translate(0.625rem, -0.625rem); }
+    -webkit-transform: translate(10px, -10px);
+            transform: translate(10px, -10px); }
   20% {
-    -webkit-transform: translate(1.25rem, -2.5rem);
-            transform: translate(1.25rem, -2.5rem); }
+    -webkit-transform: translate(20px, -40px);
+            transform: translate(20px, -40px); }
   40% {
-    -webkit-transform: translate(2.5rem, -0.625rem);
-            transform: translate(2.5rem, -0.625rem); }
+    -webkit-transform: translate(40px, -10px);
+            transform: translate(40px, -10px); }
   60% {
-    -webkit-transform: translate(3.75rem, -2.5rem);
-            transform: translate(3.75rem, -2.5rem); }
+    -webkit-transform: translate(60px, -40px);
+            transform: translate(60px, -40px); }
   100% {
-    -webkit-transform: translate(0.625rem, -0.625rem);
-            transform: translate(0.625rem, -0.625rem); } }
+    -webkit-transform: translate(10px, -10px);
+            transform: translate(10px, -10px); } }
 
 @-webkit-keyframes smokeL {
   0% {
@@ -8855,12 +8855,12 @@ This is the first layer of classes and should be agnostically named
             transform: scale(0.2) translate(0, 0); }
   10% {
     opacity: 1;
-    -webkit-transform: scale(0.2) translate(0, -0.3125rem);
-            transform: scale(0.2) translate(0, -0.3125rem); }
+    -webkit-transform: scale(0.2) translate(0, -5px);
+            transform: scale(0.2) translate(0, -5px); }
   100% {
     opacity: 0;
-    -webkit-transform: scale(1) translate(-1.25rem, -8.125rem);
-            transform: scale(1) translate(-1.25rem, -8.125rem); } }
+    -webkit-transform: scale(1) translate(-50px, -130px);
+            transform: scale(1) translate(-50px, -130px); } }
 
 @keyframes smokeL {
   0% {
@@ -8868,12 +8868,12 @@ This is the first layer of classes and should be agnostically named
             transform: scale(0.2) translate(0, 0); }
   10% {
     opacity: 1;
-    -webkit-transform: scale(0.2) translate(0, -0.3125rem);
-            transform: scale(0.2) translate(0, -0.3125rem); }
+    -webkit-transform: scale(0.2) translate(0, -5px);
+            transform: scale(0.2) translate(0, -5px); }
   100% {
     opacity: 0;
-    -webkit-transform: scale(1) translate(-1.25rem, -8.125rem);
-            transform: scale(1) translate(-1.25rem, -8.125rem); } }
+    -webkit-transform: scale(1) translate(-50px, -130px);
+            transform: scale(1) translate(-50px, -130px); } }
 
 @-webkit-keyframes smokeR {
   0% {
@@ -8881,12 +8881,12 @@ This is the first layer of classes and should be agnostically named
             transform: scale(0.2) translate(0, 0); }
   10% {
     opacity: 1;
-    -webkit-transform: scale(0.2) translate(0, -0.3125rem);
-            transform: scale(0.2) translate(0, -0.3125rem); }
+    -webkit-transform: scale(0.2) translate(0, -5px);
+            transform: scale(0.2) translate(0, -5px); }
   100% {
     opacity: 0;
-    -webkit-transform: scale(1) translate(1.25rem, -8.125rem);
-            transform: scale(1) translate(1.25rem, -8.125rem); } }
+    -webkit-transform: scale(1) translate(20px, -130px);
+            transform: scale(1) translate(20px, -130px); } }
 
 @keyframes smokeR {
   0% {
@@ -8894,12 +8894,12 @@ This is the first layer of classes and should be agnostically named
             transform: scale(0.2) translate(0, 0); }
   10% {
     opacity: 1;
-    -webkit-transform: scale(0.2) translate(0, -0.3125rem);
-            transform: scale(0.2) translate(0, -0.3125rem); }
+    -webkit-transform: scale(0.2) translate(0, -5px);
+            transform: scale(0.2) translate(0, -5px); }
   100% {
     opacity: 0;
-    -webkit-transform: scale(1) translate(1.25rem, -8.125rem);
-            transform: scale(1) translate(1.25rem, -8.125rem); } }
+    -webkit-transform: scale(1) translate(20px, -130px);
+            transform: scale(1) translate(20px, -130px); } }
 
 .wp-caption {
   margin-bottom: 1.5em;
@@ -9000,7 +9000,7 @@ Specific UI components.
 This is where majority of our work takes place and our UI components are often composed of Objects and Components
 */
 .blog .site-main {
-  padding-top: 3.75rem; }
+  padding-top: 60px; }
 
 .post-fullwidth article {
   max-width: 100%;
@@ -9023,23 +9023,23 @@ This is where majority of our work takes place and our UI components are often c
     content: '';
     display: block;
     width: 100%;
-    height: 0.125rem;
+    height: 2px;
     background-image: -webkit-gradient(linear, left top, right top, from(#181631), color-stop(51%, #fcb168), to(#181c34));
     background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%); }
   .site-footer .custom-logo {
-    padding-top: 3.75rem;
-    width: 2.5rem;
-    margin-bottom: 0.9375rem; }
+    padding-top: 60px;
+    width: 40px;
+    margin-bottom: 15px; }
 
 .site-info {
-  padding-top: 1.875rem;
-  padding-bottom: 2.5rem; }
+  padding-top: 30px;
+  padding-bottom: 40px; }
 
 .site-header {
   position: relative;
   -webkit-transition: all .5s ease, background 1.2s ease;
   transition: all .5s ease, background 1.2s ease;
-  padding: 1.25rem 0; }
+  padding: 20px 0; }
   .site-header > .container > .row {
     display: table;
     margin: 0;
@@ -9049,8 +9049,8 @@ This is where majority of our work takes place and our UI components are often c
     display: table-cell;
     vertical-align: middle; }
   .site-header .site-branding img {
-    max-width: 2.5rem;
-    padding: 0.625rem 0; }
+    max-width: 40px;
+    padding: 10px 0; }
   .site-header .header-tools {
     text-align: right;
     font-size: 0; }
@@ -9070,36 +9070,36 @@ This is where majority of our work takes place and our UI components are often c
             transform: translateY(0);
     background-color: #202741; }
     .admin-bar .site-header.headroom--not-top {
-      top: 2rem; }
+      top: 32px; }
     .site-header.headroom--not-top .custom-logo {
       padding: 0;
-      max-width: 2.1875rem; }
+      max-width: 35px; }
     .site-header.headroom--not-top .main-menu .menu > ul > li > a,
     .site-header.headroom--not-top .main-menu .menu > li > a {
-      height: 3.125rem;
-      line-height: 3.125rem; }
+      height: 50px;
+      line-height: 50px; }
     .site-header.headroom--not-top .main-menu .menu > ul > li span.menu-item-text:after,
     .site-header.headroom--not-top .main-menu .menu > li span.menu-item-text:after {
-      bottom: -0.9375rem; }
+      bottom: -15px; }
   .site-header.headroom--unpinned {
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%); }
 
 .tomochain-image-carousel {
-  margin: 1.875rem 0; }
+  margin: 30px 0; }
   .tomochain-image-carousel .slick-slide {
     display: inline-block;
     vertical-align: middle;
     float: none;
     text-align: center;
-    padding: 0 0.9375rem; }
+    padding: 0 15px; }
   .tomochain-image-carousel .slick-slide img {
     display: inline-block;
     vertical-align: middle; }
 
 .tomochain-lang-switcher-wrapper.loading .nice-select:after {
-  top: 0.25rem;
-  left: -1.5625rem;
+  top: 4px;
+  left: -25px;
   content: url(assets/images/loading.svg) !important;
   background-color: transparent !important;
   -webkit-transform: scale(0.7);
@@ -9109,9 +9109,9 @@ This is where majority of our work takes place and our UI components are often c
 .tomochain-lang-switcher-wrapper .nice-select {
   padding-right: 0; }
   .tomochain-lang-switcher-wrapper .nice-select .list {
-    padding: 0.625rem 0.3125rem;
+    padding: 10px 5px;
     background-color: #202640;
-    border-radius: 0.375rem; }
+    border-radius: 6px; }
   .tomochain-lang-switcher-wrapper .nice-select .option:hover,
   .tomochain-lang-switcher-wrapper .nice-select .option.focus,
   .tomochain-lang-switcher-wrapper .nice-select .option.selected.focus {
@@ -9136,14 +9136,14 @@ This is where majority of our work takes place and our UI components are often c
     position: relative;
     display: inline-block;
     vertical-align: top;
-    font-size: 0.875rem; }
+    font-size: 14px; }
     .main-menu .menu > ul > li > a,
     .main-menu .menu > li > a {
       position: relative;
       display: inline-block;
-      line-height: 3.75rem;
-      height: 3.75rem;
-      padding: 0 1.5625rem; }
+      line-height: 60px;
+      height: 60px;
+      padding: 0 25px; }
     .main-menu .menu > ul > li span.menu-item-text,
     .main-menu .menu > li span.menu-item-text {
       position: relative; }
@@ -9151,11 +9151,11 @@ This is where majority of our work takes place and our UI components are often c
     .main-menu .menu > li span.menu-item-text:after {
       content: '';
       position: absolute;
-      bottom: -0.625rem;
+      bottom: -10px;
       left: 0;
       width: 100%;
-      max-width: 2.5rem;
-      height: 0.125rem;
+      max-width: 40px;
+      height: 2px;
       -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
       transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
       transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
@@ -9180,10 +9180,10 @@ This is where majority of our work takes place and our UI components are often c
   .main-menu .menu li.menu-item.page_item_has_children > a:before,
   .main-menu .menu li.menu-item.menu-item-has-children > a:before {
     content: "\f107";
-    font-size: 0.75rem;
+    font-size: 12px;
     position: absolute;
     top: 50%;
-    right: 0.625rem;
+    right: 10px;
     opacity: .6;
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%); }
@@ -9199,10 +9199,10 @@ This is where majority of our work takes place and our UI components are often c
     display: none;
     position: absolute;
     top: 100%;
-    left: 1.5625rem;
+    left: 25px;
     width: 100%;
-    min-width: 16.25rem;
-    border-radius: 0.5rem;
+    min-width: 260px;
+    border-radius: 8px;
     list-style: none;
     text-align: left;
     -webkit-animation-duration: .6s;
@@ -9210,7 +9210,7 @@ This is where majority of our work takes place and our UI components are often c
     -webkit-transition: left .5s ease, right .5s ease;
     transition: left .5s ease, right .5s ease;
     margin: 0;
-    padding: 0.9375rem 1.25rem;
+    padding: 15px 20px;
     background-color: #202640;
     z-index: 999; }
   .main-menu .menu > ul > li .children li.page_item,
@@ -9231,16 +9231,16 @@ This is where majority of our work takes place and our UI components are often c
       content: "\f105";
       position: absolute;
       top: 50%;
-      right: 1.875rem;
+      right: 30px;
       background-color: transparent !important;
-      margin: -0.0625rem;
+      margin: -1px;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%); }
     .main-menu .menu > ul > li .children li.page_item a,
     .main-menu .menu > li .sub-menu li.menu-item a {
       display: block;
       color: #9eaacc;
-      padding: 0.3125rem 0; }
+      padding: 5px 0; }
       .main-menu .menu > ul > li .children li.page_item a:hover,
       .main-menu .menu > li .sub-menu li.menu-item a:hover {
         color: #dee2ee; }
@@ -9255,12 +9255,12 @@ This is where majority of our work takes place and our UI components are often c
       left: 100%; }
 
 .mobile-menu-btn {
-  margin-right: -0.625rem; }
+  margin-right: -10px; }
   .mobile-menu-btn svg {
     display: inline-block;
     vertical-align: middle;
-    width: 3.125rem;
-    height: 3.75rem;
+    width: 50px;
+    height: 60px;
     cursor: pointer;
     -webkit-transform: translate3d(0, 0, 0);
             transform: translate3d(0, 0, 0); }
@@ -9269,7 +9269,7 @@ This is where majority of our work takes place and our UI components are often c
     transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
     fill: none;
     stroke: #8b96b5;
-    stroke-width: 2.5rem;
+    stroke-width: 40px;
     stroke-linecap: round;
     stroke-dashoffset: 0; }
     .mobile-menu-btn path#top, .mobile-menu-btn path#bottom {
@@ -9278,9 +9278,9 @@ This is where majority of our work takes place and our UI components are often c
       stroke-dasharray: 240px 240px; }
   .mobile-menu-btn.is-active path#top,
   .mobile-menu-btn.is-active path#bottom {
-    stroke-dashoffset: -40.625rem; }
+    stroke-dashoffset: -650px; }
   .mobile-menu-btn.is-active path#middle {
-    stroke-dashoffset: -7.1875rem;
+    stroke-dashoffset: -115px;
     stroke-dasharray: 1px 220px; }
 
 .site-mobile-menu-wrapper {
@@ -9290,7 +9290,7 @@ This is where majority of our work takes place and our UI components are often c
   display: block;
   overflow-y: auto;
   overflow-x: hidden;
-  width: 16.875rem;
+  width: 270px;
   height: 100%;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(#191d34));
   background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
@@ -9313,16 +9313,16 @@ This is where majority of our work takes place and our UI components are often c
     padding: 0;
     list-style: none; }
   .site-mobile-menu-wrapper .menu-item-icon {
-    margin-right: 0.625rem; }
+    margin-right: 10px; }
   .site-mobile-menu-wrapper .menu > ul li.page_item,
   .site-mobile-menu-wrapper .menu li.menu-item {
     font-family: 'Quicksand', 'SFProText', sans-serif;
-    font-size: 0.875rem;
+    font-size: 14px;
     display: block;
     clear: both;
-    padding-left: 1.25rem;
-    padding-right: 1.25rem;
-    border-bottom: 0.0625rem solid #3b4669; }
+    padding-left: 20px;
+    padding-right: 20px;
+    border-bottom: 1px solid #3b4669; }
     .site-mobile-menu-wrapper .menu > ul li.page_item.hide,
     .site-mobile-menu-wrapper .menu li.menu-item.hide {
       display: none; }
@@ -9334,8 +9334,8 @@ This is where majority of our work takes place and our UI components are often c
               transform: translateX(0); }
     .site-mobile-menu-wrapper .menu > ul li.page_item.mega-menu .sub-menu .menu-item-object-ic_mega_menu,
     .site-mobile-menu-wrapper .menu li.menu-item.mega-menu .sub-menu .menu-item-object-ic_mega_menu {
-      padding-top: 1.25rem;
-      padding-bottom: 1.25rem; }
+      padding-top: 20px;
+      padding-bottom: 20px; }
       .site-mobile-menu-wrapper .menu > ul li.page_item.mega-menu .sub-menu .menu-item-object-ic_mega_menu .open-child,
       .site-mobile-menu-wrapper .menu li.menu-item.mega-menu .sub-menu .menu-item-object-ic_mega_menu .open-child {
         display: none; }
@@ -9350,7 +9350,7 @@ This is where majority of our work takes place and our UI components are often c
     .site-mobile-menu-wrapper .menu li.menu-item > a {
       display: block;
       position: relative;
-      line-height: 2.5rem;
+      line-height: 40px;
       z-index: 1; }
     .site-mobile-menu-wrapper .menu > ul li.page_item .open-child,
     .site-mobile-menu-wrapper .menu li.menu-item .open-child {
@@ -9361,7 +9361,7 @@ This is where majority of our work takes place and our UI components are often c
       float: right;
       font-size: 0;
       line-height: 0;
-      width: 2.5rem;
+      width: 40px;
       z-index: 2;
       background-color: rgba(59, 70, 105, 0.4); }
       .site-mobile-menu-wrapper .menu > ul li.page_item .open-child:before,
@@ -9369,8 +9369,8 @@ This is where majority of our work takes place and our UI components are often c
         content: "\f054";
         display: block;
         opacity: .6;
-        font-size: 1rem;
-        line-height: 2.5rem; }
+        font-size: 16px;
+        line-height: 40px; }
   .site-mobile-menu-wrapper .menu > ul > li .children,
   .site-mobile-menu-wrapper .menu > li .sub-menu {
     position: absolute;
@@ -9393,24 +9393,24 @@ This is where majority of our work takes place and our UI components are often c
     display: block;
     text-align: center;
     background-color: transparent;
-    border-bottom: 0.0625rem solid #3b4669; }
+    border-bottom: 1px solid #3b4669; }
     .site-mobile-menu-wrapper .menu-back a {
       text-transform: uppercase;
       font-weight: 600;
-      line-height: 2.5rem; }
+      line-height: 40px; }
     .site-mobile-menu-wrapper .menu-back:before {
       content: "\f053";
       position: absolute;
       top: 0;
-      left: 0.9375rem;
+      left: 15px;
       display: inline-block;
-      font-size: 1rem;
-      line-height: 2.5rem; }
+      font-size: 16px;
+      line-height: 40px; }
 
 .tomochain-pagination, .woocommerce-pagination {
-  margin-bottom: 5rem; }
+  margin-bottom: 80px; }
   .tomochain-pagination.woocommerce-pagination, .woocommerce-pagination {
-    margin-bottom: 1.875rem; }
+    margin-bottom: 30px; }
 
 .tomochain-pagination ul.page-numbers, .woocommerce-pagination ul.page-numbers {
   font-size: 0;
@@ -9426,14 +9426,14 @@ This is where majority of our work takes place and our UI components are often c
   display: inline-block;
   vertical-align: top;
   text-align: center;
-  font-size: 0.875rem;
+  font-size: 14px;
   line-height: 1.7;
   border-radius: 100%;
-  margin: 0 0.625rem; }
+  margin: 0 10px; }
 
 .tomochain-pagination ul li span, .woocommerce-pagination ul li span {
   display: block;
-  width: 0.9375rem;
+  width: 15px;
   line-height: 1.7; }
 
 .tomochain-pagination .current:after, .woocommerce-pagination .current:after,
@@ -9443,10 +9443,10 @@ This is where majority of our work takes place and our UI components are often c
   display: block;
   content: '';
   width: 100%;
-  height: 0.0625rem;
+  height: 1px;
   top: 100%;
   left: 0;
-  margin-top: -0.1875rem;
+  margin-top: -3px;
   background-color: rgba(51, 51, 51, 0.2); }
 
 .tomochain-pagination .current, .woocommerce-pagination .current {
@@ -9457,7 +9457,7 @@ This is where majority of our work takes place and our UI components are often c
 .tomochain-pagination ul li a, .woocommerce-pagination ul li a {
   position: relative;
   display: block;
-  width: 0.9375rem;
+  width: 15px;
   line-height: 1.7; }
   
   .tomochain-pagination ul li a:after,
@@ -9477,32 +9477,32 @@ This is where majority of our work takes place and our UI components are often c
 .woocommerce-pagination .next {
   width: 100%;
   text-transform: uppercase;
-  letter-spacing: 0.125rem; }
+  letter-spacing: 2px; }
   .tomochain-pagination .prev:after, .woocommerce-pagination .prev:after,
   .tomochain-pagination .next:after,
   .woocommerce-pagination .next:after {
     display: none; }
 
 .woocommerce-pagination {
-  margin-top: 1.875rem; }
+  margin-top: 30px; }
   .shop-full-width-no-space .woocommerce-pagination {
-    margin-top: 5rem; }
+    margin-top: 80px; }
 
 .post {
-  margin-bottom: 3.75rem !important; }
+  margin-bottom: 60px !important; }
 
 .post-thumbnail {
   display: block;
   overflow: hidden;
-  margin-bottom: 1.875rem; }
+  margin-bottom: 30px; }
 
 .post:hover img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05); }
 
 .single-post .site-main {
-  padding-top: 3.75rem;
-  margin-bottom: 5rem; }
+  padding-top: 60px;
+  margin-bottom: 80px; }
 
 .entry-footer {
   display: none; }
@@ -9512,20 +9512,20 @@ This is where majority of our work takes place and our UI components are often c
     display: flex; }
 
 .entry-title {
-  font-size: 1.25rem;
+  font-size: 20px;
   font-weight: 400;
   line-height: 1.5;
   color: #ebeaf5;
   margin-top: 0;
-  margin-bottom: 0.625rem; }
+  margin-bottom: 10px; }
   .entry-title a {
     color: #ebeaf5; }
 
 .entry-meta {
-  margin-bottom: 0.625rem; }
+  margin-bottom: 10px; }
   .entry-meta > span {
     display: inline-block;
-    margin-right: 1.5625rem;
+    margin-right: 25px;
     color: #808aa9; }
   .entry-meta a {
     color: #808aa9; }
@@ -9534,10 +9534,10 @@ This is where majority of our work takes place and our UI components are often c
   .entry-meta span:before {
     display: inline-block;
     vertical-align: baseline;
-    font-size: 0.75rem;
-    margin-right: 0.5rem; }
+    font-size: 12px;
+    margin-right: 8px; }
   .entry-meta span.byline:before {
-    margin-right: 0.25rem;
+    margin-right: 4px;
     content: "\f007"; }
   .entry-meta span.posted-on:before {
     content: "\f073"; }
@@ -9546,7 +9546,7 @@ This is where majority of our work takes place and our UI components are often c
 
 .entry-content {
   line-height: 1.7;
-  font-size: 0.9375rem; }
+  font-size: 15px; }
 
 .post-tags .tagcloud {
   font-size: 0;
@@ -9557,47 +9557,47 @@ This is where majority of our work takes place and our UI components are often c
   .post-tags .tagcloud:before {
     content: "\f02c";
     display: inline-block;
-    font-size: 0.875rem;
-    padding-right: 0.625rem;
+    font-size: 14px;
+    padding-right: 10px;
     color: #808aa9; }
   .post-tags .tagcloud li.tag-cloud__item {
     display: inline-block;
     position: relative;
-    font-size: 0.9375rem; }
+    font-size: 15px; }
     .post-tags .tagcloud li.tag-cloud__item a {
       color: #808aa9; }
     .post-tags .tagcloud li.tag-cloud__item a:hover {
       color: #ebeaf5; }
     .post-tags .tagcloud li.tag-cloud__item:after {
       content: ',';
-      margin-right: 0.3125rem; }
+      margin-right: 5px; }
   .post-tags .tagcloud li.tag-cloud__item:last-child:after {
     display: none; }
 
 .post-share {
-  margin-top: 0.9375rem;
-  margin-bottom: 0.9375rem; }
+  margin-top: 15px;
+  margin-bottom: 15px; }
 
 .post-share-buttons a {
-  margin-right: 0.625rem; }
+  margin-right: 10px; }
 
 .post-navigation {
-  margin-top: 3.75rem;
-  margin-bottom: 3.75rem; }
+  margin-top: 60px;
+  margin-bottom: 60px; }
   .post-navigation a {
     display: inline-block;
-    margin-bottom: 0.625rem;
+    margin-bottom: 10px;
     color: #808aa9; }
     .post-navigation a:hover {
       color: #ebeaf5; }
   .post-navigation .nav-previous a:before {
     content: "\f100";
-    font-size: 0.375rem;
-    margin-right: 0.3125rem; }
+    font-size: 6px;
+    margin-right: 5px; }
   .post-navigation .nav-next a:after {
     content: "\f101";
-    font-size: 0.375rem;
-    margin-left: 0.3125rem; }
+    font-size: 6px;
+    margin-left: 5px; }
 
 .sticky {
   display: block; }
@@ -9637,41 +9637,41 @@ This is where majority of our work takes place and our UI components are often c
 .social-links {
   font-size: 0;
   margin-left: 0;
-  margin-top: 1.875rem; }
+  margin-top: 30px; }
   .social-links .social-links__link span {
     display: none; }
   .social-links .social-links__link:hover {
     color: #fff; }
   .social-links .social-links__items {
-    margin-bottom: 0.9375rem; }
+    margin-bottom: 15px; }
     .social-links .social-links__items:not(:last-child) {
-      margin-right: 0.9375rem; }
+      margin-right: 15px; }
     .social-links .social-links__items i {
-      font-size: 0.9375rem; }
+      font-size: 15px; }
   .site-mobile-menu-wrapper .social-links {
-    padding-left: 1.25rem;
+    padding-left: 20px;
     margin-bottom: 0; }
   .tomochain-social .social-links {
     text-align: center;
-    margin-bottom: 1.875rem; }
+    margin-bottom: 30px; }
     .tomochain-social .social-links .social-links__items {
-      margin-right: 0.46875rem;
-      margin-left: 0.46875rem; }
+      margin-right: 7.5px;
+      margin-left: 7.5px; }
       .tomochain-social .social-links .social-links__items:hover .social-links__link:before {
         opacity: 1;
-        width: calc(100% - 0.125rem);
-        height: calc(100% - 0.125rem); }
+        width: calc(100% - 2px);
+        height: calc(100% - 2px); }
       .tomochain-social .social-links .social-links__items:hover .social-links__link:after {
         opacity: 1;
         visibility: visible; }
     .tomochain-social .social-links .social-links__link {
       position: relative;
       display: inline-block;
-      height: 2.5rem;
-      width: 2.5rem;
+      height: 40px;
+      width: 40px;
       border-radius: 100%;
       background-color: rgba(255, 255, 255, 0.1);
-      padding: 0.0625rem; }
+      padding: 1px; }
       .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after {
         content: '';
         display: block;
@@ -9696,14 +9696,14 @@ This is where majority of our work takes place and our UI components are often c
       .tomochain-social .social-links .social-links__link i {
         display: block;
         position: relative;
-        font-size: 1.0625rem;
-        line-height: 2.5rem;
+        font-size: 17px;
+        line-height: 40px;
         z-index: 1;
         color: #fff; }
 
 .tomochain-blog-item {
   text-align: center;
-  margin-bottom: 3.75rem; }
+  margin-bottom: 60px; }
   .tomochain-blog-item:hover .blog-thumbnail a:before,
   .tomochain-blog-item:hover .blog-date {
     opacity: 1;
@@ -9711,7 +9711,7 @@ This is where majority of our work takes place and our UI components are often c
   .tomochain-blog-item .blog-thumbnail {
     position: relative;
     overflow: hidden;
-    margin-bottom: -8.75rem; }
+    margin-bottom: -140px; }
     .tomochain-blog-item .blog-thumbnail a:before {
       content: '';
       position: absolute;
@@ -9719,7 +9719,7 @@ This is where majority of our work takes place and our UI components are often c
       left: 50%;
       height: 100%;
       width: 100%;
-      max-width: 12.5rem;
+      max-width: 200px;
       opacity: 0;
       visibility: hidden;
       background-image: -webkit-gradient(linear, left bottom, left top, from(#1e2242), color-stop(50%, rgba(30, 34, 66, 0)));
@@ -9730,17 +9730,17 @@ This is where majority of our work takes place and our UI components are often c
     .tomochain-blog-item .blog-thumbnail img {
       -webkit-backface-visibility: hidden;
               backface-visibility: hidden;
-      max-width: 12.5rem;
-      -webkit-box-shadow: 0 0.125rem 0.625rem 0.3125rem #1e2242;
-              box-shadow: 0 0.125rem 0.625rem 0.3125rem #1e2242;
-      border-radius: 0.5rem;
+      max-width: 200px;
+      -webkit-box-shadow: 0 2px 10px 5px #1e2242;
+              box-shadow: 0 2px 10px 5px #1e2242;
+      border-radius: 8px;
       margin-left: auto;
       margin-right: auto; }
   .tomochain-blog-item .blog-date {
     position: absolute;
     left: 50%;
     bottom: 0;
-    padding-bottom: 0.625rem;
+    padding-bottom: 10px;
     opacity: 0;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
@@ -9750,15 +9750,15 @@ This is where majority of our work takes place and our UI components are often c
     z-index: 2;
     width: 80%; }
   .tomochain-blog-item .blog-info {
-    padding: 10rem 1.875rem 1.875rem;
-    max-width: 15.625rem;
-    min-height: 14.6875rem;
+    padding: 160px 30px 30px;
+    max-width: 250px;
+    min-height: 235px;
     margin: 0 auto;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(rgba(25, 29, 52, 0)));
     background-image: linear-gradient(-180deg, #2a3452 0%, rgba(25, 29, 52, 0) 100%);
-    border-radius: 0.5rem; }
+    border-radius: 8px; }
   .tomochain-blog-item .blog-title {
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 200; }
     .tomochain-blog-item .blog-title a {
       color: #ebeaf5; }
@@ -9767,13 +9767,13 @@ This is where majority of our work takes place and our UI components are often c
     margin-bottom: 0; }
     .tomochain-blog-item .event-venue:before {
       content: "\f3c5";
-      margin-right: 0.625rem; }
+      margin-right: 10px; }
 
 .see-all-blog {
   display: block;
   text-align: center;
-  font-size: 1.125rem;
-  margin-bottom: 1.875rem; }
+  font-size: 18px;
+  margin-bottom: 30px; }
   .see-all-blog a {
     color: #e68b71; }
     .see-all-blog a:hover {
@@ -9781,30 +9781,30 @@ This is where majority of our work takes place and our UI components are often c
 
 .tomochain-dapp {
   text-align: center;
-  margin-top: 1.875rem;
-  margin-bottom: 3.125rem; }
+  margin-top: 30px;
+  margin-bottom: 50px; }
   .tomochain-dapp__image {
-    margin-bottom: 0.625rem; }
+    margin-bottom: 10px; }
   .tomochain-dapp__name {
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 600;
     color: #66708a;
-    margin-bottom: 0.625rem; }
+    margin-bottom: 10px; }
   .tomochain-dapp__description {
-    margin-bottom: 1.5625rem; }
+    margin-bottom: 25px; }
   .tomochain-dapp__links {
     text-transform: uppercase;
     color: #6b6ced; }
     .tomochain-dapp__links a {
       letter-spacing: 0.05em;
       font-family: Quicksand;
-      font-size: 0.875rem;
+      font-size: 14px;
       font-weight: 700;
-      margin-left: 0.625rem;
-      margin-right: 0.625rem;
+      margin-left: 10px;
+      margin-right: 10px;
       color: #6b6ced; }
     .tomochain-dapp__links a:before {
-      margin-right: 0.625rem; }
+      margin-right: 10px; }
     .tomochain-dapp__links a:hover {
       color: #72b8fd; }
   .tomochain-dapp__run:before {
@@ -9813,23 +9813,23 @@ This is where majority of our work takes place and our UI components are often c
     content: "\f121"; }
 
 .tomochain-dapp--2 .tomochain-dapp__image {
-  border-radius: 0.625rem;
-  padding: 3.125rem 1.875rem;
+  border-radius: 10px;
+  padding: 50px 30px;
   background-image: -webkit-gradient(linear, left top, left bottom, from(#434f74), color-stop(87%, #333e61));
   background-image: linear-gradient(-180deg, #434f74 0%, #333e61 87%);
-  margin-bottom: 1.875rem; }
+  margin-bottom: 30px; }
   .tomochain-dapp--2 .tomochain-dapp__image img {
     max-width: 60%; }
 
 .tomochain-dapp--2 .tomochain-dapp__description {
   text-align: left;
-  line-height: 1.375rem; }
+  line-height: 22px; }
 
 .tomochain-dapp--2 .tomochain-dapp__links {
   text-align: left; }
   .tomochain-dapp--2 .tomochain-dapp__links a {
     margin-left: 0;
-    margin-right: 1.25rem; }
+    margin-right: 20px; }
 
 .tomochain-list {
   list-style: none;
@@ -9839,8 +9839,8 @@ This is where majority of our work takes place and our UI components are often c
 .tomochain-list__item {
   position: relative;
   font-weight: 300;
-  text-indent: 1.25rem;
-  margin-bottom: 0.9375rem;
+  text-indent: 20px;
+  margin-bottom: 15px;
   color: #c5cde3;
   -webkit-font-smoothing: antialiased;
   -webkit-transform: translate3d(0, 0, 0); }
@@ -9848,28 +9848,28 @@ This is where majority of our work takes place and our UI components are often c
     content: '';
     position: absolute; }
   .tomochain-list__item:before {
-    top: 0.625rem;
+    top: 10px;
     left: 0;
-    height: 0.375rem;
-    width: 0.375rem;
+    height: 6px;
+    width: 6px;
     background-color: #2977c2;
-    border-radius: 0.1875rem; }
+    border-radius: 3px; }
   .tomochain-list__item:after {
     opacity: 0.2;
-    top: 0.1875rem;
-    left: -0.25rem;
-    height: 0.9375rem;
-    width: 0.9375rem;
-    -webkit-filter: blur(0.5rem);
-            filter: blur(0.5rem);
+    top: 3px;
+    left: -4px;
+    height: 15px;
+    width: 15px;
+    -webkit-filter: blur(8px);
+            filter: blur(8px);
     border-radius: 100%;
     background-image: radial-gradient(50% 112%, #ffb567 50%, #348099 100%); }
 
 .tomochain-roadmap {
-  margin-bottom: 1.875rem; }
+  margin-bottom: 30px; }
 
 .tomochain-roadmap-item {
-  margin-bottom: 2.8125rem; }
+  margin-bottom: 45px; }
   .tomochain-roadmap-item.slick-slide {
     margin-bottom: 0; }
   .tomochain-roadmap-item.slick-slide:not(:last-child):not(.tomochain-roadmap-item--current) .roadmap-deco:before {
@@ -9877,39 +9877,39 @@ This is where majority of our work takes place and our UI components are often c
     background-color: #3b4669; }
   .tomochain-roadmap-item .roadmap-deco {
     position: relative;
-    height: 5.625rem;
+    height: 90px;
     overflow: hidden; }
     .tomochain-roadmap-item .roadmap-deco:before {
       content: '';
       position: absolute;
-      top: 1.125rem;
-      left: 3.125rem;
+      top: 18px;
+      left: 50px;
       width: 100%;
-      height: 0.25rem;
+      height: 4px;
       background-image: -webkit-gradient(linear, left top, right top, from(#424f73), color-stop(99%, #181631));
       background-image: linear-gradient(90deg, #424f73 0%, #181631 99%); }
     .tomochain-roadmap-item .roadmap-deco:after {
       content: '';
       position: absolute;
-      top: 2.8125rem;
-      left: 1.1875rem;
-      height: 2.8125rem;
-      width: 0.125rem;
+      top: 45px;
+      left: 19px;
+      height: 45px;
+      width: 2px;
       background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(29, 23, 58, 0)), color-stop(99%, #58668f));
       background-image: linear-gradient(0deg, rgba(29, 23, 58, 0) 0%, #58668f 99%); }
   .tomochain-roadmap-item .roadmap-dot {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    height: 2.5rem;
-    width: 2.5rem; }
+    height: 40px;
+    width: 40px; }
     .tomochain-roadmap-item .roadmap-dot:before {
       content: '';
       position: absolute;
       top: 50%;
       left: 0;
-      height: 2.5rem;
-      width: 2.5rem;
+      height: 40px;
+      width: 40px;
       border-radius: 100%;
       -webkit-transform: translateY(-50%);
               transform: translateY(-50%);
@@ -9919,8 +9919,8 @@ This is where majority of our work takes place and our UI components are often c
       position: absolute;
       top: 50%;
       left: 50%;
-      height: 1rem;
-      width: 1rem;
+      height: 16px;
+      width: 16px;
       -webkit-transform: translate(-50%, -50%);
               transform: translate(-50%, -50%);
       border-radius: 100%;
@@ -9935,20 +9935,20 @@ This is where majority of our work takes place and our UI components are often c
                 transform: translate(-50%, -50%);
         background-color: #58668f; }
       .tomochain-roadmap-item .roadmap-dot i:before {
-        height: 1.625rem;
-        width: 1.625rem;
+        height: 26px;
+        width: 26px;
         opacity: .3; }
       .tomochain-roadmap-item .roadmap-dot i:after {
-        height: 2.125rem;
-        width: 2.125rem;
+        height: 34px;
+        width: 34px;
         opacity: 0.2; }
   .tomochain-roadmap-item .roadmap-title {
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 400;
-    margin-top: 1.25rem;
-    margin-bottom: 0.625rem; }
+    margin-top: 20px;
+    margin-bottom: 10px; }
   .tomochain-roadmap-item .roadmap-description {
-    line-height: 1.375rem;
+    line-height: 22px;
     font-weight: 200; }
     .tomochain-roadmap-item .roadmap-description p:first-child,
     .tomochain-roadmap-item .roadmap-description p:last-child {
@@ -9959,13 +9959,13 @@ This is where majority of our work takes place and our UI components are often c
       padding: 0; }
     .tomochain-roadmap-item .roadmap-description li {
       position: relative;
-      text-indent: 0.9375rem;
-      margin-bottom: 0.3125rem; }
+      text-indent: 15px;
+      margin-bottom: 5px; }
     .tomochain-roadmap-item .roadmap-description li:before {
       content: '•';
       position: absolute;
       top: auto;
-      left: -0.9375rem; }
+      left: -15px; }
 
 .tomochain-roadmap-item--current .roadmap-deco:before {
   background-image: -webkit-gradient(linear, left top, right top, from(#e78875), color-stop(80%, #181631));
@@ -9991,14 +9991,14 @@ This is where majority of our work takes place and our UI components are often c
 .tomochain-team__see-all-wrapper {
   display: block;
   text-align: center;
-  margin-top: 1.25rem;
-  margin-bottom: 3.75rem; }
+  margin-top: 20px;
+  margin-bottom: 60px; }
 
 .tomochain-team__see-all, .tomochain-button {
   position: relative;
   display: inline-block;
-  border-radius: 0.5rem;
-  padding: 0.625rem 0.9375rem;
+  border-radius: 8px;
+  padding: 10px 15px;
   background-image: linear-gradient(-123deg, #ffc44d 0%, #f66b50 100%);
   background-size: 400% 400%;
   -webkit-animation: sliderButtonAnimation 3s ease infinite;
@@ -10007,26 +10007,26 @@ This is where majority of our work takes place and our UI components are often c
     color: #d5d9e5;
     position: relative;
     font-family: Quicksand;
-    font-size: 0.875rem;
+    font-size: 14px;
     font-weight: 500;
     text-transform: uppercase;
     z-index: 2; }
   .tomochain-team__see-all:before, .tomochain-button:before {
     content: '';
     position: absolute;
-    top: 0.125rem;
-    right: 0.125rem;
-    height: calc(100% - 0.25rem);
-    width: calc(100% - 0.25rem);
+    top: 2px;
+    right: 2px;
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
     z-index: 1;
-    border-radius: 0.375rem;
+    border-radius: 6px;
     background-color: #161530; }
   .tomochain-team__see-all:hover span, .tomochain-button:hover span {
     color: #272f4b !important; }
   .tomochain-team__see-all:hover:before, .tomochain-button:hover:before {
     width: 0; }
   .tomochain-team__see-all--collapse {
-    min-width: 9.375rem; }
+    min-width: 150px; }
     .tomochain-team__see-all--collapse span {
       font-size: 0; }
     .tomochain-team__see-all--collapse:after {
@@ -10036,41 +10036,41 @@ This is where majority of our work takes place and our UI components are often c
 
 .tomochain-team-member {
   text-align: center;
-  margin: 1.875rem 0 3.4375rem;
-  padding: 0 0.9375rem; }
+  margin: 30px 0 55px;
+  padding: 0 15px; }
   .tomochain-team-member:hover .tomochain-team-member__image img {
     opacity: 0.8;
-    margin-top: -2.1875rem; }
+    margin-top: -35px; }
   .tomochain-team-member:hover .tomochain-team-member__image a:after {
-    top: -2.1875rem; }
+    top: -35px; }
   .tomochain-team-member.empty-box .tomochain-team-member__image,
   .tomochain-team-member.empty-box .tomochain-team-member__info {
     opacity: 0;
     visibility: hidden; }
   .tomochain-team-member__image {
-    border-radius: 0.5rem;
-    max-width: 15.625rem;
-    height: 12.5rem;
+    border-radius: 8px;
+    max-width: 250px;
+    height: 200px;
     background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(rgba(25, 29, 52, 0)));
     background-image: linear-gradient(-180deg, #2a3452 0%, rgba(25, 29, 52, 0) 100%);
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 0.625rem; }
+    margin-bottom: 10px; }
     .tomochain-team-member__image a {
       position: relative;
       display: block;
-      height: 12.5rem;
-      width: 12.5rem;
+      height: 200px;
+      width: 200px;
       margin-left: auto;
       margin-right: auto; }
     .tomochain-team-member__image a:after {
       content: '';
       position: absolute;
-      top: -1.5625rem;
+      top: -25px;
       left: 0;
       height: 100%;
       width: 100%;
-      border-radius: 0.5rem;
+      border-radius: 8px;
       z-index: 1;
       background-color: #202640; }
     .tomochain-team-member__image img {
@@ -10078,14 +10078,14 @@ This is where majority of our work takes place and our UI components are often c
       opacity: .5;
       -webkit-backface-visibility: hidden;
               backface-visibility: hidden;
-      max-width: 12.5rem;
-      border-radius: 0.5rem;
-      margin-top: -1.5625rem;
-      -webkit-box-shadow: 0 0.125rem 0.625rem 0.3125rem #1e2242;
-              box-shadow: 0 0.125rem 0.625rem 0.3125rem #1e2242;
+      max-width: 200px;
+      border-radius: 8px;
+      margin-top: -25px;
+      -webkit-box-shadow: 0 2px 10px 5px #1e2242;
+              box-shadow: 0 2px 10px 5px #1e2242;
       z-index: 2; }
   .tomochain-team-member__name {
-    font-size: 1.125rem; }
+    font-size: 18px; }
     .tomochain-team-member__name a {
       color: #ebeaf5; }
   .tomochain-team-member__role {
@@ -10094,21 +10094,21 @@ This is where majority of our work takes place and our UI components are often c
     margin-bottom: 0; }
 
 .tomochain-team-member--is-advisor:hover .tomochain-team-member__image a:after {
-  top: -1.25rem; }
+  top: -20px; }
 
 .tomochain-team-member--is-advisor:hover .tomochain-team-member__image img {
-  margin-top: -1.25rem; }
+  margin-top: -20px; }
 
 .tomochain-team-member--is-advisor .tomochain-team-member__image {
-  max-width: 15.625rem; }
+  max-width: 250px; }
   .tomochain-team-member--is-advisor .tomochain-team-member__image a {
-    width: 15.625rem;
-    height: 12.5rem; }
+    width: 250px;
+    height: 200px; }
   .tomochain-team-member--is-advisor .tomochain-team-member__image a:after {
-    top: -0.625rem; }
+    top: -10px; }
   .tomochain-team-member--is-advisor .tomochain-team-member__image img {
-    max-width: 15.625rem;
-    margin-top: -0.625rem;
+    max-width: 250px;
+    margin-top: -10px;
     -webkit-box-shadow: none;
             box-shadow: none; }
 
@@ -10125,13 +10125,13 @@ This is where majority of our work takes place and our UI components are often c
 .team-member-info__close {
   cursor: pointer;
   position: absolute;
-  top: 2.1875rem;
-  right: 2.1875rem;
+  top: 35px;
+  right: 35px;
   font-size: 0;
   z-index: 1; }
   .team-member-info__close:before {
     content: '\e902';
-    font-size: 1rem;
+    font-size: 16px;
     color: #424e73; }
   .team-member-info__close:hover:before {
     color: #fff; }
@@ -10139,17 +10139,17 @@ This is where majority of our work takes place and our UI components are often c
 .team-member-info__image {
   text-align: center; }
   .team-member-info__image img {
-    max-width: 12.5rem; }
+    max-width: 200px; }
 
 .team-member-info__basic-info {
   text-align: center;
-  margin-top: 0.625rem; }
+  margin-top: 10px; }
 
 .team-member-info__name {
-  font-size: 1.125rem;
+  font-size: 18px;
   font-weight: 500;
   letter-spacing: .05em;
-  margin-bottom: 0.3125rem;
+  margin-bottom: 5px;
   color: #ebeaf5; }
 
 .team-member-info__role {
@@ -10159,18 +10159,18 @@ This is where majority of our work takes place and our UI components are often c
 .team-member-info__description {
   font-weight: 300;
   letter-spacing: .025em;
-  margin-top: 1.875rem;
-  margin-bottom: 1.5625rem; }
+  margin-top: 30px;
+  margin-bottom: 25px; }
 
 .team-member-info__social a {
   display: inline-block;
-  font-size: 1.0625rem;
-  height: 2.5rem;
-  width: 2.5rem;
-  line-height: 2.5rem;
+  font-size: 17px;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
   border-radius: 100%;
   text-align: center;
-  margin-right: 1.25rem;
+  margin-right: 20px;
   color: #fff;
   background-color: rgba(255, 255, 255, 0.1);
   -webkit-transition: opacity .3s, visibility 0s, background-color .3s;
@@ -10180,7 +10180,7 @@ This is where majority of our work takes place and our UI components are often c
 
 #team-member-info {
   position: fixed;
-  max-width: 45.3125rem;
+  max-width: 725px;
   visibility: hidden;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
@@ -10192,9 +10192,9 @@ This is where majority of our work takes place and our UI components are often c
     visibility: visible; }
   #team-member-info.animate-width {
     background-image: linear-gradient(-176deg, #2c3553 0%, #1b2038 100%);
-    border-radius: 0.375rem; }
+    border-radius: 6px; }
   #team-member-info.add-content .team-member-info__wrapper {
-    padding: 1.25rem; }
+    padding: 20px; }
   #team-member-info.add-content .team-member-info__close {
     opacity: 1;
     visibility: visible; }
@@ -10220,9 +10220,9 @@ This is where majority of our work takes place and our UI components are often c
     visibility: visible; }
 
 .tomochain-testnet-item {
-  padding: 1.5625rem 0;
+  padding: 25px 0;
   border: none !important;
-  border-bottom: 0.0625rem solid #3d4462 !important; }
+  border-bottom: 1px solid #3d4462 !important; }
   .tomochain-testnet-item.slick-slide {
     opacity: .3; }
   .tomochain-testnet-item.slick-slide.slick-current {
@@ -10231,13 +10231,13 @@ This is where majority of our work takes place and our UI components are often c
     display: inline-block;
     vertical-align: middle;
     font-family: Quicksand;
-    font-size: 0.75rem;
+    font-size: 12px;
     letter-spacing: .05em;
     text-transform: uppercase;
-    padding: 0.25rem 0.625rem;
-    margin-right: 0.9375rem;
-    border-radius: 0.375rem;
-    border: 0.0625rem solid #6B6ced;
+    padding: 4px 10px;
+    margin-right: 15px;
+    border-radius: 6px;
+    border: 1px solid #6B6ced;
     color: #eee; }
   .tomochain-testnet-item__status--live {
     border-color: #22d89e; }
@@ -10246,10 +10246,10 @@ This is where majority of our work takes place and our UI components are often c
     vertical-align: middle;
     font-weight: 300;
     color: #eee;
-    width: calc(100% - 7.8125rem); }
+    width: calc(100% - 125px); }
   .tomochain-testnet-item__links {
     float: right;
-    margin-top: 0.3125rem; }
+    margin-top: 5px; }
     .tomochain-testnet-item__links div {
       display: inline-block;
       vertical-align: middle; }
@@ -10257,11 +10257,11 @@ This is where majority of our work takes place and our UI components are often c
       font-size: 0;
       color: #22d89e; }
     .tomochain-testnet-item__links a:before {
-      font-size: 0.9375rem; }
+      font-size: 15px; }
     .tomochain-testnet-item__links a:hover {
       color: #eee; }
   .tomochain-testnet-item__run {
-    margin-right: 1.25rem; }
+    margin-right: 20px; }
     .tomochain-testnet-item__run a:before {
       content: "\f061"; }
   .tomochain-testnet-item__source a:before {
@@ -10277,22 +10277,22 @@ This is where majority of our work takes place and our UI components are often c
 .tomochain-video-item {
   position: relative; }
   .tomochain-video-item img {
-    max-width: 15.625rem !important; }
+    max-width: 250px !important; }
   .tomochain-video-item .video-link {
     opacity: 0;
     visibility: hidden;
     position: absolute;
     top: 50%;
     left: 50%;
-    height: 3.125rem;
-    width: 3.125rem;
+    height: 50px;
+    width: 50px;
     text-align: center;
     font-size: 0;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
     .tomochain-video-item .video-link i {
-      font-size: 1rem;
-      line-height: 3.125rem;
+      font-size: 16px;
+      line-height: 50px;
       height: 100%;
       width: 100%;
       position: absolute;
@@ -10302,14 +10302,14 @@ This is where majority of our work takes place and our UI components are often c
       color: #fff;
       background-image: linear-gradient(133deg, #6658ff 5%, #887ffe 100%); }
   .tomochain-video-item.flipster__item img {
-    border-radius: 0.375rem; }
+    border-radius: 6px; }
   .tomochain-video-item.flipster__item--past, .tomochain-video-item.flipster__item--future {
     opacity: 0 !important; }
   .tomochain-video-item.flipster__item--past-1, .tomochain-video-item.flipster__item--future-1 {
     opacity: .6 !important; }
   .tomochain-video-item.flipster__item--current {
-    -webkit-box-shadow: 0.625rem 0.625rem 1.25rem 0.625rem rgba(28, 33, 57, 0.5);
-            box-shadow: 0.625rem 0.625rem 1.25rem 0.625rem rgba(28, 33, 57, 0.5); }
+    -webkit-box-shadow: 10px 10px 20px 10px rgba(28, 33, 57, 0.5);
+            box-shadow: 10px 10px 20px 10px rgba(28, 33, 57, 0.5); }
     .tomochain-video-item.flipster__item--current .video-link {
       opacity: 1;
       visibility: visible; }
@@ -10327,9 +10327,9 @@ This is where majority of our work takes place and our UI components are often c
     font-weight: 500; }
   .vc_custom_heading .heading-line {
     display: block;
-    width: 2.5rem;
-    height: 0.125rem;
-    margin-bottom: 1.5625rem; }
+    width: 40px;
+    height: 2px;
+    margin-bottom: 25px; }
 
 .widget {
   margin: 0 0 1.5em;
@@ -10338,23 +10338,23 @@ This is where majority of our work takes place and our UI components are often c
     max-width: 100%; }
 
 .widget_tomo_address {
-  margin-bottom: 0.9375rem; }
+  margin-bottom: 15px; }
   .widget_tomo_address .widget-title {
-    font-size: 1.125rem;
+    font-size: 18px;
     font-weight: 400;
     color: #ebeaf5; }
   .widget_tomo_address .addresses {
     font-weight: 300;
     line-height: 1.7;
-    margin: 1.25rem auto; }
+    margin: 20px auto; }
     .widget_tomo_address .addresses .address {
       display: inline-block;
       vertical-align: top;
-      max-width: 20rem;
+      max-width: 320px;
       width: 100%;
-      margin: 1.25rem 0.625rem; }
+      margin: 20px 10px; }
     .widget_tomo_address .addresses .address-title {
-      font-size: 0.875rem;
+      font-size: 14px;
       text-transform: uppercase; }
 
 .widget_tomo_sendgrid {
@@ -10365,7 +10365,7 @@ This is where majority of our work takes place and our UI components are often c
     margin-right: auto;
     margin-bottom: 0; }
     .widget_tomo_sendgrid .tomo-sendgrid-text.show {
-      margin-bottom: 0.9375rem; }
+      margin-bottom: 15px; }
   .widget_tomo_sendgrid #tomo-sendgrid-form {
     position: relative;
     max-width: 90%;
@@ -10375,15 +10375,15 @@ This is where majority of our work takes place and our UI components are often c
       content: url(assets/images/loading-alt.svg); }
     .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after {
       content: "\f12a";
-      font-size: 1rem; }
+      font-size: 16px; }
     .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after {
       content: "\f00d";
-      font-size: 1rem; }
+      font-size: 16px; }
     .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after {
       content: "\f00c";
-      font-size: 1rem; }
+      font-size: 16px; }
   .widget_tomo_sendgrid #tomo-sendgrid-email {
-    padding: 0.5625rem 1.875rem 0.625rem 0.9375rem; }
+    padding: 9px 30px 10px 15px; }
   .widget_tomo_sendgrid #tomo-sendgrid-button {
     font-size: 0;
     border: none;
@@ -10394,19 +10394,19 @@ This is where majority of our work takes place and our UI components are often c
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     height: 100%;
-    width: 1.875rem;
+    width: 30px;
     background-color: transparent; }
   .widget_tomo_sendgrid #tomo-sendgrid-button:after {
     content: '\e901';
-    font-size: 0.5rem;
+    font-size: 8px;
     color: #6a6beb; }
 
 .widget_tomo_recent_posts .recent-post {
   display: table;
   padding-top: 0;
-  padding-bottom: 1.25rem;
-  margin-bottom: 1.25rem;
-  border-bottom: 0.0625rem solid #2a3452; }
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+  border-bottom: 1px solid #2a3452; }
   .widget_tomo_recent_posts .recent-post:last-of-type {
     padding-bottom: 0;
     margin-bottom: 0;
@@ -10415,20 +10415,20 @@ This is where majority of our work takes place and our UI components are often c
 .widget_tomo_recent_posts .recent-post__thumb {
   display: table-cell;
   vertical-align: top;
-  width: 6.25rem;
-  padding-right: 1.25rem; }
+  width: 100px;
+  padding-right: 20px; }
 
 .widget_tomo_recent_posts .recent-post__info {
   display: table-cell;
   vertical-align: top; }
   .widget_tomo_recent_posts .recent-post__info p {
-    font-size: 0.9375rem;
+    font-size: 15px;
     line-height: 1.6;
-    max-width: 9.375rem;
-    margin-top: -0.3125rem;
-    margin-bottom: 0.3125rem; }
+    max-width: 150px;
+    margin-top: -5px;
+    margin-bottom: 5px; }
   .widget_tomo_recent_posts .recent-post__info .post-meta {
-    font-size: 0.8125rem;
+    font-size: 13px;
     color: #808aa9; }
 
 body.error404 {
@@ -10456,10 +10456,10 @@ body.error404 {
   text-align: center; }
   .error-404 img {
     max-width: 100%;
-    margin-bottom: 3.125rem; }
+    margin-bottom: 50px; }
   .error-404 p {
     text-transform: uppercase;
-    font-size: 1.75rem;
+    font-size: 28px;
     font-weight: 600;
     color: #ebeaf5; }
 
@@ -10502,7 +10502,7 @@ body.info-opened:after {
   font-size: 0;
   text-align: center;
   height: 100%;
-  width: 2.5rem;
+  width: 40px;
   z-index: 1;
   border: none;
   background-color: transparent;
@@ -10516,17 +10516,17 @@ body.info-opened:after {
     position: absolute;
     top: 50%;
     left: 50%;
-    font-size: 1.875rem;
-    line-height: 2.5rem;
+    font-size: 30px;
+    line-height: 40px;
     display: inline-block;
     -webkit-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%); }
   .slick-arrow.slick-prev {
-    left: -1.25rem; }
+    left: -20px; }
     .slick-arrow.slick-prev:before {
       content: '\e903'; }
   .slick-arrow.slick-next {
-    right: -1.25rem; }
+    right: -20px; }
     .slick-arrow.slick-next:before {
       content: '\e904'; }
   .slick-arrow.slick-disabled {
@@ -10541,15 +10541,15 @@ body.info-opened:after {
   display: block;
   text-align: center;
   padding: 0;
-  margin: 1.875rem 0;
+  margin: 30px 0;
   width: 100%; }
   .slick-dots li {
     position: relative;
     display: inline-block;
     vertical-align: middle;
-    height: 0.625rem;
-    width: 0.625rem;
-    margin-right: 0.625rem;
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
     margin-left: 0;
     line-height: 1.5;
     height: initial;
@@ -10566,8 +10566,8 @@ body.info-opened:after {
       outline: 0;
       line-height: 0;
       border: 0;
-      width: 0.625rem;
-      height: 0.625rem;
+      width: 10px;
+      height: 10px;
       color: transparent;
       opacity: .2;
       padding: 0;
@@ -10583,7 +10583,7 @@ body.info-opened:after {
       border-radius: 100%;
       opacity: 1;
       margin: 0;
-      padding: 0.0625rem;
+      padding: 1px;
       background-image: -webkit-gradient(linear, left top, left bottom, from(#f78d7a), to(#fac15e));
       background-image: linear-gradient(to bottom, #f78d7a 0%, #fac15e 100%); }
     .slick-dots li.slick-active button:after {
@@ -10624,34 +10624,34 @@ body.info-opened:after {
   .slider-button:before {
     content: '';
     position: absolute;
-    top: 0.125rem;
-    right: 0.125rem;
-    height: calc(100% - 0.25rem);
-    width: calc(100% - 0.25rem);
+    top: 2px;
+    right: 2px;
+    height: calc(100% - 4px);
+    width: calc(100% - 4px);
     z-index: -1;
-    border-radius: 0.375rem;
+    border-radius: 6px;
     background-color: #272f4b; }
   .slider-button:hover {
     color: #272f4b !important; }
   .slider-button:hover:before {
     width: 0; }
   .slider-button.slider-button-2:before {
-    border-radius: 0.5rem;
+    border-radius: 8px;
     background-color: #0d0c27 !important; }
 
 .wpb_revslider_element.homepage-slider {
-  min-height: 43.4375rem; }
+  min-height: 695px; }
 
 #posv-row {
   letter-spacing: 0.025em;
-  margin-bottom: 3.75rem; }
+  margin-bottom: 60px; }
 
 #posv-row .wpb_column:first-child {
   position: relative;
   z-index: 2; }
 
 #tps-column {
-  margin-bottom: 3.75rem; }
+  margin-bottom: 60px; }
 
 .vc_separator {
   margin-bottom: 0 !important; }
@@ -10659,15 +10659,15 @@ body.info-opened:after {
     border: none !important;
     background-color: transparent !important; }
   .vc_separator .vc_sep_holder {
-    height: 0.125rem !important; }
+    height: 2px !important; }
   .vc_separator .vc_sep_holder_l {
-    height: 0.125rem;
+    height: 2px;
     background-image: -webkit-gradient(linear, left top, right top, from(#181631), color-stop(51%, #fcb168), to(#181c34));
     background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%); }
 
 #double-validation-row {
-  padding-top: 3.75rem !important;
-  padding-bottom: 3.75rem !important; }
+  padding-top: 60px !important;
+  padding-bottom: 60px !important; }
 
 #double-validation-column .vc_column-inner {
   padding-right: 0; }
@@ -10676,8 +10676,8 @@ body.info-opened:after {
   letter-spacing: .05em; }
 
 #testnet-row {
-  padding-top: 3.125rem;
-  padding-bottom: 1.875rem; }
+  padding-top: 50px;
+  padding-bottom: 30px; }
 
 body.about-us-page .site-header {
   position: fixed;
@@ -10690,34 +10690,34 @@ body.about-us-page article.page > .entry-content {
   margin-top: 0; }
 
 body.about-us-page.admin-bar .site-header {
-  top: 2rem; }
+  top: 32px; }
 
 #about-us-row {
-  padding-top: 8.4375rem;
-  padding-bottom: 6.25rem; }
+  padding-top: 135px;
+  padding-bottom: 100px; }
 
 #dapps-row {
   position: relative;
-  padding-top: 6.25rem; }
+  padding-top: 100px; }
   #dapps-row:before {
     content: '';
     position: absolute;
-    top: 2.5rem;
-    left: 6.25rem;
-    height: 0.625rem;
-    width: 0.625rem;
+    top: 40px;
+    left: 100px;
+    height: 10px;
+    width: 10px;
     background-color: #43c7df;
-    border-radius: 0.1875rem;
+    border-radius: 3px;
     -webkit-animation: glowingColor1 3s infinite, translate1 10s linear infinite;
             animation: glowingColor1 3s infinite, translate1 10s linear infinite; }
   #dapps-row:after {
     position: absolute;
-    top: 3.125rem;
-    left: 1.875rem;
-    height: 0.25rem;
-    width: 0.25rem;
+    top: 50px;
+    left: 30px;
+    height: 4px;
+    width: 4px;
     background: #ff7db6;
-    border-radius: 0.1875rem;
+    border-radius: 3px;
     -webkit-animation: glowingColor2 4s infinite, translate2 15s linear infinite;
             animation: glowingColor2 4s infinite, translate2 15s linear infinite; }
   #dapps-row > .vc_column_container {
@@ -10725,23 +10725,23 @@ body.about-us-page.admin-bar .site-header {
   #dapps-row > .vc_column_container:before {
     content: '';
     position: absolute;
-    top: 1.875rem;
+    top: 30px;
     right: 30%;
-    height: 0.625rem;
-    width: 0.625rem;
+    height: 10px;
+    width: 10px;
     background-image: linear-gradient(215deg, #4fb9ff 0%, #046ce0 100%);
-    border-radius: 0.125rem;
+    border-radius: 2px;
     -webkit-animation: glowingColor8 3s infinite, translate3 20s linear infinite;
             animation: glowingColor8 3s infinite, translate3 20s linear infinite; }
   #dapps-row > .vc_column_container:after {
     content: '';
     position: absolute;
-    top: 2.5rem;
-    right: 6.25rem;
-    height: 0.375rem;
-    width: 0.375rem;
+    top: 40px;
+    right: 100px;
+    height: 6px;
+    width: 6px;
     background: #ffab6e;
-    border-radius: 0.1875rem;
+    border-radius: 3px;
     -webkit-animation: glowingColor3 3s infinite, translate4 20s linear infinite;
             animation: glowingColor3 3s infinite, translate4 20s linear infinite; }
 
@@ -10749,25 +10749,25 @@ body.about-us-page.admin-bar .site-header {
   display: none; }
 
 .tomochain-list.remove-p pre {
-  font-size: 1rem;
+  font-size: 16px;
   display: inline-block;
   vertical-align: middle;
   line-height: 1.7;
   background-color: transparent;
   padding: 0;
-  margin-top: -0.0625rem;
-  margin-left: -0.625rem;
+  margin-top: -1px;
+  margin-left: -10px;
   margin-bottom: 0; }
 
 .tomochain-button {
-  min-width: 11.875rem; }
+  min-width: 190px; }
 
 body.page-template-revslider-page-template {
   height: 100vh;
   overflow: hidden;
   background-image: linear-gradient(-225deg, #272F4B 0%, #1A1F36 42%, #15152D 82%, #211841 100%) !important; }
   body.page-template-revslider-page-template > div {
-    padding: 0 0.9375rem; }
+    padding: 0 15px; }
   body.page-template-revslider-page-template > div,
   body.page-template-revslider-page-template #subscribe-row {
     height: 100%; }
@@ -10785,11 +10785,11 @@ body.page-template-revslider-page-template {
     text-align: center; }
   body.page-template-revslider-page-template .vc_custom_heading {
     margin: 0 auto;
-    max-width: 38.75rem; }
+    max-width: 620px; }
   body.page-template-revslider-page-template #copyright-bottom {
     position: absolute;
     left: 50%;
-    bottom: 3.75rem;
+    bottom: 60px;
     -webkit-transform: translateX(-50%);
             transform: translateX(-50%); }
 
@@ -10799,7 +10799,7 @@ body.page-template-revslider-page-template {
 
 .wpim-marker .wpim-infowindow {
   color: #fff;
-  border-radius: 0.375rem;
+  border-radius: 6px;
   background-image: -webkit-gradient(linear, left bottom, left top, from(#2a3452), to(#191d34));
   background-image: linear-gradient(0deg, #2a3452 0%, #191d34 100%); }
   .wpim-marker .wpim-infowindow p {
@@ -10822,7 +10822,7 @@ body.page-template-revslider-page-template {
 
 .wpim-marker .wpim-infowindow__close:before,
 .wpim-marker .wpim-infowindow__close:after {
-  height: 0.125rem;
+  height: 2px;
   background-color: #ebeaf5; }
 
 .wpim-marker .wpim-infowindow__inner {
@@ -10848,26 +10848,26 @@ body.mainnet-page {
     body.mainnet-page .tomochain-videos:before {
       content: '';
       position: absolute;
-      top: -0.75rem;
-      bottom: -0.75rem;
-      left: -0.75rem;
-      right: -0.75rem;
+      top: -12px;
+      bottom: -12px;
+      left: -12px;
+      right: -12px;
       opacity: .1;
-      border-radius: 0.5rem;
+      border-radius: 8px;
       background-color: #fff; }
     body.mainnet-page .tomochain-videos:after {
       content: '';
       position: absolute;
-      top: -1.75rem;
-      bottom: -1.75rem;
-      left: -1.75rem;
-      right: -1.75rem;
-      border-radius: 0.5rem;
+      top: -28px;
+      bottom: -28px;
+      left: -28px;
+      right: -28px;
+      border-radius: 8px;
       z-index: -1;
       background-image: -webkit-gradient(linear, left top, left bottom, from(#2a3452), to(#191d34));
       background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%); }
     body.mainnet-page .tomochain-videos img {
-      border-radius: 0.375rem;
+      border-radius: 6px;
       max-width: 100% !important; }
     body.mainnet-page .tomochain-videos .video-link {
       opacity: 1;
@@ -10876,10 +10876,10 @@ body.mainnet-page {
       body.mainnet-page .tomochain-videos .video-link:before {
         content: '';
         position: absolute;
-        top: -0.625rem;
-        bottom: -0.625rem;
-        left: -0.625rem;
-        right: -0.625rem;
+        top: -10px;
+        bottom: -10px;
+        left: -10px;
+        right: -10px;
         opacity: .2;
         border-radius: 100%;
         background-color: #fff;
@@ -10889,10 +10889,10 @@ body.mainnet-page {
       body.mainnet-page .tomochain-videos .video-link:after {
         content: '';
         position: absolute;
-        top: -1.25rem;
-        bottom: -1.25rem;
-        left: -1.25rem;
-        right: -1.25rem;
+        top: -20px;
+        bottom: -20px;
+        left: -20px;
+        right: -20px;
         opacity: .2;
         border-radius: 100%;
         background-color: #fff;
@@ -10902,25 +10902,25 @@ body.mainnet-page {
       body.mainnet-page .tomochain-videos .video-link i {
         background-image: linear-gradient(133deg, #6658FF 5%, #887FFE 100%); }
       body.mainnet-page .tomochain-videos .video-link:hover:before {
-        top: -1.25rem;
-        bottom: -1.25rem;
-        left: -1.25rem;
-        right: -1.25rem;
+        top: -20px;
+        bottom: -20px;
+        left: -20px;
+        right: -20px;
         opacity: 0; }
       body.mainnet-page .tomochain-videos .video-link:hover:after {
-        top: -2.5rem;
-        bottom: -2.5rem;
-        left: -2.5rem;
-        right: -2.5rem;
+        top: -40px;
+        bottom: -40px;
+        left: -40px;
+        right: -40px;
         opacity: 0; }
   body.mainnet-page #message-row {
-    margin-top: 1.875rem;
-    margin-bottom: 6.25rem; }
+    margin-top: 30px;
+    margin-bottom: 100px; }
     body.mainnet-page #message-row .tomochain-videos {
-      margin-top: 3.125rem; }
+      margin-top: 50px; }
   body.mainnet-page #coming-row .wpb_text_column {
-    font-size: 1.125rem;
-    line-height: 2.5rem;
+    font-size: 18px;
+    line-height: 40px;
     color: #8b96b5; }
     body.mainnet-page #coming-row .wpb_text_column a {
       color: #c67869; }
@@ -10930,9 +10930,9 @@ body.mainnet-page {
     display: inline-block; }
     body.mainnet-page #coming-row #lets-rock-it:after {
       content: '\e901';
-      font-size: 0.5rem;
+      font-size: 8px;
       vertical-align: middle;
-      margin-left: 0.9375rem;
+      margin-left: 15px;
       -webkit-transition: all .5s ease;
       transition: all .5s ease; }
     body.mainnet-page #coming-row #lets-rock-it:hover {
@@ -10942,36 +10942,36 @@ body.mainnet-page {
   body.mainnet-page #coming-image-column .vc_column-inner {
     padding-right: 0; }
   body.mainnet-page #meetup-row {
-    margin-top: 9.375rem; }
+    margin-top: 150px; }
   body.mainnet-page #journey-row {
     position: relative;
     overflow: hidden;
-    padding-bottom: 1rem;
-    margin-top: 5rem;
-    margin-bottom: 6.25rem; }
+    padding-bottom: 16px;
+    margin-top: 80px;
+    margin-bottom: 100px; }
   body.mainnet-page .station-row {
-    margin-bottom: 1.5625rem; }
+    margin-bottom: 25px; }
   body.mainnet-page .station-col {
-    padding-left: 3.4375rem; }
+    padding-left: 55px; }
     body.mainnet-page .station-col .wpb_single_image {
-      margin-bottom: 0.9375rem; }
+      margin-bottom: 15px; }
     body.mainnet-page .station-col .vc_custom_heading {
-      margin-bottom: 0.75rem; }
+      margin-bottom: 12px; }
     body.mainnet-page .station-col ul {
       list-style-type: none;
       padding: 0;
       margin: 0; }
     body.mainnet-page .station-col li {
-      font-size: 0.875rem;
-      line-height: 1.375rem; }
+      font-size: 14px;
+      line-height: 22px; }
     body.mainnet-page .station-col li:before {
       content: '•';
       display: inline-block;
       vertical-align: middle;
-      margin-right: 0.3125rem; }
+      margin-right: 5px; }
   body.mainnet-page #train-column {
     position: absolute;
-    top: -3.125rem;
+    top: -50px;
     left: 0;
     width: auto; }
     body.mainnet-page #train-column .vc_column-inner:before,
@@ -10985,49 +10985,49 @@ body.mainnet-page {
       content: '';
       display: block;
       position: absolute;
-      bottom: -1.5625rem;
-      left: -0.8125rem;
-      height: 0;
-      width: 0;
-      border: 2.1875rem solid #fff;
+      bottom: -25px;
+      left: -13px;
+      height: 0px;
+      width: 0px;
+      border: 35px solid #fff;
       border-radius: 100%;
       opacity: 0;
       -webkit-transform: scale(0.15);
               transform: scale(0.15);
-      -webkit-filter: blur(0.875rem);
-              filter: blur(0.875rem); }
+      -webkit-filter: blur(3px);
+              filter: blur(3px); }
     body.mainnet-page #train-column .vc_column-inner:before {
       -webkit-animation: smokeL 10s 0s infinite;
               animation: smokeL 10s 0s infinite; }
     body.mainnet-page #train-column .vc_column-inner:after {
-      -webkit-animation: smokeR 10s 1s infinite;
-              animation: smokeR 10s 1s infinite; }
+      -webkit-animation: smokeL 10s 1s infinite;
+              animation: smokeL 10s 1s infinite; }
     body.mainnet-page #train-column .wpb_wrapper:before {
       -webkit-animation: smokeL 10s 2s infinite;
               animation: smokeL 10s 2s infinite; }
     body.mainnet-page #train-column .wpb_wrapper:after {
-      -webkit-animation: smokeR 10s 3s infinite;
-              animation: smokeR 10s 3s infinite; }
+      -webkit-animation: smokeL 10s 3s infinite;
+              animation: smokeL 10s 3s infinite; }
     body.mainnet-page #train-column #train-image:before {
       -webkit-animation: smokeL 10s 4s infinite;
               animation: smokeL 10s 4s infinite; }
     body.mainnet-page #train-column #train-image:after {
-      -webkit-animation: smokeR 10s 5s infinite;
-              animation: smokeR 10s 5s infinite; }
+      -webkit-animation: smokeL 10s 5s infinite;
+              animation: smokeL 10s 5s infinite; }
     body.mainnet-page #train-column .wpb_wrapper.vc_figure:before {
       -webkit-animation: smokeL 10s 6s infinite;
               animation: smokeL 10s 6s infinite; }
     body.mainnet-page #train-column .wpb_wrapper.vc_figure:after {
-      -webkit-animation: smokeR 10s 7s infinite;
-              animation: smokeR 10s 7s infinite; }
+      -webkit-animation: smokeL 10s 7s infinite;
+              animation: smokeL 10s 7s infinite; }
     body.mainnet-page #train-column .vc_single_image-wrapper:before {
       -webkit-animation: smokeL 10s 8s infinite;
               animation: smokeL 10s 8s infinite; }
     body.mainnet-page #train-column .vc_single_image-wrapper:after {
-      -webkit-animation: smokeR 10s 9s infinite;
-              animation: smokeR 10s 9s infinite; }
+      -webkit-animation: smokeL 10s 9s infinite;
+              animation: smokeL 10s 9s infinite; }
   body.mainnet-page #train-image {
-    margin-top: -72.5rem;
+    margin-top: -1160px;
     margin-bottom: 0;
     -webkit-transition: all 1.5s cubic-bezier(0.17, 0.64, 0.37, 0.85);
     transition: all 1.5s cubic-bezier(0.17, 0.64, 0.37, 0.85); }
@@ -11037,14 +11037,14 @@ body.mainnet-page {
 .nice-select {
   font-family: 'Quicksand';
   text-transform: lowercase;
-  padding-right: 0.9375rem;
+  padding-right: 15px;
   background-color: transparent;
   border: none;
   border-radius: 0;
-  height: 2.5rem; }
+  height: 40px; }
   .nice-select:after {
     content: '\e900';
-    font-size: 0.3125rem;
+    font-size: 5px;
     position: absolute;
     top: 50%;
     left: 0;
@@ -11062,7 +11062,7 @@ body.mainnet-page {
     border-radius: 0;
     top: 120%;
     width: 100%;
-    min-width: 7.5rem;
+    min-width: 120px;
     -webkit-transition-duration: .5s;
             transition-duration: .5s;
     z-index: 999;
@@ -11083,18 +11083,18 @@ body.mainnet-page {
   display: block;
   min-height: 0;
   line-height: initial;
-  padding: 0.3125rem 0.9375rem;
+  padding: 5px 15px;
   color: #434f73; }
   .nice-select .option:hover, .nice-select .option.focus, .nice-select .option.selected.focus {
     color: #dee2ee;
     background-color: transparent; }
   .nice-select .option:hover {
-    -webkit-transform: translate(0.3125rem);
-            transform: translate(0.3125rem); }
+    -webkit-transform: translate(5px);
+            transform: translate(5px); }
   .nice-select .option.selected {
     position: relative;
     font-weight: 400; }
-  @media (min-width: 36rem) {
+  @media (min-width: 576px) {
   .d-sm-none {
     display: none !important; }
   .d-sm-inline {
@@ -11434,7 +11434,7 @@ body.mainnet-page {
   .text-sm-center {
     text-align: center !important; }
     .container {
-      max-width: 33.75rem; }
+      max-width: 540px; }
   .col-sm {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -11607,46 +11607,49 @@ body.mainnet-page {
   .tomochain-roadmap {
     opacity: 0;
     visibility: hidden;
-    margin-left: -0.9375rem;
-    margin-right: -0.9375rem; }
+    margin-left: -15px;
+    margin-right: -15px; }
     .tomochain-roadmap.slick-initialized {
       opacity: 1;
       visibility: visible; }
   .tomochain-roadmap-item {
-    padding: 0 0.9375rem; }
+    padding: 0 15px; }
       #team-member-info.add-content .team-member-info__wrapper {
-        padding: 1.875rem; }
+        padding: 30px; }
       .tomochain-video-item img {
-        max-width: 25rem !important; }
+        max-width: 400px !important; }
       .tomochain-video-item .video-link {
-        height: 4.375rem;
-        width: 4.375rem; }
+        height: 70px;
+        width: 70px; }
         .tomochain-video-item .video-link i {
-          font-size: 1.375rem;
-          line-height: 4.375rem; }
+          font-size: 22px;
+          line-height: 70px; }
     .error-404 img {
-      max-width: 18.75rem; }
+      max-width: 300px; }
     #about-us-row {
-      padding-bottom: 12.5rem; }
+      padding-bottom: 200px; }
     #dapps-row:before {
       left: auto;
       right: 50%; }
     #dapps-row:after {
       left: auto;
       right: 40%; } }
-  @media (min-width: 36rem) and (max-width: 47.99875rem) {
+  @media (min-width: 576px) and (max-width: 767.98px) {
   .tomochain-lottie.dapp-image {
     text-align: center; }
     .tomochain-lottie.dapp-image svg {
-      max-width: 25rem; } }
-  @media (min-width: 48rem) and (max-width: 61.99875rem) {
+      max-width: 400px; } }
+  @media (min-width: 768px) and (max-width: 991.98px) {
     #testnet-row .tomochain-lottie {
       text-align: center; }
       #testnet-row .tomochain-lottie svg {
-        max-width: 26.25rem; }
+        max-width: 420px; }
       body.mainnet-page #message-row #message-title {
-        font-size: 1.75rem !important; } }
-  @media (min-width: 48rem) {
+        font-size: 28px !important; } }
+  @media (min-width: 768px) and (max-width: 1199.98px) {
+        .widget_tomo_address .addresses .address {
+          max-width: calc(33.33% - 20px); } }
+  @media (min-width: 768px) {
   .d-md-none {
     display: none !important; }
   .d-md-inline {
@@ -11986,7 +11989,7 @@ body.mainnet-page {
   .text-md-center {
     text-align: center !important; }
     .container {
-      max-width: 45rem; }
+      max-width: 720px; }
   .col-md {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -12152,7 +12155,7 @@ body.mainnet-page {
     margin-right: auto;
     max-width: 80%; }
     .entry-title {
-      font-size: 1.5rem; }
+      font-size: 24px; }
   .tomochain-blog .blog-carousel {
     opacity: 0;
     visibility: hidden; }
@@ -12162,15 +12165,15 @@ body.mainnet-page {
       .tomochain-dapp__description {
         text-align: justify; }
       .tomochain-dapp__links a {
-        margin-left: 1.25rem;
-        margin-right: 1.25rem; }
+        margin-left: 20px;
+        margin-right: 20px; }
   .tomochain-dapp--2 {
     display: grid;
     grid-template-columns: 30% 70%;
-    margin-bottom: 5rem; }
+    margin-bottom: 80px; }
     .tomochain-dapp--2 .tomochain-dapp__image {
       position: relative;
-      padding: 1.25rem;
+      padding: 20px;
       margin-bottom: 0; }
       .tomochain-dapp--2 .tomochain-dapp__image img {
         position: absolute;
@@ -12179,7 +12182,7 @@ body.mainnet-page {
         -webkit-transform: translate(-50%, -50%);
                 transform: translate(-50%, -50%); }
     .tomochain-dapp--2 .tomochain-dapp__info {
-      padding-left: 1.875rem; }
+      padding-left: 30px; }
     .tomochain-dapp--2 .tomochain-dapp__description {
       text-align: justify; }
     html[lang="ja"] .tomochain-dapp--2 {
@@ -12191,40 +12194,40 @@ body.mainnet-page {
     position: absolute;
     top: 0;
     left: 0;
-    max-width: 5rem; }
+    max-width: 80px; }
   .team-member-info__basic-info {
     text-align: left; }
   .team-member-info__name, .team-member-info__role {
-    margin-left: 6.25rem; }
+    margin-left: 100px; }
   .team-member-info__description {
-    margin-top: 3.125rem; }
+    margin-top: 50px; }
   html[lang="ja"] .team-member-info__description {
-    margin-top: 1.875rem; }
+    margin-top: 30px; }
     #team-member-info.add-content {
       height: auto !important; }
       #team-member-info.add-content .team-member-info__wrapper {
-        padding: 2.1875rem 2.1875rem 2.8125rem 2.1875rem; }
+        padding: 35px 35px 45px 35px; }
         html[lang="ja"] #team-member-info.add-content .team-member-info__wrapper {
-          padding-left: 1.875rem;
-          padding-right: 1.875rem; }
+          padding-left: 30px;
+          padding-right: 30px; }
       .tomochain-testnet-item__status {
-        margin-right: 1.5625rem; }
+        margin-right: 25px; }
       .tomochain-testnet-item__title {
-        width: calc(100% - 8.75rem); }
+        width: calc(100% - 140px); }
       .tomochain-video-item img {
-        max-width: 31.25rem !important; }
+        max-width: 500px !important; }
       .tomochain-video-item .video-link {
-        height: 5rem;
-        width: 5rem; }
+        height: 80px;
+        width: 80px; }
         .tomochain-video-item .video-link i {
-          font-size: 1.5rem;
-          line-height: 5rem; }
+          font-size: 24px;
+          line-height: 80px; }
     .error-404 img {
-      max-width: 25rem; }
+      max-width: 400px; }
     .slick-arrow.slick-prev {
-      left: -1.875rem; }
+      left: -30px; }
     .slick-arrow.slick-next {
-      right: -1.875rem; }
+      right: -30px; }
     #posv-row {
       margin-bottom: 0; }
   #posv-img {
@@ -12233,68 +12236,65 @@ body.mainnet-page {
     #posv-img:before {
       content: '';
       position: absolute;
-      top: -1.875rem;
-      left: -1.875rem;
+      top: -30px;
+      left: -30px;
       width: 100%;
-      height: 18.75rem;
+      height: 300px;
       background-image: linear-gradient(-176deg, #2c3553 0%, rgba(27, 32, 56, 0) 100%);
-      -webkit-box-shadow: 0.625rem 0.625rem 1.25rem 0.625rem #151a2d;
-              box-shadow: 0.625rem 0.625rem 1.25rem 0.625rem #151a2d;
-      border-radius: 0.375rem;
+      -webkit-box-shadow: 10px 10px 20px 10px #151a2d;
+              box-shadow: 10px 10px 20px 10px #151a2d;
+      border-radius: 6px;
       z-index: -1; }
     #double-validation-row {
-      max-height: 53.125rem;
+      max-height: 850px;
       padding-top: 0 !important;
       padding-bottom: 0 !important;
       padding-right: 0 !important; }
     #about-us-row {
-      padding-bottom: 15.625rem; }
+      padding-bottom: 250px; }
       #about-us-row #about-us-text-left,
       #about-us-row #about-us-text-right {
-        max-width: 18.75rem; }
+        max-width: 300px; }
       #about-us-row #about-us-text-left {
         position: relative; }
       #about-us-row #about-us-text-left:after {
         content: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAACBCAYAAAABpdBRAAAABGdBTUEAALGPC/xhBQAAAVNJREFUKBUtUEtOw0AM9TxPElCkblhzpN6pd+ptOAArugBUqUnGHt6bsrEcv+/ELpcLcL1+Om63D8fp9O6I9bFge5hjqavj2O+OdZ0qetgMx+woi1egdEfPnIGpOiZDRZmcqHGgYIZ5qahGkYnsqJRVTOjdKsgiGdRSuMBQpOUNgkohpU5YgE7ARqLxJpgEn6ml0hgHL0NWdWMk02k5bpzyXYaGtwEo6OkihYIok4uKg8X5QRcTb5SUjMuwV7WRNm58TGQeyOwN1ntwS43YtCX/EIE0Aj2ykRy7nj8ovHXdInmTrMuAY/BICZLNiigtaD9kVJC7I/tQ6NaDo+X21OaoES312wMtBCjcVIN1Fc7NkrksNBqEfkQjubGLFaKNPKoaTfmZff8H+sG0w+jnAkgjsMvF+d7cuBU39Tvo19hvfuHYtX3dvze8/uyBt7ffwPl8jj/65vCDCrqFogAAAABJRU5ErkJggg==");
         position: absolute;
         top: 50%;
-        right: -1.5625rem;
+        right: -25px;
         -webkit-transform: translateY(-50%);
                 transform: translateY(-50%); }
   .exchanges-inner-row {
-    margin-bottom: 3.125rem; }
+    margin-bottom: 50px; }
         body.mainnet-page .tomochain-videos .video-link {
-          height: 4.8125rem;
-          width: 4.8125rem; }
+          height: 77px;
+          width: 77px; }
           body.mainnet-page .tomochain-videos .video-link i {
-            font-size: 1.5rem;
-            line-height: 4.8125rem; }
+            font-size: 24px;
+            line-height: 77px; }
       body.mainnet-page #message-row {
-        margin-top: 3.125rem;
-        margin-bottom: 9.375rem; }
+        margin-top: 50px;
+        margin-bottom: 150px; }
         body.mainnet-page #message-row .tomochain-videos {
           margin-top: 0; }
       body.mainnet-page #meetup-row {
-        margin-top: 15.625rem; }
+        margin-top: 250px; }
       body.mainnet-page .station-col {
         padding-left: 0; }
     body.mainnet-page .station-col--left {
-      padding-left: 5.625rem; }
+      padding-left: 90px; }
     body.mainnet-page .station-col--right {
       text-align: right; }
       body.mainnet-page .station-col--right .wpb_single_image,
       body.mainnet-page .station-col--right .vc_custom_heading {
         text-align: right !important; }
     body.mainnet-page .station-col--right {
-      padding-right: 5.625rem; }
+      padding-right: 90px; }
       body.mainnet-page #train-column {
         left: 50%;
         -webkit-transform: translateX(-50%);
                 transform: translateX(-50%); } }
-  @media (min-width: 48rem) and (max-width: 74.99875rem) {
-        .widget_tomo_address .addresses .address {
-          max-width: calc(33.33% - 1.25rem); } }
-  @media (min-width: 62rem) {
+  @media (min-width: 992px) {
   .d-lg-none {
     display: none !important; }
   .d-lg-inline {
@@ -12649,9 +12649,9 @@ body.mainnet-page {
     input[type="datetime-local"],
     input[type="color"],
     textarea {
-      padding: 1.125rem 2.5rem; }
+      padding: 18px 40px; }
     .container {
-      max-width: 60rem; }
+      max-width: 960px; }
   .col-lg {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -12814,7 +12814,7 @@ body.mainnet-page {
     .site-header .site-branding {
       width: 10%; }
       .site-header .site-branding img {
-        max-width: 3.125rem; }
+        max-width: 50px; }
     .site-header .header-tools {
       width: 10%; }
     .tomochain-image-carousel .slick-slide {
@@ -12826,89 +12826,242 @@ body.mainnet-page {
     .tomochain-dapp--2 .tomochain-dapp__image {
       -ms-flex-item-align: start;
           align-self: start;
-      min-height: 12.5rem; }
+      min-height: 200px; }
   .tomochain-team__wrapper {
     grid-template-columns: 25% 25% 25% 25%; }
       .tomochain-testnet-item__title {
-        width: calc(100% - 11.25rem); }
+        width: calc(100% - 180px); }
       .tomochain-testnet-item__run {
-        margin-right: 3.125rem; }
+        margin-right: 50px; }
       .tomochain-video-item img {
         max-width: 100% !important; }
       .tomochain-video-item .video-link {
-        height: 6.25rem;
-        width: 6.25rem; }
+        height: 100px;
+        width: 100px; }
         .tomochain-video-item .video-link i {
-          font-size: 1.875rem;
-          line-height: 6.25rem; }
+          font-size: 30px;
+          line-height: 100px; }
     .widget_tomo_sendgrid .tomo-sendgrid-text,
     .widget_tomo_sendgrid #tomo-sendgrid-form {
-      max-width: 33.125rem; }
+      max-width: 530px; }
     .widget_tomo_sendgrid #tomo-sendgrid-email {
-      font-size: 1rem;
-      padding: 0.9375rem 4.375rem 0.9375rem 2.5rem; }
+      font-size: 16px;
+      padding: 15px 70px 15px 40px; }
     .widget_tomo_sendgrid #tomo-sendgrid-button {
-      padding-right: 2.5rem; }
+      padding-right: 40px; }
     .widget_tomo_sendgrid #tomo-sendgrid-button:after {
-      font-size: 0.75rem; }
+      font-size: 12px; }
     .error-404 img {
-      max-width: 28.125rem; }
+      max-width: 450px; }
   #posv-img:before {
-    width: 31.25rem;
-    height: 25rem;
-    left: -6.25rem; }
+    width: 500px;
+    height: 400px;
+    left: -100px; }
   #tps-row {
-    margin-bottom: 5.625rem; }
+    margin-bottom: 90px; }
     #tps-column {
-      margin-bottom: 5.625rem; }
+      margin-bottom: 90px; }
   #double-validation-column .wpb_single_image {
-    padding-bottom: 9.375rem; }
+    padding-bottom: 150px; }
     #testnet-row {
-      padding-top: 6.25rem; }
+      padding-top: 100px; }
     #about-us-row #about-us-text-left,
     #about-us-row #about-us-text-right {
-      max-width: 25.625rem; }
+      max-width: 410px; }
     #about-us-row #about-us-text-left:after {
-      right: -1.25rem; }
+      right: -20px; }
   .tomochain-lottie.dapp-image {
     text-align: right; }
     .tomochain-lottie.dapp-image svg {
-      max-width: 25rem; }
+      max-width: 400px; }
   .tomochain-team.five-columns .tomochain-team__wrapper {
     grid-template-columns: 20% 20% 20% 20% 20%; }
       body.mainnet-page #message-row {
-        margin-top: 6.25rem; }
+        margin-top: 100px; }
     body.mainnet-page #coming-image-column img {
       max-width: none;
-      margin-left: -6.25rem; }
+      margin-left: -100px; }
     body.mainnet-page .station-col--left {
       padding-left: 105; }
     body.mainnet-page .station-col--right {
-      padding-right: 6.5625rem; }
-  body.mainnet-page .rev_slider .tp-parallax-wrap:nth-child(20),
-  body.mainnet-page .rev_slider .tp-parallax-wrap:nth-child(21),
-  body.mainnet-page .rev_slider .tp-parallax-wrap:nth-child(22) {
-    left: calc(100% - 60rem - 0.9375rem) !important; }
-  body.mainnet-page .rev_slider .tp-parallax-wrap:nth-child(23) {
-    left: calc(100% - 60rem - 1.5625rem) !important; }
-  body.mainnet-page .rev_slider .tp-parallax-wrap:nth-child(21) .tp-caption {
-    font-size: 1.875rem !important;
-    line-height: 3.125rem !important; }
-  body.mainnet-page .rev_slider .tp-parallax-wrap:nth-child(22) .tp-caption {
-    font-size: 1.125rem !important;
-    line-height: 3.125rem !important;
-    margin-top: 2.1875rem !important; }
-  body.mainnet-page .rev_slider .tp-parallax-wrap:nth-child(23) .tp-caption {
-    width: 19.375rem !important;
-    max-width: none !important; }
-  body.mainnet-page .rev_slider .tp-parallax-wrap:nth-child(23) .tomochain-countdown {
-    margin-top: 1.875rem !important; } }
-  @media (min-width: 64rem) and (max-width: 75rem) {
-    body.mainnet-page .tomochain-countdown .countdown-amount {
-      font-size: 2.5rem; }
-    body.mainnet-page .tomochain-countdown .countdown-period {
-      font-size: 0.75rem; } }
-  @media (min-width: 75rem) {
+      padding-right: 105px; } }
+  @media (min-width: 1024px) {
+  body.mainnet-page .wpb_revslider_element .rev_slider_wrapper,
+  body.mainnet-page .wpb_revslider_element .rev_slider {
+    height: 700px !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(2) {
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important;
+    left: auto !important;
+    right: 0 !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(2) img {
+      position: absolute;
+      right: 0;
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(3) {
+    left: 400px !important;
+    top: 175px !important;
+    -webkit-transform: scale(0.7) !important;
+            transform: scale(0.7) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(3) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(4) {
+    left: 800px !important;
+    top: 520px !important;
+    -webkit-transform: scale(0.8) !important;
+            transform: scale(0.8) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(4) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(5) {
+    left: 320px !important;
+    top: 520px !important;
+    -webkit-transform: scale(0.8) !important;
+            transform: scale(0.8) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(5) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(6) {
+    left: 480px !important;
+    top: 480px !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(6) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(7) {
+    left: 710px !important;
+    top: 420px !important;
+    -webkit-transform: scale(0.8) !important;
+            transform: scale(0.8) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(7) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(8) {
+    left: 800px !important;
+    top: 30px !important;
+    -webkit-transform: scale(0.8) !important;
+            transform: scale(0.8) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(8) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(9) {
+    left: 782px !important;
+    top: 126px !important;
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(9) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(10) {
+    left: 788px !important;
+    top: 128px !important;
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(10) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(11) {
+    left: 795px !important;
+    top: 128px !important;
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(11) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(12) {
+    left: 806px !important;
+    top: 130px !important;
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(12) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(13) {
+    left: 823px !important;
+    top: 134px !important;
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(13) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(14) {
+    left: 850px !important;
+    top: 140px !important;
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(14) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(15) {
+    left: 820px !important;
+    top: 120px !important;
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(15) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(16) {
+    left: 895px !important;
+    top: 235px !important;
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(16) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(17) {
+    left: 795px !important;
+    top: 215px !important;
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(17) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(18) {
+    left: 732px !important;
+    top: 235px !important;
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(18) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(19) {
+    left: 520px !important;
+    top: 250px !important;
+    -webkit-transform: scale(0.9) !important;
+            transform: scale(0.9) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(19) img {
+      width: auto !important;
+      height: auto !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(20),
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(21),
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(22) {
+    left: calc(100% - 960px - 15px) !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(20) {
+    top: 200px !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(20) .tp-caption {
+      min-width: 40px !important;
+      min-height: 2px !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(21) {
+    top: 220px !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(21) .tp-caption {
+      font-size: 36px !important;
+      line-height: 60px !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(22) {
+    top: 300px !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(22) .tp-caption {
+      font-size: 24px !important;
+      line-height: 70px !important;
+      margin-top: 35px !important; }
+  body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(23) {
+    top: 380px !important;
+    left: calc(100% - 960px - 28px) !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(23) .tp-caption {
+      width: 350px !important;
+      max-width: none !important; }
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(23) .tomochain-countdown {
+      margin-top: 30px !important; } }
+  @media (min-width: 1200px) {
   .d-xl-none {
     display: none !important; }
   .d-xl-inline {
@@ -13248,7 +13401,7 @@ body.mainnet-page {
   .text-xl-center {
     text-align: center !important; }
     .container {
-      max-width: 71.25rem; }
+      max-width: 1140px; }
   .col-xl {
     -ms-flex-preferred-size: 0;
         flex-basis: 0;
@@ -13409,51 +13562,40 @@ body.mainnet-page {
   .hidden-xl-up {
     display: none !important; }
   #posv-img {
-    margin: 0 -2.1875rem; }
+    margin: 0 -35px; }
     html[lang="ja"] #posv-img {
-      margin-right: -6.25rem; }
+      margin-right: -100px; }
       html[lang="ja"] #posv-img:before {
-        left: -11.875rem; }
+        left: -190px; }
     #posv-img:before {
-      width: 43.75rem;
-      height: 31.25rem;
-      left: -10rem; }
+      width: 700px;
+      height: 500px;
+      left: -160px; }
     #about-us-row #about-us-text-left,
     #about-us-row #about-us-text-right {
-      max-width: 31.25rem; }
+      max-width: 500px; }
     #about-us-row #about-us-text-left:after {
-      right: -1.5625rem; }
+      right: -25px; }
     html[lang="ja"] #about-us-row #about-us-text-left,
     html[lang="ja"] #about-us-row #about-us-text-right {
       max-width: 100%; }
     html[lang="ja"] #about-us-row #about-us-text-left:after {
-      right: 0.9375rem; }
+      right: 15px; }
       body.mainnet-page #meetup-row .wpim {
-        margin-left: -5.625rem;
+        margin-left: -90px;
         -webkit-transform: scale(0.8);
                 transform: scale(0.8); } }
-  @media (min-width: 90rem) {
+  @media (min-width: 1440px) {
       body.mainnet-page #message-row {
-        margin-top: 9.375rem;
-        margin-bottom: 12.5rem; }
+        margin-top: 150px;
+        margin-bottom: 200px; }
     body.mainnet-page #coming-image-column img {
-      margin-left: -3.125rem; }
+      margin-left: -50px; }
       body.mainnet-page #meetup-row .wpim {
-        margin-left: -5.5625rem;
+        margin-left: -89px;
         -webkit-transform: scale(1);
                 transform: scale(1); } }
-  @media (max-width: 74.99875rem) {
-  .table-responsive-xl {
-    display: block;
-    width: 100%;
-    overflow-x: auto;
-    -webkit-overflow-scrolling: touch;
-    -ms-overflow-style: -ms-autohiding-scrollbar; }
-    .table-responsive-xl > .table-bordered {
-      border: 0; }
-  .hidden-lg-down {
-    display: none !important; } }
-  @media (max-width: 47.99875rem) {
+  @media (max-width: 767.98px) {
   .table-responsive-md {
     display: block;
     width: 100%;
@@ -13468,11 +13610,22 @@ body.mainnet-page {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
             order: 2;
-    margin-bottom: 3.125rem; }
+    margin-bottom: 50px; }
       body.mainnet-page #meetup-row p.vc_custom_heading {
-        font-size: 0.875rem !important;
-        line-height: 1.75rem !important; } }
-  @media (max-width: 35.99875rem) {
+        font-size: 14px !important;
+        line-height: 28px !important; } }
+  @media (max-width: 1199.98px) {
+  .table-responsive-xl {
+    display: block;
+    width: 100%;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    -ms-overflow-style: -ms-autohiding-scrollbar; }
+    .table-responsive-xl > .table-bordered {
+      border: 0; }
+  .hidden-lg-down {
+    display: none !important; } }
+  @media (max-width: 575.98px) {
   .table-responsive-sm {
     display: block;
     width: 100%;
@@ -13520,7 +13673,7 @@ body.mainnet-page {
     white-space: pre-wrap !important; }
   pre,
   blockquote {
-    border: 0.0625rem solid #adb5bd;
+    border: 1px solid #adb5bd;
     page-break-inside: avoid; }
   thead {
     display: table-header-group; }
@@ -13538,13 +13691,13 @@ body.mainnet-page {
   @page {
     size: a3; }
   body {
-    min-width: 62rem !important; }
+    min-width: 992px !important; }
   .container {
-    min-width: 62rem !important; }
+    min-width: 992px !important; }
   .navbar {
     display: none; }
   .badge {
-    border: 0.0625rem solid #000; }
+    border: 1px solid #000; }
   .table {
     border-collapse: collapse !important; }
     .table td,
@@ -13552,7 +13705,7 @@ body.mainnet-page {
       background-color: #fff !important; }
   .table-bordered th,
   .table-bordered td {
-    border: 0.0625rem solid #dee2e6 !important; }
+    border: 1px solid #dee2e6 !important; }
   .table-dark {
     color: inherit; }
     .table-dark th,
@@ -13563,7 +13716,7 @@ body.mainnet-page {
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-  @media (max-width: 61.99875rem) {
+  @media (max-width: 991.98px) {
   .table-responsive-lg {
     display: block;
     width: 100%;

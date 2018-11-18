@@ -6,7 +6,7 @@ const $ = require('gulp-load-plugins')()
 const spawn  = require( 'child_process' ).spawn
 const mqpacker = require('css-mqpacker')
 const autoprefixer = require('autoprefixer')
-const pxtorem = require('postcss-pxtorem')
+// const pxtorem = require('postcss-pxtorem')
 const assets = require('postcss-assets')
 const reportError = require('./report-bug')
 const files = glob('src/*', {sync: true})
@@ -97,11 +97,11 @@ gulp.task('sass', function () {
                     mqpacker({sort: true}),
                     assets({
                         loadPaths: ['src/' + theme + 'assets/images/']
-                    }),
-                    pxtorem({
-                        propList: ['*', '!stroke-dasharray'],
-                        mediaQuery: true
                     })
+                    // pxtorem({
+                    //     propList: ['*', '!stroke-dasharray'],
+                    //     mediaQuery: true
+                    // })
                 ]))
                .pipe($.sourcemaps.write('./assets/scss/sourcemap/', {
                    includeContent: false,
@@ -134,11 +134,11 @@ gulp.task('sass-plugin', function () {
                     mqpacker({sort: true}),
                     assets({
                         loadPaths: ['src/' + plugin + 'assets/images/']
-                    }),
-                    pxtorem({
-                        propList: ['*', '!stroke-dasharray'],
-                        mediaQuery: true
                     })
+                    // pxtorem({
+                    //     propList: ['*', '!stroke-dasharray'],
+                    //     mediaQuery: true
+                    // })
                 ]))
                .pipe($.lineEndingCorrector())
                .pipe(gulp.dest('src/' + plugin + '/assets/css'))

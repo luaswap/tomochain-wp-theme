@@ -9,13 +9,13 @@
   .tomochain-countdown .countdown-section {
     text-align: center !important; }
   .tomochain-countdown .countdown-amount {
-    font-size: 3rem;
-    line-height: 4.375rem;
-    padding-bottom: 0.3125rem;
+    font-size: 48px;
+    line-height: 70px;
+    padding-bottom: 5px;
     color: #fff;
-    border-bottom: 0.125rem solid #f08b89; }
+    border-bottom: 2px solid #f08b89; }
   .tomochain-countdown .countdown-period {
-    font-size: 1rem;
+    font-size: 16px;
     color: #fff;
     text-transform: lowercase;
-    margin-top: 0.9375rem; }
+    margin-top: 15px; }
