@@ -10969,6 +10969,9 @@ body.mainnet-page {
     margin-top: 30px;
     margin-bottom: 100px; }
     body.mainnet-page #message-row .tomochain-videos {
+      max-width: 480px;
+      margin-left: auto;
+      margin-right: 0;
       margin-top: 50px; }
   body.mainnet-page #coming-row .wpb_text_column {
     font-size: 18px;
