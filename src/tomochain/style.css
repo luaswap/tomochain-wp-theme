@@ -11229,6 +11229,8 @@ body.mainnet-page {
     body.mainnet-page .site-header.headroom--not-top {
       opacity: 0;
       visibility: hidden; }
+  body.mainnet-page .site-footer {
+    display: none; }
   body.mainnet-page #main .entry-content {
     margin-top: 0; }
   body.mainnet-page .tomochain-videos {
