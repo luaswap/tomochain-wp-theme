@@ -11338,6 +11338,8 @@ body.mainnet-page {
     padding-right: 0; }
   body.mainnet-page #meetup-row {
     margin-top: 150px; }
+    body.mainnet-page #meetup-row .wpim .wpim-infowindow {
+      width: 290px; }
     body.mainnet-page #meetup-row .wpim #c7,
     body.mainnet-page #meetup-row .wpim #c17,
     body.mainnet-page #meetup-row .wpim #c23,
@@ -13493,7 +13495,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       line-height: 60px !important; }
   body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(22) {
     top: 300px !important; }
-    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(22) .tp-caption {
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(22) .tp-caption,
+    body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(22) .tp-caption > span {
       font-size: 24px !important;
       line-height: 70px !important;
       margin-top: 35px !important; }

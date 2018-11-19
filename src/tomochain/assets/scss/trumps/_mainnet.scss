@@ -234,6 +234,10 @@ body.mainnet-page {
 
         .wpim {
 
+            .wpim-infowindow {
+                width: 290px;
+            }
+
             @include media-breakpoint-only(xl) {
                 margin-left: -90px;
                 transform: scale(0.8);
@@ -655,7 +659,8 @@ body.mainnet-page .wpb_revslider_element {
         .tp-parallax-wrap:nth-child(22) {
             top: 300px !important;
 
-            .tp-caption {
+            .tp-caption,
+            .tp-caption > span {
                 font-size: 24px !important;
                 line-height: 70px !important;
                 margin-top: 35px !important;
