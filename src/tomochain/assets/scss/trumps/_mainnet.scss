@@ -228,19 +228,38 @@ body.mainnet-page {
             }
         }
 
-        @include media-breakpoint-only(xl) {
+        .wpim {
 
-            .wpim {
+            @include media-breakpoint-only(xl) {
                 margin-left: -90px;
                 transform: scale(0.8);
             }
-        }
 
-        @media (min-width: 1440px) {
-
-            .wpim {
+            @media (min-width: 1440px) {
                 margin-left: -89px;
                 transform: scale(1);
+            }
+
+            #c7,
+            #c17,
+            #c23,
+            #c25 {
+                z-index: 1;
+            }
+
+            #c5,
+            #c15,
+            #c21 {
+                z-index: 2;
+            }
+
+            #c13,
+            #c19 {
+                z-index: 3;
+            }
+
+            #c11 {
+                z-index: 4;
             }
         }
     }
