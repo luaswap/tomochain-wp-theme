@@ -1,53 +1,29 @@
 jQuery(document).ready(function($) {
 
-    if (typeof $.fn.waypoint !== 'undefined') {
+    if (typeof $.fn.waypoint !== 'undefined' && $(window).width() >= 1024) {
 
         var $image = $('#train-image');
 
         $( '#station-1' ).waypoint(function(direction) {
-            $image.css('margin-top', direction == 'down' ? -862 : -1160);
-
-            if (direction == 'down') {
-                $(this).addClass('active');
-            } else {
-                $(this).removeClass('active');
-            }
+            $image.css('margin-top', -805);
         }, {
             offset: '80%'
         });
 
         $( '#station-2' ).waypoint(function(direction) {
-            $image.css('margin-top', direction == 'down' ? -618 : -862);
-
-            if (direction == 'down') {
-                $(this).addClass('active');
-            } else {
-                $(this).removeClass('active');
-            }
+            $image.css('margin-top', -560);
         }, {
             offset: '80%'
         });
 
         $( '#station-3' ).waypoint(function(direction) {
-            $image.css('margin-top', direction == 'down' ? -375 : -618);
-
-            if (direction == 'down') {
-                $(this).addClass('active');
-            } else {
-                $(this).removeClass('active');
-            }
+            $image.css('margin-top', -312);
         }, {
             offset: '80%'
         });
 
         $( '#station-4' ).waypoint(function(direction) {
-            $image.css('margin-top', direction == 'down' ? -80 : -375);
-
-            if (direction == 'down') {
-                $(this).addClass('active');
-            } else {
-                $(this).removeClass('active');
-            }
+            $image.css('margin-top', -8);
         }, {
             offset: '80%'
         });

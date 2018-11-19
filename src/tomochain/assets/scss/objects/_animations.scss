@@ -232,7 +232,13 @@
 @keyframes smokeL {
 	0%   { transform: scale(.2) translate(0, 0); }
 	10%  { opacity: 1; transform: scale(.2) translate(0, -5px); }
-	100% { opacity: 0; transform: scale(1) translate(-200px, -100px); }
+	100% { opacity: 0; transform: scale(1) translate(60px, -130px); }
+}
+
+@keyframes smokeR {
+	0%   { transform: scale(.2) translate(0, 0); }
+	10%  { opacity: 1; transform: scale(.2) translate(0, -5px); }
+	100% { opacity: 0; transform: scale(1) translate(80px, -130px); }
 }
 
 @keyframes smokeR1 {
@@ -247,7 +253,7 @@
 	100% { opacity: 0; transform: scale(1) translate(100px, -100px); }
 }
 
-@media (min-width: 1024px) and (max-width: 1919px) {
+@media (min-width: 1024px) and (max-width: 1439px) {
 
     @keyframes smokeR1 {
         0%   { transform: scale(.5) translate(0, 0); }
@@ -259,5 +265,20 @@
         0%   { transform: scale(.5) translate(0, 0); }
         10%  { opacity: 1; transform: scale(.5) translate(0, -5px); }
         100% { opacity: 0; transform: scale(1) translate(80px, -100px); }
+    }
+}
+
+@media (min-width: 1440px) and (max-width: 1919px) {
+
+    @keyframes smokeR1 {
+        0%   { transform: scale(.5) translate(0, 0); }
+        10%  { opacity: 1; transform: scale(.5) translate(0, -5px); }
+        100% { opacity: 0; transform: scale(1) translate(200px, -70px); }
+    }
+
+    @keyframes smokeR2 {
+        0%   { transform: scale(.5) translate(0, 0); }
+        10%  { opacity: 1; transform: scale(.5) translate(0, -5px); }
+        100% { opacity: 0; transform: scale(1) translate(180px, -100px); }
     }
 }
