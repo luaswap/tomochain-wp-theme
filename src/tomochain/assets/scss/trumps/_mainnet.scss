@@ -234,6 +234,14 @@ body.mainnet-page {
 
         .wpim {
 
+            a {
+                color: #c67869;
+
+                &:hover {
+                    color: #fff;
+                }
+            }
+
             .wpim-infowindow {
                 width: 290px;
             }
@@ -249,7 +257,6 @@ body.mainnet-page {
             }
 
             #c7,
-            #c17,
             #c23,
             #c25 {
                 z-index: 1;
@@ -266,9 +273,22 @@ body.mainnet-page {
                 z-index: 3;
             }
 
+            #c17,
             #c11 {
                 z-index: 4;
             }
+
+            #c9 {
+                z-index: 5;
+            }
+        }
+    }
+
+    .tomochain-list a {
+        color: #c67869;
+
+        &:hover {
+            color: #fff;
         }
     }
 

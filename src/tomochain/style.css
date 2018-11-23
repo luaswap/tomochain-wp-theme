@@ -11364,10 +11364,13 @@ body.mainnet-page {
     padding-right: 0; }
   body.mainnet-page #meetup-row {
     margin-top: 150px; }
+    body.mainnet-page #meetup-row .wpim a {
+      color: #c67869; }
+      body.mainnet-page #meetup-row .wpim a:hover {
+        color: #fff; }
     body.mainnet-page #meetup-row .wpim .wpim-infowindow {
       width: 290px; }
     body.mainnet-page #meetup-row .wpim #c7,
-    body.mainnet-page #meetup-row .wpim #c17,
     body.mainnet-page #meetup-row .wpim #c23,
     body.mainnet-page #meetup-row .wpim #c25 {
       z-index: 1; }
@@ -11378,8 +11381,15 @@ body.mainnet-page {
     body.mainnet-page #meetup-row .wpim #c13,
     body.mainnet-page #meetup-row .wpim #c19 {
       z-index: 3; }
+    body.mainnet-page #meetup-row .wpim #c17,
     body.mainnet-page #meetup-row .wpim #c11 {
       z-index: 4; }
+    body.mainnet-page #meetup-row .wpim #c9 {
+      z-index: 5; }
+  body.mainnet-page .tomochain-list a {
+    color: #c67869; }
+    body.mainnet-page .tomochain-list a:hover {
+      color: #fff; }
   body.mainnet-page #journey-row {
     position: relative;
     overflow: hidden;
