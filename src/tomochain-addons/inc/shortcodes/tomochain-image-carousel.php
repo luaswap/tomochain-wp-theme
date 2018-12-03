@@ -7,7 +7,7 @@ class WPBakeryShortCode_TomoChain_Image_Carousel extends WPBakeryShortCodesConta
 vc_map( array(
     'name'            => esc_html__( 'Image Carousel', 'tomochain-addons' ),
     'base'            => 'tomochain_image_carousel',
-    'icon'            => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
+    'icon'            => TOMOCHAIN_ADDONS_URI . '/assets/images/icon.png',
     'description'     => esc_html__( 'Animated carousel with images', 'tomochain-addons' ),
     'category'        => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'js_view'         => 'VcColumnView',

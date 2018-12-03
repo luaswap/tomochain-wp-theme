@@ -57,7 +57,7 @@ vc_map( array(
     'name'        => esc_html__( 'DApp', 'tomochain-addons' ),
     'description' => esc_html__( 'Show information of a DApp', 'tomochain-addons' ),
     'base'        => 'tomochain_dapp',
-    'icon'        => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
+    'icon'        => TOMOCHAIN_ADDONS_URI . '/assets/images/icon.png',
     'category'    => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'params'      => array(
         array(

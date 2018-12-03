@@ -22,7 +22,7 @@ vc_map( array(
     'name'        => esc_html__( 'List', 'tomochain-addons' ),
     'description' => esc_html__( 'Display a list', 'tomochain-addons' ),
     'base'        => 'tomochain_list',
-    'icon'        => TOMOCHAIN_ADDONS_URL . '/assets/images/icon.png',
+    'icon'        => TOMOCHAIN_ADDONS_URI . '/assets/images/icon.png',
     'category'    => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'params'      => array(
         array(

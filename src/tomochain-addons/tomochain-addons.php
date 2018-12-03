@@ -15,7 +15,8 @@ if ( ! defined( 'ABSPATH' ) ) {
 }
 
 define( 'TOMOCHAIN_ADDONS_DIR', plugin_dir_path( __FILE__ ) );
-define( 'TOMOCHAIN_ADDONS_URL', plugin_dir_url( __FILE__ ) );
+define( 'TOMOCHAIN_ADDONS_URI', plugin_dir_url( __FILE__ ) );
+define( 'TOMOCHAIN_ADDONS_LIBS_URI', TOMOCHAIN_ADDONS_URI . 'assets/libs' );
 
 class TomoChain_Addons {
 
@@ -27,6 +28,8 @@ class TomoChain_Addons {
     public function init() {
         add_action( 'admin_notices', array( $this, 'check_dependencies' ) );
         add_action('init',array( $this, 'register_strings') );
+        add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_libs') , 1 );
+        add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
         load_plugin_textdomain( 'tomochain-addons', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
     }
 
@@ -51,6 +54,35 @@ class TomoChain_Addons {
                     'tomochain-addons' ),
                     $plugin_data['Name'] ) );
         }
+    }
+
+    public function enqueue_libs() {
+        wp_register_style( 'kbw-countdown', TOMOCHAIN_ADDONS_LIBS_URI . '/kbw-countdown/css/jquery.countdown.css' );
+
+        wp_enqueue_script( 'kbw-plugin',
+            TOMOCHAIN_ADDONS_LIBS_URI . '/kbw-plugin/js/jquery.plugin.min.js',
+            array( 'jquery' ),
+            null,
+            true );
+
+        wp_enqueue_script( 'kbw-countdown',
+            TOMOCHAIN_ADDONS_LIBS_URI . '/kbw-countdown/js/jquery.countdown.min.js',
+            array( 'jquery' ),
+            null,
+            true );
+    }
+
+    public function enqueue_scripts() {
+
+        $suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
+
+        wp_enqueue_style( 'tomochain-addons-css', TOMOCHAIN_ADDONS_URI . 'assets/css/tomochain-addons' . $suffix . '.css' );
+
+        wp_enqueue_script( 'tomochain-addons-js',
+            TOMOCHAIN_ADDONS_URI . 'assets/js/tomochain-addons' . $suffix . '.js',
+            array('jquery'),
+            null,
+            true );
     }
 
     /**

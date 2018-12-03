@@ -21,6 +21,11 @@ body.info-opened:after {
     z-index: 999;
 }
 
+.vc_row:before,
+.vc_row:after {
+    display: none;
+}
+
 .edit-link {
     display: none;
 }
@@ -238,6 +243,49 @@ body.info-opened:after {
 
 .wpb_revslider_element.homepage-slider {
     min-height: 695px;
+
+    &.homepage-slider--mainnet {
+
+        // .tp-parallax-wrap:nth-child(24) .tp-caption {
+        //     animation: smokeR1 10s 0s infinite;
+        // }
+
+        // .tp-parallax-wrap:nth-child(25) .tp-caption {
+        //     animation: smokeR2 10s 1s infinite;
+        // }
+
+        // .tp-parallax-wrap:nth-child(26) .tp-caption {
+        //     animation: smokeR1 10s 2s infinite;
+        // }
+
+        // .tp-parallax-wrap:nth-child(27) .tp-caption {
+        //     animation: smokeR2 10s 3s infinite;
+        // }
+
+        // .tp-parallax-wrap:nth-child(28) .tp-caption {
+        //     animation: smokeR1 10s 4s infinite;
+        // }
+
+        // .tp-parallax-wrap:nth-child(29) .tp-caption {
+        //     animation: smokeR2 10s 5s infinite;
+        // }
+
+        // .tp-parallax-wrap:nth-child(30) .tp-caption {
+        //     animation: smokeR1 10s 6s infinite;
+        // }
+
+        // .tp-parallax-wrap:nth-child(31) .tp-caption {
+        //     animation: smokeR2 10s 7s infinite;
+        // }
+
+        // .tp-parallax-wrap:nth-child(32) .tp-caption {
+        //     animation: smokeR1 10s 8s infinite;
+        // }
+
+        // .tp-parallax-wrap:nth-child(33) .tp-caption {
+        //     animation: smokeR2 10s 9s infinite;
+        // }
+    }
 }
 
 // POSV PAGE
@@ -632,4 +680,47 @@ body.page-template-revslider-page-template {
 
 #video-row {
     transform: translateY(-50%);
+}
+
+.wpim-marker {
+
+    .wpim-infowindow {
+        color: #fff;
+        border-radius: 6px;
+        background-image: linear-gradient(0deg, #2a3452 0%, #191d34 100%);
+
+        p {
+            margin-bottom: 0;
+        }
+    }
+
+    .wpim-infowindow--top:before {
+        border-top-color: #2a3452;
+    }
+
+    .wpim-infowindow--bottom:before {
+        border-bottom-color: #2a3452;
+    }
+
+    .wpim-infowindow--left:before {
+        border-left-color: #2a3452;
+    }
+
+    .wpim-infowindow--right:before {
+        border-right-color: #2a3452;
+    }
+
+    .wpim-infowindow__close {
+        background-color: transparent;
+    }
+
+    .wpim-infowindow__close:before,
+    .wpim-infowindow__close:after {
+        height: 2px;
+        background-color: #ebeaf5;
+    }
+
+    .wpim-infowindow__inner {
+        border: none !important;
+    }
 }
