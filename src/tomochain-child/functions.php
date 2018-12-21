@@ -82,8 +82,8 @@ function tomochain_redirect() {
 update_option('revslider-valid', 'true');
 
 // Remove post page
-add_action( 'pre_get_posts', 'tomochain_single_post_404' );
-function tomochain_single_post_404( $query ) {
-    if ( $query->is_main_query() && $query->is_single() )
-        $query->is_404 = true;
-}
+// add_action( 'pre_get_posts', 'tomochain_single_post_404' );
+// function tomochain_single_post_404( $query ) {
+//     if ( $query->is_main_query() && $query->is_single() )
+//         $query->is_404 = true;
+// }

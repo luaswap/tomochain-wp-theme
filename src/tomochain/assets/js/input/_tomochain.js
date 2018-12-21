@@ -26,6 +26,7 @@ var tomochain
         )
     }
 )(jQuery);
+//@include('event-blog.js')
 //@include('blog.js')
 //@include('header.js')
 //@include('image-carousel.js')

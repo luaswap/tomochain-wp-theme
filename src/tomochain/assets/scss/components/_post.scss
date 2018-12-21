@@ -22,7 +22,7 @@
 }
 
 .entry-footer {
-    display: none;
+    /*display: none;*/
 
     .single-post & {
         display: flex;
@@ -66,8 +66,8 @@
     span:before {
         display: inline-block;
         vertical-align: baseline;
-        font-size: 12px;
-        margin-right: 8px;
+        font-size: 16px;
+        margin-right: 10px;
         @extend .fas;
     }
 
