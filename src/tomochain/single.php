@@ -9,37 +9,43 @@
 
 get_header();
 ?>
+<div class="top-banner-tomo page-event"> <!-- page-blog -->
+    <div class="container">
+        <h2>Event & Media</h2>
+        <!-- <h2>Blog</h2> -->
+    </div>
+</div>
 
-	<div id="primary" class="content-area">
-		<main id="main" class="site-main">
+<div id="primary" class="content-area">
+	<main id="main" class="site-main">
 
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-md-8 col-lg-9">
-                    <?php
-                    while ( have_posts() ) :
-                        the_post();
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8 col-lg-9">
+                <?php
+                while ( have_posts() ) :
+                    the_post();
 
-                        get_template_part( 'template-parts/content', 'single' );
+                    get_template_part( 'template-parts/content', 'single' );
 
-                        the_post_navigation();
+                    the_post_navigation();
 
-                        // If comments are open or we have at least one comment, load up the comment template.
-                        if ( comments_open() || get_comments_number() ) :
-                            comments_template();
-                        endif;
+                    // If comments are open or we have at least one comment, load up the comment template.
+                    if ( comments_open() || get_comments_number() ) :
+                        comments_template();
+                    endif;
 
-                    endwhile; // End of the loop.
-                    ?>
-                </div>
-                <div class="col-12 col-md-4 col-lg-3">
-                    <?php get_sidebar(); ?>
-                </div>
+                endwhile; // End of the loop.
+                ?>
+            </div>
+            <div class="col-12 col-md-4 col-lg-3">
+                <?php get_sidebar(); ?>
             </div>
         </div>
+    </div>
 
-		</main><!-- #main -->
-	</div><!-- #primary -->
+	</main><!-- #main -->
+</div><!-- #primary -->
 
 <?php
 get_footer();
