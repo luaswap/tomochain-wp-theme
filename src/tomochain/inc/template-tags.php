@@ -35,19 +35,19 @@ if ( ! function_exists( 'tomochain_posted_on' ) ) :
 	}
 endif;
 
-if ( ! function_exists( 'tomochain_event_date' ) ) :
-    function tomochain_event_date() {
+if ( ! function_exists( 'tomochain_post_date' ) ) :
+    function tomochain_post_date() {
 
-        global $post;
+        // global $post;
 
-        if (function_exists('pll_get_term') && in_category(pll_get_term(11))) {
-            $start_date = date_i18n(get_option( 'date_format' ), strtotime(get_field('start_date')));
-            $end_date   = date_i18n(get_option( 'date_format' ), strtotime(get_field('end_date')));
+        // if (function_exists('pll_get_term') && in_category(pll_get_term(11))) {
+        //     $start_date = date_i18n(get_option( 'date_format' ), strtotime(get_field('start_date')));
+        //     $end_date   = date_i18n(get_option( 'date_format' ), strtotime(get_field('end_date')));
 
-            $date = $start_date . (strcmp($start_date, $end_date) ? ' - ' . $end_date : '');
-        } else {
+        //     $date = $start_date . (strcmp($start_date, $end_date) ? ' - ' . $end_date : '');
+        // } else {
             $date = get_the_date(get_option( 'date_format' ));
-        }
+        // }
 
         echo '<span class="posted-on">' . $date . '</span>';
     }
@@ -184,7 +184,7 @@ if ( ! function_exists( 'tomochain_post_thumbnail' ) ) :
 
 		<?php else : ?>
 
-		<a class="post-thumbnail" href="<?php echo esc_url($custom_url); ?>" target="<?php echo esc_attr($open_new_tab); ?>" aria-hidden="true" tabindex="-1">
+		<a class="post-thumbnail" href="<?php echo $custom_url = esc_url($custom_url) ? esc_url($custom_url) : get_permalink(); ?>" target="<?php echo esc_attr($open_new_tab); ?>" aria-hidden="true" tabindex="-1">
 			<?php
 			the_post_thumbnail( 'tomo-post-thumbnail', array(
 				'alt' => the_title_attribute( array(

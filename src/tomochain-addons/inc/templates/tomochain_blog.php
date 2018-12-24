@@ -33,20 +33,20 @@ $posts = get_posts(
     array(
         'post_type'      => 'post',
         'post_status'    => 'publish',
-        'posts_per_page' => 8
+        'posts_per_page' => $per_page
     )
 );
 
 ?>
 <div class="<?php echo esc_attr( trim( $css_class ) ); ?>">
-    <div class="row blog-carousel" data-atts="<?php echo esc_attr( json_encode( $atts ) ); ?>">
+    <div class="blog-carousel" data-atts="<?php echo esc_attr( json_encode( $atts ) ); ?>">
         <?php foreach($posts as $post):
             $custom_url = get_field('custom_url', $post);
             $open_new_tab = get_field('open_in_new_tab', $post) ? '__blank' : '';
             ?>
             <div class="col-sm-6 col-lg-3 tomochain-blog-item">
                 <div class="blog-thumbnail">
-                    <a href="<?php echo $custom_url ? esc_url($custom_url) : '#'; ?>" target="<?php echo esc_attr($open_new_tab); ?>">
+                    <a href="<?php echo $custom_url ? esc_url($custom_url) : get_permalink($post); ?>" target="<?php echo esc_attr($open_new_tab); ?>">
                         <?php
                         if (get_field('image', $post)) {
                             echo wp_get_attachment_image(get_field('image', $post), 'tomo-post-small-thumbnail');
@@ -56,30 +56,24 @@ $posts = get_posts(
                     </a>
                     <div class="blog-date">
                         <?php
-                        $format = 'd M';
-
-                        if ( function_exists('pll__') ) {
-                            $format = pll__('d M');
-                        }
-
-                        if (function_exists('pll_get_term') && in_category(pll_get_term(11), $post)) {
-                            $start_date = date($format, strtotime(get_field('start_date', $post)));
-                            $end_date   = date($format, strtotime(get_field('end_date', $post)));
-
-                            echo $start_date . (strcmp($start_date, $end_date) ? ' - ' . $end_date : '');
-                        } else {
-                            echo get_the_date($format);
-                        } ?>
+                            echo get_the_date(get_option('date_format'));
+                        ?>
                     </div>
                 </div>
                 <div class="blog-info">
                     <h4 class="blog-title text-truncate">
-                        <a href="<?php echo $custom_url ? esc_url($custom_url) : '#'; ?>" target="<?php echo esc_attr($open_new_tab); ?>">
+                        <a href="<?php echo $custom_url ? esc_url($custom_url) : get_permalink($post); ?>" target="<?php echo esc_attr($open_new_tab); ?>">
                             <?php echo get_the_title($post); ?>
                         </a>
                     </h4>
-                    <?php if (function_exists('pll_get_term') && in_category(pll_get_term(11), $post)) : ?>
-                        <p class="event-venue"><?php the_field('venue', $post); ?></p>
+                    <?php if($excerpt) : 
+                        $excerpt = $post->post_content;
+                        if($excerpt_length && !empty($excerpt)){
+                            $excerpt = wp_trim_words( $excerpt, $excerpt_length );
+                            $excerpt = preg_replace( '`\[[^\]]*\]`', '', $excerpt );
+                        }
+                    ?>
+                        <p class="excerpt"><?php echo esc_html($excerpt); ?></p>
                     <?php endif; ?>
                 </div>
             </div>
