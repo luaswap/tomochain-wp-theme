@@ -273,7 +273,10 @@ function tomochain_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'tomochain_scripts' );
-
+/**
+ * Event Post Type
+ */
+require_once TOMOCHAIN_THEME_DIR . '/inc/post-types/post-types.php';
 /**
  * Widgets
  */
@@ -284,10 +287,6 @@ require_once TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-event.php';
 if (defined('SENDGRID_CATEGORY')) {
     require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-sendgrid.php';
 }
-/**
- * Event Post Type
- */
-require_once TOMOCHAIN_THEME_DIR . '/inc/post-types/post-types.php';
 /**
  * Add Theme Options page
  */
