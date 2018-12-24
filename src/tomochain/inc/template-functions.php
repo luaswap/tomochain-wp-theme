@@ -12,20 +12,20 @@
  * @return array
  */
 function tomochain_body_classes( $classes ) {
-	// Adds a class of hfeed to non-singular pages.
-	if ( ! is_singular() ) {
-		$classes[] = 'hfeed';
-	}
+    // Adds a class of hfeed to non-singular pages.
+    if ( ! is_singular() ) {
+        $classes[] = 'hfeed';
+    }
 
-	if ( ! is_active_sidebar( 'sidebar-1' ) ) {
-		$classes[] = 'no-sidebar';
+    if ( ! is_active_sidebar( 'sidebar-1' ) ) {
+        $classes[] = 'no-sidebar';
     }
 
     if ( function_exists('get_field') && get_field('custom_css_class') ) {
         $classes[] = get_field('custom_css_class');
     }
 
-	return $classes;
+    return $classes;
 }
 add_filter( 'body_class', 'tomochain_body_classes' );
 
@@ -33,9 +33,9 @@ add_filter( 'body_class', 'tomochain_body_classes' );
  * Add a pingback url auto-discovery header for single posts, pages, or attachments.
  */
 function tomochain_pingback_header() {
-	if ( is_singular() && pings_open() ) {
-		echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
-	}
+    if ( is_singular() && pings_open() ) {
+        echo '<link rel="pingback" href="', esc_url( get_bloginfo( 'pingback_url' ) ), '">';
+    }
 }
 add_action( 'wp_head', 'tomochain_pingback_header' );
 
@@ -171,4 +171,115 @@ function tomochain_pagination() {
         </div><!-- .pagination -->
     <?php
     endif;
+}
+
+if(!function_exists('tomochain_heading')){
+    function tomochain_heading(){
+        get_template_part( 'template-parts/content', 'heading' );
+    }
+    add_action('tomochain_heading','tomochain_heading', 5);
+}
+
+if(!function_exists('tomochain_category_filter')){
+    function tomochain_category_filter($type){
+        if('post' == $type){
+            $categories = get_categories( array(
+                'hide_empty' => true,
+                'orderby' => 'name',
+                'order'   => 'ASC'
+            ) );
+        }elseif('event' == $type){
+            $categories = get_terms( array(
+                'taxonomy' => 'event_category',
+                'hide_empty' => true,
+                'orderby' => 'name',
+                'order'   => 'ASC'
+            ) );
+        }
+        echo '<ul class="'.$type.'-cat-filter">';
+        echo '<li><a href="'. get_post_type_archive_link($type) .'">' . esc_html__( 'All', 'tomochain' ). '</a></li> ';
+        foreach( $categories as $category ) {
+            $category_link = sprintf( 
+                '<a href="%1$s" alt="%2$s">%3$s</a>',
+                esc_url( get_category_link( $category->term_id ) ),
+                esc_attr( sprintf( esc_html__( 'View all posts in %s', 'tomochain' ), $category->name ) ),
+                esc_html( $category->name )
+            );
+             
+            echo '<li>' . sprintf( esc_html__( '%s', 'tomochain' ), $category_link ) . '</li> ';
+        }
+        echo '</ul>';
+    }
+}
+if(!function_exists('tomochain_event_per_page')){
+    function tomochain_event_per_page( $query ) {
+        $per_page = get_field('event_per_page','options') ? get_field('event_per_page','options') : 12;
+
+        if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'event' ) ) {
+           $query->set( 'posts_per_page', $per_page );
+        }
+    }
+    add_filter( 'pre_get_posts', 'tomochain_event_per_page' );
+}
+
+if(!function_exists('tomochain_event_view')){
+    function tomochain_event_view() {
+        /**
+        * Check security
+        */
+        check_ajax_referer( 'event-view', 'security', esc_html__( 'Security Breach! Please contact admin!', 'tomochain' ) );
+
+        /* 
+        * Process 
+        */
+
+        $id = $_POST['id'];
+        $args = array(
+            'post_type'     =>  'event',
+            'p'             =>  $id
+            );
+        $query = new WP_Query( $args );
+        if( $query->have_posts() ):
+            while( $query->have_posts() ):
+                $query->the_post();
+                $custom_url = get_field('event_custom_url');
+                $open_new_tab = get_field('event_open_in_new_tab') ? '__blank' : '';
+                ?>
+                <article id="post-<?php the_ID(); ?>" <?php post_class('col-xs-12 col-md-6'); ?>>
+                    <a href="<?php echo $custom_url ? esc_url($custom_url) : get_permalink()?>" target="<?php echo esc_attr($open_new_tab)?>" rel="bookmark">
+                        <?php the_post_thumbnail('tomo-post-thumbnail'); ?>
+                    </a>
+                    <header class="entry-header">
+                        <?php
+                            the_title('<h2 class="entry-title"><a href="' . ($custom_url ? esc_url($custom_url) : get_permalink()) . '" target="' . esc_attr($open_new_tab) . '" rel="bookmark">', '</a></h2>');
+                            ?>
+                        <div class="entry-meta">
+                            <?php
+                            $start_date = date_i18n(get_option('date_format') . ' ' . get_option('time_format'), strtotime(get_field('start_date')));
+                            $end_date   = date_i18n(get_option('date_format') . ' ' . get_option('time_format'), strtotime(get_field('end_date')));
+
+                            $date = $start_date . (strcmp($start_date, $end_date) ? ' - ' . $end_date : '');
+                            if($date){?>
+                                <span class="posted-on"><?php echo $date;?></span>
+                            <?php }?>
+                        </div><!-- .entry-meta -->
+                    </header><!-- .entry-header -->
+
+                    <div class="entry-content">
+                        <?php
+                        if($enable_excerpt)
+                        echo tomochain_excerpt(20);
+                        ?>
+                    </div><!-- .entry-content -->
+
+                    <footer class="entry-footer">
+                        <a class="btn-tmp-txt1" href="<?php echo $custom_url ? esc_url($custom_url) : get_permalink()?>" target="<?php echo esc_attr($open_new_tab)?>" rel="bookmark"><?php echo esc_html__('See detail','tomochain')?></a>
+                    </footer><!-- .entry-footer -->
+                </article><!-- #post-<?php the_ID(); ?> -->
+            <?php endwhile;
+        endif;
+        wp_die();
+    }
+    add_action('wp_ajax_nopriv_tomochain_event_view', 'tomochain_event_view');
+    add_action('wp_ajax_tomochain_event_view', 'tomochain_event_view');
 }
