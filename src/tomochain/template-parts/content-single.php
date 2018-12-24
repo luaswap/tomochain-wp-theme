@@ -16,12 +16,7 @@
 
 	<header class="entry-header">
 		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-			the_title( '<h2 class="entry-title"><a href="' . esc_url( get_permalink() ) . '" rel="bookmark">', '</a></h2>' );
-		endif;
-
+		the_title( '<h1 class="entry-title">', '</h1>' );
 		if ( 'post' === get_post_type() ) :
 			?>
 			<div class="entry-meta">
@@ -30,12 +25,23 @@
                 tomochain_categories();
 				?>
 			</div><!-- .entry-meta -->
+		<?php elseif('event' === get_post_type()):
+			$start_date = date_i18n(get_option( 'date_format' ), strtotime(get_field('start_date')));
+			$end_date   = date_i18n(get_option( 'date_format' ), strtotime(get_field('end_date')));
+			$date = $start_date . (strcmp($start_date, $end_date) ? ' - ' . $end_date : '');
+			?>
+			<div class="entry-meta">
+				<?php if($date){?>
+					<span class="posted-on"><?php echo $date;?></span>
+				<?php }?>
+			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->
 
 	<div class="entry-content">
 		<?php
-		echo tomochain_excerpt(30);
+		// echo tomochain_excerpt(30);
+		the_content();
 
 		wp_link_pages( array(
 			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'tomochain' ),

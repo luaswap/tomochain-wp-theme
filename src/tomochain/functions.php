@@ -95,8 +95,10 @@ if ( ! function_exists( 'tomochain_setup' ) ) :
         ) );
 
         add_image_size('tomo-post-small-thumbnail', 200, 200, true);
-        add_image_size('tomo-post-thumbnail', 540, 200, true);
-        add_image_size('tomo-single-thumbnail', 1170, 500, true);
+        add_image_size('tomo-post-thumbnail', 540, 270, true);
+        add_image_size('tomo-single-thumbnail', 1170, 630, true);
+        // add_image_size('tomo-post-thumbnail', 540, 200, true);
+        // add_image_size('tomo-single-thumbnail', 1170, 500, true);
 	}
 endif;
 add_action( 'after_setup_theme', 'tomochain_setup' );
@@ -125,6 +127,15 @@ function tomochain_widgets_init() {
     register_sidebar( array(
 		'name'          => esc_html__( 'Sidebar', 'tomochain' ),
 		'id'            => 'sidebar-1',
+		'description'   => esc_html__( 'Add widgets here.', 'tomochain' ),
+		'before_widget' => '<section id="%1$s" class="widget %2$s">',
+		'after_widget'  => '</section>',
+		'before_title'  => '<h2 class="widget-title">',
+		'after_title'   => '</h2>',
+	) );
+	register_sidebar( array(
+		'name'          => esc_html__( 'Event Sidebar', 'tomochain' ),
+		'id'            => 'sidebar-event',
 		'description'   => esc_html__( 'Add widgets here.', 'tomochain' ),
 		'before_widget' => '<section id="%1$s" class="widget %2$s">',
 		'after_widget'  => '</section>',
@@ -269,10 +280,14 @@ add_action( 'wp_enqueue_scripts', 'tomochain_scripts' );
 require TOMOCHAIN_THEME_DIR . '/inc/widgets/wph-widget-class.php';
 require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-address.php';
 require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-recent-posts.php';
+require_once TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-event.php';
 if (defined('SENDGRID_CATEGORY')) {
     require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-sendgrid.php';
 }
-
+/**
+ * Event Post Type
+ */
+require_once TOMOCHAIN_THEME_DIR . '/inc/post-types/post-types.php';
 /**
  * Add Theme Options page
  */
