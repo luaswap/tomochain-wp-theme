@@ -39,8 +39,6 @@ if ( ! class_exists( 'TomoChain_Event_Widget' ) ) {
 				'post_type' => 'event', 
 				'posts_per_page' => $instance['number'] 
 			);
-			var_dump($instance['data_source']);
-			var_dump(current_time('d-m-Y G:i a'));
 			if('upcoming' == $instance['data_source']){
 		        $query_args['meta_query'] = array(
 		            array(
