@@ -1,186 +1,219 @@
-.post {
-    margin-bottom: 60px !important;
-}
 
 .post-thumbnail {
-    display: block;
-    overflow: hidden;
-    margin-bottom: 30px;
+	display: block;
+	overflow: hidden;
 
-    img {
-        @extend %transit;
-    }
+	img {
+		@extend %transit;
+	}
 }
 
 .post:hover img {
-    transform: scale(1.05);
+	transform: scale(1.05);
 }
 
 .single-post .site-main {
-    padding-top: 60px;
-    margin-bottom: 80px;
+	margin-bottom: 80px;
+	@include media-breakpoint-down(sm) {
+		margin-bottom: 50px;
+	}
 }
-
+.tomo_detail {
+	.top-banner-tomo {
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 2em;
+		}
+	}
+}
 .entry-footer {
-    /*display: none;*/
+	/*display: none;*/
 
-    .single-post & {
-        display: flex;
-    }
+	.single-post & {
+		display: flex;
+	}
 }
 
 .entry-title {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 1.5;
-    color: #ebeaf5;
-    margin-top: 0;
-    margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 1.5;
+	color: #ebeaf5;
+	margin-top: 0;
+	margin-bottom: 10px;
 
-    a {
-        color: #ebeaf5;
-    }
+	a {
+		color: #ebeaf5;
+	}
 
-    @include media-breakpoint-up(md) {
-        font-size: 24px;
-    }
+	@include media-breakpoint-up(md) {
+		font-size: 24px;
+	}
 }
 
 .entry-meta {
-    margin-bottom: 10px;
+	margin-bottom: 10px;
 
-    > span {
-        display: inline-block;
-        margin-right: 25px;
-        color: #808aa9;
-    }
+	> span {
+		display: inline-block;
+		/*margin-right: 25px;*/
+		color: #808aa9;
+	}
 
-    a {
-        color: #808aa9;
-    }
+	a {
+		color: #808aa9;
+	}
 
-    a:hover {
-        color: #ebeaf5;
-    }
+	a:hover {
+		color: #ebeaf5;
+	}
 
-    span:before {
-        display: inline-block;
-        vertical-align: baseline;
-        font-size: 16px;
-        margin-right: 10px;
-        @extend .fas;
-    }
+	span:before {
+		display: inline-block;
+		vertical-align: baseline;
+		font-size: 16px;
+		margin-right: 10px;
+		@extend .fas;
+	}
 
-    span.byline:before {
-        margin-right: 4px;
-        content: fa-content($fa-var-user);
-    }
+	span.byline:before {
+		margin-right: 4px;
+		content: fa-content($fa-var-user);
+	}
 
-    span.posted-on:before {
-        content: fa-content($fa-var-calendar-alt);
-    }
+	span.posted-on:before {
+		content: fa-content($fa-var-calendar-alt);
+	}
 
-    span.categories:before {
-        content: fa-content($fa-var-tag);
-    }
+	span.categories:before {
+		content: fa-content($fa-var-tag);
+	}
 }
 
 .entry-content {
-    line-height: 1.7;
-    font-size: 15px;
+	line-height: 1.7;
+	font-size: 15px;
 }
 
 .post-tags .tagcloud {
-    font-size: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
+	font-size: 0;
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	text-align: left;
 
-    &:before {
-        content: fa-content($fa-var-tags);
-        display: inline-block;
-        font-size: 14px;
-        padding-right: 10px;
-        color: #808aa9;
+	&:before {
+		content: fa-content($fa-var-tags);
+		display: inline-block;
+		font-size: 14px;
+		padding-right: 10px;
+		color: #808aa9;
 
-        @extend .fas;
-    }
+		@extend .fas;
+	}
 
-    li.tag-cloud__item {
-        display: inline-block;
-        position: relative;
-        font-size: 15px;
+	li.tag-cloud__item {
+		display: inline-block;
+		position: relative;
+		font-size: 15px;
 
-        a {
-            color: #808aa9;
-        }
+		a {
+			color: #808aa9;
+		}
 
-        a:hover {
-            color: #ebeaf5;
-        }
+		a:hover {
+			color: #ebeaf5;
+		}
 
-        &:after {
-            content: ',';
-            margin-right: 5px;
-        }
-    }
+		&:after {
+			content: ',';
+			margin-right: 5px;
+		}
+	}
 
-    li.tag-cloud__item:last-child:after {
-        display: none;
-    }
+	li.tag-cloud__item:last-child:after {
+		display: none;
+	}
 }
 
 .post-share {
-    margin-top: 15px;
-    margin-bottom: 15px;
+	margin-top: 15px;
+	margin-bottom: 15px;
 
-    @include media-breakpoint-up(sm) {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
+	@include media-breakpoint-up(sm) {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
 }
 
 .post-share-buttons a {
-    margin-right: 10px;
+	margin-right: 10px;
 }
 
 .post-navigation {
-    margin-top: 60px;
-    margin-bottom: 60px;
+	border-top: 1px solid #8b96b5;
+	margin-top: 50px;
+	margin-bottom: 50px;
+	@include media-breakpoint-down(sm) {
+		margin-top: 15px;
+		margin-bottom: 50px;
+		border-bottom: 1px solid #8b96b5;
+	}
+	.screen-reader-text {
+		display: none;
+	}
+	.nav-links {
+		display: flex;
+		> div {
+			width: 100%;
+			overflow: hidden;
+			text-overflow: ellipsis;
+			white-space: nowrap;
+		}
+	}
+	a {
+		display: block;
+		color: #808aa9;
+		position: relative;
+		overflow: hidden;
+		text-overflow: ellipsis;
+		white-space: nowrap;
+		padding: 15px;
+		&:hover {
+			color: #ebeaf5;
+		}
+	}
+	.nav-previous {
+		a {
+			&:before {
+				content: fa-content($fa-var-angle-double-left);
+				@extend .fas;
+				position: absolute;
+				left: 0;
+				top: 22px;
+				font-size: 10px;
+			}
+		}
+	}
+	.nav-next {
+		a {
+			&:after {
+				content: fa-content($fa-var-angle-double-right);
+				@extend .fas;
+				position: absolute;
+				right: 0;
+				top: 22px;
+				font-size: 10px;
+			}
+		}
+	}
 
-    a {
-        display: inline-block;
-        margin-bottom: 10px;
-        color: #808aa9;
-
-        &:hover {
-            color: #ebeaf5;
-        }
-    }
-
-    .nav-previous a:before {
-        content: fa-content($fa-var-angle-double-left);
-        font-size: 6px;
-        margin-right: 5px;
-        @extend .fas;
-    }
-
-    .nav-next a:after {
-        content: fa-content($fa-var-angle-double-right);
-        font-size: 6px;
-        margin-left: 5px;
-        @extend .fas;
-    }
-
-    @include media-breakpoint-up(sm) {
-        .nav-links {
-            display: grid;
-            grid-template-columns: 50% 50%;
-        }
-
-        .nav-next {
-            text-align: right;
-        }
-    }
+	@include media-breakpoint-up(sm) {
+		.nav-links {
+			display: grid;
+			grid-template-columns: 50% 50%;
+		}
+		.nav-next {
+			text-align: right;
+		}
+	}
 }
