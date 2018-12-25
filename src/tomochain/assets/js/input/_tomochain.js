@@ -9,6 +9,7 @@ var tomochain
                 return {
                     init: function () {
                         this.blog();
+                        this.blog_filter();
                         this.header();
                         this.imageCarousel();
                         this.langSwitcher();
@@ -20,6 +21,9 @@ var tomochain
                         this.testnet();
                         this.tomo_lottie();
                         this.video();
+                        this.event();
+                        this.event_filter();
+                        this.event_view();
                     }
                 }
             }()
