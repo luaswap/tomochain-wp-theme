@@ -103,15 +103,6 @@ if ( ! class_exists( 'TomoChain_Event_Widget' ) ) {
 						$output[] = '<p class="text-truncate"><a href="' . $custom_url . '">' . get_the_title() . '</a></p>';
 					}
 
-					if ( $instance['show_excerpt'] ) {
-						$excerpt = get_the_excerpt();
-						if($instance['excerpt_number'] && !empty($excerpt)){
-							$excerpt = wp_trim_words( $excerpt, $instance['excerpt_number'] );
-	    					$excerpt = preg_replace( '`\[[^\]]*\]`', '', $excerpt );
-						}
-						$output[] = '<div class="entry-excerpt">' . $excerpt . '</div>';
-					}
-
 					if ( $instance['show_meta'] ) {
 
 						$start_date = date_i18n(get_option('date_format') . ' ' . get_option('time_format'), strtotime(get_field('start_date')));
@@ -122,6 +113,15 @@ if ( ! class_exists( 'TomoChain_Event_Widget' ) ) {
 						$output[] = '<div class="entry-meta">';
 						$output[] = '<span class="post-date">' . $date . '</span>';
 						$output[] = '</div>';
+					}
+
+					if ( $instance['show_excerpt'] ) {
+						$excerpt = get_the_excerpt();
+						if($instance['excerpt_number'] && !empty($excerpt)){
+							$excerpt = wp_trim_words( $excerpt, $instance['excerpt_number'] );
+	    					$excerpt = preg_replace( '`\[[^\]]*\]`', '', $excerpt );
+						}
+						$output[] = '<div class="entry-excerpt">' . $excerpt . '</div>';
 					}
 
 					$output[] = '</div>';
