@@ -7,33 +7,37 @@
  * @package tomochain
  */
 get_header();
+$class = 'archive-content-wrap';
+if('post' == get_post_type())
+$class = "blog-content-tomo";
 ?>
-
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-        <?php do_action('tomochain_heading');?>
-        <div class="container">
-                <?php
-                $blog_filter = get_field('blog_filter','options');
-                if($blog_filter)
-                    tomochain_category_filter(get_post_type());
-                ?>
-                <div class="archive-page-wrap">
-                    <div class="row">
-                    <?php if ( have_posts() ) :
-                        /* Start the Loop */
-                        while ( have_posts() ) :
-                            the_post();
-                                get_template_part( 'template-parts/content', get_post_type() );
-                        endwhile;
-                        else :
-                            get_template_part( 'template-parts/content', 'none' );
-                        endif;
+            <div class="<?php echo esc_attr($class);?>">
+                <?php do_action('tomochain_heading');?>
+                <div class="container">
+                        <?php
+                        $blog_filter = get_field('blog_filter','options');
+                        if($blog_filter)
+                            tomochain_category_filter(get_post_type());
                         ?>
-                    </div>
-                    <?php tomochain_pagination(); ?>
+                        <div class="archive-posts">
+                            <div class="row">
+                            <?php if ( have_posts() ) :
+                                /* Start the Loop */
+                                while ( have_posts() ) :
+                                    the_post();
+                                        get_template_part( 'template-parts/content', get_post_type() );
+                                endwhile;
+                                else :
+                                    get_template_part( 'template-parts/content', 'none' );
+                                endif;
+                                ?>
+                            </div>
+                            <?php tomochain_pagination(); ?>
+                        </div>
                 </div>
-        </div>
+            </div>
 
         </main><!-- #main -->
     </div><!-- #primary -->

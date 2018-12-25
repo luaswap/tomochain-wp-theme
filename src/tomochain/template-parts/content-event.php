@@ -20,39 +20,46 @@ $excerpt_length = get_field('event_excerpt_length','options') ? get_field('event
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class($classes); ?> data-id="<?php echo esc_attr(get_the_ID());?>">
-	
-    <?php the_post_thumbnail('tomo-post-thumbnail'); ?>
+	<div class="inner">
+		<div class="box-content">
+			<div class="entry-img">
+				<?php the_post_thumbnail('tomo-post-thumbnail'); ?>
+			</div>
+			<div class="entry-header">
+				<?php
+				if ( is_singular() ) :
+					the_title( '<h1 class="entry-title">', '</h1>' );
+				else :
+		            the_title('<h2 class="entry-title">','</h2>');
+		            // the_title('<h2 class="entry-title"><a href="' . ($custom_url ? esc_url($custom_url) : get_permalink()) . '" target="' . esc_attr($open_new_tab) . '" rel="bookmark">', '</a></h2>');
+				endif;
+				?>
+				<div class="entry-meta">
+					<?php if($date){?>
+						<span class="posted-on"><?php echo $date;?></span>
+					<?php }?>
+				</div>
+			</div>
+			<div class="entry-box">
+				<?php if(get_the_excerpt()):?>
+					<div class="entry-content">
+						<?php
+						if($enable_excerpt)
+						echo tomochain_excerpt($excerpt_length);
 
-	<header class="entry-header">
-		<?php
-		if ( is_singular() ) :
-			the_title( '<h1 class="entry-title">', '</h1>' );
-		else :
-            the_title('<h2 class="entry-title">','</h2>');
-            // the_title('<h2 class="entry-title"><a href="' . ($custom_url ? esc_url($custom_url) : get_permalink()) . '" target="' . esc_attr($open_new_tab) . '" rel="bookmark">', '</a></h2>');
-		endif;
+						// wp_link_pages( array(
+						// 	'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'tomochain' ),
+						// 	'after'  => '</div>',
+						// ) );
+						?>
+					</div>
+				<?php endif;?>
+				<div class="entry-footer">
+					<a class="btn-tmp-txt1" href="<?php echo $custom_url ? esc_url($custom_url) : get_permalink()?>" target="<?php echo esc_attr($open_new_tab)?>" rel="bookmark"><?php echo esc_html__('See detail','tomochain')?></a>
+				</div>
+			</div>
+		</div>
+		<span class="btn_close"><?php echo esc_html__('Close','tomochain');?></span>
+	</div>
+</article>
 
-			?>
-		<div class="entry-meta">
-			<?php if($date){?>
-				<span class="posted-on"><?php echo $date;?></span>
-			<?php }?>
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php
-		if($enable_excerpt)
-		echo tomochain_excerpt($excerpt_length);
-
-		wp_link_pages( array(
-			'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'tomochain' ),
-			'after'  => '</div>',
-		) );
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-footer">
-		<?php //tomochain_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
-</article><!-- #post-<?php the_ID(); ?> -->

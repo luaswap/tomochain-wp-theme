@@ -63,8 +63,8 @@
                     url: url,
                     dataType: 'html',
                     success: function(data){
-                        var new_Obj = $($(data).find('.archive-page-wrap').html());
-                        $_this.parents('.container').find('.archive-page-wrap').html(new_Obj);
+                        var new_Obj = $($(data).find('.archive-posts').html());
+                        $_this.parents('.container').find('.archive-posts').html(new_Obj);
                     }
                 });
             })
