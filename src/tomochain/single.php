@@ -9,12 +9,12 @@
 get_header();
 ?>
 
-    <div id="primary" class="content-area">
+    <div id="primary" class="content-area tomo_detail">
         <main id="main" class="site-main">
         <?php do_action('tomochain_heading');?>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-8 col-lg-9">
+                <div class="col-12 col-md-8">
                     <?php
                     while ( have_posts() ) :
                         the_post();
@@ -31,7 +31,7 @@ get_header();
                     endwhile; // End of the loop.
                     ?>
                 </div>
-                <div class="col-12 col-md-4 col-lg-3">
+                <div class="col-12 col-md-4">
                     <?php get_sidebar(); ?>
                 </div>
             </div>

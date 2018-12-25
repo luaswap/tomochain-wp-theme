@@ -1,11 +1,7 @@
-.post {
-    margin-bottom: 60px !important;
-}
 
 .post-thumbnail {
     display: block;
     overflow: hidden;
-    margin-bottom: 30px;
 
     img {
         @extend %transit;
@@ -17,10 +13,18 @@
 }
 
 .single-post .site-main {
-    padding-top: 60px;
     margin-bottom: 80px;
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 50px;
+    }
 }
-
+.tomo_detail {
+    .top-banner-tomo {
+        @include media-breakpoint-down(sm) {
+            margin-bottom: 2em;
+        }
+    }
+}
 .entry-footer {
     /*display: none;*/
 
@@ -51,7 +55,7 @@
 
     > span {
         display: inline-block;
-        margin-right: 25px;
+        /*margin-right: 25px;*/
         color: #808aa9;
     }
 
@@ -146,31 +150,61 @@
 }
 
 .post-navigation {
-    margin-top: 60px;
-    margin-bottom: 60px;
-
+    border-top: 1px solid #8b96b5;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    @include media-breakpoint-down(sm) {
+        margin-top: 15px;
+        margin-bottom: 50px;
+        border-bottom: 1px solid #8b96b5;
+    }
+    .screen-reader-text {
+        display: none;
+    }
+    .nav-links {
+        display: flex;
+        > div {
+            width: 100%;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
     a {
-        display: inline-block;
-        margin-bottom: 10px;
+        display: block;
         color: #808aa9;
-
+        position: relative;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        padding: 15px;
         &:hover {
             color: #ebeaf5;
         }
     }
-
-    .nav-previous a:before {
-        content: fa-content($fa-var-angle-double-left);
-        font-size: 6px;
-        margin-right: 5px;
-        @extend .fas;
+    .nav-previous {
+        a {
+            &:before {
+                content: fa-content($fa-var-angle-double-left);
+                @extend .fas;
+                position: absolute;
+                left: 0;
+                top: 22px;
+                font-size: 10px;
+            }
+        }
     }
-
-    .nav-next a:after {
-        content: fa-content($fa-var-angle-double-right);
-        font-size: 6px;
-        margin-left: 5px;
-        @extend .fas;
+    .nav-next {
+        a {
+            &:after {
+                content: fa-content($fa-var-angle-double-right);
+                @extend .fas;
+                position: absolute;
+                right: 0;
+                top: 22px;
+                font-size: 10px;
+            }
+        }
     }
 
     @include media-breakpoint-up(sm) {
@@ -178,7 +212,6 @@
             display: grid;
             grid-template-columns: 50% 50%;
         }
-
         .nav-next {
             text-align: right;
         }

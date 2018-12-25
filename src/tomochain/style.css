@@ -9796,9 +9796,6 @@ COMPONENTS
 Specific UI components.
 This is where majority of our work takes place and our UI components are often composed of Objects and Components
 */
-.blog .site-main {
-  padding-top: 60px; }
-
 .post-fullwidth article {
   max-width: 100%;
   -webkit-box-flex: 0;
@@ -9850,6 +9847,9 @@ This is where majority of our work takes place and our UI components are often c
     .top-banner-tomo .container h2 {
       margin-top: 95px; }
 
+.archive-posts {
+  margin-top: 3em; }
+
 .body_event {
   overflow: hidden; }
   .body_event:after {
@@ -9881,13 +9881,15 @@ This is where majority of our work takes place and our UI components are often c
 
 .event-content-tomo .event-cat-filter {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .event-content-tomo .event-cat-filter:before, .event-content-tomo .event-cat-filter:after {
     clear: both;
     display: table;
     content: ""; }
   .event-content-tomo .event-cat-filter li {
-    float: left;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -9973,7 +9975,6 @@ This is where majority of our work takes place and our UI components are often c
         -webkit-transform: translate(10px, 5px);
                 transform: translate(10px, 5px); }
   .event-content-tomo article.active .inner {
-    background-image: linear-gradient(-220deg, #272f4b 0, #1a1f36 41%, #15152d 64%, #211841 96%);
     position: fixed;
     z-index: 99;
     max-width: 600px;
@@ -9982,6 +9983,10 @@ This is where majority of our work takes place and our UI components are often c
     -webkit-transform: translate(-50%, -52%);
             transform: translate(-50%, -52%);
     cursor: default !important; }
+    .event-content-tomo article.active .inner .box-content {
+      background-image: linear-gradient(-220deg, #272f4b 0, #1a1f36 41%, #15152d 64%, #211841 96%);
+      border-radius: 10px;
+      overflow: hidden; }
     .event-content-tomo article.active .inner .entry-img {
       border-radius: 0; }
       .event-content-tomo article.active .inner .entry-img img {
@@ -10003,13 +10008,15 @@ This is where majority of our work takes place and our UI components are often c
 
 .blog-content-tomo .post-cat-filter {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .blog-content-tomo .post-cat-filter:before, .blog-content-tomo .post-cat-filter:after {
     clear: both;
     display: table;
     content: ""; }
   .blog-content-tomo .post-cat-filter li {
-    float: left;
     list-style: none;
     margin: 0;
     padding: 0;
@@ -10568,20 +10575,15 @@ This is where majority of our work takes place and our UI components are often c
   .shop-full-width-no-space .woocommerce-pagination {
     margin-top: 80px; }
 
-.post {
-  margin-bottom: 60px !important; }
-
 .post-thumbnail {
   display: block;
-  overflow: hidden;
-  margin-bottom: 30px; }
+  overflow: hidden; }
 
 .post:hover img {
   -webkit-transform: scale(1.05);
           transform: scale(1.05); }
 
 .single-post .site-main {
-  padding-top: 60px;
   margin-bottom: 80px; }
 
 .entry-footer {
@@ -10605,7 +10607,7 @@ This is where majority of our work takes place and our UI components are often c
   margin-bottom: 10px; }
   .entry-meta > span {
     display: inline-block;
-    margin-right: 25px;
+    /*margin-right: 25px;*/
     color: #808aa9; }
   .entry-meta a {
     color: #808aa9; }
@@ -10662,22 +10664,42 @@ This is where majority of our work takes place and our UI components are often c
   margin-right: 10px; }
 
 .post-navigation {
-  margin-top: 60px;
-  margin-bottom: 60px; }
+  border-top: 1px solid #8b96b5;
+  margin-top: 50px;
+  margin-bottom: 50px; }
+  .post-navigation .screen-reader-text {
+    display: none; }
+  .post-navigation .nav-links {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .post-navigation .nav-links > div {
+      width: 100%;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap; }
   .post-navigation a {
-    display: inline-block;
-    margin-bottom: 10px;
-    color: #808aa9; }
+    display: block;
+    color: #808aa9;
+    position: relative;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    padding: 15px; }
     .post-navigation a:hover {
       color: #ebeaf5; }
   .post-navigation .nav-previous a:before {
     content: "\f100";
-    font-size: 6px;
-    margin-right: 5px; }
+    position: absolute;
+    left: 0;
+    top: 22px;
+    font-size: 10px; }
   .post-navigation .nav-next a:after {
     content: "\f101";
-    font-size: 6px;
-    margin-left: 5px; }
+    position: absolute;
+    right: 0;
+    top: 22px;
+    font-size: 10px; }
 
 .sticky {
   display: block; }
@@ -11482,7 +11504,9 @@ This is where majority of our work takes place and our UI components are often c
     color: #6a6beb; }
 
 .widget_tomo_recent_posts .recent-post {
-  display: table;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   padding-top: 0;
   padding-bottom: 20px;
   margin-bottom: 20px;
@@ -11493,23 +11517,32 @@ This is where majority of our work takes place and our UI components are often c
     border-bottom: none; }
 
 .widget_tomo_recent_posts .recent-post__thumb {
-  display: table-cell;
-  vertical-align: top;
-  width: 100px;
-  padding-right: 20px; }
+  width: 40%;
+  height: 80px;
+  overflow: hidden;
+  border-radius: 5px; }
 
 .widget_tomo_recent_posts .recent-post__info {
-  display: table-cell;
-  vertical-align: top; }
+  width: 60%;
+  padding-left: 20px; }
   .widget_tomo_recent_posts .recent-post__info p {
-    font-size: 15px;
-    line-height: 1.6;
-    max-width: 150px;
+    font-size: 14px;
+    line-height: 1.4;
     margin-top: -5px;
-    margin-bottom: 5px; }
+    margin-bottom: 5px;
+    white-space: initial; }
+    .widget_tomo_recent_posts .recent-post__info p a {
+      color: #f2f2f2; }
   .widget_tomo_recent_posts .recent-post__info .post-meta {
-    font-size: 13px;
+    font-size: 14px;
     color: #808aa9; }
+    .widget_tomo_recent_posts .recent-post__info .post-meta:before {
+      font-family: 'Font Awesome 5 Free';
+      content: "\f073";
+      display: inline-block;
+      vertical-align: baseline;
+      font-size: 16px;
+      margin-right: 5px; }
 
 body.error404 {
   height: 100vh;
@@ -15369,7 +15402,14 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .table-responsive-xl > .table-bordered {
       border: 0; }
   .hidden-lg-down {
-    display: none !important; } }
+    display: none !important; }
+    .top-banner-tomo {
+      margin: 0 0 3em;
+      height: 250px; }
+      .top-banner-tomo.page-post:before {
+        background-size: 50% auto; }
+      .top-banner-tomo.page-event:before {
+        background-size: 50% auto; } }
   @media (max-width: 991.98px) {
   .table-responsive-lg {
     display: block;
@@ -15380,7 +15420,23 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .table-responsive-lg > .table-bordered {
       border: 0; }
   .hidden-md-down {
-    display: none !important; } }
+    display: none !important; }
+    .event-content-tomo .event-cat-filter {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+      .event-content-tomo article.active .inner {
+        width: 95%; }
+    .blog-content-tomo .post-cat-filter {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; } }
   @media (max-width: 767.98px) {
   .table-responsive-md {
     display: block;
@@ -15392,6 +15448,42 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       border: 0; }
   .hidden-sm-down {
     display: none !important; }
+    .top-banner-tomo {
+      margin: 0 0 1em;
+      height: 150px; }
+      .top-banner-tomo.page-post:before {
+        background-size: 80% auto; }
+      .top-banner-tomo.page-event:before {
+        background-size: 80% auto; }
+        .top-banner-tomo .container h2 {
+          margin-top: 36px;
+          font-size: 18px; }
+    .archive-posts {
+      margin-top: 1.5em; }
+      .event-content-tomo .event-cat-filter li {
+        margin: 0 0.5em; }
+        .event-content-tomo .event-cat-filter li a {
+          font-size: 16px; }
+    .event-content-tomo article {
+      margin-bottom: 2em; }
+        .event-content-tomo article .inner .entry-img {
+          margin-bottom: 15px; }
+      .blog-content-tomo .post-cat-filter li {
+        margin: 0 0.5em; }
+    .blog-content-tomo article {
+      margin-bottom: 1.5em; }
+          .blog-content-tomo article .inner .box-content .entry-img {
+            margin-bottom: 15px; }
+    .single-post .site-main {
+      margin-bottom: 50px; }
+  .tomo_detail .top-banner-tomo {
+    margin-bottom: 2em; }
+    .post-navigation {
+      margin-top: 15px;
+      margin-bottom: 50px;
+      border-bottom: 1px solid #8b96b5; }
+    .widget_tomo_recent_posts .recent-post__thumb {
+      border-radius: 3px; }
   #tps-image-col {
     -webkit-box-ordinal-group: 3;
         -ms-flex-order: 2;
