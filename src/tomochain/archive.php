@@ -7,9 +7,12 @@
  * @package tomochain
  */
 get_header();
-$class = 'archive-content-wrap';
-if('post' == get_post_type())
-$class = "blog-content-tomo";
+$class = '';
+if('post' == get_post_type()){
+    $class = 'blog-content-tomo'; // Get style for Blog
+}else{
+    $class = 'archive-content-'.get_post_type();
+}
 ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main">

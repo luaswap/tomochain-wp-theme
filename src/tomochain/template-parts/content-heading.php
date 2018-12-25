@@ -44,7 +44,7 @@ if (!have_posts()) {
 }
 if($page_title_image) $style = 'background-image:url('.$page_title_image.')';
 ?>
-<div class="top-banner-tomo page-event" style="<?php echo esc_attr($style); ?>">
+<div class="top-banner-tomo page-<?php echo get_post_type();?>" style="<?php echo esc_attr($style); ?>">
     <div class="container">
         <h2><?php echo $page_title;?></h2>
     </div>
