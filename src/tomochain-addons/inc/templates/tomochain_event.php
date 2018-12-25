@@ -92,11 +92,6 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
                         </a>
                         <div class="event-date">
                             <?php
-                            // $format = 'd M';
-
-                            // if ( function_exists('pll__') ) {
-                            //     $format = pll__('d M');
-                            // }
                             $start_date = date_i18n(get_option('date_format') . ' ' . get_option('time_format'), strtotime(get_field('start_date')));
                             $end_date   = date_i18n(get_option('date_format') . ' ' . get_option('time_format'), strtotime(get_field('end_date')));
 
@@ -109,9 +104,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
                                 <?php echo the_title(); ?>
                             </a>
                         </h4>
-                        <?php if(the_field('venue')):?>
-                            <p class="event-venue"><?php the_field('venue'); ?></p>
-                        <?php endif;?>
+                        <p class="event-venue"><?php the_field('venue'); ?></p>
                     </div>
                 </div>
             <?php endwhile; ?>
