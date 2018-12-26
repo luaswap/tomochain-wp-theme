@@ -53,15 +53,19 @@
                 return;
             }
             $blog_filter.on('click','a',function(e){
-                var $_this = $(this);
-                window.history.pushState({},'',$(this).attr('href'));
                 e.preventDefault();
+                var $_this = $(this);
+                // window.history.pushState({},'',$(this).attr('href'));
+                // e.preventDefault();
                 var url = $(this).attr('href');
                 url = url.replace(/\/?(\?|#|$)/, "/$1");
 
                 $.ajax({
                     url: url,
                     dataType: 'html',
+                    beforeSend: function() {
+                        
+                    },
                     success: function(data){
                         var new_Obj = $($(data).find('.archive-posts').html());
                         $_this.parents('.container').find('.archive-posts').html(new_Obj);

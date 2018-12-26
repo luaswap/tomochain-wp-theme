@@ -196,7 +196,7 @@ if(!function_exists('tomochain_category_filter')){
                 'order'   => 'ASC'
             ) );
         }
-        echo '<ul class="'.$type.'-cat-filter">';
+        echo '<ul class="tab-filter '.$type.'-cat-filter">';
         echo '<li><a href="'. get_post_type_archive_link($type) .'">' . esc_html__( 'All', 'tomochain' ). '</a></li> ';
         foreach( $categories as $category ) {
             $category_link = sprintf( 
