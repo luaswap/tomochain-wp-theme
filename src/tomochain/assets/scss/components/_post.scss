@@ -1,15 +1,16 @@
 
 .post-thumbnail {
+    border-radius: 10px;
     display: block;
     overflow: hidden;
-
+    /*margin-bottom: 2em;*/
     img {
         @extend %transit;
     }
 }
 
 .post:hover img {
-    transform: scale(1.05);
+    /*transform: scale(1.05);*/
 }
 
 .single-post .site-main {
@@ -90,7 +91,7 @@
 }
 
 .entry-content {
-    line-height: 1.7;
+    line-height: 1.5;
     font-size: 15px;
 }
 
@@ -150,13 +151,13 @@
 }
 
 .post-navigation {
-    border-top: 1px solid #8b96b5;
+    border-top: 1px solid #6e7589;
     margin-top: 50px;
     margin-bottom: 50px;
     @include media-breakpoint-down(sm) {
         margin-top: 15px;
-        margin-bottom: 50px;
-        border-bottom: 1px solid #8b96b5;
+        margin-bottom: 30px;
+        border-bottom: 1px solid #6e7589;
     }
     .screen-reader-text {
         display: none;
@@ -177,7 +178,10 @@
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
-        padding: 15px;
+        padding: 10px;
+        @include media-breakpoint-up(md) {
+            padding: 10px 15px;
+        }
         &:hover {
             color: #ebeaf5;
         }
@@ -189,7 +193,7 @@
                 @extend .fas;
                 position: absolute;
                 left: 0;
-                top: 22px;
+                top: 16px;
                 font-size: 10px;
             }
         }
@@ -201,7 +205,7 @@
                 @extend .fas;
                 position: absolute;
                 right: 0;
-                top: 22px;
+                top: 16px;
                 font-size: 10px;
             }
         }

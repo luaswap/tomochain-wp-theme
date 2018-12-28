@@ -23,7 +23,7 @@ var tomochain
                         this.video();
                         this.event();
                         this.event_filter();
-                        this.event_popup();
+                        // this.event_popup();
                         this.tab_active();
                     }
                 }
@@ -67,20 +67,20 @@ var tomochain
         }
     }
 )(jQuery);
-(
-    function ($) {
-        tomochain.event_popup = function () {
-            $('.event-content-tomo article .inner .box-content').click(function() {
-                $(this).parent().parent().addClass('active');
-                $('body').addClass('body_event');
-            });
-            $('.event-content-tomo article .inner .btn_close').click(function() {
-                $(this).parent().parent().removeClass('active');
-                $('body').removeClass('body_event');
-            });
-        }
-    }
-)(jQuery);
+// (
+//     function ($) {
+//         tomochain.event_popup = function () {
+//             $('.event-content-tomo article .inner .box-content').click(function() {
+//                 $(this).parent().parent().addClass('active');
+//                 $('body').addClass('body_event');
+//             });
+//             $('.event-content-tomo article .inner .btn_close').click(function() {
+//                 $(this).parent().parent().removeClass('active');
+//                 $('body').removeClass('body_event');
+//             });
+//         }
+//     }
+// )(jQuery);
 (
     function ($) {
         tomochain.event = function () {
@@ -147,12 +147,15 @@ var tomochain
                     url: url,
                     dataType: 'html',
                     beforeSend: function() {
-                        
+                        $('.spinner').fadeIn('slow');
+                        $('.archive-posts').fadeOut('slow');
                     },
                     success: function(data){
+                        $('.spinner').fadeOut('slow');
+                        $('.archive-posts').fadeIn('slow');
                         var new_Obj = $($(data).find('.archive-posts').html());
                         $_this.parents('.container').find('.archive-posts').html(new_Obj);
-                        tomochain.event_popup();
+                        // tomochain.event_popup();
                     }
                 });
             })
@@ -226,9 +229,12 @@ var tomochain
                     url: url,
                     dataType: 'html',
                     beforeSend: function() {
-                        
+                        $('.spinner').fadeIn('slow');
+                        $('.archive-posts').fadeOut('slow');
                     },
                     success: function(data){
+                        $('.spinner').fadeOut('slow');
+                        $('.archive-posts').fadeIn('slow');
                         var new_Obj = $($(data).find('.archive-posts').html());
                         $_this.parents('.container').find('.archive-posts').html(new_Obj);
                     }

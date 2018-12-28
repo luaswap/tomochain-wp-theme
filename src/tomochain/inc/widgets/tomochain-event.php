@@ -110,7 +110,7 @@ if ( ! class_exists( 'TomoChain_Event_Widget' ) ) {
 
 						$date = $start_date . (strcmp($start_date, $end_date) ? ' - ' . $end_date : '');
 
-						$output[] = '<div class="entry-meta">';
+						$output[] = '<div class="event-meta">';
 						$output[] = '<span class="post-date">' . $date . '</span>';
 						$output[] = '</div>';
 					}

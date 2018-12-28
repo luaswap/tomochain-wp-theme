@@ -19,7 +19,12 @@ $excerpt_length = get_field('blog_excerpt_length','options') ? get_field('blog_e
 	<div class="inner">
 		<div class="box-content">
 			<div class="entry-img">
-				<?php tomochain_post_thumbnail(); ?>
+				<?php if(has_post_thumbnail()):
+						tomochain_post_thumbnail();
+					else: $img_url = get_template_directory_uri() . '/assets/images/image-list.jpg';?>
+						<img src="<?php echo esc_url($img_url);?>" alt="<?php echo esc_attr(get_the_title());?>">
+				<?php endif;
+				?>
 			</div>
 			<div class="entry-header">
 				<?php
@@ -50,9 +55,9 @@ $excerpt_length = get_field('blog_excerpt_length','options') ? get_field('blog_e
 						?>
 					</div>
 				<?php endif;?>
-				<div class="entry-footer">
-					<a class="btn-tmp-txt1" href="<?php echo $custom_url ? esc_url($custom_url) : get_permalink()?>" target="<?php echo esc_attr($open_new_tab)?>" rel="bookmark"><?php echo esc_html__('See detail','tomochain')?></a>
-				</div>
+				<!-- <div class="entry-footer">
+					<a class="btn-tmp-txt1" href="<?php //echo $custom_url ? esc_url($custom_url) : get_permalink()?>" target="<?php //echo esc_attr($open_new_tab)?>" rel="bookmark"><?php //echo esc_html__('Read More','tomochain')?></a>
+				</div> -->
 			</div>
 		</div>
 		<span class="btn_close"><?php echo esc_html__('Close','tomochain');?></span>

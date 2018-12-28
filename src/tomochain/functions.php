@@ -353,3 +353,12 @@ if (defined('SENDGRID_CATEGORY')) {
     remove_action( 'init', 'sg_create_subscribe_missing_token_error_page' );
     remove_action( 'init', 'sg_create_subscribe_invalid_token_error_page' );
 }
+
+/**
+ * Upload file SVG
+ */
+function dvb_custom_mime_types($mimes) {
+  $mimes['svg'] = 'image/svg+xml';
+  return $mimes;
+}
+add_filter('upload_mimes', 'dvb_custom_mime_types');
