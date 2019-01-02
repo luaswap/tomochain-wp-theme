@@ -19,12 +19,14 @@ $excerpt_length = get_field('blog_excerpt_length','options') ? get_field('blog_e
 	<div class="inner">
 		<div class="box-content">
 			<div class="entry-img">
-				<?php if(has_post_thumbnail()):
-						tomochain_post_thumbnail();
-					else: $img_url = get_template_directory_uri() . '/assets/images/image-list.jpg';?>
-						<img src="<?php echo esc_url($img_url);?>" alt="<?php echo esc_attr(get_the_title());?>">
-				<?php endif;
-				?>
+				<a class="post-thumbnail" href="<?php echo $custom_url ? esc_url($custom_url) : get_permalink()?>" target="<?php echo esc_attr($open_new_tab)?>" rel="bookmark">
+					<?php if(has_post_thumbnail()):
+							tomochain_post_thumbnail();
+						else: $img_url = get_template_directory_uri() . '/assets/images/image-list.jpg';?>
+							<img src="<?php echo esc_url($img_url);?>" alt="<?php echo esc_attr(get_the_title());?>">
+						<?php endif;
+					?>
+				</a>
 			</div>
 			<div class="entry-header">
 				<?php
