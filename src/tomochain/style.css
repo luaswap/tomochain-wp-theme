@@ -8656,7 +8656,7 @@ input[type="submit"] {
   position: relative;
   line-height: .1; }
   .btn-downios:before {
-    background: url(../wp-content/uploads/2018/12/icon_apple_hover.svg) no-repeat center;
+    background: url(../tomochain/assets/images/icon_apple_hover.svg) no-repeat center;
     background-size: 100%;
     content: '';
     width: 100%;
@@ -8679,7 +8679,7 @@ input[type="submit"] {
   position: relative;
   line-height: .1; }
   .btn-downandroid:before {
-    background: url(../wp-content/uploads/2018/12/icon_android_hover.svg) no-repeat center;
+    background: url(../tomochain/assets/images/icon_android_hover.svg) no-repeat center;
     background-size: 100%;
     content: '';
     width: 100%;
@@ -8703,7 +8703,7 @@ input[type="submit"] {
   line-height: .1;
   margin-top: 12px !important; }
   .btn-runapp:before {
-    background: url(../wp-content/uploads/2018/12/icon_run_app_hover.svg) no-repeat center;
+    background: url(../tomochain/assets/images/icon_run_app_hover.svg) no-repeat center;
     background-size: 100%;
     content: '';
     width: 100%;
@@ -8727,7 +8727,7 @@ input[type="submit"] {
   line-height: .1;
   margin-top: 12px !important; }
   .btn-sourcecode:before {
-    background: url(../wp-content/uploads/2018/12/icon_code_hover.svg) no-repeat center;
+    background: url(../tomochain/assets/images/icon_code_hover.svg) no-repeat center;
     background-size: 100%;
     content: '';
     width: 100%;
@@ -10232,6 +10232,7 @@ This is where majority of our work takes place and our UI components are often c
       background-color: #43abfc;
       height: 100%;
       width: 3px;
+      margin: 0 2px;
       border-radius: 10px;
       display: inline-block;
       -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;

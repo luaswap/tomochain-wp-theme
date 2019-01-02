@@ -15,7 +15,7 @@ get_header();
 ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-            <div class = "blog-content-tomo">
+            <div class="blog-content-tomo">
                 <?php do_action('tomochain_heading');?>
                 <div class="container">
                     <?php
