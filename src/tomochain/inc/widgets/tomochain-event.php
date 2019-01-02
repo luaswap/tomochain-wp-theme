@@ -95,7 +95,12 @@ if ( ! class_exists( 'TomoChain_Event_Widget' ) ) {
 						$image    = get_the_post_thumbnail_url( get_the_ID(), array(100, 100) );
 						$output[] = '<img src="' . $image . '" />';
 						$output[] = '</a>';
-					}
+					}else{
+						$output[] = '<a href="' . $custom_url . '" class="tomo-event__thumb" target="'. esc_attr($open_new_tab) .'">';
+						$img_url = get_template_directory_uri() . '/assets/images/image-shortcode.jpg';
+						$output[] = '<img src="' . $img_url . '" />';
+						$output[] = '</a>';
+                    }
 
 					$output[] = '<div class="tomo-event__info">';
 

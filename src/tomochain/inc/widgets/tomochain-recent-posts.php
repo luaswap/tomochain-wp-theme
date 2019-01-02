@@ -48,7 +48,12 @@ if ( ! class_exists( 'TomoChain_Recent_Posts_Widget' ) ) {
 					$image    = get_the_post_thumbnail_url( get_the_ID(), array(100, 100) );
 					$output[] = '<img src="' . $image . '" />';
 					$output[] = '</a>';
-				}
+				}else{
+					$output[] = '<a href="' . get_permalink() . '" class="recent-post__thumb">';
+					$img_url = get_template_directory_uri() . '/assets/images/image-shortcode.jpg';
+					$output[] = '<img src="' . $img_url . '" />';
+					$output[] = '</a>';
+                }
 
 				$output[] = '<div class="recent-post__info">';
 
