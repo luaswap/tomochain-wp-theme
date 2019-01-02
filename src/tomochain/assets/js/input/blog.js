@@ -64,9 +64,12 @@
                     url: url,
                     dataType: 'html',
                     beforeSend: function() {
-                        
+                        $('.spinner').fadeIn('slow');
+                        $('.archive-posts').fadeOut('slow');
                     },
                     success: function(data){
+                        $('.spinner').fadeOut('slow');
+                        $('.archive-posts').fadeIn('slow');
                         var new_Obj = $($(data).find('.archive-posts').html());
                         $_this.parents('.container').find('.archive-posts').html(new_Obj);
                     }

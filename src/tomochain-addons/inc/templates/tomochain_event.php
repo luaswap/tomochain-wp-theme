@@ -86,9 +86,12 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
                             <?php
                             if (get_field('image')) {
                                 echo wp_get_attachment_image(get_field('image'), 'tomo-post-small-thumbnail');
-                            } else {
+                            } elseif(has_post_thumbnail()) {
                                 the_post_thumbnail('tomo-post-small-thumbnail');
-                            } ?>
+                            }else{ $img_url = get_template_directory_uri() . '/assets/images/image-shortcode.jpg';
+                            ?>
+                                <img src="<?php echo esc_url($img_url);?>" alt="<?php echo esc_attr(get_the_title());?>">
+                            <?php }?>
                         </a>
                         <div class="event-date">
                             <?php

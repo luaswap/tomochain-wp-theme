@@ -19,11 +19,19 @@ if('post' == get_post_type()){
             <div class="<?php echo esc_attr($class);?>">
                 <?php do_action('tomochain_heading');?>
                 <div class="container">
-                        <?php
-                        $blog_filter = get_field('blog_filter','options');
-                        if($blog_filter)
-                            tomochain_category_filter(get_post_type());
-                        ?>
+                    <?php
+                    $blog_filter = get_field('blog_filter','options');
+                    if($blog_filter)
+                        tomochain_category_filter(get_post_type());
+                    ?>
+                    <div class="tomo-main-archive">
+                        <div class="spinner">
+                            <div class="rect1"></div>
+                            <div class="rect2"></div>
+                            <div class="rect3"></div>
+                            <div class="rect4"></div>
+                            <div class="rect5"></div>
+                        </div>
                         <div class="archive-posts">
                             <div class="row">
                             <?php if ( have_posts() ) :
@@ -39,6 +47,7 @@ if('post' == get_post_type()){
                             </div>
                             <?php tomochain_pagination(); ?>
                         </div>
+                    </div>
                 </div>
             </div>
 

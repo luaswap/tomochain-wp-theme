@@ -50,9 +50,13 @@ $posts = get_posts(
                         <?php
                         if (get_field('image', $post)) {
                             echo wp_get_attachment_image(get_field('image', $post), 'tomo-post-small-thumbnail');
-                        } else {
+                        }elseif(has_post_thumbnail($post)) {
                             echo get_the_post_thumbnail($post, 'tomo-post-small-thumbnail');
-                        } ?>
+                        }else{
+                            $img_url = get_template_directory_uri() . '/assets/images/image-shortcode.jpg';
+                        ?>
+                            <img src="<?php echo esc_url($img_url);?>" alt="<?php echo esc_attr(get_the_title());?>">
+                        <?php }?>
                     </a>
                     <div class="blog-date">
                         <?php

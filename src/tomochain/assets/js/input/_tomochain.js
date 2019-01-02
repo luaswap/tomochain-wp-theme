@@ -23,7 +23,7 @@ var tomochain
                         this.video();
                         this.event();
                         this.event_filter();
-                        this.event_popup();
+                        // this.event_popup();
                         this.tab_active();
                     }
                 }

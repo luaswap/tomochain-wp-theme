@@ -15,14 +15,22 @@ get_header();
 ?>
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
-            <div class = "blog-content-tomo">
+            <div class="blog-content-tomo">
                 <?php do_action('tomochain_heading');?>
                 <div class="container">
-                        <?php
-                        $blog_filter = get_field('blog_filter','options');
-                        if($blog_filter)
-                            tomochain_category_filter('post');
-                        ?>
+                    <?php
+                    $blog_filter = get_field('blog_filter','options');
+                    if($blog_filter)
+                        tomochain_category_filter('post');
+                    ?>
+                    <div class="tomo-main-archive">
+                        <div class="spinner">
+                            <div class="rect1"></div>
+                            <div class="rect2"></div>
+                            <div class="rect3"></div>
+                            <div class="rect4"></div>
+                            <div class="rect5"></div>
+                        </div>
                         <div class="archive-posts">
                             <div class="row">
                             <?php if ( have_posts() ) :
@@ -38,6 +46,7 @@ get_header();
                             </div>
                             <?php tomochain_pagination(); ?>
                         </div>
+                    </div>
                 </div>
             </div>
         </main><!-- #main -->

@@ -11,7 +11,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
     <div class="post-thumbnail">
-        <?php the_post_thumbnail('tomo-single-thumbnail'); ?>
+        <?php
+        	if(has_post_thumbnail()){
+        		the_post_thumbnail('tomo-single-thumbnail');
+        	}else{
+                $img_url = get_template_directory_uri() . '/assets/images/image-single.jpg';
+            ?>
+                <img src="<?php echo esc_url($img_url);?>" alt="<?php echo esc_attr(get_the_title());?>">
+            <?php }
+        ?>
     </div>
 
 	<header class="entry-header">
@@ -23,6 +31,7 @@
 				<?php
 				tomochain_posted_by();
                 tomochain_categories();
+                tomochain_post_date();
 				?>
 			</div><!-- .entry-meta -->
 		<?php elseif('event' === get_post_type()):
@@ -31,9 +40,12 @@
 			$date = $start_date . (strcmp($start_date, $end_date) ? ' - ' . $end_date : '');
 			?>
 			<div class="entry-meta">
-				<?php if($date){?>
-					<span class="posted-on"><?php echo $date;?></span>
-				<?php }?>
+				<p class="event-time">
+					<?php if($date){?>
+						<span class="posted-on"><?php echo $date;?></span>
+					<?php }?>
+				</p>
+				<p class="event-venue"><?php the_field('venue'); ?></p>
 			</div><!-- .entry-meta -->
 		<?php endif; ?>
 	</header><!-- .entry-header -->

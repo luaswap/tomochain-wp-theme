@@ -24,7 +24,7 @@ if (!have_posts()) {
     $page_title = single_term_title('', false);
     $page_title_image = $event_banner;
 } elseif ( is_post_type_archive ('event') || is_singular('event')) {
-    $page_title = esc_html__('Event & Media','tomochain');
+    $page_title = esc_html__('Events','tomochain');
     $page_title_image = $event_banner;
 } elseif ( is_singular('post') ) {
     $page_title = esc_html__('Blog','tomochain');
