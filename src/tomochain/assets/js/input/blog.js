@@ -52,7 +52,7 @@
             if (!$blog_filter.length) {
                 return;
             }
-            $blog_filter.on('click','a',function(e){
+            $(document).on('click','.post-cat-filter a,.page-numbers a',function(e){
                 e.preventDefault();
                 var $_this = $(this);
                 // window.history.pushState({},'',$(this).attr('href'));
