@@ -280,12 +280,12 @@ require_once TOMOCHAIN_THEME_DIR . '/inc/post-types/post-types.php';
 /**
  * Widgets
  */
-require TOMOCHAIN_THEME_DIR . '/inc/widgets/wph-widget-class.php';
-require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-address.php';
-require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-recent-posts.php';
+require_once TOMOCHAIN_THEME_DIR . '/inc/widgets/wph-widget-class.php';
+require_once TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-address.php';
+require_once TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-recent-posts.php';
 require_once TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-event.php';
 if (defined('SENDGRID_CATEGORY')) {
-    require TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-sendgrid.php';
+    require_once TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-sendgrid.php';
 }
 /**
  * Add Theme Options page
@@ -303,27 +303,27 @@ if (function_exists('acf_add_options_page')) {
 /**
  * Implement the Custom Header feature.
  */
-require TOMOCHAIN_THEME_DIR . '/inc/custom-header.php';
+require_once TOMOCHAIN_THEME_DIR . '/inc/custom-header.php';
 
 /**
  * Custom template tags for this theme.
  */
-require TOMOCHAIN_THEME_DIR . '/inc/template-tags.php';
+require_once TOMOCHAIN_THEME_DIR . '/inc/template-tags.php';
 
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
-require TOMOCHAIN_THEME_DIR . '/inc/template-functions.php';
+require_once TOMOCHAIN_THEME_DIR . '/inc/template-functions.php';
 
 /**
  * Customizer additions.
  */
-require TOMOCHAIN_THEME_DIR . '/inc/customizer.php';
+require_once TOMOCHAIN_THEME_DIR . '/inc/customizer.php';
 
 /**
  * Import ACF local field groups
  */
-require TOMOCHAIN_THEME_DIR . '/inc/acf-local-field-groups.php';
+require_once TOMOCHAIN_THEME_DIR . '/inc/acf-local-field-groups.php';
 
 function my_acf_init() {
     acf_update_setting('google_api_key', get_field('google_maps_api_key', 'options'));
