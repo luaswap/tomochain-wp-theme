@@ -22,8 +22,8 @@ if ( ! class_exists( 'TomoChain_Event_Widget' ) ) {
 		 */
 		function __construct() {
 			parent::__construct( 'tomo_event',
-				'&#x1f4cc; &nbsp;' . __( 'TOMOCHAIN - Event', 'tomochain' ),
-				array( 'description' => __( 'Your site\'s most Events.', 'tomochain' ) ) );
+				'&#x1f4cc; &nbsp;' . __( 'TOMOCHAIN - Event', 'tomochain-addons' ),
+				array( 'description' => __( 'Your site\'s most Events.', 'tomochain-addons' ) ) );
 		}
 
 		function widget( $args, $instance ) {
@@ -35,9 +35,9 @@ if ( ! class_exists( 'TomoChain_Event_Widget' ) ) {
                 $output = array( '<h3 class="widget-title">' . $instance['title'] . '</h3>' );
             }
 
-			$query_args = array( 
-				'post_type' => 'event', 
-				'posts_per_page' => $instance['number'] 
+			$query_args = array(
+				'post_type' => 'event',
+				'posts_per_page' => $instance['number']
 			);
 			if('upcoming' == $instance['data_source']){
 		        $query_args['meta_query'] = array(
