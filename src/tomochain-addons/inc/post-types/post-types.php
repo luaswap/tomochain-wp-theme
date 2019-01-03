@@ -14,14 +14,13 @@ if( ! class_exists( 'Tomochain_Add_Posttypes' ) ) {
 	class Tomochain_Add_Posttypes {
 
 		public function __construct() {
-			add_action( 'init', array($this, 'includes'), 0 );
+            $this->includes();
 		}
 
 		public function includes() {
-
-			require_once( TOMOCHAIN_THEME_DIR . '/inc/post-types/event.php');
-
+			require_once( TOMOCHAIN_ADDONS_DIR . '/inc/post-types/event.php');
 		}
-	}
+    }
+
 	new Tomochain_Add_Posttypes;
 }

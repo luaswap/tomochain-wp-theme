@@ -273,20 +273,7 @@ function tomochain_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'tomochain_scripts' );
-/**
- * Event Post Type
- */
-require_once TOMOCHAIN_THEME_DIR . '/inc/post-types/post-types.php';
-/**
- * Widgets
- */
-require_once TOMOCHAIN_THEME_DIR . '/inc/widgets/wph-widget-class.php';
-require_once TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-address.php';
-require_once TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-recent-posts.php';
-require_once TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-event.php';
-if (defined('SENDGRID_CATEGORY')) {
-    require_once TOMOCHAIN_THEME_DIR . '/inc/widgets/tomochain-sendgrid.php';
-}
+
 /**
  * Add Theme Options page
  */
