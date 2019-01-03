@@ -15,13 +15,13 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
         function __construct() {
             $args = array(
                 'slug'  => 'tomo_address',
-                'label' => '&#x1f4cc; &nbsp;' . esc_html__( 'TOMOCHAIN Address', 'tomochain' ),
-                'description' => esc_html__( 'Display contact information on footer.', 'tomochain' )
+                'label' => '&#x1f4cc; &nbsp;' . esc_html__( 'TOMOCHAIN Address', 'tomochain-addons' ),
+                'description' => esc_html__( 'Display contact information on footer.', 'tomochain-addons' )
             );
 
             $args['fields'] = array(
                 array(
-                    'name'   => esc_html__( 'Title', 'tomochain' ),
+                    'name'   => esc_html__( 'Title', 'tomochain-addons' ),
                     'id'     => 'title',
                     'type'   => 'text',
                     'class'  => 'widefat',
@@ -29,7 +29,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => 'strip_tags|esc_attr'
                 ),
                 array(
-                    'name'   => esc_html__( 'Address Title 1', 'tomochain' ),
+                    'name'   => esc_html__( 'Address Title 1', 'tomochain-addons' ),
                     'id'     => 'address_title',
                     'type'   => 'text',
                     'class'  => 'widefat',
@@ -37,7 +37,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => 'strip_tags|esc_attr'
                 ),
                 array(
-                    'name'   => esc_html__( 'Address 1', 'tomochain' ),
+                    'name'   => esc_html__( 'Address 1', 'tomochain-addons' ),
                     'id'     => 'address',
                     'type'   => 'textarea',
                     'class'  => 'widefat',
@@ -45,7 +45,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => ''
                 ),
                 array(
-                    'name'   => esc_html__( 'Address Title 2', 'tomochain' ),
+                    'name'   => esc_html__( 'Address Title 2', 'tomochain-addons' ),
                     'id'     => 'address_title2',
                     'type'   => 'text',
                     'class'  => 'widefat',
@@ -53,7 +53,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => 'strip_tags|esc_attr'
                 ),
                 array(
-                    'name'   => esc_html__( 'Address 2', 'tomochain' ),
+                    'name'   => esc_html__( 'Address 2', 'tomochain-addons' ),
                     'id'     => 'address2',
                     'type'   => 'textarea',
                     'class'  => 'widefat',
@@ -61,7 +61,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => ''
                 ),
                 array(
-                    'name'   => esc_html__( 'Address Title 3', 'tomochain' ),
+                    'name'   => esc_html__( 'Address Title 3', 'tomochain-addons' ),
                     'id'     => 'address_title3',
                     'type'   => 'text',
                     'class'  => 'widefat',
@@ -69,7 +69,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => 'strip_tags|esc_attr'
                 ),
                 array(
-                    'name'   => esc_html__( 'Address 3', 'tomochain' ),
+                    'name'   => esc_html__( 'Address 3', 'tomochain-addons' ),
                     'id'     => 'address3',
                     'type'   => 'textarea',
                     'class'  => 'widefat',
@@ -77,7 +77,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => ''
                 ),
                 array(
-                    'name'   => esc_html__( 'Address Title 4', 'tomochain' ),
+                    'name'   => esc_html__( 'Address Title 4', 'tomochain-addons' ),
                     'id'     => 'address_title4',
                     'type'   => 'text',
                     'class'  => 'widefat',
@@ -85,7 +85,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => 'strip_tags|esc_attr'
                 ),
                 array(
-                    'name'   => esc_html__( 'Address 4', 'tomochain' ),
+                    'name'   => esc_html__( 'Address 4', 'tomochain-addons' ),
                     'id'     => 'address4',
                     'type'   => 'textarea',
                     'class'  => 'widefat',
@@ -93,7 +93,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => ''
                 ),
                 array(
-                    'name'   => esc_html__( 'Address Title 5', 'tomochain' ),
+                    'name'   => esc_html__( 'Address Title 5', 'tomochain-addons' ),
                     'id'     => 'address_title5',
                     'type'   => 'text',
                     'class'  => 'widefat',
@@ -101,7 +101,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => 'strip_tags|esc_attr'
                 ),
                 array(
-                    'name'   => esc_html__( 'Address 5', 'tomochain' ),
+                    'name'   => esc_html__( 'Address 5', 'tomochain-addons' ),
                     'id'     => 'address5',
                     'type'   => 'textarea',
                     'class'  => 'widefat',
@@ -109,7 +109,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => ''
                 ),
                 array(
-                    'name'   => esc_html__( 'Address Title 6', 'tomochain' ),
+                    'name'   => esc_html__( 'Address Title 6', 'tomochain-addons' ),
                     'id'     => 'address_title6',
                     'type'   => 'text',
                     'class'  => 'widefat',
@@ -117,7 +117,7 @@ if ( ! class_exists( 'TomoChain_Address_Widget' ) ) {
                     'filter' => 'strip_tags|esc_attr'
                 ),
                 array(
-                    'name'   => esc_html__( 'Address 6', 'tomochain' ),
+                    'name'   => esc_html__( 'Address 6', 'tomochain-addons' ),
                     'id'     => 'address6',
                     'type'   => 'textarea',
                     'class'  => 'widefat',

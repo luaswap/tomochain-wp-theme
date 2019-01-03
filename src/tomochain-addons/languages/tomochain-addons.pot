@@ -1,4 +1,4 @@
-# Copyright (C) 2018 tomochain-addons
+# Copyright (C) 2019 tomochain-addons
 # This file is distributed under the same license as the tomochain-addons package.
 msgid ""
 msgstr ""
@@ -23,39 +23,191 @@ msgstr ""
 msgid "<strong>%s</strong> requires <strong>TomoChain</strong> theme to be installed and activated on your site."
 msgstr ""
 
-#: src/tomochain-addons/inc/vc-extend.php:43
+#: src/tomochain-addons/inc/vc-extend.php:44
 msgid "Design Options"
 msgstr ""
 
-#: src/tomochain-addons/inc/vc-extend.php:45
+#: src/tomochain-addons/inc/vc-extend.php:46
 msgid "CSS box"
 msgstr ""
 
-#: src/tomochain-addons/inc/vc-extend.php:52
+#: src/tomochain-addons/inc/vc-extend.php:53
 msgid "Extra class name"
 msgstr ""
 
-#: src/tomochain-addons/inc/vc-extend.php:54
+#: src/tomochain-addons/inc/vc-extend.php:55
 msgid "Style particular content element differently - add a class name and refer to it in custom CSS."
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:26, src/tomochain-addons/inc/post-types/event.php:28
+msgid "Events"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:27, src/tomochain-addons/inc/shortcodes/tomochain-event.php:9
+msgid "Event"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:29
+msgid "Add New"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:30, src/tomochain-addons/inc/post-types/event.php:32
+msgid "Add New Event"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:31
+msgid "Edit Event"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:33
+msgid "View Event"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:34
+msgid "Search Event"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:35
+msgid "No Event items found"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:36
+msgid "No Event items found in trash"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:42
+msgid "Display Events"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:67
+msgid "Event Categories"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:68, src/tomochain-addons/inc/post-types/event.php:69
+msgid "Event Category"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:70
+msgid "All Event Category"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:71
+msgid "Edit Event Category"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:72
+msgid "View Event Category"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:73
+msgid "Update Event Category"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:74
+msgid "Add New Event Category"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:75
+msgid "New Event Category Name"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:76
+msgid "Parent Event Category"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:77
+msgid "Parent Event Category:"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:78
+msgid "Search Event Category"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:79
+msgid "Popular Event Category"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:80
+msgid "Separate Event Category with commas"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:81
+msgid "Add or remove Event Category"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:82
+msgid "Choose from the most used Event Categories"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:83
+msgid "No Event Category found"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:108, src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:18, src/tomochain-addons/inc/widgets/tomochain-address.php:24
+msgid "Title"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:109
+msgid "Thumbnail"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:110
+msgid "Start Event"
+msgstr ""
+
+#: src/tomochain-addons/inc/post-types/event.php:111
+msgid "Close Event"
 msgstr ""
 
 #: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:9
 msgid "Blog"
 msgstr ""
 
-#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:12, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:79, src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:61, src/tomochain-addons/inc/shortcodes/tomochain-dapp2.php:61, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:12, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:12, src/tomochain-addons/inc/shortcodes/tomochain-list.php:26, src/tomochain-addons/inc/shortcodes/tomochain-lottie.php:12, src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:12, src/tomochain-addons/inc/shortcodes/tomochain-roadmap.php:12, src/tomochain-addons/inc/shortcodes/tomochain-social.php:12, src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:64, src/tomochain-addons/inc/shortcodes/tomochain-team.php:11, src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:13, src/tomochain-addons/inc/shortcodes/tomochain-testnet.php:11, src/tomochain-addons/inc/shortcodes/tomochain-video-item.php:13, src/tomochain-addons/inc/shortcodes/tomochain-videos.php:11
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:12, src/tomochain-addons/inc/shortcodes/tomochain-countdown.php:79, src/tomochain-addons/inc/shortcodes/tomochain-dapp.php:61, src/tomochain-addons/inc/shortcodes/tomochain-dapp2.php:61, src/tomochain-addons/inc/shortcodes/tomochain-event.php:12, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:12, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:12, src/tomochain-addons/inc/shortcodes/tomochain-list.php:26, src/tomochain-addons/inc/shortcodes/tomochain-lottie.php:12, src/tomochain-addons/inc/shortcodes/tomochain-roadmap-item.php:12, src/tomochain-addons/inc/shortcodes/tomochain-roadmap.php:12, src/tomochain-addons/inc/shortcodes/tomochain-social.php:12, src/tomochain-addons/inc/shortcodes/tomochain-team-member.php:64, src/tomochain-addons/inc/shortcodes/tomochain-team.php:11, src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:13, src/tomochain-addons/inc/shortcodes/tomochain-testnet.php:11, src/tomochain-addons/inc/shortcodes/tomochain-video-item.php:13, src/tomochain-addons/inc/shortcodes/tomochain-videos.php:11
 msgid "TomoChain"
 msgstr ""
 
-#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:17, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:41
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:17, src/tomochain-addons/inc/shortcodes/tomochain-event.php:41
+msgid "Per Page"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:22, src/tomochain-addons/inc/shortcodes/tomochain-event.php:63
+msgid "Slides To Show"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:26, src/tomochain-addons/inc/shortcodes/tomochain-event.php:67
+msgid "2 Item"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:27, src/tomochain-addons/inc/shortcodes/tomochain-event.php:68
+msgid "3 Item"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:28, src/tomochain-addons/inc/shortcodes/tomochain-event.php:69
+msgid "4 Item"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:29, src/tomochain-addons/inc/shortcodes/tomochain-event.php:70
+msgid "5 Item"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:36
+msgid "Enable Excerpt Length"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:42
+msgid "Enter Excerpt Length"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:52, src/tomochain-addons/inc/shortcodes/tomochain-event.php:81, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:41
 msgid "Enable carousel loop mode"
 msgstr ""
 
-#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:23, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:47
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:58, src/tomochain-addons/inc/shortcodes/tomochain-event.php:91, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:47
 msgid "Enable carousel autolay"
 msgstr ""
 
-#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:29, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:53
+#: src/tomochain-addons/inc/shortcodes/tomochain-blog.php:64, src/tomochain-addons/inc/shortcodes/tomochain-event.php:101, src/tomochain-addons/inc/shortcodes/tomochain-image-carousel.php:53
 msgid "Auto play speed (in seconds)"
 msgstr ""
 
@@ -223,6 +375,62 @@ msgstr ""
 msgid "DApp 2"
 msgstr ""
 
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:16
+msgid "Data Source"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:17
+msgid "Choose the source which event will be displayed."
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:21
+msgid "All"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:22
+msgid "Ongoing Events"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:23
+msgid "Upcoming Event"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:24
+msgid "Past Event"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:29
+msgid "Event Layout"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:33
+msgid "Grid"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:34
+msgid "Slide"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:46
+msgid "Columns"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:47
+msgid "Enter columns number"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:51
+msgid "2 Columns"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:52
+msgid "3 Columns"
+msgstr ""
+
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:53
+msgid "4 Columns"
+msgstr ""
+
 #: src/tomochain-addons/inc/shortcodes/tomochain-image-carousel-item.php:9
 msgid "Image Carousel Item"
 msgstr ""
@@ -367,10 +575,6 @@ msgstr ""
 msgid "Testnet Item"
 msgstr ""
 
-#: src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:18
-msgid "Title"
-msgstr ""
-
 #: src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:25
 msgid "Status"
 msgstr ""
@@ -399,7 +603,7 @@ msgstr ""
 msgid "Videos"
 msgstr ""
 
-#: src/tomochain-addons/inc/templates/tomochain_blog.php:91
+#: src/tomochain-addons/inc/templates/tomochain_blog.php:89, src/tomochain-addons/inc/templates/tomochain_event.php:119
 msgid "See all our news"
 msgstr ""
 
@@ -425,4 +629,120 @@ msgstr ""
 
 #: src/tomochain-addons/inc/templates/tomochain_video_item.php:40
 msgid "Play"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:18
+msgid "TOMOCHAIN Address"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:19
+msgid "Display contact information on footer."
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:32
+msgid "Address Title 1"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:40
+msgid "Address 1"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:48
+msgid "Address Title 2"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:56
+msgid "Address 2"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:64
+msgid "Address Title 3"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:72
+msgid "Address 3"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:80
+msgid "Address Title 4"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:88
+msgid "Address 4"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:96
+msgid "Address Title 5"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:104
+msgid "Address 5"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:112
+msgid "Address Title 6"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-address.php:120
+msgid "Address 6"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-event.php:25
+msgid "TOMOCHAIN - Event"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-event.php:26
+msgid "Your site's most Events."
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-recent-posts.php:22
+msgid "TOMOCHAIN - Recent Posts"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-recent-posts.php:23
+msgid "Your site's most recent Posts."
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-sendgrid.php:27
+msgid "TOMOCHAIN Sendgrid"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-sendgrid.php:28
+msgid "SendGrid Marketing Campaigns Subscription Widget."
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-sendgrid.php:33
+msgid "Message to display before subscription form:"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-sendgrid.php:41
+msgid "Message to display for errors:"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-sendgrid.php:49
+msgid "Message to display for invalid email address:"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-sendgrid.php:57
+msgid "Message to display for success:"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-sendgrid.php:83
+msgid "Subscribe"
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-sendgrid.php:113
+msgid "Invalid Email."
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-sendgrid.php:122, src/tomochain-addons/inc/widgets/tomochain-sendgrid.php:130
+msgid "A confirmation email has been sent, please check your inbox."
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-sendgrid.php:127
+msgid "A confirmation email has been sent successfully, please check your inbox."
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/wph-widget-class.php:843
+msgid "Any Categories"
 msgstr ""

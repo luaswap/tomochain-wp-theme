@@ -24,13 +24,13 @@ if ( ! class_exists( 'TomoChain_Sendgrid_Widget' ) ) {
         function __construct() {
             $args = array(
                 'slug'  => 'tomo_sendgrid',
-                'label' => '&#x1f4cc; &nbsp;' . esc_html__( 'TOMOCHAIN Sendgrid', 'tomochain' ),
-                'description' => esc_html__( 'SendGrid Marketing Campaigns Subscription Widget.', 'tomochain' )
+                'label' => '&#x1f4cc; &nbsp;' . esc_html__( 'TOMOCHAIN Sendgrid', 'tomochain-addons' ),
+                'description' => esc_html__( 'SendGrid Marketing Campaigns Subscription Widget.', 'tomochain-addons' )
             );
 
             $args['fields'] = array(
                 array(
-                    'name'   => esc_html__( 'Message to display before subscription form:', 'tomochain' ),
+                    'name'   => esc_html__( 'Message to display before subscription form:', 'tomochain-addons' ),
                     'id'     => 'text',
                     'type'   => 'text',
                     'class'  => 'widefat',
@@ -38,7 +38,7 @@ if ( ! class_exists( 'TomoChain_Sendgrid_Widget' ) ) {
                     'filter' => 'strip_tags|esc_attr'
                 ),
                 array(
-                    'name'   => esc_html__( 'Message to display for errors:', 'tomochain' ),
+                    'name'   => esc_html__( 'Message to display for errors:', 'tomochain-addons' ),
                     'id'     => 'error_text',
                     'type'   => 'text',
                     'class'  => 'widefat',
@@ -46,7 +46,7 @@ if ( ! class_exists( 'TomoChain_Sendgrid_Widget' ) ) {
                     'filter' => 'strip_tags|esc_attr'
                 ),
                 array(
-                    'name'   => esc_html__( 'Message to display for invalid email address:', 'tomochain' ),
+                    'name'   => esc_html__( 'Message to display for invalid email address:', 'tomochain-addons' ),
                     'id'     => 'error_email_text',
                     'type'   => 'text',
                     'class'  => 'widefat',
@@ -54,7 +54,7 @@ if ( ! class_exists( 'TomoChain_Sendgrid_Widget' ) ) {
                     'filter' => 'strip_tags|esc_attr'
                 ),
                 array(
-                    'name'   => esc_html__( 'Message to display for success:', 'tomochain' ),
+                    'name'   => esc_html__( 'Message to display for success:', 'tomochain-addons' ),
                     'id'     => 'success_text',
                     'type'   => 'text',
                     'class'  => 'widefat',
@@ -80,7 +80,7 @@ if ( ! class_exists( 'TomoChain_Sendgrid_Widget' ) ) {
             echo '<p class="tomo-sendgrid-text"></p>';
             echo '<form method="post" id="tomo-sendgrid-form" class="tomo-sendgrid-form">';
             echo '  <input id="tomo-sendgrid-email" name="tomo-sendgrid-email" type="email" value="" required placeholder="' . $text . '" />';
-            echo '  <button type="submit" id="tomo-sendgrid-button" class="tomo-sendgrid-button">' . esc_html__('Subscribe', 'tomochain') . '</button>';
+            echo '  <button type="submit" id="tomo-sendgrid-button" class="tomo-sendgrid-button">' . esc_html__('Subscribe', 'tomochain-addons') . '</button>';
             echo '</form>';
             echo '' . $args['after_widget'];
         }
@@ -110,7 +110,7 @@ if ( ! class_exists( 'TomoChain_Sendgrid_Widget' ) ) {
             // Bad call
             if ( ! isset( $email ) or ! Sendgrid_Tools::is_valid_email( $email ) ) {
                 $result['code']    = self::INVALID_EMAIL_ERROR;
-                $result['message'] = esc_html__('Invalid Email.', 'tomochain');
+                $result['message'] = esc_html__('Invalid Email.', 'tomochain-addons');
             }
 
             // Check mail was sent or not
@@ -119,15 +119,15 @@ if ( ! class_exists( 'TomoChain_Sendgrid_Widget' ) ) {
 
             if ( $transient and isset( $transient['email'] ) ) {
                 $result['code']    = self::ERROR_EMAIL_SENT;
-                $result['message'] = esc_html__('A confirmation email has been sent, please check your inbox.', 'tomochain');
+                $result['message'] = esc_html__('A confirmation email has been sent, please check your inbox.', 'tomochain-addons');
             } else {
                 $rs = Sendgrid_OptIn_API_Endpoint::send_confirmation_email( $email );
                 if ($rs) {
                     $result['code']    = self::SUCCESS_EMAIL_SEND;
-                    $result['message'] = esc_html__('A confirmation email has been sent successfully, please check your inbox.', 'tomochain');
+                    $result['message'] = esc_html__('A confirmation email has been sent successfully, please check your inbox.', 'tomochain-addons');
                 } else {
                     $result['code']    = self::ERROR_EMAIL_SEND;
-                    $result['message'] = esc_html__('A confirmation email has been sent, please check your inbox.', 'tomochain');
+                    $result['message'] = esc_html__('A confirmation email has been sent, please check your inbox.', 'tomochain-addons');
                 }
             }
 

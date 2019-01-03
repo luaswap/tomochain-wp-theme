@@ -840,7 +840,7 @@ if ( ! class_exists( 'WPH_Widget' ) ) {
 					$out .= ' selected="selected" ';
 				}
 
-				$out .= '>' . esc_html_e( 'Any Categories', 'tomochain' ) . '</option>';
+				$out .= '>' . esc_html_e( 'Any Categories', 'tomochain-addons' ) . '</option>';
 
 				foreach ( $terms as $term ) {
 
