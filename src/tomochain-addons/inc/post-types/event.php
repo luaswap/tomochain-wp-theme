@@ -1,22 +1,16 @@
 <?php
 /**
  * Event & Media post type
- *  
- * @package    Tomochain
- * @version    1.0.0
- * @author     Administrator
- * @copyright  Copyright (c) 2018, Tomochain
- * @license    http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
- * @link       https://tomochain.com
-*/
+ */
 
 if ( !class_exists( 'Tomochain_Event_Post_Type' ) ) {
+
     class Tomochain_Event_Post_Type {
 
         protected $prefix;
 
         public function __construct() {
-            
+
             $this->prefix = 'tomochain';
 
             add_action('init', array($this,'tomochain_event'));

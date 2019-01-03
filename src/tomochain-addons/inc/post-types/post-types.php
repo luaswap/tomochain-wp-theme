@@ -1,13 +1,7 @@
 <?php
-/*
-* Import Post Type
- * @package    Tomochain
- * @version    1.0.0
- * @author     Administrator
- * @copyright  Copyright (c) 2018, Tomochain
- * @license    http://opensource.org/licenses/gpl-2.0.php GPL v2 or later
- * @link       https://tomochain.com
-*/
+/**
+ * Import Post Type
+ */
 
 if( ! class_exists( 'Tomochain_Add_Posttypes' ) ) {
 
