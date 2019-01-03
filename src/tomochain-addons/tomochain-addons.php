@@ -116,7 +116,6 @@ class TomoChain_Addons {
      */
     public function register_strings() {
         if (function_exists('pll_register_string') ) {
-            pll_register_string('tomochain_event_date', 'd M');
             pll_register_string('tomochain_q1', 'Q1');
             pll_register_string('tomochain_q2', 'Q2');
             pll_register_string('tomochain_q3', 'Q3');
