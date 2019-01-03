@@ -19,8 +19,8 @@ if ( ! class_exists( 'TomoChain_Recent_Posts_Widget' ) ) {
 		 */
 		function __construct() {
 			parent::__construct( 'tomo_recent_posts',
-				'&#x1f4cc; &nbsp;' . __( 'TOMOCHAIN - Recent Posts', 'tomochain' ),
-				array( 'description' => __( 'Your site\'s most recent Posts.', 'tomochain' ) ) );
+				'&#x1f4cc; &nbsp;' . __( 'TOMOCHAIN - Recent Posts', 'tomochain-addons' ),
+				array( 'description' => __( 'Your site\'s most recent Posts.', 'tomochain-addons' ) ) );
 		}
 
 		function widget( $args, $instance ) {

@@ -4,7 +4,7 @@
  * Description: A collection of shortcodes for WPBakery Pabe Builder. It was made for TomoChain website.
  * Author: TomoChain
  * Author URI: http://tomochain.com
- * Version: 1.0
+ * Version: 1.1
  * Text Domain: tomochain-addons
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
@@ -89,16 +89,33 @@ class TomoChain_Addons {
      * Load files
      */
     public function includes() {
+
         if ( defined( 'WPB_VC_VERSION' ) ) {
-            include_once( TOMOCHAIN_ADDONS_DIR . 'inc/vc-extend.php' );
+            require_once TOMOCHAIN_ADDONS_DIR . 'inc/vc-extend.php';
         }
-	}
+
+        /**
+         * Event Post Type
+         */
+        require_once TOMOCHAIN_ADDONS_DIR . '/inc/post-types/post-types.php';
+        /**
+         * Widgets
+         */
+        require_once TOMOCHAIN_ADDONS_DIR . '/inc/widgets/wph-widget-class.php';
+        require_once TOMOCHAIN_ADDONS_DIR . '/inc/widgets/tomochain-address.php';
+        require_once TOMOCHAIN_ADDONS_DIR . '/inc/widgets/tomochain-recent-posts.php';
+        require_once TOMOCHAIN_ADDONS_DIR . '/inc/widgets/tomochain-event.php';
+
+        if (defined('SENDGRID_CATEGORY')) {
+            require_once TOMOCHAIN_ADDONS_DIR . '/inc/widgets/tomochain-sendgrid.php';
+        }
+    }
+
     /**
      * Register String for Polylang
      */
     public function register_strings() {
         if (function_exists('pll_register_string') ) {
-            pll_register_string('tomochain_event_date', 'd M');
             pll_register_string('tomochain_q1', 'Q1');
             pll_register_string('tomochain_q2', 'Q2');
             pll_register_string('tomochain_q3', 'Q3');
