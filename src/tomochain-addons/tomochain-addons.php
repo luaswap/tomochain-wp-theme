@@ -4,7 +4,7 @@
  * Description: A collection of shortcodes for WPBakery Pabe Builder. It was made for TomoChain website.
  * Author: TomoChain
  * Author URI: http://tomochain.com
- * Version: 1.0
+ * Version: 1.1
  * Text Domain: tomochain-addons
  * License: GPLv3
  * License URI: https://www.gnu.org/licenses/gpl-3.0.html
