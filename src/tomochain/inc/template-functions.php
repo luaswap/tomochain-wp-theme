@@ -215,7 +215,7 @@ if(!function_exists('tomochain_event_per_page')){
     function tomochain_event_per_page( $query ) {
         $per_page = get_field('event_per_page','options') ? get_field('event_per_page','options') : 12;
 
-        if ( !is_admin() && $query->is_main_query() && is_post_type_archive( 'event' ) ) {
+        if ( !is_admin() && $query->is_main_query() && (is_post_type_archive( 'event' ) || is_tax('event_category')) ) {
            $query->set( 'posts_per_page', $per_page );
         }
     }
