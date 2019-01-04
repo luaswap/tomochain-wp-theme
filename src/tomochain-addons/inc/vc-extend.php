@@ -1,6 +1,6 @@
 <?php
 if (function_exists('vc_set_shortcodes_templates_dir')) {
-    $new_vc_dir = TOMOCHAIN_ADDONS_DIR . '/inc/templates';
+    $new_vc_dir = TOMOCHAIN_ADDONS_DIR . '/inc/vc-templates';
     vc_set_shortcodes_templates_dir( $new_vc_dir );
 }
 
