@@ -1,6 +1,6 @@
 <?php
 if (function_exists('vc_set_shortcodes_templates_dir')) {
-    $new_vc_dir = TOMOCHAIN_ADDONS_DIR . '/inc/templates';
+    $new_vc_dir = TOMOCHAIN_ADDONS_DIR . '/inc/vc-templates';
     vc_set_shortcodes_templates_dir( $new_vc_dir );
 }
 
@@ -76,18 +76,4 @@ function tomochain_update_shortcodes() {
             'param_name' => 'line_color',
             'weight'     => 1
     ) );
-}
-
-function tomochain_get_shortcode_id($name) {
-    global $tomochain_shortcode_id;
-
-    if ( ! $tomochain_shortcode_id ) {
-        $tomochain_shortcode_id = 1;
-    }
-
-    return $name . '-' . ( $tomochain_shortcode_id ++ );
-}
-
-function tomochain_text2line( $str ) {
-    return trim( preg_replace( "/[\r\v\n\t]*/", '', $str ) );
 }
