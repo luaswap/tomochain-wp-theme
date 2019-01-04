@@ -122,13 +122,14 @@ if ( !class_exists( 'Tomochain_Event_Post_Type' ) ) {
         private static function get_template_loader_default_file() {
             if ( is_singular( 'event' ) ) {
                 $default_file = 'single-product.php';
-            } elseif ( is_post_type_archive( 'event' ) ) {
-                $object = get_queried_object();
-                if ( is_tax( 'event_category' ) || is_tax( 'event_category' ) ) {
-                    $default_file = 'taxonomy-' . $object->taxonomy . '.php';
+            } elseif ( is_tax( get_object_taxonomies( 'event' ) ) ) {
+                if ( is_tax( 'event_category' ) ) {
+                    $default_file = 'taxonomy-event_category.php';
                 } else {
                     $default_file = 'archive-event.php';
                 }
+            } elseif ( is_post_type_archive( 'event' ) ) {
+                $default_file = 'archive-event.php';
             } else {
                 $default_file = '';
             }
