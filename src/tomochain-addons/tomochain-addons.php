@@ -90,6 +90,8 @@ class TomoChain_Addons {
      */
     public function includes() {
 
+        require_once TOMOCHAIN_ADDONS_DIR . 'inc/core-functions.php';
+
         if ( defined( 'WPB_VC_VERSION' ) ) {
             require_once TOMOCHAIN_ADDONS_DIR . 'inc/vc-extend.php';
         }

@@ -103,10 +103,6 @@ gulp.task('sass', function () {
                     //     mediaQuery: true
                     // })
                 ]))
-               .pipe($.sourcemaps.write('./assets/scss/sourcemap/', {
-                   includeContent: false,
-                   sourceRoot    : '../../scss/'
-               }))
                .pipe($.lineEndingCorrector())
                .pipe(gulp.dest('src/' + theme + '/'))
                .pipe( $.rename( {
@@ -118,7 +114,7 @@ gulp.task('sass', function () {
                }))
                .pipe($.sourcemaps.write('./assets/scss/sourcemap/', {
                    includeContent: false,
-                   sourceRoot    : '../../scss/'
+                   sourceRoot    : './scss/'
                }))
                .pipe(gulp.dest('src/' + theme + '/'))
 })

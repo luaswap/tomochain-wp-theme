@@ -13,9 +13,10 @@ if ( !class_exists( 'Tomochain_Event_Post_Type' ) ) {
 
             $this->prefix = 'tomochain';
 
-            add_action('init', array($this,'tomochain_event'));
+            add_action('init', array( $this, 'tomochain_event'));
+            add_filter( 'template_include', array( $this, 'template_loader' ) );
+
             if( is_admin() ) {
-                // Add custom columns reference: http://code.tutsplus.com/articles/add-a-custom-column-in-posts-and-custom-post-types-admin-screen--wp-24934
                 add_filter( 'manage_events_posts_columns', array( $this, 'add_columns' ) );
                 add_action( 'manage_events_posts_custom_column', array( $this, 'set_columns_value'), 10, 2);
             }
@@ -55,7 +56,7 @@ if ( !class_exists( 'Tomochain_Event_Post_Type' ) ) {
                 'capability_type'       => 'post',
                 'supports'              => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
                 'rewrite'           => array(
-                    'slug'          => 'events-media',
+                    'slug'          => 'events',
                     'with_front'    => false
                 ) ,
             );
@@ -102,6 +103,39 @@ if ( !class_exists( 'Tomochain_Event_Post_Type' ) ) {
             ) , $category_args);
 
         }
+
+        public static function template_loader( $template ) {
+            if ( is_embed() ) {
+                return $template;
+            }
+            $default_file = self::get_template_loader_default_file();
+
+            if ( $default_file ) {
+                $template     = locate_template( $default_file );
+                if ( ! $template ) {
+                    $template = TOMOCHAIN_ADDONS_DIR . '/templates/' . $default_file;
+                }
+            }
+            return $template;
+        }
+
+        private static function get_template_loader_default_file() {
+            if ( is_singular( 'event' ) ) {
+                $default_file = 'single-product.php';
+            } elseif ( is_tax( get_object_taxonomies( 'event' ) ) ) {
+                if ( is_tax( 'event_category' ) ) {
+                    $default_file = 'taxonomy-event_category.php';
+                } else {
+                    $default_file = 'archive-event.php';
+                }
+            } elseif ( is_post_type_archive( 'event' ) ) {
+                $default_file = 'archive-event.php';
+            } else {
+                $default_file = '';
+            }
+            return $default_file;
+        }
+
 
         // Add columns to Event
         function add_columns($columns) {
