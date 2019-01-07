@@ -9557,12 +9557,10 @@ This is where majority of our work takes place and our UI components are often c
 
 .top-banner-tomo {
   background: url(assets/images/bg_main_ev_bl.jpg) no-repeat center;
-  /*background-size: auto 100%;*/
-  height: 270px;
+  background-size: cover;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 1em 0;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -9570,7 +9568,8 @@ This is where majority of our work takes place and our UI components are often c
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
-  position: relative; }
+  height: 150px;
+  margin: 50px 0 40px; }
   .top-banner-tomo:before {
     background-repeat: no-repeat;
     background-position: center;
@@ -13897,6 +13896,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     margin-left: 91.66667%; }
   .hidden-lg-up {
     display: none !important; }
+    .top-banner-tomo {
+      height: 207px; }
     .site-header .site-branding {
       width: 10%; }
       .site-header .site-branding img {
@@ -14197,11 +14198,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-caption {
       -webkit-transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) !important;
               transform: matrix3d(0.5, 0, 0, 0, 0, 0.5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) !important; } }
-  @media only screen and (min-width: 1025px) and (max-width: 1366px) {
-    .top-banner-tomo {
-      height: 160px;
-      background-size: 100% auto;
-      margin: 0 0 1em; } }
   @media (min-width: 1200px) {
   .d-xl-none {
     display: none !important; }
@@ -15124,9 +15120,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       border: 0; }
   .hidden-sm-down {
     display: none !important; }
-    .top-banner-tomo {
-      margin: 0 0 1em;
-      height: 150px; }
       .top-banner-tomo:before {
         background-size: 200px auto; }
         .top-banner-tomo .container h2 {
@@ -15216,8 +15209,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       border: 0; }
   .hidden-lg-down {
     display: none !important; }
-    .top-banner-tomo {
-      margin: 0 0 1em; }
       .top-banner-tomo:before {
         background-size: 250px auto; }
         .top-banner-tomo .container h2 {

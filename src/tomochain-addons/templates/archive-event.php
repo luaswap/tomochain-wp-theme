@@ -7,7 +7,7 @@ get_header();
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
             <div class="event-content-tomo">
-                <?php do_action('tomochain_heading');?>
+                <?php do_action('tomochain_page_title');?>
                 <div class="container">
                     <?php
                     $event_filter = get_field('event_filter','options');

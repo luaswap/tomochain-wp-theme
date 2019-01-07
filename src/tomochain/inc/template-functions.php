@@ -173,11 +173,11 @@ function tomochain_pagination() {
     endif;
 }
 
-if(!function_exists('tomochain_heading')){
-    function tomochain_heading(){
-        get_template_part( 'template-parts/content', 'heading' );
+if(!function_exists('tomochain_page_title')){
+    function tomochain_page_title(){
+        get_template_part( 'template-parts/page-title' );
     }
-    add_action('tomochain_heading','tomochain_heading', 5);
+    add_action('tomochain_page_title', 'tomochain_page_title', 5);
 }
 
 if(!function_exists('tomochain_category_filter')){
@@ -199,13 +199,13 @@ if(!function_exists('tomochain_category_filter')){
         echo '<ul class="tab-filter '.$type.'-cat-filter">';
         echo '<li><a href="'. get_post_type_archive_link($type) .'">' . esc_html__( 'All', 'tomochain' ). '</a></li> ';
         foreach( $categories as $category ) {
-            $category_link = sprintf( 
+            $category_link = sprintf(
                 '<a href="%1$s" alt="%2$s">%3$s</a>',
                 esc_url( get_category_link( $category->term_id ) ),
                 esc_attr( sprintf( esc_html__( 'View all posts in %s', 'tomochain' ), $category->name ) ),
                 esc_html( $category->name )
             );
-             
+
             echo '<li>' . sprintf( esc_html__( '%s', 'tomochain' ), $category_link ) . '</li> ';
         }
         echo '</ul>';

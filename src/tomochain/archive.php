@@ -17,7 +17,7 @@ if('post' == get_post_type()){
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
             <div class="<?php echo esc_attr($class);?>">
-                <?php do_action('tomochain_heading');?>
+                <?php do_action('tomochain_page_title');?>
                 <div class="container">
                     <?php
                     $blog_filter = get_field('blog_filter','options');

@@ -16,7 +16,7 @@ get_header();
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
             <div class="blog-content-tomo">
-                <?php do_action('tomochain_heading');?>
+                <?php do_action('tomochain_page_title');?>
                 <div class="container">
                     <?php
                     $blog_filter = get_field('blog_filter','options');

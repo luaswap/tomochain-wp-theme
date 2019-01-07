@@ -1,26 +1,29 @@
-// common event & blog
-.top-banner-tomo {
+.tomo-page-title {
     background: url(assets/images/bg_main_ev_bl.jpg) no-repeat center;
-    /*background-size: auto 100%;*/
-    height: 270px;
+    background-size: cover;
     display: flex;
-    margin: 1em 0;
     justify-content: center;
     align-items: center;
     text-align: center;
-    position: relative;
-    @media only screen and (min-width: 1025px) and (max-width: 1366px) {
-        height: 160px;
-        background-size: 100% auto;
-        margin: 0 0 1em;
+    height: 150px;
+    margin: 50px 0 40px;
+
+    @include media-breakpoint-up(lg) {
+        height: 207px;
     }
-    @include media-breakpoint-down(lg) {
-        margin: 0 0 1em;
-    }
-    @include media-breakpoint-down(sm) {
-        margin: 0 0 1em;
-        height: 150px;
-    }
+
+    // @media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    //     height: 160px;
+    //     background-size: 100% auto;
+    //     margin: 0 0 1em;
+    // }
+    // @include media-breakpoint-down(lg) {
+    //     margin: 0 0 1em;
+    // }
+    // @include media-breakpoint-down(sm) {
+    //     margin: 0 0 1em;
+    //     height: 150px;
+    // }
     &:before {
         background-repeat: no-repeat;
         background-position: center;
@@ -473,10 +476,10 @@
 }
 
 @keyframes sk-stretchdelay {
-  0%, 40%, 100% { 
+  0%, 40%, 100% {
     transform: scaleY(0.4);
     -webkit-transform: scaleY(0.4);
-  }  20% { 
+  }  20% {
     transform: scaleY(1.0);
     -webkit-transform: scaleY(1.0);
   }
