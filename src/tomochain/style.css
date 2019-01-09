@@ -7292,7 +7292,7 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
-a, .site-header, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
+a, .site-header, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
 .main-menu .menu li.menu-item.page_item_has_children > a:before,
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
@@ -9555,9 +9555,8 @@ This is where majority of our work takes place and our UI components are often c
 .bypostauthor {
   display: block; }
 
-.top-banner-tomo {
-  background: url(assets/images/bg_main_ev_bl.jpg) no-repeat center;
-  background-size: cover;
+.tomo-page-title {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -9568,32 +9567,29 @@ This is where majority of our work takes place and our UI components are often c
       -ms-flex-align: center;
           align-items: center;
   text-align: center;
+  background: url(assets/images/bg-page-title.jpg) no-repeat center;
+  background-size: cover;
   height: 150px;
-  margin: 50px 0 40px; }
-  .top-banner-tomo:before {
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 350px auto;
-    content: '';
-    width: 100%;
-    height: 100%;
+  margin-bottom: 30px; }
+  .tomo-page-title:before {
+    content: attr(data-title);
+    text-transform: uppercase;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
     position: absolute;
-    top: 0;
-    left: 0;
-    z-index: 0; }
-  .top-banner-tomo.page-post:before {
-    background-image: url(assets/images/BLOG.png);
-    background-size: 300px auto; }
-  .top-banner-tomo.page-post .container h2 {
-    margin-top: 60px; }
-  .top-banner-tomo.page-event:before {
-    background-image: url(assets/images/EVENTS.png); }
-  .top-banner-tomo .container {
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #293067;
+    text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.08); }
+  .tomo-page-title h2 {
+    font-family: 'Bai Jamjuree', sans-serif;
     position: relative;
-    z-index: 1; }
-    .top-banner-tomo .container h2 {
-      margin-top: 44px;
-      font-family: 'Bai Jamjuree', sans-serif; }
+    margin-top: 20px;
+    margin-bottom: 0; }
 
 .body_event {
   overflow: hidden; }
@@ -9939,7 +9935,7 @@ This is where majority of our work takes place and our UI components are often c
     background-color: #202741; }
     .admin-bar .site-header.headroom--not-top {
       top: 32px; }
-    .site-header.headroom--not-top .custom-logo {
+    .site-header.headroom--not-top img {
       padding: 0;
       max-width: 35px; }
     .site-header.headroom--not-top .main-menu .menu > ul > li > a,
@@ -13896,12 +13892,15 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     margin-left: 91.66667%; }
   .hidden-lg-up {
     display: none !important; }
-    .top-banner-tomo {
+    .tomo-page-title {
+      margin: 50px 0 40px;
       height: 207px; }
+      .tomo-page-title:before {
+        font-size: 80px; }
+      .tomo-page-title h2 {
+        margin-top: 32px; }
     .site-header .site-branding {
       width: 10%; }
-      .site-header .site-branding img {
-        max-width: 50px; }
     .site-header .header-tools {
       width: 10%; }
     .tomochain-image-carousel .slick-slide {
@@ -15120,11 +15119,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       border: 0; }
   .hidden-sm-down {
     display: none !important; }
-      .top-banner-tomo:before {
-        background-size: 200px auto; }
-        .top-banner-tomo .container h2 {
-          margin-top: 25px;
-          font-size: 18px; }
       .event-content-tomo .event-cat-filter li {
         margin: 0 0.5em; }
         .event-content-tomo .event-cat-filter li a {
@@ -15209,9 +15203,5 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       border: 0; }
   .hidden-lg-down {
     display: none !important; }
-      .top-banner-tomo:before {
-        background-size: 250px auto; }
-        .top-banner-tomo .container h2 {
-          margin-top: 25px; }
     .tomo_detail .top-banner-tomo {
       margin-bottom: 3em; } }

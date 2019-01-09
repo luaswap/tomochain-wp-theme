@@ -1,81 +1,50 @@
 .tomo-page-title {
-    background: url(assets/images/bg_main_ev_bl.jpg) no-repeat center;
-    background-size: cover;
+    position: relative;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
+    background: url(assets/images/bg-page-title.jpg) no-repeat center;
+    background-size: cover;
     height: 150px;
-    margin: 50px 0 40px;
+    margin-bottom: 30px;
 
     @include media-breakpoint-up(lg) {
+        margin: 50px 0 40px;
         height: 207px;
     }
 
-    // @media only screen and (min-width: 1025px) and (max-width: 1366px) {
-    //     height: 160px;
-    //     background-size: 100% auto;
-    //     margin: 0 0 1em;
-    // }
-    // @include media-breakpoint-down(lg) {
-    //     margin: 0 0 1em;
-    // }
-    // @include media-breakpoint-down(sm) {
-    //     margin: 0 0 1em;
-    //     height: 150px;
-    // }
     &:before {
-        background-repeat: no-repeat;
-        background-position: center;
-        background-size: 350px auto;
-        content: '';
-        width: 100%;
-        height: 100%;
+        content: attr(data-title);
+        text-transform: uppercase;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1;
         position: absolute;
-        top: 0;
-        left: 0;
-        z-index: 0;
-        @include media-breakpoint-down(lg) {
-            background-size: 250px auto;
-        }
-        @include media-breakpoint-down(sm) {
-            background-size: 200px auto;
-        }
-    }
-    &.page-post {
-        &:before {
-            background-image: url(assets/images/BLOG.png);
-            background-size: 300px auto;
-        }
-        .container {
-            h2 {
-                margin-top: 60px;
-            }
-        }
-    }
-    &.page-event {
-        &:before {
-            background-image: url(assets/images/EVENTS.png);
-        }
-    }
-    .container {
-        position: relative;
-        z-index: 1;
-        h2 {
-            margin-top: 44px;
-            font-family: 'Bai Jamjuree', sans-serif;
-            @include media-breakpoint-down(lg) {
-                margin-top: 25px;
-            }
-            @include media-breakpoint-down(sm) {
-                margin-top: 25px;
-                font-size: 18px;
-            }
-        }
-    }
-}//blog-banner-tomo
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #293067;
+        text-shadow: -5px 5px 10px rgba(0,0, 0, .08);
 
-//custom page event
+        @include media-breakpoint-up(lg) {
+            font-size: 80px;
+        }
+    }
+
+    h2 {
+        font-family: 'Bai Jamjuree', sans-serif;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 32px;
+        }
+    }
+}
+
 .body_event {
     overflow: hidden;
     &:after {
@@ -83,9 +52,11 @@
         z-index: 3;
     }
 }
+
 .box-content {
     font-family: 'Quicksand', sans-serif;
 }
+
 .btn_close {
     cursor: pointer;
     position: absolute;
@@ -248,9 +219,7 @@
         }
     }
 
-}//event-content-tomo
-
-//custom page blog
+}
 
 .blog-content-tomo {
     .post-cat-filter {
@@ -370,7 +339,7 @@
         }
     }
 
-}//event-content-tomo
+}
 
 .tomo_detail {
     .top-banner-tomo {
@@ -470,6 +439,7 @@
         }
     }
 }
+
 @-webkit-keyframes sk-stretchdelay {
   0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
   20% { -webkit-transform: scaleY(1.0) }

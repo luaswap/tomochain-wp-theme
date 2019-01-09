@@ -38,8 +38,8 @@ if ( $page_title_image ) {
     $style = 'background-image:url('.$page_title_image.')';
 }
 ?>
-<div class="tomo-page-title" style="<?php echo esc_attr($style); ?>">
+<div class="tomo-page-title" style="<?php echo esc_attr($style); ?>" data-title="<?php echo esc_attr( $page_title );?>">
     <div class="container">
-        <h2 data-title="<?php echo esc_attr( $page_title );?>"><?php echo $page_title;?></h2>
+        <h2><?php echo $page_title;?></h2>
     </div>
 </div>
