@@ -29,7 +29,7 @@ if ( ! class_exists( 'TomoChain_Event_Widget' ) ) {
             );
 
             $data_source = array(
-				'All' 		      => '',
+				'All Events' 		      => '',
 				'Ongoing Events'  => 'current',
 				'Upcoming Events' => 'upcoming',
 				'Past Events'     => 'past'

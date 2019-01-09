@@ -39,123 +39,123 @@ msgstr ""
 msgid "Style particular content element differently - add a class name and refer to it in custom CSS."
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:26, src/tomochain-addons/inc/post-types/event.php:28
+#: src/tomochain-addons/inc/post-types/event.php:27, src/tomochain-addons/inc/post-types/event.php:29
 msgid "Events"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:27, src/tomochain-addons/inc/shortcodes/tomochain-event.php:9
+#: src/tomochain-addons/inc/post-types/event.php:28, src/tomochain-addons/inc/shortcodes/tomochain-event.php:9
 msgid "Event"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:29
+#: src/tomochain-addons/inc/post-types/event.php:30
 msgid "Add New"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:30, src/tomochain-addons/inc/post-types/event.php:32
+#: src/tomochain-addons/inc/post-types/event.php:31, src/tomochain-addons/inc/post-types/event.php:33
 msgid "Add New Event"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:31
+#: src/tomochain-addons/inc/post-types/event.php:32
 msgid "Edit Event"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:33
+#: src/tomochain-addons/inc/post-types/event.php:34
 msgid "View Event"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:34
+#: src/tomochain-addons/inc/post-types/event.php:35
 msgid "Search Event"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:35
+#: src/tomochain-addons/inc/post-types/event.php:36
 msgid "No Event items found"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:36
+#: src/tomochain-addons/inc/post-types/event.php:37
 msgid "No Event items found in trash"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:42
+#: src/tomochain-addons/inc/post-types/event.php:43
 msgid "Display Events"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:67
+#: src/tomochain-addons/inc/post-types/event.php:68
 msgid "Event Categories"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:68, src/tomochain-addons/inc/post-types/event.php:69
+#: src/tomochain-addons/inc/post-types/event.php:69, src/tomochain-addons/inc/post-types/event.php:70
 msgid "Event Category"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:70
+#: src/tomochain-addons/inc/post-types/event.php:71
 msgid "All Event Category"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:71
+#: src/tomochain-addons/inc/post-types/event.php:72
 msgid "Edit Event Category"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:72
+#: src/tomochain-addons/inc/post-types/event.php:73
 msgid "View Event Category"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:73
+#: src/tomochain-addons/inc/post-types/event.php:74
 msgid "Update Event Category"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:74
+#: src/tomochain-addons/inc/post-types/event.php:75
 msgid "Add New Event Category"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:75
+#: src/tomochain-addons/inc/post-types/event.php:76
 msgid "New Event Category Name"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:76
+#: src/tomochain-addons/inc/post-types/event.php:77
 msgid "Parent Event Category"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:77
+#: src/tomochain-addons/inc/post-types/event.php:78
 msgid "Parent Event Category:"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:78
+#: src/tomochain-addons/inc/post-types/event.php:79
 msgid "Search Event Category"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:79
+#: src/tomochain-addons/inc/post-types/event.php:80
 msgid "Popular Event Category"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:80
+#: src/tomochain-addons/inc/post-types/event.php:81
 msgid "Separate Event Category with commas"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:81
+#: src/tomochain-addons/inc/post-types/event.php:82
 msgid "Add or remove Event Category"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:82
+#: src/tomochain-addons/inc/post-types/event.php:83
 msgid "Choose from the most used Event Categories"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:83
+#: src/tomochain-addons/inc/post-types/event.php:84
 msgid "No Event Category found"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:108, src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:18, src/tomochain-addons/inc/widgets/tomochain-address.php:24
+#: src/tomochain-addons/inc/post-types/event.php:142, src/tomochain-addons/inc/shortcodes/tomochain-testnet-item.php:18, src/tomochain-addons/inc/widgets/tomochain-address.php:24, src/tomochain-addons/inc/widgets/tomochain-event.php:40
 msgid "Title"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:109
+#: src/tomochain-addons/inc/post-types/event.php:143
 msgid "Thumbnail"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:110
+#: src/tomochain-addons/inc/post-types/event.php:144
 msgid "Start Event"
 msgstr ""
 
-#: src/tomochain-addons/inc/post-types/event.php:111
+#: src/tomochain-addons/inc/post-types/event.php:145
 msgid "Close Event"
 msgstr ""
 
@@ -375,7 +375,7 @@ msgstr ""
 msgid "DApp 2"
 msgstr ""
 
-#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:16
+#: src/tomochain-addons/inc/shortcodes/tomochain-event.php:16, src/tomochain-addons/inc/widgets/tomochain-event.php:48
 msgid "Data Source"
 msgstr ""
 
@@ -384,7 +384,7 @@ msgid "Choose the source which event will be displayed."
 msgstr ""
 
 #: src/tomochain-addons/inc/shortcodes/tomochain-event.php:21
-msgid "All"
+msgid "All Events"
 msgstr ""
 
 #: src/tomochain-addons/inc/shortcodes/tomochain-event.php:22
@@ -603,31 +603,31 @@ msgstr ""
 msgid "Videos"
 msgstr ""
 
-#: src/tomochain-addons/inc/templates/tomochain_blog.php:89, src/tomochain-addons/inc/templates/tomochain_event.php:119
+#: src/tomochain-addons/inc/vc-templates/tomochain_blog.php:89, src/tomochain-addons/inc/vc-templates/tomochain_event.php:119
 msgid "See all our news"
 msgstr ""
 
-#: src/tomochain-addons/inc/templates/tomochain_dapp.php:57
+#: src/tomochain-addons/inc/vc-templates/tomochain_dapp.php:57
 msgid "Run App"
 msgstr ""
 
-#: src/tomochain-addons/inc/templates/tomochain_dapp.php:60, src/tomochain-addons/inc/templates/tomochain_dapp2.php:61, src/tomochain-addons/inc/templates/tomochain_testnet_item.php:51, src/tomochain-addons/inc/templates/tomochain_testnet_item.php:52
+#: src/tomochain-addons/inc/vc-templates/tomochain_dapp.php:60, src/tomochain-addons/inc/vc-templates/tomochain_dapp2.php:61, src/tomochain-addons/inc/vc-templates/tomochain_testnet_item.php:51, src/tomochain-addons/inc/vc-templates/tomochain_testnet_item.php:52
 msgid "Source Code"
 msgstr ""
 
-#: src/tomochain-addons/inc/templates/tomochain_dapp2.php:58, src/tomochain-addons/inc/templates/tomochain_testnet_item.php:46, src/tomochain-addons/inc/templates/tomochain_testnet_item.php:47
+#: src/tomochain-addons/inc/vc-templates/tomochain_dapp2.php:58, src/tomochain-addons/inc/vc-templates/tomochain_testnet_item.php:46, src/tomochain-addons/inc/vc-templates/tomochain_testnet_item.php:47
 msgid "More Info"
 msgstr ""
 
-#: src/tomochain-addons/inc/templates/tomochain_social.php:32
+#: src/tomochain-addons/inc/vc-templates/tomochain_social.php:32
 msgid "TomoChain addons plugin only works with the TomoChain theme."
 msgstr ""
 
-#: src/tomochain-addons/inc/templates/tomochain_team.php:43
+#: src/tomochain-addons/inc/vc-templates/tomochain_team.php:43
 msgid "See all our team"
 msgstr ""
 
-#: src/tomochain-addons/inc/templates/tomochain_video_item.php:40
+#: src/tomochain-addons/inc/vc-templates/tomochain_video_item.php:40
 msgid "Play"
 msgstr ""
 
@@ -687,12 +687,16 @@ msgstr ""
 msgid "Address 6"
 msgstr ""
 
-#: src/tomochain-addons/inc/widgets/tomochain-event.php:25
+#: src/tomochain-addons/inc/widgets/tomochain-event.php:27
 msgid "TOMOCHAIN - Event"
 msgstr ""
 
-#: src/tomochain-addons/inc/widgets/tomochain-event.php:26
+#: src/tomochain-addons/inc/widgets/tomochain-event.php:28
 msgid "Your site's most Events."
+msgstr ""
+
+#: src/tomochain-addons/inc/widgets/tomochain-event.php:55
+msgid "Enter numbers of events"
 msgstr ""
 
 #: src/tomochain-addons/inc/widgets/tomochain-recent-posts.php:22
