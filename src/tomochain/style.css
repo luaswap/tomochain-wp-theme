@@ -9591,15 +9591,6 @@ This is where majority of our work takes place and our UI components are often c
     margin-top: 20px;
     margin-bottom: 0; }
 
-.body_event {
-  overflow: hidden; }
-  .body_event:after {
-    opacity: .8;
-    z-index: 3; }
-
-.box-content {
-  font-family: 'Quicksand', sans-serif; }
-
 .btn_close {
   cursor: pointer;
   position: absolute;
@@ -9623,35 +9614,27 @@ This is where majority of our work takes place and our UI components are often c
   .btn_close:hover:before {
     color: #fff; }
 
-.event-content-tomo .event-cat-filter {
-  margin: 0;
-  padding: 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex; }
-  .event-content-tomo .event-cat-filter:before, .event-content-tomo .event-cat-filter:after {
-    clear: both;
-    display: table;
-    content: ""; }
-  .event-content-tomo .event-cat-filter li {
+.event-cat-filter {
+  margin: 0 0 30px;
+  padding: 0; }
+  .event-cat-filter li {
     list-style: none;
-    margin: 0;
-    padding: 0;
-    margin-left: 3em; }
-    .event-content-tomo .event-cat-filter li:first-child {
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 30px;
+    padding: 0; }
+    .event-cat-filter li:first-child {
       margin-left: 0; }
-    .event-content-tomo .event-cat-filter li a {
-      display: block;
-      color: #9eaacc;
-      padding: .7em 0;
-      text-decoration: none;
+    .event-cat-filter li a {
       position: relative;
-      font-size: 18px;
-      font-family: 'Quicksand', sans-serif; }
-      .event-content-tomo .event-cat-filter li a:after {
+      display: block;
+      font-size: 16px;
+      color: #9eaacc;
+      padding-bottom: 10px; }
+      .event-cat-filter li a:after {
         content: '';
         position: absolute;
-        bottom: 0px;
+        bottom: 0;
         left: 0;
         width: 100%;
         max-width: 40px;
@@ -9661,17 +9644,17 @@ This is where majority of our work takes place and our UI components are often c
         transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
         transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1), -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
         -webkit-transform: scale3d(0, 1, 1);
-        transform: scale3d(0, 1, 1);
+                transform: scale3d(0, 1, 1);
         -webkit-transform-origin: 100% 50%;
-        transform-origin: 100% 50%;
+                transform-origin: 100% 50%;
         background-color: #e68b71; }
-    .event-content-tomo .event-cat-filter li.selected a, .event-content-tomo .event-cat-filter li:hover a {
+    .event-cat-filter li.selected a, .event-cat-filter li:hover a {
       color: #fff; }
-      .event-content-tomo .event-cat-filter li.selected a:after, .event-content-tomo .event-cat-filter li:hover a:after {
+      .event-cat-filter li.selected a:after, .event-cat-filter li:hover a:after {
         -webkit-transform: scale3d(1, 1, 1);
-        transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
         -webkit-transform-origin: 0 50%;
-        transform-origin: 0 50%; }
+                transform-origin: 0 50%; }
 
 .event-content-tomo article {
   margin-bottom: 2em; }
@@ -10355,17 +10338,17 @@ This is where majority of our work takes place and our UI components are often c
 .post-thumbnail {
   border-radius: 10px;
   display: block;
-  overflow: hidden;
-  /*margin-bottom: 2em;*/ }
+  overflow: hidden; }
 
 .post:hover img {
-  /*transform: scale(1.05);*/ }
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
 
 .single-post .site-main {
   margin-bottom: 80px; }
 
 .entry-footer {
-  /*display: none;*/ }
+  display: none; }
   .single-post .entry-footer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -10385,7 +10368,6 @@ This is where majority of our work takes place and our UI components are often c
   margin-bottom: 10px; }
   .entry-meta > span {
     display: inline-block;
-    /*margin-right: 25px;*/
     color: #808aa9; }
   .entry-meta a {
     color: #808aa9; }
@@ -10395,6 +10377,7 @@ This is where majority of our work takes place and our UI components are often c
     display: inline-block;
     vertical-align: baseline;
     font-size: 16px;
+    font-weight: 600;
     margin-right: 10px; }
   .entry-meta span.byline:before {
     margin-right: 4px;
@@ -15119,15 +15102,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       border: 0; }
   .hidden-sm-down {
     display: none !important; }
-      .event-content-tomo .event-cat-filter li {
-        margin: 0 0.5em; }
-        .event-content-tomo .event-cat-filter li a {
-          font-size: 16px;
-          text-align: center; }
-          .event-content-tomo .event-cat-filter li.selected a:after, .event-content-tomo .event-cat-filter li:hover a:after {
-            left: 50%;
-            -webkit-transform: translateX(-50%);
-                    transform: translateX(-50%); }
         .event-content-tomo article .inner .entry-img {
           margin-bottom: 1em; }
       .blog-content-tomo .post-cat-filter li {
@@ -15178,13 +15152,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       border: 0; }
   .hidden-md-down {
     display: none !important; }
-    .event-content-tomo .event-cat-filter {
-      -webkit-box-pack: center;
-          -ms-flex-pack: center;
-              justify-content: center;
-      -webkit-box-align: center;
-          -ms-flex-align: center;
-              align-items: center; }
     .blog-content-tomo .post-cat-filter {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
