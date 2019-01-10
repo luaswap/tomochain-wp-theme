@@ -49,22 +49,7 @@ $excerpt_length = get_field('event_excerpt_length','options') ? get_field('event
                     <?php endif; ?>
 				</div>
 			</div>
-			<div class="entry-box">
-				<?php if ( get_the_excerpt() ) :?>
-					<div class="entry-content">
-						<?php
-						if ( $enable_excerpt ) {
-                            echo tomochain_excerpt($excerpt_length);
-                        }
-						?>
-					</div>
-				<?php endif;?>
-				<div class="entry-footer">
-					<a class="btn-tmp-txt1" href="<?php echo $custom_url ? esc_url($custom_url) : get_permalink()?>" target="<?php echo esc_attr($open_new_tab)?>" rel="bookmark"><?php echo esc_html__('See detail','tomochain')?></a>
-				</div>
-			</div>
 		</div>
-		<span class="btn_close"><?php echo esc_html__('Close','tomochain');?></span>
 	</div>
 </article>
 
