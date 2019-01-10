@@ -80,7 +80,7 @@
         list-style: none;
         display: inline-block;
         vertical-align: middle;
-        margin: 0 0 0 30px;
+        margin: 0 0 0 20px;
         padding: 0;
 
         &:first-child {
@@ -91,6 +91,7 @@
             position: relative;
             display: block;
             font-size: 16px;
+            text-transform: capitalize;
             color: #9eaacc;
             padding-bottom: 10px;
 
@@ -124,69 +125,41 @@
     }
 }
 
-.event-content-tomo {
+.event-content-tomo .event {
 
-    article {
-        margin-bottom: 2em;
-        .inner {
-            position: relative;
-            .entry-img {
-                margin-bottom: 1.5em;
-                display: block;
-                @include media-breakpoint-down(sm) {
-                    margin-bottom: 1em;
-                }
-                img {
-                    transition: all .5s ease;
-                    display: block;
-                }
-            }
-            .entry-header {
-                .entry-title {
-                    font-size: 18px;
-                    font-weight: 400;
-                    line-height: 1.4;
-                    color: #ebeaf5;
-                    margin-top: 0;
-                    margin-bottom: 10px;
-                    max-height: 75px;
-                    overflow: hidden;
+    margin-bottom: 60px;
 
-                    a {
-                        color: #ebeaf5;
-                    }
+    .entry-img {
+        margin-bottom: 15px;
 
-                    span.event-venue {
-                        color: #808aa9;
-                        font-size: 16px;
-                    }
-
-                    @include media-breakpoint-up(md) {
-                        font-size: 18px;
-                    }
-                }
-            }
-            .entry-box {
-                display: none;
-            }
-            .entry-content {
-                text-align: justify;
-            }
-        }//inner
-
-        //article_hover
-        &:hover {
-            .inner {
-                /*cursor: pointer;*/
-                .entry-img {
-                    img {
-                        transform: scale(1.04);
-                    }
-                }
-            }
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 20px;
         }
     }
 
+    .entry-title {
+
+        @include media-breakpoint-up(md) {
+            font-size: 20px;
+        }
+
+        @include media-breakpoint-up(lg) {
+            font-size: 24px;
+        }
+
+        span.event-venue {
+            font-size: 16px;
+            color: #808aa9;
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: 18px;
+        }
+    }
+
+    &:hover .entry-img {
+        transform: scale(1.05);
+    }
 }
 
 .blog-content-tomo {

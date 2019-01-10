@@ -25,13 +25,6 @@
         }
     }
 }
-.entry-footer {
-    display: none;
-
-    .single-post & {
-        display: flex;
-    }
-}
 
 .entry-title {
     font-size: 20px;
@@ -70,7 +63,7 @@
         display: inline-block;
         vertical-align: baseline;
         font-size: 16px;
-        font-weight: 600;
+        font-weight: 400;
         margin-right: 10px;
         @extend .fas;
     }
