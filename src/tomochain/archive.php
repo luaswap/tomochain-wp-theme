@@ -24,7 +24,7 @@ if('post' == get_post_type()){
                     if($blog_filter)
                         tomochain_category_filter(get_post_type());
                     ?>
-                    <div class="tomo-main-archive">
+                    <div class="tomo-archive-wrapper">
                         <div class="spinner">
                             <div class="rect1"></div>
                             <div class="rect2"></div>

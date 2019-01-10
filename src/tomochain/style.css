@@ -7292,7 +7292,7 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
-a, .site-header, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
+a, .tomo-archive-wrapper .archive-posts, .event-content-tomo .event .entry-img img, .site-header, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
 .main-menu .menu li.menu-item.page_item_has_children > a:before,
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
@@ -9543,76 +9543,26 @@ COMPONENTS
 Specific UI components.
 This is where majority of our work takes place and our UI components are often composed of Objects and Components
 */
-.post-fullwidth article {
-  max-width: 100%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%; }
+.tomo-archive-wrapper.loading {
+  position: relative;
+  text-align: center; }
+  .tomo-archive-wrapper.loading:before {
+    content: url(assets/images/loading.svg) !important;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(1.5);
+            transform: translateX(-50%) scale(1.5); }
+  .tomo-archive-wrapper.loading .archive-posts {
+    opacity: 0;
+    visibility: hidden; }
 
 .comment-content a {
   word-wrap: break-word; }
 
 .bypostauthor {
   display: block; }
-
-.tomo-page-title {
-  position: relative;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background: url(assets/images/bg-page-title.jpg) no-repeat center;
-  background-size: cover;
-  height: 150px;
-  margin-bottom: 30px; }
-  .tomo-page-title:before {
-    content: attr(data-title);
-    text-transform: uppercase;
-    font-family: 'Bai Jamjuree', sans-serif;
-    font-size: 50px;
-    font-weight: 700;
-    line-height: 1;
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    -webkit-transform: translate(-50%, -50%);
-            transform: translate(-50%, -50%);
-    color: #293067;
-    text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.08); }
-  .tomo-page-title h2 {
-    font-family: 'Bai Jamjuree', sans-serif;
-    position: relative;
-    margin-top: 20px;
-    margin-bottom: 0; }
-
-.btn_close {
-  cursor: pointer;
-  position: absolute;
-  top: -55px;
-  right: -15px;
-  font-size: 0;
-  z-index: 1;
-  display: none; }
-  .btn_close:before {
-    content: '\e902';
-    font-size: 16px;
-    color: #a8acb6;
-    padding: 15px;
-    font-family: tomochain;
-    font-style: normal;
-    display: inline-block;
-    text-decoration: inherit;
-    line-height: 1;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease; }
-  .btn_close:hover:before {
-    color: #fff; }
 
 .event-cat-filter {
   margin: 0 0 30px;
@@ -9658,13 +9608,14 @@ This is where majority of our work takes place and our UI components are often c
                 transform-origin: 0 50%; }
 
 .event-content-tomo .event {
-  margin-bottom: 60px; }
+  margin-bottom: 50px; }
   .event-content-tomo .event .entry-img {
+    overflow: hidden;
     margin-bottom: 15px; }
   .event-content-tomo .event .entry-title span.event-venue {
     font-size: 16px;
     color: #808aa9; }
-  .event-content-tomo .event:hover .entry-img {
+  .event-content-tomo .event:hover .entry-img img {
     -webkit-transform: scale(1.05);
             transform: scale(1.05); }
 
@@ -9786,57 +9737,6 @@ This is where majority of our work takes place and our UI components are often c
     font-size: 0;
     height: 100%;
     width: 50px; }
-
-.tomo-main-archive {
-  position: relative;
-  padding: 2em 0 4em; }
-  .tomo-main-archive .spinner {
-    position: absolute;
-    top: 0;
-    left: 50%;
-    margin: 1em auto 2em;
-    width: 50px;
-    height: 40px;
-    text-align: center;
-    font-size: 10px;
-    display: none;
-    -webkit-transform: translateX(-50%);
-            transform: translateX(-50%); }
-    .tomo-main-archive .spinner > div {
-      background-color: #43abfc;
-      height: 100%;
-      width: 3px;
-      margin: 0 2px;
-      border-radius: 10px;
-      display: inline-block;
-      -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
-      animation: sk-stretchdelay 1.2s infinite ease-in-out; }
-    .tomo-main-archive .spinner .rect2 {
-      -webkit-animation-delay: -1.1s;
-      animation-delay: -1.1s; }
-    .tomo-main-archive .spinner .rect3 {
-      -webkit-animation-delay: -1.0s;
-      animation-delay: -1.0s; }
-    .tomo-main-archive .spinner .spinner .rect4 {
-      -webkit-animation-delay: -0.9s;
-      animation-delay: -0.9s; }
-    .tomo-main-archive .spinner .spinner .rect5 {
-      -webkit-animation-delay: -0.8s;
-      animation-delay: -0.8s; }
-
-@-webkit-keyframes sk-stretchdelay {
-  0%, 40%, 100% {
-    -webkit-transform: scaleY(0.4); }
-  20% {
-    -webkit-transform: scaleY(1); } }
-
-@keyframes sk-stretchdelay {
-  0%, 40%, 100% {
-    transform: scaleY(0.4);
-    -webkit-transform: scaleY(0.4); }
-  20% {
-    transform: scaleY(1);
-    -webkit-transform: scaleY(1); } }
 
 .site-footer {
   position: relative;
@@ -10230,6 +10130,42 @@ This is where majority of our work takes place and our UI components are often c
       display: inline-block;
       font-size: 16px;
       line-height: 40px; }
+
+.tomo-page-title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: url(assets/images/bg-page-title.jpg) no-repeat center;
+  background-size: cover;
+  height: 150px;
+  margin-bottom: 30px; }
+  .tomo-page-title:before {
+    content: attr(data-title);
+    text-transform: uppercase;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #293067;
+    text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.08); }
+  .tomo-page-title h2 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 0; }
 
 .tomochain-pagination, .woocommerce-pagination {
   margin-bottom: 80px; }
@@ -12617,8 +12553,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     margin-left: 91.66667%; }
   .hidden-sm-up {
     display: none !important; }
-  .post-fullwidth {
-    text-align: center; }
       .event-content-tomo .event .entry-img {
         margin-bottom: 20px; }
     .post-share {
@@ -13164,11 +13098,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     margin-left: 91.66667%; }
   .hidden-md-up {
     display: none !important; }
-  .post-fullwidth .entry-content,
-  .post-fullwidth .entry-footer {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%; }
+    .event-cat-filter {
+      margin-bottom: 50px; }
     .event-content-tomo .event .entry-title {
       font-size: 20px; }
     .event-content-tomo .event .entry-title {
@@ -13849,15 +13780,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     margin-left: 91.66667%; }
   .hidden-lg-up {
     display: none !important; }
-    .tomo-page-title {
-      margin: 50px 0 40px;
-      height: 207px; }
-      .tomo-page-title:before {
-        font-size: 80px; }
-      .tomo-page-title h2 {
-        margin-top: 32px; }
-    .event-content-tomo .event .entry-title {
-      font-size: 24px; }
     .site-header .site-branding {
       width: 10%; }
     .site-header .header-tools {
@@ -13866,6 +13788,13 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       text-align: left; }
     .main-menu {
       text-align: center; }
+    .tomo-page-title {
+      margin: 50px 0 40px;
+      height: 207px; }
+      .tomo-page-title:before {
+        font-size: 80px; }
+      .tomo-page-title h2 {
+        margin-top: 32px; }
   .tomochain-dapp--2 {
     grid-template-columns: 25% 75%; }
     .tomochain-dapp--2 .tomochain-dapp__image {
@@ -15088,8 +15017,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
             margin-bottom: 1em; }
     .tomo_detail .top-banner-tomo {
       margin-bottom: 1em; }
-    .tomo-main-archive {
-      padding: 1.5em 0 3em; }
     .single-post .site-main {
       margin-bottom: 50px; }
   .tomo_detail .top-banner-tomo {

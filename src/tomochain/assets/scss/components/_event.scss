@@ -1,80 +1,10 @@
-.tomo-page-title {
-    position: relative;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: url(assets/images/bg-page-title.jpg) no-repeat center;
-    background-size: cover;
-    height: 150px;
-    margin-bottom: 30px;
-
-    @include media-breakpoint-up(lg) {
-        margin: 50px 0 40px;
-        height: 207px;
-    }
-
-    &:before {
-        content: attr(data-title);
-        text-transform: uppercase;
-        font-family: 'Bai Jamjuree', sans-serif;
-        font-size: 50px;
-        font-weight: 700;
-        line-height: 1;
-        position: absolute;
-        left: 50%;
-        top: 50%;
-        transform: translate(-50%, -50%);
-        color: #293067;
-        text-shadow: -5px 5px 10px rgba(0,0, 0, .08);
-
-        @include media-breakpoint-up(lg) {
-            font-size: 80px;
-        }
-    }
-
-    h2 {
-        font-family: 'Bai Jamjuree', sans-serif;
-        position: relative;
-        margin-top: 20px;
-        margin-bottom: 0;
-
-        @include media-breakpoint-up(lg) {
-            margin-top: 32px;
-        }
-    }
-}
-
-.btn_close {
-    cursor: pointer;
-    position: absolute;
-    top: -55px;
-    right: -15px;
-    font-size: 0;
-    z-index: 1;
-    display: none;
-    &:before {
-        content: '\e902';
-        font-size: 16px;
-        color: #a8acb6;
-        padding: 15px;
-        font-family: tomochain;
-        font-style: normal;
-        display: inline-block;
-        text-decoration: inherit;
-        line-height: 1;
-        transition: all .5s ease;
-    }
-    &:hover {
-        &:before {
-            color: #fff;
-        }
-    }
-}
-
 .event-cat-filter {
     margin: 0 0 30px;
     padding: 0;
+
+    @include media-breakpoint-up(md) {
+        margin-bottom: 50px;
+    }
 
     li {
         list-style: none;
@@ -126,11 +56,15 @@
 }
 
 .event-content-tomo .event {
-
-    margin-bottom: 60px;
+    margin-bottom: 50px;
 
     .entry-img {
+        overflow: hidden;
         margin-bottom: 15px;
+
+        img {
+            @extend %transit;
+        }
 
         @include media-breakpoint-up(sm) {
             margin-bottom: 20px;
@@ -143,10 +77,6 @@
             font-size: 20px;
         }
 
-        @include media-breakpoint-up(lg) {
-            font-size: 24px;
-        }
-
         span.event-venue {
             font-size: 16px;
             color: #808aa9;
@@ -157,7 +87,7 @@
         }
     }
 
-    &:hover .entry-img {
+    &:hover .entry-img img {
         transform: scale(1.05);
     }
 }
@@ -329,69 +259,4 @@
             width: 50px;
         }
     }
-}
-
-// Loading
-.tomo-main-archive {
-    position: relative;
-    padding: 2em 0 4em;
-    @include media-breakpoint-down(sm) {
-        padding: 1.5em 0 3em;
-    }
-    .spinner {
-        position: absolute;
-        top: 0;
-        left: 50%;
-        margin: 1em auto 2em;
-        width: 50px;
-        height: 40px;
-        text-align: center;
-        font-size: 10px;
-        display: none;
-        transform: translateX(-50%);
-        > div {
-          background-color: #43abfc;
-          height: 100%;
-          width: 3px;
-          margin: 0 2px;
-          border-radius: 10px;
-          display: inline-block;
-          -webkit-animation: sk-stretchdelay 1.2s infinite ease-in-out;
-          animation: sk-stretchdelay 1.2s infinite ease-in-out;
-        }
-        .rect2 {
-          -webkit-animation-delay: -1.1s;
-          animation-delay: -1.1s;
-        }
-
-        .rect3 {
-          -webkit-animation-delay: -1.0s;
-          animation-delay: -1.0s;
-        }
-
-        .spinner .rect4 {
-          -webkit-animation-delay: -0.9s;
-          animation-delay: -0.9s;
-        }
-
-        .spinner .rect5 {
-          -webkit-animation-delay: -0.8s;
-          animation-delay: -0.8s;
-        }
-    }
-}
-
-@-webkit-keyframes sk-stretchdelay {
-  0%, 40%, 100% { -webkit-transform: scaleY(0.4) }
-  20% { -webkit-transform: scaleY(1.0) }
-}
-
-@keyframes sk-stretchdelay {
-  0%, 40%, 100% {
-    transform: scaleY(0.4);
-    -webkit-transform: scaleY(0.4);
-  }  20% {
-    transform: scaleY(1.0);
-    -webkit-transform: scaleY(1.0);
-  }
 }

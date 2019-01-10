@@ -1,0 +1,46 @@
+.tomo-page-title {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: url(assets/images/bg-page-title.jpg) no-repeat center;
+    background-size: cover;
+    height: 150px;
+    margin-bottom: 30px;
+
+    @include media-breakpoint-up(lg) {
+        margin: 50px 0 40px;
+        height: 207px;
+    }
+
+    &:before {
+        content: attr(data-title);
+        text-transform: uppercase;
+        font-family: 'Bai Jamjuree', sans-serif;
+        font-size: 50px;
+        font-weight: 700;
+        line-height: 1;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        color: #293067;
+        text-shadow: -5px 5px 10px rgba(0,0, 0, .08);
+
+        @include media-breakpoint-up(lg) {
+            font-size: 80px;
+        }
+    }
+
+    h2 {
+        font-family: 'Bai Jamjuree', sans-serif;
+        position: relative;
+        margin-top: 20px;
+        margin-bottom: 0;
+
+        @include media-breakpoint-up(lg) {
+            margin-top: 32px;
+        }
+    }
+}

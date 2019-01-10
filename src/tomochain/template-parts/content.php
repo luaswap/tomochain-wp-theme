@@ -54,6 +54,5 @@ $excerpt_length = get_field('blog_excerpt_length','options') ? get_field('blog_e
 				<?php endif;?>
 			</div>
 		</div>
-		<span class="btn_close"><?php echo esc_html__('Close','tomochain');?></span>
 	</div>
 </article>

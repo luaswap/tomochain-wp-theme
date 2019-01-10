@@ -23,7 +23,7 @@ get_header();
                     if($blog_filter)
                         tomochain_category_filter('post');
                     ?>
-                    <div class="tomo-main-archive">
+                    <div class="tomo-archive-wrapper">
                         <div class="spinner">
                             <div class="rect1"></div>
                             <div class="rect2"></div>
