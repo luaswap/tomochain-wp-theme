@@ -22,8 +22,6 @@ var tomochain
                         this.tomo_lottie();
                         this.video();
                         this.event();
-                        this.event_filter();
-                        // this.event_popup();
                         this.tab_active();
                     }
                 }
@@ -31,8 +29,8 @@ var tomochain
         )
     }
 )(jQuery);
-//@include('event-blog.js')
 //@include('blog.js')
+//@include('event.js')
 //@include('header.js')
 //@include('image-carousel.js')
 //@include('lang-switcher.js')

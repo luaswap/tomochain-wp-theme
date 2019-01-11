@@ -17,14 +17,14 @@ if('post' == get_post_type()){
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
             <div class="<?php echo esc_attr($class);?>">
-                <?php do_action('tomochain_heading');?>
+                <?php do_action('tomochain_page_title');?>
                 <div class="container">
                     <?php
                     $blog_filter = get_field('blog_filter','options');
                     if($blog_filter)
                         tomochain_category_filter(get_post_type());
                     ?>
-                    <div class="tomo-main-archive">
+                    <div class="tomo-archive-wrapper">
                         <div class="spinner">
                             <div class="rect1"></div>
                             <div class="rect2"></div>

@@ -29,7 +29,7 @@ if ( ! class_exists( 'TomoChain_Event_Widget' ) ) {
             );
 
             $data_source = array(
-				'All' 		      => '',
+				'All Events' 		      => '',
 				'Ongoing Events'  => 'current',
 				'Upcoming Events' => 'upcoming',
 				'Past Events'     => 'past'
@@ -115,7 +115,7 @@ if ( ! class_exists( 'TomoChain_Event_Widget' ) ) {
 		    }
 			$loop       = new WP_Query( $query_args );
 
-			$output[] = '<div class="tomo-events">';
+			$output[] = '<div class="archive-posts">';
 			if(have_posts()){
 				while ( $loop->have_posts() ) {
 
