@@ -121,7 +121,7 @@ if ( !class_exists( 'Tomochain_Event_Post_Type' ) ) {
 
         private static function get_template_loader_default_file() {
             if ( is_singular( 'event' ) ) {
-                $default_file = 'single-product.php';
+                $default_file = 'single-event.php';
             } elseif ( is_tax( get_object_taxonomies( 'event' ) ) ) {
                 if ( is_tax( 'event_category' ) ) {
                     $default_file = 'taxonomy-event_category.php';
