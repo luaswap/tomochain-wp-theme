@@ -10099,20 +10099,22 @@ COMPONENTS
 Specific UI components.
 This is where majority of our work takes place and our UI components are often composed of Objects and Components
 */
-.tomo-archive-wrapper.loading {
-  position: relative;
-  text-align: center; }
-  .tomo-archive-wrapper.loading:before {
-    content: url(assets/images/loading.svg) !important;
-    display: block;
-    position: absolute;
-    top: 50px;
-    left: 50%;
-    -webkit-transform: translateX(-50%) scale(1.5);
-            transform: translateX(-50%) scale(1.5); }
-  .tomo-archive-wrapper.loading .archive-posts {
-    opacity: 0;
-    visibility: hidden; }
+.tomo-archive-wrapper {
+  margin-top: 3em; }
+  .tomo-archive-wrapper.loading {
+    position: relative;
+    text-align: center; }
+    .tomo-archive-wrapper.loading:before {
+      content: url(assets/images/loading.svg) !important;
+      display: block;
+      position: absolute;
+      top: 50px;
+      left: 50%;
+      -webkit-transform: translateX(-50%) scale(1.5);
+              transform: translateX(-50%) scale(1.5); }
+    .tomo-archive-wrapper.loading .archive-posts {
+      opacity: 0;
+      visibility: hidden; }
 
 .comment-content a {
   word-wrap: break-word; }
@@ -11464,11 +11466,17 @@ This is where majority of our work takes place and our UI components are often c
   overflow: hidden; }
 
 .post:hover img {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05); }
+  /*transform: scale(1.05);*/ }
 
 .single-post .site-main {
   margin-bottom: 80px; }
+
+.entry-footer {
+  /*display: none;*/ }
+  .single-post .entry-footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
 
 .entry-title {
   font-size: 20px;
@@ -14461,6 +14469,9 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       font-size: 20px; }
     .event-content-tomo .event .entry-title {
       font-size: 18px; }
+          .blog-content-tomo article .inner .box-content .entry-img {
+            height: 175px;
+            overflow: hidden; }
           .blog-content-tomo article .inner .box-content .entry-header .entry-title {
             font-size: 18px; }
   .width_st180 {

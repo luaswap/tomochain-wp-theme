@@ -9,7 +9,7 @@
 }
 
 .post:hover img {
-    transform: scale(1.05);
+    /*transform: scale(1.05);*/
 }
 
 .single-post .site-main {
@@ -23,6 +23,13 @@
         @include media-breakpoint-down(sm) {
             margin-bottom: 2em;
         }
+    }
+}
+.entry-footer {
+    /*display: none;*/
+
+    .single-post & {
+        display: flex;
     }
 }
 
