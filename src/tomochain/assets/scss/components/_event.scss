@@ -5,7 +5,6 @@
     @include media-breakpoint-up(md) {
         margin-bottom: 50px;
     }
-}//blog-banner-tomo
 
     li {
         list-style: none;
@@ -174,6 +173,9 @@
                     @include media-breakpoint-up(md) {
                         height: 175px;
                         overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
                     }
                     @include media-breakpoint-down(sm) {
                         margin-bottom: 1em;
