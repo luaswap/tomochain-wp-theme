@@ -327,6 +327,10 @@
                 .entry-img {
                     margin-bottom: 1.5em;
                     display: block;
+                    @include media-breakpoint-up(md) {
+                        height: 175px;
+                        overflow: hidden;
+                    }
                     @include media-breakpoint-down(sm) {
                         margin-bottom: 1em;
                     }

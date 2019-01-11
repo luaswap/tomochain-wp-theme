@@ -1,0 +1,367 @@
+/**-------------------------------
+	Define CSS - Common
+----------------------------------**/
+/** Style width **/
+.width_st180 {
+	@include media-breakpoint-up(md) {
+		width: 180% !important;
+	}
+}
+.width_st200 {
+	@include media-breakpoint-up(md) {
+		width: 200% !important;
+	}
+}
+/** Style delay **/
+.delay1s {
+	transition: all .5s ease;
+	animation-delay: 1s;
+}
+.delay2s {
+	transition: all .5s ease;
+	animation-delay: 2s;
+}
+.delay3s {
+	transition: all .5s ease;
+	animation-delay: 3s;
+}
+.delay4s {
+	transition: all .5s ease;
+	animation-delay: 4s;
+}
+.delay5s {
+	transition: all .5s ease;
+	animation-delay: 5s;
+}
+
+/** Style margin **/
+.mag_top_30 {
+	margin-top: 30px !important;
+	@include media-breakpoint-down(md) {
+		margin-top: 15px !important;
+	}
+}
+.mag_bot_15 {
+	margin-bottom: 15px !important;
+}
+/** Style padding **/
+.pad_lef_right_10 {
+	padding: 0 10%;
+	@include media-breakpoint-up(md) {
+		padding: 0 5%;
+	}
+}
+.pad_right_30 {
+	@include media-breakpoint-up(lg) {
+		padding-right: 15px!important;
+	}
+}
+.pad_left_30 {
+	@include media-breakpoint-up(lg) {
+		padding-left: 15px!important;
+	}
+}
+/** Style font **/
+@include media-breakpoint-down(sm) {
+	.sp_ft_18 {
+		font-size: 18px!important;
+	}
+	.sp_ft_24 {
+		font-size: 24px!important;
+	}
+	.sp_center {
+		text-align: center!important;
+	}
+	.sp_mag_bot_15 {
+		margin-bottom: 30px !important;
+	}
+}
+/**-------------------------------
+	Style content
+----------------------------------**/
+iframe.sp_set_height {
+	@include media-breakpoint-down(md) {
+		height: 300px !important;
+	}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+	.item_building_dapp.pad_right_30 {
+		padding-right: 0!important;
+		padding-left: 55px!important;
+	}
+}
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+	.item_building_dapp.pad_left_30 {
+		padding-right: 55px!important;
+		padding-left: 0!important;
+	}
+}
+.item_building_dapp {
+	@include media-breakpoint-down(sm) {
+		margin-top: 30px;
+		&:first-child {
+			margin-top: 0;
+		}
+	}
+	@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+		.wpb_single_image {
+			height: 230px;
+			overflow: hidden;
+		}
+	}
+	>.vc_column-inner {
+		>.wpb_wrapper {
+			background-color: #252f5a;
+			border-radius: 10px;
+			padding-bottom: 15px;
+			overflow: hidden;
+			transition: all .3s ease;
+			&:hover {
+				box-shadow: 0 0 20px 0 #191c36;
+			}
+			.wpb_content_element {
+				@include media-breakpoint-up(lg) {
+					margin-bottom: 25px;
+				}
+			}
+		}
+	}
+}
+.tomo_iframe_gaming  {
+	@include media-breakpoint-up(md) {
+		padding-right: 10%;
+	}
+	.wpb_wrapper {
+		position: relative;
+		&:before {
+			content: "";
+			background: url(assets/images/iframe_gaming.png) no-repeat center bottom;
+			background-size: auto 100%;
+			position: absolute;
+			width: 200%;
+			height: 140%;
+			left: -50%;
+			top: -10%;
+		}
+	}
+}
+*:focus {
+	outline: none;
+}
+
+// con_press_about_us
+.tomochain_slider_press {
+	.tomochain-image-carousel-item {
+		padding: 10px;
+		img {
+			width: 100%;
+		}
+	}
+	@include media-breakpoint-up(md) {
+		.slick-slider {
+			padding-right: 100%;
+			margin-right: -100%;
+			overflow: hidden;
+			position: inherit;
+			.slick-arrow.slick-prev {
+				left: 60px;
+			}
+			.slick-list {
+				overflow: visible;
+			}
+		}
+	}
+}
+
+// con_chart
+.animated {
+	.tomo_chart {
+		@keyframes full_height1 {
+			0% {
+				height: 0px;
+			}
+			80% {
+				height: 202px;
+			}
+			100% {
+				height: 200px;
+			}
+		}
+		@keyframes full_height1_2 {
+			0% {
+				height: 0px;
+			}
+			80% {
+				height: 194px;
+			}
+			100% {
+				height: 192px;
+			}
+		}
+		@keyframes full_height2 {
+			0% {
+				height: 0px;
+			}
+			80% {
+				height: 20px;
+			}
+			100% {
+				height: 18px;
+			}
+		}
+		@keyframes full_height3 {
+			0% {
+				height: 0px;
+			}
+			80% {
+				height: 52px;
+			}
+			100% {
+				height: 50px;
+			}
+		}
+		@keyframes full_height4 {
+			0% {
+				height: 0px;
+			}
+			80% {
+				height: 152px;
+			}
+			100% {
+				height: 150px;
+			}
+		}
+		@keyframes full_height5 {
+			0% {
+				height: 0px;
+			}
+			80% {
+				height: 194px;
+			}
+			100% {
+				height: 192px;
+			}
+		}
+		@keyframes full_height5_2 {
+			0% {
+				height: 0px;
+			}
+			80% {
+				height: 54px;
+			}
+			100% {
+				height: 52px;
+			}
+		}
+		@keyframes full_height6 {
+			0% {
+				height: 0px;
+			}
+			80% {
+				height: 133px;
+			}
+			100% {
+				height: 131px;
+			}
+		}
+		@keyframes full_height7 {
+			0% {
+				height: 0px;
+			}
+			80% {
+				height: 172px;
+			}
+			100% {
+				height: 170px;
+			}
+		}
+		.height1 {
+			height: 0;
+			animation-name: full_height1;
+		}
+		.height1_2 {
+			height: 0;
+			animation-name: full_height1_2;
+		}
+		.height2 {
+			height: 0;
+			animation-name: full_height2;
+		}
+		.height3 {
+			height: 0;
+			animation-name: full_height3;
+		}
+		.height4 {
+			height: 0;
+			animation-name: full_height4;
+		}
+		.height5 {
+			height: 0;
+			animation-name: full_height5;
+		}
+		.height5_2 {
+			height: 0;
+			animation-name: full_height5_2;
+		}
+		.height6 {
+			height: 0;
+			animation-name: full_height6;
+		}
+		.height7 {
+			height: 0;
+			animation-name: full_height7;
+		}
+		.chart_blue {
+			background-image: linear-gradient(#698AF5 30%, #7965F1 100%) !important;
+			position: relative;
+			width: 6px;
+			height: 0;
+			animation-duration: 1.5s;
+			animation-fill-mode: forwards;
+			color: #8E96E1;
+		}
+		.chart_origin {
+			background-image: linear-gradient(#FFDD72 30%, #FF7B7A 100%) !important;
+			position: relative;
+			width: 6px;
+			animation-duration: 1.5s;
+			animation-delay: .5s;
+			animation-fill-mode: forwards;
+			color: #E1A382;
+		}
+		table {
+			color: #5D66B2;
+			font-size: 12px;
+			text-align: center;
+			vertical-align: bottom;
+			td {
+				padding: 5px 10px;
+				height: 30px;
+				vertical-align: bottom;
+				@include media-breakpoint-down(sm) {
+					padding: 5px 0px;
+				}
+				div {
+					display: inline-block;
+				}
+			}
+			.st_1 td,
+			.st_2 td {
+				padding: 5px 2px !important;
+				height: auto !important;
+				font-size: 13px;
+				vertical-align: top;
+			}
+			.st_2 {
+				color: #818AD8;
+			}
+		}
+		.max_time {
+			position: absolute;
+			top: 0;
+			left: 50%;
+			width: 200px;
+			transform: translate(-50%,-25px);
+		}
+	}
+}

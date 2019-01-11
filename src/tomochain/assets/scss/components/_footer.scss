@@ -1,15 +1,16 @@
 .site-footer {
+    /*background: url(assets/images/bg-footer.jpg) no-repeat;
+    background-size: cover;*/
+    background-color: #262e5d;
     position: relative;
     z-index: 2;
-    background: url(assets/images/bg-footer.png) no-repeat;
-    background-size: cover;
 
     &:before {
+        /*background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%);
         content: '';
         display: block;
         width: 100%;
-        height: 2px;
-        background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%);
+        height: 2px;*/
     }
 
     .custom-logo {

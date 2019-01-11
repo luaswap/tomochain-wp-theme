@@ -9,7 +9,11 @@ html {
 }
 
 body {
-    background-image: linear-gradient(-220deg, #272f4b 0%, #1a1f36 41%, #15152d 64%, #211841 96%);
+    /*background-image: linear-gradient(-220deg, #272f4b 0%, #1a1f36 41%, #15152d 64%, #211841 96%);*/
+    background-color: #1C2139;
+    .site-content {
+    	background-image: linear-gradient(#1C2139 0%, #1E2648 30%, #232754 60%,#242A58 100%);
+    }
 }
 
 hr {
