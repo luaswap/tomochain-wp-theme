@@ -17,7 +17,148 @@ input[type="submit"] {
 	}
 }
 
-//style button
+// Begin style button
+.tomo_btn_tmp_slider {
+	a {
+		position: relative!important;
+		background: transparent!important;
+		border-radius: 6px!important;
+		padding: 12px 20px!important;
+		font-size: 14px!important;
+		line-height: 16px!important;
+		border: 0!important;
+		color: #fff!important;
+		overflow: hidden!important;
+		&:before {
+			content: '';
+			background-image: linear-gradient(-123deg,#48A5FF 30%, #534BFF 100%)!important;
+			background-size: 400% 400%!important;
+			animation: sliderButtonAnimation 3s ease infinite!important;
+			border-radius: 6px!important;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			@extend %transit;
+		}
+		&:after {
+			content: '';
+			background-color: #272f4b!important;
+			height: calc(100% - 4px);
+			width: calc(100% - 4px);
+			border-radius: 6px!important;
+			position: absolute;
+			top: 2px;
+			right: 2px;
+			z-index: -1;
+			@extend %transit;
+		}
+		&:hover {
+			/*color: #272f4b!important;*/
+			&:after {
+				width: 0!important;
+			}
+		}
+	}
+}
+.tomo_btn_tmp_grad {
+	a {
+		position: relative!important;
+		background: transparent!important;
+		border-radius: 6px!important;
+		padding: 12px 20px!important;
+		font-size: 14px!important;
+		min-width: 170px;
+		line-height: 16px!important;
+		border: 0!important;
+		color: #fff!important;
+		overflow: hidden!important;
+		font-family: 'Quicksand', sans-serif!important;
+		z-index: 1;
+		&:before {
+			content: '';
+			background-image: linear-gradient(#48A5FF 30%, #534BFF 100%)!important;
+			border-radius: 6px!important;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			@extend %transit;
+		}
+		&:after {
+			content: '';
+			/*background-color: #252f5a!important;*/
+			/*height: calc(100% - 2px);*/
+			/*width: calc(100% - 2px);*/
+			background-image: linear-gradient(#534BFF 30%, #48A5FF 100%)!important;
+			border-radius: 6px!important;
+			height: 100%;
+			width: 100%;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+			opacity: 0;
+			@extend %transit;
+		}
+		&:hover {
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+}
+
+.tomo_btn_tmp_trans {
+	a {
+		position: relative!important;
+		background: transparent!important;
+		border-radius: 6px!important;
+		padding: 12px 35px 12px 12px!important;
+		font-size: 14px!important;
+		border: 0!important;
+		color: #6B6CED!important;
+		overflow: hidden!important;
+		letter-spacing: 1px;
+		margin-bottom: 2em!important;
+		font-weight: 500;
+		font-family: 'Quicksand', sans-serif!important;
+		&:before {
+			content: '';
+			background: url(../tomochain/assets/images/arrow_normal.svg) no-repeat center;
+			position: absolute;
+			right: 0;
+			width: 30px;
+			height: 16px;
+			top: 50%;
+			transform: translateY(-50%);
+		}
+		&:after {
+			content: '';
+			background: url(../tomochain/assets/images/arrow_hover.svg) no-repeat center;
+			position: absolute;
+			right: 0;
+			width: 30px;
+			height: 16px;
+			top: 50%;
+			transform: translateY(-50%);
+			opacity: 0;
+			transition: all .4s ease;
+		}
+		&:hover {
+			color: #4A7AFE!important;
+			&:after {
+				opacity: 1;
+			}
+		}
+	}
+}
+// End style button
+
 .tomo-flexbox {
 	display: flex;
 	justify-content: center;
@@ -27,132 +168,180 @@ input[type="submit"] {
 	}
 }
 .btn-tmp-txt1 {
-    color:#6b6ced!important;
-    font-size: 16px;
-    display: inline-block;
-    position: relative;
-    &:after {
-        font-family: 'tomochain';
-        content: '\e901';
-        font-size: 12px;
-        color: #6b6ced;
-        padding-left: 10px;
-        transition: all .5s ease;
-        /*position: absolute;*/
-        /*transform: translate(0px, 5px);*/
-    }
-    &:hover {
-    	color:#43a6fa!important;
-        &:after {
-        	color:#43a6fa!important;
-            /*transform: translate(10px, 5px);*/
-        }
-    }
+	color:#6b6ced!important;
+	font-size: 16px;
+	display: inline-block;
+	position: relative;
+	&:after {
+		font-family: 'tomochain';
+		content: '\e901';
+		font-size: 12px;
+		color: #6b6ced;
+		padding-left: 10px;
+		transition: all .4s ease;
+		/*position: absolute;*/
+		/*transform: translate(0px, 5px);*/
+	}
+	&:hover {
+		color:#43a6fa!important;
+		&:after {
+			color:#43a6fa!important;
+			/*transform: translate(10px, 5px);*/
+		}
+	}
 }
 
 .btn-downios {
+	background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
+	border-radius: 6px;
+	color: #fff!important;
+	padding: 10px 20px 10px 35px;
+	line-height: 16px;
+	width: 140px;
+	height: 38px;
 	position: relative;
-	line-height: .1;
+	overflow: hidden;
+	z-index: 1;
+	font-weight: 400;
+	font-family: 'Quicksand', sans-serif!important;
 	&:before {
-		background: url(../tomochain/assets/images/icon_apple_hover.svg) no-repeat center;
-		background-size: 100%;
 		content: '';
-		width: 100%;
-		height: 100%;
+		background: url(../tomochain/assets/images/icon_apple.svg) no-repeat center;
 		position: absolute;
-		top: 0;
-		left: 0;
-		opacity: 0;
-		z-index: 0;
-		transition: all .5s ease;
+		left: 20px;
+		width: 20px;
+		height: 16px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&:after {
+		content: '';
+		background-color: #21274e!important;
+		height: calc(100% - 2px);
+		width: calc(100% - 2px);
+		border-radius: 6px!important;
+		position: absolute;
+		top: 1px;
+		right: 1px;
+		z-index: -1;
+		opacity: 1;
+		@extend %transit;
 	}
 	&:hover {
-		img {
+		&:after {
 			opacity: 0;
-			transition: all .5s ease;
-		}
-		&:before {
-			opacity: 1;
 		}
 	}
 }
 .btn-downandroid {
+	background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
+	border-radius: 6px;
+	color: #fff!important;
+	padding: 10px 20px 10px 35px;
+	line-height: 16px;
+	width: 140px;
+	height: 38px;
 	position: relative;
-	line-height: .1;
+	overflow: hidden;
+	z-index: 1;
+	font-weight: 400;
+	font-family: 'Quicksand', sans-serif!important;
 	&:before {
-		background: url(../tomochain/assets/images/icon_android_hover.svg) no-repeat center;
-		background-size: 100%;
 		content: '';
-		width: 100%;
-		height: 100%;
+		background: url(../tomochain/assets/images/icon_android.svg) no-repeat center;
 		position: absolute;
-		top: 0;
-		left: 0;
-		opacity: 0;
-		transition: all .5s ease;
-		z-index: 0;
+		left: 15px;
+		width: 20px;
+		height: 16px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&:after {
+		content: '';
+		background-color: #21274e!important;
+		height: calc(100% - 2px);
+		width: calc(100% - 2px);
+		border-radius: 6px!important;
+		position: absolute;
+		top: 1px;
+		right: 1px;
+		z-index: -1;
+		opacity: 1;
+		@extend %transit;
 	}
 	&:hover {
-		img {
+		&:after {
 			opacity: 0;
-			transition: all .5s ease;
-		}
-		&:before {
-			opacity: 1;
 		}
 	}
 }
 
 .btn-runapp {
+	color: #6b6ced!important;
 	position: relative;
-	line-height: .1;
-	margin-top: 12px!important;
+	padding: 12px 35px 12px 12px;
+	font-weight: 500;
+	font-family: 'Quicksand', sans-serif!important;
 	&:before {
-		background: url(../tomochain/assets/images/icon_run_app_hover.svg) no-repeat center;
-		background-size: 100%;
 		content: '';
-		width: 100%;
-		height: 100%;
+		background: url(../tomochain/assets/images/arrow_normal.svg) no-repeat center;
 		position: absolute;
-		top: 0;
-		left: 0;
+		right: 0;
+		width: 30px;
+		height: 16px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&:after {
+		content: '';
+		background: url(../tomochain/assets/images/arrow_hover.svg) no-repeat center;
+		position: absolute;
+		right: 0;
+		width: 30px;
+		height: 16px;
+		top: 50%;
+		transform: translateY(-50%);
 		opacity: 0;
-		transition: all .5s ease;
-		z-index: 0;
+		transition: all .4s ease;
 	}
 	&:hover {
-		img {
-			opacity: 0;
-			transition: all .5s ease;
-		}
-		&:before {
+		color: #4A7AFE!important;
+		&:after {
 			opacity: 1;
 		}
 	}
 }
 .btn-sourcecode {
+	color: #6b6ced!important;
 	position: relative;
-	line-height: .1;
-	margin-top: 12px!important;
+	padding: 12px 12px 12px 35px;
+	font-weight: 500;
+	font-family: 'Quicksand', sans-serif!important;
 	&:before {
-		background: url(../tomochain/assets/images/icon_code_hover.svg) no-repeat center;
-		background-size: 100%;
 		content: '';
-		width: 100%;
-		height: 100%;
+		background: url(../tomochain/assets/images/code_icon.svg) no-repeat center;
 		position: absolute;
-		top: 0;
 		left: 0;
+		width: 30px;
+		height: 16px;
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	&:after {
+		content: '';
+		background: url(../tomochain/assets/images/code_icon_hover.svg) no-repeat center;
+		position: absolute;
+		left: 0;
+		width: 30px;
+		height: 16px;
+		top: 50%;
+		transform: translateY(-50%);
 		opacity: 0;
-		transition: all .5s ease;
-		z-index: 0;
+		transition: all .4s ease;
 	}
 	&:hover {
-		img {
-			opacity: 0;
-			transition: all .5s ease;
-		}
-		&:before {
+		color: #4A7AFE!important;
+		&:after {
 			opacity: 1;
 		}
 	}

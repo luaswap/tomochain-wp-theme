@@ -9,7 +9,7 @@
 }
 
 .post:hover img {
-    transform: scale(1.05);
+    /*transform: scale(1.05);*/
 }
 
 .single-post .site-main {
@@ -23,6 +23,13 @@
         @include media-breakpoint-down(sm) {
             margin-bottom: 2em;
         }
+    }
+}
+.entry-footer {
+    /*display: none;*/
+
+    .single-post & {
+        display: flex;
     }
 }
 
@@ -83,8 +90,8 @@
 }
 
 .entry-content {
-    line-height: 1.5;
-    font-size: 15px;
+    line-height: 23px;
+    font-size: 14px;
 }
 
 .post-tags .tagcloud {
