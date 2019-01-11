@@ -7636,7 +7636,7 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
-.tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-downios:after, .btn-downandroid:after, a, .site-header, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
+.tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts, .event-content-tomo .event .entry-img img, .site-header, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
 .main-menu .menu li.menu-item.page_item_has_children > a:before,
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
@@ -10099,11 +10099,20 @@ COMPONENTS
 Specific UI components.
 This is where majority of our work takes place and our UI components are often composed of Objects and Components
 */
-.post-fullwidth article {
-  max-width: 100%;
-  -webkit-box-flex: 0;
-      -ms-flex: 0 0 100%;
-          flex: 0 0 100%; }
+.tomo-archive-wrapper.loading {
+  position: relative;
+  text-align: center; }
+  .tomo-archive-wrapper.loading:before {
+    content: url(assets/images/loading.svg) !important;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(1.5);
+            transform: translateX(-50%) scale(1.5); }
+  .tomo-archive-wrapper.loading .archive-posts {
+    opacity: 0;
+    visibility: hidden; }
 
 .comment-content a {
   word-wrap: break-word; }
@@ -10439,6 +10448,180 @@ This is where majority of our work takes place and our UI components are often c
     transform: scaleY(1);
     -webkit-transform: scaleY(1); } }
 
+.event-cat-filter {
+  margin: 0 0 30px;
+  padding: 0; }
+  .event-cat-filter li {
+    list-style: none;
+    display: inline-block;
+    vertical-align: middle;
+    margin: 0 0 0 20px;
+    padding: 0; }
+    .event-cat-filter li:first-child {
+      margin-left: 0; }
+    .event-cat-filter li a {
+      position: relative;
+      display: block;
+      font-size: 16px;
+      text-transform: capitalize;
+      color: #9eaacc;
+      padding-bottom: 10px; }
+      .event-cat-filter li a:after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        max-width: 40px;
+        height: 2px;
+        -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+        transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+        transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+        transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1), -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+        -webkit-transform: scale3d(0, 1, 1);
+                transform: scale3d(0, 1, 1);
+        -webkit-transform-origin: 100% 50%;
+                transform-origin: 100% 50%;
+        background-color: #e68b71; }
+    .event-cat-filter li.selected a, .event-cat-filter li:hover a {
+      color: #fff; }
+      .event-cat-filter li.selected a:after, .event-cat-filter li:hover a:after {
+        -webkit-transform: scale3d(1, 1, 1);
+                transform: scale3d(1, 1, 1);
+        -webkit-transform-origin: 0 50%;
+                transform-origin: 0 50%; }
+
+.event-content-tomo .event {
+  margin-bottom: 50px; }
+  .event-content-tomo .event .entry-img {
+    overflow: hidden;
+    margin-bottom: 15px; }
+  .event-content-tomo .event .entry-title span.event-venue {
+    font-size: 16px;
+    color: #808aa9; }
+  .event-content-tomo .event:hover .entry-img img {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05); }
+
+.blog-content-tomo .post-cat-filter {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .blog-content-tomo .post-cat-filter:before, .blog-content-tomo .post-cat-filter:after {
+    clear: both;
+    display: table;
+    content: ""; }
+  .blog-content-tomo .post-cat-filter li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-left: 3em; }
+    .blog-content-tomo .post-cat-filter li:first-child {
+      margin-left: 0; }
+    .blog-content-tomo .post-cat-filter li a {
+      display: block;
+      color: #9eaacc;
+      padding: .7em 0;
+      text-decoration: none;
+      position: relative;
+      font-size: 18px; }
+      .blog-content-tomo .post-cat-filter li a:after {
+        content: '';
+        position: absolute;
+        bottom: 0px;
+        left: 0;
+        width: 100%;
+        max-width: 40px;
+        height: 2px;
+        -webkit-transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+        transition: -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+        transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+        transition: transform 0.5s cubic-bezier(0.8, 0, 0.2, 1), -webkit-transform 0.5s cubic-bezier(0.8, 0, 0.2, 1);
+        -webkit-transform: scale3d(0, 1, 1);
+        transform: scale3d(0, 1, 1);
+        -webkit-transform-origin: 100% 50%;
+        transform-origin: 100% 50%;
+        background-color: #e68b71; }
+    .blog-content-tomo .post-cat-filter li.selected a, .blog-content-tomo .post-cat-filter li:hover a {
+      color: #fff; }
+      .blog-content-tomo .post-cat-filter li.selected a:after, .blog-content-tomo .post-cat-filter li:hover a:after {
+        -webkit-transform: scale3d(1, 1, 1);
+        transform: scale3d(1, 1, 1);
+        -webkit-transform-origin: 0 50%;
+        transform-origin: 0 50%; }
+
+.blog-content-tomo article {
+  margin-bottom: 1em; }
+  .blog-content-tomo article .inner {
+    position: relative; }
+    .blog-content-tomo article .inner .box-content {
+      /*text-align: center;*/ }
+      .blog-content-tomo article .inner .box-content .entry-img {
+        margin-bottom: 1.5em;
+        display: block; }
+        .blog-content-tomo article .inner .box-content .entry-img img {
+          -webkit-transition: all .5s ease;
+          transition: all .5s ease;
+          display: block; }
+      .blog-content-tomo article .inner .box-content .entry-header .entry-title {
+        font-size: 18px;
+        font-weight: 400;
+        line-height: 1.4;
+        color: #ebeaf5;
+        margin-top: 0;
+        margin-bottom: 10px; }
+        .blog-content-tomo article .inner .box-content .entry-header .entry-title a {
+          color: #ebeaf5; }
+  .blog-content-tomo article:hover .inner .entry-img img {
+    -webkit-transform: scale(1.04);
+            transform: scale(1.04); }
+
+.tomo_detail .top-banner-tomo {
+  margin-bottom: 4em; }
+
+.tomo_detail .post-thumbnail {
+  margin-bottom: 1em; }
+
+.tomo_detail .search-form {
+  border-bottom: 1px solid #9eaacc;
+  position: relative; }
+  .tomo_detail .search-form label {
+    display: block;
+    padding-right: 50px; }
+  .tomo_detail .search-form input[type=search],
+  .tomo_detail .search-form input[type=submit] {
+    background: transparent;
+    border: 0;
+    padding: 0; }
+    .tomo_detail .search-form input[type=search]::-webkit-input-placeholder,
+    .tomo_detail .search-form input[type=submit]::-webkit-input-placeholder {
+      color: #9eaacc;
+      font-size: 14px;
+      font-family: 'Quicksand', sans-serif; }
+    .tomo_detail .search-form input[type=search]::-ms-input-placeholder,
+    .tomo_detail .search-form input[type=submit]::-ms-input-placeholder {
+      color: #9eaacc;
+      font-size: 14px;
+      font-family: 'Quicksand', sans-serif; }
+    .tomo_detail .search-form input[type=search]::placeholder,
+    .tomo_detail .search-form input[type=submit]::placeholder {
+      color: #9eaacc;
+      font-size: 14px;
+      font-family: 'Quicksand', sans-serif; }
+  .tomo_detail .search-form input[type=submit] {
+    background: url(assets/images/icon_search.svg) no-repeat 95%;
+    background-size: 14px auto;
+    border-radius: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    font-size: 0;
+    height: 100%;
+    width: 50px; }
+
 .site-footer {
   /*background: url(assets/images/bg-footer.jpg) no-repeat;
     background-size: cover;*/
@@ -10496,7 +10679,7 @@ This is where majority of our work takes place and our UI components are often c
     background-color: #202741; }
     .admin-bar .site-header.headroom--not-top {
       top: 32px; }
-    .site-header.headroom--not-top .custom-logo {
+    .site-header.headroom--not-top img {
       padding: 0;
       max-width: 35px; }
     .site-header.headroom--not-top .main-menu .menu > ul > li > a,
@@ -11158,6 +11341,42 @@ This is where majority of our work takes place and our UI components are often c
       font-size: 16px;
       line-height: 40px; }
 
+.tomo-page-title {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: url(assets/images/bg-page-title.jpg) no-repeat center;
+  background-size: cover;
+  height: 150px;
+  margin-bottom: 30px; }
+  .tomo-page-title:before {
+    content: attr(data-title);
+    text-transform: uppercase;
+    font-family: 'Bai Jamjuree', sans-serif;
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    color: #293067;
+    text-shadow: -5px 5px 10px rgba(0, 0, 0, 0.08); }
+  .tomo-page-title h2 {
+    font-family: 'Bai Jamjuree', sans-serif;
+    position: relative;
+    margin-top: 20px;
+    margin-bottom: 0; }
+
 .tomochain-pagination, .woocommerce-pagination {
   margin-bottom: 80px; }
   .tomochain-pagination.woocommerce-pagination, .woocommerce-pagination {
@@ -11242,21 +11461,14 @@ This is where majority of our work takes place and our UI components are often c
 .post-thumbnail {
   border-radius: 10px;
   display: block;
-  overflow: hidden;
-  /*margin-bottom: 2em;*/ }
+  overflow: hidden; }
 
 .post:hover img {
-  /*transform: scale(1.05);*/ }
+  -webkit-transform: scale(1.05);
+          transform: scale(1.05); }
 
 .single-post .site-main {
   margin-bottom: 80px; }
-
-.entry-footer {
-  /*display: none;*/ }
-  .single-post .entry-footer {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex; }
 
 .entry-title {
   font-size: 20px;
@@ -11272,7 +11484,6 @@ This is where majority of our work takes place and our UI components are often c
   margin-bottom: 10px; }
   .entry-meta > span {
     display: inline-block;
-    /*margin-right: 25px;*/
     color: #808aa9; }
   .entry-meta a {
     color: #808aa9; }
@@ -11282,6 +11493,7 @@ This is where majority of our work takes place and our UI components are often c
     display: inline-block;
     vertical-align: baseline;
     font-size: 16px;
+    font-weight: 400;
     margin-right: 10px; }
   .entry-meta span.byline:before {
     margin-right: 4px;
@@ -13621,8 +13833,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     margin-left: 91.66667%; }
   .hidden-sm-up {
     display: none !important; }
-  .post-fullwidth {
-    text-align: center; }
+      .event-content-tomo .event .entry-img {
+        margin-bottom: 20px; }
     .post-share {
       margin-top: 0;
       margin-bottom: 0; }
@@ -14236,16 +14448,19 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     margin-left: 91.66667%; }
   .hidden-md-up {
     display: none !important; }
-  .post-fullwidth .entry-content,
-  .post-fullwidth .entry-footer {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 80%; }
         .event-content-tomo article .inner .entry-header .entry-title {
           font-size: 18px; }
           .blog-content-tomo article .inner .box-content .entry-img {
             height: 175px;
             overflow: hidden; }
+          .blog-content-tomo article .inner .box-content .entry-header .entry-title {
+            font-size: 18px; }
+    .event-cat-filter {
+      margin-bottom: 50px; }
+    .event-content-tomo .event .entry-title {
+      font-size: 20px; }
+    .event-content-tomo .event .entry-title {
+      font-size: 18px; }
           .blog-content-tomo article .inner .box-content .entry-header .entry-title {
             font-size: 18px; }
   .width_st180 {
@@ -15011,8 +15226,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     display: none !important; }
     .site-header .site-branding {
       width: 10%; }
-      .site-header .site-branding img {
-        max-width: 50px; }
     .site-header .header-tools {
       width: 10%; }
   .pad_right_30 {
@@ -15025,6 +15238,13 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       text-align: left; }
     .main-menu {
       text-align: center; }
+    .tomo-page-title {
+      margin: 50px 0 40px;
+      height: 207px; }
+      .tomo-page-title:before {
+        font-size: 80px; }
+      .tomo-page-title h2 {
+        margin-top: 32px; }
   .tomochain-dapp--2 {
     grid-template-columns: 25% 75%; }
     .tomochain-dapp--2 .tomochain-dapp__image {
@@ -16237,6 +16457,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         .top-banner-tomo .container h2 {
           margin-top: 25px; }
     .tomo_detail .top-banner-tomo {
+      margin-bottom: 3em; }
+    .tomo_detail .top-banner-tomo {
       margin-bottom: 3em; } }
   @media (max-width: 991.98px) {
   .table-responsive-lg {
@@ -16250,6 +16472,13 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
   .hidden-md-down {
     display: none !important; }
     .event-content-tomo .event-cat-filter {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
+    .blog-content-tomo .post-cat-filter {
       -webkit-box-pack: center;
           -ms-flex-pack: center;
               justify-content: center;
@@ -16309,6 +16538,16 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       margin-bottom: 1em; }
     .tomo-main-archive {
       padding: 1.5em 0 3em; }
+      .blog-content-tomo .post-cat-filter li {
+        margin: 0 0.5em; }
+          .blog-content-tomo .post-cat-filter li.selected a:after, .blog-content-tomo .post-cat-filter li:hover a:after {
+            left: 50%;
+            -webkit-transform: translateX(-50%);
+                    transform: translateX(-50%); }
+          .blog-content-tomo article .inner .box-content .entry-img {
+            margin-bottom: 1em; }
+    .tomo_detail .top-banner-tomo {
+      margin-bottom: 1em; }
   .sp_ft_18 {
     font-size: 18px !important; }
   .sp_ft_24 {

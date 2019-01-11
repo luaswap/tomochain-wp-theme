@@ -34,7 +34,7 @@ $excerpt_length = get_field('blog_excerpt_length','options') ? get_field('blog_e
 						?>
 						<div class="entry-meta">
 							<?php tomochain_post_date(); ?>
-						</div><!-- .entry-meta -->
+						</div>
 					<?php endif; ?>
 				<?php
 				if ( is_singular() ) :
@@ -49,19 +49,10 @@ $excerpt_length = get_field('blog_excerpt_length','options') ? get_field('blog_e
 						<?php
 						if($enable_excerpt)
 						echo tomochain_excerpt($excerpt_length);
-
-						// wp_link_pages( array(
-						// 	'before' => '<div class="page-links">' . esc_html__( 'Pages:', 'tomochain' ),
-						// 	'after'  => '</div>',
-						// ) );
 						?>
 					</div>
 				<?php endif;?>
-				<!-- <div class="entry-footer">
-					<a class="btn-tmp-txt1" href="<?php //echo $custom_url ? esc_url($custom_url) : get_permalink()?>" target="<?php //echo esc_attr($open_new_tab)?>" rel="bookmark"><?php //echo esc_html__('Read More','tomochain')?></a>
-				</div> -->
 			</div>
 		</div>
-		<span class="btn_close"><?php echo esc_html__('Close','tomochain');?></span>
 	</div>
 </article>

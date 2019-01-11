@@ -16,14 +16,14 @@ get_header();
     <div id="primary" class="content-area">
         <main id="main" class="site-main">
             <div class="blog-content-tomo">
-                <?php do_action('tomochain_heading');?>
+                <?php do_action('tomochain_page_title');?>
                 <div class="container">
                     <?php
                     $blog_filter = get_field('blog_filter','options');
                     if($blog_filter)
                         tomochain_category_filter('post');
                     ?>
-                    <div class="tomo-main-archive">
+                    <div class="tomo-archive-wrapper">
                         <div class="spinner">
                             <div class="rect1"></div>
                             <div class="rect2"></div>

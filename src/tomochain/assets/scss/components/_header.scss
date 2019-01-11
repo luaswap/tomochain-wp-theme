@@ -22,6 +22,8 @@
         img {
             max-width: 40px;
             padding: 10px 0;
+
+            @extend %transit;
         }
     }
 
@@ -51,7 +53,7 @@
             top: 32px;
         }
 
-        .custom-logo {
+        img {
             padding: 0;
             max-width: 35px;
         }
@@ -76,10 +78,6 @@
 
         .site-branding {
             width: 10%;
-
-            img {
-                max-width: 50px;
-            }
         }
 
         .header-tools {

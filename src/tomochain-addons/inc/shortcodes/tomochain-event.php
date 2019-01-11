@@ -18,7 +18,7 @@ vc_map( array(
             'param_name'  => 'data_source',
             'admin_label' => true,
             'value'       => array(
-                esc_html__( 'All', 'tomochain-addons' )             => '',
+                esc_html__( 'All Events', 'tomochain-addons' )             => '',
                 esc_html__( 'Ongoing Events', 'tomochain-addons' )  => 'current',
                 esc_html__( 'Upcoming Event', 'tomochain-addons' )  => 'upcoming',
                 esc_html__( 'Past Event', 'tomochain-addons' )      => 'past',

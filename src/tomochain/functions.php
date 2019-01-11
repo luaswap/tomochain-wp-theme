@@ -162,7 +162,7 @@ function tomochain_enqueue_libs() {
     * Enqueue Google Fonts
     */
     $font_url = add_query_arg( 'family',
-            'Open+Sans:300,400,600,700|Quicksand:400,500&amp;subset=latin-ext,vietnamese',
+            'Open+Sans:300,400,600,700,800|Quicksand:400,500|Bai+Jamjuree:400,500,700&amp;subset=latin-ext,vietnamese',
             'https://fonts.googleapis.com/css' );
     wp_enqueue_style( 'google-fonts', $font_url, null, TOMOCHAIN_THEME_VERSION );
 
