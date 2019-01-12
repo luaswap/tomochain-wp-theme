@@ -90,6 +90,15 @@
     -moz-osx-font-smoothing: grayscale;
 }
 
+.tm-android:before {
+    content: "\e901";
+  }
+  .tm-apple:before {
+    content: "\e902";
+  }
+  .tm-search:before {
+    content: "\e900";
+  }
 .tm-chevron-left:before {
     content: "\e903";
 }

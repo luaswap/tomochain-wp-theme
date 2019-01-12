@@ -8,7 +8,7 @@
  */
 $columns = get_field('blog_columns','options') ? get_field('blog_columns','options') : '3';
 
-$classes = 'col-xs-12 col-md-'.$columns;
+$classes = 'post-loop col-xs-12 col-md-'.$columns;
 $custom_url = get_field('custom_url');
 $open_new_tab = get_field('open_in_new_tab') ? '__blank' : '';
 

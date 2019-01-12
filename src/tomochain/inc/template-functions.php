@@ -181,14 +181,14 @@ if ( !function_exists('tomochain_page_title') ) {
 }
 
 if ( !function_exists('tomochain_category_filter') ) {
-    function tomochain_category_filter($type){
-        if ( 'post' == $type ) {
+    function tomochain_category_filter( $post_type ){
+        if ( 'post' == $post_type ) {
             $categories = get_categories( array(
                 'hide_empty' => true,
                 'orderby' => 'name',
                 'order'   => 'ASC'
             ) );
-        } elseif ( 'event' == $type ) {
+        } elseif ( 'event' == $post_type ) {
             $categories = get_terms( array(
                 'taxonomy' => 'event_category',
                 'hide_empty' => true,
@@ -197,8 +197,8 @@ if ( !function_exists('tomochain_category_filter') ) {
             ) );
         }
 
-        echo '<ul class="tab-filter '.$type.'-cat-filter">';
-        echo '<li><a href="'. get_post_type_archive_link($type) .'">' . esc_html__( 'All Events', 'tomochain' ). '</a></li> ';
+        echo '<ul class="tomo-categories-filter ' . $post_type . '-categories-filter">';
+        echo '<li class="selected"><a href="' . get_post_type_archive_link( $post_type ) .'">' . get_post_type_object($post_type)->labels->all_items . '</a></li> ';
 
         foreach ( $categories as $category ) {
             $category_link = sprintf(
