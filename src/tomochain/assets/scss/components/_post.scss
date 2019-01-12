@@ -12,17 +12,49 @@
     transform: scale(1.05);
 }
 
-.single-post .site-main {
-    margin-bottom: 80px;
-    @include media-breakpoint-down(sm) {
-        margin-bottom: 50px;
+article.post-loop {
+    margin-bottom: 50px;
+
+    .entry-img {
+        overflow: hidden;
+        margin-bottom: 15px;
+
+        img {
+            @extend %transit;
+        }
+
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 20px;
+        }
+    }
+
+    .entry-title {
+
+        @include media-breakpoint-up(md) {
+            font-size: 20px;
+        }
+
+        span.event-venue {
+            font-size: 16px;
+            color: #808aa9;
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: 18px;
+        }
+    }
+
+    &:hover .entry-img img {
+        transform: scale(1.05);
     }
 }
-.tomo_detail {
-    .top-banner-tomo {
-        @include media-breakpoint-down(sm) {
-            margin-bottom: 2em;
-        }
+
+.single-post .site-main {
+
+    margin-bottom: 80px;
+
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 50px;
     }
 }
 
