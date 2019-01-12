@@ -99,6 +99,15 @@ used with preprocessors and contain font, colors definitions, etc
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
 
+.tm-android:before {
+  content: "\e901"; }
+
+.tm-apple:before {
+  content: "\e902"; }
+
+.tm-search:before {
+  content: "\e900"; }
+
 .tm-chevron-left:before {
   content: "\e903"; }
 
@@ -7289,7 +7298,7 @@ If your tooling is more complex you can split it up like:
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
-.team-member-info__close:before, .widget_tomo_sendgrid #tomo-sendgrid-button:after, .slick-arrow:before, body.mainnet-page #coming-row #lets-rock-it:after, .nice-select:after {
+.team-member-info__close:before, .widget_tomo_sendgrid #tomo-sendgrid-button:after, .widget_search:after, .slick-arrow:before, body.mainnet-page #coming-row #lets-rock-it:after, .nice-select:after {
   font-family: 'tomochain';
   font-weight: normal;
   font-style: normal;
@@ -9770,44 +9779,6 @@ This is where majority of our work takes place and our UI components are often c
 .bypostauthor {
   display: block; }
 
-.tomo_detail .search-form {
-  border-bottom: 1px solid #9eaacc;
-  position: relative; }
-  .tomo_detail .search-form label {
-    display: block;
-    padding-right: 50px; }
-  .tomo_detail .search-form input[type=search],
-  .tomo_detail .search-form input[type=submit] {
-    background: transparent;
-    border: 0;
-    padding: 0; }
-    .tomo_detail .search-form input[type=search]::-webkit-input-placeholder,
-    .tomo_detail .search-form input[type=submit]::-webkit-input-placeholder {
-      color: #9eaacc;
-      font-size: 14px;
-      font-family: 'Quicksand', sans-serif; }
-    .tomo_detail .search-form input[type=search]::-ms-input-placeholder,
-    .tomo_detail .search-form input[type=submit]::-ms-input-placeholder {
-      color: #9eaacc;
-      font-size: 14px;
-      font-family: 'Quicksand', sans-serif; }
-    .tomo_detail .search-form input[type=search]::placeholder,
-    .tomo_detail .search-form input[type=submit]::placeholder {
-      color: #9eaacc;
-      font-size: 14px;
-      font-family: 'Quicksand', sans-serif; }
-  .tomo_detail .search-form input[type=submit] {
-    background: url(assets/images/icon_search.svg) no-repeat 95%;
-    background-size: 14px auto;
-    border-radius: 0;
-    cursor: pointer;
-    position: absolute;
-    right: 0;
-    top: 0;
-    font-size: 0;
-    height: 100%;
-    width: 50px; }
-
 .site-footer {
   /*background: url(assets/images/bg-footer.jpg) no-repeat;
     background-size: cover;*/
@@ -10648,16 +10619,18 @@ This is where majority of our work takes place and our UI components are often c
   border-radius: 10px;
   display: block;
   overflow: hidden; }
-
-.post:hover img {
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05); }
+  body.single .post-thumbnail {
+    margin-bottom: 20px; }
 
 article.post-loop {
   margin-bottom: 50px; }
   article.post-loop .entry-img {
     overflow: hidden;
     margin-bottom: 15px; }
+    article.post-loop .entry-img img {
+      min-height: 175px;
+      -o-object-fit: cover;
+         object-fit: cover; }
   article.post-loop .entry-title span.event-venue {
     font-size: 16px;
     color: #808aa9; }
@@ -10665,7 +10638,7 @@ article.post-loop {
     -webkit-transform: scale(1.05);
             transform: scale(1.05); }
 
-.single-post .site-main {
+.post-navigation {
   margin-bottom: 80px; }
 
 .entry-title {
@@ -10682,7 +10655,8 @@ article.post-loop {
   margin-bottom: 10px; }
   .entry-meta > span {
     display: inline-block;
-    color: #808aa9; }
+    color: #808aa9;
+    margin-right: 15px; }
   .entry-meta a {
     color: #808aa9; }
   .entry-meta a:hover {
@@ -10692,14 +10666,14 @@ article.post-loop {
     vertical-align: baseline;
     font-size: 16px;
     font-weight: 400;
-    margin-right: 10px; }
+    margin-right: 8px; }
   .entry-meta span.byline:before {
     margin-right: 4px;
     content: "\f007"; }
   .entry-meta span.posted-on:before {
     content: "\f073"; }
   .entry-meta span.categories:before {
-    content: "\f02b"; }
+    content: "\f07c"; }
 
 .entry-content {
   font-size: 14px;
@@ -11511,16 +11485,20 @@ article.post-loop {
     margin-bottom: 15px; }
 
 .widget {
-  margin: 0 0 1.5em;
+  margin: 0 0 30px;
   /* Make sure select elements fit in widgets. */ }
   .widget select {
     max-width: 100%; }
+
+.widget-title {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px; }
 
 .widget_tomo_address {
   margin-bottom: 15px; }
   .widget_tomo_address .widget-title {
     font-size: 18px;
-    font-weight: 400;
     color: #ebeaf5; }
   .widget_tomo_address .addresses {
     font-weight: 300;
@@ -11644,7 +11622,6 @@ article.post-loop {
   .widget_tomo_event .tomo-event__info p {
     font-size: 14px;
     line-height: 1.4;
-    /*margin-top: -5px;*/
     margin-bottom: 5px;
     max-height: 40px; }
   .widget_tomo_event .tomo-event__info .event-meta {
@@ -11652,11 +11629,38 @@ article.post-loop {
     color: #808aa9; }
     .widget_tomo_event .tomo-event__info .event-meta:before {
       font-family: 'Font Awesome 5 Free';
-      content: "\f073";
+      content: '\f073';
       display: inline-block;
       vertical-align: baseline;
       font-size: 14px;
       margin-right: 5px; }
+
+.widget_search {
+  position: relative;
+  border-bottom: 1px solid #9eaacc; }
+  .widget_search label {
+    display: block;
+    padding-right: 50px; }
+  .widget_search input[type=search] {
+    background: transparent;
+    border: 0;
+    padding: 0; }
+    .widget_search input[type=search]::-webkit-input-placeholder {
+      color: #9eaacc;
+      font-size: 14px; }
+    .widget_search input[type=search]::-ms-input-placeholder {
+      color: #9eaacc;
+      font-size: 14px; }
+    .widget_search input[type=search]::placeholder {
+      color: #9eaacc;
+      font-size: 14px; }
+  .widget_search input[type=submit] {
+    display: none; }
+  .widget_search:after {
+    content: '\e900';
+    position: absolute;
+    right: 0;
+    top: 0; }
 
 body.error404 {
   height: 100vh;
@@ -15379,7 +15383,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       margin-top: 0; }
       .animated .tomo_chart table td {
         padding: 5px 0px; }
-    .single-post .site-main {
+    .post-navigation {
       margin-bottom: 50px; }
     .vc_custom_heading {
       text-align: center !important; }

@@ -1,5 +1,5 @@
 .widget {
-    margin: 0 0 1.5em;
+    margin: 0 0 30px;
 
     /* Make sure select elements fit in widgets. */
     select {
@@ -7,12 +7,17 @@
     }
 }
 
+.widget-title {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
 .widget_tomo_address {
     margin-bottom: 15px;
 
     .widget-title {
         font-size: 18px;
-        font-weight: 400;
         color: #ebeaf5;
     }
 
@@ -177,21 +182,24 @@
             }
         }
     }
-}//widget_tomo_recent_posts
+}
 
 .widget_tomo_event {
+
     .tomo-event {
         display: flex;
         padding-top: 0;
         padding-bottom: 20px;
         margin-bottom: 20px;
         border-bottom: 1px solid #2a3452;
+
         &:last-of-type {
             padding-bottom: 0;
             margin-bottom: 0;
             border-bottom: none;
         }
     }
+
     .tomo-event__thumb {
         width: 40%;
         height: 80px;
@@ -201,25 +209,29 @@
             border-radius: 3px;
         }
     }
+
     .tomo-event__info {
         width: 60%;
         padding-left: 20px;
+
         p {
             font-size: 14px;
             line-height: 1.4;
-            /*margin-top: -5px;*/
             margin-bottom: 5px;
             max-height: 40px;
+
             @include media-breakpoint-up(lg) {
                 white-space: initial;
             }
         }
+
         .event-meta {
             font-size: 13px;
             color: #808aa9;
+
             &:before {
                 font-family: 'Font Awesome 5 Free';
-                content: "\f073";
+                content: '\f073';
                 display: inline-block;
                 vertical-align: baseline;
                 font-size: 14px;
@@ -227,4 +239,39 @@
             }
         }
     }
-}//widget_tomo_event
+}
+
+
+.widget_search {
+    position: relative;
+    border-bottom: 1px solid #9eaacc;
+
+    label {
+        display: block;
+        padding-right: 50px;
+    }
+
+    input[type=search] {
+        background: transparent;
+        border: 0;
+        padding: 0;
+
+        &::placeholder {
+          color: #9eaacc;
+          font-size: 14px;
+        }
+    }
+
+    input[type=submit] {
+        display: none;
+    }
+
+    &:after {
+        content: '\e900';
+        position: absolute;
+        right: 0;
+        top: 0;
+
+        @extend %tm-icon;
+    }
+}

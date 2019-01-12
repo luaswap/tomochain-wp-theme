@@ -3,13 +3,14 @@
     border-radius: 10px;
     display: block;
     overflow: hidden;
+
     img {
         @extend %transit;
     }
-}
 
-.post:hover img {
-    transform: scale(1.05);
+    body.single & {
+        margin-bottom: 20px;
+    }
 }
 
 article.post-loop {
@@ -20,6 +21,9 @@ article.post-loop {
         margin-bottom: 15px;
 
         img {
+            min-height: 175px;
+            object-fit: cover;
+
             @extend %transit;
         }
 
@@ -49,7 +53,7 @@ article.post-loop {
     }
 }
 
-.single-post .site-main {
+.post-navigation {
 
     margin-bottom: 80px;
 
@@ -81,6 +85,7 @@ article.post-loop {
     > span {
         display: inline-block;
         color: #808aa9;
+        margin-right: 15px;
     }
 
     a {
@@ -96,7 +101,8 @@ article.post-loop {
         vertical-align: baseline;
         font-size: 16px;
         font-weight: 400;
-        margin-right: 10px;
+        margin-right: 8px;
+
         @extend .fas;
     }
 
@@ -110,7 +116,7 @@ article.post-loop {
     }
 
     span.categories:before {
-        content: fa-content($fa-var-tag);
+        content: fa-content($fa-var-folder-open);
     }
 }
 
