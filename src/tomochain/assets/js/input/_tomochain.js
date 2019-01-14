@@ -8,8 +8,6 @@ var tomochain
             function () {
                 return {
                     init: function () {
-                        this.blog();
-                        this.blog_filter();
                         this.header();
                         this.imageCarousel();
                         this.langSwitcher();
@@ -22,7 +20,8 @@ var tomochain
                         this.tomo_lottie();
                         this.video();
                         this.event();
-                        this.tab_active();
+                        this.blog();
+                        this.categories_filter();
                     }
                 }
             }()
@@ -30,6 +29,7 @@ var tomochain
     }
 )(jQuery);
 //@include('blog.js')
+//@include('categories_filter.js')
 //@include('event.js')
 //@include('header.js')
 //@include('image-carousel.js')

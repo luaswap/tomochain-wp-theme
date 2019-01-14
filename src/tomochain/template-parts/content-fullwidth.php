@@ -55,8 +55,4 @@ $open_new_tab = get_field('open_in_new_tab') ? '__blank' : '';
 		) );
 		?>
 	</div><!-- .entry-content -->
-
-	<footer class="entry-footer row">
-		<?php tomochain_entry_footer(); ?>
-	</footer><!-- .entry-footer -->
 </article><!-- #post-<?php the_ID(); ?> -->

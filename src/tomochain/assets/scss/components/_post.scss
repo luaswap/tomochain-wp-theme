@@ -3,33 +3,62 @@
     border-radius: 10px;
     display: block;
     overflow: hidden;
+
     img {
         @extend %transit;
     }
-}
 
-.post:hover img {
-    /*transform: scale(1.05);*/
-}
-
-.single-post .site-main {
-    margin-bottom: 80px;
-    @include media-breakpoint-down(sm) {
-        margin-bottom: 50px;
+    body.single & {
+        margin-bottom: 20px;
     }
 }
-.tomo_detail {
-    .top-banner-tomo {
-        @include media-breakpoint-down(sm) {
-            margin-bottom: 2em;
+
+article.post-loop {
+    margin-bottom: 50px;
+
+    .entry-img {
+        overflow: hidden;
+        margin-bottom: 15px;
+
+        img {
+            min-height: 175px;
+            object-fit: cover;
+
+            @extend %transit;
+        }
+
+        @include media-breakpoint-up(sm) {
+            margin-bottom: 20px;
         }
     }
-}
-.entry-footer {
-    /*display: none;*/
 
-    .single-post & {
-        display: flex;
+    .entry-title {
+
+        @include media-breakpoint-up(md) {
+            font-size: 20px;
+        }
+
+        span.event-venue {
+            font-size: 16px;
+            color: #808aa9;
+        }
+
+        @include media-breakpoint-up(md) {
+            font-size: 18px;
+        }
+    }
+
+    &:hover .entry-img img {
+        transform: scale(1.05);
+    }
+}
+
+.post-navigation {
+
+    margin-bottom: 80px;
+
+    @include media-breakpoint-down(sm) {
+        margin-bottom: 50px;
     }
 }
 
@@ -56,6 +85,7 @@
     > span {
         display: inline-block;
         color: #808aa9;
+        margin-right: 15px;
     }
 
     a {
@@ -71,7 +101,8 @@
         vertical-align: baseline;
         font-size: 16px;
         font-weight: 400;
-        margin-right: 10px;
+        margin-right: 8px;
+
         @extend .fas;
     }
 
@@ -85,138 +116,11 @@
     }
 
     span.categories:before {
-        content: fa-content($fa-var-tag);
+        content: fa-content($fa-var-folder-open);
     }
 }
 
 .entry-content {
-    line-height: 23px;
     font-size: 14px;
-}
-
-.post-tags .tagcloud {
-    font-size: 0;
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    text-align: left;
-
-    &:before {
-        content: fa-content($fa-var-tags);
-        display: inline-block;
-        font-size: 14px;
-        padding-right: 10px;
-        color: #808aa9;
-
-        @extend .fas;
-    }
-
-    li.tag-cloud__item {
-        display: inline-block;
-        position: relative;
-        font-size: 15px;
-
-        a {
-            color: #808aa9;
-        }
-
-        a:hover {
-            color: #ebeaf5;
-        }
-
-        &:after {
-            content: ',';
-            margin-right: 5px;
-        }
-    }
-
-    li.tag-cloud__item:last-child:after {
-        display: none;
-    }
-}
-
-.post-share {
-    margin-top: 15px;
-    margin-bottom: 15px;
-
-    @include media-breakpoint-up(sm) {
-        margin-top: 0;
-        margin-bottom: 0;
-    }
-}
-
-.post-share-buttons a {
-    margin-right: 10px;
-}
-
-.post-navigation {
-    border-top: 1px solid #6e7589;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    @include media-breakpoint-down(sm) {
-        margin-top: 15px;
-        margin-bottom: 30px;
-        border-bottom: 1px solid #6e7589;
-    }
-    .screen-reader-text {
-        display: none;
-    }
-    .nav-links {
-        display: flex;
-        > div {
-            width: 100%;
-            overflow: hidden;
-            text-overflow: ellipsis;
-            white-space: nowrap;
-        }
-    }
-    a {
-        display: block;
-        color: #808aa9;
-        position: relative;
-        overflow: hidden;
-        text-overflow: ellipsis;
-        white-space: nowrap;
-        padding: 10px;
-        @include media-breakpoint-up(md) {
-            padding: 10px 15px;
-        }
-        &:hover {
-            color: #ebeaf5;
-        }
-    }
-    .nav-previous {
-        a {
-            &:before {
-                content: fa-content($fa-var-angle-double-left);
-                @extend .fas;
-                position: absolute;
-                left: 0;
-                top: 16px;
-                font-size: 10px;
-            }
-        }
-    }
-    .nav-next {
-        a {
-            &:after {
-                content: fa-content($fa-var-angle-double-right);
-                @extend .fas;
-                position: absolute;
-                right: 0;
-                top: 16px;
-                font-size: 10px;
-            }
-        }
-    }
-
-    @include media-breakpoint-up(sm) {
-        .nav-links {
-            display: grid;
-            grid-template-columns: 50% 50%;
-        }
-        .nav-next {
-            text-align: right;
-        }
-    }
+    line-height: 23px;
 }

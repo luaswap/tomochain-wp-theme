@@ -45,36 +45,3 @@
         }
     }
 )(jQuery);
-(
-    function ($) {
-        tomochain.blog_filter = function () {
-            var $blog_filter = $('.post-cat-filter');
-            if (!$blog_filter.length) {
-                return;
-            }
-            $(document).on('click','.post-cat-filter a,.page-numbers a',function(e){
-                e.preventDefault();
-                var $_this = $(this);
-                // window.history.pushState({},'',$(this).attr('href'));
-                // e.preventDefault();
-                var url = $(this).attr('href');
-                url = url.replace(/\/?(\?|#|$)/, "/$1");
-
-                $.ajax({
-                    url: url,
-                    dataType: 'html',
-                    beforeSend: function() {
-                        $('.spinner').fadeIn('slow');
-                        $('.archive-posts').fadeOut('slow');
-                    },
-                    success: function(data){
-                        $('.spinner').fadeOut('slow');
-                        $('.archive-posts').fadeIn('slow');
-                        var new_Obj = $($(data).find('.archive-posts').html());
-                        $_this.parents('.container').find('.archive-posts').html(new_Obj);
-                    }
-                });
-            })
-        }
-    }
-)(jQuery);

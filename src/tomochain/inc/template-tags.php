@@ -75,10 +75,10 @@ if ( ! function_exists( 'tomochain_entry_footer' ) ) :
 	function tomochain_entry_footer() {
         return;
 		// Hide category and tag text for pages.
-        if ( 'post' === get_post_type() ) :
-            global $post;
+        global $post;
+
         ?>
-            <div class="post-tags col-xs-12 col-sm-6">
+        <div class="post-tags col-xs-12 col-sm-6">
 			<?php the_tags( '<ul class="tagcloud"><li class="tag-cloud__item">',
 					'</li><li class="tag-cloud__item">',
                     '</li></ul>' ); ?>
@@ -110,26 +110,6 @@ if ( ! function_exists( 'tomochain_entry_footer' ) ) :
                 </div>
             </div>
         <?php
-        endif;
-
-		if ( ! is_single() && ! post_password_required() && ( comments_open() || get_comments_number() ) ) {
-			echo '<span class="comments-link">';
-			comments_popup_link(
-				sprintf(
-					wp_kses(
-						/* translators: %s: post title */
-						__( 'Leave a Comment<span class="screen-reader-text"> on %s</span>', 'tomochain' ),
-						array(
-							'span' => array(
-								'class' => array(),
-							),
-						)
-					),
-					get_the_title()
-				)
-			);
-			echo '</span>';
-		}
 
 		edit_post_link(
 			sprintf(

@@ -3,9 +3,11 @@
 get_header();
 ?>
 
-    <div id="primary" class="content-area tomo_detail">
+    <div id="primary" class="content-area">
         <main id="main" class="site-main">
+
         <?php do_action('tomochain_page_title');?>
+
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-8">
