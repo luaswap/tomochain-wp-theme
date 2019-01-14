@@ -1,15 +1,15 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 
-    <div class="post-thumbnail">
+    <!-- <div class="post-thumbnail">
         <?php
-        	if ( has_post_thumbnail() ) :
-        		the_post_thumbnail('tomo-single-thumbnail');
-        	else :
-               $img_url = get_template_directory_uri() . '/assets/images/image-single.jpg';
+        	//if ( has_post_thumbnail() ) :
+        		//the_post_thumbnail('tomo-single-thumbnail');
+        	//else :
+               //$img_url = get_template_directory_uri() . '/assets/images/image-single.jpg';
         ?>
-            <img src="<?php echo esc_url ( $img_url );?>" alt="<?php echo esc_attr ( get_the_title() ); ?>">
-        <?php endif; ?>
-    </div>
+            <img src="<?php //echo esc_url ( $img_url );?>" alt="<?php //echo esc_attr ( get_the_title() ); ?>">
+        <?php //endif; ?>
+    </div> -->
 
 	<header class="entry-header">
 		<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>

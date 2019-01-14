@@ -29,6 +29,7 @@ input[type="submit"] {
 		border: 0!important;
 		color: #fff!important;
 		overflow: hidden!important;
+		z-index: 1!important;
 		&:before {
 			content: '';
 			background-image: linear-gradient(-123deg,#48A5FF 30%, #534BFF 100%)!important;
@@ -46,12 +47,12 @@ input[type="submit"] {
 		&:after {
 			content: '';
 			background-color: #272f4b!important;
-			height: calc(100% - 4px);
-			width: calc(100% - 4px);
+			height: calc(100% - 2px);
+			width: calc(100% - 2px);
 			border-radius: 6px!important;
 			position: absolute;
-			top: 2px;
-			right: 2px;
+			top: 1px;
+			right: 1px;
 			z-index: -1;
 			@extend %transit;
 		}
@@ -114,6 +115,7 @@ input[type="submit"] {
 }
 
 .tomo_btn_tmp_trans {
+	display: inline-block;
 	a {
 		position: relative!important;
 		background: transparent!important;
@@ -153,6 +155,14 @@ input[type="submit"] {
 			color: #4A7AFE!important;
 			&:after {
 				opacity: 1;
+			}
+		}
+	}
+	&.not_ic {
+		a {
+			&:before,
+			&:after  {
+				display: none;
 			}
 		}
 	}
@@ -205,8 +215,9 @@ input[type="submit"] {
 	font-weight: 400;
 	font-family: 'Quicksand', sans-serif!important;
 	&:before {
-		content: '';
-		background: url(../tomochain/assets/images/icon_apple.svg) no-repeat center;
+		content: '\e902';
+		font-family: tomochain;
+		color: #fff;
 		position: absolute;
 		left: 20px;
 		width: 20px;
@@ -247,8 +258,9 @@ input[type="submit"] {
 	font-weight: 400;
 	font-family: 'Quicksand', sans-serif!important;
 	&:before {
-		content: '';
-		background: url(../tomochain/assets/images/icon_android.svg) no-repeat center;
+		content: '\e901';
+		font-family: tomochain;
+		color: #fff;
 		position: absolute;
 		left: 15px;
 		width: 20px;
