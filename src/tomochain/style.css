@@ -8627,7 +8627,8 @@ input[type="submit"] {
   line-height: 16px !important;
   border: 0 !important;
   color: #fff !important;
-  overflow: hidden !important; }
+  overflow: hidden !important;
+  z-index: 1 !important; }
   .tomo_btn_tmp_slider a:before {
     content: '';
     background-image: linear-gradient(-123deg, #48A5FF 30%, #534BFF 100%) !important;
