@@ -1,4 +1,4 @@
-.tomochain-dapp {
+/*.tomochain-dapp {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -127,4 +127,76 @@
             min-height: 200px;
         }
     }
+}*/
+
+// Begin New dApp 16012019
+.box_flexbox {
+    display: flex;
+    a {
+        padding: 0 35px 0 0!important;
+        &:first-child {
+            margin-right: 15px;
+            @include media-breakpoint-up(lg) {
+                margin-right: 100px;
+            }
+        }
+    }
 }
+.img_size120px {
+    img {
+        height: 100px!important;
+        width: auto!important;
+    }
+}
+.tomochain-dapp {
+    text-align: left;
+    .dapp-list {
+        .tomochain-dapp-item {
+            padding: 1.5em 0;
+            border-bottom: 2px solid #333867;
+            @include media-breakpoint-up(lg) {
+                padding: 3em 0;
+            }
+            &:last-child {
+                border-bottom: 0;
+            }
+            @include media-breakpoint-up(md) {
+                display: flex;
+                align-items: flex-start;
+            }
+            .dapp-thumbnail {
+                border-radius: 5px;
+                overflow: hidden;
+                @include media-breakpoint-up(md) {
+                    width: 40%;
+                }
+                @include media-breakpoint-down(md) {
+                    margin-bottom: 1em;
+                }
+            }
+            .dapp-info {
+                width: 60%;
+                @include media-breakpoint-up(md) {
+                    padding-left: 3em;
+                }
+                .dapp-content {
+                    margin: 1.5em 0;
+                    p {
+                        margin: 0;
+                    }
+                }
+                .dapp-title {
+                    font-size: 24px;
+                    font-family: Quicksand,sans-serif;
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .tomochain-pagination {
+        @include media-breakpoint-up(md) {
+            margin-top: 50px;
+        }
+    }
+}
+// End New dApp 16012019

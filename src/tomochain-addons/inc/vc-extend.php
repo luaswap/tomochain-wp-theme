@@ -15,6 +15,7 @@ add_action( 'vc_after_init', 'load_params' );function load_params() {
 
 add_action('vc_after_init', 'tomochain_load_shortcodes');
 function tomochain_load_shortcodes() {
+    require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-dapps.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-blog.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-event.php';
     require_once TOMOCHAIN_ADDONS_DIR . '/inc/shortcodes/tomochain-countdown.php';
