@@ -33,7 +33,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
     $args = array(
         'post_type'      => 'dapp',
         'post_status'    => 'publish',
-        'posts_per_page' => $per_page,
+        'posts_per_page' => 2,
         'orderby'        => 'date',
         'order'          => 'DESC',
         'paged'          => $paged
@@ -45,49 +45,51 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 ?>
 <div class="<?php echo esc_attr( trim( $css_class ) ); ?>">
     <div class="dapp-<?php echo esc_attr($dapp_layout);?>" <?php if('slide' == $dapp_layout):?>data-atts="<?php echo esc_attr( json_encode( $atts ) ); ?>"<?php endif;?>>
-        <?php //tomochain_category_filter( 'dapp' );?>
-        <?php if( $dapps->have_posts() ):
-            while( $dapps->have_posts() ): $dapps->the_post();
-            $custom_url = get_field('dapp_custom_url');
-            $contract_address_url = get_field('contract_address_url');
-            $open_new_tab = get_field('dapp_open_in_new_tab') ? '__blank' : '';
-        ?>
-        <div class="tomochain-dapp-item">
-            <div class="dapp-thumbnail">
-                <?php
-                if(has_post_thumbnail()) {
-                    the_post_thumbnail('tomo-post-thumbnail');
-                }else{ $img_url = get_template_directory_uri() . '/assets/images/image-shortcode.jpg';
-                ?>
-                    <img src="<?php echo esc_url($img_url);?>" alt="<?php echo esc_attr(get_the_title());?>">
-                <?php }?>
-            </div>
-            <div class="dapp-info">
-                <h3 class="dapp-title text-truncate">
-                    <?php echo the_title(); ?>
-                </h3>
-                <div class="dapp-content">
-                    <?php the_content();?>
+        <?php tomochain_dapp_filter($per_page,$paged);?>
+        <div class="tomochain-dapp-main">
+            <?php if( $dapps->have_posts() ):
+                while( $dapps->have_posts() ): $dapps->the_post();
+                $custom_url = get_field('dapp_custom_url');
+                $contract_address_url = get_field('contract_address_url');
+                $open_new_tab = get_field('dapp_open_in_new_tab') ? '__blank' : '';
+            ?>
+            <div class="tomochain-dapp-item">
+                <div class="dapp-thumbnail">
+                    <?php
+                    if(has_post_thumbnail()) {
+                        the_post_thumbnail('tomo-post-thumbnail');
+                    }else{ $img_url = get_template_directory_uri() . '/assets/images/image-shortcode.jpg';
+                    ?>
+                        <img src="<?php echo esc_url($img_url);?>" alt="<?php echo esc_attr(get_the_title());?>">
+                    <?php }?>
                 </div>
-                <div class="tomo_btn_tmp_trans box_flexbox">
-                    <?php if($custom_url):?>
-                        <a class="more-info" href="<?php echo esc_url($custom_url)?>" target="<?php echo esc_attr($open_new_tab); ?>">
-                            <?php echo esc_html__('More Info','nootheme')?>
-                        </a>
-                    <?php endif;?>
-                    <?php if($contract_address_url):?>
-                        <a href="<?php echo esc_url($contract_address_url)?>" target="<?php echo esc_attr($open_new_tab); ?>">
-                            <?php echo esc_html__('Contract Address','nootheme')?>
-                        </a>
-                    <?php endif;?>
+                <div class="dapp-info">
+                    <h3 class="dapp-title text-truncate">
+                        <?php echo the_title(); ?>
+                    </h3>
+                    <div class="dapp-content">
+                        <?php the_content();?>
+                    </div>
+                    <div class="tomo_btn_tmp_trans box_flexbox">
+                        <?php if($custom_url):?>
+                            <a class="more-info" href="<?php echo esc_url($custom_url)?>" target="<?php echo esc_attr($open_new_tab); ?>">
+                                <?php echo esc_html__('More Info','nootheme')?>
+                            </a>
+                        <?php endif;?>
+                        <?php if($contract_address_url):?>
+                            <a href="<?php echo esc_url($contract_address_url)?>" target="<?php echo esc_attr($open_new_tab); ?>">
+                                <?php echo esc_html__('Contract Address','nootheme')?>
+                            </a>
+                        <?php endif;?>
+                    </div>
                 </div>
             </div>
+            <?php endwhile; ?>
+            <?php endif;?>
+            <?php
+            if($dapps->max_num_pages > 1)
+                tomochain_ajax_pagination($dapps,$paged);
+            ?>
         </div>
-        <?php endwhile; ?>
-        <?php endif;?>
     </div>
-    <?php
-    if($dapps->max_num_pages > 1)
-        tomochain_dapp_pagination($dapps);
-    ?>
 </div>
