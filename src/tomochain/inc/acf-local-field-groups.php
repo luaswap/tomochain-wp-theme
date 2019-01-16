@@ -559,7 +559,82 @@ if( function_exists('acf_add_local_field_group') ) {
         'active' => 1,
         'description' => '',
     ));
-
+    /* Dapp Option */
+    acf_add_local_field_group(array (
+        'key' => 'group_5b76556a2568j',
+        'title' => 'Dapp Options',
+        'fields' => array (
+            array (
+                'key' => 'field_5b962d6b9ahe3',
+                'label' => 'Custom URL',
+                'name' => 'dapp_custom_url',
+                'type' => 'url',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+            ),
+            array (
+                'key' => 'field_5b862d6b9kr54',
+                'label' => 'Contract Address',
+                'name' => 'contract_address_url',
+                'type' => 'url',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => '',
+            ),
+            array (
+                'key' => 'field_5b96308b8au76',
+                'label' => '',
+                'name' => 'dapp_open_in_new_tab',
+                'type' => 'true_false',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'message' => 'Open in new tab',
+                'default_value' => 0,
+                'ui' => 0,
+                'ui_on_text' => '',
+                'ui_off_text' => '',
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'dapp',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => 1,
+        'description' => '',
+    ));
+    /* Post Option */
     acf_add_local_field_group(array (
         'key' => 'group_5b8f4b25f3bcd',
         'title' => 'Post Options',
@@ -661,7 +736,7 @@ if( function_exists('acf_add_local_field_group') ) {
         'active' => 1,
         'description' => '',
     ));
-
+    /* Page Option */
     acf_add_local_field_group(array (
         'key' => 'group_5ba36353d61e8',
         'title' => 'Page Options',
