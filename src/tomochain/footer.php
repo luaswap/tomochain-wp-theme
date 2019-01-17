@@ -13,12 +13,17 @@
 
     </div><!-- #content -->
     <?php if (!is_404()): ?>
-    <footer id="colophon" class="site-footer text-center">
+    <footer id="colophon" class="site-footer">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <?php the_custom_logo(); ?>
-                    <?php dynamic_sidebar( 'sidebar-footer' ); ?>
+                    <div class="logo-footer">
+                        <?php the_custom_logo(); ?>
+                        <h2 class="tomochain-name"><?php echo esc_html__('TomoChain','tomochain');?></h2>
+                    </div>
+                    <div class="sidebar-footer">
+                        <?php dynamic_sidebar( 'sidebar-footer' ); ?>
+                    </div>
 
                     <div class="site-info">
                         <?php
