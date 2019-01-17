@@ -195,6 +195,13 @@ if ( !function_exists('tomochain_category_filter') ) {
                 'orderby' => 'name',
                 'order'   => 'ASC'
             ) );
+        } elseif ( 'dapp' == $post_type ) {
+            $categories = get_terms( array(
+                'taxonomy' => 'dapp_category',
+                'hide_empty' => true,
+                'orderby' => 'name',
+                'order'   => 'ASC'
+            ) );
         }
 
         echo '<ul class="tomo-categories-filter ' . $post_type . '-categories-filter">';

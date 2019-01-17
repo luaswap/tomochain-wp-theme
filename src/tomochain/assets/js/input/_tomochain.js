@@ -22,6 +22,7 @@ var tomochain
                         this.event();
                         this.blog();
                         this.categories_filter();
+                        this.dapp_filter();
                     }
                 }
             }()
@@ -30,6 +31,7 @@ var tomochain
 )(jQuery);
 //@include('blog.js')
 //@include('categories_filter.js')
+//@include('dapp.js')
 //@include('event.js')
 //@include('header.js')
 //@include('image-carousel.js')

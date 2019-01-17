@@ -53,47 +53,132 @@ function tomochain_get_template( $template_name, $args = array(), $template_path
 
     include $located;
 }
-function tomochain_dapp_pagination($object) {
-    global $wp_rewrite;
-    // Don't print empty markup if there's only one page.
-    if ( $object->max_num_pages < 2 ) {
-        return;
-    }
-    $paged        = get_query_var( 'paged' ) ? intval( get_query_var( 'paged' ) ) : 1;
-    $pagenum_link = wp_kses_post( get_pagenum_link() );
-    $query_args   = array();
-    $url_parts    = explode( '?', $pagenum_link );
-
-    if ( isset( $url_parts[1] ) ) {
-        wp_parse_str( $url_parts[1], $query_args );
-    }
-
-    $pagenum_link = esc_url( remove_query_arg( array_keys( $query_args ), $pagenum_link ) );
-            $pagenum_link = trailingslashit( $pagenum_link ) . '%_%';
-
-    $format = $wp_rewrite->using_index_permalinks() && ! strpos( $pagenum_link,
-        'index.php' ) ? 'index.php/' : '';
-    $format .= $wp_rewrite->using_permalinks() ? user_trailingslashit( $wp_rewrite->pagination_base . '/%#%',
-        'paged' ) : '?paged=%#%';
-
-    // Set up paginated links.
-    $links                      = paginate_links( array(
-        'base'      => $pagenum_link,
-        'format'    => $format,
-        'total'     => $object->max_num_pages,
-        'current'   => $paged,
-        'add_args'  => array_map( 'urlencode', $query_args ),
-        'prev_text' => 'prev',
-        'next_text' => 'next',
-        'type'      => 'list',
-        'end_size'  => 3,
-        'mid_size'  => 3,
+function tomochain_dapp_filter($per_page,$paged){
+    $categories = get_terms( array(
+        'taxonomy' => 'dapp_category',
+        'hide_empty' => true,
+        'orderby' => 'name',
+        'order'   => 'ASC'
     ) );
 
-    if ( $links ) : ?>
-        <div class="tomochain-pagination posts-pagination">
-            <?php echo wp_kses_post( $links ); ?>
+    echo '<ul class="tomochain-dapp-filter" data-number="'.$per_page.'" data-page="'.$paged.'">';
+    echo '<li class="selected"><a href="#" data-filter="all">'.esc_html__('All','tomochain-addons').'</a></li> ';
+
+    foreach ( $categories as $category ) {
+        $category_link = sprintf(
+            '<a href="%1$s" alt="%2$s" data-filter="%3$s">%4$s</a>',
+            esc_attr('#'),
+            esc_attr( sprintf( esc_html__( 'View all posts in %s', 'tomochain-addons' ), $category->name ) ),
+            esc_attr($category->term_id),
+            esc_html( $category->name )
+        );
+
+        echo '<li>' . sprintf( esc_html__( '%s', 'tomochain-addons' ), $category_link ) . '</li> ';
+    }
+    echo '</ul>';
+}
+/**
+ * Dapp Pagination Ajax
+ */
+function tomochain_ajax_pagination( $query = null, $paged = 1 ) {
+    if (!$query)
+        return;
+    $paginate = paginate_links([
+        'base'      => '%_%',
+        'type'      => 'array',
+        'total'     => $query->max_num_pages,
+        'format'    => '#page=%#%',
+        'current'   => max( 1, $paged ),
+        'prev_text' => 'Prev',
+        'next_text' => 'Next'
+    ]);
+    if ($query->max_num_pages > 1) : ?>
+        <div class="tomochain-pagination dapp-pagination">
+            <ul class="pagination">
+                <?php foreach ( $paginate as $page ) :?>
+                    <li><?php echo $page; ?></li>
+                <?php endforeach; ?>
+            </ul>
         </div><!-- .pagination -->
-    <?php
-    endif;
+    <?php endif;
+}
+/*
+* Dapp Ajax
+*/
+add_action('wp_ajax_tomochain_dapp_ajax','tomochain_dapp_ajax');
+add_action('wp_ajax_nopriv_tomochain_dapp_ajax','tomochain_dapp_ajax');
+function tomochain_dapp_ajax(){
+    /**
+     * Process data
+    */
+    $id  = $_POST['params']['id'];
+    $paged = intval($_POST['params']['page']);
+    $per_page  = intval($_POST['params']['per_page']);
+    if( isset( $id ) && !empty( $id ) ){
+        $args = array(
+            'post_type'      => 'dapp',
+            'post_status'    => 'publish',
+            'posts_per_page' => 2,
+            'orderby'        => 'date',
+            'order'          => 'DESC',
+            'paged'          => $paged
+        );
+        if('all' != $id){
+            $args['tax_query'] = array(
+                array(
+                    'taxonomy' => 'dapp_category',
+                    'field'    => 'id',
+                    'terms'    => $id,
+                ),
+            );
+        }
+        $dapps = new WP_Query($args);
+        wp_reset_postdata();
+        ?>
+        <?php if( $dapps->have_posts() ):
+            while( $dapps->have_posts() ): $dapps->the_post();
+                $custom_url = get_field('dapp_custom_url');
+                $contract_address_url = get_field('contract_address_url');
+                $open_new_tab = get_field('dapp_open_in_new_tab') ? '__blank' : '';
+                ?>
+                <div class="tomochain-dapp-item">
+                    <div class="dapp-thumbnail">
+                        <?php
+                        if(has_post_thumbnail()) {
+                            the_post_thumbnail('tomo-post-thumbnail');
+                        }else{ $img_url = get_template_directory_uri() . '/assets/images/image-shortcode.jpg';
+                        ?>
+                            <img src="<?php echo esc_url($img_url);?>" alt="<?php echo esc_attr(get_the_title());?>">
+                        <?php }?>
+                    </div>
+                    <div class="dapp-info">
+                        <h3 class="dapp-title text-truncate">
+                            <?php echo the_title(); ?>
+                        </h3>
+                        <div class="dapp-content">
+                            <?php the_content();?>
+                        </div>
+                        <div class="tomo_btn_tmp_trans box_flexbox">
+                            <?php if($custom_url):?>
+                                <a class="more-info" href="<?php echo esc_url($custom_url)?>" target="<?php echo esc_attr($open_new_tab); ?>">
+                                    <?php echo esc_html__('More Info','nootheme')?>
+                                </a>
+                            <?php endif;?>
+                            <?php if($contract_address_url):?>
+                                <a href="<?php echo esc_url($contract_address_url)?>" target="<?php echo esc_attr($open_new_tab); ?>">
+                                    <?php echo esc_html__('Contract Address','nootheme')?>
+                                </a>
+                            <?php endif;?>
+                        </div>
+                    </div>
+                </div>
+            <?php endwhile; ?>
+        <?php endif;?>
+        <?php
+        if($dapps->max_num_pages > 1)
+            tomochain_ajax_pagination($dapps,$paged);
+        ?>
+    <?php }
+    wp_die();
+
 }
