@@ -29,9 +29,9 @@
         .address {
             display: inline-block;
             vertical-align: top;
-            max-width: 320px;
+            max-width: 33.33%;
             width: 100%;
-            margin: 20px 10px;
+            padding: 0px 15px;
 
             @include media-breakpoint-between(md, lg) {
                 max-width: calc(33.33% - 20px);
