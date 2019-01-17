@@ -1151,6 +1151,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
 .entry-meta span:before,
+.tomochain-dapp__links a:before,
 .tomochain-event-item .event-venue:before,
 .tomochain-team__see-all--collapse:after,
 .tomochain-testnet-item__links a:before,
@@ -1253,6 +1254,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-left.menu-back:before,
 .entry-meta span.fa-pull-left:before,
+.tomochain-dapp__links a.fa-pull-left:before,
 .tomochain-event-item .fa-pull-left.event-venue:before,
 .fa-pull-left.tomochain-team__see-all--collapse:after,
 .tomochain-testnet-item__links a.fa-pull-left:before,
@@ -1279,6 +1281,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-right.menu-back:before,
 .entry-meta span.fa-pull-right:before,
+.tomochain-dapp__links a.fa-pull-right:before,
 .tomochain-event-item .fa-pull-right.event-venue:before,
 .fa-pull-right.tomochain-team__see-all--collapse:after,
 .tomochain-testnet-item__links a.fa-pull-right:before,
@@ -5441,6 +5444,7 @@ readers do not read off random characters that represent icons */
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
 .entry-meta span:before,
+.tomochain-dapp__links a:before,
 .tomochain-event-item .event-venue:before,
 .tomochain-team__see-all--collapse:after,
 .tomochain-testnet-item__links a:before,
@@ -11268,136 +11272,58 @@ article.post-loop {
     .see-all-blog a:hover {
       color: #dee2ee; }
 
-/*.tomochain-dapp {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+.tomochain-dapp {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px; }
+  .tomochain-dapp__image {
+    margin-bottom: 10px; }
+  .tomochain-dapp__name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #66708a;
+    margin-bottom: 10px; }
+  .tomochain-dapp__description {
+    margin-bottom: 25px; }
+  .tomochain-dapp__links {
+    text-transform: uppercase;
+    color: #6b6ced; }
+    .tomochain-dapp__links a {
+      letter-spacing: 0.05em;
+      font-family: Quicksand;
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #6b6ced; }
+    .tomochain-dapp__links a:before {
+      margin-right: 10px; }
+    .tomochain-dapp__links a:hover {
+      color: #72b8fd; }
+  .tomochain-dapp__run:before {
+    content: "\f061"; }
+  .tomochain-dapp__source:before {
+    content: "\f121"; }
 
-    &__image {
-        margin-bottom: 10px;
-    }
+.tomochain-dapp--2 .tomochain-dapp__image {
+  border-radius: 10px;
+  padding: 50px 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#434f74), color-stop(87%, #333e61));
+  background-image: linear-gradient(-180deg, #434f74 0%, #333e61 87%);
+  margin-bottom: 30px; }
+  .tomochain-dapp--2 .tomochain-dapp__image img {
+    max-width: 60%; }
 
-    &__name {
-        font-size: 18px;
-        font-weight: 600;
-        color: #66708a;
-        margin-bottom: 10px;
-    }
+.tomochain-dapp--2 .tomochain-dapp__description {
+  text-align: left;
+  line-height: 22px; }
 
-    &__description {
-        margin-bottom: 25px;
+.tomochain-dapp--2 .tomochain-dapp__links {
+  text-align: left; }
+  .tomochain-dapp--2 .tomochain-dapp__links a {
+    margin-left: 0;
+    margin-right: 20px; }
 
-        @include media-breakpoint-up(md) {
-            text-align: justify;
-        }
-    }
-
-    &__links {
-        text-transform: uppercase;
-        color: #6b6ced;
-
-        a {
-            letter-spacing: 0.05em;
-            font-family: Quicksand;
-            font-size: 14px;
-            font-weight: 700;
-            margin-left: 10px;
-            margin-right: 10px;
-            color: #6b6ced;
-        }
-
-        a:before {
-            margin-right: 10px;
-            @extend .fas;
-        }
-
-        a:hover {
-            color: #72b8fd;
-        }
-
-        @include media-breakpoint-up(md) {
-            a {
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-        }
-    }
-
-    &__run:before {
-        content: fa-content($fa-var-arrow-right);
-    }
-
-    &__source:before {
-        content: fa-content($fa-var-code);
-    }
-}
-
-.tomochain-dapp--2 {
-    .tomochain-dapp__image {
-        border-radius: 10px;
-        padding: 50px 30px;
-        background-image: linear-gradient(-180deg, #434f74 0%, #333e61 87%);
-        margin-bottom: 30px;
-
-        img {
-            max-width: 60%;
-        }
-    }
-
-    .tomochain-dapp__description {
-        text-align: left;
-        line-height: 22px;
-    }
-
-    .tomochain-dapp__links {
-        text-align: left;
-
-        a {
-            margin-left: 0;
-            margin-right: 20px;
-        }
-    }
-
-    @include media-breakpoint-up(md) {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        margin-bottom: 80px;
-
-        .tomochain-dapp__image {
-            position: relative;
-            padding: 20px;
-            margin-bottom: 0;
-
-            img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-
-        .tomochain-dapp__info {
-            padding-left: 30px;
-        }
-
-        .tomochain-dapp__description {
-            text-align: justify;
-        }
-
-        html[lang="ja"] & {
-            grid-template-columns: 22% 78%;
-        }
-    }
-
-    @include media-breakpoint-up(lg) {
-        grid-template-columns: 25% 75%;
-
-        .tomochain-dapp__image {
-            align-self: start;
-            min-height: 200px;
-        }
-    }
-}*/
 .box_flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11407,7 +11333,7 @@ article.post-loop {
     .box_flexbox a:first-child {
       margin-right: 15px; }
 
-.img_size120px img {
+.img_size100px img {
   height: 100px !important;
   width: auto !important; }
 
@@ -11421,16 +11347,14 @@ article.post-loop {
     .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail {
       border-radius: 5px;
       overflow: hidden; }
-    .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
-      width: 60%; }
-      .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-content {
-        margin: 1.5em 0; }
-        .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-content p {
-          margin: 0; }
-      .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-title {
-        font-size: 24px;
-        font-family: Quicksand,sans-serif;
+    .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-content {
+      margin: 1.5em 0; }
+      .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-content p {
         margin: 0; }
+    .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-title {
+      font-size: 20px;
+      font-family: Quicksand,sans-serif;
+      margin: 0; }
 
 .tomochain-event-item {
   text-align: center;
@@ -14129,6 +14053,31 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .tomochain-blog .blog-carousel.slick-initialized {
       opacity: 1;
       visibility: visible; }
+      .tomochain-dapp__description {
+        text-align: justify; }
+      .tomochain-dapp__links a {
+        margin-left: 20px;
+        margin-right: 20px; }
+  .tomochain-dapp--2 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 80px; }
+    .tomochain-dapp--2 .tomochain-dapp__image {
+      position: relative;
+      padding: 20px;
+      margin-bottom: 0; }
+      .tomochain-dapp--2 .tomochain-dapp__image img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+    .tomochain-dapp--2 .tomochain-dapp__info {
+      padding-left: 30px; }
+    .tomochain-dapp--2 .tomochain-dapp__description {
+      text-align: justify; }
+    html[lang="ja"] .tomochain-dapp--2 {
+      grid-template-columns: 22% 78%; }
       .tomochain-dapp .dapp-list .tomochain-dapp-item {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -14138,8 +14087,9 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
                 align-items: flex-start; }
         .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail {
           width: 40%; }
-        .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
-          padding-left: 3em; }
+      .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
+        width: 60%;
+        padding-left: 3em; }
     .tomochain-dapp .tomochain-pagination, .tomochain-dapp .woocommerce-pagination {
       margin-top: 50px; }
   .tomochain-event .event-carousel {
@@ -14872,6 +14822,12 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         font-size: 80px; }
       .tomo-page-title h2 {
         margin-top: 32px; }
+  .tomochain-dapp--2 {
+    grid-template-columns: 25% 75%; }
+    .tomochain-dapp--2 .tomochain-dapp__image {
+      -ms-flex-item-align: start;
+          align-self: start;
+      min-height: 200px; }
         .box_flexbox a:first-child {
           margin-right: 100px; }
       .tomochain-dapp .dapp-list .tomochain-dapp-item {
@@ -16101,7 +16057,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       max-width: inherit;
       height: 100%; }
         .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail {
-          margin-bottom: 1em; } }
+          margin-bottom: 1.5em; } }
   @media (max-width: 767.98px) {
   .table-responsive-md {
     display: block;
@@ -16129,6 +16085,12 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         padding: 5px 0px; }
     .post-navigation {
       margin-bottom: 50px; }
+      .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
+        text-align: center; }
+        .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .box_flexbox {
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
     .vc_custom_heading {
       text-align: center !important; }
       .vc_custom_heading .heading-line {

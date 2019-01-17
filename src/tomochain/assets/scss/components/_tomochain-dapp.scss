@@ -1,4 +1,4 @@
-/*.tomochain-dapp {
+.tomochain-dapp {
     text-align: center;
     margin-top: 30px;
     margin-bottom: 50px;
@@ -127,7 +127,7 @@
             min-height: 200px;
         }
     }
-}*/
+}
 
 // Begin New dApp 16012019
 .box_flexbox {
@@ -142,7 +142,7 @@
         }
     }
 }
-.img_size120px {
+.img_size100px {
     img {
         height: 100px!important;
         width: auto!important;
@@ -171,13 +171,19 @@
                     width: 40%;
                 }
                 @include media-breakpoint-down(md) {
-                    margin-bottom: 1em;
+                    margin-bottom: 1.5em;
                 }
             }
             .dapp-info {
-                width: 60%;
                 @include media-breakpoint-up(md) {
+                    width: 60%;
                     padding-left: 3em;
+                }
+                @include media-breakpoint-down(sm) {
+                    text-align: center;
+                    .box_flexbox {
+                        justify-content: center;
+                    }
                 }
                 .dapp-content {
                     margin: 1.5em 0;
@@ -186,7 +192,7 @@
                     }
                 }
                 .dapp-title {
-                    font-size: 24px;
+                    font-size: 20px;
                     font-family: Quicksand,sans-serif;
                     margin: 0;
                 }
