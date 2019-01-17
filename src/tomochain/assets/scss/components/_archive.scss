@@ -1,4 +1,5 @@
-.tomo-archive-wrapper {
+.tomo-archive-wrapper,
+.tomochain-dapp-main {
 
     .archive-posts {
         @extend %transit;
@@ -17,14 +18,16 @@
             transform: translateX(-50%) scale(1.5);
         }
 
-        .archive-posts {
+        .archive-posts,
+        .dapp-posts {
             opacity: 0;
             visibility: hidden;
         }
     }
 }
 
-.tomo-categories-filter {
+.tomo-categories-filter,
+.tomochain-dapp-filter {
     margin: 0 0 30px;
     padding: 0;
 

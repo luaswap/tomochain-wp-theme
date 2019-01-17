@@ -7633,7 +7633,8 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
-.tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-tmp-color-gradient a:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts, .site-header, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
+.tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-tmp-color-gradient a:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts,
+.tomochain-dapp-main .archive-posts, .site-header, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
 .main-menu .menu li.menu-item.page_item_has_children > a:before,
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
@@ -10131,10 +10132,12 @@ COMPONENTS
 Specific UI components.
 This is where majority of our work takes place and our UI components are often composed of Objects and Components
 */
-.tomo-archive-wrapper.loading {
+.tomo-archive-wrapper.loading,
+.tomochain-dapp-main.loading {
   position: relative;
   text-align: center; }
-  .tomo-archive-wrapper.loading:before {
+  .tomo-archive-wrapper.loading:before,
+  .tomochain-dapp-main.loading:before {
     content: url(assets/images/loading.svg) !important;
     display: block;
     position: absolute;
@@ -10142,29 +10145,37 @@ This is where majority of our work takes place and our UI components are often c
     left: 50%;
     -webkit-transform: translateX(-50%) scale(1.5);
             transform: translateX(-50%) scale(1.5); }
-  .tomo-archive-wrapper.loading .archive-posts {
+  .tomo-archive-wrapper.loading .archive-posts,
+  .tomo-archive-wrapper.loading .dapp-posts,
+  .tomochain-dapp-main.loading .archive-posts,
+  .tomochain-dapp-main.loading .dapp-posts {
     opacity: 0;
     visibility: hidden; }
 
-.tomo-categories-filter {
+.tomo-categories-filter,
+.tomochain-dapp-filter {
   margin: 0 0 30px;
   padding: 0; }
-  .tomo-categories-filter li {
+  .tomo-categories-filter li,
+  .tomochain-dapp-filter li {
     list-style: none;
     display: inline-block;
     vertical-align: middle;
     margin: 0 0 0 20px;
     padding: 0; }
-    .tomo-categories-filter li:first-child {
+    .tomo-categories-filter li:first-child,
+    .tomochain-dapp-filter li:first-child {
       margin-left: 0; }
-    .tomo-categories-filter li a {
+    .tomo-categories-filter li a,
+    .tomochain-dapp-filter li a {
       position: relative;
       display: block;
       font-size: 16px;
       text-transform: capitalize;
       color: #9eaacc;
       padding-bottom: 10px; }
-      .tomo-categories-filter li a:after {
+      .tomo-categories-filter li a:after,
+      .tomochain-dapp-filter li a:after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -10181,9 +10192,13 @@ This is where majority of our work takes place and our UI components are often c
         -webkit-transform-origin: 100% 50%;
                 transform-origin: 100% 50%;
         background-color: #e68b71; }
-    .tomo-categories-filter li.selected a, .tomo-categories-filter li:hover a {
+    .tomo-categories-filter li.selected a, .tomo-categories-filter li:hover a,
+    .tomochain-dapp-filter li.selected a,
+    .tomochain-dapp-filter li:hover a {
       color: #fff; }
-      .tomo-categories-filter li.selected a:after, .tomo-categories-filter li:hover a:after {
+      .tomo-categories-filter li.selected a:after, .tomo-categories-filter li:hover a:after,
+      .tomochain-dapp-filter li.selected a:after,
+      .tomochain-dapp-filter li:hover a:after {
         -webkit-transform: scale3d(1, 1, 1);
                 transform: scale3d(1, 1, 1);
         -webkit-transform-origin: 0 50%;
@@ -10958,14 +10973,14 @@ This is where majority of our work takes place and our UI components are often c
   .tomochain-pagination.woocommerce-pagination, .woocommerce-pagination {
     margin-bottom: 30px; }
 
-.tomochain-pagination ul.page-numbers, .woocommerce-pagination ul.page-numbers {
+.tomochain-pagination ul, .woocommerce-pagination ul {
   font-size: 0;
   text-align: center;
   list-style: none;
   padding: 0;
   margin: 0; }
 
-.tomochain-pagination ul.page-numbers a, .woocommerce-pagination ul.page-numbers a {
+.tomochain-pagination ul a, .woocommerce-pagination ul a {
   font-weight: 500; }
 
 .tomochain-pagination ul li, .woocommerce-pagination ul li {
@@ -11341,11 +11356,12 @@ article.post-loop {
   text-align: left; }
   .tomochain-dapp .dapp-list .tomochain-dapp-item {
     padding: 1.5em 0;
-    border-bottom: 2px solid #333867; }
-    .tomochain-dapp .dapp-list .tomochain-dapp-item:last-child {
-      border-bottom: 0; }
+    border-top: 2px solid #333867; }
+    .tomochain-dapp .dapp-list .tomochain-dapp-item:first-child {
+      border-top: 0;
+      padding-top: 0; }
     .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail {
-      border-radius: 5px;
+      border-radius: 10px;
       overflow: hidden; }
     .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-content {
       margin: 1.5em 0; }
@@ -14022,7 +14038,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     margin-left: 91.66667%; }
   .hidden-md-up {
     display: none !important; }
-    .tomo-categories-filter {
+    .tomo-categories-filter,
+    .tomochain-dapp-filter {
       margin-bottom: 50px; }
   .width_st180 {
     width: 180% !important; }
@@ -14086,9 +14103,9 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
             -ms-flex-align: start;
                 align-items: flex-start; }
         .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail {
-          width: 40%; }
+          width: 35%; }
       .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
-        width: 60%;
+        width: 65%;
         padding-left: 3em; }
     .tomochain-dapp .tomochain-pagination, .tomochain-dapp .woocommerce-pagination {
       margin-top: 50px; }

@@ -153,22 +153,23 @@
     .dapp-list {
         .tomochain-dapp-item {
             padding: 1.5em 0;
-            border-bottom: 2px solid #333867;
+            border-top: 2px solid #333867;
             @include media-breakpoint-up(lg) {
                 padding: 3em 0;
             }
-            &:last-child {
-                border-bottom: 0;
+            &:first-child {
+                border-top: 0;
+                padding-top: 0;
             }
             @include media-breakpoint-up(md) {
                 display: flex;
                 align-items: flex-start;
             }
             .dapp-thumbnail {
-                border-radius: 5px;
+                border-radius: 10px;
                 overflow: hidden;
                 @include media-breakpoint-up(md) {
-                    width: 40%;
+                    width: 35%;
                 }
                 @include media-breakpoint-down(md) {
                     margin-bottom: 1.5em;
@@ -176,7 +177,7 @@
             }
             .dapp-info {
                 @include media-breakpoint-up(md) {
-                    width: 60%;
+                    width: 65%;
                     padding-left: 3em;
                 }
                 @include media-breakpoint-down(sm) {
