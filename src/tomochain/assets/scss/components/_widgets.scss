@@ -31,10 +31,15 @@
             vertical-align: top;
             max-width: 33.33%;
             width: 100%;
-            padding: 0px 15px;
-
+            padding: 0px 10px;
             @include media-breakpoint-between(md, lg) {
                 max-width: calc(33.33% - 20px);
+            }
+            @include media-breakpoint-down(sm) {
+                max-width: 100%;
+                text-align: center;
+                padding: 0;
+                margin: 20px 10px;
             }
         }
 
@@ -110,11 +115,32 @@
         width: 30px;
         background-color: transparent;
     }
-    #tomo-sendgrid-button:after {
-        content: '\e904';
-        font-size: 8px;
-        color: #6a6beb;
-        @extend %tm-icon;
+    #tomo-sendgrid-button {
+        &:before {
+            content: '';
+            background: url(../tomochain/assets/images/arrow_normal.svg) no-repeat center;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+        }
+        &:after {
+            content: '';
+            background: url(../tomochain/assets/images/arrow_hover.svg) no-repeat center;
+            position: absolute;
+            right: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            transition: all .4s ease;
+        }
+        &:hover {
+            &:after {
+                opacity: 1;
+            }
+        }
     }
     @include media-breakpoint-up(lg) {
         .tomo-sendgrid-text,
@@ -122,8 +148,8 @@
             max-width: 530px;
         }
         #tomo-sendgrid-email {
-            font-size: 16px;
-            padding: 15px 70px 15px 40px;
+            font-size: 14px;
+            padding: 12px 70px 12px 40px;
         }
         #tomo-sendgrid-button {
             padding-right: 40px;

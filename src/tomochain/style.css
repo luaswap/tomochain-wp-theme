@@ -1151,6 +1151,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
 .entry-meta span:before,
+.tomochain-dapp__links a:before,
 .tomochain-event-item .event-venue:before,
 .tomochain-team__see-all--collapse:after,
 .tomochain-testnet-item__links a:before,
@@ -1253,6 +1254,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-left.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-left.menu-back:before,
 .entry-meta span.fa-pull-left:before,
+.tomochain-dapp__links a.fa-pull-left:before,
 .tomochain-event-item .fa-pull-left.event-venue:before,
 .fa-pull-left.tomochain-team__see-all--collapse:after,
 .tomochain-testnet-item__links a.fa-pull-left:before,
@@ -1279,6 +1281,7 @@ a.text-dark:hover, a.text-dark:focus {
 .site-mobile-menu-wrapper .menu li.menu-item .fa-pull-right.open-child:before,
 .site-mobile-menu-wrapper .fa-pull-right.menu-back:before,
 .entry-meta span.fa-pull-right:before,
+.tomochain-dapp__links a.fa-pull-right:before,
 .tomochain-event-item .fa-pull-right.event-venue:before,
 .fa-pull-right.tomochain-team__see-all--collapse:after,
 .tomochain-testnet-item__links a.fa-pull-right:before,
@@ -5441,6 +5444,7 @@ readers do not read off random characters that represent icons */
 .site-mobile-menu-wrapper .menu li.menu-item .open-child:before,
 .site-mobile-menu-wrapper .menu-back:before,
 .entry-meta span:before,
+.tomochain-dapp__links a:before,
 .tomochain-event-item .event-venue:before,
 .tomochain-team__see-all--collapse:after,
 .tomochain-testnet-item__links a:before,
@@ -7629,7 +7633,8 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
-.tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-tmp-color-gradient a:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts, .site-header, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
+.tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-tmp-color-gradient a:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts,
+.tomochain-dapp-main .archive-posts, .site-header, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
 .main-menu .menu li.menu-item.page_item_has_children > a:before,
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
@@ -7638,7 +7643,7 @@ If your tooling is more complex you can split it up like:
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
-.team-member-info__close:before, .widget_tomo_sendgrid #tomo-sendgrid-button:after, .widget_search:after, .slick-arrow:before, body.mainnet-page #coming-row #lets-rock-it:after, .nice-select:after {
+.team-member-info__close:before, .widget_search:after, .slick-arrow:before, body.mainnet-page #coming-row #lets-rock-it:after, .nice-select:after {
   font-family: 'tomochain';
   font-weight: normal;
   font-style: normal;
@@ -8775,9 +8780,9 @@ input[type="submit"] {
   background: linear-gradient(#48A5FF 30%, #534BFF 100%) !important;
   border-radius: 6px !important;
   color: #fff !important;
-  padding: 10px 15px !important;
+  padding: 10px 30px !important;
   line-height: 16px !important;
-  width: 160px !important;
+  min-width: 150px !important;
   height: 38px !important;
   position: relative !important;
   overflow: hidden !important;
@@ -8995,7 +9000,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: #757f9c;
+  color: #757B9B;
   background-color: #dee2ee;
   border: none;
   border-radius: 8px;
@@ -10127,10 +10132,12 @@ COMPONENTS
 Specific UI components.
 This is where majority of our work takes place and our UI components are often composed of Objects and Components
 */
-.tomo-archive-wrapper.loading {
+.tomo-archive-wrapper.loading,
+.tomochain-dapp-main.loading {
   position: relative;
   text-align: center; }
-  .tomo-archive-wrapper.loading:before {
+  .tomo-archive-wrapper.loading:before,
+  .tomochain-dapp-main.loading:before {
     content: url(assets/images/loading.svg) !important;
     display: block;
     position: absolute;
@@ -10138,29 +10145,37 @@ This is where majority of our work takes place and our UI components are often c
     left: 50%;
     -webkit-transform: translateX(-50%) scale(1.5);
             transform: translateX(-50%) scale(1.5); }
-  .tomo-archive-wrapper.loading .archive-posts {
+  .tomo-archive-wrapper.loading .archive-posts,
+  .tomo-archive-wrapper.loading .dapp-posts,
+  .tomochain-dapp-main.loading .archive-posts,
+  .tomochain-dapp-main.loading .dapp-posts {
     opacity: 0;
     visibility: hidden; }
 
-.tomo-categories-filter {
+.tomo-categories-filter,
+.tomochain-dapp-filter {
   margin: 0 0 30px;
   padding: 0; }
-  .tomo-categories-filter li {
+  .tomo-categories-filter li,
+  .tomochain-dapp-filter li {
     list-style: none;
     display: inline-block;
     vertical-align: middle;
     margin: 0 0 0 20px;
     padding: 0; }
-    .tomo-categories-filter li:first-child {
+    .tomo-categories-filter li:first-child,
+    .tomochain-dapp-filter li:first-child {
       margin-left: 0; }
-    .tomo-categories-filter li a {
+    .tomo-categories-filter li a,
+    .tomochain-dapp-filter li a {
       position: relative;
       display: block;
       font-size: 16px;
       text-transform: capitalize;
       color: #9eaacc;
       padding-bottom: 10px; }
-      .tomo-categories-filter li a:after {
+      .tomo-categories-filter li a:after,
+      .tomochain-dapp-filter li a:after {
         content: '';
         position: absolute;
         bottom: 0;
@@ -10177,9 +10192,13 @@ This is where majority of our work takes place and our UI components are often c
         -webkit-transform-origin: 100% 50%;
                 transform-origin: 100% 50%;
         background-color: #e68b71; }
-    .tomo-categories-filter li.selected a, .tomo-categories-filter li:hover a {
+    .tomo-categories-filter li.selected a, .tomo-categories-filter li:hover a,
+    .tomochain-dapp-filter li.selected a,
+    .tomochain-dapp-filter li:hover a {
       color: #fff; }
-      .tomo-categories-filter li.selected a:after, .tomo-categories-filter li:hover a:after {
+      .tomo-categories-filter li.selected a:after, .tomo-categories-filter li:hover a:after,
+      .tomochain-dapp-filter li.selected a:after,
+      .tomochain-dapp-filter li:hover a:after {
         -webkit-transform: scale3d(1, 1, 1);
                 transform: scale3d(1, 1, 1);
         -webkit-transform-origin: 0 50%;
@@ -10979,14 +10998,14 @@ This is where majority of our work takes place and our UI components are often c
   .tomochain-pagination.woocommerce-pagination, .woocommerce-pagination {
     margin-bottom: 30px; }
 
-.tomochain-pagination ul.page-numbers, .woocommerce-pagination ul.page-numbers {
+.tomochain-pagination ul, .woocommerce-pagination ul {
   font-size: 0;
   text-align: center;
   list-style: none;
   padding: 0;
   margin: 0; }
 
-.tomochain-pagination ul.page-numbers a, .woocommerce-pagination ul.page-numbers a {
+.tomochain-pagination ul a, .woocommerce-pagination ul a {
   font-weight: 500; }
 
 .tomochain-pagination ul li, .woocommerce-pagination ul li {
@@ -11293,136 +11312,58 @@ article.post-loop {
     .see-all-blog a:hover {
       color: #dee2ee; }
 
-/*.tomochain-dapp {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+.tomochain-dapp {
+  text-align: center;
+  margin-top: 30px;
+  margin-bottom: 50px; }
+  .tomochain-dapp__image {
+    margin-bottom: 10px; }
+  .tomochain-dapp__name {
+    font-size: 18px;
+    font-weight: 600;
+    color: #66708a;
+    margin-bottom: 10px; }
+  .tomochain-dapp__description {
+    margin-bottom: 25px; }
+  .tomochain-dapp__links {
+    text-transform: uppercase;
+    color: #6b6ced; }
+    .tomochain-dapp__links a {
+      letter-spacing: 0.05em;
+      font-family: Quicksand;
+      font-size: 14px;
+      font-weight: 700;
+      margin-left: 10px;
+      margin-right: 10px;
+      color: #6b6ced; }
+    .tomochain-dapp__links a:before {
+      margin-right: 10px; }
+    .tomochain-dapp__links a:hover {
+      color: #72b8fd; }
+  .tomochain-dapp__run:before {
+    content: "\f061"; }
+  .tomochain-dapp__source:before {
+    content: "\f121"; }
 
-    &__image {
-        margin-bottom: 10px;
-    }
+.tomochain-dapp--2 .tomochain-dapp__image {
+  border-radius: 10px;
+  padding: 50px 30px;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#434f74), color-stop(87%, #333e61));
+  background-image: linear-gradient(-180deg, #434f74 0%, #333e61 87%);
+  margin-bottom: 30px; }
+  .tomochain-dapp--2 .tomochain-dapp__image img {
+    max-width: 60%; }
 
-    &__name {
-        font-size: 18px;
-        font-weight: 600;
-        color: #66708a;
-        margin-bottom: 10px;
-    }
+.tomochain-dapp--2 .tomochain-dapp__description {
+  text-align: left;
+  line-height: 22px; }
 
-    &__description {
-        margin-bottom: 25px;
+.tomochain-dapp--2 .tomochain-dapp__links {
+  text-align: left; }
+  .tomochain-dapp--2 .tomochain-dapp__links a {
+    margin-left: 0;
+    margin-right: 20px; }
 
-        @include media-breakpoint-up(md) {
-            text-align: justify;
-        }
-    }
-
-    &__links {
-        text-transform: uppercase;
-        color: #6b6ced;
-
-        a {
-            letter-spacing: 0.05em;
-            font-family: Quicksand;
-            font-size: 14px;
-            font-weight: 700;
-            margin-left: 10px;
-            margin-right: 10px;
-            color: #6b6ced;
-        }
-
-        a:before {
-            margin-right: 10px;
-            @extend .fas;
-        }
-
-        a:hover {
-            color: #72b8fd;
-        }
-
-        @include media-breakpoint-up(md) {
-            a {
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-        }
-    }
-
-    &__run:before {
-        content: fa-content($fa-var-arrow-right);
-    }
-
-    &__source:before {
-        content: fa-content($fa-var-code);
-    }
-}
-
-.tomochain-dapp--2 {
-    .tomochain-dapp__image {
-        border-radius: 10px;
-        padding: 50px 30px;
-        background-image: linear-gradient(-180deg, #434f74 0%, #333e61 87%);
-        margin-bottom: 30px;
-
-        img {
-            max-width: 60%;
-        }
-    }
-
-    .tomochain-dapp__description {
-        text-align: left;
-        line-height: 22px;
-    }
-
-    .tomochain-dapp__links {
-        text-align: left;
-
-        a {
-            margin-left: 0;
-            margin-right: 20px;
-        }
-    }
-
-    @include media-breakpoint-up(md) {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        margin-bottom: 80px;
-
-        .tomochain-dapp__image {
-            position: relative;
-            padding: 20px;
-            margin-bottom: 0;
-
-            img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
-
-        .tomochain-dapp__info {
-            padding-left: 30px;
-        }
-
-        .tomochain-dapp__description {
-            text-align: justify;
-        }
-
-        html[lang="ja"] & {
-            grid-template-columns: 22% 78%;
-        }
-    }
-
-    @include media-breakpoint-up(lg) {
-        grid-template-columns: 25% 75%;
-
-        .tomochain-dapp__image {
-            align-self: start;
-            min-height: 200px;
-        }
-    }
-}*/
 .box_flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -11432,7 +11373,7 @@ article.post-loop {
     .box_flexbox a:first-child {
       margin-right: 15px; }
 
-.img_size120px img {
+.img_size100px img {
   height: 100px !important;
   width: auto !important; }
 
@@ -11440,22 +11381,42 @@ article.post-loop {
   text-align: left; }
   .tomochain-dapp .dapp-list .tomochain-dapp-item {
     padding: 1.5em 0;
-    border-bottom: 2px solid #333867; }
-    .tomochain-dapp .dapp-list .tomochain-dapp-item:last-child {
-      border-bottom: 0; }
+    border-top: 2px solid #333867; }
+    .tomochain-dapp .dapp-list .tomochain-dapp-item:first-child {
+      border-top: 0;
+      padding-top: 0; }
     .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail {
-      border-radius: 5px;
+      border-radius: 10px;
       overflow: hidden; }
-    .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
-      width: 60%; }
-      .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-content {
-        margin: 1.5em 0; }
-        .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-content p {
-          margin: 0; }
-      .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-title {
-        font-size: 24px;
-        font-family: Quicksand,sans-serif;
+    .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-content {
+      margin: 1.5em 0; }
+      .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-content p {
         margin: 0; }
+    .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-title {
+      font-size: 20px;
+      font-family: Quicksand,sans-serif;
+      margin: 0; }
+
+.bg_full_dapp {
+  position: relative;
+  z-index: 1; }
+  .bg_full_dapp:before {
+    content: '';
+    background: url(../tomochain/assets/images/bg_footer_dapp.jpg) no-repeat center;
+    height: 100%;
+    width: 200%;
+    position: absolute;
+    left: -50%;
+    top: 0;
+    z-index: 0;
+    display: block !important; }
+  .bg_full_dapp .vc_column-inner > .wpb_wrapper {
+    background: #252f5a;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    border-radius: 10px;
+    overflow: hidden; }
 
 .tomochain-event-item {
   text-align: center;
@@ -12061,7 +12022,7 @@ article.post-loop {
       vertical-align: top;
       max-width: 33.33%;
       width: 100%;
-      padding: 0px 15px; }
+      padding: 0px 10px; }
     .widget_tomo_address .addresses .address-title {
       font-size: 14px;
       text-transform: uppercase; }
@@ -12105,10 +12066,27 @@ article.post-loop {
     height: 100%;
     width: 30px;
     background-color: transparent; }
+  .widget_tomo_sendgrid #tomo-sendgrid-button:before {
+    content: '';
+    background: url(../tomochain/assets/images/arrow_normal.svg) no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
   .widget_tomo_sendgrid #tomo-sendgrid-button:after {
-    content: '\e904';
-    font-size: 8px;
-    color: #6a6beb; }
+    content: '';
+    background: url(../tomochain/assets/images/arrow_hover.svg) no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease; }
+  .widget_tomo_sendgrid #tomo-sendgrid-button:hover:after {
+    opacity: 1; }
 
 .widget_tomo_recent_posts .recent-post {
   display: -webkit-box;
@@ -14133,8 +14111,12 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     margin-left: 91.66667%; }
   .hidden-md-up {
     display: none !important; }
-    .tomo-categories-filter {
+    .tomo-categories-filter,
+    .tomochain-dapp-filter {
       margin-bottom: 50px; }
+      .tomo-categories-filter li,
+      .tomochain-dapp-filter li {
+        margin-left: 50px; }
   .width_st180 {
     width: 180% !important; }
   .width_st200 {
@@ -14164,6 +14146,31 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .tomochain-blog .blog-carousel.slick-initialized {
       opacity: 1;
       visibility: visible; }
+      .tomochain-dapp__description {
+        text-align: justify; }
+      .tomochain-dapp__links a {
+        margin-left: 20px;
+        margin-right: 20px; }
+  .tomochain-dapp--2 {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    margin-bottom: 80px; }
+    .tomochain-dapp--2 .tomochain-dapp__image {
+      position: relative;
+      padding: 20px;
+      margin-bottom: 0; }
+      .tomochain-dapp--2 .tomochain-dapp__image img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+                transform: translate(-50%, -50%); }
+    .tomochain-dapp--2 .tomochain-dapp__info {
+      padding-left: 30px; }
+    .tomochain-dapp--2 .tomochain-dapp__description {
+      text-align: justify; }
+    html[lang="ja"] .tomochain-dapp--2 {
+      grid-template-columns: 22% 78%; }
       .tomochain-dapp .dapp-list .tomochain-dapp-item {
         display: -webkit-box;
         display: -ms-flexbox;
@@ -14172,11 +14179,14 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
             -ms-flex-align: start;
                 align-items: flex-start; }
         .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail {
-          width: 40%; }
-        .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
-          padding-left: 3em; }
+          width: 35%; }
+      .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
+        width: 65%;
+        padding-left: 3em; }
     .tomochain-dapp .tomochain-pagination, .tomochain-dapp .woocommerce-pagination {
       margin-top: 50px; }
+      .bg_full_dapp .vc_column-inner > .wpb_wrapper {
+        padding: 50px; }
   .tomochain-event .event-carousel {
     opacity: 0;
     visibility: hidden; }
@@ -14897,6 +14907,12 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         font-size: 80px; }
       .tomo-page-title h2 {
         margin-top: 32px; }
+  .tomochain-dapp--2 {
+    grid-template-columns: 25% 75%; }
+    .tomochain-dapp--2 .tomochain-dapp__image {
+      -ms-flex-item-align: start;
+          align-self: start;
+      min-height: 200px; }
         .box_flexbox a:first-child {
           margin-right: 100px; }
       .tomochain-dapp .dapp-list .tomochain-dapp-item {
@@ -14919,8 +14935,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .widget_tomo_sendgrid #tomo-sendgrid-form {
       max-width: 530px; }
     .widget_tomo_sendgrid #tomo-sendgrid-email {
-      font-size: 16px;
-      padding: 15px 70px 15px 40px; }
+      font-size: 14px;
+      padding: 12px 70px 12px 40px; }
     .widget_tomo_sendgrid #tomo-sendgrid-button {
       padding-right: 40px; }
     .widget_tomo_sendgrid #tomo-sendgrid-button:after {
@@ -15194,7 +15210,15 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     padding-left: 0 !important; }
   .item_building_dapp .wpb_single_image {
     height: 230px;
-    overflow: hidden; } }
+    overflow: hidden; }
+  .sc_height30 {
+    height: 30px !important; }
+  .sc_height15 {
+    height: 15px !important; }
+  .sc_heightNone {
+    height: 0px !important; }
+  .wpb_content_element {
+    margin-bottom: 25px !important; } }
   @media (min-width: 1200px) and (max-width: 1439px) {
   body.mainnet-page .wpb_revslider_element .rev_slider_wrapper,
   body.mainnet-page .wpb_revslider_element .rev_slider {
@@ -16126,7 +16150,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       max-width: inherit;
       height: 100%; }
         .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail {
-          margin-bottom: 1em; } }
+          margin-bottom: 1.5em; } }
   @media (max-width: 767.98px) {
   .table-responsive-md {
     display: block;
@@ -16138,6 +16162,14 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       border: 0; }
   .hidden-sm-down {
     display: none !important; }
+      .site-footer .logo-footer {
+        text-align: center; }
+      .site-footer .widget_nav_menu {
+        width: 100%;
+        text-align: center;
+        display: none; }
+      .site-footer .widget_tomo_address {
+        width: 100%; }
   .sp_ft_18 {
     font-size: 18px !important; }
   .sp_ft_24 {
@@ -16154,11 +16186,22 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         padding: 5px 0px; }
     .post-navigation {
       margin-bottom: 50px; }
+      .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
+        text-align: center; }
+        .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .box_flexbox {
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center; }
     .vc_custom_heading {
       text-align: center !important; }
       .vc_custom_heading .heading-line {
         margin-left: auto;
         margin-right: auto; }
+        .widget_tomo_address .addresses .address {
+          max-width: 100%;
+          text-align: center;
+          padding: 0;
+          margin: 20px 10px; }
     .widget_tomo_recent_posts .recent-post__thumb {
       border-radius: 3px; }
     .widget_tomo_event .tomo-event__thumb {
