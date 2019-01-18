@@ -41,6 +41,9 @@
         vertical-align: middle;
         margin: 0 0 0 20px;
         padding: 0;
+        @include media-breakpoint-up(md) {
+            margin-left: 50px;
+        }
 
         &:first-child {
             margin-left: 0;

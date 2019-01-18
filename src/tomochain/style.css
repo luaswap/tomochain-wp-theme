@@ -7643,7 +7643,7 @@ If your tooling is more complex you can split it up like:
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
-.team-member-info__close:before, .widget_tomo_sendgrid #tomo-sendgrid-button:after, .widget_search:after, .slick-arrow:before, body.mainnet-page #coming-row #lets-rock-it:after, .nice-select:after {
+.team-member-info__close:before, .widget_search:after, .slick-arrow:before, body.mainnet-page #coming-row #lets-rock-it:after, .nice-select:after {
   font-family: 'tomochain';
   font-weight: normal;
   font-style: normal;
@@ -8780,9 +8780,9 @@ input[type="submit"] {
   background: linear-gradient(#48A5FF 30%, #534BFF 100%) !important;
   border-radius: 6px !important;
   color: #fff !important;
-  padding: 10px 15px !important;
+  padding: 10px 30px !important;
   line-height: 16px !important;
-  width: 160px !important;
+  min-width: 150px !important;
   height: 38px !important;
   position: relative !important;
   overflow: hidden !important;
@@ -9000,7 +9000,7 @@ input[type="datetime"],
 input[type="datetime-local"],
 input[type="color"],
 textarea {
-  color: #757f9c;
+  color: #757B9B;
   background-color: #dee2ee;
   border: none;
   border-radius: 8px;
@@ -11397,6 +11397,27 @@ article.post-loop {
       font-family: Quicksand,sans-serif;
       margin: 0; }
 
+.bg_full_dapp {
+  position: relative;
+  z-index: 1; }
+  .bg_full_dapp:before {
+    content: '';
+    background: url(../tomochain/assets/images/bg_footer_dapp.jpg) no-repeat center;
+    height: 100%;
+    width: 200%;
+    position: absolute;
+    left: -50%;
+    top: 0;
+    z-index: 0;
+    display: block !important; }
+  .bg_full_dapp .vc_column-inner > .wpb_wrapper {
+    background: #252f5a;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 30px 15px;
+    border-radius: 10px;
+    overflow: hidden; }
+
 .tomochain-event-item {
   text-align: center;
   margin-bottom: 60px; }
@@ -12001,7 +12022,7 @@ article.post-loop {
       vertical-align: top;
       max-width: 33.33%;
       width: 100%;
-      padding: 0px 15px; }
+      padding: 0px 10px; }
     .widget_tomo_address .addresses .address-title {
       font-size: 14px;
       text-transform: uppercase; }
@@ -12045,10 +12066,27 @@ article.post-loop {
     height: 100%;
     width: 30px;
     background-color: transparent; }
+  .widget_tomo_sendgrid #tomo-sendgrid-button:before {
+    content: '';
+    background: url(../tomochain/assets/images/arrow_normal.svg) no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%; }
   .widget_tomo_sendgrid #tomo-sendgrid-button:after {
-    content: '\e904';
-    font-size: 8px;
-    color: #6a6beb; }
+    content: '';
+    background: url(../tomochain/assets/images/arrow_hover.svg) no-repeat center;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    -webkit-transition: all .4s ease;
+    transition: all .4s ease; }
+  .widget_tomo_sendgrid #tomo-sendgrid-button:hover:after {
+    opacity: 1; }
 
 .widget_tomo_recent_posts .recent-post {
   display: -webkit-box;
@@ -14076,6 +14114,9 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .tomo-categories-filter,
     .tomochain-dapp-filter {
       margin-bottom: 50px; }
+      .tomo-categories-filter li,
+      .tomochain-dapp-filter li {
+        margin-left: 50px; }
   .width_st180 {
     width: 180% !important; }
   .width_st200 {
@@ -14144,6 +14185,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         padding-left: 3em; }
     .tomochain-dapp .tomochain-pagination, .tomochain-dapp .woocommerce-pagination {
       margin-top: 50px; }
+      .bg_full_dapp .vc_column-inner > .wpb_wrapper {
+        padding: 50px; }
   .tomochain-event .event-carousel {
     opacity: 0;
     visibility: hidden; }
@@ -14892,8 +14935,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .widget_tomo_sendgrid #tomo-sendgrid-form {
       max-width: 530px; }
     .widget_tomo_sendgrid #tomo-sendgrid-email {
-      font-size: 16px;
-      padding: 15px 70px 15px 40px; }
+      font-size: 14px;
+      padding: 12px 70px 12px 40px; }
     .widget_tomo_sendgrid #tomo-sendgrid-button {
       padding-right: 40px; }
     .widget_tomo_sendgrid #tomo-sendgrid-button:after {
@@ -15167,7 +15210,15 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     padding-left: 0 !important; }
   .item_building_dapp .wpb_single_image {
     height: 230px;
-    overflow: hidden; } }
+    overflow: hidden; }
+  .sc_height30 {
+    height: 30px !important; }
+  .sc_height15 {
+    height: 15px !important; }
+  .sc_heightNone {
+    height: 0px !important; }
+  .wpb_content_element {
+    margin-bottom: 25px !important; } }
   @media (min-width: 1200px) and (max-width: 1439px) {
   body.mainnet-page .wpb_revslider_element .rev_slider_wrapper,
   body.mainnet-page .wpb_revslider_element .rev_slider {
@@ -16111,6 +16162,14 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       border: 0; }
   .hidden-sm-down {
     display: none !important; }
+      .site-footer .logo-footer {
+        text-align: center; }
+      .site-footer .widget_nav_menu {
+        width: 100%;
+        text-align: center;
+        display: none; }
+      .site-footer .widget_tomo_address {
+        width: 100%; }
   .sp_ft_18 {
     font-size: 18px !important; }
   .sp_ft_24 {
@@ -16138,6 +16197,11 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       .vc_custom_heading .heading-line {
         margin-left: auto;
         margin-right: auto; }
+        .widget_tomo_address .addresses .address {
+          max-width: 100%;
+          text-align: center;
+          padding: 0;
+          margin: 20px 10px; }
     .widget_tomo_recent_posts .recent-post__thumb {
       border-radius: 3px; }
     .widget_tomo_event .tomo-event__thumb {

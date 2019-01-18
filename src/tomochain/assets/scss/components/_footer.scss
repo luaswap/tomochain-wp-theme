@@ -14,6 +14,9 @@
     }
     .logo-footer{
         padding: 40px 0 10px;
+        @include media-breakpoint-down(sm) {
+            text-align: center;
+        }
     }
     .custom-logo-link{
         display: inline-block;
@@ -31,6 +34,11 @@
     .widget_nav_menu{
         width: 20%;
         display: inline-block;
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+            text-align: center;
+            display: none;
+        }
         ul{
             margin: 0;
             padding: 10px 0 0 0;
@@ -45,6 +53,9 @@
         width: 80%;
         display: inline-block;
         vertical-align: top;
+        @include media-breakpoint-down(sm) {
+            width: 100%;
+        }
     }
     .widget_tomo_sendgrid{
         display: inline-block;

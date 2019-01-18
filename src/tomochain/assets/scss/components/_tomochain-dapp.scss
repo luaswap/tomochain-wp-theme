@@ -206,4 +206,31 @@
         }
     }
 }
+.bg_full_dapp {
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: '';
+        background: url(../tomochain/assets/images/bg_footer_dapp.jpg) no-repeat center;
+        height: 100%;
+        width: 200%;
+        position: absolute;
+        left: -50%;
+        top: 0;
+        z-index: 0;
+        display: block!important;
+    }
+    .vc_column-inner>.wpb_wrapper {
+        background: #252f5a;
+        max-width: 700px;
+        margin: 0 auto;
+        padding: 30px 15px;
+        border-radius: 10px;
+        overflow: hidden;
+        @include media-breakpoint-up(md) {
+            padding: 50px;
+        }
+    }
+}
+
 // End New dApp 16012019

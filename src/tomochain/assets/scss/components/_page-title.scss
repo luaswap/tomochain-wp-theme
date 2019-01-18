@@ -62,3 +62,19 @@
         }
     }
 }
+
+
+@media only screen and (min-width: 1025px) and (max-width: 1366px) {
+    .sc_height30 {
+        height: 30px!important;
+    }
+    .sc_height15 {
+        height: 15px!important;
+    }
+    .sc_heightNone {
+        height: 0px!important;
+    }
+    .wpb_content_element {
+        margin-bottom: 25px!important;
+    }
+}
