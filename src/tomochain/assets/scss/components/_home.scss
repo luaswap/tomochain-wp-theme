@@ -46,7 +46,7 @@
 }
 /** Style padding **/
 .pad_lef_right_10 {
-	padding: 0 10%;
+	padding: 0 2%;
 	@include media-breakpoint-up(md) {
 		padding: 0 5%;
 	}
@@ -130,9 +130,23 @@ iframe.sp_set_height {
 		}
 	}
 }
+.tomo_iframe_main_top {
+	@include media-breakpoint-down(sm) {
+		text-align: center;
+		img {
+			width: 300px;
+		}
+	}
+}
 .tomo_iframe_gaming  {
 	@include media-breakpoint-up(md) {
 		padding-right: 10%;
+	}
+	@include media-breakpoint-down(sm) {
+		text-align: center;
+		img {
+			width: 200px;
+		}
 	}
 	.wpb_wrapper {
 		position: relative;

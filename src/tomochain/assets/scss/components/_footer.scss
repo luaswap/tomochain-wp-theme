@@ -87,4 +87,35 @@
     @include media-breakpoint-down(sm) {
         display: none;
     }
+    &.hide-second {
+      display: none;
+    }
+    .close {
+        align-items: center;
+        background-color: #252f5a;
+        border-radius: 50%;
+        color: #fff;
+        cursor: pointer;
+        display: flex;
+        height: 20px;
+        width: 20px;
+        justify-content: center;
+        position: absolute;
+        text-transform: lowercase;
+        transition: all .3s ease;
+        font-size: 1.5em;
+        right: -10px;
+        top: -20px;
+        line-height: 1;
+        z-index: 99;
+        opacity: 0;
+        &:hover {
+            background-color: #352f5a;
+        }
+    }
+    &:hover {
+        .close {
+            opacity: 1;
+        }
+    }
 }

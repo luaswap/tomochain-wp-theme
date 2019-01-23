@@ -10292,6 +10292,38 @@ This is where majority of our work takes place and our UI components are often c
   bottom: 2em;
   right: 2em;
   z-index: 9; }
+  .popup_btn.hide-second {
+    display: none; }
+  .popup_btn .close {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #252f5a;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20px;
+    width: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    text-transform: lowercase;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: 1.5em;
+    right: -10px;
+    top: -20px;
+    line-height: 1;
+    z-index: 99;
+    opacity: 0; }
+    .popup_btn .close:hover {
+      background-color: #352f5a; }
+  .popup_btn:hover .close {
+    opacity: 1; }
 
 .site-header {
   position: relative;
@@ -10388,7 +10420,7 @@ This is where majority of our work takes place and our UI components are often c
 
 /** Style padding **/
 .pad_lef_right_10 {
-  padding: 0 10%; }
+  padding: 0 2%; }
 
 /** Style font **/
 
@@ -11868,8 +11900,8 @@ article.post-loop {
       left: -15px; }
 
 .tomochain-roadmap-item--current .roadmap-deco:before {
-  background-image: -webkit-gradient(linear, left top, right top, from(#e78875), color-stop(80%, #181631));
-  background-image: linear-gradient(90deg, #e78875 0%, #181631 80%); }
+  background-image: -webkit-gradient(linear, left top, right top, from(#e78875), color-stop(80%, #3B4669));
+  background-image: linear-gradient(90deg, #e78875 0%, #3B4669 80%); }
 
 .tomochain-roadmap-item--current .roadmap-deco:after {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ea8f73), color-stop(80%, rgba(29, 23, 58, 0)));
@@ -12575,20 +12607,22 @@ body.info-opened:after {
         outline: 0; }
       .slick-dots li button:hover {
         opacity: .75; }
-    .slick-dots li.slick-active button {
-      border-radius: 100%;
-      opacity: 1;
-      margin: 0;
-      padding: 1px;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#f78d7a), to(#fac15e));
-      background-image: linear-gradient(to bottom, #f78d7a 0%, #fac15e 100%); }
-    .slick-dots li.slick-active button:after {
-      content: '';
-      display: block;
-      height: 100%;
-      width: 100%;
-      border-radius: 100%;
-      background-color: #1b2038; }
+    .slick-dots li.slick-active {
+      /*button:after {
+                content: '';
+                display: block;
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+                background-color: #1b2038;
+            }*/ }
+      .slick-dots li.slick-active button {
+        border-radius: 100%;
+        opacity: 1;
+        margin: 0;
+        padding: 1px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#f78d7a), to(#fac15e));
+        background-image: linear-gradient(to bottom, #f78d7a 0%, #fac15e 100%); }
 
 .slick-slider {
   cursor: url("https://www.google.com/intl/en_ALL/mapfiles/openhand.cur"), all-scroll;
@@ -16422,6 +16456,14 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     margin-top: 30px; }
     .item_building_dapp:first-child {
       margin-top: 0; }
+  .tomo_iframe_main_top {
+    text-align: center; }
+    .tomo_iframe_main_top img {
+      width: 300px; }
+  .tomo_iframe_gaming {
+    text-align: center; }
+    .tomo_iframe_gaming img {
+      width: 200px; }
       .animated .tomo_chart table td {
         padding: 5px 0px; }
     .post-navigation {
@@ -16433,7 +16475,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
               -ms-flex-pack: center;
                   justify-content: center; }
   h2.vc_custom_heading {
-    font-size: 2em; }
+    font-size: 1.7em; }
     .vc_custom_heading {
       text-align: center !important; }
       .vc_custom_heading .heading-line {
