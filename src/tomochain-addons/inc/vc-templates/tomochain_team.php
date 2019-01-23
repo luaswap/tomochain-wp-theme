@@ -40,7 +40,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
     </div>
     <?php if ( $hide ) : ?>
         <div class="tomochain-team__see-all-wrapper">
-            <a href="#" class="tomochain-team__see-all"><span><?php esc_html_e ( 'See all our team', 'tomochain-addons'); ?></span></a>
+            <a href="#" class="tomochain-team__see-all"><span><?php esc_html_e ( 'See all of our team', 'tomochain-addons'); ?></span></a>
         </div>
     <?php endif; ?>
     <?php if ( !$hide ) : ?>

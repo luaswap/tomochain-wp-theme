@@ -1,0 +1,231 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 355.48 316.5">
+	<defs>
+		<style>
+			@keyframes TomoPlus1 {
+				0% {
+					transform: translate(10px,10px);
+				}
+				50% {
+					transform: translate(40px,0px);
+				}
+				100% {
+					transform: translate(10px,10px);
+				}
+			}
+			#plus1 {
+				animation-name: TomoPlus1;
+				animation-iteration-count: infinite;
+				animation-duration: 10s;
+			}
+			@keyframes TomoItem1 {
+				0% {
+					transform: translateY(0px);
+				}
+				100% {
+					opacity: 0;
+					transform: translateY(-25px);
+				}
+			}
+			.item1 {
+				animation-name: TomoItem1;
+				animation-fill-mode: forwards;
+				animation-duration: 1s;
+			}
+			@keyframes TomoItem2 {
+				0% {
+					transform: translateY(0);
+					opacity: 1;
+				}
+				50% {
+					transform: translateY(-55px);
+				}
+				60% {
+					transform: translateY(-55px);
+					opacity: 1;
+				}
+				100% {
+					transform: translateY(-80px);
+					opacity: 0;
+				}
+			}
+			.item2 {
+				animation-name: TomoItem2;
+				animation-fill-mode: forwards;
+				animation-duration: 2.2s;
+			}
+			@keyframes TomoItem3 {
+				0% {
+					transform: translateY(55px);
+				}
+				30% {
+					transform: translateY(0px);
+				}
+				40% {
+					transform: translateY(0px);
+				}
+				70% {
+					transform: translateY(-55px);
+				}
+				80% {
+					transform: translateY(-55px);
+					opacity: 1;
+				}
+				100% {
+					transform: translateY(-80px);
+					opacity: 0;
+				}
+			}
+			.item3 {
+				opacity: 0;
+				animation-name: TomoItem3;
+				animation-iteration-count: infinite;
+				animation-duration: 4s;
+			}
+			.item4 {
+				opacity: 0;
+				animation-name: TomoItem3;
+				animation-iteration-count: infinite;
+				animation-duration: 4s;
+				animation-delay: 2s;
+			}
+			.item5 {
+				opacity: 0;
+				animation-name: TomoItem3;
+				animation-iteration-count: infinite;
+				animation-duration: 4s;
+				animation-delay: 4s;
+			}
+			@keyframes TomoCode {
+				0% {
+					transform: translateY(-10px);
+				}
+				10% {
+					transform: translateY(0px);
+				}
+				20% {
+					transform: translateY(-3px);
+				}
+				30% {
+					transform: translateY(0px);
+					opacity: 1;
+				}
+				90% {
+					opacity: 1;
+					transform: translateY(0px);
+				}
+				99% {
+					opacity: 0;
+					transform: translateY(0px);
+				}
+				100% {
+					opacity: 0;
+					transform: translateY(-10px);
+				}
+			}
+			.sacleImg {
+				transform: scale(.8);
+			}
+			.cls-1{fill:none;clip-rule:evenodd;}.cls-2{fill:url(#linear-gradient);}.cls-3{fill:#cfdafe;}.cls-4{fill:#fefefe;}.cls-5{fill:url(#linear-gradient-2);}.cls-6{fill:url(#linear-gradient-3);}.cls-7{fill:url(#linear-gradient-4);}.cls-8{fill:#c041c4;}.cls-9{fill:#b02dc7;}.cls-10{fill:url(#linear-gradient-5);}.cls-11{fill:#cb44cf;}.cls-12{fill:#c844de;}.cls-13{fill:#71e57b;}.cls-14{fill:#00c2c0;}.cls-15{fill:#a4ee6a;}.cls-16{fill:#d46597;}.cls-17{clip-path:url(#clip-path);}.cls-18{fill:#fff;}.cls-19{clip-path:url(#clip-path-2);}.cls-20{clip-path:url(#clip-path-3);}</style>
+		<linearGradient id="linear-gradient" x1="309.65" y1="283.26" x2="79.32" y2="115.18" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#6b42da"/>
+			<stop offset="1" stop-color="#391fb3"/>
+		</linearGradient>
+		<linearGradient id="linear-gradient-2" x1="70.32" y1="285.16" x2="355.48" y2="285.16" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#653af5"/>
+			<stop offset="1" stop-color="#3ea4ec"/>
+		</linearGradient>
+		<linearGradient id="linear-gradient-3" x1="261.52" y1="290.24" x2="220.05" y2="273.77" xlink:href="#linear-gradient"/>
+		<linearGradient id="linear-gradient-4" x1="118.95" y1="171.32" x2="269.27" y2="171.32" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#f64fa3"/>
+			<stop offset="1" stop-color="#fa72ac"/>
+		</linearGradient>
+		<linearGradient id="linear-gradient-5" x1="118.95" y1="227.15" x2="269.27" y2="227.15" gradientUnits="userSpaceOnUse">
+			<stop offset="0" stop-color="#f852a6"/>
+			<stop offset="1" stop-color="#f991be"/>
+		</linearGradient>
+		<clipPath id="clip-path">
+			<path class="cls-1" d="M265,79.56a4.58,4.58,0,0,1-3.23-1.32L248.08,64.76a4.43,4.43,0,0,1,0-6.35l13.73-13.48a4.61,4.61,0,0,1,6.46,0,4.43,4.43,0,0,1,0,6.35L257.78,61.59l10.49,10.3a4.43,4.43,0,0,1,0,6.35A4.58,4.58,0,0,1,265,79.56"/>
+		</clipPath>
+		<clipPath id="clip-path-2">
+			<path class="cls-1" d="M273.1,96a4.51,4.51,0,0,1-3-5.55l17.43-62.9a4.34,4.34,0,0,1,5.38-3.09,4.51,4.51,0,0,1,3,5.55L278.48,92.92a4.39,4.39,0,0,1-4.19,3.26A4,4,0,0,1,273.1,96Z"/>
+		</clipPath>
+		<clipPath id="clip-path-3">
+			<path class="cls-1" d="M300,79.56a4.62,4.62,0,0,1-3.24-1.32,4.44,4.44,0,0,1,0-6.35l10.49-10.3L296.78,51.28a4.44,4.44,0,0,1,0-6.35,4.62,4.62,0,0,1,6.47,0L317,58.41a4.43,4.43,0,0,1,0,6.35L303.25,78.24A4.58,4.58,0,0,1,300,79.56"/>
+		</clipPath>
+	</defs>
+	<title>Layer 9 (4)</title>
+	<g id="Layer_2" data-name="Layer 2">
+		<g id="Layer_9" data-name="Layer 9">
+			<rect class="cls-2" x="70.32" y="103.89" width="247.58" height="190.11" rx="7.39" ry="7.39"/>
+			<rect class="cls-3" x="90.47" y="119.37" width="207.28" height="159.16"/>
+			<rect class="cls-4" x="101.27" y="127.66" width="185.68" height="150.87"/>
+			<path class="cls-5" d="M70.32,276.32H355.48a0,0,0,0,1,0,0v9.78a7.9,7.9,0,0,1-7.9,7.9H77.47a7.15,7.15,0,0,1-7.15-7.15V276.32A0,0,0,0,1,70.32,276.32Z"/>
+			<path class="cls-6" d="M213.12,276.32h49.52a0,0,0,0,1,0,0v5.81a4.8,4.8,0,0,1-4.8,4.8H217.92a4.8,4.8,0,0,1-4.8-4.8v-5.81A0,0,0,0,1,213.12,276.32Z"/>
+			<g class="item5">
+				<rect class="cls-10" x="118.95" y="208.36" width="150.32" height="37.58"/>
+				<rect class="cls-4" x="127.79" y="214.99" width="15.47" height="15.47"/>
+				<rect class="cls-11" x="152.11" y="214.99" width="55.26" height="6.63"/>
+				<rect class="cls-12" x="152.11" y="223.83" width="88.42" height="6.63"/>
+			</g>
+			<g class="item4">
+				<rect class="cls-10" x="118.95" y="208.36" width="150.32" height="37.58"/>
+				<rect class="cls-4" x="127.79" y="214.99" width="15.47" height="15.47"/>
+				<rect class="cls-11" x="152.11" y="214.99" width="55.26" height="6.63"/>
+				<rect class="cls-12" x="152.11" y="223.83" width="88.42" height="6.63"/>
+			</g>
+			<g class="item3">
+				<rect class="cls-10" x="118.95" y="208.36" width="150.32" height="37.58"/>
+				<rect class="cls-4" x="127.79" y="214.99" width="15.47" height="15.47"/>
+				<rect class="cls-11" x="152.11" y="214.99" width="55.26" height="6.63"/>
+				<rect class="cls-12" x="152.11" y="223.83" width="88.42" height="6.63"/>
+			</g>
+			<g class="item2">
+				<rect class="cls-10" x="118.95" y="208.36" width="150.32" height="37.58"/>
+				<rect class="cls-4" x="127.79" y="214.99" width="15.47" height="15.47"/>
+				<rect class="cls-11" x="152.11" y="214.99" width="55.26" height="6.63"/>
+				<rect class="cls-12" x="152.11" y="223.83" width="88.42" height="6.63"/>
+			</g>
+			<g class="item1">
+				<rect class="cls-7" x="118.95" y="152.53" width="150.32" height="37.58"/>
+				<rect class="cls-4" x="127.79" y="159.16" width="15.47" height="15.47"/>
+				<rect class="cls-8" x="152.11" y="159.16" width="55.26" height="6.63"/>
+				<rect class="cls-9" x="152.11" y="168" width="88.42" height="6.63"/>
+			</g>
+			<path class="cls-13" d="M336.38,0H228.68a19.1,19.1,0,0,0-19.1,19.1v83.38a19.1,19.1,0,0,0,19.1,19.1H248l5.22,14.36a6,6,0,0,0,9.34,2.72l22.21-17.08h51.64a19.1,19.1,0,0,0,19.1-19.1V19.1A19.1,19.1,0,0,0,336.38,0Z"/>
+			<g transform="translate(-50, -30)">
+				<circle id="tomo1" class="cls-14 sacleImg" cx="11.32" cy="83.44" r="4.55"/>
+				<animateMotion
+					xlink:href="#tomo1"
+					dur="20s"
+					begin="0s"
+					fill="freeze"
+					repeatCount="indefinite">
+					<mpath xlink:href="#circle" />
+				</animateMotion>
+			</g>
+			<g transform="translate(-50, 10)">
+				<path id="tomo2" class="cls-15 sacleImg" d="M17,304.17H12.33V299.5a2.55,2.55,0,1,0-5.1,0v4.67H2.55a2.55,2.55,0,1,0,0,5.1H7.23V314a2.55,2.55,0,1,0,5.1,0v-4.68H17a2.55,2.55,0,1,0,0-5.1Z"/>
+				<animateMotion
+					xlink:href="#tomo2"
+					dur="20s"
+					begin="0s"
+					fill="freeze"
+					repeatCount="indefinite">
+					<mpath xlink:href="#circle" />
+				</animateMotion>
+			</g>
+			<g id="plus1">
+				<path id="circle" class="cls-16 sacleImg" d="M87.77,26.8H83.09V22.13a2.55,2.55,0,0,0-5.1,0V26.8H73.31a2.56,2.56,0,0,0,0,5.11H78v4.67a2.55,2.55,0,1,0,5.1,0V31.91h4.68a2.56,2.56,0,0,0,0-5.11Z"/>
+			</g>
+			<g class="cls-17">
+				<rect class="cls-18" x="242.51" y="39.38" width="31.33" height="44.41"/>
+			</g>
+			<g class="cls-19">
+				<rect class="cls-18" x="265.7" y="20.06" width="34.6" height="80.35"/>
+			</g>
+			<g class="cls-20">
+				<rect class="cls-18" x="291.21" y="39.38" width="31.33" height="44.41"/>
+			</g>
+		</g>
+	</g>
+</svg>

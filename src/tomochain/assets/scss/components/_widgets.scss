@@ -101,7 +101,12 @@
         }
     }
     #tomo-sendgrid-email {
-        padding: 9px 30px 10px 15px;
+        padding: 9px 50px 10px 15px;
+        &::placeholder {
+            @include media-breakpoint-down(sm) {
+                font-size: 12px;
+            }
+        }
     }
     #tomo-sendgrid-button {
         font-size: 0;
@@ -112,7 +117,7 @@
         right: 0;
         transform: translateY(-50%);
         height: 100%;
-        width: 30px;
+        width: 60px;
         background-color: transparent;
     }
     #tomo-sendgrid-button {
@@ -149,10 +154,7 @@
         }
         #tomo-sendgrid-email {
             font-size: 14px;
-            padding: 12px 70px 12px 40px;
-        }
-        #tomo-sendgrid-button {
-            padding-right: 40px;
+            padding: 12px 70px 12px 35px;
         }
         #tomo-sendgrid-button:after {
             font-size: 12px;
@@ -283,8 +285,8 @@
         padding: 0;
 
         &::placeholder {
-          color: #9eaacc;
-          font-size: 14px;
+            color: #9eaacc;
+            font-size: 14px;
         }
     }
 

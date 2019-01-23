@@ -38,6 +38,8 @@
 </div><!-- #page -->
 
 <?php wp_footer(); ?>
-
+<div class="popup_btn tomo_btn_tmp_grad">
+    <a href="https://t.me/tomochain" title="" target="_blank">Join our Telegram <i class="fab fa-telegram-plane"></i></a>
+</div>
 </body>
 </html>

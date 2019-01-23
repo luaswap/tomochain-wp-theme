@@ -1,236 +1,380 @@
 .tomochain-dapp {
-    text-align: center;
-    margin-top: 30px;
-    margin-bottom: 50px;
+	text-align: center;
+	margin-top: 30px;
+	margin-bottom: 50px;
 
-    &__image {
-        margin-bottom: 10px;
-    }
+	&__image {
+		margin-bottom: 10px;
+	}
 
-    &__name {
-        font-size: 18px;
-        font-weight: 600;
-        color: #66708a;
-        margin-bottom: 10px;
-    }
+	&__name {
+		font-size: 18px;
+		font-weight: 600;
+		color: #66708a;
+		margin-bottom: 10px;
+	}
 
-    &__description {
-        margin-bottom: 25px;
+	&__description {
+		margin-bottom: 25px;
 
-        @include media-breakpoint-up(md) {
-            text-align: justify;
-        }
-    }
+		@include media-breakpoint-up(md) {
+			text-align: justify;
+		}
+	}
 
-    &__links {
-        text-transform: uppercase;
-        color: #6b6ced;
+	&__links {
+		text-transform: uppercase;
+		color: #6b6ced;
 
-        a {
-            letter-spacing: 0.05em;
-            font-family: Quicksand;
-            font-size: 14px;
-            font-weight: 700;
-            margin-left: 10px;
-            margin-right: 10px;
-            color: #6b6ced;
-        }
+		a {
+			letter-spacing: 0.05em;
+			font-family: Quicksand;
+			font-size: 14px;
+			font-weight: 700;
+			margin-left: 10px;
+			margin-right: 10px;
+			color: #6b6ced;
+		}
 
-        a:before {
-            margin-right: 10px;
-            @extend .fas;
-        }
+		a:before {
+			margin-right: 10px;
+			@extend .fas;
+		}
 
-        a:hover {
-            color: #72b8fd;
-        }
+		a:hover {
+			color: #72b8fd;
+		}
 
-        @include media-breakpoint-up(md) {
-            a {
-                margin-left: 20px;
-                margin-right: 20px;
-            }
-        }
-    }
+		@include media-breakpoint-up(md) {
+			a {
+				margin-left: 20px;
+				margin-right: 20px;
+			}
+		}
+	}
 
-    &__run:before {
-        content: fa-content($fa-var-arrow-right);
-    }
+	&__run:before {
+		content: fa-content($fa-var-arrow-right);
+	}
 
-    &__source:before {
-        content: fa-content($fa-var-code);
-    }
+	&__source:before {
+		content: fa-content($fa-var-code);
+	}
 }
 
 .tomochain-dapp--2 {
-    .tomochain-dapp__image {
-        border-radius: 10px;
-        padding: 50px 30px;
-        background-image: linear-gradient(-180deg, #434f74 0%, #333e61 87%);
-        margin-bottom: 30px;
+	.tomochain-dapp__image {
+		border-radius: 10px;
+		padding: 50px 30px;
+		background-image: linear-gradient(-180deg, #434f74 0%, #333e61 87%);
+		margin-bottom: 30px;
 
-        img {
-            max-width: 60%;
-        }
-    }
+		img {
+			max-width: 60%;
+		}
+	}
 
-    .tomochain-dapp__description {
-        text-align: left;
-        line-height: 22px;
-    }
+	.tomochain-dapp__description {
+		text-align: left;
+		line-height: 22px;
+	}
 
-    .tomochain-dapp__links {
-        text-align: left;
+	.tomochain-dapp__links {
+		text-align: left;
 
-        a {
-            margin-left: 0;
-            margin-right: 20px;
-        }
-    }
+		a {
+			margin-left: 0;
+			margin-right: 20px;
+		}
+	}
 
-    @include media-breakpoint-up(md) {
-        display: grid;
-        grid-template-columns: 30% 70%;
-        margin-bottom: 80px;
+	@include media-breakpoint-up(md) {
+		display: grid;
+		grid-template-columns: 30% 70%;
+		margin-bottom: 80px;
 
-        .tomochain-dapp__image {
-            position: relative;
-            padding: 20px;
-            margin-bottom: 0;
+		.tomochain-dapp__image {
+			position: relative;
+			padding: 20px;
+			margin-bottom: 0;
 
-            img {
-                position: absolute;
-                top: 50%;
-                left: 50%;
-                transform: translate(-50%, -50%);
-            }
-        }
+			img {
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				transform: translate(-50%, -50%);
+			}
+		}
 
-        .tomochain-dapp__info {
-            padding-left: 30px;
-        }
+		.tomochain-dapp__info {
+			padding-left: 30px;
+		}
 
-        .tomochain-dapp__description {
-            text-align: justify;
-        }
+		.tomochain-dapp__description {
+			text-align: justify;
+		}
 
-        html[lang="ja"] & {
-            grid-template-columns: 22% 78%;
-        }
-    }
+		html[lang="ja"] & {
+			grid-template-columns: 22% 78%;
+		}
+	}
 
-    @include media-breakpoint-up(lg) {
-        grid-template-columns: 25% 75%;
+	@include media-breakpoint-up(lg) {
+		grid-template-columns: 25% 75%;
 
-        .tomochain-dapp__image {
-            align-self: start;
-            min-height: 200px;
-        }
-    }
+		.tomochain-dapp__image {
+			align-self: start;
+			min-height: 200px;
+		}
+	}
 }
 
 // Begin New dApp 16012019
 .box_flexbox {
-    display: flex;
-    a {
-        padding: 0 35px 0 0!important;
-        &:first-child {
-            margin-right: 15px;
-            @include media-breakpoint-up(lg) {
-                margin-right: 100px;
-            }
-        }
-    }
+	display: flex;
+	a {
+		padding: 0 35px 0 0!important;
+		&:first-child {
+			margin-right: 15px;
+			@include media-breakpoint-up(lg) {
+				margin-right: 100px;
+			}
+		}
+	}
 }
 .img_size100px {
-    img {
-        height: 100px!important;
-        width: auto!important;
-    }
+	img {
+		height: 100px!important;
+		width: auto!important;
+	}
 }
 .tomochain-dapp {
-    text-align: left;
-    .dapp-list {
-        .tomochain-dapp-item {
-            padding: 1.5em 0;
-            border-top: 2px solid #333867;
-            @include media-breakpoint-up(lg) {
-                padding: 3em 0;
-            }
-            &:first-child {
-                border-top: 0;
-                padding-top: 0;
-            }
-            @include media-breakpoint-up(md) {
-                display: flex;
-                align-items: flex-start;
-            }
-            .dapp-thumbnail {
-                border-radius: 10px;
-                overflow: hidden;
-                @include media-breakpoint-up(md) {
-                    width: 35%;
-                }
-                @include media-breakpoint-down(md) {
-                    margin-bottom: 1.5em;
-                }
-            }
-            .dapp-info {
-                @include media-breakpoint-up(md) {
-                    width: 65%;
-                    padding-left: 3em;
-                }
-                @include media-breakpoint-down(sm) {
-                    text-align: center;
-                    .box_flexbox {
-                        justify-content: center;
-                    }
-                }
-                .dapp-content {
-                    margin: 1.5em 0;
-                    p {
-                        margin: 0;
-                    }
-                }
-                .dapp-title {
-                    font-size: 20px;
-                    font-family: Quicksand,sans-serif;
-                    margin: 0;
-                }
-            }
-        }
-    }
-    .tomochain-pagination {
-        @include media-breakpoint-up(md) {
-            margin-top: 50px;
-        }
-    }
+	.dapp-list {
+		text-align: left;
+		.tomochain-dapp-item {
+			padding: 1.5em 0;
+			border-top: 2px solid #333867;
+			@include media-breakpoint-up(lg) {
+				padding: 3em 0;
+			}
+			&:first-child {
+				border-top: 0;
+				padding-top: 0;
+			}
+			@include media-breakpoint-up(md) {
+				display: flex;
+				align-items: flex-start;
+			}
+			.dapp-thumbnail {
+				border-radius: 10px;
+				overflow: hidden;
+				@include media-breakpoint-up(md) {
+					width: 35%;
+				}
+				@include media-breakpoint-down(md) {
+					margin-bottom: 1.5em;
+				}
+			}
+			.dapp-info {
+				@include media-breakpoint-up(md) {
+					width: 65%;
+					padding-left: 3em;
+				}
+				@include media-breakpoint-down(sm) {
+					text-align: center;
+					.box_flexbox {
+						justify-content: center;
+					}
+				}
+				.dapp-content {
+					margin: 1.5em 0;
+					p {
+						margin: 0;
+					}
+				}
+				.dapp-title {
+					font-size: 20px;
+					font-family: Quicksand,sans-serif;
+					margin: 0;
+				}
+			}
+		}
+	}
+	.tomochain-pagination {
+		@include media-breakpoint-up(md) {
+			margin-top: 50px;
+		}
+	}
 }
 .bg_full_dapp {
-    position: relative;
-    z-index: 1;
-    &:before {
-        content: '';
-        background: url(../tomochain/assets/images/bg_footer_dapp.jpg) no-repeat center;
-        height: 100%;
-        width: 200%;
-        position: absolute;
-        left: -50%;
-        top: 0;
-        z-index: 0;
-        display: block!important;
-    }
-    .vc_column-inner>.wpb_wrapper {
-        background: #252f5a;
-        max-width: 700px;
-        margin: 0 auto;
-        padding: 30px 15px;
-        border-radius: 10px;
-        overflow: hidden;
-        @include media-breakpoint-up(md) {
-            padding: 50px;
-        }
-    }
+	position: relative;
+	z-index: 1;
+	&:before {
+		content: '';
+		background: url(../tomochain/assets/images/bg_footer_dapp.jpg) no-repeat center;
+		height: 320px;
+		width: 200%;
+		position: absolute;
+		left: -50%;
+		top: 0;
+		z-index: 0;
+		display: block!important;
+	}
+	>.vc_column_container>.vc_column-inner>.wpb_wrapper {
+		background: #252f5a;
+		max-width: 700px;
+		margin: 0 auto;
+		padding: 30px 15px 70px;
+		border-radius: 10px;
+		overflow: hidden;
+		@include media-breakpoint-up(md) {
+			padding: 50px 50px 100px;
+		}
+	}
 }
-
 // End New dApp 16012019
+
+// Begin style form DApps
+.dapp_form {
+	.main_form_dapp {
+		display: none;
+		margin-bottom: -44px!important;
+		.form_dapps {
+			margin-top: 50px;
+			.form-title {
+				font-size: 18px;
+				font-family: Quicksand,sans-serif;
+				margin: 0;
+				text-align: center;
+				margin: 30px 0;
+			}
+			.form-group-tomo {
+				margin-top: 15px;
+				p {
+					margin: 0;
+				}
+				.inp_lable {
+					margin-bottom: 15px;
+				}
+				input,
+				textarea {
+					background: #808bab;
+					padding: .7em 1.5em;
+					border-radius: 5px;
+					color: #252f5a;
+					&::placeholder {
+						color: #535d86;
+					}
+				}
+				&.checkbox {
+					.Category {
+						color: #27315c;
+						display: block;
+						>span {
+							display: flex;
+							flex-wrap: wrap;
+							align-items: center;
+							>span {
+								display: flex;
+								align-items: center;
+								justify-content: center;
+								margin: 0 1em 1em 0;
+								@include media-breakpoint-down(md) {
+									margin: 0 .5em .5em 0;
+								}
+								input {
+									display: none;
+									~ span {
+										background: #808bab;
+										display: inline-block;
+										border-radius: 5px;
+										padding: 6px 12px;
+										cursor: pointer;
+										transition: all .4s ease;
+										@include media-breakpoint-down(md) {
+											padding: 2px 6px;
+										}
+										&:hover {
+											background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
+											color: #fff;
+										}
+									}
+									&:checked ~ span {
+										background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
+										color: #fff;
+									}
+								}
+								label{
+									margin: 0;
+								}
+							}
+						}
+					}
+				}
+			}
+			.flexbox {
+				@include media-breakpoint-up(md) {
+					display: flex;
+					.form-group-tomo {
+						margin-top: 0;
+						&:first-child {
+							padding-right: 15px;
+						}
+						&:last-child {
+							padding-left: 15px;
+						}
+					}
+				}
+			}
+			.form-submit-tomo {
+				margin-top: 50px;
+			}
+			textarea {
+				height: 120px;
+			}
+			.btn_submit {
+				background-color: transparent;
+				border: 1px solid #48A5FF;
+				border-radius: 6px;
+				color: #fff;
+				padding: 10px 30px;
+				line-height: 16px;
+				min-width: 150px;
+				height: 38px;
+				font-family: 'Quicksand', sans-serif;
+				cursor: pointer;
+				transition: all .4s ease;
+				&:hover {
+					background: #534BFF;
+					border: 1px solid transparent;
+				}
+			}
+			.ajax-loader {
+				background-image: url(assets/images/loading.svg) !important;
+				background-repeat: no-repeat!important;
+				background-position: center!important;
+				display: block!important;
+				height: 16px!important;
+				width: 100%!important;
+				margin-top: 15px!important;
+			}
+			.wpcf7-not-valid-tip {
+				color: #FF924E!important;
+				font-size: 12px!important;
+			}
+		}
+	}
+	.wpcf7-validation-errors,
+	.wpcf7-response-output {
+		border: 0!important;
+		text-align: center!important;
+		color: #fff!important;
+	}
+	.btn_submit_dapp {
+		margin-bottom: -42px!important;
+	}
+	.btn_submit_dapp,
+	.btn_close_dapp {
+		text-align: center;
+	}
+}

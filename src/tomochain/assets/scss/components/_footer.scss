@@ -78,3 +78,13 @@
     }
 
 }
+
+.popup_btn {
+    position: fixed;
+    bottom: 2em;
+    right: 2em;
+    z-index: 9;
+    @include media-breakpoint-down(sm) {
+        display: none;
+    }
+}

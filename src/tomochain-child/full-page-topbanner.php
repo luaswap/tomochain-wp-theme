@@ -2,7 +2,7 @@
 /* Template name: Full page Topbanner */
 
 get_header(); ?>
-	<div class="tomo-page-title-contact"><img src="../tomochain/assets/images/contact.jpg" alt=""></div>
+	<div class="tomo-page-title-contact"></div>
 	<div id="primary" class="content-area">
 		<main id="main" class="site-main">
 			<div class="container">
@@ -24,7 +24,6 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
-
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php

@@ -371,7 +371,7 @@ msgid "TomoChain addons plugin only works with the TomoChain theme."
 msgstr ""
 
 #: src/tomochain-addons/inc/templates/tomochain_team.php:43
-msgid "See all our team"
+msgid "See all of our team"
 msgstr "显示更多"
 
 #: src/tomochain-addons/inc/templates/tomochain_video_item.php:40

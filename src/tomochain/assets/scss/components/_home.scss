@@ -52,13 +52,13 @@
 	}
 }
 .pad_right_30 {
-	@include media-breakpoint-up(lg) {
-		padding-right: 15px!important;
+	@include media-breakpoint-up(xl) {
+		padding-right: 30px!important;
 	}
 }
 .pad_left_30 {
-	@include media-breakpoint-up(lg) {
-		padding-left: 15px!important;
+	@include media-breakpoint-up(xl) {
+		padding-left: 30px!important;
 	}
 }
 /** Style font **/
@@ -79,6 +79,9 @@
 /**-------------------------------
 	Style content
 ----------------------------------**/
+.float-left .vc_custom_heading .heading-line {
+	margin-bottom: 40px;
+}
 iframe.sp_set_height {
 	@include media-breakpoint-down(md) {
 		height: 300px !important;
@@ -179,6 +182,10 @@ iframe.sp_set_height {
 		@keyframes full_height1 {
 			0% {
 				height: 0px;
+				opacity: 0;
+			}
+			60% {
+				opacity: 1;
 			}
 			80% {
 				height: 202px;
@@ -190,6 +197,10 @@ iframe.sp_set_height {
 		@keyframes full_height1_2 {
 			0% {
 				height: 0px;
+				opacity: 0;
+			}
+			60% {
+				opacity: 1;
 			}
 			80% {
 				height: 194px;
@@ -201,6 +212,10 @@ iframe.sp_set_height {
 		@keyframes full_height2 {
 			0% {
 				height: 0px;
+				opacity: 0;
+			}
+			60% {
+				opacity: 1;
 			}
 			80% {
 				height: 20px;
@@ -212,6 +227,10 @@ iframe.sp_set_height {
 		@keyframes full_height3 {
 			0% {
 				height: 0px;
+				opacity: 0;
+			}
+			60% {
+				opacity: 1;
 			}
 			80% {
 				height: 52px;
@@ -223,6 +242,10 @@ iframe.sp_set_height {
 		@keyframes full_height4 {
 			0% {
 				height: 0px;
+				opacity: 0;
+			}
+			60% {
+				opacity: 1;
 			}
 			80% {
 				height: 152px;
@@ -235,6 +258,9 @@ iframe.sp_set_height {
 			0% {
 				height: 0px;
 			}
+			60% {
+				opacity: 1;
+			}
 			80% {
 				height: 194px;
 			}
@@ -245,6 +271,10 @@ iframe.sp_set_height {
 		@keyframes full_height5_2 {
 			0% {
 				height: 0px;
+				opacity: 0;
+			}
+			60% {
+				opacity: 1;
 			}
 			80% {
 				height: 54px;
@@ -256,6 +286,10 @@ iframe.sp_set_height {
 		@keyframes full_height6 {
 			0% {
 				height: 0px;
+				opacity: 0;
+			}
+			60% {
+				opacity: 1;
 			}
 			80% {
 				height: 133px;
@@ -267,6 +301,10 @@ iframe.sp_set_height {
 		@keyframes full_height7 {
 			0% {
 				height: 0px;
+				opacity: 0;
+			}
+			60% {
+				opacity: 1;
 			}
 			80% {
 				height: 172px;
@@ -313,21 +351,23 @@ iframe.sp_set_height {
 		}
 		.chart_blue {
 			background-image: linear-gradient(#698AF5 30%, #7965F1 100%) !important;
+			color: #8E96E1;
 			position: relative;
 			width: 6px;
 			height: 0;
 			animation-duration: 1.5s;
+			animation-timing-function: ease;
 			animation-fill-mode: forwards;
-			color: #8E96E1;
 		}
 		.chart_origin {
 			background-image: linear-gradient(#FFDD72 30%, #FF7B7A 100%) !important;
+			color: #E1A382;
 			position: relative;
 			width: 6px;
 			animation-duration: 1.5s;
-			animation-delay: .5s;
+			animation-delay: .3s;
+			animation-timing-function: ease;
 			animation-fill-mode: forwards;
-			color: #E1A382;
 		}
 		table {
 			color: #5D66B2;
@@ -338,6 +378,13 @@ iframe.sp_set_height {
 				padding: 5px 10px;
 				height: 30px;
 				vertical-align: bottom;
+				&:last-child {
+					text-align: right;
+				}
+				&:first-child {
+					white-space: nowrap;
+					text-align: left;
+				}
 				@include media-breakpoint-down(sm) {
 					padding: 5px 0px;
 				}
