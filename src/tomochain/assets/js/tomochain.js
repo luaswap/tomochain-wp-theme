@@ -130,24 +130,33 @@ var tomochain
 
 (
     function ($) {
+        $(".btn_submit_dapp .btn-tmp-basic").click(function() {
+            $(".btn_submit_dapp").fadeOut("slow");
+            $(".main_form_dapp").fadeIn("slow");
+        });
+        $(".btn_close_dapp .btn-tmp-basic").click(function() {
+            $(".btn_submit_dapp").fadeIn("slow");
+            $(".main_form_dapp").fadeOut("slow");
+        });
+
         tomochain.dapp_get_post = function ($params) {
 
-                var $wrapper = $('.tomochain-dapp-main');
-                    $wrapper.addClass('loading');
-                $.ajax({
-                    url: tomochainConfigs.ajax_url,
-                    type: 'POST',
-                    data: ({
-                        action: 'tomochain_dapp_ajax',
-                        params: $params
-                    }),
-                    dataType: 'html',
+            var $wrapper = $('.tomochain-dapp-main');
+                $wrapper.addClass('loading');
+            $.ajax({
+                url: tomochainConfigs.ajax_url,
+                type: 'POST',
+                data: ({
+                    action: 'tomochain_dapp_ajax',
+                    params: $params
+                }),
+                dataType: 'html',
 
-                    success: function ( data ) {
-                        $wrapper.removeClass('loading');
-                        $wrapper.html(data);
-                    }
-                });
+                success: function ( data ) {
+                    $wrapper.removeClass('loading');
+                    $wrapper.html(data);
+                }
+            });
         }
     }
 )(jQuery);
@@ -249,6 +258,7 @@ var tomochain
         });
     }
 })(jQuery);
+
 
 
 (

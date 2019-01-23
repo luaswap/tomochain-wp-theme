@@ -7633,7 +7633,7 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
-.tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-tmp-color-gradient a:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts,
+.tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-tmp-color-gradient a:after, .btn-tmp-basic:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts,
 .tomochain-dapp-main .archive-posts, .site-header, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
 .main-menu .menu li.menu-item.page_item_has_children > a:before,
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
@@ -8782,13 +8782,15 @@ input[type="submit"] {
   color: #fff !important;
   padding: 10px 30px !important;
   line-height: 16px !important;
-  min-width: 150px !important;
+  min-width: 180px !important;
   height: 38px !important;
   position: relative !important;
   overflow: hidden !important;
   z-index: 1 !important;
   font-weight: 400 !important;
   border: 0 !important;
+  display: inline-block !important;
+  cursor: pointer;
   font-family: "Quicksand", sans-serif !important; }
   .btn-tmp-color-gradient a:after {
     content: '';
@@ -8802,6 +8804,35 @@ input[type="submit"] {
     z-index: -1;
     opacity: 1; }
   .btn-tmp-color-gradient a:hover:after {
+    opacity: 0; }
+
+.btn-tmp-basic {
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #48A5FF), to(#534BFF));
+  background: linear-gradient(#48A5FF 30%, #534BFF 100%);
+  border-radius: 6px;
+  color: #fff;
+  padding: 10px 30px;
+  line-height: 16px;
+  min-width: 150px;
+  border: 0;
+  display: inline-block;
+  cursor: pointer;
+  z-index: 1;
+  overflow: hidden;
+  font-family: 'Quicksand', sans-serif;
+  position: relative; }
+  .btn-tmp-basic:after {
+    content: '';
+    background-color: #21274e;
+    height: calc(100% - 2px);
+    width: calc(100% - 2px);
+    border-radius: 6px;
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    z-index: -1;
+    opacity: 1; }
+  .btn-tmp-basic:hover:after {
     opacity: 0; }
 
 .btn-downios {
@@ -10256,6 +10287,44 @@ This is where majority of our work takes place and our UI components are often c
     padding-top: 20px;
     padding-bottom: 40px; }
 
+.popup_btn {
+  position: fixed;
+  bottom: 2em;
+  right: 2em;
+  z-index: 9; }
+  .popup_btn.hide-second {
+    display: none; }
+  .popup_btn .close {
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #252f5a;
+    border-radius: 50%;
+    color: #fff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 20px;
+    width: 20px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    position: absolute;
+    text-transform: lowercase;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    font-size: 1.5em;
+    right: -10px;
+    top: -20px;
+    line-height: 1;
+    z-index: 99;
+    opacity: 0; }
+    .popup_btn .close:hover {
+      background-color: #352f5a; }
+  .popup_btn:hover .close {
+    opacity: 1; }
+
 .site-header {
   position: relative;
   -webkit-transition: all .5s ease, background 1.2s ease;
@@ -10351,13 +10420,15 @@ This is where majority of our work takes place and our UI components are often c
 
 /** Style padding **/
 .pad_lef_right_10 {
-  padding: 0 10%; }
+  padding: 0 2%; }
 
 /** Style font **/
 
 /**-------------------------------
 	Style content
 ----------------------------------**/
+.float-left .vc_custom_heading .heading-line {
+  margin-bottom: 40px; }
 
 .item_building_dapp > .vc_column-inner > .wpb_wrapper {
   background-color: #252f5a;
@@ -10392,7 +10463,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @-webkit-keyframes full_height1 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 202px; }
   100% {
@@ -10400,7 +10474,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @keyframes full_height1 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 202px; }
   100% {
@@ -10408,7 +10485,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @-webkit-keyframes full_height1_2 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 194px; }
   100% {
@@ -10416,7 +10496,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @keyframes full_height1_2 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 194px; }
   100% {
@@ -10424,7 +10507,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @-webkit-keyframes full_height2 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 20px; }
   100% {
@@ -10432,7 +10518,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @keyframes full_height2 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 20px; }
   100% {
@@ -10440,7 +10529,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @-webkit-keyframes full_height3 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 52px; }
   100% {
@@ -10448,7 +10540,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @keyframes full_height3 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 52px; }
   100% {
@@ -10456,7 +10551,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @-webkit-keyframes full_height4 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 152px; }
   100% {
@@ -10464,7 +10562,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @keyframes full_height4 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 152px; }
   100% {
@@ -10473,6 +10574,8 @@ This is where majority of our work takes place and our UI components are often c
 @-webkit-keyframes full_height5 {
   0% {
     height: 0px; }
+  60% {
+    opacity: 1; }
   80% {
     height: 194px; }
   100% {
@@ -10481,6 +10584,8 @@ This is where majority of our work takes place and our UI components are often c
 @keyframes full_height5 {
   0% {
     height: 0px; }
+  60% {
+    opacity: 1; }
   80% {
     height: 194px; }
   100% {
@@ -10488,7 +10593,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @-webkit-keyframes full_height5_2 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 54px; }
   100% {
@@ -10496,7 +10604,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @keyframes full_height5_2 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 54px; }
   100% {
@@ -10504,7 +10615,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @-webkit-keyframes full_height6 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 133px; }
   100% {
@@ -10512,7 +10626,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @keyframes full_height6 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 133px; }
   100% {
@@ -10520,7 +10637,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @-webkit-keyframes full_height7 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 172px; }
   100% {
@@ -10528,7 +10648,10 @@ This is where majority of our work takes place and our UI components are often c
 
 @keyframes full_height7 {
   0% {
-    height: 0px; }
+    height: 0px;
+    opacity: 0; }
+  60% {
+    opacity: 1; }
   80% {
     height: 172px; }
   100% {
@@ -10582,27 +10705,31 @@ This is where majority of our work takes place and our UI components are often c
 .animated .tomo_chart .chart_blue {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #698AF5), to(#7965F1)) !important;
   background-image: linear-gradient(#698AF5 30%, #7965F1 100%) !important;
+  color: #8E96E1;
   position: relative;
   width: 6px;
   height: 0;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  color: #8E96E1; }
+          animation-fill-mode: forwards; }
 
 .animated .tomo_chart .chart_origin {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #FFDD72), to(#FF7B7A)) !important;
   background-image: linear-gradient(#FFDD72 30%, #FF7B7A 100%) !important;
+  color: #E1A382;
   position: relative;
   width: 6px;
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
-  -webkit-animation-delay: .5s;
-          animation-delay: .5s;
+  -webkit-animation-delay: .3s;
+          animation-delay: .3s;
+  -webkit-animation-timing-function: ease;
+          animation-timing-function: ease;
   -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
-  color: #E1A382; }
+          animation-fill-mode: forwards; }
 
 .animated .tomo_chart table {
   color: #5D66B2;
@@ -10613,6 +10740,11 @@ This is where majority of our work takes place and our UI components are often c
     padding: 5px 10px;
     height: 30px;
     vertical-align: bottom; }
+    .animated .tomo_chart table td:last-child {
+      text-align: right; }
+    .animated .tomo_chart table td:first-child {
+      white-space: nowrap;
+      text-align: left; }
     .animated .tomo_chart table td div {
       display: inline-block; }
   .animated .tomo_chart table .st_1 td,
@@ -10993,6 +11125,21 @@ This is where majority of our work takes place and our UI components are often c
 .font_quicksand {
   font-family: Quicksand, sans-serif !important; }
 
+.tomo-page-title-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background: url(assets/images/contact.jpg) no-repeat center;
+  background-size: cover;
+  height: 200px; }
+
 .tomochain-pagination, .woocommerce-pagination {
   margin-bottom: 80px; }
   .tomochain-pagination.woocommerce-pagination, .woocommerce-pagination {
@@ -11037,7 +11184,7 @@ This is where majority of our work takes place and our UI components are often c
 
 .tomochain-pagination .current, .woocommerce-pagination .current {
   position: relative;
-  color: #808aa9;
+  color: #6b6ced;
   font-weight: 500; }
 
 .tomochain-pagination ul li a, .woocommerce-pagination ul li a {
@@ -11377,7 +11524,7 @@ article.post-loop {
   height: 100px !important;
   width: auto !important; }
 
-.tomochain-dapp {
+.tomochain-dapp .dapp-list {
   text-align: left; }
   .tomochain-dapp .dapp-list .tomochain-dapp-item {
     padding: 1.5em 0;
@@ -11403,20 +11550,140 @@ article.post-loop {
   .bg_full_dapp:before {
     content: '';
     background: url(../tomochain/assets/images/bg_footer_dapp.jpg) no-repeat center;
-    height: 100%;
+    height: 320px;
     width: 200%;
     position: absolute;
     left: -50%;
     top: 0;
     z-index: 0;
     display: block !important; }
-  .bg_full_dapp .vc_column-inner > .wpb_wrapper {
+  .bg_full_dapp > .vc_column_container > .vc_column-inner > .wpb_wrapper {
     background: #252f5a;
     max-width: 700px;
     margin: 0 auto;
-    padding: 30px 15px;
+    padding: 30px 15px 70px;
     border-radius: 10px;
     overflow: hidden; }
+
+.dapp_form .main_form_dapp {
+  display: none;
+  margin-bottom: -44px !important; }
+  .dapp_form .main_form_dapp .form_dapps {
+    margin-top: 50px; }
+    .dapp_form .main_form_dapp .form_dapps .form-title {
+      font-size: 18px;
+      font-family: Quicksand,sans-serif;
+      margin: 0;
+      text-align: center;
+      margin: 30px 0; }
+    .dapp_form .main_form_dapp .form_dapps .form-group-tomo {
+      margin-top: 15px; }
+      .dapp_form .main_form_dapp .form_dapps .form-group-tomo p {
+        margin: 0; }
+      .dapp_form .main_form_dapp .form_dapps .form-group-tomo .inp_lable {
+        margin-bottom: 15px; }
+      .dapp_form .main_form_dapp .form_dapps .form-group-tomo input,
+      .dapp_form .main_form_dapp .form_dapps .form-group-tomo textarea {
+        background: #808bab;
+        padding: .7em 1.5em;
+        border-radius: 5px;
+        color: #252f5a; }
+        .dapp_form .main_form_dapp .form_dapps .form-group-tomo input::-webkit-input-placeholder,
+        .dapp_form .main_form_dapp .form_dapps .form-group-tomo textarea::-webkit-input-placeholder {
+          color: #535d86; }
+        .dapp_form .main_form_dapp .form_dapps .form-group-tomo input::-ms-input-placeholder,
+        .dapp_form .main_form_dapp .form_dapps .form-group-tomo textarea::-ms-input-placeholder {
+          color: #535d86; }
+        .dapp_form .main_form_dapp .form_dapps .form-group-tomo input::placeholder,
+        .dapp_form .main_form_dapp .form_dapps .form-group-tomo textarea::placeholder {
+          color: #535d86; }
+      .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category {
+        color: #27315c;
+        display: block; }
+        .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category > span {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -ms-flex-wrap: wrap;
+              flex-wrap: wrap;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center; }
+          .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category > span > span {
+            display: -webkit-box;
+            display: -ms-flexbox;
+            display: flex;
+            -webkit-box-align: center;
+                -ms-flex-align: center;
+                    align-items: center;
+            -webkit-box-pack: center;
+                -ms-flex-pack: center;
+                    justify-content: center;
+            margin: 0 1em 1em 0; }
+            .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category > span > span input {
+              display: none; }
+              .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category > span > span input ~ span {
+                background: #808bab;
+                display: inline-block;
+                border-radius: 5px;
+                padding: 6px 12px;
+                cursor: pointer;
+                -webkit-transition: all .4s ease;
+                transition: all .4s ease; }
+                .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category > span > span input ~ span:hover {
+                  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #48A5FF), to(#534BFF));
+                  background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
+                  color: #fff; }
+              .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category > span > span input:checked ~ span {
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #48A5FF), to(#534BFF));
+                background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
+                color: #fff; }
+            .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category > span > span label {
+              margin: 0; }
+    .dapp_form .main_form_dapp .form_dapps .form-submit-tomo {
+      margin-top: 50px; }
+    .dapp_form .main_form_dapp .form_dapps textarea {
+      height: 120px; }
+    .dapp_form .main_form_dapp .form_dapps .btn_submit {
+      background-color: transparent;
+      border: 1px solid #48A5FF;
+      border-radius: 6px;
+      color: #fff;
+      padding: 10px 30px;
+      line-height: 16px;
+      min-width: 150px;
+      height: 38px;
+      font-family: 'Quicksand', sans-serif;
+      cursor: pointer;
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease; }
+      .dapp_form .main_form_dapp .form_dapps .btn_submit:hover {
+        background: #534BFF;
+        border: 1px solid transparent; }
+    .dapp_form .main_form_dapp .form_dapps .ajax-loader {
+      background-image: url(assets/images/loading.svg) !important;
+      background-repeat: no-repeat !important;
+      background-position: center !important;
+      display: block !important;
+      height: 16px !important;
+      width: 100% !important;
+      margin-top: 15px !important; }
+    .dapp_form .main_form_dapp .form_dapps .wpcf7-not-valid-tip {
+      color: #FF924E !important;
+      font-size: 12px !important; }
+
+.dapp_form .wpcf7-validation-errors,
+.dapp_form .wpcf7-response-output {
+  border: 0 !important;
+  text-align: center !important;
+  color: #fff !important; }
+
+.dapp_form .btn_submit_dapp {
+  margin-bottom: -42px !important; }
+
+.dapp_form .btn_submit_dapp,
+.dapp_form .btn_close_dapp {
+  text-align: center; }
 
 .tomochain-event-item {
   text-align: center;
@@ -11633,8 +11900,8 @@ article.post-loop {
       left: -15px; }
 
 .tomochain-roadmap-item--current .roadmap-deco:before {
-  background-image: -webkit-gradient(linear, left top, right top, from(#e78875), color-stop(80%, #181631));
-  background-image: linear-gradient(90deg, #e78875 0%, #181631 80%); }
+  background-image: -webkit-gradient(linear, left top, right top, from(#e78875), color-stop(80%, #3B4669));
+  background-image: linear-gradient(90deg, #e78875 0%, #3B4669 80%); }
 
 .tomochain-roadmap-item--current .roadmap-deco:after {
   background-image: -webkit-gradient(linear, left top, left bottom, from(#ea8f73), color-stop(80%, rgba(29, 23, 58, 0)));
@@ -12053,7 +12320,7 @@ article.post-loop {
       content: "\f00c";
       font-size: 16px; }
   .widget_tomo_sendgrid #tomo-sendgrid-email {
-    padding: 9px 30px 10px 15px; }
+    padding: 9px 50px 10px 15px; }
   .widget_tomo_sendgrid #tomo-sendgrid-button {
     font-size: 0;
     border: none;
@@ -12064,7 +12331,7 @@ article.post-loop {
     -webkit-transform: translateY(-50%);
             transform: translateY(-50%);
     height: 100%;
-    width: 30px;
+    width: 60px;
     background-color: transparent; }
   .widget_tomo_sendgrid #tomo-sendgrid-button:before {
     content: '';
@@ -12340,20 +12607,22 @@ body.info-opened:after {
         outline: 0; }
       .slick-dots li button:hover {
         opacity: .75; }
-    .slick-dots li.slick-active button {
-      border-radius: 100%;
-      opacity: 1;
-      margin: 0;
-      padding: 1px;
-      background-image: -webkit-gradient(linear, left top, left bottom, from(#f78d7a), to(#fac15e));
-      background-image: linear-gradient(to bottom, #f78d7a 0%, #fac15e 100%); }
-    .slick-dots li.slick-active button:after {
-      content: '';
-      display: block;
-      height: 100%;
-      width: 100%;
-      border-radius: 100%;
-      background-color: #1b2038; }
+    .slick-dots li.slick-active {
+      /*button:after {
+                content: '';
+                display: block;
+                height: 100%;
+                width: 100%;
+                border-radius: 100%;
+                background-color: #1b2038;
+            }*/ }
+      .slick-dots li.slick-active button {
+        border-radius: 100%;
+        opacity: 1;
+        margin: 0;
+        padding: 1px;
+        background-image: -webkit-gradient(linear, left top, left bottom, from(#f78d7a), to(#fac15e));
+        background-image: linear-gradient(to bottom, #f78d7a 0%, #fac15e 100%); }
 
 .slick-slider {
   cursor: url("https://www.google.com/intl/en_ALL/mapfiles/openhand.cur"), all-scroll;
@@ -14183,10 +14452,20 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
         width: 65%;
         padding-left: 3em; }
-    .tomochain-dapp .tomochain-pagination, .tomochain-dapp .woocommerce-pagination {
-      margin-top: 50px; }
-      .bg_full_dapp .vc_column-inner > .wpb_wrapper {
-        padding: 50px; }
+  .tomochain-dapp .tomochain-pagination, .tomochain-dapp .woocommerce-pagination {
+    margin-top: 50px; }
+      .bg_full_dapp > .vc_column_container > .vc_column-inner > .wpb_wrapper {
+        padding: 50px 50px 100px; }
+      .dapp_form .main_form_dapp .form_dapps .flexbox {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex; }
+        .dapp_form .main_form_dapp .form_dapps .flexbox .form-group-tomo {
+          margin-top: 0; }
+          .dapp_form .main_form_dapp .form_dapps .flexbox .form-group-tomo:first-child {
+            padding-right: 15px; }
+          .dapp_form .main_form_dapp .form_dapps .flexbox .form-group-tomo:last-child {
+            padding-left: 15px; }
   .tomochain-event .event-carousel {
     opacity: 0;
     visibility: hidden; }
@@ -14890,10 +15169,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       width: 10%; }
     .site-header .header-tools {
       width: 10%; }
-  .pad_right_30 {
-    padding-right: 15px !important; }
-  .pad_left_30 {
-    padding-left: 15px !important; }
     .item_building_dapp > .vc_column-inner > .wpb_wrapper .wpb_content_element {
       margin-bottom: 25px; }
     .tomochain-image-carousel .slick-slide {
@@ -14936,9 +15211,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       max-width: 530px; }
     .widget_tomo_sendgrid #tomo-sendgrid-email {
       font-size: 14px;
-      padding: 12px 70px 12px 40px; }
-    .widget_tomo_sendgrid #tomo-sendgrid-button {
-      padding-right: 40px; }
+      padding: 12px 70px 12px 35px; }
     .widget_tomo_sendgrid #tomo-sendgrid-button:after {
       font-size: 12px; }
       .widget_tomo_recent_posts .recent-post__info p {
@@ -15868,6 +16141,10 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     margin-left: 91.66667%; }
   .hidden-xl-up {
     display: none !important; }
+  .pad_right_30 {
+    padding-right: 30px !important; }
+  .pad_left_30 {
+    padding-left: 30px !important; }
   #posv-img {
     margin: 0 -35px; }
     html[lang="ja"] #posv-img {
@@ -16135,22 +16412,17 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       margin-top: 15px !important; }
   iframe.sp_set_height {
     height: 300px !important; }
-  .tomo-page-title-contact {
-    height: 100px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .tomo-page-title-contact img {
-      max-width: inherit;
-      height: 100%; }
+    .tomo-page-title-contact {
+      height: 100px; }
+      .tomo-page-title-contact img {
+        max-width: inherit;
+        height: 100%; }
         .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail {
-          margin-bottom: 1.5em; } }
+          margin-bottom: 1.5em; }
+              .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category > span > span {
+                margin: 0 .5em .5em 0; }
+                  .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category > span > span input ~ span {
+                    padding: 2px 6px; } }
   @media (max-width: 767.98px) {
   .table-responsive-md {
     display: block;
@@ -16170,6 +16442,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         display: none; }
       .site-footer .widget_tomo_address {
         width: 100%; }
+    .popup_btn {
+      display: none; }
   .sp_ft_18 {
     font-size: 18px !important; }
   .sp_ft_24 {
@@ -16182,6 +16456,14 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     margin-top: 30px; }
     .item_building_dapp:first-child {
       margin-top: 0; }
+  .tomo_iframe_main_top {
+    text-align: center; }
+    .tomo_iframe_main_top img {
+      width: 300px; }
+  .tomo_iframe_gaming {
+    text-align: center; }
+    .tomo_iframe_gaming img {
+      width: 200px; }
       .animated .tomo_chart table td {
         padding: 5px 0px; }
     .post-navigation {
@@ -16192,6 +16474,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           -webkit-box-pack: center;
               -ms-flex-pack: center;
                   justify-content: center; }
+  h2.vc_custom_heading {
+    font-size: 1.7em; }
     .vc_custom_heading {
       text-align: center !important; }
       .vc_custom_heading .heading-line {
@@ -16202,6 +16486,12 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           text-align: center;
           padding: 0;
           margin: 20px 10px; }
+      .widget_tomo_sendgrid #tomo-sendgrid-email::-webkit-input-placeholder {
+        font-size: 12px; }
+      .widget_tomo_sendgrid #tomo-sendgrid-email::-ms-input-placeholder {
+        font-size: 12px; }
+      .widget_tomo_sendgrid #tomo-sendgrid-email::placeholder {
+        font-size: 12px; }
     .widget_tomo_recent_posts .recent-post__thumb {
       border-radius: 3px; }
     .widget_tomo_event .tomo-event__thumb {

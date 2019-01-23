@@ -1,3 +1,8 @@
+h2.vc_custom_heading {
+    @include media-breakpoint-down(sm) {
+        font-size: 1.7em;
+    }
+}
 .vc_custom_heading {
     /*font-weight: 200;*/
     font-family: 'Bai Jamjuree', sans-serif;
