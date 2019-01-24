@@ -10934,7 +10934,7 @@ This is where majority of our work takes place and our UI components are often c
       left: 100%; }
 
 .mobile-menu-btn {
-  margin-right: -10px; }
+  margin-right: -8px; }
   .mobile-menu-btn svg {
     display: inline-block;
     vertical-align: middle;
@@ -11352,7 +11352,15 @@ article.post-loop {
         visibility: visible; }
     .tomochain-social .social-links .social-links__link {
       position: relative;
-      display: inline-block;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
       height: 40px;
       width: 40px;
       border-radius: 100%;
@@ -11383,7 +11391,7 @@ article.post-loop {
         display: block;
         position: relative;
         font-size: 17px;
-        line-height: 40px;
+        line-height: 1;
         z-index: 1;
         color: #fff; }
 
@@ -11535,6 +11543,8 @@ article.post-loop {
     .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail {
       border-radius: 10px;
       overflow: hidden; }
+      .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail img {
+        width: 100%; }
     .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-content {
       margin: 1.5em 0; }
       .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-content p {
@@ -16468,6 +16478,14 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         padding: 5px 0px; }
     .post-navigation {
       margin-bottom: 50px; }
+    .social-links {
+      margin-left: -5px;
+      margin-right: -5px; }
+        .tomochain-social .social-links .social-links__items {
+          margin: 4px; }
+        .tomochain-social .social-links .social-links__link {
+          height: 36px;
+          width: 36px; }
       .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
         text-align: center; }
         .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .box_flexbox {
@@ -16485,7 +16503,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           max-width: 100%;
           text-align: center;
           padding: 0;
-          margin: 20px 10px; }
+          margin: 20px 0px; }
       .widget_tomo_sendgrid #tomo-sendgrid-email::-webkit-input-placeholder {
         font-size: 12px; }
       .widget_tomo_sendgrid #tomo-sendgrid-email::-ms-input-placeholder {
