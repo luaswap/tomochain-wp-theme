@@ -131,6 +131,11 @@ iframe.sp_set_height {
 	}
 }
 .tomo_iframe_main_top {
+	@include media-breakpoint-between(md, lg) {
+		h2 {
+			font-size: 24px;
+		}
+	}
 	@include media-breakpoint-down(sm) {
 		text-align: center;
 		img {
