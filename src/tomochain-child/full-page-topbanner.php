@@ -24,6 +24,7 @@ get_header(); ?>
 					</div>
 				</div>
 			</div>
+
 		</main><!-- #main -->
 	</div><!-- #primary -->
 <?php
