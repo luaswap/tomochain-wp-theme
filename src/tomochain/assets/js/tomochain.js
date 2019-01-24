@@ -194,6 +194,7 @@ var tomochain
         }
     }
 )(jQuery);
+
 (function( $ ) {
     tomochain.dapp_slide = function() {
         $( '.dapp-slide' ).each( function() {
@@ -258,6 +259,7 @@ var tomochain
         });
     }
 })(jQuery);
+
 
 
 
