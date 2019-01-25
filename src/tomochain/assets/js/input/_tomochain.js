@@ -23,7 +23,6 @@ var tomochain
                         this.blog();
                         this.categories_filter();
                         this.dapp_filter();
-                        this.dapp_slide();
                     }
                 }
             }()

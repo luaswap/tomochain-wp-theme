@@ -41,7 +41,6 @@ if ( !class_exists( 'Tomochain_Dapp_Post_Type' ) ) {
                 'labels'              => $labels,
                 'public'              => true,
                 'exclude_from_search' => true,
-                'menu_icon'           => 'dashicons-networking',
                 'show_in_admin_bar'   => false,
                 'show_in_nav_menus'   => false,
                 'publicly_queryable'  => false,

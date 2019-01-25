@@ -168,6 +168,9 @@
 			.dapp-thumbnail {
 				border-radius: 10px;
 				overflow: hidden;
+				img {
+					width: 100%;
+				}
 				@include media-breakpoint-up(md) {
 					width: 35%;
 				}
