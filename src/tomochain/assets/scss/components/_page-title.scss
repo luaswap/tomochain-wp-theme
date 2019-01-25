@@ -50,23 +50,6 @@
     font-family: Quicksand,sans-serif!important;
 }
 
-.tomo-page-title-contact {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    background: url(assets/images/contact.jpg) no-repeat center;
-    background-size: cover;
-    height: 200px;
-    @include media-breakpoint-down(md) {
-        height: 100px;
-        img {
-            max-width: inherit;
-            height: 100%;
-        }
-    }
-}
-
 // Format height
 @media only screen and (min-width: 1025px) and (max-width: 1366px) {
     .sc_height30 {

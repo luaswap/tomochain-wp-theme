@@ -1,0 +1,32 @@
+/**-------------------------------
+	Define CSS - Common
+----------------------------------**/
+.tmp-fullpage {
+	.container {
+		margin-left: auto!important;
+		margin-right: auto!important;
+		>.wpb_column>.vc_column-inner {
+			padding: 0;
+		}
+	}
+	.tomo-page-title-banner {
+	    display: flex;
+	    justify-content: center;
+	    align-items: center;
+	    text-align: center;
+	    background-repeat: no-repeat;
+	    background-position: center;
+	    background-size: cover;
+	    height: 200px;
+	    @include media-breakpoint-down(md) {
+	        height: 100px;
+	        img {
+	            max-width: inherit;
+	            height: 100%;
+	        }
+	    }
+	    &.contact {
+	    	background-image: url(assets/images/contact.jpg);
+	    }
+	}
+}

@@ -11125,21 +11125,6 @@ This is where majority of our work takes place and our UI components are often c
 .font_quicksand {
   font-family: Quicksand, sans-serif !important; }
 
-.tomo-page-title-contact {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  background: url(assets/images/contact.jpg) no-repeat center;
-  background-size: cover;
-  height: 200px; }
-
 .tomochain-pagination, .woocommerce-pagination {
   margin-bottom: 80px; }
   .tomochain-pagination.woocommerce-pagination, .woocommerce-pagination {
@@ -11394,6 +11379,33 @@ article.post-loop {
         line-height: 1;
         z-index: 1;
         color: #fff; }
+
+/**-------------------------------
+	Define CSS - Common
+----------------------------------**/
+.tmp-fullpage .container {
+  margin-left: auto !important;
+  margin-right: auto !important; }
+  .tmp-fullpage .container > .wpb_column > .vc_column-inner {
+    padding: 0; }
+
+.tmp-fullpage .tomo-page-title-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  height: 200px; }
+  .tmp-fullpage .tomo-page-title-banner.contact {
+    background-image: url(assets/images/contact.jpg); }
 
 .tomochain-blog-item {
   text-align: center;
@@ -16444,11 +16456,9 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     display: none !important; }
     .mag_top_30 {
       margin-top: 15px !important; }
-  iframe.sp_set_height {
-    height: 300px !important; }
-    .tomo-page-title-contact {
+    .tmp-fullpage .tomo-page-title-banner {
       height: 100px; }
-      .tomo-page-title-contact img {
+      .tmp-fullpage .tomo-page-title-banner img {
         max-width: inherit;
         height: 100%; }
         .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail {
@@ -16486,6 +16496,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     text-align: center !important; }
   .sp_mag_bot_15 {
     margin-bottom: 30px !important; }
+  .sp_height160 {
+    height: 160px !important; }
   .item_building_dapp {
     margin-top: 30px; }
     .item_building_dapp:first-child {
