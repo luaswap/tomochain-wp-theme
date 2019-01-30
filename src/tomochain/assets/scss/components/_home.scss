@@ -51,6 +51,16 @@
 		padding: 0 5%;
 	}
 }
+.pad_right_15 {
+	@include media-breakpoint-up(xl) {
+		padding-right: 15px!important;
+	}
+}
+.pad_left_15 {
+	@include media-breakpoint-up(xl) {
+		padding-left: 15px!important;
+	}
+}
 .pad_right_30 {
 	@include media-breakpoint-up(xl) {
 		padding-right: 30px!important;
@@ -59,6 +69,16 @@
 .pad_left_30 {
 	@include media-breakpoint-up(xl) {
 		padding-left: 30px!important;
+	}
+}
+.pad_right_70 {
+	@include media-breakpoint-up(xl) {
+		padding-right: 70px!important;
+	}
+}
+.pad_left_70 {
+	@include media-breakpoint-up(xl) {
+		padding-left: 70px!important;
 	}
 }
 /** Style font **/
@@ -104,6 +124,9 @@
 		margin-top: 30px;
 		&:first-child {
 			margin-top: 0;
+		}
+		br {
+			display: none;
 		}
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1366px) {

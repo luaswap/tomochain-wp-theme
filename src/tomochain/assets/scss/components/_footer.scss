@@ -85,7 +85,20 @@
     right: 2em;
     z-index: 9;
     @include media-breakpoint-down(sm) {
-        display: none;
+        /*display: none;*/
+        a {
+            border-radius: 50%!important;
+            width: 40px!important;
+            height: 40px!important;
+            display: flex!important;
+            align-items: center!important;
+            justify-content: center!important;
+            min-width: inherit!important;
+            font-size: 18px!important;
+            span {
+                display: none;
+            }
+        }
     }
     &.hide-second {
       display: none;
