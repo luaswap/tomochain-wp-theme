@@ -32,6 +32,7 @@ var tomochain
 //@include('blog.js')
 //@include('categories_filter.js')
 //@include('dapp.js')
+//@include('common.js')
 //@include('event.js')
 //@include('header.js')
 //@include('image-carousel.js')

@@ -8699,7 +8699,7 @@ input[type="submit"] {
 
 .tomo_btn_tmp_grad_disc a {
   background: #7289da !important;
-  border-radius: 6px !important;
+  border-radius: 0px !important;
   padding: 12px 20px !important;
   font-size: 14px !important;
   min-width: 170px;
@@ -11461,7 +11461,7 @@ article.post-loop {
   color: #fff !important;
   display: inline-block;
   min-width: 180px;
-  padding: .6em 0;
+  padding: .6em 1em;
   overflow: hidden;
   text-transform: uppercase;
   z-index: 1;
@@ -11498,7 +11498,7 @@ article.post-loop {
   color: #fff !important;
   display: inline-block;
   min-width: 180px;
-  padding: .6em 0;
+  padding: .6em 1em;
   overflow: hidden;
   text-transform: uppercase;
   z-index: 1;
@@ -11534,6 +11534,8 @@ article.post-loop {
 .tmp-landingpage {
   font-family: 'Quicksand', sans-serif;
   font-weight: 500; }
+  .tmp-landingpage .hentry {
+    margin: 0; }
   .tmp-landingpage .sp_ft_18 {
     font-size: 18px !important;
     font-weight: normal; }
@@ -11594,13 +11596,13 @@ article.post-loop {
   margin-bottom: 0; }
 
 .con_game_run .title_item {
-  font-size: 18px;
+  font-size: 24px;
   font-family: 'Bai Jamjuree', sans-serif; }
   .con_game_run .title_item a {
     color: #fff; }
 
 .con_game_run .txt_desc {
-  margin: 1.5em 0; }
+  margin: 2.4em 0; }
 
 .con_game_run .box_item_game .vc_single_image-wrapper {
   overflow: hidden; }
@@ -11609,10 +11611,6 @@ article.post-loop {
   width: 100%;
   -webkit-transition: all .4s ease;
   transition: all .4s ease; }
-
-.con_game_run .box_item_game:hover img {
-  -webkit-transform: scale(1.04);
-          transform: scale(1.04); }
 
 .con_building .box_inner_building {
   text-align: center; }
@@ -11663,6 +11661,114 @@ article.post-loop {
 
 .ldp .site-info {
   padding-bottom: 20px; }
+
+.submit_game {
+  background-color: #1e2149; }
+  .submit_game .form_submit_game .box_per {
+    margin-bottom: 50px; }
+  .submit_game .form_submit_game h3 {
+    font-size: 18px;
+    margin-bottom: 30px; }
+  .submit_game .form_submit_game .form-group-tomo {
+    margin-top: 15px; }
+    .submit_game .form_submit_game .form-group-tomo p {
+      margin: 0; }
+    .submit_game .form_submit_game .form-group-tomo .inp_lable {
+      margin-bottom: 15px; }
+    .submit_game .form_submit_game .form-group-tomo input,
+    .submit_game .form_submit_game .form-group-tomo textarea {
+      background: #808bab;
+      padding: 1em;
+      border-radius: 0px;
+      color: #252f5a; }
+      .submit_game .form_submit_game .form-group-tomo input::-webkit-input-placeholder,
+      .submit_game .form_submit_game .form-group-tomo textarea::-webkit-input-placeholder {
+        color: #535d86; }
+      .submit_game .form_submit_game .form-group-tomo input::-ms-input-placeholder,
+      .submit_game .form_submit_game .form-group-tomo textarea::-ms-input-placeholder {
+        color: #535d86; }
+      .submit_game .form_submit_game .form-group-tomo input::placeholder,
+      .submit_game .form_submit_game .form-group-tomo textarea::placeholder {
+        color: #535d86; }
+    .submit_game .form_submit_game .form-group-tomo.checkbox .Category {
+      color: #27315c;
+      display: block; }
+      .submit_game .form_submit_game .form-group-tomo.checkbox .Category > span {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
+        .submit_game .form_submit_game .form-group-tomo.checkbox .Category > span > span {
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-align: center;
+              -ms-flex-align: center;
+                  align-items: center;
+          -webkit-box-pack: center;
+              -ms-flex-pack: center;
+                  justify-content: center;
+          margin: 0 1em 1em 0; }
+          .submit_game .form_submit_game .form-group-tomo.checkbox .Category > span > span input {
+            display: none; }
+            .submit_game .form_submit_game .form-group-tomo.checkbox .Category > span > span input ~ span {
+              background: #808bab;
+              display: inline-block;
+              border-radius: 5px;
+              padding: 6px 12px;
+              cursor: pointer;
+              -webkit-transition: all .4s ease;
+              transition: all .4s ease; }
+              .submit_game .form_submit_game .form-group-tomo.checkbox .Category > span > span input ~ span:hover {
+                background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #48A5FF), to(#534BFF));
+                background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
+                color: #fff; }
+            .submit_game .form_submit_game .form-group-tomo.checkbox .Category > span > span input:checked ~ span {
+              background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #48A5FF), to(#534BFF));
+              background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
+              color: #fff; }
+          .submit_game .form_submit_game .form-group-tomo.checkbox .Category > span > span label {
+            margin: 0; }
+  .submit_game .form_submit_game .form-submit-tomo {
+    margin-top: 30px; }
+    .submit_game .form_submit_game .form-submit-tomo .btn_submit {
+      background: -webkit-gradient(linear, left top, right top, from(#f66f92), to(#f29259));
+      background: linear-gradient(to right, #f66f92, #f29259);
+      border-radius: 0;
+      border: 0;
+      color: #fff !important;
+      display: inline-block;
+      padding: 1.2em 2em !important;
+      overflow: hidden;
+      text-transform: uppercase;
+      position: relative;
+      font-family: 'Bai Jamjuree', sans-serif;
+      text-align: center;
+      cursor: pointer;
+      line-height: 1.4; }
+      .submit_game .form_submit_game .form-submit-tomo .btn_submit:hover {
+        background: -webkit-gradient(linear, left top, right top, from(#f29259), to(#f66f92));
+        background: linear-gradient(to right, #f29259, #f66f92); }
+    .submit_game .form_submit_game .form-submit-tomo .ajax-loader {
+      background-image: url(assets/images/loading.svg) !important;
+      background-repeat: no-repeat !important;
+      background-position: left !important;
+      display: block !important;
+      height: 16px !important;
+      width: 100% !important;
+      margin-top: 15px !important; }
+  .submit_game .form_submit_game .wpcf7-not-valid-tip {
+    color: #FF924E !important;
+    font-size: 12px !important; }
+  .submit_game .wpcf7-validation-errors,
+  .submit_game .wpcf7-response-output {
+    border: 0 !important;
+    text-align: center !important;
+    color: #fff !important; }
 
 .tomochain-blog-item {
   text-align: center;
@@ -14692,6 +14798,15 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       font-size: 18px; }
     .entry-title {
       font-size: 24px; }
+    .submit_game .form_submit_game {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex; }
+      .submit_game .form_submit_game .box_per {
+        width: 40%; }
+    .submit_game .form_submit_game .box_game_idea {
+      width: 60%;
+      padding-left: 50px; }
   .tomochain-blog .blog-carousel {
     opacity: 0;
     visibility: hidden; }
@@ -14865,10 +14980,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
   .con_game_run .box_item_game {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
+    display: flex; }
     .con_building .box_inner_building {
       text-align: left;
       display: -webkit-box;
@@ -16837,6 +16949,10 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       .tmp-fullpage .tomo-page-title-banner img {
         max-width: inherit;
         height: 100%; }
+            .submit_game .form_submit_game .form-group-tomo.checkbox .Category > span > span {
+              margin: 0 .5em .5em 0; }
+                .submit_game .form_submit_game .form-group-tomo.checkbox .Category > span > span input ~ span {
+                  padding: 2px 6px; }
         .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-thumbnail {
           margin-bottom: 1.5em; }
               .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category > span > span {
@@ -16930,6 +17046,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           margin-bottom: 15px; }
       .tmp-landingpage .main-title {
         top: 150px; }
+    .con_game_run .title_item {
+      font-size: 18px; }
       .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
         text-align: center; }
         .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .box_flexbox {

@@ -6,7 +6,7 @@
                     transform: scale(1);
                 }
                 50% {
-                    transform: scale(.5);
+                    transform: scale(.8);
                     transform-origin: 60% 60%;
                 }
                 100% {
@@ -14,9 +14,9 @@
                 }
             }
             .tomozom {
-                animation-name: TomoZom;
+                <!-- animation-name: TomoZom;
                 animation-iteration-count: infinite;
-                animation-duration: 5s;
+                animation-duration: 5s; -->
             }
 			@keyframes TomoPlus {
                 0% {
