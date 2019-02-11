@@ -55,29 +55,28 @@
 	text-align: center;
 	&:before {
 		content: '';
-		background: linear-gradient(to right,#f66f92, #f29259);
-		position: absolute;
-		top: 0;
-		left: 0;
+		border: 1px solid #848095;
 		width: 100%;
 		height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
 		z-index: -1;
 	}
 	&:after {
 		content: '';
-		background: linear-gradient(to right,#f29259, #f66f92);
-		position: absolute;
-		top: 0;
-		left: 0;
+		background: linear-gradient(to right,#f66f92, #f29259);
 		width: 100%;
 		height: 100%;
+		position: absolute;
+		top: 0px;
+		right: 0px;
 		z-index: -1;
-		opacity: 0;
 		transition: all .4s ease;
 	}
 	&:hover {
 		&:after {
-			opacity: 1;
+			width: 0%;
 		}
 	}
 }
@@ -94,29 +93,28 @@
 	text-align: center;
 	&:before {
 		content: '';
-		background: linear-gradient(to right,#2f4a9f, #7cd2f3);
-		position: absolute;
-		top: 0;
-		left: 0;
+		border: 1px solid #848095;
 		width: 100%;
 		height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
 		z-index: -1;
 	}
 	&:after {
 		content: '';
 		background: linear-gradient(to right,#7cd2f3, #2f4a9f);
-		position: absolute;
-		top: 0;
-		left: 0;
-		width: 100%;
+		width: 0;
 		height: 100%;
+		position: absolute;
+		top: 0px;
+		left: 0px;
 		z-index: -1;
-		opacity: 0;
 		transition: all .4s ease;
 	}
 	&:hover {
 		&:after {
-			opacity: 1;
+			width: 100%;
 		}
 	}
 }
@@ -271,7 +269,9 @@
 }
 .con_faq {
 	.not_bd {
-		border: 0!important;
+		@include media-breakpoint-up(md) {
+			border: 0!important;
+		}
 	}
 	.text-underline {
 		a {

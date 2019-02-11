@@ -8620,7 +8620,7 @@ input[type="submit"] {
   position: relative !important;
   background: transparent !important;
   border-radius: 6px !important;
-  padding: 12px 20px !important;
+  padding: 13px 20px !important;
   font-size: 14px !important;
   line-height: 16px !important;
   border: 0 !important;
@@ -10336,8 +10336,8 @@ This is where majority of our work takes place and our UI components are often c
 
 .site-header {
   position: relative;
-  -webkit-transition: all .5s ease, background 1.2s ease;
-  transition: all .5s ease, background 1.2s ease;
+  -webkit-transition: all .2s ease, background 1s ease;
+  transition: all .2s ease, background 1s ease;
   padding: 20px 0; }
   .site-header > .container > .row {
     display: table;
@@ -10666,58 +10666,58 @@ This is where majority of our work takes place and our UI components are often c
   100% {
     height: 170px; } }
 
-.animated .tomo_chart .height1 {
-  height: 0;
-  -webkit-animation-name: full_height1;
-          animation-name: full_height1; }
+.not-opt .tomo_chart .height1 {
+  /*height: 0;*/
+  height: 200px;
+  /*animation-name: full_height1;*/ }
 
-.animated .tomo_chart .height1_2 {
-  height: 0;
-  -webkit-animation-name: full_height1_2;
-          animation-name: full_height1_2; }
+.not-opt .tomo_chart .height1_2 {
+  /*height: 0;*/
+  height: 192px;
+  /*animation-name: full_height1_2;*/ }
 
-.animated .tomo_chart .height2 {
-  height: 0;
-  -webkit-animation-name: full_height2;
-          animation-name: full_height2; }
+.not-opt .tomo_chart .height2 {
+  /*height: 0;*/
+  height: 18px;
+  /*animation-name: full_height2;*/ }
 
-.animated .tomo_chart .height3 {
-  height: 0;
-  -webkit-animation-name: full_height3;
-          animation-name: full_height3; }
+.not-opt .tomo_chart .height3 {
+  /*height: 0;*/
+  height: 50px;
+  /*animation-name: full_height3;*/ }
 
-.animated .tomo_chart .height4 {
-  height: 0;
-  -webkit-animation-name: full_height4;
-          animation-name: full_height4; }
+.not-opt .tomo_chart .height4 {
+  /*height: 0;*/
+  height: 150px;
+  /*animation-name: full_height4;*/ }
 
-.animated .tomo_chart .height5 {
-  height: 0;
-  -webkit-animation-name: full_height5;
-          animation-name: full_height5; }
+.not-opt .tomo_chart .height5 {
+  /*height: 0;*/
+  height: 192px;
+  /*animation-name: full_height5;*/ }
 
-.animated .tomo_chart .height5_2 {
-  height: 0;
-  -webkit-animation-name: full_height5_2;
-          animation-name: full_height5_2; }
+.not-opt .tomo_chart .height5_2 {
+  /*height: 0;*/
+  height: 52px;
+  /*animation-name: full_height5_2;*/ }
 
-.animated .tomo_chart .height6 {
-  height: 0;
-  -webkit-animation-name: full_height6;
-          animation-name: full_height6; }
+.not-opt .tomo_chart .height6 {
+  /*height: 0;*/
+  height: 131px;
+  /*animation-name: full_height6;*/ }
 
-.animated .tomo_chart .height7 {
-  height: 0;
-  -webkit-animation-name: full_height7;
-          animation-name: full_height7; }
+.not-opt .tomo_chart .height7 {
+  /*height: 0;*/
+  height: 170px;
+  /*animation-name: full_height7;*/ }
 
-.animated .tomo_chart .chart_blue {
+.not-opt .tomo_chart .chart_blue {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #698AF5), to(#7965F1)) !important;
   background-image: linear-gradient(#698AF5 30%, #7965F1 100%) !important;
   color: #8E96E1;
   position: relative;
   width: 6px;
-  height: 0;
+  /*height: 0;*/
   -webkit-animation-duration: 1.5s;
           animation-duration: 1.5s;
   -webkit-animation-timing-function: ease;
@@ -10725,7 +10725,7 @@ This is where majority of our work takes place and our UI components are often c
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.animated .tomo_chart .chart_origin {
+.not-opt .tomo_chart .chart_origin {
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #FFDD72), to(#FF7B7A)) !important;
   background-image: linear-gradient(#FFDD72 30%, #FF7B7A 100%) !important;
   color: #E1A382;
@@ -10740,32 +10740,32 @@ This is where majority of our work takes place and our UI components are often c
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards; }
 
-.animated .tomo_chart table {
+.not-opt .tomo_chart table {
   color: #5D66B2;
   font-size: 12px;
   text-align: center;
   vertical-align: bottom; }
-  .animated .tomo_chart table td {
+  .not-opt .tomo_chart table td {
     padding: 5px 10px;
     height: 30px;
     vertical-align: bottom; }
-    .animated .tomo_chart table td:last-child {
+    .not-opt .tomo_chart table td:last-child {
       text-align: right; }
-    .animated .tomo_chart table td:first-child {
+    .not-opt .tomo_chart table td:first-child {
       white-space: nowrap;
       text-align: left; }
-    .animated .tomo_chart table td div {
+    .not-opt .tomo_chart table td div {
       display: inline-block; }
-  .animated .tomo_chart table .st_1 td,
-  .animated .tomo_chart table .st_2 td {
+  .not-opt .tomo_chart table .st_1 td,
+  .not-opt .tomo_chart table .st_2 td {
     padding: 5px 2px !important;
     height: auto !important;
     font-size: 13px;
     vertical-align: top; }
-  .animated .tomo_chart table .st_2 {
+  .not-opt .tomo_chart table .st_2 {
     color: #818AD8; }
 
-.animated .tomo_chart .max_time {
+.not-opt .tomo_chart .max_time {
   position: absolute;
   top: 0;
   left: 50%;
@@ -11470,29 +11470,27 @@ article.post-loop {
   text-align: center; }
   .btn_tmp_orange:before {
     content: '';
-    background: -webkit-gradient(linear, left top, right top, from(#f66f92), to(#f29259));
-    background: linear-gradient(to right, #f66f92, #f29259);
-    position: absolute;
-    top: 0;
-    left: 0;
+    border: 1px solid #848095;
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     z-index: -1; }
   .btn_tmp_orange:after {
     content: '';
-    background: -webkit-gradient(linear, left top, right top, from(#f29259), to(#f66f92));
-    background: linear-gradient(to right, #f29259, #f66f92);
-    position: absolute;
-    top: 0;
-    left: 0;
+    background: -webkit-gradient(linear, left top, right top, from(#f66f92), to(#f29259));
+    background: linear-gradient(to right, #f66f92, #f29259);
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0px;
+    right: 0px;
     z-index: -1;
-    opacity: 0;
     -webkit-transition: all .4s ease;
     transition: all .4s ease; }
   .btn_tmp_orange:hover:after {
-    opacity: 1; }
+    width: 0%; }
 
 .btn_tmp_blue {
   color: #fff !important;
@@ -11507,29 +11505,27 @@ article.post-loop {
   text-align: center; }
   .btn_tmp_blue:before {
     content: '';
-    background: -webkit-gradient(linear, left top, right top, from(#2f4a9f), to(#7cd2f3));
-    background: linear-gradient(to right, #2f4a9f, #7cd2f3);
-    position: absolute;
-    top: 0;
-    left: 0;
+    border: 1px solid #848095;
     width: 100%;
     height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     z-index: -1; }
   .btn_tmp_blue:after {
     content: '';
     background: -webkit-gradient(linear, left top, right top, from(#7cd2f3), to(#2f4a9f));
     background: linear-gradient(to right, #7cd2f3, #2f4a9f);
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
+    width: 0;
     height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
     z-index: -1;
-    opacity: 0;
     -webkit-transition: all .4s ease;
     transition: all .4s ease; }
   .btn_tmp_blue:hover:after {
-    opacity: 1; }
+    width: 100%; }
 
 .tmp-landingpage {
   font-family: 'Quicksand', sans-serif;
@@ -11616,9 +11612,6 @@ article.post-loop {
   text-align: center; }
   .con_building .box_inner_building .wpb_text_column {
     margin: 30px 0 40px; }
-
-.con_faq .not_bd {
-  border: 0 !important; }
 
 .con_faq .text-underline a {
   text-decoration: underline; }
@@ -14798,6 +14791,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       font-size: 18px; }
     .entry-title {
       font-size: 24px; }
+  .con_faq .not_bd {
+    border: 0 !important; }
     .submit_game .form_submit_game {
       display: -webkit-box;
       display: -ms-flexbox;
@@ -17023,12 +17018,14 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
   .tomo_iframe_main_top {
     text-align: center; }
     .tomo_iframe_main_top img {
-      width: 300px; }
+      width: 300px;
+      margin: auto; }
   .tomo_iframe_gaming {
     text-align: center; }
     .tomo_iframe_gaming img {
-      width: 200px; }
-      .animated .tomo_chart table td {
+      width: 250px;
+      margin: auto; }
+      .not-opt .tomo_chart table td {
         padding: 5px 0px; }
     .post-navigation {
       margin-bottom: 50px; }
