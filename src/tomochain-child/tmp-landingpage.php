@@ -1,7 +1,7 @@
 <?php
 /* Template name: tmp landingpage */
 
-?>
+get_template_part('headerld'); ?>
 <div class="content-area tmp-landingpage">
 	<main class="site-main">
 		<?php
@@ -21,4 +21,4 @@
 	</main><!-- #main -->
 </div><!-- #primary -->
 <?php
-get_footer();
+get_template_part('footerld'); ?>

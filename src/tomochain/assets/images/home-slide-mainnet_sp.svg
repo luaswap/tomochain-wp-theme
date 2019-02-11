@@ -2,7 +2,7 @@
 	<defs>
 		<style>
 			/* Standard syntax */
-			@keyframes animaUp1 {
+			<!-- @keyframes animaUp1 {
 				0% {
 					transform: translateY(0px);
 				}
@@ -36,19 +36,19 @@
 				}
 			}
 			.animation_up1 {
-				<!-- animation-name: animaUp1;
+				animation-name: animaUp1;
 				animation-iteration-count: infinite;
-				animation-duration: 3s; -->
+				animation-duration: 3s;
 			}
 			.animation_up2 {
-				<!-- animation-name: animaUp2;
+				animation-name: animaUp2;
 				animation-iteration-count: infinite;
-				animation-duration: 3s; -->
+				animation-duration: 3s;
 			}
 			.animation_up3 {
-				<!-- animation-name: animaUp3;
+				animation-name: animaUp3;
 				animation-iteration-count: infinite;
-				animation-duration: 3s; -->
+				animation-duration: 3s;
 			}
 			@keyframes animaDown1 {
 				0% {
@@ -100,19 +100,19 @@
 				animation-duration: 3s;
 			}
 			.animation_down1 {
-				<!-- animation-name: animaDown1;
+				animation-name: animaDown1;
 				animation-iteration-count: infinite;
-				animation-duration: 3s; -->
+				animation-duration: 3s;
 			}
 			.animation_down2 {
-				<!-- animation-name: animaDown2;
+				animation-name: animaDown2;
 				animation-iteration-count: infinite;
-				animation-duration: 3s; -->
+				animation-duration: 3s;
 			}
 			.animation_down3 {
-				<!-- animation-name: animaDown3;
+				animation-name: animaDown3;
 				animation-iteration-count: infinite;
-				animation-duration: 3s; -->
+				animation-duration: 3s;
 			}
 			@keyframes animaMotion {
 				0% {
@@ -137,15 +137,15 @@
 				}
 			}
 			.animateMotion {
-				<!-- animation-name: animaMotion;
+				animation-name: animaMotion;
 				animation-iteration-count: infinite;
-				animation-duration: 4s; -->
+				animation-duration: 4s;
 			}
 			.animateMotion_reverse {
-				<!-- animation-name: animaMotionReverse;
+				animation-name: animaMotionReverse;
 				animation-iteration-count: infinite;
-				animation-duration: 4s; -->
-			}
+				animation-duration: 4s;
+			} -->
 
 			.cls-1{mask:url(#mask);filter:url(#luminosity-noclip-2);}.cls-2{mix-blend-mode:multiply;fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_4);}.cls-3{isolation:isolate;}.cls-4{fill:url(#linear-gradient);}.cls-5{fill:url(#linear-gradient-2);}.cls-6{fill:url(#linear-gradient-3);}.cls-7{fill:url(#linear-gradient-4);}.cls-8{fill:url(#linear-gradient-5);}.cls-9{fill:url(#linear-gradient-6);}.cls-10{fill:url(#linear-gradient-7);}.cls-11{fill:#212646;}.cls-12{fill:#262d52;}.cls-13{fill:#0f054c;}.cls-100,.cls-108,.cls-13,.cls-148,.cls-41,.cls-54,.cls-62,.cls-77,.cls-85{opacity:0.2;}.cls-14{fill:url(#linear-gradient-8);}.cls-15,.cls-150,.cls-43{opacity:0.48;}.cls-15{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_15);}.cls-16{fill:url(#linear-gradient-9);}.cls-17{fill:url(#linear-gradient-10);}.cls-18{fill:url(#linear-gradient-11);}.cls-19{fill:#312a91;}.cls-20,.cls-40{opacity:0.9;}.cls-21{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3);}.cls-22{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-2);}.cls-23{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-3);}.cls-119,.cls-120,.cls-121,.cls-122,.cls-123,.cls-124,.cls-125,.cls-126,.cls-127,.cls-128,.cls-129,.cls-130,.cls-131,.cls-132,.cls-24,.cls-25,.cls-26,.cls-27,.cls-30,.cls-31,.cls-32,.cls-33,.cls-34,.cls-35,.cls-36,.cls-37,.cls-38,.cls-39{opacity:0.7;}.cls-119,.cls-120,.cls-121,.cls-122,.cls-123,.cls-124,.cls-125,.cls-126,.cls-127,.cls-128,.cls-129,.cls-130,.cls-131,.cls-132,.cls-148,.cls-24,.cls-25,.cls-26,.cls-27,.cls-30,.cls-31,.cls-32,.cls-33,.cls-34,.cls-35,.cls-36,.cls-37,.cls-38,.cls-39{mix-blend-mode:lighten;}.cls-24{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-4);}.cls-25{fill:url(#linear-gradient-12);}.cls-26{fill:url(#linear-gradient-13);}.cls-27{fill:url(#linear-gradient-14);}.cls-28,.cls-29,.cls-40,.cls-41{fill:#42e8e0;}.cls-28{opacity:0.3;}.cls-30{fill:url(#linear-gradient-15);}.cls-31{fill:url(#linear-gradient-16);}.cls-32{fill:url(#linear-gradient-17);}.cls-33{fill:url(#linear-gradient-18);}.cls-34{fill:url(#linear-gradient-19);}.cls-35{fill:url(#linear-gradient-20);}.cls-36{fill:url(#linear-gradient-21);}.cls-37{fill:url(#linear-gradient-22);}.cls-38{fill:url(#linear-gradient-23);}.cls-39{fill:url(#linear-gradient-24);}.cls-42{fill:url(#linear-gradient-25);}.cls-43{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_15-3);}.cls-44{fill:url(#linear-gradient-26);}.cls-45{fill:url(#linear-gradient-27);}.cls-46{fill:url(#linear-gradient-28);}.cls-47{fill:url(#linear-gradient-29);}.cls-48{fill:url(#linear-gradient-30);}.cls-49{fill:url(#linear-gradient-31);}.cls-50{fill:url(#linear-gradient-32);}.cls-51{fill:url(#linear-gradient-33);}.cls-52{fill:url(#linear-gradient-34);}.cls-53{fill:url(#linear-gradient-35);}.cls-54{fill:url(#linear-gradient-36);}.cls-55{fill:url(#linear-gradient-37);}.cls-56{fill:url(#linear-gradient-38);}.cls-57{fill:url(#linear-gradient-39);}.cls-58{fill:url(#linear-gradient-40);}.cls-59{fill:url(#linear-gradient-41);}.cls-60{fill:url(#linear-gradient-42);}.cls-61{fill:url(#linear-gradient-43);}.cls-62{fill:url(#linear-gradient-44);}.cls-63{fill:url(#linear-gradient-45);}.cls-64{fill:url(#linear-gradient-46);}.cls-65{fill:url(#linear-gradient-47);}.cls-66{fill:url(#linear-gradient-48);}.cls-67{fill:url(#linear-gradient-49);}.cls-68{fill:url(#linear-gradient-50);}.cls-69{fill:url(#linear-gradient-51);}.cls-70{fill:url(#linear-gradient-52);}.cls-71{fill:url(#linear-gradient-53);}.cls-72{fill:url(#linear-gradient-54);}.cls-73{fill:url(#linear-gradient-55);}.cls-74{fill:url(#linear-gradient-56);}.cls-75{fill:url(#linear-gradient-57);}.cls-76{fill:url(#linear-gradient-58);}.cls-77{fill:url(#linear-gradient-59);}.cls-78{fill:url(#linear-gradient-60);}.cls-79{fill:url(#linear-gradient-61);}.cls-80{fill:url(#linear-gradient-62);}.cls-81{fill:url(#linear-gradient-63);}.cls-82{fill:url(#linear-gradient-64);}.cls-83{fill:url(#linear-gradient-65);}.cls-84{fill:url(#linear-gradient-66);}.cls-85{fill:url(#linear-gradient-67);}.cls-86{fill:url(#linear-gradient-68);}.cls-87{fill:url(#linear-gradient-69);}.cls-88{fill:url(#linear-gradient-70);}.cls-89{fill:url(#linear-gradient-71);}.cls-90{fill:url(#linear-gradient-72);}.cls-91{fill:url(#linear-gradient-73);}.cls-92{fill:url(#linear-gradient-74);}.cls-93{fill:url(#linear-gradient-75);}.cls-94{fill:url(#linear-gradient-76);}.cls-95{fill:url(#linear-gradient-77);}.cls-96{fill:url(#linear-gradient-78);}.cls-97{fill:url(#linear-gradient-79);}.cls-98{fill:url(#linear-gradient-80);}.cls-99{fill:url(#linear-gradient-81);}.cls-100{fill:url(#linear-gradient-82);}.cls-101{fill:url(#linear-gradient-83);}.cls-102{fill:url(#linear-gradient-84);}.cls-103{fill:url(#linear-gradient-85);}.cls-104{fill:url(#linear-gradient-86);}.cls-105{fill:url(#linear-gradient-87);}.cls-106{fill:url(#linear-gradient-88);}.cls-107{fill:url(#linear-gradient-89);}.cls-108{fill:url(#linear-gradient-90);}.cls-109{fill:url(#linear-gradient-91);}.cls-110{fill:url(#linear-gradient-92);}.cls-111{fill:url(#linear-gradient-93);}.cls-112{fill:url(#linear-gradient-94);}.cls-113{fill:url(#linear-gradient-95);}.cls-114{fill:url(#linear-gradient-96);}.cls-115{fill:url(#linear-gradient-97);}.cls-116{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-5);}.cls-117{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-6);}.cls-118{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-7);}.cls-119{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-8);}.cls-120{fill:url(#linear-gradient-98);}.cls-121{fill:url(#linear-gradient-99);}.cls-122{fill:url(#linear-gradient-100);}.cls-123{fill:url(#linear-gradient-101);}.cls-124{fill:url(#linear-gradient-102);}.cls-125{fill:url(#linear-gradient-103);}.cls-126{fill:url(#linear-gradient-104);}.cls-127{fill:url(#linear-gradient-105);}.cls-128{fill:url(#linear-gradient-106);}.cls-129{fill:url(#linear-gradient-107);}.cls-130{fill:url(#linear-gradient-108);}.cls-131{fill:url(#linear-gradient-109);}.cls-132{fill:url(#linear-gradient-110);}.cls-133{fill:#e6e6e6;}.cls-134{fill:#f2f2f2;}.cls-135{fill:#2b237c;}.cls-135,.cls-137{opacity:0.66;}.cls-136{mask:url(#mask-2);}.cls-137{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_12);}.cls-138{fill:url(#linear-gradient-111);}.cls-139{opacity:0.6;}.cls-140{fill:url(#linear-gradient-112);}.cls-141{fill:url(#linear-gradient-113);}.cls-142{fill:url(#linear-gradient-114);}.cls-143{fill:url(#linear-gradient-115);}.cls-144{fill:url(#linear-gradient-116);}.cls-145{fill:url(#linear-gradient-117);}.cls-146{fill:url(#linear-gradient-118);}.cls-147{fill:url(#linear-gradient-119);}.cls-148{fill:url(#linear-gradient-120);}.cls-149{fill:url(#linear-gradient-121);}.cls-150{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_15-5);}.cls-151{fill:url(#linear-gradient-122);}.cls-152{fill:url(#linear-gradient-123);}.cls-153{fill:#fff;}.cls-154{filter:url(#luminosity-noclip);}</style>
 		<filter id="luminosity-noclip" x="332.77" y="-8423.88" width="144.45" height="32766" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">

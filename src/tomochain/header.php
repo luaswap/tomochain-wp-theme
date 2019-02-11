@@ -33,6 +33,32 @@
 	?>
 </div>
 <?php endif; ?>
+<div class="popup_btn tomo_btn_tmp_grad">
+    <a href="https://t.me/tomochain" title="" target="_blank"><span>Join our Telegram</span> <i class="fab fa-telegram-plane"></i></a>
+    <span class="close" title="Hide This Message">×</span>
+</div>
+<script type="text/JavaScript">
+    $(document).ready(function() {
+      // COOKIES
+      // if the cookie is true, hide the initial message and show the other one
+      if ($.cookie('hide-after-click') == 'yes') {
+        $('.popup_btn').addClass('hide-second');
+      }
+
+      // when clicked on “X” icon do something
+      $('.close').click(function() {
+        // check that “X” icon was not cliked before (hidden)
+        if (!$('.popup_btn').is('hide-second')) {
+          $('.popup_btn').addClass('hide-second');
+
+          // add cookie setting that user has clicked
+          $.cookie('hide-after-click', 'yes', {expires: 1 });
+        }
+        return false;
+      })
+
+    });
+</script>
 <div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tomochain' ); ?></a>
 	<?php if (!is_404()): ?>

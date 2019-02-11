@@ -1,6 +1,9 @@
 h2.vc_custom_heading {
     @include media-breakpoint-down(sm) {
-        font-size: 1.7em;
+        font-size: 1.6em;
+        br {
+            display: none;
+        }
     }
 }
 .vc_custom_heading {

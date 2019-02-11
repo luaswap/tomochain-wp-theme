@@ -13,19 +13,11 @@
 
     </div><!-- #content -->
     <?php if (!is_404()): ?>
-    <footer id="colophon" class="site-footer">
+    <footer id="colophon" class="site-footer ldp">
         <div class="container">
             <div class="row">
                 <div class="col-12">
-                    <div class="logo-footer">
-                        <?php the_custom_logo(); ?>
-                        <h2 class="tomochain-name"><?php echo esc_html__('TomoChain','tomochain');?></h2>
-                    </div>
-                    <div class="sidebar-footer">
-                        <?php dynamic_sidebar( 'sidebar-footer' ); ?>
-                    </div>
-
-                    <div class="site-info">
+                    <div class="site-info text-center">
                         <?php
                         printf( esc_html__( 'Copyright &copy; %1$s by %2$s.', 'tomochain' ), date('Y'), 'TomoChain Pte. Ltd' );
                         ?>

@@ -1,7 +1,7 @@
 <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 527.24 378.46">
 	<defs>
 		<style>
-			@keyframes animaUp1 {
+			<!-- @keyframes animaUp1 {
 				0% {
 					transform: translateY(0px);
 				}
@@ -134,7 +134,7 @@
 				100% {
 					transform: translate(0px,2px);
 				}
-			}
+			} -->
 
 			.cls-1{isolation:isolate;}.cls-2,.cls-3,.cls-5,.cls-6,.cls-7{opacity:0.4;}.cls-2,.cls-21,.cls-22,.cls-23,.cls-24,.cls-26,.cls-27,.cls-28,.cls-29,.cls-3,.cls-30,.cls-31,.cls-32,.cls-33,.cls-34,.cls-35,.cls-41,.cls-42,.cls-43,.cls-44,.cls-45,.cls-46,.cls-47,.cls-48,.cls-49,.cls-5,.cls-50,.cls-51,.cls-52,.cls-53,.cls-54,.cls-58,.cls-59,.cls-6,.cls-60,.cls-61,.cls-62,.cls-63,.cls-64,.cls-65,.cls-66,.cls-67,.cls-68,.cls-69,.cls-7,.cls-70,.cls-71{mix-blend-mode:lighten;}.cls-3{fill:url(#linear-gradient);}.cls-4{opacity:0.5;}.cls-5{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3);}.cls-6{fill:url(#linear-gradient-2);}.cls-7{fill:url(#linear-gradient-3);}.cls-8{fill:url(#linear-gradient-4);}.cls-9{fill:url(#linear-gradient-5);}.cls-10{fill:#0f054c;}.cls-10,.cls-104,.cls-112,.cls-127,.cls-135,.cls-37,.cls-81,.cls-89{opacity:0.2;}.cls-11{fill:url(#linear-gradient-6);}.cls-12{opacity:0.48;fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_15);}.cls-13,.cls-25,.cls-36,.cls-37{fill:#42e8e0;}.cls-13{opacity:0.3;}.cls-14{fill:url(#linear-gradient-7);}.cls-15{fill:url(#linear-gradient-8);}.cls-16{fill:#312a91;}.cls-17,.cls-36{opacity:0.9;}.cls-18{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-2);}.cls-19{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-3);}.cls-20{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-4);}.cls-21,.cls-22,.cls-23,.cls-24,.cls-26,.cls-27,.cls-28,.cls-29,.cls-30,.cls-31,.cls-32,.cls-33,.cls-34,.cls-35,.cls-41,.cls-42,.cls-43,.cls-44,.cls-45,.cls-46,.cls-47,.cls-48,.cls-49,.cls-50,.cls-51,.cls-52,.cls-53,.cls-54,.cls-58,.cls-59,.cls-60,.cls-61,.cls-62,.cls-63,.cls-64,.cls-65,.cls-66,.cls-67,.cls-68,.cls-69,.cls-70,.cls-71{opacity:0.7;}.cls-21{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-5);}.cls-22{fill:url(#linear-gradient-9);}.cls-23{fill:url(#linear-gradient-10);}.cls-24{fill:url(#linear-gradient-11);}.cls-26{fill:url(#linear-gradient-12);}.cls-27{fill:url(#linear-gradient-13);}.cls-28{fill:url(#linear-gradient-14);}.cls-29{fill:url(#linear-gradient-15);}.cls-30{fill:url(#linear-gradient-16);}.cls-31{fill:url(#linear-gradient-17);}.cls-32{fill:url(#linear-gradient-18);}.cls-33{fill:url(#linear-gradient-19);}.cls-34{fill:url(#linear-gradient-20);}.cls-35{fill:url(#linear-gradient-21);}.cls-38{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-6);}.cls-39{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-7);}.cls-40{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-8);}.cls-41{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-9);}.cls-42{fill:url(#linear-gradient-22);}.cls-43{fill:url(#linear-gradient-23);}.cls-44{fill:url(#linear-gradient-24);}.cls-45{fill:url(#linear-gradient-25);}.cls-46{fill:url(#linear-gradient-26);}.cls-47{fill:url(#linear-gradient-27);}.cls-48{fill:url(#linear-gradient-28);}.cls-49{fill:url(#linear-gradient-29);}.cls-50{fill:url(#linear-gradient-30);}.cls-51{fill:url(#linear-gradient-31);}.cls-52{fill:url(#linear-gradient-32);}.cls-53{fill:url(#linear-gradient-33);}.cls-54{fill:url(#linear-gradient-34);}.cls-55{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-10);}.cls-56{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-11);}.cls-57{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-12);}.cls-58{fill:url(#_ÂÁ_Ï_ÌÌ_È_ËÂÌÚ_3-13);}.cls-59{fill:url(#linear-gradient-35);}.cls-60{fill:url(#linear-gradient-36);}.cls-61{fill:url(#linear-gradient-37);}.cls-62{fill:url(#linear-gradient-38);}.cls-63{fill:url(#linear-gradient-39);}.cls-64{fill:url(#linear-gradient-40);}.cls-65{fill:url(#linear-gradient-41);}.cls-66{fill:url(#linear-gradient-42);}.cls-67{fill:url(#linear-gradient-43);}.cls-68{fill:url(#linear-gradient-44);}.cls-69{fill:url(#linear-gradient-45);}.cls-70{fill:url(#linear-gradient-46);}.cls-71{fill:url(#linear-gradient-47);}.cls-72{fill:url(#linear-gradient-48);}.cls-73{fill:url(#linear-gradient-49);}.cls-74{fill:url(#linear-gradient-50);}.cls-75{fill:url(#linear-gradient-51);}.cls-76{fill:url(#linear-gradient-52);}.cls-77{fill:url(#linear-gradient-53);}.cls-78{fill:url(#linear-gradient-54);}.cls-79{fill:url(#linear-gradient-55);}.cls-80{fill:url(#linear-gradient-56);}.cls-81{fill:url(#linear-gradient-57);}.cls-82{fill:url(#linear-gradient-58);}.cls-83{fill:url(#linear-gradient-59);}.cls-84{fill:url(#linear-gradient-60);}.cls-85{fill:url(#linear-gradient-61);}.cls-86{fill:url(#linear-gradient-62);}.cls-87{fill:url(#linear-gradient-63);}.cls-88{fill:url(#linear-gradient-64);}.cls-89{fill:url(#linear-gradient-65);}.cls-90{fill:url(#linear-gradient-66);}.cls-91{fill:url(#linear-gradient-67);}.cls-92{fill:url(#linear-gradient-68);}.cls-93{fill:url(#linear-gradient-69);}.cls-94{fill:url(#linear-gradient-70);}.cls-95{fill:url(#linear-gradient-71);}.cls-96{fill:url(#linear-gradient-72);}.cls-97{fill:url(#linear-gradient-73);}.cls-98{fill:url(#linear-gradient-74);}.cls-99{fill:url(#linear-gradient-75);}.cls-100{fill:url(#linear-gradient-76);}.cls-101{fill:url(#linear-gradient-77);}.cls-102{fill:url(#linear-gradient-78);}.cls-103{fill:url(#linear-gradient-79);}.cls-104{fill:url(#linear-gradient-80);}.cls-105{fill:url(#linear-gradient-81);}.cls-106{fill:url(#linear-gradient-82);}.cls-107{fill:url(#linear-gradient-83);}.cls-108{fill:url(#linear-gradient-84);}.cls-109{fill:url(#linear-gradient-85);}.cls-110{fill:url(#linear-gradient-86);}.cls-111{fill:url(#linear-gradient-87);}.cls-112{fill:url(#linear-gradient-88);}.cls-113{fill:url(#linear-gradient-89);}.cls-114{fill:url(#linear-gradient-90);}.cls-115{fill:url(#linear-gradient-91);}.cls-116{fill:url(#linear-gradient-92);}.cls-117{fill:url(#linear-gradient-93);}.cls-118{fill:url(#linear-gradient-94);}.cls-119{fill:url(#linear-gradient-95);}.cls-120{fill:url(#linear-gradient-96);}.cls-121{fill:url(#linear-gradient-97);}.cls-122{fill:url(#linear-gradient-98);}.cls-123{fill:url(#linear-gradient-99);}.cls-124{fill:url(#linear-gradient-100);}.cls-125{fill:url(#linear-gradient-101);}.cls-126{fill:url(#linear-gradient-102);}.cls-127{fill:url(#linear-gradient-103);}.cls-128{fill:url(#linear-gradient-104);}.cls-129{fill:url(#linear-gradient-105);}.cls-130{fill:url(#linear-gradient-106);}.cls-131{fill:url(#linear-gradient-107);}.cls-132{fill:url(#linear-gradient-108);}.cls-133{fill:url(#linear-gradient-109);}.cls-134{fill:url(#linear-gradient-110);}.cls-135{fill:url(#linear-gradient-111);}.cls-136{fill:url(#linear-gradient-112);}.cls-137{fill:url(#linear-gradient-113);}.cls-138{fill:url(#linear-gradient-114);}.cls-139{fill:url(#linear-gradient-115);}.cls-140{fill:url(#linear-gradient-116);}.cls-141{fill:url(#linear-gradient-117);}.cls-142{fill:url(#linear-gradient-118);}.cls-143{fill:#fff;}
 		</style>
@@ -427,35 +427,9 @@
 				</g>
 				<g>
 					<circle class="cls-37" cx="182.65" cy="135.29" r="0.77"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="3s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="3s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<path class="cls-37" d="M159.65,132.49a.48.48,0,0,0,.48.49.49.49,0,1,0,0-1A.48.48,0,0,0,159.65,132.49Z"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="4s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="4s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<circle class="cls-37" cx="161.92" cy="129.96" r="1.02"/>
@@ -463,57 +437,17 @@
 				<g>
 					<circle class="cls-37" cx="184.74" cy="133.75" r="0.49"/>
 				</g>
-				
 				<g>
 					<path class="cls-37" d="M190,125.84a.43.43,0,0,1-.52.31.43.43,0,1,1,.21-.83A.43.43,0,0,1,190,125.84Z"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="4.5s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="4.5s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<path class="cls-37" d="M189.44,123.39a.91.91,0,0,1-1.1.65.9.9,0,0,1-.65-1.1.88.88,0,0,1,1.09-.65A.9.9,0,0,1,189.44,123.39Z"/>
 				</g>
 				<g>
 					<path class="cls-37" d="M168.52,121.52a.44.44,0,1,1-.85-.22.44.44,0,0,1,.85.22Z"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="4s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="4s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<path class="cls-37" d="M163.27,158.05A.5.5,0,0,0,164,158a.49.49,0,0,0-.06-.68.48.48,0,0,0-.68.05A.49.49,0,0,0,163.27,158.05Z"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="3s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="3s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<path class="cls-37" d="M162.15,155.45a1,1,0,0,0,1.44-.12,1,1,0,0,0-.12-1.43,1,1,0,1,0-1.32,1.55Z"/>
@@ -526,35 +460,9 @@
 				</g>
 				<g>
 					<path class="cls-37" d="M160.64,144.18a.43.43,0,0,1-.1.61.44.44,0,0,1-.51-.71A.43.43,0,0,1,160.64,144.18Z"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="3s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="3s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<path class="cls-25" d="M178.25,165.84a1.07,1.07,0,0,1-1.31.78,1.08,1.08,0,1,1,1.31-.78Z"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="4s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="4s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<path class="cls-25" d="M175.12,160a.76.76,0,1,1-.55-.94A.77.77,0,0,1,175.12,160Z"/>
@@ -564,19 +472,6 @@
 				</g>
 				<g>
 					<circle class="cls-13" cx="187.91" cy="129.96" r="0.75"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="2.5s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="2.5s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				/*End animationFoam 1*/
 
@@ -612,19 +507,6 @@
 
 				<g>
 					<path class="cls-25" d="M349.37,138.13a1.08,1.08,0,0,0,2.09-.53,1.08,1.08,0,1,0-2.09.53Z"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="3s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="3s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<path class="cls-25" d="M352.5,132.28a.76.76,0,1,0,.55-.93A.76.76,0,0,0,352.5,132.28Z"/>
@@ -634,35 +516,9 @@
 				</g>
 				<g>
 					<circle class="cls-13" cx="339.71" cy="86.93" r="0.75"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="2.5s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="2.5s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<circle class="cls-37" cx="344.97" cy="78.41" r="0.77"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="2.5s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="2.5s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<path class="cls-37" d="M368,75.61a.48.48,0,0,1-.48.49.49.49,0,0,1-.49-.49.48.48,0,0,1,.49-.48A.47.47,0,0,1,368,75.61Z"/>
@@ -684,19 +540,6 @@
 				</g>
 				<g>
 					<path class="cls-36" d="M352.31,84.46a1.08,1.08,0,0,0,2.1-.54,1.08,1.08,0,0,0-2.1.54Z"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="3s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="3s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				/*End animationFoam 3*/
 
@@ -731,19 +574,6 @@
 				
 				<g>
 					<path class="cls-37" d="M278,130.33a.43.43,0,1,0,.71.5.44.44,0,0,0-.1-.61A.44.44,0,0,0,278,130.33Z"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="4.5s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="4.5s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<path class="cls-25" d="M260.37,152a1.08,1.08,0,1,0,.78-1.31A1.08,1.08,0,0,0,260.37,152Z"/>
@@ -753,19 +583,6 @@
 				</g>
 				<g>
 					<path class="cls-36" d="M267.31,125.78a1.22,1.22,0,1,1-1.22-1.22A1.22,1.22,0,0,1,267.31,125.78Z"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="3s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="3s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<circle class="cls-13" cx="250.71" cy="116.11" r="0.75"/>
@@ -778,54 +595,15 @@
 				</g>
 				<g>
 					<circle class="cls-37" cx="276.7" cy="102.25" r="1.02"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="4s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="4s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<path class="cls-37" d="M254.38,106.05a.5.5,0,1,1-.5-.5A.49.49,0,0,1,254.38,106.05Z"/>
 				</g>
 				<g>
 					<circle class="cls-13" cx="253.02" cy="129.87" r="0.75"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="2.8s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="2.8s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<path class="cls-37" d="M259.05,121.34a.77.77,0,0,1-1.54,0,.77.77,0,0,1,1.54,0Z"/>
-					<animateTransform
-						attributeName="transform"
-						attributeType="XML"
-						type="translate"
-						values="0 0;0 -50;"
-						dur="2.8s"
-						repeatCount="indefinite"
-					/>
-					<animate
-						attributeName="opacity"
-						values="1;0" dur="2.8s"
-						repeatCount="indefinite"
-					/>
 				</g>
 				<g>
 					<path class="cls-37" d="M256.68,119.81a.49.49,0,1,1-.49-.49A.49.49,0,0,1,256.68,119.81Z"/>

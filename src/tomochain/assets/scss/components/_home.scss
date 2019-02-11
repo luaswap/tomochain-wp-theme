@@ -51,6 +51,16 @@
 		padding: 0 5%;
 	}
 }
+.pad_right_15 {
+	@include media-breakpoint-up(xl) {
+		padding-right: 15px!important;
+	}
+}
+.pad_left_15 {
+	@include media-breakpoint-up(xl) {
+		padding-left: 15px!important;
+	}
+}
 .pad_right_30 {
 	@include media-breakpoint-up(xl) {
 		padding-right: 30px!important;
@@ -59,6 +69,16 @@
 .pad_left_30 {
 	@include media-breakpoint-up(xl) {
 		padding-left: 30px!important;
+	}
+}
+.pad_right_70 {
+	@include media-breakpoint-up(xl) {
+		padding-right: 70px!important;
+	}
+}
+.pad_left_70 {
+	@include media-breakpoint-up(xl) {
+		padding-left: 70px!important;
 	}
 }
 /** Style font **/
@@ -105,6 +125,9 @@
 		&:first-child {
 			margin-top: 0;
 		}
+		br {
+			display: none;
+		}
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1366px) {
 		.wpb_single_image {
@@ -140,6 +163,7 @@
 		text-align: center;
 		img {
 			width: 300px;
+			margin: auto;
 		}
 	}
 }
@@ -150,7 +174,8 @@
 	@include media-breakpoint-down(sm) {
 		text-align: center;
 		img {
-			width: 200px;
+			width: 250px;
+			margin: auto;
 		}
 	}
 	.wpb_wrapper {
@@ -196,7 +221,7 @@
 }
 
 // con_chart
-.animated {
+.not-opt {
 	.tomo_chart {
 		@keyframes full_height1 {
 			0% {
@@ -333,47 +358,56 @@
 			}
 		}
 		.height1 {
-			height: 0;
-			animation-name: full_height1;
+			/*height: 0;*/
+			height: 200px;
+			/*animation-name: full_height1;*/
 		}
 		.height1_2 {
-			height: 0;
-			animation-name: full_height1_2;
+			/*height: 0;*/
+			height: 192px;
+			/*animation-name: full_height1_2;*/
 		}
 		.height2 {
-			height: 0;
-			animation-name: full_height2;
+			/*height: 0;*/
+			height: 18px;
+			/*animation-name: full_height2;*/
 		}
 		.height3 {
-			height: 0;
-			animation-name: full_height3;
+			/*height: 0;*/
+			height: 50px;
+			/*animation-name: full_height3;*/
 		}
 		.height4 {
-			height: 0;
-			animation-name: full_height4;
+			/*height: 0;*/
+			height: 150px;
+			/*animation-name: full_height4;*/
 		}
 		.height5 {
-			height: 0;
-			animation-name: full_height5;
+			/*height: 0;*/
+			height: 192px;
+			/*animation-name: full_height5;*/
 		}
 		.height5_2 {
-			height: 0;
-			animation-name: full_height5_2;
+			/*height: 0;*/
+			height: 52px;
+			/*animation-name: full_height5_2;*/
 		}
 		.height6 {
-			height: 0;
-			animation-name: full_height6;
+			/*height: 0;*/
+			height: 131px;
+			/*animation-name: full_height6;*/
 		}
 		.height7 {
-			height: 0;
-			animation-name: full_height7;
+			/*height: 0;*/
+			height: 170px;
+			/*animation-name: full_height7;*/
 		}
 		.chart_blue {
 			background-image: linear-gradient(#698AF5 30%, #7965F1 100%) !important;
 			color: #8E96E1;
 			position: relative;
 			width: 6px;
-			height: 0;
+			/*height: 0;*/
 			animation-duration: 1.5s;
 			animation-timing-function: ease;
 			animation-fill-mode: forwards;
