@@ -195,6 +195,19 @@ input[type="submit"] {
 			margin: 0 10px;
 		}
 	}
+	&.pc_left {
+		@media screen and (min-width: 767px) {
+			justify-content: left;
+			a {
+				&:first-child {
+					margin-left: 0;
+				}
+				&:last-child {
+					margin-right: 0;
+				}
+			}
+		}
+	}
 }
 .btn-tmp-txt1 {
 	color:#6b6ced!important;
@@ -301,6 +314,7 @@ input[type="submit"] {
 	height: 38px;
 	position: relative;
 	overflow: hidden;
+	text-align: center;
 	z-index: 1;
 	font-weight: 400;
 	font-family: 'Quicksand', sans-serif!important;
@@ -350,6 +364,7 @@ input[type="submit"] {
 	height: 38px;
 	position: relative;
 	overflow: hidden;
+	text-align: center;
 	z-index: 1;
 	font-weight: 400;
 	font-family: 'Quicksand', sans-serif!important;
