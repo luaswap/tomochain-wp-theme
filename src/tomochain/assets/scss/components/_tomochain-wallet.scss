@@ -1,0 +1,131 @@
+.title_wallet_secure,
+.title_wallet_faq {
+	position: relative;
+	z-index: 1;
+	&:before {
+		content:'';
+		font-size: 5.5rem;
+		color: #293067;
+		position: absolute;
+		z-index: -1;
+		top: -52px;
+		left: 0;
+		font-family: $font__main;
+		font-weight: bold;
+	}
+	@media screen and (min-width: 992px) {
+		font-size: 2.5rem;
+	}
+	@media screen and (max-width: 767px) {
+		&:before {
+			font-size: 3.5rem;
+			top: -40px;
+			left: 50%;
+			transform: translateX(-50%);
+		}
+	}
+	b {
+		font-weight: 500;
+		color: #1e86ff;
+	}
+}
+.title_wallet_secure {
+	&:before {
+		content:'Wallet';
+	}
+}
+.title_wallet_faq {
+	&:before {
+		content:'FAQ';
+	}
+}
+
+// con_wallet_secure
+.con_wallet_secure {
+	.box_inner_slide {
+		text-align: center;
+		@media screen and (min-width: 768px) {
+			text-align: left;
+			display: flex;
+			align-items: center;
+			flex-direction: row-reverse;
+		}
+		@media screen and (max-width: 767px) {
+			img {
+				width: 200px;
+			}
+		}
+		.wpb_text_column {
+			margin: 30px 0 40px;
+		}
+	}
+}
+
+// con_wallet_faq
+.con_wallet_faq {
+	i {
+		display: none!important;
+	}
+	.vc_toggle_title {
+		padding-left: 0!important;
+	}
+	.vc_toggle_content {
+		padding-left: 4em!important;
+	}
+	.accordion {
+		background: transparent;
+		color: #fff;
+		cursor: pointer;
+		padding: .5em 0 .5em 4em;
+		width: 100%;
+		border: 0;
+		text-align: left;
+		outline: none;
+		transition: all .4s ease;
+		position: relative;
+		line-height: 1.5;
+		@media screen and (max-width: 768px) {
+			padding: .5em 0 .5em 3em;
+			text-align: left!important;
+		}
+		&:before {
+			background-color: #2c3665;
+			box-shadow: 0 0 5px #1e2147;
+			border-radius: 50%;
+			content: "";
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			padding: 5px;
+			top: 3px;
+			left: 0;
+		}
+		&:after {
+			content: "\e903";
+			color: #1e86ff;
+			display: flex;
+			align-items: center;
+			justify-content: center;
+			font-size: 6px;
+			position: absolute;
+			width: 30px;
+			height: 30px;
+			padding: 5px;
+			top: 5px;
+			left: 0;
+			font-family: "tomochain";
+			transition: all .4s ease;
+		}
+	}
+	.vc_toggle_active {
+		.accordion {
+			&:after {
+				transform: rotate(-180deg);
+				top: 2px;
+			}
+		}
+	}
+	.vc_toggle:last-of-type {
+		margin-bottom: 0!important;
+	}
+}

@@ -257,7 +257,7 @@
 			align-items: center;
 			flex-direction: row-reverse;
 		}
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 767px) {
 			img {
 				width: 200px;
 			}
@@ -321,6 +321,9 @@
 			color: #8986AC;
 		}
 	}
+	.vc_row-fluid .wpb_content_element {
+			margin-bottom: 0!important;
+		}
 }
 .ldp {
 	.site-info {
