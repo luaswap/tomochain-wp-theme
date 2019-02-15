@@ -1,4 +1,5 @@
 .title_wallet_secure,
+.title_wallet_features,
 .title_wallet_faq {
 	position: relative;
 	z-index: 1;
@@ -39,7 +40,11 @@
 		content:'FAQ';
 	}
 }
-
+.title_wallet_features {
+	&:before {
+		content:'Features';
+	}
+}
 // con_wallet_secure
 .con_wallet_secure {
 	.box_inner_slide {
@@ -127,5 +132,14 @@
 	}
 	.vc_toggle:last-of-type {
 		margin-bottom: 0!important;
+	}
+}
+
+.con_features {
+	.hgt100 {
+		height: 100px;
+		@include media-breakpoint-between(md, lg) {
+			height: 80px;
+		}
 	}
 }

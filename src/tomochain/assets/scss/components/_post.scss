@@ -1,9 +1,11 @@
 
 .post-thumbnail {
-    border-radius: 10px;
+    /*-webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;*/
     display: block;
     overflow: hidden;
-
+    transition: all .5s ease;
     img {
         @extend %transit;
     }
@@ -17,19 +19,22 @@ article.post-loop {
     margin-bottom: 50px;
 
     .entry-img {
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        border-radius: 10px;
+        margin-bottom: 25px;
+        min-height: 175px;
         overflow: hidden;
-        margin-bottom: 15px;
-
-        img {
+        /*img {
             min-height: 175px;
             object-fit: cover;
 
             @extend %transit;
-        }
+        }*/
 
-        @include media-breakpoint-up(sm) {
+        /*@include media-breakpoint-up(sm) {
             margin-bottom: 20px;
-        }
+        }*/
     }
 
     .entry-title {
@@ -47,10 +52,14 @@ article.post-loop {
             font-size: 18px;
         }
     }
-
-    &:hover .entry-img img {
-        transform: scale(1.05);
+    &:hover {
+        .post-thumbnail {
+            transform: scale(1.04);
+        }
     }
+    /*&:hover .entry-img img {
+        transform: scale(1.04);
+    }*/
 }
 
 .post-navigation {
