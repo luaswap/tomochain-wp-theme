@@ -45,7 +45,7 @@ if ( ! class_exists( 'TomoChain_Recent_Posts_Widget' ) ) {
 
 				if ( has_post_thumbnail( get_the_ID() ) && $instance['show_post_thumbnail'] ) {
 					$output[] = '<a href="' . get_permalink() . '" class="recent-post__thumb">';
-					$image    = get_the_post_thumbnail_url( get_the_ID(), array(100, 100) );
+					$image    = get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' );
 					$output[] = '<img src="' . $image . '" />';
 					$output[] = '</a>';
 				}else{

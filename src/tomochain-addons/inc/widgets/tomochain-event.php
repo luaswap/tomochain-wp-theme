@@ -131,7 +131,7 @@ if ( ! class_exists( 'TomoChain_Event_Widget' ) ) {
 
 					if ( has_post_thumbnail( get_the_ID() ) ) {
 						$output[] = '<a href="' . $custom_url . '" class="tomo-event__thumb" target="'. esc_attr($open_new_tab) .'">';
-						$image    = get_the_post_thumbnail_url( get_the_ID(), array(100, 100) );
+						$image    = get_the_post_thumbnail_url( get_the_ID(), 'thumbnail' );
 						$output[] = '<img src="' . $image . '" />';
 						$output[] = '</a>';
 					}else{

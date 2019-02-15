@@ -211,7 +211,7 @@ var tomochain
                 }
                 var $target = $(href);
                 if($target.length){
-                    $('html').add($('body')).not(':animated').animate({scrollTop : String($target.offset().top - 50)},speed,easing);
+                    $('html').add($('body')).not(':animated').animate({scrollTop : String($target.offset().top - 0)},speed,easing);
                     return false;
                 }
             }
@@ -221,7 +221,7 @@ var tomochain
             if(location.href.split('#')[1]) {
                 var href = '#' + location.href.split('#')[1];
                 var $target = $(href);
-                $('html').add($('body')).not(':animated').animate({scrollTop : String($target.offset().top - 50)},speed,easing);
+                $('html').add($('body')).not(':animated').animate({scrollTop : String($target.offset().top - 0)},speed,easing);
                 return false;
             }
         });

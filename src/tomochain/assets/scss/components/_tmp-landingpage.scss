@@ -334,27 +334,29 @@
 .submit_game {
 	background-color: #1e2149;
 	.form_submit_game {
-		@include media-breakpoint-up(md) {
-			display: flex;
-		}
-		.box_per {
-			margin-bottom: 50px;
+		.box_cate {
+			margin-bottom: 30px;
 			@include media-breakpoint-up(md) {
-				width: 40%;
-			}
-		}
-		.box_game_idea {
-			@include media-breakpoint-up(md) {
-				width: 60%;
-				padding-left: 50px;
+				display: flex;
+				.col_left {
+					padding-right: 15px;
+					width: 50%;
+				}
+				.col_right {
+					width: 50%;
+					padding-left: 15px;
+				}
 			}
 		}
 		h3 {
 			font-size: 18px;
-			margin-bottom: 30px;
+			margin-bottom: 0;
 		}
 		.form-group-tomo {
-			margin-top: 15px;
+			margin-top: 20px;
+			span {
+				display: block;
+			}
 			p {
 				margin: 0;
 			}
@@ -364,7 +366,7 @@
 			input,
 			textarea {
 				background: #808bab;
-				padding: 1em;
+				padding: .7em 1em;
 				border-radius: 0px;
 				color: #252f5a;
 				&::placeholder {
@@ -419,13 +421,14 @@
 		}
 		.form-submit-tomo {
 			margin-top: 30px;
+			text-align: center;
 			.btn_submit {
 				background: linear-gradient(to right,#f66f92, #f29259);
 				border-radius: 0;
 				border: 0;
 				color: #fff!important;
 				display: inline-block;
-				padding: 1.2em 2em!important;
+				padding: 1.2em 3em!important;
 				overflow: hidden;
 				text-transform: uppercase;
 				position: relative;
@@ -436,11 +439,14 @@
 				&:hover {
 					background: linear-gradient(to right,#f29259, #f66f92);
 				}
+				@include media-breakpoint-down(sm) {
+					width: 100%;
+				}
 			}
 			.ajax-loader {
 				background-image: url(assets/images/loading.svg) !important;
 				background-repeat: no-repeat!important;
-				background-position: left!important;
+				background-position: center!important;
 				display: block!important;
 				height: 16px!important;
 				width: 100%!important;
