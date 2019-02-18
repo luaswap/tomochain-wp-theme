@@ -63,6 +63,21 @@
 		.wpb_text_column {
 			margin: 30px 0 40px;
 		}
+		@media screen and (max-width: 990px) and (min-width: 768px) {
+			.tomo-flexbox>a {
+				margin: 0 10px;
+			}
+			.btn-downios,
+			.btn-downandroid {
+				padding: 10px 15px 10px 30px;
+			}
+			.btn-downandroid:before {
+				left: 10px;
+			}
+			.btn-downios:before {
+				left: 15px;
+			}
+		}
 	}
 }
 
@@ -76,6 +91,9 @@
 	}
 	.vc_toggle_content {
 		padding-left: 4em!important;
+		@media screen and (max-width: 767px) {
+			padding-left: 3em!important;
+		}
 	}
 	.accordion {
 		background: transparent;
@@ -89,7 +107,7 @@
 		transition: all .4s ease;
 		position: relative;
 		line-height: 1.5;
-		@media screen and (max-width: 768px) {
+		@media screen and (max-width: 767px) {
 			padding: .5em 0 .5em 3em;
 			text-align: left!important;
 		}
