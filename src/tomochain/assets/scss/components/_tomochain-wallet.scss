@@ -1,5 +1,13 @@
+.tomo_slide_img_wallet {
+	img {
+		max-height: 603px;
+		width: inherit;
+	}
+}
 .title_wallet_secure,
 .title_wallet_features,
+.title_wallet_howto,
+.title_wallet_download,
 .title_wallet_faq {
 	position: relative;
 	z-index: 1;
@@ -15,7 +23,7 @@
 		font-weight: bold;
 	}
 	@media screen and (min-width: 992px) {
-		font-size: 2.5rem;
+		font-size: 2rem;
 	}
 	@media screen and (max-width: 767px) {
 		&:before {
@@ -45,8 +53,25 @@
 		content:'Features';
 	}
 }
+.title_wallet_howto {
+	&:before {
+		content:'USE';
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+.title_wallet_download {
+	&:before {
+		content:'Download';
+		left: 50%;
+		transform: translateX(-50%);
+	}
+}
+
 // con_wallet_secure
 .con_wallet_secure {
+	background: url('assets/images/bg_toppage_wallet.png') no-repeat center right;
+	background-size: auto 100%;
 	.box_inner_slide {
 		text-align: center;
 		@media screen and (min-width: 768px) {
@@ -99,7 +124,7 @@
 		background: transparent;
 		color: #fff;
 		cursor: pointer;
-		padding: .5em 0 .5em 4em;
+		padding: .5em 0 .5em 4.5em;
 		width: 100%;
 		border: 0;
 		text-align: left;
@@ -108,7 +133,7 @@
 		position: relative;
 		line-height: 1.5;
 		@media screen and (max-width: 767px) {
-			padding: .5em 0 .5em 3em;
+			padding: .5em 0 .5em 3.5em;
 			text-align: left!important;
 		}
 		&:before {
@@ -117,10 +142,10 @@
 			border-radius: 50%;
 			content: "";
 			position: absolute;
-			width: 30px;
-			height: 30px;
+			width: 34px;
+			height: 34px;
 			padding: 5px;
-			top: 3px;
+			top: 2px;
 			left: 0;
 		}
 		&:after {
@@ -129,12 +154,12 @@
 			display: flex;
 			align-items: center;
 			justify-content: center;
-			font-size: 6px;
+			font-size: 8px;
 			position: absolute;
-			width: 30px;
-			height: 30px;
+			width: 34px;
+			height: 34px;
 			padding: 5px;
-			top: 5px;
+			top: 4px;
 			left: 0;
 			font-family: "tomochain";
 			transition: all .4s ease;
@@ -154,10 +179,128 @@
 }
 
 .con_features {
-	.hgt100 {
-		height: 100px;
+	.hgt80 {
+		height: 80px;
 		@include media-breakpoint-between(md, lg) {
-			height: 80px;
+			height: 70px;
 		}
+	}
+	.wpb_text_column {
+		margin-bottom: 15px!important;
+	}
+}
+
+.flexbox_howto {
+	.tomochain_howto_use {
+		.vd_item {
+			iframe {
+				display: block;
+				@media screen and (max-width: 767px) {
+					height: 260px!important;
+				}
+			}
+		}
+		.slick-list {
+			box-shadow: 0 0 20px 0 #1e2147;
+			border-radius: 5px;
+			overflow: hidden;
+		}
+	}
+	@media screen and (max-width: 767px) {
+		.tomochain_slider_nav {
+			display: none;
+		}
+	}
+	@media screen and (min-width: 768px) {
+		display: flex;
+		flex-direction: row-reverse;
+		align-items: center;
+		.tomochain_howto_use {
+			width: 60%;
+		}
+		.tomochain_slider_nav {
+			width: 40%;
+			padding-right: 30px;
+			.slick-list {
+				height: auto!important;
+			}
+			.txt_item {
+				padding: 15px 0;
+				.howto {
+					font-size: 16px;
+					position: relative;
+					padding-right: 50px;
+					margin-bottom: 0;
+					display: inline-block;
+					&:before {
+						content: "→";
+						color: #8b96b5;
+						font-size: 20px;
+						position: absolute;
+						width: 30px;
+						height: 30px;
+						top: 0px;
+						right: 0;
+						font-family: "monospace";
+						transition: all .4s ease;
+					}
+				}
+				&.slick-current {
+					color: #fff;
+					.howto {
+						&:before {
+							color: #fff;
+						}
+					}
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 991px) and (min-width: 768px) {
+		.tomochain_slider_nav {
+			width: 45%;
+		}
+		.tomochain_howto_use {
+			width: 55%;
+			.vd_item {
+				iframe {
+					display: block;
+					height: 210px!important;
+				}
+			}
+		}
+	}
+	@media screen and (max-width: 1100px) and (min-width: 992px) {
+		.tomochain_howto_use {
+			.vd_item {
+				iframe {
+					display: block;
+					height: 315px!important;
+				}
+			}
+		}
+	}
+}
+
+// con_review_tomowallet
+.tomochain_slider_review {
+	.tomochain-image-carousel-item {
+		padding: 0 15px;
+		img {
+			width: 100%;
+		}
+	}
+}
+
+// con_wallet_down
+.con_wallet_down {
+	background: url('assets/images/bg_con_down.png') no-repeat center top;
+	background-size: auto 100%;
+	padding: 150px 0;
+	@media screen and (max-width: 1600px) and (min-width: 1201px) {
+		padding: 100px 0;
+	}
+	@media screen and (max-width: 1200px) {
+		padding: 50px 0;
 	}
 }

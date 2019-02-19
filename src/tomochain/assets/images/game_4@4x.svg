@@ -40,19 +40,19 @@
         	.code_ani .cls-23 {
         		animation-name: cl_red;
                 animation-iteration-count: infinite;
-                animation-duration: 5s;
+                animation-duration: 8s;
         	}
         	.code_ani .cls-26 {
         		animation-name: cl_green;
                 animation-iteration-count: infinite;
-                animation-duration: 4s;
-                animation-delay: 1s;
+                animation-duration: 8s;
+                animation-delay: 1.5s;
         	}
         	.code_ani .cls-20 {
         		animation-name: cl_blue;
                 animation-iteration-count: infinite;
-                animation-duration: 4s;
-                animation-delay: 2s;
+                animation-duration: 8s;
+                animation-delay: 2.5s;
         	}
         </style>
         <linearGradient id="linear-gradient" x1="78.52" y1="106.41" x2="916.59" y2="582.6" gradientUnits="userSpaceOnUse">
