@@ -177,7 +177,7 @@
     }
     .recent-post__thumb {
         width: 40%;
-        height: 80px;
+        min-height: 60px;
         overflow: hidden;
         border-radius: 5px;
         @include media-breakpoint-down(sm) {
@@ -230,7 +230,7 @@
 
     .tomo-event__thumb {
         width: 40%;
-        height: 80px;
+        min-height: 60px;
         overflow: hidden;
         border-radius: 5px;
         @include media-breakpoint-down(sm) {

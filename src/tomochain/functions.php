@@ -94,9 +94,12 @@ if ( ! function_exists( 'tomochain_setup' ) ) :
 			'flex-height' => true,
         ) );
 
-        add_image_size('tomo-post-small-thumbnail', 200, 200, true);
-        add_image_size('tomo-post-thumbnail', 540, 270, true);
-        add_image_size('tomo-single-thumbnail', 1170, 630, true);
+		add_image_size('tomo-post-small-thumbnail', 280, 160, true);
+        add_image_size('tomo-post-thumbnail', 600, 314, true);
+        add_image_size('tomo-single-thumbnail', 1200, 628, true);
+        // add_image_size('tomo-post-small-thumbnail', 200, 200, true);
+        // add_image_size('tomo-post-thumbnail', 540, 270, true);
+        // add_image_size('tomo-single-thumbnail', 1170, 630, true);
         // add_image_size('tomo-post-thumbnail', 540, 200, true);
         // add_image_size('tomo-single-thumbnail', 1170, 500, true);
 	}
