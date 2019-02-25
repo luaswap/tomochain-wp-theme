@@ -7634,12 +7634,13 @@ If your tooling is more complex you can split it up like:
   etc.
 */
 .tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-tmp-color-gradient a:after, .btn-tmp-basic:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts,
+.tomochain-roadmap-main .archive-posts,
 .tomochain-dapp-main .archive-posts, .site-header, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
 .main-menu .menu li.menu-item.page_item_has_children > a:before,
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .tomochain-pagination ul li a:after, .woocommerce-pagination ul li a:after, .post-thumbnail img, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-blog-item, .tomochain-blog-item .blog-thumbnail, .tomochain-blog-item .blog-thumbnail a:before, .tomochain-blog-item .blog-thumbnail img, .tomochain-blog-item .blog-date, .tomochain-event-item, .tomochain-event-item .event-thumbnail, .tomochain-event-item .event-thumbnail a:before, .tomochain-event-item .event-thumbnail img, .tomochain-event-item .event-date, .tomochain-roadmap, .tomochain-team__see-all span, .tomochain-button span, .tomochain-team__see-all:before, .tomochain-button:before, .tomochain-team-member__image a:after, .tomochain-team-member__image img, .team-member-info__close:before, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, body:after, .slick-arrow, .slick-arrow:before, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .tomochain-pagination ul li a:after, .woocommerce-pagination ul li a:after, .post-thumbnail img, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tmp-roadmap .tomochain-roadmap-page, .tomochain-blog-item, .tomochain-blog-item .blog-thumbnail, .tomochain-blog-item .blog-thumbnail a:before, .tomochain-blog-item .blog-thumbnail img, .tomochain-blog-item .blog-date, .tomochain-event-item, .tomochain-event-item .event-thumbnail, .tomochain-event-item .event-thumbnail a:before, .tomochain-event-item .event-thumbnail img, .tomochain-event-item .event-date, .tomochain-roadmap, .tomochain-team__see-all span, .tomochain-button span, .tomochain-team__see-all:before, .tomochain-button:before, .tomochain-team-member__image a:after, .tomochain-team-member__image img, .team-member-info__close:before, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, body:after, .slick-arrow, .slick-arrow:before, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
@@ -10175,10 +10176,12 @@ Specific UI components.
 This is where majority of our work takes place and our UI components are often composed of Objects and Components
 */
 .tomo-archive-wrapper.loading,
+.tomochain-roadmap-main.loading,
 .tomochain-dapp-main.loading {
   position: relative;
   text-align: center; }
   .tomo-archive-wrapper.loading:before,
+  .tomochain-roadmap-main.loading:before,
   .tomochain-dapp-main.loading:before {
     content: url(assets/images/loading.svg) !important;
     display: block;
@@ -10189,16 +10192,20 @@ This is where majority of our work takes place and our UI components are often c
             transform: translateX(-50%) scale(1.5); }
   .tomo-archive-wrapper.loading .archive-posts,
   .tomo-archive-wrapper.loading .dapp-posts,
+  .tomochain-roadmap-main.loading .archive-posts,
+  .tomochain-roadmap-main.loading .dapp-posts,
   .tomochain-dapp-main.loading .archive-posts,
   .tomochain-dapp-main.loading .dapp-posts {
     opacity: 0;
     visibility: hidden; }
 
 .tomo-categories-filter,
+.tomochain-roadmap-filter,
 .tomochain-dapp-filter {
   margin: 0 0 30px;
   padding: 0; }
   .tomo-categories-filter li,
+  .tomochain-roadmap-filter li,
   .tomochain-dapp-filter li {
     list-style: none;
     display: inline-block;
@@ -10206,9 +10213,11 @@ This is where majority of our work takes place and our UI components are often c
     margin: 0 0 0 20px;
     padding: 0; }
     .tomo-categories-filter li:first-child,
+    .tomochain-roadmap-filter li:first-child,
     .tomochain-dapp-filter li:first-child {
       margin-left: 0; }
     .tomo-categories-filter li a,
+    .tomochain-roadmap-filter li a,
     .tomochain-dapp-filter li a {
       position: relative;
       display: block;
@@ -10217,6 +10226,7 @@ This is where majority of our work takes place and our UI components are often c
       color: #9eaacc;
       padding-bottom: 10px; }
       .tomo-categories-filter li a:after,
+      .tomochain-roadmap-filter li a:after,
       .tomochain-dapp-filter li a:after {
         content: '';
         position: absolute;
@@ -10235,10 +10245,14 @@ This is where majority of our work takes place and our UI components are often c
                 transform-origin: 100% 50%;
         background-color: #e68b71; }
     .tomo-categories-filter li.selected a, .tomo-categories-filter li:hover a,
+    .tomochain-roadmap-filter li.selected a,
+    .tomochain-roadmap-filter li:hover a,
     .tomochain-dapp-filter li.selected a,
     .tomochain-dapp-filter li:hover a {
       color: #fff; }
       .tomo-categories-filter li.selected a:after, .tomo-categories-filter li:hover a:after,
+      .tomochain-roadmap-filter li.selected a:after,
+      .tomochain-roadmap-filter li:hover a:after,
       .tomochain-dapp-filter li.selected a:after,
       .tomochain-dapp-filter li:hover a:after {
         -webkit-transform: scale3d(1, 1, 1);
@@ -11482,6 +11496,236 @@ article.post-loop {
     text-align: center !important;
     color: #fff !important; }
 
+.tmp-roadmap .tomochain-roadmap-page .tomochain-roadmap-filter {
+  margin-bottom: 15px;
+  padding-bottom: 0;
+  border-bottom: 2px solid #394472; }
+  .tmp-roadmap .tomochain-roadmap-page .tomochain-roadmap-filter li a {
+    padding-bottom: 15px;
+    font-size: 15px; }
+    .tmp-roadmap .tomochain-roadmap-page .tomochain-roadmap-filter li a:after {
+      background-color: #2a8bff;
+      bottom: -2px; }
+
+.tmp-roadmap .roadmap-desc-infor {
+  margin-bottom: 30px; }
+
+.tmp-roadmap .roadmap-common {
+  background: #1f2649;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#1f2649), to(#242a58));
+  background: linear-gradient(to bottom, #1f2649 0%, #242a58 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2649', endColorstr='#242a58',GradientType=0 );
+  /* IE6-9 */
+  border-radius: 5px;
+  overflow: hidden;
+  padding: 15px 0;
+  margin-bottom: 30px; }
+  .tmp-roadmap .roadmap-common .main-title {
+    padding: 0 0 15px;
+    margin-bottom: 0;
+    font-size: 18px;
+    text-align: center; }
+  .tmp-roadmap .roadmap-common .list-box {
+    padding: 0 15px;
+    max-height: 580px;
+    overflow-y: auto;
+    /* width */
+    /* Track */
+    /* Handle */
+    /* Handle on hover */ }
+    .tmp-roadmap .roadmap-common .list-box::-webkit-scrollbar {
+      width: 6px; }
+    .tmp-roadmap .roadmap-common .list-box::-webkit-scrollbar-track {
+      /*box-shadow: inset 0 0 5px grey;*/
+      border-radius: 10px; }
+    .tmp-roadmap .roadmap-common .list-box::-webkit-scrollbar-thumb {
+      background: #394472;
+      border-radius: 10px; }
+    .tmp-roadmap .roadmap-common .list-box::-webkit-scrollbar-thumb:hover {
+      background: #45538b;
+      overflow-y: auto;
+      cursor: pointer; }
+    .tmp-roadmap .roadmap-common .list-box .box-item {
+      border-top: 2px solid #394472;
+      padding-top: 25px;
+      margin-bottom: 25px; }
+      .tmp-roadmap .roadmap-common .list-box .box-item .item-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        margin-bottom: 25px; }
+        .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-logo {
+          width: 40px; }
+        .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor {
+          width: 100%;
+          padding-left: 15px; }
+          .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor .txt-name {
+            font-size: 16px; }
+          .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor .update-on > span {
+            white-space: nowrap; }
+          .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress {
+            display: inline-block;
+            margin-right: 15px; }
+            .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress .innrer-progress {
+              background-color: #394472;
+              border-radius: 20px;
+              width: 100px;
+              height: 6px;
+              display: inline-block;
+              margin-right: 5px;
+              position: relative; }
+              .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress .innrer-progress .progress-value {
+                background-image: -webkit-gradient(linear, left top, right top, from(#524dff), to(#4aaaff));
+                background-image: linear-gradient(to right, #524dff, #4aaaff);
+                border-radius: 20px;
+                height: 6px;
+                position: absolute;
+                left: 0;
+                top: 0; }
+            .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress span {
+              display: inline-block;
+              color: #2b96ff; }
+      .tmp-roadmap .roadmap-common .list-box .box-item .item-body .box-element {
+        padding-left: 15px;
+        position: relative; }
+        .tmp-roadmap .roadmap-common .list-box .box-item .item-body .box-element:before {
+          background: #fff;
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          overflow: hidden;
+          position: absolute;
+          left: 0;
+          top: 6px; }
+        .tmp-roadmap .roadmap-common .list-box .box-item .item-body .box-element h4 {
+          font-size: 14px; }
+        .tmp-roadmap .roadmap-common .list-box .box-item .item-body .box-element p {
+          margin-bottom: 15px; }
+  .tmp-roadmap .roadmap-common.tomochain-progress .main-title {
+    color: #2b96ff; }
+
+.tomochain-activities .box-countdown {
+  border-bottom: 1px solid #394472; }
+  .tomochain-activities .box-countdown .txt-title {
+    font-size: 14px;
+    margin: 0; }
+  .tomochain-activities .box-countdown .inner-countdown {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: -10px;
+    margin-right: -10px; }
+    .tomochain-activities .box-countdown .inner-countdown .txt-clock {
+      padding: 15px 10px;
+      width: 25%;
+      position: relative; }
+      .tomochain-activities .box-countdown .inner-countdown .txt-clock:before {
+        content: ":";
+        color: #fff;
+        font-size: 24px;
+        position: absolute;
+        right: 6px;
+        top: 12px; }
+      .tomochain-activities .box-countdown .inner-countdown .txt-clock:last-child:before {
+        display: none; }
+      .tomochain-activities .box-countdown .inner-countdown .txt-clock span {
+        display: block;
+        color: #fff;
+        font-size: 24px;
+        font-weight: bold; }
+      .tomochain-activities .box-countdown .inner-countdown .txt-clock .smalltext {
+        font-size: 12px; }
+
+.tomochain-activities .box-activities .box-title {
+  padding: 15px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .tomochain-activities .box-activities .box-title h3 {
+    font-size: 16px; }
+  .tomochain-activities .box-activities .box-title a {
+    font-size: 14px;
+    color: #2b96ff;
+    text-decoration: underline; }
+
+.tomochain-activities .box-activities .list-recent {
+  padding-left: 5px;
+  max-height: 350px;
+  overflow-y: auto;
+  /* width */
+  /* Track */
+  /* Handle */
+  /* Handle on hover */ }
+  .tomochain-activities .box-activities .list-recent::-webkit-scrollbar {
+    width: 6px; }
+  .tomochain-activities .box-activities .list-recent::-webkit-scrollbar-track {
+    /*box-shadow: inset 0 0 5px grey;*/
+    border-radius: 10px; }
+  .tomochain-activities .box-activities .list-recent::-webkit-scrollbar-thumb {
+    background: #394472;
+    border-radius: 10px; }
+  .tomochain-activities .box-activities .list-recent::-webkit-scrollbar-thumb:hover {
+    background: #45538b;
+    overflow-y: auto;
+    cursor: pointer; }
+  .tomochain-activities .box-activities .list-recent ul {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    position: relative; }
+    .tomochain-activities .box-activities .list-recent ul:before {
+      content: "";
+      border-left: 2px dashed #404c7e;
+      width: 2px;
+      height: 100%;
+      position: absolute;
+      left: 0;
+      top: 10px; }
+    .tomochain-activities .box-activities .list-recent ul li {
+      padding-left: 15px;
+      margin-top: 15px;
+      position: relative; }
+      .tomochain-activities .box-activities .list-recent ul li:first-child {
+        margin-top: 0; }
+      .tomochain-activities .box-activities .list-recent ul li:after {
+        background-image: -webkit-gradient(linear, left top, right top, from(#504cf5), to(#4daaff));
+        background-image: linear-gradient(to right, #504cf5, #4daaff);
+        content: "";
+        width: 8px;
+        height: 8px;
+        border-radius: 50%;
+        overflow: hidden;
+        position: absolute;
+        left: -3px;
+        top: 6px; }
+      .tomochain-activities .box-activities .list-recent ul li a {
+        color: #fff;
+        display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis; }
+      .tomochain-activities .box-activities .list-recent ul li p {
+        margin: 3px 0 0; }
+
+.tomochain-activities .box-other {
+  border-top: 1px solid #394472;
+  padding: 15px 0;
+  margin-top: 25px; }
+  .tomochain-activities .box-other p {
+    margin-bottom: 5px;
+    font-size: 12px;
+    color: #fff; }
+    .tomochain-activities .box-other p a {
+      color: #2b96ff; }
+
 .tomochain-blog-item {
   text-align: center;
   margin-bottom: 60px; }
@@ -12343,14 +12587,11 @@ article.post-loop {
       opacity: 1;
       visibility: visible; }
 
-.tomo_slide_img_wallet img {
-  max-height: 603px;
-  width: inherit; }
-
 .title_wallet_secure,
 .title_wallet_features,
 .title_wallet_howto,
 .title_wallet_download,
+.title_wallet_review,
 .title_wallet_faq {
   position: relative;
   z-index: 1; }
@@ -12358,6 +12599,7 @@ article.post-loop {
   .title_wallet_features:before,
   .title_wallet_howto:before,
   .title_wallet_download:before,
+  .title_wallet_review:before,
   .title_wallet_faq:before {
     content: '';
     font-size: 5.5rem;
@@ -12372,6 +12614,7 @@ article.post-loop {
   .title_wallet_features b,
   .title_wallet_howto b,
   .title_wallet_download b,
+  .title_wallet_review b,
   .title_wallet_faq b {
     font-weight: 500;
     color: #1e86ff; }
@@ -12386,7 +12629,7 @@ article.post-loop {
   content: 'Features'; }
 
 .title_wallet_howto:before {
-  content: 'USE';
+  content: 'Tutorials';
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
@@ -12397,91 +12640,128 @@ article.post-loop {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%); }
 
+.title_wallet_review:before {
+  content: 'Review'; }
+
+.size_img550 {
+  max-width: 550px; }
+
+.con_wallet_review .tomochain_slider_review .vc_column-inner {
+  padding-left: 0;
+  padding-right: 0; }
+
 .con_wallet_secure {
   background: url("assets/images/bg_toppage_wallet.png") no-repeat center right;
   background-size: auto 100%; }
   .con_wallet_secure .box_inner_slide {
     text-align: center; }
+    .con_wallet_secure .box_inner_slide .tomo_slide_img_wallet img {
+      max-height: 603px;
+      max-width: initial;
+      width: inherit; }
+    .con_wallet_secure .box_inner_slide .tomo_slide_img_wallet .vc_single_image-wrapper {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center; }
     .con_wallet_secure .box_inner_slide .wpb_text_column {
       margin: 30px 0 40px; }
 
-.con_wallet_faq i {
-  display: none !important; }
-
-.con_wallet_faq .vc_toggle_title {
-  padding-left: 0 !important; }
-
-.con_wallet_faq .vc_toggle_content {
-  padding-left: 4em !important; }
-
-.con_wallet_faq .accordion {
-  background: transparent;
-  color: #fff;
-  cursor: pointer;
-  padding: .5em 0 .5em 4.5em;
-  width: 100%;
-  border: 0;
-  text-align: left;
-  outline: none;
-  -webkit-transition: all .4s ease;
-  transition: all .4s ease;
-  position: relative;
-  line-height: 1.5; }
-  .con_wallet_faq .accordion:before {
-    background-color: #2c3665;
-    -webkit-box-shadow: 0 0 5px #1e2147;
-            box-shadow: 0 0 5px #1e2147;
-    border-radius: 50%;
-    content: "";
-    position: absolute;
-    width: 34px;
-    height: 34px;
-    padding: 5px;
-    top: 2px;
-    left: 0; }
-  .con_wallet_faq .accordion:after {
-    content: "\e903";
-    color: #1e86ff;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    font-size: 8px;
-    position: absolute;
-    width: 34px;
-    height: 34px;
-    padding: 5px;
-    top: 4px;
-    left: 0;
-    font-family: "tomochain";
+.con_wallet_faq {
+  /*.vc_toggle:last-of-type {
+		margin-bottom: 0!important;
+	}*/ }
+  .con_wallet_faq i {
+    display: none !important; }
+  .con_wallet_faq .vc_toggle_title {
+    padding-left: 0 !important; }
+  .con_wallet_faq .vc_toggle_content {
+    padding-left: 4em !important; }
+  .con_wallet_faq .accordion {
+    background: transparent;
+    color: #fff;
+    cursor: pointer;
+    padding: .5em 0 .5em 4.5em;
+    width: 100%;
+    border: 0;
+    text-align: left;
+    outline: none;
     -webkit-transition: all .4s ease;
-    transition: all .4s ease; }
+    transition: all .4s ease;
+    position: relative;
+    line-height: 1.5; }
+    .con_wallet_faq .accordion:before {
+      background-color: #2c3665;
+      -webkit-box-shadow: 0 0 5px #1e2147;
+              box-shadow: 0 0 5px #1e2147;
+      border-radius: 50%;
+      content: "";
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      padding: 5px;
+      top: 2px;
+      left: 0; }
+    .con_wallet_faq .accordion:after {
+      content: "\e903";
+      color: #1e86ff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      font-size: 8px;
+      position: absolute;
+      width: 34px;
+      height: 34px;
+      padding: 5px;
+      top: 4px;
+      left: 0;
+      font-family: "tomochain";
+      -webkit-transition: all .4s ease;
+      transition: all .4s ease; }
+  .con_wallet_faq .vc_toggle_active .accordion:after {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    top: 2px; }
 
-.con_wallet_faq .vc_toggle_active .accordion:after {
-  -webkit-transform: rotate(-180deg);
-          transform: rotate(-180deg);
-  top: 2px; }
-
-.con_wallet_faq .vc_toggle:last-of-type {
-  margin-bottom: 0 !important; }
-
-.con_features .hgt80 {
-  height: 80px; }
+.con_features h6 {
+  font-family: 'Bai Jamjuree', sans-serif; }
 
 .con_features .wpb_text_column {
   margin-bottom: 15px !important; }
+
+.con_features .mew-features {
+  position: relative; }
+  .con_features .mew-features .ic_features {
+    position: absolute;
+    left: 0px;
+    top: 10px; }
+    .con_features .mew-features .ic_features img {
+      width: 100px; }
+  .con_features .mew-features:first-child {
+    padding-left: 120px;
+    padding-right: 50px; }
+  .con_features .mew-features:last-child {
+    padding-left: 170px; }
+    .con_features .mew-features:last-child .ic_features {
+      left: 50px; }
 
 .flexbox_howto .tomochain_howto_use .vd_item iframe {
   display: block; }
 
 .flexbox_howto .tomochain_howto_use .slick-list {
-  -webkit-box-shadow: 0 0 20px 0 #1e2147;
-          box-shadow: 0 0 20px 0 #1e2147;
+  -webkit-box-shadow: 0px 20px 40px -10px #1a1e41;
+          box-shadow: 0px 20px 40px -10px #1a1e41;
   border-radius: 5px;
   overflow: hidden; }
 
@@ -12492,7 +12772,7 @@ article.post-loop {
 
 .con_wallet_down {
   background: url("assets/images/bg_con_down.png") no-repeat center top;
-  background-size: auto 100%;
+  background-size: 100% auto;
   padding: 150px 0; }
 
 .vc_custom_heading {
@@ -14110,8 +14390,9 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           position: relative;
           padding-right: 50px;
           margin-bottom: 0;
-          display: inline-block; }
-          .flexbox_howto .tomochain_slider_nav .txt_item .howto:before {
+          display: inline-block;
+          font-family: .flexbox_howto .tomochain_slider_nav .txt_item .howto; }
+          .flexbox_howto .tomochain_slider_nav .txt_item .howto :before {
             content: "→";
             color: #8b96b5;
             font-size: 20px;
@@ -14698,9 +14979,11 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
   .hidden-md-up {
     display: none !important; }
     .tomo-categories-filter,
+    .tomochain-roadmap-filter,
     .tomochain-dapp-filter {
       margin-bottom: 50px; }
       .tomo-categories-filter li,
+      .tomochain-roadmap-filter li,
       .tomochain-dapp-filter li {
         margin-left: 50px; }
   .width_st180 {
@@ -14919,8 +15202,12 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     font-size: 24px; }
     .con_bring .hgt220 {
       height: 160px; }
-    .con_features .hgt80 {
-      height: 70px; }
+    .con_features .mew-features:first-child {
+      padding-right: 0px; }
+    .con_features .mew-features:last-child {
+      padding-left: 120px; }
+      .con_features .mew-features:last-child .ic_features {
+        left: 0px; }
         .widget_tomo_address .addresses .address {
           max-width: calc(33.33% - 20px); } }
   @media screen and (max-width: 991px) and (min-width: 768px) {
@@ -14961,6 +15248,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .title_wallet_features,
     .title_wallet_howto,
     .title_wallet_download,
+    .title_wallet_review,
     .title_wallet_faq {
       font-size: 2rem; } }
   @media screen and (max-width: 1100px) and (min-width: 992px) {
@@ -17092,7 +17380,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         right: 0; } }
   @media screen and (max-width: 1200px) {
     .con_wallet_down {
-      padding: 50px 0; } }
+      padding: 80px 0;
+      background-size: auto 100%; } }
   @media only screen and (max-width: 1024px) {
   .not-opt {
     opacity: 1 !important;
@@ -17385,6 +17674,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .title_wallet_features:before,
     .title_wallet_howto:before,
     .title_wallet_download:before,
+    .title_wallet_review:before,
     .title_wallet_faq:before {
       font-size: 3.5rem;
       top: -40px;
@@ -17392,12 +17682,12 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       -webkit-transform: translateX(-50%);
               transform: translateX(-50%); }
       .con_wallet_secure .box_inner_slide img {
-        width: 200px; }
-    .con_wallet_faq .vc_toggle_content {
-      padding-left: 3em !important; }
-    .con_wallet_faq .accordion {
-      padding: .5em 0 .5em 3.5em;
-      text-align: left !important; }
+        /*width: 200px;*/ }
+      .con_wallet_faq .vc_toggle_content {
+        padding-left: 3em !important; }
+      .con_wallet_faq .accordion {
+        padding: .5em 0 .5em 3.5em;
+        text-align: left !important; }
     .flexbox_howto .tomochain_howto_use .vd_item iframe {
       height: 260px !important; }
   .flexbox_howto .tomochain_slider_nav {
@@ -17520,6 +17810,18 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           -webkit-box-pack: center;
               -ms-flex-pack: center;
                   justify-content: center; }
+    .con_features .mew-features .ic_features {
+      left: 15px;
+      top: 0; }
+      .con_features .mew-features .ic_features img {
+        width: 60px; }
+    .con_features .mew-features:first-child {
+      padding-left: 80px;
+      padding-right: 0px; }
+    .con_features .mew-features:last-child {
+      padding-left: 80px; }
+      .con_features .mew-features:last-child .ic_features {
+        left: 15px; }
   h2.vc_custom_heading {
     font-size: 1.6em; }
     h2.vc_custom_heading br {

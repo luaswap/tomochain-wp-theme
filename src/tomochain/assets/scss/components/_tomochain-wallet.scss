@@ -1,13 +1,8 @@
-.tomo_slide_img_wallet {
-	img {
-		max-height: 603px;
-		width: inherit;
-	}
-}
 .title_wallet_secure,
 .title_wallet_features,
 .title_wallet_howto,
 .title_wallet_download,
+.title_wallet_review,
 .title_wallet_faq {
 	position: relative;
 	z-index: 1;
@@ -55,7 +50,7 @@
 }
 .title_wallet_howto {
 	&:before {
-		content:'USE';
+		content:'Tutorials';
 		left: 50%;
 		transform: translateX(-50%);
 	}
@@ -67,12 +62,40 @@
 		transform: translateX(-50%);
 	}
 }
-
+.title_wallet_review {
+	&:before {
+		content:'Review';
+	}
+}
+.size_img550 {
+	max-width: 550px;
+}
+// con_wallet_review
+.con_wallet_review {
+	.tomochain_slider_review {
+		.vc_column-inner {
+			padding-left: 0;
+			padding-right: 0;
+		}
+	}
+}
 // con_wallet_secure
 .con_wallet_secure {
 	background: url('assets/images/bg_toppage_wallet.png') no-repeat center right;
 	background-size: auto 100%;
 	.box_inner_slide {
+		.tomo_slide_img_wallet {
+			img {
+				max-height: 603px;
+				max-width: initial;
+		    	width: inherit;
+			}
+			.vc_single_image-wrapper {
+				display: flex;
+				justify-content: center;
+	    		align-items: center;
+			}
+		}
 		text-align: center;
 		@media screen and (min-width: 768px) {
 			text-align: left;
@@ -82,7 +105,7 @@
 		}
 		@media screen and (max-width: 767px) {
 			img {
-				width: 200px;
+				/*width: 200px;*/
 			}
 		}
 		.wpb_text_column {
@@ -173,20 +196,69 @@
 			}
 		}
 	}
-	.vc_toggle:last-of-type {
+	/*.vc_toggle:last-of-type {
 		margin-bottom: 0!important;
-	}
+	}*/
 }
 
+//con_features
 .con_features {
-	.hgt80 {
-		height: 80px;
-		@include media-breakpoint-between(md, lg) {
-			height: 70px;
-		}
+	h6 {
+		font-family: 'Bai Jamjuree', sans-serif;
 	}
 	.wpb_text_column {
 		margin-bottom: 15px!important;
+	}
+	.mew-features {
+		position: relative;
+		.ic_features {
+			position: absolute;
+			left: 0px;
+			top: 10px;
+			img {
+				width: 100px;
+			}
+		}
+		&:first-child {
+			padding-left: 120px;
+			padding-right: 50px;
+		}
+		&:last-child {
+			padding-left: 170px;
+			.ic_features {
+				left: 50px;
+			}
+		}
+		@include media-breakpoint-between(md, lg) {
+			&:first-child {
+				padding-right: 0px;
+			}
+			&:last-child {
+				padding-left: 120px;
+				.ic_features {
+					left: 0px;
+				}
+			}
+		}
+		@include media-breakpoint-down(sm) {
+			.ic_features {
+				left: 15px;
+				top: 0;
+				img {
+					width: 60px;
+				}
+			}
+			&:first-child {
+				padding-left: 80px;
+				padding-right: 0px;
+			}
+			&:last-child {
+				padding-left: 80px;
+				.ic_features {
+					left: 15px;
+				}
+			}
+		}
 	}
 }
 
@@ -201,7 +273,7 @@
 			}
 		}
 		.slick-list {
-			box-shadow: 0 0 20px 0 #1e2147;
+			box-shadow: 0px 20px 40px -10px #1a1e41;
 			border-radius: 5px;
 			overflow: hidden;
 		}
@@ -232,6 +304,7 @@
 					padding-right: 50px;
 					margin-bottom: 0;
 					display: inline-block;
+					font-family: 
 					&:before {
 						content: "→";
 						color: #8b96b5;
@@ -295,12 +368,13 @@
 // con_wallet_down
 .con_wallet_down {
 	background: url('assets/images/bg_con_down.png') no-repeat center top;
-	background-size: auto 100%;
+	background-size: 100% auto;
 	padding: 150px 0;
 	@media screen and (max-width: 1600px) and (min-width: 1201px) {
 		padding: 100px 0;
 	}
 	@media screen and (max-width: 1200px) {
-		padding: 50px 0;
+		padding: 80px 0;
+		background-size: auto 100%;
 	}
 }
