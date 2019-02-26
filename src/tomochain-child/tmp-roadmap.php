@@ -2,16 +2,33 @@
 /* Template name: tmp roadmap */
 
 get_template_part('headerld'); ?>
+<div class="header-roadmap">
+	<div class="container">
+		<div class="row">
+			<div class="col-6 col-lg-3">
+				<div class="logo-tomo">
+					<a href="http://tomochain.com"><img src="/tomochain/assets/images/logo-tomochain.png" alt="Logo"></a>
+				</div>
+			</div>
+			<div class="col-6 col-lg-6">
+				<h1 class="main-title-page">Roadmap</h1>
+			</div>
+			<div class="col-12 col-lg-3">
+				<div class="check-time">January 2019</div>
+			</div>
+		</div>
+	</div>
+</div>
 <div class="content-area tmp-roadmap">
 	<main class="site-main">
 		<div class="container">
 			<div class="tomochain-roadmap-page">
 				<div class="roadmap-list">
 					<ul class="tomochain-roadmap-filter" data-number="4" data-page="1">
-						<li class="selected"><a href="#" data-filter="all">All</a></li>
-						<li><a href="#" alt="View all posts in Enterprise" data-filter="125">TomoChain</a></li>
-						<li><a href="#" alt="View all posts in Gaming" data-filter="123">TomoX</a></li>
-						<li><a href="#" alt="View all posts in Open Finance" data-filter="127">Others</a></li>
+						<li class="selected"><a href="#">All</a></li>
+						<li><a href="#">TomoChain</a></li>
+						<li><a href="#">TomoX</a></li>
+						<li><a href="#">Others</a></li>
 					</ul>
 					<div class="tomochain-roadmap-main">
 						<div class="roadmap-desc-infor">
@@ -37,8 +54,8 @@ get_template_part('headerld'); ?>
 																<h3 class="txt-name">Chain Stability - V1.1.0</h3>
 																<div class="update-on">
 																	<span>Released date: Dec 21, 2018</span>
-																	<i class="fab fa-github"></i>
-																	<i class="fal fa-file"></i>
+																	<a href="#" title=""><i class="fab fa-github"></i></a>
+																	<a href="#" title=""><i class="fal fa-file"></i></a>
 																</div>
 															</div>
 														</div>
@@ -64,8 +81,8 @@ get_template_part('headerld'); ?>
 																<h3 class="txt-name">Chain Stability - V1.1.0</h3>
 																<div class="update-on">
 																	<span>Released date: Dec 21, 2018</span>
-																	<i class="fab fa-github"></i>
-																	<i class="fal fa-file"></i>
+																	<a href="#" title=""><i class="fab fa-github"></i></a>
+																	<a href="#" title=""><i class="fal fa-file"></i></a>
 																</div>
 															</div>
 														</div>
@@ -91,8 +108,8 @@ get_template_part('headerld'); ?>
 																<h3 class="txt-name">Chain Stability - V1.1.0</h3>
 																<div class="update-on">
 																	<span>Released date: Dec 21, 2018</span>
-																	<i class="fab fa-github"></i>
-																	<i class="fal fa-file"></i>
+																	<a href="#" title=""><i class="fab fa-github"></i></a>
+																	<a href="#" title=""><i class="fal fa-file"></i></a>
 																</div>
 															</div>
 														</div>
@@ -133,8 +150,8 @@ get_template_part('headerld'); ?>
 																		<span>80%</span>
 																	</div>
 																	<span>Due date: Dec 21, 2018</span>
-																	<i class="fab fa-github"></i>
-																	<i class="fal fa-file"></i>
+																	<a href="#" title=""><i class="fab fa-github"></i></a>
+																	<a href="#" title=""><i class="fal fa-file"></i></a>
 																</div>
 															</div>
 														</div>
@@ -166,8 +183,8 @@ get_template_part('headerld'); ?>
 																		<span>80%</span>
 																	</div>
 																	<span>Due date: Dec 21, 2018</span>
-																	<i class="fab fa-github"></i>
-																	<i class="fal fa-file"></i>
+																	<a href="#" title=""><i class="fab fa-github"></i></a>
+																	<a href="#" title=""><i class="fal fa-file"></i></a>
 																</div>
 															</div>
 														</div>
@@ -199,8 +216,8 @@ get_template_part('headerld'); ?>
 																		<span>80%</span>
 																	</div>
 																	<span>Due date: Dec 21, 2018</span>
-																	<i class="fab fa-github"></i>
-																	<i class="fal fa-file"></i>
+																	<a href="#" title=""><i class="fab fa-github"></i></a>
+																	<a href="#" title=""><i class="fal fa-file"></i></a>
 																</div>
 															</div>
 														</div>
