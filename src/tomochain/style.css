@@ -7640,7 +7640,7 @@ If your tooling is more complex you can split it up like:
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .tomochain-pagination ul li a:after, .woocommerce-pagination ul li a:after, .post-thumbnail img, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tmp-roadmap .tomochain-roadmap-page, .tomochain-blog-item, .tomochain-blog-item .blog-thumbnail, .tomochain-blog-item .blog-thumbnail a:before, .tomochain-blog-item .blog-thumbnail img, .tomochain-blog-item .blog-date, .tomochain-event-item, .tomochain-event-item .event-thumbnail, .tomochain-event-item .event-thumbnail a:before, .tomochain-event-item .event-thumbnail img, .tomochain-event-item .event-date, .tomochain-roadmap, .tomochain-team__see-all span, .tomochain-button span, .tomochain-team__see-all:before, .tomochain-button:before, .tomochain-team-member__image a:after, .tomochain-team-member__image img, .team-member-info__close:before, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, body:after, .slick-arrow, .slick-arrow:before, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .tomochain-pagination ul li a:after, .woocommerce-pagination ul li a:after, .post-thumbnail img, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-roadmap-page, .tomochain-blog-item, .tomochain-blog-item .blog-thumbnail, .tomochain-blog-item .blog-thumbnail a:before, .tomochain-blog-item .blog-thumbnail img, .tomochain-blog-item .blog-date, .tomochain-event-item, .tomochain-event-item .event-thumbnail, .tomochain-event-item .event-thumbnail a:before, .tomochain-event-item .event-thumbnail img, .tomochain-event-item .event-date, .tomochain-roadmap, .tomochain-team__see-all span, .tomochain-button span, .tomochain-team__see-all:before, .tomochain-button:before, .tomochain-team-member__image a:after, .tomochain-team-member__image img, .team-member-info__close:before, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, body:after, .slick-arrow, .slick-arrow:before, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
@@ -11533,24 +11533,24 @@ article.post-loop {
     .header-roadmap .row .check-time {
       text-align: right; }
 
-.tmp-roadmap .tomochain-roadmap-page .tomochain-roadmap-filter {
+.tomochain-roadmap-page .tomochain-roadmap-filter {
   margin-bottom: 15px;
   padding-bottom: 0;
   border-bottom: 1px solid #394472; }
-  .tmp-roadmap .tomochain-roadmap-page .tomochain-roadmap-filter li {
+  .tomochain-roadmap-page .tomochain-roadmap-filter li {
     margin-left: 30px; }
-    .tmp-roadmap .tomochain-roadmap-page .tomochain-roadmap-filter li:first-child {
+    .tomochain-roadmap-page .tomochain-roadmap-filter li:first-child {
       margin-left: 0; }
-    .tmp-roadmap .tomochain-roadmap-page .tomochain-roadmap-filter li a {
+    .tomochain-roadmap-page .tomochain-roadmap-filter li a {
       padding-bottom: 15px;
       font-size: 15px; }
-      .tmp-roadmap .tomochain-roadmap-page .tomochain-roadmap-filter li a:after {
+      .tomochain-roadmap-page .tomochain-roadmap-filter li a:after {
         background-color: #2a8bff; }
 
-.tmp-roadmap .roadmap-desc-infor {
+.roadmap-desc-infor {
   margin-bottom: 30px; }
 
-.tmp-roadmap .roadmap-common {
+.roadmap-common {
   background: #1f2649;
   /* Old browsers */
   /* FF3.6-15 */
@@ -11564,12 +11564,12 @@ article.post-loop {
   overflow: hidden;
   padding: 15px 0;
   margin-bottom: 15px; }
-  .tmp-roadmap .roadmap-common .main-title {
+  .roadmap-common .main-title {
     padding: 0 0 15px;
     margin-bottom: 0;
     font-size: 18px;
     text-align: center; }
-  .tmp-roadmap .roadmap-common .list-box {
+  .roadmap-common .list-box {
     padding: 0 15px;
     max-height: 500px;
     overflow-y: auto;
@@ -11577,40 +11577,40 @@ article.post-loop {
     /* Track */
     /* Handle */
     /* Handle on hover */ }
-    .tmp-roadmap .roadmap-common .list-box::-webkit-scrollbar {
+    .roadmap-common .list-box::-webkit-scrollbar {
       width: 4px; }
-    .tmp-roadmap .roadmap-common .list-box::-webkit-scrollbar-track {
+    .roadmap-common .list-box::-webkit-scrollbar-track {
       /*box-shadow: inset 0 0 5px grey;*/
       border-radius: 10px; }
-    .tmp-roadmap .roadmap-common .list-box::-webkit-scrollbar-thumb {
+    .roadmap-common .list-box::-webkit-scrollbar-thumb {
       background: #394472;
       border-radius: 10px; }
-    .tmp-roadmap .roadmap-common .list-box::-webkit-scrollbar-thumb:hover {
+    .roadmap-common .list-box::-webkit-scrollbar-thumb:hover {
       background: #45538b;
       overflow-y: auto;
       cursor: pointer; }
-    .tmp-roadmap .roadmap-common .list-box .box-item {
+    .roadmap-common .list-box .box-item {
       border-top: 1px solid #394472;
       padding-top: 25px;
       margin-bottom: 25px; }
-      .tmp-roadmap .roadmap-common .list-box .box-item .item-header {
+      .roadmap-common .list-box .box-item .item-header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
         margin-bottom: 25px; }
-        .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-logo {
+        .roadmap-common .list-box .box-item .item-header .col-logo {
           width: 40px; }
-        .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor {
+        .roadmap-common .list-box .box-item .item-header .col-infor {
           width: 100%;
           padding-left: 15px; }
-          .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor .txt-name {
+          .roadmap-common .list-box .box-item .item-header .col-infor .txt-name {
             font-size: 16px; }
-          .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor .update-on > span {
+          .roadmap-common .list-box .box-item .item-header .col-infor .update-on > span {
             white-space: nowrap; }
-          .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress {
+          .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress {
             display: inline-block;
             margin-right: 15px; }
-            .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress .innrer-progress {
+            .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress .innrer-progress {
               background-color: #394472;
               border-radius: 20px;
               width: 100px;
@@ -11618,7 +11618,7 @@ article.post-loop {
               display: inline-block;
               margin-right: 5px;
               position: relative; }
-              .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress .innrer-progress .progress-value {
+              .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress .innrer-progress .progress-value {
                 background-image: -webkit-gradient(linear, left top, right top, from(#524dff), to(#4aaaff));
                 background-image: linear-gradient(to right, #524dff, #4aaaff);
                 border-radius: 20px;
@@ -11626,30 +11626,16 @@ article.post-loop {
                 position: absolute;
                 left: 0;
                 top: 0; }
-            .tmp-roadmap .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress span {
+            .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress span {
               display: inline-block;
               color: #2b96ff; }
-      .tmp-roadmap .roadmap-common .list-box .box-item .item-body .box-element {
-        padding-left: 15px;
-        position: relative; }
-        .tmp-roadmap .roadmap-common .list-box .box-item .item-body .box-element:before {
-          background: #fff;
-          content: "";
-          width: 4px;
-          height: 4px;
-          border-radius: 50%;
-          overflow: hidden;
-          position: absolute;
-          left: 0;
-          top: 6px; }
-        .tmp-roadmap .roadmap-common .list-box .box-item .item-body .box-element h4 {
-          font-size: 14px; }
-        .tmp-roadmap .roadmap-common .list-box .box-item .item-body .box-element p {
-          margin-bottom: 15px; }
-  .tmp-roadmap .roadmap-common.tomochain-progress {
+      .roadmap-common .list-box .box-item .item-body {
+        font-size: 14px;
+        margin-bottom: 15px; }
+  .roadmap-common.tomochain-progress {
     position: relative;
     z-index: 1; }
-    .tmp-roadmap .roadmap-common.tomochain-progress:before {
+    .roadmap-common.tomochain-progress:before {
       background: -webkit-gradient(linear, left top, left bottom, from(#2a8bff), color-stop(90%, #1e2444));
       background: linear-gradient(top, #2a8bff 0%, #1e2444 90%);
       border-radius: 5px;
@@ -11660,7 +11646,7 @@ article.post-loop {
       top: 0;
       left: 0;
       z-index: -1; }
-    .tmp-roadmap .roadmap-common.tomochain-progress:after {
+    .roadmap-common.tomochain-progress:after {
       background: #1f2649;
       /* Old browsers */
       /* FF3.6-15 */
@@ -11678,7 +11664,7 @@ article.post-loop {
       top: 1px;
       left: 1px;
       z-index: -1; }
-    .tmp-roadmap .roadmap-common.tomochain-progress .main-title {
+    .roadmap-common.tomochain-progress .main-title {
       color: #2b96ff; }
 
 .tomochain-activities .box-countdown {
