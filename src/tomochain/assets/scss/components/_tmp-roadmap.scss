@@ -5,14 +5,13 @@
 		.tomochain-roadmap-filter {
 			margin-bottom: 15px;
 			padding-bottom: 0;
-			border-bottom: 2px solid #394472;
+			border-bottom: 1px solid #394472;
 			li {
 				a {
 					padding-bottom: 15px;
 					font-size: 15px;
 					&:after {
 						background-color: #2a8bff;
-						bottom: -2px;
 					}
 				}
 			}
@@ -23,9 +22,9 @@
 	}
 	.roadmap-common {
 		background: #1f2649; /* Old browsers */
-		background: -moz-linear-gradient(top, #1f2649 0%, #242a58 100%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(top, #1f2649 0%,#242a58 100%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to bottom, #1f2649 0%,#242a58 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+		background: -moz-linear-gradient(top, #1f2649 0%, #242a58 20%); /* FF3.6-15 */
+		background: -webkit-linear-gradient(top, #1f2649 0%, #242a58 20%); /* Chrome10-25,Safari5.1-6 */
+		background: linear-gradient(to bottom, #1f2649 0%, #242a58 20%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2649', endColorstr='#242a58',GradientType=0 ); /* IE6-9 */
 		border-radius: 5px;
 		overflow: hidden;
@@ -62,7 +61,7 @@
 				cursor: pointer;
 			}
 			.box-item {
-				border-top: 2px solid #394472;
+				border-top: 1px solid #394472;
 				padding-top: 25px;
 				margin-bottom: 25px;
 				.item-header {

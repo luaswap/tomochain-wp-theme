@@ -11499,13 +11499,12 @@ article.post-loop {
 .tmp-roadmap .tomochain-roadmap-page .tomochain-roadmap-filter {
   margin-bottom: 15px;
   padding-bottom: 0;
-  border-bottom: 2px solid #394472; }
+  border-bottom: 1px solid #394472; }
   .tmp-roadmap .tomochain-roadmap-page .tomochain-roadmap-filter li a {
     padding-bottom: 15px;
     font-size: 15px; }
     .tmp-roadmap .tomochain-roadmap-page .tomochain-roadmap-filter li a:after {
-      background-color: #2a8bff;
-      bottom: -2px; }
+      background-color: #2a8bff; }
 
 .tmp-roadmap .roadmap-desc-infor {
   margin-bottom: 30px; }
@@ -11515,8 +11514,8 @@ article.post-loop {
   /* Old browsers */
   /* FF3.6-15 */
   /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#1f2649), to(#242a58));
-  background: linear-gradient(to bottom, #1f2649 0%, #242a58 100%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#1f2649), color-stop(20%, #242a58));
+  background: linear-gradient(to bottom, #1f2649 0%, #242a58 20%);
   /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2649', endColorstr='#242a58',GradientType=0 );
   /* IE6-9 */
@@ -11550,7 +11549,7 @@ article.post-loop {
       overflow-y: auto;
       cursor: pointer; }
     .tmp-roadmap .roadmap-common .list-box .box-item {
-      border-top: 2px solid #394472;
+      border-top: 1px solid #394472;
       padding-top: 25px;
       margin-bottom: 25px; }
       .tmp-roadmap .roadmap-common .list-box .box-item .item-header {
