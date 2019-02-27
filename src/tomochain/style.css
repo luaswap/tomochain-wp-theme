@@ -11507,6 +11507,8 @@ article.post-loop {
   min-height: 100vh; }
   .page-template-tmp-roadmap:after {
     display: none; }
+  .page-template-tmp-roadmap .popup_btn {
+    display: none; }
   .page-template-tmp-roadmap .site-content {
     background: transparent; }
   .page-template-tmp-roadmap .site-footer {
@@ -11529,7 +11531,8 @@ article.post-loop {
     .header-roadmap .row .main-title-page {
       font-size: 24px;
       text-align: center;
-      margin: 0; }
+      margin: 0;
+      font-family: 'Bai Jamjuree', sans-serif; }
     .header-roadmap .row .check-time {
       text-align: right; }
 
@@ -11604,9 +11607,13 @@ article.post-loop {
           width: 100%;
           padding-left: 15px; }
           .roadmap-common .list-box .box-item .item-header .col-infor .txt-name {
-            font-size: 16px; }
+            font-size: 16px;
+            color: #fff; }
           .roadmap-common .list-box .box-item .item-header .col-infor .update-on > span {
-            white-space: nowrap; }
+            white-space: nowrap;
+            margin-right: 5px; }
+          .roadmap-common .list-box .box-item .item-header .col-infor .update-on > a {
+            margin-right: 5px; }
           .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress {
             display: inline-block;
             margin-right: 15px; }
@@ -11614,7 +11621,7 @@ article.post-loop {
               background-color: #394472;
               border-radius: 20px;
               width: 100px;
-              height: 6px;
+              height: 4px;
               display: inline-block;
               margin-right: 5px;
               position: relative; }
@@ -11622,16 +11629,29 @@ article.post-loop {
                 background-image: -webkit-gradient(linear, left top, right top, from(#524dff), to(#4aaaff));
                 background-image: linear-gradient(to right, #524dff, #4aaaff);
                 border-radius: 20px;
-                height: 6px;
+                height: 4px;
                 position: absolute;
                 left: 0;
                 top: 0; }
             .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress span {
               display: inline-block;
               color: #2b96ff; }
-      .roadmap-common .list-box .box-item .item-body {
-        font-size: 14px;
-        margin-bottom: 15px; }
+      .roadmap-common .list-box .box-item .item-body .wpb_content_element {
+        padding-left: 15px;
+        margin-bottom: 15px;
+        position: relative; }
+        .roadmap-common .list-box .box-item .item-body .wpb_content_element:before {
+          background: #fff;
+          content: "";
+          width: 4px;
+          height: 4px;
+          border-radius: 50%;
+          overflow: hidden;
+          position: absolute;
+          left: 0;
+          top: 6px; }
+        .roadmap-common .list-box .box-item .item-body .wpb_content_element h4 {
+          font-size: 14px; }
   .roadmap-common.tomochain-progress {
     position: relative;
     z-index: 1; }
@@ -11717,6 +11737,7 @@ article.post-loop {
   border-right: 1px solid #394472;
   padding-left: 5px;
   max-height: 300px;
+  font-size: 13px;
   overflow-y: auto;
   /* width */
   /* Track */
@@ -11749,6 +11770,7 @@ article.post-loop {
       top: 10px; }
     .tomochain-activities .box-activities .list-recent ul li {
       padding-left: 15px;
+      padding-right: 30px;
       margin-top: 15px;
       position: relative; }
       .tomochain-activities .box-activities .list-recent ul li:first-child {
@@ -11767,11 +11789,14 @@ article.post-loop {
       .tomochain-activities .box-activities .list-recent ul li a {
         color: #fff;
         display: block;
-        overflow: hidden;
-        white-space: nowrap;
-        text-overflow: ellipsis; }
+        line-height: normal;
+        /*overflow: hidden;
+						white-space: nowrap;
+						text-overflow: ellipsis;*/ }
       .tomochain-activities .box-activities .list-recent ul li p {
-        margin: 3px 0 0; }
+        margin: 3px 0 0;
+        font-size: 13px;
+        line-height: normal; }
 
 .tomochain-activities .box-other {
   border-top: 1px solid #394472;
@@ -11779,7 +11804,6 @@ article.post-loop {
   margin-top: 25px; }
   .tomochain-activities .box-other p {
     margin-bottom: 5px;
-    font-size: 12px;
     color: #fff; }
     .tomochain-activities .box-other p a {
       color: #2b96ff; }
@@ -16235,21 +16259,25 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
   .wpb_content_element {
     margin-bottom: 25px !important; } }
   @media only screen and (min-width: 1025px) and (max-width: 1500px) {
-    .page-template-tmp-roadmap {
-      font-size: 12px; }
-      .page-template-tmp-roadmap .txt-name,
-      .page-template-tmp-roadmap .box-title {
+    .page-template-tmp-roadmap .entry-content {
+      font-size: 13px;
+      line-height: initial; }
+      .page-template-tmp-roadmap .entry-content .txt-name,
+      .page-template-tmp-roadmap .entry-content .box-title {
         font-size: 14px !important; }
-        .page-template-tmp-roadmap .txt-name h3,
-        .page-template-tmp-roadmap .box-title h3 {
+        .page-template-tmp-roadmap .entry-content .txt-name h3,
+        .page-template-tmp-roadmap .entry-content .box-title h3 {
           font-size: 14px !important; }
-      .page-template-tmp-roadmap .main-title {
+        .page-template-tmp-roadmap .entry-content .txt-name a,
+        .page-template-tmp-roadmap .entry-content .box-title a {
+          font-size: 12px !important; }
+      .page-template-tmp-roadmap .entry-content .main-title {
         font-size: 16px !important; }
-      .page-template-tmp-roadmap .list-box {
+      .page-template-tmp-roadmap .entry-content .list-box {
         height: 445px !important; }
-      .page-template-tmp-roadmap .list-recent {
+      .page-template-tmp-roadmap .entry-content .list-recent {
         height: 220px !important; }
-      .page-template-tmp-roadmap .container {
+      .page-template-tmp-roadmap .entry-content .container {
         max-width: 1060px; } }
   @media only screen and (min-width: 1025px) {
   @-webkit-keyframes full_height1 {

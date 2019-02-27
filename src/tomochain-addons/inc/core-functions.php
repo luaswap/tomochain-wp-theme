@@ -248,7 +248,13 @@ function tomochain_roadmap_ajax(){
                                                     </div>
                                             <?php }?>
                                             <div class="col-infor">
-                                                <h3 class="txt-name"><?php the_title();?></h3>
+                                                <div class="title-prj">
+                                                    <?php if($github_url){?>
+                                                        <a class="txt-name" href="<?php echo esc_url($github_url);?>" target="<?php echo esc_attr($open_new_tab);?>">
+                                                            <?php the_title();?>
+                                                        </a>
+                                                    <?php }?>
+                                                </div>
                                                 <div class="update-on">
                                                     <?php if($released_date){?>
                                                         <span><?php echo esc_html__('Released date:','tomochain-addons')?> <?php echo esc_html($released_date);?></span>
@@ -270,7 +276,6 @@ function tomochain_roadmap_ajax(){
                                             <?php the_content();?>
                                         </div>
                                     </div><!-- box-item -->
-                                
                                 <?php endwhile;?>
                             <?php else:?>
                                 <p class="mgs"><?php echo esc_html__('No posts found','tomochain-addons');?></p>
@@ -318,7 +323,13 @@ function tomochain_roadmap_ajax(){
                                                     </div>
                                             <?php }?>
                                             <div class="col-infor">
-                                                <h3 class="txt-name"><?php the_title();?></h3>
+                                                <div class="title-prj">
+                                                    <?php if($github_url){?>
+                                                        <a class="txt-name" href="<?php echo esc_url($github_url);?>" target="<?php echo esc_attr($open_new_tab);?>">
+                                                            <?php the_title();?>
+                                                        </a>
+                                                    <?php }?>
+                                                </div>
                                                 <div class="update-on">
                                                     <div class="box-progress">
                                                         <div class="innrer-progress">
