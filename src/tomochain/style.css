@@ -16257,6 +16257,9 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         .page-template-tmp-roadmap .txt-name h3,
         .page-template-tmp-roadmap .box-title h3 {
           font-size: 14px !important; }
+        .page-template-tmp-roadmap .txt-name a,
+        .page-template-tmp-roadmap .box-title a {
+          font-size: 12px !important; }
       .page-template-tmp-roadmap .main-title {
         font-size: 16px !important; }
       .page-template-tmp-roadmap .list-box {

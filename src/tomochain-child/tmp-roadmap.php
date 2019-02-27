@@ -291,7 +291,7 @@ get_template_part('headerld'); ?>
 									<div class="box-activities">
 										<div class="box-title">
 											<h3>Recent Activities</h3>
-											<a href="#">See more</a>
+											<a href="#">See all</a>
 										</div>
 										<div class="list-recent">
 											<ul>
