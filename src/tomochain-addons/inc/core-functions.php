@@ -186,3 +186,175 @@ function tomochain_dapp_ajax(){
     wp_die();
 
 }
+/*
+* Dapp Ajax
+*/
+add_action('wp_ajax_tomochain_roadmap_ajax','tomochain_roadmap_ajax');
+add_action('wp_ajax_nopriv_tomochain_roadmap_ajax','tomochain_roadmap_ajax');
+function tomochain_roadmap_ajax(){
+    /**
+     * Process data
+    */
+    $id  = $_POST['params']['id'];
+    if( isset( $id ) && !empty( $id ) ){
+        $tax_query = array();
+        if('all' != $id){
+            $tax_query = array(
+                array(
+                    'taxonomy' => 'roadmap_category',
+                    'field'    => 'term_id',
+                    'terms'    => $id,
+                ),
+            );
+        }  
+        ?>
+        <div class="row">
+            <div class="col-lg-6">
+                <div class="roadmap-common tomochain-completed">
+                    <div class="main-inner">
+                        <h2 class="main-title"><?php echo esc_html__('Completed','tomochain-addons')?></h2>
+                        <div class="list-box">
+                            <?php
+                            $args_complete = array(
+                                'post_type'      => 'road_map',
+                                'post_status'    => 'publish',
+                                'posts_per_page' => -1,
+                                'meta_key'       => 'process',
+                                'meta_value'     => 'completed',
+                                'meta_compare'   => '=',
+                                'orderby'        => 'date',
+                                'order'          => 'DESC',
+                                'tax_query'      => $tax_query
+                            );
+                            
+                            $c = new WP_Query($args_complete);
+                            wp_reset_postdata();
+                            if( $c->have_posts() ):
+                                while( $c->have_posts() ): $c->the_post();
+
+                                    $github_url = get_field('github_url');
+                                    $doc_url = get_field('doc_url');
+                                    $released_date = get_field('release_date');
+                                    $open_new_tab = get_field('r_open_in_new_tab') ? '__blank' : '';
+                            ?>
+                                
+                                    <div class="box-item">
+                                        <div class="item-header">
+                                            <?php
+                                                if(get_field('item_image')){?>
+                                                    <div class="col-logo">
+                                                        <img src="<?php echo get_field('item_image');?>">
+
+                                                    </div>
+                                            <?php }?>
+                                            <div class="col-infor">
+                                                <h3 class="txt-name"><?php the_title();?></h3>
+                                                <div class="update-on">
+                                                    <?php if($released_date){?>
+                                                        <span><?php echo esc_html__('Released date:','tomochain-addons')?> <?php echo esc_html($released_date);?></span>
+                                                    <?php }?>
+                                                    <?php if($github_url){?>
+                                                        <a href="<?php echo esc_url($github_url);?>" target="<?php echo esc_attr($open_new_tab);?>">
+                                                            <i class="fab fa-github"></i>
+                                                        </a>
+                                                    <?php }?>
+                                                    <?php if($doc_url){?>
+                                                        <a href="<?php echo esc_url($doc_url);?>" target="<?php echo esc_attr($open_new_tab);?>">
+                                                            <i class="fa fa-file"></i>
+                                                        </a>
+                                                    <?php }?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-body">
+                                            <?php the_content();?>
+                                        </div>
+                                    </div><!-- box-item -->
+                                
+                                <?php endwhile;?>
+                            <?php else:?>
+                                <p class="mgs"><?php echo esc_html__('No posts found','tomochain-addons');?></p>
+                            <?php endif;?>
+                        </div>
+                    </div>
+                </div><!-- .tomochain-completed -->
+            </div>
+            <div class="col-lg-6">
+                <div class="roadmap-common tomochain-progress">
+                    <div class="main-inner">
+                        <h2 class="main-title"><?php echo esc_html__('In Progress','tomochain-addons');?></h2>
+                        <div class="list-box">
+                            <?php
+                            $args_inprogress = array(
+                                'post_type'      => 'road_map',
+                                'post_status'    => 'publish',
+                                'posts_per_page' => -1,
+                                'meta_key'       => 'process',
+                                'meta_value'     => 'in-progress',
+                                'meta_compare'   => '=',
+                                'orderby'        => 'date',
+                                'order'          => 'DESC',
+                                'tax_query'      => $tax_query
+                            );
+                            $p = new WP_Query($args_inprogress);
+                            wp_reset_postdata();
+                            if( $p->have_posts() ):
+                                while( $p->have_posts() ): $p->the_post();
+
+                                    $github_url = get_field('github_url');
+                                    $doc_url = get_field('doc_url');
+                                    $due_date = get_field('due_date');
+                                    $progress_number = get_field('progress');
+                                    $open_new_tab = get_field('r_open_in_new_tab') ? '__blank' : '';
+                            ?>
+                                
+                                    <div class="box-item">
+                                        <div class="item-header">
+                                            <?php
+                                                if(get_field('item_image')){?>
+                                                    <div class="col-logo">
+                                                        <img src="<?php echo get_field('item_image');?>">
+
+                                                    </div>
+                                            <?php }?>
+                                            <div class="col-infor">
+                                                <h3 class="txt-name"><?php the_title();?></h3>
+                                                <div class="update-on">
+                                                    <div class="box-progress">
+                                                        <div class="innrer-progress">
+                                                            <div class="progress-value" style="width:<?php echo esc_attr($progress_number);?>%"></div>
+                                                        </div>
+                                                        <span><?php echo esc_html($progress_number);?>%</span>
+                                                    </div>
+                                                    <?php if($due_date){?>
+                                                            <span><?php echo esc_html__('Due date:','tomochain-addons')?> <?php echo esc_html($due_date);?></span>
+                                                        <?php }?>
+                                                        <?php if($github_url){?>
+                                                            <a href="<?php echo esc_url($github_url);?>" target="<?php echo esc_attr($open_new_tab);?>">
+                                                                <i class="fab fa-github"></i>
+                                                            </a>
+                                                        <?php }?>
+                                                        <?php if($doc_url){?>
+                                                            <a href="<?php echo esc_url($doc_url);?>" target="<?php echo esc_attr($open_new_tab);?>">
+                                                                <i class="fa fa-file"></i>
+                                                            </a>
+                                                        <?php }?>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="item-body">
+                                            <?php the_content();?>
+                                        </div>
+                                    </div><!-- box-item -->                             
+                            <?php endwhile;?>
+                            <?php else:?>
+                                <p class="mgs"><?php echo esc_html__('No posts found','tomochain-addons');?></p>
+                        <?php endif;?>
+                    </div>
+                    </div>
+                </div><!-- .tomochain-progress -->
+            </div>
+        </div>
+    <?php }
+    wp_die();
+}

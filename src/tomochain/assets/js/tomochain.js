@@ -23,6 +23,7 @@ var tomochain
                         this.blog();
                         this.categories_filter();
                         this.dapp_filter();
+                        this.road_filter();
                     }
                 }
             }()
@@ -462,6 +463,48 @@ var tomochain
             //         }
             //     });
             // }
+        };
+        tomochain.road_filter = function () {
+
+            if ( $( '.tomochain-roadmap-filter' ).length < 1) {
+                return;
+            }
+
+            $(document).on('click', 'a[data-filter]', function(e){
+
+                e.preventDefault();
+
+                var $_this   = $(this);
+                var $wrapper = $('.tomochain-roadmap-content');
+                var $desc    = $_this.attr('data-desc');
+                var $id      = $_this.attr('data-filter');
+                $wrapper.addClass('loading');
+                $_this.closest('ul').find('.selected').removeClass('selected');
+                $_this.parent('li').addClass('selected');
+                var $params    = {
+                    'id'  :  $id
+                };
+
+                $.ajax({
+                    url: tomochainConfigs.ajax_url,
+                    type: 'POST',
+                    data: ({
+                        action: 'tomochain_roadmap_ajax',
+                        params: $params
+                    }),
+                    dataType: 'html',
+
+                    success: function ( data ) {
+                        $wrapper.removeClass('loading');
+                        if($id != 'all'){
+                            $wrapper.closest('.tomochain-roadmap-main').find('.roadmap-desc-infor').html($desc);
+                        }else{
+                            $wrapper.closest('.tomochain-roadmap-main').find('.roadmap-desc-infor').empty();
+                        }
+                        $wrapper.html(data);
+                    }
+                });
+            });
         }
 })(jQuery);
 
