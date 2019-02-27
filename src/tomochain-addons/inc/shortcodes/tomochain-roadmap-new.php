@@ -6,12 +6,18 @@ class WPBakeryShortCode_TomoChain_Roadmap_New extends WPBakeryShortCode {
 }
 
 vc_map( array(
-    'name'        => esc_html__( 'Road Map', 'tomochain-addons' ),
+    'name'        => esc_html__( 'Road Map New', 'tomochain-addons' ),
     'base'        => 'tomochain_roadmap_new',
     'icon'        => TOMOCHAIN_ADDONS_URI . '/assets/images/icon.png',
     'category'    => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'params'      => array(
-        
+        array(
+            'type'       => 'textarea',
+            'param_name' => 'desc_for_all',
+            'heading'    => esc_html__( 'Add Description', 'tomochain-addons' ),
+            'value'      => '',
+            'description'=> esc_html__('Add description for Roadmap', 'tomochain-addons'),
+        ),
         tomochain_get_param('el_class'),
         tomochain_get_param('css'),
         array(
