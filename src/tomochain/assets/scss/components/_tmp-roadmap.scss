@@ -7,6 +7,9 @@
 	&:after {
 		display: none;
 	}
+	.popup_btn {
+		display: none;
+	}
 	.site-content {
 		background: transparent;
 	}
@@ -18,28 +21,31 @@
 		}
 	}
 	@media only screen and (min-width: 1025px) and (max-width: 1500px) {
-		font-size: 12px;
-		.txt-name,
-		.box-title {
-			font-size: 14px!important;
-			h3 {
+		.entry-content {
+			font-size: 13px;
+			line-height: initial;
+			.txt-name,
+			.box-title {
 				font-size: 14px!important;
+				h3 {
+					font-size: 14px!important;
+				}
+				a {
+					font-size: 12px!important;
+				}
 			}
-			a {
-				font-size: 12px!important;
+			.main-title {
+				font-size: 16px!important;
 			}
-		}
-		.main-title {
-			font-size: 16px!important;
-		}
-		.list-box {
-			height: 445px!important;
-		}
-		.list-recent {
-			height: 220px!important;
-		}
-		.container {
-			max-width: 1060px;
+			.list-box {
+				height: 445px!important;
+			}
+			.list-recent {
+				height: 220px!important;
+			}
+			.container {
+				max-width: 1060px;
+			}
 		}
 	}
 }
@@ -61,6 +67,7 @@
 			font-size: 24px;
 			text-align: center;
 			margin: 0;
+			font-family: 'Bai Jamjuree', sans-serif;
 			@include media-breakpoint-down(sm) {
 				text-align: right;
 				font-size: 18px;
@@ -77,179 +84,182 @@
 }
 
 //tmp-roadmap
-.tmp-roadmap {
-	.tomochain-roadmap-page {
-		@extend %transit;
-		.tomochain-roadmap-filter {
-			margin-bottom: 15px;
-			padding-bottom: 0;
-			border-bottom: 1px solid #394472;
-			li {
-				margin-left: 30px;
-				&:first-child {
-					margin-left: 0;
-				}
-				a {
-					padding-bottom: 15px;
-					font-size: 15px;
-					&:after {
-						background-color: #2a8bff;
-					}
-				}
-			}
-		}
-	}
-	.roadmap-desc-infor {
-		margin-bottom: 30px;
-	}
-	.roadmap-common {
-		background: #1f2649; /* Old browsers */
-		background: -moz-linear-gradient(top, #1f2649 0%, #1e2444 50%); /* FF3.6-15 */
-		background: -webkit-linear-gradient(top, #1f2649 0%, #1e2444 50%); /* Chrome10-25,Safari5.1-6 */
-		background: linear-gradient(to bottom, #1f2649 0%, #1e2444 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2649', endColorstr='#1e2444',GradientType=0 ); /* IE6-9 */
-		border-radius: 5px;
-		overflow: hidden;
-		padding: 15px 0;
+
+.tomochain-roadmap-page {
+	@extend %transit;
+	.tomochain-roadmap-filter {
 		margin-bottom: 15px;
-		.main-title {
-			padding: 0 0 15px;
-			margin-bottom: 0;
-			font-size: 18px;
-			text-align: center;
-		}
-		.list-box {
-			padding: 0 15px;
-			max-height: 500px;
-			overflow-y: auto;
-			/* width */
-			&::-webkit-scrollbar {
-				width: 4px;
+		padding-bottom: 0;
+		border-bottom: 1px solid #394472;
+		li {
+			margin-left: 30px;
+			&:first-child {
+				margin-left: 0;
 			}
-			/* Track */
-			&::-webkit-scrollbar-track {
-				/*box-shadow: inset 0 0 5px grey;*/
-				border-radius: 10px;
-			}
-			/* Handle */
-			&::-webkit-scrollbar-thumb {
-				background: #394472;
-				border-radius: 10px;
-			}
-			/* Handle on hover */
-			&::-webkit-scrollbar-thumb:hover {
-				background: #45538b;
-				overflow-y: auto;
-				cursor: pointer;
-			}
-			.box-item {
-				border-top: 1px solid #394472;
-				padding-top: 25px;
-				margin-bottom: 25px;
-				.item-header {
-					display: flex;
-					margin-bottom: 25px;
-					.col-logo {
-						width: 40px;
-					}
-					.col-infor {
-						width: 100%;
-						padding-left: 15px;
-						.txt-name {
-							font-size: 16px;
-						}
-						.update-on {
-							>span {
-								white-space: nowrap;
-							}
-							.box-progress {
-								display: inline-block;
-								margin-right: 15px;
-								.innrer-progress {
-									background-color: #394472;
-									border-radius: 20px;
-									width: 100px;
-									height: 6px;
-									display: inline-block;
-									margin-right: 5px;
-									position: relative;
-									.progress-value {
-										background-image: linear-gradient(to right, #524dff, #4aaaff);
-										border-radius: 20px;
-										height: 6px;
-										position: absolute;
-										left: 0;
-										top: 0;
-									}
-								}
-								span {
-									display: inline-block;
-									color: #2b96ff;
-								}
-							}
-						}
-					}
+			a {
+				padding-bottom: 15px;
+				font-size: 15px;
+				&:after {
+					background-color: #2a8bff;
 				}
-				.item-body {
-					.box-element {
-						padding-left: 15px;
-						position: relative;
-						&:before {
-							background: #fff;
-							content: "";
-							width: 4px;
-							height: 4px;
-							border-radius: 50%;
-							overflow: hidden;
-							position: absolute;
-							left: 0;
-							top: 6px;
-						}
-						h4 {
-							font-size: 14px;
-						}
-						p {
-							margin-bottom: 15px;
-						}
-					}
-				}
-			}
-		}
-		&.tomochain-progress {
-			position: relative;
-			z-index: 1;
-			&:before {
-				background: linear-gradient(top, #2a8bff 0%, #1e2444 90%);
-				border-radius: 5px;
-				content: '';
-				width: calc(100%);
-				height: calc(100%);
-				position: absolute;
-				top: 0;
-				left: 0;
-				z-index: -1;
-			}
-			&:after {
-				background: #1f2649; /* Old browsers */
-				background: -moz-linear-gradient(top, #1f2649 0%, #1e2444 50%); /* FF3.6-15 */
-				background: -webkit-linear-gradient(top, #1f2649 0%, #1e2444 50%); /* Chrome10-25,Safari5.1-6 */
-				background: linear-gradient(to bottom, #1f2649 0%, #1e2444 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-				filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2649', endColorstr='#1e2444',GradientType=0 ); /* IE6-9 */
-				border-radius: 5px;
-				content: '';
-				width: calc(100% - 2px);
-				height: calc(100% - 2px);
-				position: absolute;
-				top: 1px;
-				left: 1px;
-				z-index: -1;
-			}
-			.main-title {
-				color: #2b96ff;
 			}
 		}
 	}
 }
+.roadmap-desc-infor {
+	margin-bottom: 30px;
+}
+.roadmap-common {
+	background: #1f2649; /* Old browsers */
+	background: -moz-linear-gradient(top, #1f2649 0%, #1e2444 50%); /* FF3.6-15 */
+	background: -webkit-linear-gradient(top, #1f2649 0%, #1e2444 50%); /* Chrome10-25,Safari5.1-6 */
+	background: linear-gradient(to bottom, #1f2649 0%, #1e2444 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2649', endColorstr='#1e2444',GradientType=0 ); /* IE6-9 */
+	border-radius: 5px;
+	overflow: hidden;
+	padding: 15px 0;
+	margin-bottom: 15px;
+	.main-title {
+		padding: 0 0 15px;
+		margin-bottom: 0;
+		font-size: 18px;
+		text-align: center;
+	}
+	.list-box {
+		padding: 0 15px;
+		max-height: 500px;
+		overflow-y: auto;
+		/* width */
+		&::-webkit-scrollbar {
+			width: 4px;
+		}
+		/* Track */
+		&::-webkit-scrollbar-track {
+			/*box-shadow: inset 0 0 5px grey;*/
+			border-radius: 10px;
+		}
+		/* Handle */
+		&::-webkit-scrollbar-thumb {
+			background: #394472;
+			border-radius: 10px;
+		}
+		/* Handle on hover */
+		&::-webkit-scrollbar-thumb:hover {
+			background: #45538b;
+			overflow-y: auto;
+			cursor: pointer;
+		}
+		.box-item {
+			border-top: 1px solid #394472;
+			padding-top: 25px;
+			margin-bottom: 25px;
+			.item-header {
+				display: flex;
+				margin-bottom: 25px;
+				.col-logo {
+					width: 40px;
+				}
+				.col-infor {
+					width: 100%;
+					padding-left: 15px;
+					.txt-name {
+						font-size: 16px;
+						color: #fff;
+					}
+					.update-on {
+						>span {
+							white-space: nowrap;
+							margin-right: 5px;
+						}
+						> a {
+							margin-right: 5px;
+						}
+						.box-progress {
+							display: inline-block;
+							margin-right: 15px;
+							.innrer-progress {
+								background-color: #394472;
+								border-radius: 20px;
+								width: 100px;
+								height: 4px;
+								display: inline-block;
+								margin-right: 5px;
+								position: relative;
+								.progress-value {
+									background-image: linear-gradient(to right, #524dff, #4aaaff);
+									border-radius: 20px;
+									height: 4px;
+									position: absolute;
+									left: 0;
+									top: 0;
+								}
+							}
+							span {
+								display: inline-block;
+								color: #2b96ff;
+							}
+						}
+					}
+				}
+			}
+			.item-body {
+				.wpb_content_element {
+					padding-left: 15px;
+					margin-bottom: 15px;
+					position: relative;
+					&:before {
+						background: #fff;
+						content: "";
+						width: 4px;
+						height: 4px;
+						border-radius: 50%;
+						overflow: hidden;
+						position: absolute;
+						left: 0;
+						top: 6px;
+					}
+					h4 {
+						font-size: 14px;
+					}
+				}
+			}
+		}
+	}
+	&.tomochain-progress {
+		position: relative;
+		z-index: 1;
+		&:before {
+			background: linear-gradient(top, #2a8bff 0%, #1e2444 90%);
+			border-radius: 5px;
+			content: '';
+			width: calc(100%);
+			height: calc(100%);
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: -1;
+		}
+		&:after {
+			background: #1f2649; /* Old browsers */
+			background: -moz-linear-gradient(top, #1f2649 0%, #1e2444 50%); /* FF3.6-15 */
+			background: -webkit-linear-gradient(top, #1f2649 0%, #1e2444 50%); /* Chrome10-25,Safari5.1-6 */
+			background: linear-gradient(to bottom, #1f2649 0%, #1e2444 50%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2649', endColorstr='#1e2444',GradientType=0 ); /* IE6-9 */
+			border-radius: 5px;
+			content: '';
+			width: calc(100% - 2px);
+			height: calc(100% - 2px);
+			position: absolute;
+			top: 1px;
+			left: 1px;
+			z-index: -1;
+		}
+		.main-title {
+			color: #2b96ff;
+		}
+	}
+}
+
 
 //tomochain-activities
 .tomochain-activities {
@@ -309,6 +319,7 @@
 			border-right: 1px solid #394472;
 			padding-left: 5px;
 			max-height: 300px;
+			font-size: 13px;
 			overflow-y: auto;
 			/* width */
 			&::-webkit-scrollbar {
@@ -346,6 +357,7 @@
 				}
 				li {
 					padding-left: 15px;
+					padding-right: 30px;
 					margin-top: 15px;
 					position: relative;
 					&:first-child {
@@ -365,12 +377,15 @@
 					a {
 						color: #fff;
 						display: block;
-						overflow: hidden;
+						line-height: normal;
+						/*overflow: hidden;
 						white-space: nowrap;
-						text-overflow: ellipsis;
+						text-overflow: ellipsis;*/
 					}
 					p {
 						margin: 3px 0 0;
+						font-size: 13px;
+						line-height: normal;
 					}
 				}
 			}
@@ -382,7 +397,6 @@
 		margin-top: 25px;
 		p {
 			margin-bottom: 5px;
-			font-size: 12px;
 			color: #fff;
 			a {
 				color: #2b96ff;
