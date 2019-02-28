@@ -496,11 +496,7 @@ var tomochain
 
                     success: function ( data ) {
                         $wrapper.removeClass('loading');
-                        if($id != 'all'){
-                            $wrapper.closest('.tomochain-roadmap-main').find('.roadmap-desc-infor').html($desc);
-                        }else{
-                            $wrapper.closest('.tomochain-roadmap-main').find('.roadmap-desc-infor').empty();
-                        }
+                        $wrapper.closest('.tomochain-roadmap-main').find('.roadmap-desc-infor').html($desc);
                         $wrapper.html(data);
                     }
                 });

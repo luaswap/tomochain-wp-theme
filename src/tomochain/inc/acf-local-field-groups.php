@@ -1044,5 +1044,62 @@ if( function_exists('acf_add_local_field_group') ) {
         'active' => 1,
         'description' => '',
     ));
+    /* Activity Option */
+    acf_add_local_field_group(array (
+        'key' => 'group_5c8404d421424',
+        'title' => 'Activity Option',
+        'fields' => array (
+            array (
+                'key' => 'field_5b732d7b42b39',
+                'label' => 'Activity Url',
+                'name' => 'activity_url',
+                'type' => 'url',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => 'https://example.com',
+            ),
+            array (
+                'key' => 'field_5c76c50434021',
+                'label' => 'Activity date',
+                'name' => 'activity_date',
+                'type' => 'date_picker',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'display_format' => 'd/m/Y',
+                'return_format' => 'M d, Y',
+                'first_day' => 1,
+            ),
+        ),
+        'location' => array (
+            array (
+                array (
+                    'param' => 'post_type',
+                    'operator' => '==',
+                    'value' => 'activity',
+                ),
+            ),
+        ),
+        'menu_order' => 0,
+        'position' => 'normal',
+        'style' => 'default',
+        'label_placement' => 'top',
+        'instruction_placement' => 'label',
+        'hide_on_screen' => '',
+        'active' => 1,
+        'description' => '',
+    ));
 
 }

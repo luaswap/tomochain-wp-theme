@@ -56,7 +56,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
     <div class="tomochain-roadmap-page">
         <div class="roadmap-list">
             <ul class="tomochain-roadmap-filter">
-                <li class="selected"><a href="#" data-filter="all"><?php echo esc_html__('All','tomochain-addons')?></a></li>
+                <li class="selected"><a href="#" data-filter="all" data-desc= "<?php echo wp_strip_all_tags($desc_for_all);?>"><?php echo esc_html__('All','tomochain-addons')?></a></li>
                 <?php
                 $categories = get_terms( array(
                     'taxonomy' => 'roadmap_category',
@@ -74,6 +74,11 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
             </ul>
             <div class="tomochain-roadmap-main">
                 <div class="roadmap-desc-infor">
+                    <?php 
+                        if($desc_for_all){
+                            echo esc_html($desc_for_all);
+                        }
+                    ?>
                 </div>
                 <div class="row">
                     <div class="col-lg-9 tomochain-roadmap-content">
@@ -105,13 +110,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
                                                                     </div>
                                                             <?php }?>
                                                             <div class="col-infor">
-                                                                <div class="title-prj">
-                                                                    <?php if($github_url){?>
-                                                                        <a class="txt-name" href="<?php echo esc_url($github_url);?>" target="<?php echo esc_attr($open_new_tab);?>">
-                                                                            <?php the_title();?>
-                                                                        </a>
-                                                                    <?php }?>
-                                                                </div>
+                                                                <h3 class="txt-name"><?php the_title();?></h3>
                                                                 <div class="update-on">
                                                                     <?php if($released_date){?>
                                                                         <span><?php echo esc_html__('Released date:','tomochain-addons')?> <?php echo esc_html($released_date);?></span>
@@ -168,13 +167,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
                                                                     </div>
                                                             <?php }?>
                                                             <div class="col-infor">
-                                                                <div class="title-prj">
-                                                                    <?php if($github_url){?>
-                                                                        <a class="txt-name" href="<?php echo esc_url($github_url);?>" target="<?php echo esc_attr($open_new_tab);?>">
-                                                                            <?php the_title();?>
-                                                                        </a>
-                                                                    <?php }?>
-                                                                </div>
+                                                                <h3 class="txt-name"><?php the_title();?></h3>
                                                                 <div class="update-on">
                                                                     <div class="box-progress">
                                                                         <div class="innrer-progress">
@@ -213,23 +206,23 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
                     <div class="col-lg-3">
                         <div class="tomochain-activities">
                             <div class="box-countdown">
-                                <h3 class="txt-title">Next Roadmap Update</h3>
+                                <h3 class="txt-title"><?php echo esc_html__('Next Roadmap Update','tomochain-addons')?></h3>
                                 <div class="inner-countdown">
                                     <div class="txt-clock">
                                         <span id="days"></span>
-                                        <div class="smalltext">days</div>
+                                        <div class="smalltext"><?php echo esc_html__('days','tomochain-addons')?></div>
                                     </div>
                                     <div class="txt-clock">
                                         <span id="hours"></span>
-                                        <div class="smalltext">hours</div>
+                                        <div class="smalltext"><?php echo esc_html__('hours','tomochain-addons')?></div>
                                     </div>
                                     <div class="txt-clock">
                                         <span id="minutes"></span>
-                                        <div class="smalltext">minutes</div>
+                                        <div class="smalltext"><?php echo esc_html__('minutes','tomochain-addons')?></div>
                                     </div>
                                     <div class="txt-clock">
                                         <span id="seconds"></span>
-                                        <div class="smalltext">second</div>
+                                        <div class="smalltext"><?php echo esc_html__('second','tomochain-addons')?></div>
                                     </div>
                                 </div>
                                 <script>
@@ -275,10 +268,17 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
                                         wp_reset_postdata();
                                         if( $a->have_posts() ):
                                             while( $a->have_posts() ): $a->the_post();
+                                                $activty_url = get_field('activity_url') ? get_field('activity_url') : '#';
                                     ?>
                                                 <li>
-                                                    <a href="#"><?php the_title()?></a>
-                                                    <p><?php the_content();?></p>
+                                                    <a href="<?php echo esc_url($activty_url);?>"><?php the_title()?></a>
+                                                    <?php the_content();?>
+                                                    <?php 
+                                                        $activity_date = get_field('activity_date');
+                                                        if(!empty($activity_date)){
+                                                            $ago = strtotime( $activity_date ); ?>
+                                                            <p class="days-ago"><?php echo human_time_diff( $ago, current_time( 'timestamp' ) ).' '.esc_html__( 'ago' );?></p>
+                                                        <?php }?>
                                                 </li>
                                             <?php endwhile;?>   
                                         <?php endif;?>
