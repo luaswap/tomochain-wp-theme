@@ -24,13 +24,6 @@ get_header();
                         tomochain_category_filter('post');
                     ?>
                     <div class="tomo-archive-wrapper">
-                        <div class="spinner">
-                            <div class="rect1"></div>
-                            <div class="rect2"></div>
-                            <div class="rect3"></div>
-                            <div class="rect4"></div>
-                            <div class="rect5"></div>
-                        </div>
                         <div class="archive-posts">
                             <div class="row">
                             <?php if ( have_posts() ) :

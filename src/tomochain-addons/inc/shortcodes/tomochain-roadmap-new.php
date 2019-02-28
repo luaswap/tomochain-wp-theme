@@ -28,7 +28,6 @@ vc_map( array(
             'description'=> esc_html__('Enter date format: 5/5/2019 15:37:25', 'tomochain-addons'),
             'group'      => esc_html__( 'Sidebar', 'tomochain-addons' ),
         ),
-        
         array(
             'type'        => 'param_group',
             'heading'     => esc_html__( 'Discuss with our Team', 'tomochain-addons' ),

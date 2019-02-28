@@ -1,5 +1,4 @@
 .tomo-archive-wrapper,
-.tomochain-roadmap-main,
 .tomochain-dapp-main {
 
     .archive-posts {
@@ -21,6 +20,28 @@
 
         .archive-posts,
         .dapp-posts {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
+.tomochain-roadmap-content {
+    @extend %transit;
+
+    &.loading {
+        position: relative;
+        text-align: center;
+
+        &:before {
+            content: url(assets/images/loading.svg) !important;
+            display: block;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%) scale(1.5);
+        }
+
+        >.row {
             opacity: 0;
             visibility: hidden;
         }
