@@ -14,7 +14,7 @@ get_template_part('headerld'); ?>
 				<h1 class="main-title-page">Roadmap</h1>
 			</div>
 			<div class="col-12 col-lg-3">
-				<div class="check-time">January 2019</div>
+				<!-- <div class="check-time">January 2019</div> -->
 			</div>
 		</div>
 	</div>

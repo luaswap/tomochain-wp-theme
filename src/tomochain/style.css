@@ -7634,8 +7634,7 @@ If your tooling is more complex you can split it up like:
   etc.
 */
 .tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-tmp-color-gradient a:after, .btn-tmp-basic:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts,
-.tomochain-roadmap-main .archive-posts,
-.tomochain-dapp-main .archive-posts, .site-header, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
+.tomochain-dapp-main .archive-posts, .tomochain-roadmap-content, .site-header, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
 .main-menu .menu li.menu-item.page_item_has_children > a:before,
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
@@ -8795,7 +8794,7 @@ input[type="submit"] {
   background: linear-gradient(#48A5FF 30%, #534BFF 100%) !important;
   border-radius: 6px !important;
   color: #fff !important;
-  padding: 12px 30px !important;
+  padding: 12px 31px !important;
   line-height: 16px !important;
   min-width: 180px !important;
   position: relative !important;
@@ -8825,7 +8824,7 @@ input[type="submit"] {
   background: linear-gradient(#48A5FF 30%, #534BFF 100%);
   border-radius: 6px;
   color: #fff;
-  padding: 10px 30px;
+  padding: 10px 31px;
   line-height: 16px;
   min-width: 150px;
   border: 0;
@@ -10176,12 +10175,10 @@ Specific UI components.
 This is where majority of our work takes place and our UI components are often composed of Objects and Components
 */
 .tomo-archive-wrapper.loading,
-.tomochain-roadmap-main.loading,
 .tomochain-dapp-main.loading {
   position: relative;
   text-align: center; }
   .tomo-archive-wrapper.loading:before,
-  .tomochain-roadmap-main.loading:before,
   .tomochain-dapp-main.loading:before {
     content: url(assets/images/loading.svg) !important;
     display: block;
@@ -10192,10 +10189,23 @@ This is where majority of our work takes place and our UI components are often c
             transform: translateX(-50%) scale(1.5); }
   .tomo-archive-wrapper.loading .archive-posts,
   .tomo-archive-wrapper.loading .dapp-posts,
-  .tomochain-roadmap-main.loading .archive-posts,
-  .tomochain-roadmap-main.loading .dapp-posts,
   .tomochain-dapp-main.loading .archive-posts,
   .tomochain-dapp-main.loading .dapp-posts {
+    opacity: 0;
+    visibility: hidden; }
+
+.tomochain-roadmap-content.loading {
+  position: relative;
+  text-align: center; }
+  .tomochain-roadmap-content.loading:before {
+    content: url(assets/images/loading.svg) !important;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(1.5);
+            transform: translateX(-50%) scale(1.5); }
+  .tomochain-roadmap-content.loading > .row {
     opacity: 0;
     visibility: hidden; }
 
@@ -11705,10 +11715,10 @@ article.post-loop {
       .tomochain-activities .box-countdown .inner-countdown .txt-clock:before {
         content: ":";
         color: #fff;
-        font-size: 24px;
+        font-size: 26px;
         position: absolute;
         right: 6px;
-        top: 12px; }
+        top: 13px; }
       .tomochain-activities .box-countdown .inner-countdown .txt-clock:last-child:before {
         display: none; }
       .tomochain-activities .box-countdown .inner-countdown .txt-clock span {
