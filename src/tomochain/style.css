@@ -11646,11 +11646,17 @@ article.post-loop {
             .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress span {
               display: inline-block;
               color: #2b96ff; }
-      .roadmap-common .list-box .box-item .item-body .wpb_content_element {
+      .roadmap-common .list-box .box-item .item-body ul, .roadmap-common .list-box .box-item .item-body ol {
+        margin: 0 0 15px;
+        padding-left: 0;
+        list-style: none; }
+        .roadmap-common .list-box .box-item .item-body ul li, .roadmap-common .list-box .box-item .item-body ol li {
+          margin-bottom: 7px; }
+      .roadmap-common .list-box .box-item .item-body .box-element {
         padding-left: 15px;
         margin-bottom: 15px;
         position: relative; }
-        .roadmap-common .list-box .box-item .item-body .wpb_content_element:before {
+        .roadmap-common .list-box .box-item .item-body .box-element:before {
           background: #fff;
           content: "";
           width: 4px;
@@ -11660,8 +11666,10 @@ article.post-loop {
           position: absolute;
           left: 0;
           top: 6px; }
-        .roadmap-common .list-box .box-item .item-body .wpb_content_element h4 {
+        .roadmap-common .list-box .box-item .item-body .box-element h4 {
           font-size: 14px; }
+        .roadmap-common .list-box .box-item .item-body .box-element p {
+          margin-bottom: 5px; }
   .roadmap-common.tomochain-progress {
     position: relative;
     z-index: 1; }
@@ -11786,15 +11794,15 @@ article.post-loop {
       .tomochain-activities .box-activities .list-recent ul li:first-child {
         margin-top: 0; }
       .tomochain-activities .box-activities .list-recent ul li:after {
-        background-image: -webkit-gradient(linear, left top, right top, from(#504cf5), to(#4daaff));
-        background-image: linear-gradient(to right, #504cf5, #4daaff);
+        background: url(assets/images/ic_oval.png) no-repeat center bottom;
+        background-size: 9px 9px;
         content: "";
-        width: 8px;
-        height: 8px;
+        width: 10px;
+        height: 10px;
         border-radius: 50%;
         overflow: hidden;
         position: absolute;
-        left: -3px;
+        left: -5px;
         top: 6px; }
       .tomochain-activities .box-activities .list-recent ul li a {
         color: #fff;
@@ -15326,7 +15334,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       .tomo-flexbox > a {
         margin: 0 10px; }
     .btn-downios {
-      padding: 10px 10px 10px 20px;
+      padding: 10px 10px 10px 19px;
       font-size: 13px; }
       .btn-downios:before {
         left: 8px; }
@@ -16271,7 +16279,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
   @media only screen and (min-width: 1025px) and (max-width: 1500px) {
     .page-template-tmp-roadmap .entry-content {
       font-size: 13px;
-      line-height: initial; }
+      line-height: 20px; }
       .page-template-tmp-roadmap .entry-content .txt-name,
       .page-template-tmp-roadmap .entry-content .box-title {
         font-size: 14px !important; }
