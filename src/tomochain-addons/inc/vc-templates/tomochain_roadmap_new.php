@@ -56,7 +56,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 	<div class="tomochain-roadmap-page">
 		<div class="roadmap-list">
 			<ul class="tomochain-roadmap-filter">
-				<li class="selected"><a href="#" data-filter="all" data-desc= "<?php echo wp_strip_all_tags($desc_for_all);?>"><?php echo esc_html__('All','tomochain-addons')?></a></li>
+				<li class="selected"><a href="#" data-filter="all" data-desc= "<?php echo wp_kses_post($desc_for_all);?>"><?php echo esc_html__('All','tomochain-addons')?></a></li>
 				<?php
 				$categories = get_terms( array(
 					'taxonomy' => 'roadmap_category',
@@ -76,7 +76,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 				<div class="roadmap-desc-infor">
 					<?php
 						if($desc_for_all){
-							echo esc_html($desc_for_all);
+							echo rawurldecode( base64_decode($desc_for_all));
 						}
 					?>
 				</div>

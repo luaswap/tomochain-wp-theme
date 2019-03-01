@@ -12,7 +12,7 @@ vc_map( array(
     'category'    => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'params'      => array(
         array(
-            'type'       => 'textarea',
+            'type'       => 'textarea_raw_html',
             'param_name' => 'desc_for_all',
             'heading'    => esc_html__( 'Add Description', 'tomochain-addons' ),
             'value'      => '',
@@ -28,6 +28,7 @@ vc_map( array(
             'description'=> esc_html__('Enter date format: 5/5/2019 15:37:25', 'tomochain-addons'),
             'group'      => esc_html__( 'Sidebar', 'tomochain-addons' ),
         ),
+        
         array(
             'type'        => 'param_group',
             'heading'     => esc_html__( 'Discuss with our Team', 'tomochain-addons' ),
