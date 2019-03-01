@@ -848,6 +848,22 @@ if( function_exists('acf_add_local_field_group') ) {
         'title' => 'Road Map Option',
         'fields' => array (
             array (
+                'key' => 'field_5b932d9b43b39',
+                'label' => 'Add Url',
+                'name' => 'roadmap_url',
+                'type' => 'url',
+                'instructions' => '',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'wrapper' => array (
+                    'width' => '',
+                    'class' => '',
+                    'id' => '',
+                ),
+                'default_value' => '',
+                'placeholder' => 'https://example.com',
+            ),
+            array (
                 'key' => 'field_5c3db34e9eb1f',
                 'label' => 'Image',
                 'name' => 'item_image',
