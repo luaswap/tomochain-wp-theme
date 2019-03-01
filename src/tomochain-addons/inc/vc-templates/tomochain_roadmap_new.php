@@ -294,7 +294,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 												$activty_url = get_field('activity_url') ? get_field('activity_url') : '#';
 									?>
 												<li>
-													<a href="<?php echo esc_url($activty_url);?>"><?php the_title()?></a>
+													<a target="_blank" href="<?php echo esc_url($activty_url);?>"><?php the_title()?></a>
 													<?php the_content();?>
 													<?php 
 														$activity_date = get_field('activity_date');
