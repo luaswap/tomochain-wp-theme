@@ -56,7 +56,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 	<div class="tomochain-roadmap-page">
 		<div class="roadmap-list">
 			<ul class="tomochain-roadmap-filter">
-				<li class="selected"><a href="#" data-filter="all" data-desc= "<?php echo wp_kses_post($desc_for_all);?>"><?php echo esc_html__('All','tomochain-addons')?></a></li>
+				<li class="selected"><a href="#" data-filter="all" data-desc= "<?php echo rawurldecode(base64_decode($desc_for_all));?>"><?php echo esc_html__('All','tomochain-addons')?></a></li>
 				<?php
 				$categories = get_terms( array(
 					'taxonomy' => 'roadmap_category',
@@ -66,7 +66,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 				) );
 				if($categories){
 					foreach ($categories as $cat) {?>
-						<li><a href="#" data-filter="<?php echo esc_attr($cat->term_id)?>" data-desc= "<?php echo wp_strip_all_tags(term_description($cat->term_id));?>"><?php echo esc_html($cat->name);?></a></li>
+						<li><a href="#" data-filter="<?php echo esc_attr($cat->term_id)?>" data-desc= "<?php echo wp_kses_post(term_description($cat->term_id));?>"><?php echo esc_html($cat->name);?></a></li>
 				<?php
 					}
 				}
@@ -281,7 +281,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 								<div class="box-title">
 									<h3><?php echo esc_html__('Recent Activities','tomochain-addons');?></h3>
 									<?php if($see_more){?>
-										<a target="_blank" href="<?php echo esc_url($see_more);?>"><?php echo esc_html__('See more','tomochain-addons');?></a>
+										<a target="_blank" href="<?php echo esc_url($see_more);?>"><?php echo esc_html__('See all','tomochain-addons');?></a>
 									<?php }?>
 								</div>
 								<div class="list-recent">

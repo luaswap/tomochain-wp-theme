@@ -23,7 +23,7 @@
 	@media only screen and (min-width: 1025px) and (max-width: 1500px) {
 		.entry-content {
 			font-size: 13px;
-			line-height: initial;
+			line-height: 20px;
 			.txt-name,
 			.box-title {
 				font-size: 14px!important;
@@ -203,7 +203,15 @@
 				}
 			}
 			.item-body {
-				.wpb_content_element {
+				ul,ol {
+					margin: 0 0 15px;
+					padding-left: 0;
+					list-style: none;
+					li {
+						margin-bottom: 7px;
+					}
+				}
+				.box-element {
 					padding-left: 15px;
 					margin-bottom: 15px;
 					position: relative;
@@ -220,6 +228,9 @@
 					}
 					h4 {
 						font-size: 14px;
+					}
+					p {
+						margin-bottom: 5px;
 					}
 				}
 			}
@@ -364,14 +375,15 @@
 						margin-top: 0;
 					}
 					&:after {
-						background-image: linear-gradient(to right, #504cf5, #4daaff);
+						background: url(assets/images/ic_oval.png) no-repeat center bottom;
+						background-size: 9px 9px;
 						content: "";
-						width: 8px;
-						height: 8px;
+						width: 10px;
+						height: 10px;
 						border-radius: 50%;
 						overflow: hidden;
 						position: absolute;
-						left: -3px;
+						left: -5px;
 						top: 6px;
 					}
 					a {
