@@ -35,8 +35,8 @@ if ( ! function_exists( 'tomochain_roadmap_category_param' ) ) :
 		endif;
 		$html[] = '</div>';
 		$html[] = '<script>';
-		$html[] = '  jQuery("document").ready( function() {';
-		$html[] = '    jQuery( "select[name=\'' . $settings['param_name'] . '-select\']" ).chosen({';
+		$html[] = '  jQuery("document").ready( function($) {';
+		$html[] = '    $( "select[name=\'' . $settings['param_name'] . '-select\']" ).chosen({';
 		$html[] = '      width: "100%",';
 		$html[] = '    });';
 		if(esc_attr( $value ) == '') {
@@ -46,8 +46,8 @@ if ( ! function_exists( 'tomochain_roadmap_category_param' ) ) :
 			$html[] = '    order = order.split(",");';
 		}
 		$html[] = '    $( "select[name=\'' . $settings['param_name'] . '-select\']" ).setSelectionOrder(order);';
-		$html[] = '    jQuery( "select[name=\'' . $settings['param_name'] . '-select\']" ).unbind("change").bind( "change", function(e, params) {';
-		$html[] = '      var input_val = jQuery( "input[name=\'' . $settings['param_name'] . '\']" ).val();';
+		$html[] = '    $( "select[name=\'' . $settings['param_name'] . '-select\']" ).unbind("change").bind( "change", function(e, params) {';
+		$html[] = '      var input_val = $( "input[name=\'' . $settings['param_name'] . '\']" ).val();';
 		$html[] = '      var check_selected = "selected" in params;';
 		$html[] = '      var input_val_arr = input_val.split(",");';
 		$html[] = '      var new_val = "";';
@@ -63,7 +63,7 @@ if ( ! function_exists( 'tomochain_roadmap_category_param' ) ) :
 		$html[] = '        });';
 		$html[] = '        new_val = new_val.join(",");';
 		$html[] = '      }';
-		$html[] = '      jQuery( "input[name=\'' . $settings['param_name'] . '\']" ).val( new_val );';
+		$html[] = '      $( "input[name=\'' . $settings['param_name'] . '\']" ).val( new_val );';
 		$html[] = '    });';
 		$html[] = '  });';
 		$html[] = '</script>';
