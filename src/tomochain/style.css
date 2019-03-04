@@ -11522,9 +11522,9 @@ article.post-loop {
   .page-template-tmp-roadmap .site-content {
     background: transparent; }
   .page-template-tmp-roadmap .site-footer {
-    background: transparent;
-    border-top: 1px solid #394472; }
+    background: transparent; }
     .page-template-tmp-roadmap .site-footer .site-info {
+      border-top: 1px solid #394472;
       padding: 15px 0; }
 
 .header-roadmap {
@@ -11549,11 +11549,17 @@ article.post-loop {
 .tomochain-roadmap-page .tomochain-roadmap-filter {
   margin-bottom: 15px;
   padding-bottom: 0;
-  border-bottom: 1px solid #394472; }
+  border-bottom: 1px solid #394472;
+  overflow-x: auto;
+  white-space: nowrap; }
   .tomochain-roadmap-page .tomochain-roadmap-filter li {
     margin-left: 30px; }
     .tomochain-roadmap-page .tomochain-roadmap-filter li:first-child {
       margin-left: 0; }
+    .tomochain-roadmap-page .tomochain-roadmap-filter li:last-child {
+      overflow: hidden; }
+      .tomochain-roadmap-page .tomochain-roadmap-filter li:last-child a::first-letter {
+        color: transparent; }
     .tomochain-roadmap-page .tomochain-roadmap-filter li a {
       padding-bottom: 15px;
       font-size: 15px; }
@@ -11575,7 +11581,7 @@ article.post-loop {
   /* IE6-9 */
   border-radius: 5px;
   overflow: hidden;
-  padding: 15px 0;
+  padding: 15px 4px 15px 0;
   margin-bottom: 15px; }
   .roadmap-common .main-title {
     padding: 0 0 15px;
@@ -11590,6 +11596,9 @@ article.post-loop {
     /* Track */
     /* Handle */
     /* Handle on hover */ }
+    .roadmap-common .list-box .mgs {
+      text-align: center;
+      padding: 30px 0; }
     .roadmap-common .list-box::-webkit-scrollbar {
       width: 4px; }
     .roadmap-common .list-box::-webkit-scrollbar-track {
@@ -11646,17 +11655,33 @@ article.post-loop {
             .roadmap-common .list-box .box-item .item-header .col-infor .update-on .box-progress span {
               display: inline-block;
               color: #2b96ff; }
-      .roadmap-common .list-box .box-item .item-body ul, .roadmap-common .list-box .box-item .item-body ol {
-        margin: 0 0 15px;
-        padding-left: 0;
-        list-style: none; }
-        .roadmap-common .list-box .box-item .item-body ul li, .roadmap-common .list-box .box-item .item-body ol li {
-          margin-bottom: 7px; }
-      .roadmap-common .list-box .box-item .item-body .box-element {
+      .roadmap-common .list-box .box-item .item-body {
         padding-left: 15px;
         margin-bottom: 15px;
-        position: relative; }
-        .roadmap-common .list-box .box-item .item-body .box-element:before {
+        position: relative;
+        /*.box-element {
+					padding-left: 15px;
+					margin-bottom: 15px;
+					position: relative;
+					&:before {
+						background: #fff;
+						content: "";
+						width: 4px;
+						height: 4px;
+						border-radius: 50%;
+						overflow: hidden;
+						position: absolute;
+						left: 0;
+						top: 6px;
+					}
+					h4 {
+						font-size: 14px;
+					}
+					p {
+						margin-bottom: 5px;
+					}
+				}*/ }
+        .roadmap-common .list-box .box-item .item-body:before {
           background: #fff;
           content: "";
           width: 4px;
@@ -11666,9 +11691,15 @@ article.post-loop {
           position: absolute;
           left: 0;
           top: 6px; }
-        .roadmap-common .list-box .box-item .item-body .box-element h4 {
+        .roadmap-common .list-box .box-item .item-body ul, .roadmap-common .list-box .box-item .item-body ol {
+          margin: 0 0 15px;
+          padding-left: 0;
+          list-style: none; }
+          .roadmap-common .list-box .box-item .item-body ul li, .roadmap-common .list-box .box-item .item-body ol li {
+            margin-bottom: 7px; }
+        .roadmap-common .list-box .box-item .item-body h4 {
           font-size: 14px; }
-        .roadmap-common .list-box .box-item .item-body .box-element p {
+        .roadmap-common .list-box .box-item .item-body p {
           margin-bottom: 5px; }
   .roadmap-common.tomochain-progress {
     position: relative;
@@ -16276,7 +16307,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     height: 0px !important; }
   .wpb_content_element {
     margin-bottom: 25px !important; } }
-  @media only screen and (min-width: 1025px) and (max-width: 1500px) {
+  @media only screen and (min-width: 1025px) and (max-width: 1400px) {
     .page-template-tmp-roadmap .entry-content {
       font-size: 13px;
       line-height: 20px; }
@@ -16292,7 +16323,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       .page-template-tmp-roadmap .entry-content .main-title {
         font-size: 16px !important; }
       .page-template-tmp-roadmap .entry-content .list-box {
-        height: 445px !important; }
+        height: 435px !important; }
       .page-template-tmp-roadmap .entry-content .list-recent {
         height: 220px !important; }
       .page-template-tmp-roadmap .entry-content .container {
@@ -17933,6 +17964,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         .header-roadmap .row .check-time {
           text-align: left;
           margin-top: 10px; }
+      .tomochain-roadmap-page .tomochain-roadmap-filter li {
+        margin-left: 15px; }
       .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info {
         text-align: center; }
         .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .box_flexbox {

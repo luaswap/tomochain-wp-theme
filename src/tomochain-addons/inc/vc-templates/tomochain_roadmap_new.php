@@ -118,7 +118,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 																</div>
 																<div class="update-on">
 																	<?php if($released_date){?>
-																		<span><?php echo esc_html__('Released date:','tomochain-addons')?> <?php echo esc_html($released_date);?></span>
+																		<span><?php echo esc_html__('Released date:','tomochain-addons')?> <?php echo esc_html($released_date);?></span><br>
 																	<?php }?>
 																	<?php if($github_url){?>
 																		<a href="<?php echo esc_url($github_url);?>" target="<?php echo esc_attr($open_new_tab);?>">
@@ -186,6 +186,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 																	</div>
 																	<?php if($due_date){?>
 																			<span><?php echo esc_html__('Due date:','tomochain-addons')?> <?php echo esc_html($due_date);?></span>
+																			<br>
 																		<?php }?>
 																		<?php if($github_url){?>
 																			<a href="<?php echo esc_url($github_url);?>" target="<?php echo esc_attr($open_new_tab);?>">
@@ -279,7 +280,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 							</div><!-- /box-countdown -->
 							<div class="box-activities">
 								<div class="box-title">
-									<h3><?php echo esc_html__('Recent Activities','tomochain-addons');?></h3>
+									<h3><?php echo esc_html__('Latest commits','tomochain-addons');?></h3>
 									<?php if($see_more){?>
 										<a target="_blank" href="<?php echo esc_url($see_more);?>"><?php echo esc_html__('See all','tomochain-addons');?></a>
 									<?php }?>
@@ -324,7 +325,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 								</p>
 								<?php if($resource){?>
 									<p class="txt">
-										<?php echo esc_html__('Resoure:','tomochain-addons');?> <a target="_blank" href="<?php echo esc_url($resource);?>"><?php echo esc_html__('Tomochain Document','tomochain-addons');?></a>
+										<?php echo esc_html__('Resource:','tomochain-addons');?> <a target="_blank" href="<?php echo esc_url($resource);?>"><?php echo esc_html__('Tomochain Document','tomochain-addons');?></a>
 									</p>
 								<?php }?>
 							</div><!-- /box-other -->
