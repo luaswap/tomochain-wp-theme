@@ -31,6 +31,10 @@ class TomoChain_Addons {
         add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_libs') , 1 );
         add_action( 'wp_enqueue_scripts', array( $this, 'enqueue_scripts' ) );
         load_plugin_textdomain( 'tomochain-addons', false, plugin_basename( dirname( __FILE__ ) ) . '/languages' );
+        // Enqueue script Back End
+        if ( is_admin() ) :
+            add_action( 'admin_enqueue_scripts', array( $this, 'enqueue_scripts_backend' ));
+        endif;
     }
 
     /**
@@ -83,6 +87,11 @@ class TomoChain_Addons {
             array('jquery'),
             null,
             true );
+    }
+    public function enqueue_scripts_backend() {
+        wp_enqueue_style( 'chosen-css', TOMOCHAIN_ADDONS_URI . 'assets/libs/chosen/tomochain-chosen.css', null, null, 'all' );
+        wp_enqueue_script( 'chosen-js', TOMOCHAIN_ADDONS_URI . 'assets/libs/chosen/chosen.jquery.min.js', array( 'jquery'), null, true );
+        wp_enqueue_script( 'chosen-order-js', TOMOCHAIN_ADDONS_URI . 'assets/libs/chosen/chosen.order.jquery.min.js', array( 'jquery'), null, true );
     }
 
     /**

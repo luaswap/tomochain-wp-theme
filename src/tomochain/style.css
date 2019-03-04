@@ -11556,10 +11556,6 @@ article.post-loop {
     margin-left: 30px; }
     .tomochain-roadmap-page .tomochain-roadmap-filter li:first-child {
       margin-left: 0; }
-    .tomochain-roadmap-page .tomochain-roadmap-filter li:last-child {
-      overflow: hidden; }
-      .tomochain-roadmap-page .tomochain-roadmap-filter li:last-child a::first-letter {
-        color: transparent; }
     .tomochain-roadmap-page .tomochain-roadmap-filter li a {
       padding-bottom: 15px;
       font-size: 15px; }
@@ -11612,7 +11608,7 @@ article.post-loop {
       overflow-y: auto;
       cursor: pointer; }
     .roadmap-common .list-box .box-item {
-      border-top: 1px solid #394472;
+      /*border-top: 1px solid #394472;*/
       padding-top: 25px;
       margin-bottom: 25px; }
       .roadmap-common .list-box .box-item .item-header {

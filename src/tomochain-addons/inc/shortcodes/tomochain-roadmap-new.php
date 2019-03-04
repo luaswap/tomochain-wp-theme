@@ -12,6 +12,14 @@ vc_map( array(
     'category'    => esc_html__( 'TomoChain', 'tomochain-addons' ),
     'params'      => array(
         array(
+            'type'        => 'roadmap_cat',
+            'heading'     => esc_html__( 'Roadmap Categories', 'tomochain-addons' ),
+            'param_name'  => 'r_categories',
+            'description' => esc_html__( 'Enter Roadmap Categories', 'tomochain-addons' ),
+            'admin_label' => true,
+
+        ),
+        array(
             'type'       => 'textarea_raw_html',
             'param_name' => 'desc_for_all',
             'heading'    => esc_html__( 'Add Description', 'tomochain-addons' ),
@@ -21,11 +29,11 @@ vc_map( array(
         tomochain_get_param('el_class'),
         tomochain_get_param('css'),
         array(
-            'type'       => 'textfield',
+            'type'       => 'datetimepicker',
             'param_name' => 'time_update',
             'heading'    => esc_html__( 'Time Roadmap Update', 'tomochain-addons' ),
             'value'      => '',
-            'description'=> esc_html__('Enter date format: 5/5/2019 15:37:25', 'tomochain-addons'),
+            'description'=> esc_html__('Enter date', 'tomochain-addons'),
             'group'      => esc_html__( 'Sidebar', 'tomochain-addons' ),
         ),
         

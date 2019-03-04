@@ -101,12 +101,6 @@
 			&:first-child {
 				margin-left: 0;
 			}
-			&:last-child {
-				overflow: hidden;
-				a::first-letter {
-					color: transparent;
-				}
-			}
 			a {
 				padding-bottom: 15px;
 				font-size: 15px;
@@ -165,7 +159,7 @@
 			cursor: pointer;
 		}
 		.box-item {
-			border-top: 1px solid #394472;
+			/*border-top: 1px solid #394472;*/
 			padding-top: 25px;
 			margin-bottom: 25px;
 			.item-header {
