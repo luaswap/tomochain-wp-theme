@@ -11014,7 +11014,7 @@ article.post-loop {
 
 .entry-content {
   font-size: 14px;
-  line-height: 23px; }
+  line-height: 22px; }
 
 .sticky {
   display: block; }
@@ -11577,16 +11577,34 @@ article.post-loop {
   /* IE6-9 */
   border-radius: 5px;
   overflow: hidden;
-  padding: 15px 4px 15px 0;
+  padding: 15px 3px 15px 0;
   margin-bottom: 15px; }
   .roadmap-common .main-title {
     padding: 0 0 15px;
     margin-bottom: 0;
     font-size: 18px;
     text-align: center; }
+  .roadmap-common .main-inner:before {
+    /* ff3.6+ */
+    /* safari4+,chrome */
+    /* safari5.1+,chrome10+ */
+    /* opera 11.10+ */
+    /* ie10+ */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(153, 218, 255, 0)), color-stop(70%, #1e2544));
+    background: linear-gradient(180deg, rgba(153, 218, 255, 0) 0%, #1e2544 70%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99DAFF', endColorstr='#1f2649',GradientType=0 );
+    /* ie6-9 */
+    content: "";
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
   .roadmap-common .list-box {
     padding: 0 15px;
-    max-height: 500px;
+    max-height: 495px;
     overflow-y: auto;
     /* width */
     /* Track */
@@ -11608,14 +11626,14 @@ article.post-loop {
       overflow-y: auto;
       cursor: pointer; }
     .roadmap-common .list-box .box-item {
-      /*border-top: 1px solid #394472;*/
-      padding-top: 25px;
-      margin-bottom: 25px; }
+      border-top: 1px solid #394472;
+      padding-top: 20px;
+      margin-bottom: 20px; }
       .roadmap-common .list-box .box-item .item-header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
-        margin-bottom: 25px; }
+        margin-bottom: 15px; }
         .roadmap-common .list-box .box-item .item-header .col-logo {
           width: 40px; }
         .roadmap-common .list-box .box-item .item-header .col-infor {
@@ -11696,10 +11714,12 @@ article.post-loop {
         .roadmap-common .list-box .box-item .item-body h4 {
           font-size: 14px; }
         .roadmap-common .list-box .box-item .item-body p {
-          margin-bottom: 5px; }
+          margin-bottom: 5px;
+          line-height: 18px; }
   .roadmap-common.tomochain-progress {
     position: relative;
-    z-index: 1; }
+    z-index: 1;
+    height: 100%; }
     .roadmap-common.tomochain-progress:before {
       background: -webkit-gradient(linear, left top, left bottom, from(#2a8bff), color-stop(90%, #1e2444));
       background: linear-gradient(top, #2a8bff 0%, #1e2444 90%);
@@ -11764,88 +11784,109 @@ article.post-loop {
       .tomochain-activities .box-countdown .inner-countdown .txt-clock .smalltext {
         font-size: 12px; }
 
-.tomochain-activities .box-activities .box-title {
-  padding: 15px 0;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
-  .tomochain-activities .box-activities .box-title h3 {
-    font-size: 16px; }
-  .tomochain-activities .box-activities .box-title a {
-    color: #2b96ff;
-    text-decoration: underline; }
-
-.tomochain-activities .box-activities .list-recent {
-  border-right: 1px solid #394472;
-  padding-left: 5px;
-  max-height: 300px;
-  font-size: 13px;
-  overflow-y: auto;
-  /* width */
-  /* Track */
-  /* Handle */
-  /* Handle on hover */ }
-  .tomochain-activities .box-activities .list-recent::-webkit-scrollbar {
-    width: 4px; }
-  .tomochain-activities .box-activities .list-recent::-webkit-scrollbar-track {
-    /*box-shadow: inset 0 0 5px grey;*/
-    border-radius: 10px; }
-  .tomochain-activities .box-activities .list-recent::-webkit-scrollbar-thumb {
-    background: #394472;
-    border-radius: 10px; }
-  .tomochain-activities .box-activities .list-recent::-webkit-scrollbar-thumb:hover {
-    background: #45538b;
-    overflow-y: auto;
-    cursor: pointer; }
-  .tomochain-activities .box-activities .list-recent ul {
-    padding: 0;
-    margin: 0;
-    list-style: none;
-    position: relative; }
-    .tomochain-activities .box-activities .list-recent ul:before {
-      content: "";
-      border-left: 2px dashed #404c7e;
-      width: 2px;
-      height: 100%;
-      position: absolute;
-      left: 0;
-      top: 10px; }
-    .tomochain-activities .box-activities .list-recent ul li {
-      padding-left: 15px;
-      padding-right: 30px;
-      margin-top: 15px;
-      position: relative; }
-      .tomochain-activities .box-activities .list-recent ul li:first-child {
-        margin-top: 0; }
-      .tomochain-activities .box-activities .list-recent ul li:after {
-        background: url(assets/images/ic_oval.png) no-repeat center bottom;
-        background-size: 9px 9px;
-        content: "";
-        width: 10px;
-        height: 10px;
-        border-radius: 50%;
-        overflow: hidden;
-        position: absolute;
-        left: -5px;
-        top: 6px; }
-      .tomochain-activities .box-activities .list-recent ul li a {
-        color: #fff;
-        display: block;
-        line-height: normal;
-        /*overflow: hidden;
-						white-space: nowrap;
-						text-overflow: ellipsis;*/ }
-      .tomochain-activities .box-activities .list-recent ul li p {
-        margin: 3px 0 0;
-        font-size: 13px;
-        line-height: normal; }
+.tomochain-activities .box-activities {
+  position: relative; }
+  .tomochain-activities .box-activities:before {
+    /* ff3.6+ */
+    /* safari4+,chrome */
+    /* safari5.1+,chrome10+ */
+    /* opera 11.10+ */
+    /* ie10+ */
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(153, 218, 255, 0)), color-stop(80%, #1e2544));
+    background: linear-gradient(180deg, rgba(153, 218, 255, 0) 0%, #1e2544 80%);
+    /* w3c */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99DAFF', endColorstr='#1f2649',GradientType=0 );
+    /* ie6-9 */
+    content: "";
+    width: 100%;
+    height: 80px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 1; }
+  .tomochain-activities .box-activities .box-title {
+    padding: 15px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .tomochain-activities .box-activities .box-title h3 {
+      font-size: 16px; }
+    .tomochain-activities .box-activities .box-title a {
+      color: #2b96ff;
+      text-decoration: underline; }
+  .tomochain-activities .box-activities .box_latest_commit {
+    border-right: 1px solid #394472;
+    padding-right: 2px; }
+    .tomochain-activities .box-activities .box_latest_commit .list-recent {
+      padding-left: 5px;
+      max-height: 300px;
+      font-size: 13px;
+      overflow-y: auto;
+      /* width */
+      /* Track */
+      /* Handle */
+      /* Handle on hover */ }
+      .tomochain-activities .box-activities .box_latest_commit .list-recent::-webkit-scrollbar {
+        width: 4px; }
+      .tomochain-activities .box-activities .box_latest_commit .list-recent::-webkit-scrollbar-track {
+        /*box-shadow: inset 0 0 5px grey;*/
+        border-radius: 10px; }
+      .tomochain-activities .box-activities .box_latest_commit .list-recent::-webkit-scrollbar-thumb {
+        background: #394472;
+        border-radius: 10px; }
+      .tomochain-activities .box-activities .box_latest_commit .list-recent::-webkit-scrollbar-thumb:hover {
+        background: #45538b;
+        overflow-y: auto;
+        cursor: pointer; }
+      .tomochain-activities .box-activities .box_latest_commit .list-recent ul {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        position: relative; }
+        .tomochain-activities .box-activities .box_latest_commit .list-recent ul:before {
+          content: "";
+          border-left: 2px dashed #404c7e;
+          width: 2px;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 10px; }
+        .tomochain-activities .box-activities .box_latest_commit .list-recent ul li {
+          padding-left: 15px;
+          padding-right: 30px;
+          margin-top: 15px;
+          position: relative; }
+          .tomochain-activities .box-activities .box_latest_commit .list-recent ul li:first-child {
+            margin-top: 0; }
+          .tomochain-activities .box-activities .box_latest_commit .list-recent ul li:after {
+            background: url(assets/images/ic_oval.png) no-repeat center bottom;
+            background-size: 9px 9px;
+            content: "";
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            overflow: hidden;
+            position: absolute;
+            left: -5px;
+            top: 6px; }
+          .tomochain-activities .box-activities .box_latest_commit .list-recent ul li a {
+            color: #fff;
+            display: block;
+            line-height: normal;
+            /*overflow: hidden;
+							white-space: nowrap;
+							text-overflow: ellipsis;*/ }
+          .tomochain-activities .box-activities .box_latest_commit .list-recent ul li p {
+            margin: 3px 0 0;
+            font-size: 13px;
+            line-height: normal; }
 
 .tomochain-activities .box-other {
   border-top: 1px solid #394472;
-  padding: 15px 0;
+  padding: 15px 0 0;
   margin-top: 25px; }
   .tomochain-activities .box-other p {
     margin-bottom: 5px;
@@ -16319,7 +16360,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       .page-template-tmp-roadmap .entry-content .main-title {
         font-size: 16px !important; }
       .page-template-tmp-roadmap .entry-content .list-box {
-        height: 435px !important; }
+        height: 430px !important; }
       .page-template-tmp-roadmap .entry-content .list-recent {
         height: 220px !important; }
       .page-template-tmp-roadmap .entry-content .container {

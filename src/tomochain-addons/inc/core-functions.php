@@ -253,6 +253,7 @@ function tomochain_roadmap_ajax(){
                                                     <?php if($released_date){?>
                                                         <span><?php echo esc_html__('Released date:','tomochain-addons')?> <?php echo esc_html($released_date);?></span>
                                                     <?php }?>
+                                                    <br>
                                                     <?php if($github_url){?>
                                                         <a href="<?php echo esc_url($github_url);?>" target="<?php echo esc_attr($open_new_tab);?>">
                                                             <i class="fab fa-github"></i>
@@ -329,9 +330,10 @@ function tomochain_roadmap_ajax(){
                                                         </div>
                                                         <span><?php echo esc_html($progress_number);?>%</span>
                                                     </div>
-                                                    <?php if($due_date){?>
+                                                        <?php if($due_date){?>
                                                             <span><?php echo esc_html__('Due date:','tomochain-addons')?> <?php echo esc_html($due_date);?></span>
                                                         <?php }?>
+                                                        <br>
                                                         <?php if($github_url){?>
                                                             <a href="<?php echo esc_url($github_url);?>" target="<?php echo esc_attr($open_new_tab);?>">
                                                                 <i class="fab fa-github"></i>

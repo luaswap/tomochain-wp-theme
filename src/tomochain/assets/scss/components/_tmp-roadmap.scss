@@ -38,7 +38,7 @@
 				font-size: 16px!important;
 			}
 			.list-box {
-				height: 435px!important;
+				height: 430px!important;
 			}
 			.list-recent {
 				height: 220px!important;
@@ -122,7 +122,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2649', endColorstr='#1e2444',GradientType=0 ); /* IE6-9 */
 	border-radius: 5px;
 	overflow: hidden;
-	padding: 15px 4px 15px 0;
+	padding: 15px 3px 15px 0;
 	margin-bottom: 15px;
 	.main-title {
 		padding: 0 0 15px;
@@ -130,9 +130,27 @@
 		font-size: 18px;
 		text-align: center;
 	}
+	.main-inner {
+		&:before {
+			background: -moz-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 70%); /* ff3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(153,218,255,0)), color-stop(70%, rgba(30,37,68,1))); /* safari4+,chrome */
+			background: -webkit-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 70%); /* safari5.1+,chrome10+ */
+			background: -o-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 70%); /* opera 11.10+ */
+			background: -ms-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 70%); /* ie10+ */
+			background: linear-gradient(180deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 70%); /* w3c */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99DAFF', endColorstr='#1f2649',GradientType=0 ); /* ie6-9 */
+			content: "";
+			width: 100%;
+			height: 150px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}
+	}
 	.list-box {
 		padding: 0 15px;
-		max-height: 500px;
+		max-height: 495px;
 		overflow-y: auto;
 		.mgs {
 			text-align: center;
@@ -159,12 +177,12 @@
 			cursor: pointer;
 		}
 		.box-item {
-			/*border-top: 1px solid #394472;*/
-			padding-top: 25px;
-			margin-bottom: 25px;
+			border-top: 1px solid #394472;
+			padding-top: 20px;
+			margin-bottom: 20px;
 			.item-header {
 				display: flex;
-				margin-bottom: 25px;
+				margin-bottom: 15px;
 				.col-logo {
 					width: 40px;
 				}
@@ -239,6 +257,7 @@
 				}
 				p {
 					margin-bottom: 5px;
+					line-height: 18px;
 				}
 				/*.box-element {
 					padding-left: 15px;
@@ -268,6 +287,7 @@
 	&.tomochain-progress {
 		position: relative;
 		z-index: 1;
+		height: 100%;
 		&:before {
 			background: linear-gradient(top, #2a8bff 0%, #1e2444 90%);
 			border-radius: 5px;
@@ -343,6 +363,23 @@
 		}
 	}//box-countdown
 	.box-activities {
+		position: relative;
+		&:before {
+			background: -moz-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 80%); /* ff3.6+ */
+			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(153,218,255,0)), color-stop(80%, rgba(30,37,68,1))); /* safari4+,chrome */
+			background: -webkit-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 80%); /* safari5.1+,chrome10+ */
+			background: -o-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 80%); /* opera 11.10+ */
+			background: -ms-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 80%); /* ie10+ */
+			background: linear-gradient(180deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 80%); /* w3c */
+			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99DAFF', endColorstr='#1f2649',GradientType=0 ); /* ie6-9 */
+			content: "";
+			width: 100%;
+			height: 80px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}
 		.box-title {
 			padding: 15px 0;
 			display: flex;
@@ -355,86 +392,89 @@
 				text-decoration: underline;
 			}
 		}
-		.list-recent {
+		.box_latest_commit {
 			border-right: 1px solid #394472;
-			padding-left: 5px;
-			max-height: 300px;
-			font-size: 13px;
-			overflow-y: auto;
-			/* width */
-			&::-webkit-scrollbar {
-				width: 4px;
-			}
-			/* Track */
-			&::-webkit-scrollbar-track {
-				/*box-shadow: inset 0 0 5px grey;*/
-				border-radius: 10px;
-			}
-			/* Handle */
-			&::-webkit-scrollbar-thumb {
-				background: #394472;
-				border-radius: 10px;
-			}
-			/* Handle on hover */
-			&::-webkit-scrollbar-thumb:hover {
-				background: #45538b;
+			padding-right: 2px;
+			.list-recent {
+				padding-left: 5px;
+				max-height: 300px;
+				font-size: 13px;
 				overflow-y: auto;
-				cursor: pointer;
-			}
-			ul {
-				padding: 0;
-				margin: 0;
-				list-style: none;
-				position: relative;
-				&:before {
-					content: "";
-					border-left: 2px dashed #404c7e;
-					width: 2px;
-					height: 100%;
-					position: absolute;
-					left: 0;
-					top: 10px;
+				/* width */
+				&::-webkit-scrollbar {
+					width: 4px;
 				}
-				li {
-					padding-left: 15px;
-					padding-right: 30px;
-					margin-top: 15px;
+				/* Track */
+				&::-webkit-scrollbar-track {
+					/*box-shadow: inset 0 0 5px grey;*/
+					border-radius: 10px;
+				}
+				/* Handle */
+				&::-webkit-scrollbar-thumb {
+					background: #394472;
+					border-radius: 10px;
+				}
+				/* Handle on hover */
+				&::-webkit-scrollbar-thumb:hover {
+					background: #45538b;
+					overflow-y: auto;
+					cursor: pointer;
+				}
+				ul {
+					padding: 0;
+					margin: 0;
+					list-style: none;
 					position: relative;
-					&:first-child {
-						margin-top: 0;
-					}
-					&:after {
-						background: url(assets/images/ic_oval.png) no-repeat center bottom;
-						background-size: 9px 9px;
+					&:before {
 						content: "";
-						width: 10px;
-						height: 10px;
-						border-radius: 50%;
-						overflow: hidden;
+						border-left: 2px dashed #404c7e;
+						width: 2px;
+						height: 100%;
 						position: absolute;
-						left: -5px;
-						top: 6px;
+						left: 0;
+						top: 10px;
 					}
-					a {
-						color: #fff;
-						display: block;
-						line-height: normal;
-						/*overflow: hidden;
-						white-space: nowrap;
-						text-overflow: ellipsis;*/
-					}
-					p {
-						margin: 3px 0 0;
-						font-size: 13px;
-						line-height: normal;
+					li {
+						padding-left: 15px;
+						padding-right: 30px;
+						margin-top: 15px;
+						position: relative;
+						&:first-child {
+							margin-top: 0;
+						}
+						&:after {
+							background: url(assets/images/ic_oval.png) no-repeat center bottom;
+							background-size: 9px 9px;
+							content: "";
+							width: 10px;
+							height: 10px;
+							border-radius: 50%;
+							overflow: hidden;
+							position: absolute;
+							left: -5px;
+							top: 6px;
+						}
+						a {
+							color: #fff;
+							display: block;
+							line-height: normal;
+							/*overflow: hidden;
+							white-space: nowrap;
+							text-overflow: ellipsis;*/
+						}
+						p {
+							margin: 3px 0 0;
+							font-size: 13px;
+							line-height: normal;
+						}
 					}
 				}
 			}
-		}
+			}//box_latest_commit
 	}//box-activities
 	.box-other {
 		border-top: 1px solid #394472;
-		padding: 15px 0;
+		padding: 15px 0 0;
 		margin-top: 25px;
 		p {
 			margin-bottom: 5px;
