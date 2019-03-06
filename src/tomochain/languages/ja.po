@@ -16,205 +16,163 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"POT-Creation-Date: 2018-10-08 08:42+0000\n"
-"PO-Revision-Date: 2018-10-08 08:45+0000\n"
+"POT-Creation-Date: 2019-03-06 13:13+0700\n"
+"PO-Revision-Date: 2019-03-06 06:16+0000\n"
 "Last-Translator: TomoChain <hka@tomochain.com>\n"
 "Language: ja\n"
-"X-Generator: Loco https://localise.biz/"
+"X-Generator: Loco https://localise.biz/\n"
+"X-Loco-Version: 2.2.0; wp-4.9.9"
 
-#: src/tomochain/404.php:24
+#: 404.php:24
 msgid "Page not found"
 msgstr ""
 
-#: src/tomochain/404.php:25
+#: 404.php:25
 msgid "Go Home"
 msgstr ""
 
 #. translators: 1: title.
-#: src/tomochain/comments.php:35
+#: comments.php:35
+#, php-format
 msgid "One thought on &ldquo;%1$s&rdquo;"
 msgstr ""
 
 #. translators: 1: comment count number, 2: title.
-#: src/tomochain/comments.php:41
+#: comments.php:41
+#, php-format
 msgctxt "comments title"
 msgid "%1$s thought on &ldquo;%2$s&rdquo;"
 msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
 msgstr[0] ""
 msgstr[1] ""
 
-#: src/tomochain/comments.php:66
+#: comments.php:66
 msgid "Comments are closed."
 msgstr ""
 
-#: src/tomochain/footer.php:25
+#. Theme Name of the plugin/theme
+#. Author of the plugin/theme
+#: footer.php:22
+msgid "TomoChain"
+msgstr ""
+
+#: footer.php:30 footerld.php:22
+#, php-format
 msgid "Copyright &copy; %1$s by %2$s."
 msgstr ""
 
-#: src/tomochain/functions.php:61
+#: functions.php:61
 msgid "Primary"
 msgstr ""
 
-#: src/tomochain/functions.php:126
+#: functions.php:131
 msgid "Sidebar"
 msgstr ""
 
-#: src/tomochain/functions.php:128, src/tomochain/functions.php:137
+#: functions.php:133 functions.php:142 functions.php:151
 msgid "Add widgets here."
 msgstr ""
 
-#: src/tomochain/functions.php:135
+#: functions.php:140
+msgid "Event Sidebar"
+msgstr ""
+
+#: functions.php:149
 msgid "Footer Sidebar"
 msgstr ""
 
-#: src/tomochain/header.php:36
+#: header.php:37
+msgid "Join our Telegram"
+msgstr ""
+
+#: header.php:63 headerld.php:38
 msgid "Skip to content"
 msgstr ""
 
-#. translators: %s: search query.
-#: src/tomochain/search.php:22
-msgid "Search Results for: %s"
+#: inc/template-functions.php:214
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: inc/template-functions.php:218
+#, php-format
+msgid "%s"
 msgstr ""
 
 #. translators: %s: post author.
-#: src/tomochain/inc/template-tags.php:61
+#: inc/template-tags.php:53
+#, php-format
 msgctxt "post author"
 msgid "By %s"
 msgstr ""
 
-#. translators: %s: post title
-#: src/tomochain/inc/template-tags.php:129
-msgid "Leave a Comment<span class=\"screen-reader-text\"> on %s</span>"
-msgstr ""
-
 #. translators: %s: Name of current post. Only visible to screen readers
 #. translators: %s: Name of current post. Only visible to screen readers
-#: src/tomochain/inc/template-tags.php:146,
-#: src/tomochain/template-parts/content-page.php:34
+#: inc/template-tags.php:118 template-parts/content-page.php:34
+#, php-format
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
+#. translators: %s: search query.
+#: search.php:22 template-parts/page-title.php:31
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
 #. translators: %s: Name of current post. Only visible to screen readers
-#: src/tomochain/template-parts/content-fullwidth.php:42
+#: template-parts/content-fullwidth.php:42
+#, php-format
 msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
-#: src/tomochain/template-parts/content-fullwidth.php:53,
-#: src/tomochain/template-parts/content-page.php:21,
-#: src/tomochain/template-parts/content-single.php:41,
-#: src/tomochain/template-parts/content.php:40
+#: template-parts/content-fullwidth.php:53 template-parts/content-page.php:21
+#: template-parts/content-single.php:42
 msgid "Pages:"
 msgstr ""
 
-#: src/tomochain/template-parts/content-none.php:14
-msgid "Nothing Found"
-msgstr ""
-
 #. translators: 1: link to WP admin new post page.
-#: src/tomochain/template-parts/content-none.php:24
+#: template-parts/content-none.php:24
+#, php-format
 msgid ""
 "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
 msgstr ""
 
-#: src/tomochain/template-parts/content-none.php:37
+#: template-parts/content-none.php:37
 msgid ""
 "Sorry, but nothing matched your search terms. Please try again with some "
 "different keywords."
 msgstr ""
 
-#: src/tomochain/template-parts/content-none.php:44
+#: template-parts/content-none.php:44
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
 msgstr ""
 
-#: src/tomochain/inc/widgets/tomochain-address.php:18
-msgid "TOMOCHAIN Address"
+#: template-parts/page-title.php:9
+msgid "Nothing Found"
 msgstr ""
 
-#: src/tomochain/inc/widgets/tomochain-address.php:19
-msgid "Display contact information on footer."
+#: template-parts/page-title.php:12 template-parts/page-title.php:22
+msgid "Blog"
 msgstr ""
 
-#: src/tomochain/inc/widgets/tomochain-address.php:24,
-#: src/tomochain/inc/widgets/tomochain-recent-posts.php:110
-msgid "Title"
+#: template-parts/page-title.php:19
+msgid "Events"
 msgstr ""
 
-#: src/tomochain/inc/widgets/tomochain-address.php:32
-msgid "Address"
+#: template-parts/page-title.php:28
+msgid "Tags: "
 msgstr ""
 
-#: src/tomochain/inc/widgets/tomochain-recent-posts.php:22
-msgid "TOMOCHAIN - Recent Posts"
+#: template-parts/page-title.php:34
+msgid "Archive Page"
 msgstr ""
 
-#: src/tomochain/inc/widgets/tomochain-recent-posts.php:23
-msgid "Your site's most recent Posts."
+#. Description of the plugin/theme
+msgid "Description"
 msgstr ""
 
-#: src/tomochain/inc/widgets/tomochain-recent-posts.php:121
-msgid "Show post thumbnail"
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-recent-posts.php:129
-msgid "Show post title"
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-recent-posts.php:136
-msgid "Show excerpt"
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-recent-posts.php:143
-msgid "Show meta"
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-recent-posts.php:148
-msgid "Enter numbers of articles"
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-sendgrid.php:27
-msgid "TOMOCHAIN Sendgrid"
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-sendgrid.php:28
-msgid "SendGrid Marketing Campaigns Subscription Widget."
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-sendgrid.php:33
-msgid "Message to display before subscription form:"
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-sendgrid.php:41
-msgid "Message to display for errors:"
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-sendgrid.php:49
-msgid "Message to display for invalid email address:"
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-sendgrid.php:57
-msgid "Message to display for success:"
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-sendgrid.php:83
-msgid "Subscribe"
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-sendgrid.php:113
-msgid "Invalid Email."
-msgstr ""
-
-#: src/tomochain/inc/widgets/tomochain-sendgrid.php:122,
-#: src/tomochain/inc/widgets/tomochain-sendgrid.php:130
-msgid "A confirmation email has been sent, please check your inbox."
-msgstr "確認メールが送信されました。受信トレイを確認してください。"
-
-#: src/tomochain/inc/widgets/tomochain-sendgrid.php:127
-msgid ""
-"A confirmation email has been sent successfully, please check your inbox."
-msgstr "確認メールが正常に送信されました。受信トレイを確認してください。"
-
-#: src/tomochain/inc/widgets/wph-widget-class.php:843
-msgid "Any Categories"
+#. Author URI of the plugin/theme
+msgid "https://tomochain.com/"
 msgstr ""

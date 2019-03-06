@@ -70,13 +70,38 @@ vc_map( array(
             'description'=> esc_html__('Enter Url', 'tomochain-addons'),
             'group'      => esc_html__( 'Sidebar', 'tomochain-addons' ),
         ),
+        // array(
+        //     'type'       => 'textfield',
+        //     'param_name' => 'resource',
+        //     'heading'    => esc_html__( 'Resource', 'tomochain-addons' ),
+        //     'value'      => '',
+        //     'description'=> esc_html__('Enter Url', 'tomochain-addons'),
+        //     'group'      => esc_html__( 'Sidebar', 'tomochain-addons' ),
+        // ),
         array(
-            'type'       => 'textfield',
-            'param_name' => 'resource',
-            'heading'    => esc_html__( 'Resource', 'tomochain-addons' ),
-            'value'      => '',
-            'description'=> esc_html__('Enter Url', 'tomochain-addons'),
-            'group'      => esc_html__( 'Sidebar', 'tomochain-addons' ),
+            'type'        => 'param_group',
+            'heading'     => esc_html__( 'Resource', 'tomochain-addons' ),
+            'param_name'  => 'resource',
+            'value'       => '',
+            'params' => array(
+                array(
+                    'type'        => 'textfield',
+                    'heading'     => esc_html__( 'Name', 'tomochain-addons' ),
+                    'param_name'  => 'name',
+                    'description' => esc_html__( 'Enter name', 'tomochain-addons' ),
+                    'admin_label' => true,
+
+                ),
+                array(
+                    'type'       => 'textfield',
+                    'param_name' => 'url',
+                    'heading'    => esc_html__( 'Url', 'tomochain-addons' ),
+                    'value'      => '',
+                    'description'=> esc_html__('Enter Url', 'tomochain-addons'),
+                    'group'      => esc_html__( 'Sidebar', 'tomochain-addons' ),
+                ),
+            ),
+            'group' => esc_html__( 'Sidebar', 'tomochain-addons' ),
         ),
     )
 ));

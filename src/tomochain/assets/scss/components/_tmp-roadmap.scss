@@ -20,7 +20,7 @@
 			padding: 15px 0;
 		}
 	}
-	@media only screen and (min-width: 1025px) and (max-width: 1400px) {
+	@media only screen and (min-width: 1025px) and (max-width: 1439px) {
 		.entry-content {
 			font-size: 13px;
 			line-height: 20px;
@@ -48,6 +48,22 @@
 			}
 		}
 	}
+	@media only screen and (min-width: 1440px) and (max-width: 1600px) {
+		.entry-content {
+			.main-title {
+				font-size: 16px!important;
+			}
+			.list-box {
+				height: 530px!important;
+			}
+			.list-recent {
+				height: 310px!important;
+			}
+			.container {
+				max-width: 1060px;
+			}
+		}
+	}
 }
 //header-roadmap
 .header-roadmap {
@@ -57,10 +73,13 @@
 	padding: 15px 0 30px;
 	.row {
 		justify-content: center;
-	    align-items: center;
+		align-items: center;
 		.logo-tomo {
 			img {
 				height: 40px;
+				@include media-breakpoint-down(sm) {
+					height: 34px;
+				}
 			}
 		}
 		.main-title-page {
@@ -76,8 +95,7 @@
 		.check-time {
 			text-align: right;
 			@include media-breakpoint-down(sm) {
-				text-align: left;
-				margin-top: 10px;
+				font-size: 10px;
 			}
 		}
 	}
@@ -92,11 +110,11 @@
 		padding-bottom: 0;
 		border-bottom: 1px solid #394472;
 		overflow-x: auto;
-    	white-space: nowrap;
+		white-space: nowrap;
 		li {
-			margin-left: 30px;
+			/*margin-left: 30px;*/
 			@include media-breakpoint-down(sm) {
-				margin-left: 15px;
+				margin-left: 30px;
 			}
 			&:first-child {
 				margin-left: 0;
@@ -122,7 +140,7 @@
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2649', endColorstr='#1e2444',GradientType=0 ); /* IE6-9 */
 	border-radius: 5px;
 	overflow: hidden;
-	padding: 15px 3px 15px 0;
+	padding: 15px 2px 0 0;
 	margin-bottom: 15px;
 	.main-title {
 		padding: 0 0 15px;
@@ -132,13 +150,7 @@
 	}
 	.main-inner {
 		&:before {
-			background: -moz-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 70%); /* ff3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(153,218,255,0)), color-stop(70%, rgba(30,37,68,1))); /* safari4+,chrome */
-			background: -webkit-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 70%); /* safari5.1+,chrome10+ */
-			background: -o-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 70%); /* opera 11.10+ */
-			background: -ms-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 70%); /* ie10+ */
-			background: linear-gradient(180deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 70%); /* w3c */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99DAFF', endColorstr='#1f2649',GradientType=0 ); /* ie6-9 */
+			background: url(assets/images/bg_roadmap1.png) repeat-x left bottom;
 			content: "";
 			width: 100%;
 			height: 150px;
@@ -150,12 +162,12 @@
 	}
 	.list-box {
 		padding: 0 15px;
-		max-height: 495px;
+		max-height: 590px;
 		overflow-y: auto;
-		.mgs {
-			text-align: center;
-			padding: 30px 0;
-		}
+
+		scrollbar-color: #394472 transparent;
+		scrollbar-width: thin;
+
 		/* width */
 		&::-webkit-scrollbar {
 			width: 4px;
@@ -176,10 +188,17 @@
 			overflow-y: auto;
 			cursor: pointer;
 		}
+		.mgs {
+			text-align: center;
+			padding: 30px 0;
+		}
 		.box-item {
 			border-top: 1px solid #394472;
 			padding-top: 20px;
 			margin-bottom: 20px;
+			&:last-child {
+				margin-bottom: 120px;
+			}
 			.item-header {
 				display: flex;
 				margin-bottom: 15px;
@@ -332,7 +351,7 @@
 		.inner-countdown {
 			display: flex;
 			margin-left: -10px;
-    		margin-right: -10px;
+			margin-right: -10px;
 			.txt-clock {
 				padding: 15px 10px;
 				width: 25%;
@@ -365,13 +384,7 @@
 	.box-activities {
 		position: relative;
 		&:before {
-			background: -moz-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 80%); /* ff3.6+ */
-			background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, rgba(153,218,255,0)), color-stop(80%, rgba(30,37,68,1))); /* safari4+,chrome */
-			background: -webkit-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 80%); /* safari5.1+,chrome10+ */
-			background: -o-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 80%); /* opera 11.10+ */
-			background: -ms-linear-gradient(270deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 80%); /* ie10+ */
-			background: linear-gradient(180deg, rgba(153,218,255,0) 0%, rgba(30,37,68,1) 80%); /* w3c */
-			filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#99DAFF', endColorstr='#1f2649',GradientType=0 ); /* ie6-9 */
+			background: url(assets/images/bg_roadmap2.png) repeat-x left bottom;
 			content: "";
 			width: 100%;
 			height: 80px;
@@ -394,12 +407,15 @@
 		}
 		.box_latest_commit {
 			border-right: 1px solid #394472;
-			padding-right: 2px;
 			.list-recent {
 				padding-left: 5px;
-				max-height: 300px;
+				max-height: 385px;
 				font-size: 13px;
 				overflow-y: auto;
+
+				scrollbar-color: #394472 transparent;
+  				scrollbar-width: thin;
+
 				/* width */
 				&::-webkit-scrollbar {
 					width: 4px;
@@ -442,12 +458,15 @@
 						&:first-child {
 							margin-top: 0;
 						}
+						&:last-child {
+							margin-bottom: 60px;
+						}
 						&:after {
 							background: url(assets/images/ic_oval.png) no-repeat center bottom;
 							background-size: 9px 9px;
 							content: "";
-							width: 10px;
-							height: 10px;
+							width: 9px;
+							height: 9px;
 							border-radius: 50%;
 							overflow: hidden;
 							position: absolute;

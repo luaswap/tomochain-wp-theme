@@ -279,7 +279,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 								<div class="box-title">
 									<h3><?php echo esc_html__('Latest commits','tomochain-addons');?></h3>
 									<?php if($see_more){?>
-										<a href="<?php echo esc_url($see_more);?>"><?php echo esc_html__('See all','tomochain-addons');?></a>
+										<a target="_blank" href="<?php echo esc_url($see_more);?>"><?php echo esc_html__('See all','tomochain-addons');?></a>
 									<?php }?>
 								</div>
 								<div class="box_latest_commit">
@@ -293,7 +293,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 													$activty_url = get_field('activity_url') ? get_field('activity_url') : '#';
 										?>
 													<li>
-														<a href="<?php echo esc_url($activty_url);?>"><?php the_title()?></a>
+														<a target="_blank" href="<?php echo esc_url($activty_url);?>"><?php the_title()?></a>
 														<?php the_content();?>
 														<?php
 															$activity_date = get_field('activity_date');
@@ -311,20 +311,28 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 							<div class="box-other">
 								<?php
 									$discuss = vc_param_group_parse_atts( $discuss );
+									$resource = vc_param_group_parse_atts( $resource );
 								?>
 								<p class="txt">
 									<?php echo esc_html__('Discuss with our Team:','tomochain-addons');?>
 									<?php if(is_array($discuss)):
 										foreach ($discuss as $value) {
 											if(isset($value['name']) && isset($value['url'])){?>
-												<a href="<?php echo esc_url($value['url']);?>"><?php echo esc_html($value['name']);?></a>
+												<a target="_blank" href="<?php echo esc_url($value['url']);?>"><?php echo esc_html($value['name']);?></a>
 											<?php }?>
 										<?php }
 									endif;?>
 								</p>
 								<?php if($resource){?>
 									<p class="txt">
-										<?php echo esc_html__('Resource:','tomochain-addons');?> <a href="<?php echo esc_url($resource);?>"><?php echo esc_html__('Tomochain Document','tomochain-addons');?></a>
+										<?php echo esc_html__('Resource:','tomochain-addons');?>
+										<?php if(is_array($resource)):
+											foreach ($resource as $value) {
+												if(isset($value['name']) && isset($value['url'])){?>
+													<a target="_blank" href="<?php echo esc_url($value['url']);?>"><?php echo esc_html($value['name']);?></a>
+												<?php }?>
+											<?php }
+										endif;?>
 									</p>
 								<?php }?>
 							</div><!-- /box-other -->
