@@ -161,12 +161,12 @@ function tomochain_dapp_ajax(){
                         <div class="tomo_btn_tmp_trans box_flexbox">
                             <?php if($custom_url):?>
                                 <a class="more-info" href="<?php echo esc_url($custom_url)?>" target="<?php echo esc_attr($open_new_tab); ?>">
-                                    <?php echo esc_html__('More Info','nootheme')?>
+                                    <?php echo esc_html__('More Info','tomochain-addons')?>
                                 </a>
                             <?php endif;?>
                             <?php if($contract_address_url):?>
                                 <a href="<?php echo esc_url($contract_address_url)?>" target="<?php echo esc_attr($open_new_tab); ?>">
-                                    <?php echo esc_html__('Contract Address','nootheme')?>
+                                    <?php echo esc_html__('Contract Address','tomochain-addons')?>
                                 </a>
                             <?php endif;?>
                         </div>

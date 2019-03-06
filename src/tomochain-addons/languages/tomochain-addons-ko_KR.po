@@ -1,31 +1,32 @@
-# Copyright (C) 2018 tomochain-addons
-# This file is distributed under the same license as the tomochain-addons package.
 msgid ""
 msgstr ""
-"Project-Id-Version: tomochain-addons\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Project-Id-Version: TomoChain Addons\n"
+"POT-Creation-Date: 2019-03-06 13:12+0700\n"
+"PO-Revision-Date: 2019-03-06 06:15+0000\n"
+"Last-Translator: TomoChain <hka@tomochain.com>\n"
+"Language-Team: Korean\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language-Team: Chinese (China)\n"
-"Report-Msgid-Bugs-To: https://tomochain.com\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:"
-"1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
-"esc_html_x:1,2c\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: tomochain-addons.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"POT-Creation-Date: 2019-03-06 13:12+0700\n"
-"PO-Revision-Date: 2019-03-06 06:20+0000\n"
-"Last-Translator: TomoChain <hka@tomochain.com>\n"
-"Language: zh_CN\n"
-"X-Generator: Loco https://localise.biz/\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: ko_KR\n"
 "X-Loco-Version: 2.2.0; wp-4.9.9"
 
 #: inc/core-functions.php:65 inc/vc-templates/tomochain_roadmap_new.php:59
 msgid "All"
-msgstr "全部"
+msgstr ""
+"전체\n"
 
 #: inc/core-functions.php:71
 #, php-format
@@ -42,11 +43,11 @@ msgstr ""
 #: inc/vc-templates/tomochain_testnet_item.php:46
 #: inc/vc-templates/tomochain_testnet_item.php:47
 msgid "More Info"
-msgstr "更多消息"
+msgstr "더 많은 정보 보기"
 
 #: inc/core-functions.php:169 inc/vc-templates/tomochain_dapps.php:83
 msgid "Contract Address"
-msgstr ""
+msgstr "계약 관련 주소"
 
 #: inc/core-functions.php:211 inc/vc-templates/tomochain_roadmap_new.php:86
 msgid "Completed"
@@ -191,11 +192,11 @@ msgstr ""
 
 #: inc/post-types/event.php:27 inc/post-types/event.php:29
 msgid "Events"
-msgstr ""
+msgstr "이벤트"
 
 #: inc/post-types/event.php:28 inc/shortcodes/tomochain-event.php:9
 msgid "Event"
-msgstr ""
+msgstr "이벤트"
 
 #: inc/post-types/event.php:31 inc/post-types/event.php:33
 msgid "Add New Event"
@@ -215,7 +216,7 @@ msgstr ""
 
 #: inc/post-types/event.php:36 inc/shortcodes/tomochain-event.php:21
 msgid "All Events"
-msgstr "所有活动"
+msgstr "전체 이벤트"
 
 #: inc/post-types/event.php:37
 msgid "No Event items found"
@@ -430,6 +431,7 @@ msgstr ""
 msgid "Blog"
 msgstr ""
 
+#. Author of the plugin/theme
 #: inc/shortcodes/tomochain-blog.php:12
 #: inc/shortcodes/tomochain-countdown.php:79
 #: inc/shortcodes/tomochain-dapp.php:61 inc/shortcodes/tomochain-dapp2.php:61
@@ -738,7 +740,7 @@ msgstr ""
 
 #: inc/shortcodes/tomochain-event.php:24
 msgid "Past Event"
-msgstr "过去的活动"
+msgstr ""
 
 #: inc/shortcodes/tomochain-event.php:29
 msgid "Event Layout"
@@ -1028,18 +1030,18 @@ msgstr ""
 #: inc/vc-templates/tomochain_blog.php:89
 #: inc/vc-templates/tomochain_event.php:119
 msgid "See all our news"
-msgstr "显示更多"
+msgstr ""
 
 #: inc/vc-templates/tomochain_dapp.php:57
 msgid "Run App"
-msgstr "运行app"
+msgstr "앱 실행"
 
 #: inc/vc-templates/tomochain_dapp.php:60
 #: inc/vc-templates/tomochain_dapp2.php:61
 #: inc/vc-templates/tomochain_testnet_item.php:51
 #: inc/vc-templates/tomochain_testnet_item.php:52
 msgid "Source Code"
-msgstr "源码 "
+msgstr "소스 코드"
 
 #: inc/vc-templates/tomochain_roadmap_new.php:216
 msgid "Next Roadmap Update"
@@ -1087,7 +1089,7 @@ msgstr ""
 
 #: inc/vc-templates/tomochain_team.php:43
 msgid "See all of our team"
-msgstr "查看我们的团队"
+msgstr "우리 팀 모두보기"
 
 #: inc/vc-templates/tomochain_video_item.php:40
 msgid "Play"

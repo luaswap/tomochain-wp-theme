@@ -34,7 +34,7 @@
 </div>
 <?php endif; ?>
 <div class="popup_btn tomo_btn_tmp_grad">
-    <a href="https://t.me/tomochain" title="" target="_blank"><span>Join our Telegram</span> <i class="fab fa-telegram-plane"></i></a>
+    <a href="https://t.me/tomochain" title="" target="_blank"><span><?php echo esc_html__('Join our Telegram','tomochain');?></span> <i class="fab fa-telegram-plane"></i></a>
     <span class="close" title="Hide This Message">×</span>
 </div>
 <script type="text/JavaScript">

@@ -1,26 +1,26 @@
-# Copyright (C) 2018 tomochain
-# This file is distributed under the same license as the tomochain package.
 msgid ""
 msgstr ""
-"Project-Id-Version: tomochain\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"Project-Id-Version: TomoChain\n"
+"POT-Creation-Date: 2019-03-06 13:13+0700\n"
+"PO-Revision-Date: 2019-03-06 06:18+0000\n"
+"Last-Translator: TomoChain <hka@tomochain.com>\n"
+"Language-Team: Korean\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language-Team: Vietnamese\n"
-"Report-Msgid-Bugs-To: https://tomochain.com\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:"
-"1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
-"esc_html_x:1,2c\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"POT-Creation-Date: 2019-03-06 13:13+0700\n"
-"PO-Revision-Date: 2019-03-06 06:16+0000\n"
-"Last-Translator: TomoChain <hka@tomochain.com>\n"
-"Language: vi\n"
-"X-Generator: Loco https://localise.biz/\n"
+"Report-Msgid-Bugs-To: \n"
+"Language: ko_KR\n"
 "X-Loco-Version: 2.2.0; wp-4.9.9"
 
 #: 404.php:24
@@ -83,7 +83,7 @@ msgstr ""
 
 #: header.php:37
 msgid "Join our Telegram"
-msgstr ""
+msgstr "Telegram 참여"
 
 #: header.php:63 headerld.php:38
 msgid "Skip to content"
@@ -106,7 +106,6 @@ msgctxt "post author"
 msgid "By %s"
 msgstr ""
 
-#. translators: %s: Name of current post. Only visible to screen readers
 #. translators: %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:118 template-parts/content-page.php:34
 #, php-format
@@ -155,11 +154,11 @@ msgstr ""
 
 #: template-parts/page-title.php:12 template-parts/page-title.php:22
 msgid "Blog"
-msgstr ""
+msgstr "블로그"
 
 #: template-parts/page-title.php:19
 msgid "Events"
-msgstr ""
+msgstr "이벤트"
 
 #: template-parts/page-title.php:28
 msgid "Tags: "
