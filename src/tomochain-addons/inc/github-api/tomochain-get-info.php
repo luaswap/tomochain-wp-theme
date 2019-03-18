@@ -3,7 +3,7 @@
 */
 class Tomochain_Github_API{
 	public $base_url = 'https://api.github.com/repos/tomochain/';
-	private $access_token = '9612101f1cf014d70c191a104a6a804f24257dd9';
+	private $access_token = ''; // update with your token
 	
 	public function __construct(){		
 		Tomochain_Github_API::schedule_check();
