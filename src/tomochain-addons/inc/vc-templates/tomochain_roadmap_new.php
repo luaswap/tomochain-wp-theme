@@ -284,28 +284,36 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 								</div>
 								<div class="box_latest_commit">
 									<div class="list-recent">
-										<ul>
-										<?php 
-											$a = new WP_Query($args_activity);
-											wp_reset_postdata();
-											if( $a->have_posts() ):
-												while( $a->have_posts() ): $a->the_post();
-													$activty_url = get_field('activity_url') ? get_field('activity_url') : '#';
-										?>
-													<li>
-														<a target="_blank" href="<?php echo esc_url($activty_url);?>"><?php the_title()?></a>
-														<?php the_content();?>
-														<?php
-															$activity_date = get_field('activity_date');
-															if(!empty($activity_date)){
-																$ago = strtotime( $activity_date ); ?>
-																<p class="days-ago"><?php echo human_time_diff( $ago, current_time( 'timestamp' ) ).' '.esc_html__( 'ago' );?></p>
-															<?php }?>
-													</li>
-												<?php endwhile;?>
-											<?php endif;?>
-										</ul>
-									</div>
+	                                    <ul>
+	                                    <?php 
+	                                        $c = new Tomochain_Github_API;
+	                                        $commits = $c->commit_info();
+	                                        if(!empty($commits)){
+	                                            $commits = json_decode($commits);
+	                                        }
+	                                        if( is_array($commits) ){
+	                                            foreach ($commits as $value) {?>
+	                                                <li>
+	                                                    <?php if(isset($value->url)){?>
+	                                                    <a href="<?php echo esc_url($value->url);?>"><?php if(isset($value->message)){
+	                                                            echo esc_html($value->message)?>
+	                                                        <?php }?>
+	                                                    </a>
+	                                                    <?php }?>
+	                                                    <?php
+	                                                        if(isset($value->date)){
+	                                                            $date = date_i18n('F j, Y',strtotime($value->date)); ?>
+	                                                            <p class="days-ago">
+	                                                                <?php if(isset($value->author)){?>
+	                                                                <span><?php echo esc_html($value->author);?></span> - <span><?php echo esc_html($date);?></span>
+	                                                                <?php }?>
+	                                                            </p>
+	                                                        <?php }?>
+	                                                </li>
+	                                            <?php }?>
+	                                        <?php }?>
+	                                    </ul>
+	                                </div><!-- /list-recent -->
 								</div><!-- /box_latest_commit -->
 							</div><!-- /box-activities -->
 							<div class="box-other">
