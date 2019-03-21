@@ -23,6 +23,7 @@ class TomoChain_Addons {
     public function __construct() {
         $this->init();
         $this->includes();
+        add_action('init', array($this,'github_api'));
     }
 
     public function init() {
@@ -120,6 +121,9 @@ class TomoChain_Addons {
         if (defined('SENDGRID_CATEGORY')) {
             require_once TOMOCHAIN_ADDONS_DIR . '/inc/widgets/tomochain-sendgrid.php';
         }
+    }
+    public function github_api(){
+        require_once TOMOCHAIN_ADDONS_DIR . '/inc/github-api/tomochain-get-info.php';
     }
 
     /**
