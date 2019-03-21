@@ -64,59 +64,124 @@
     font-style: normal;
 }
 
-@font-face {
-    font-family: 'tomochain';
-    src:  url('assets/fonts/TomoChain/tomochain.eot?8rzt42');
-    src:  url('assets/fonts/TomoChain/tomochain.eot?8rzt42#iefix') format('embedded-opentype'),
-      url('assets/fonts/TomoChain/tomochain.ttf?8rzt42') format('truetype'),
-      url('assets/fonts/TomoChain/tomochain.woff?8rzt42') format('woff'),
-      url('assets/fonts/TomoChain/tomochain.svg?8rzt42#tomochain') format('svg');
-    font-weight: normal;
-    font-style: normal;
-}
-
-[class^="tm-"], [class*=" tm-"] {
-    /* use !important to prevent issues with browser extensions that change fonts */
-    font-family: 'tomochain' !important;
-    speak: none;
-    font-style: normal;
-    font-weight: normal;
-    font-variant: normal;
-    text-transform: none;
-    line-height: 1;
-
-    /* Better Font Rendering =========== */
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.tm-android:before {
-    content: "\e901";
-  }
-  .tm-apple:before {
-    content: "\e902";
-  }
-  .tm-search:before {
-    content: "\e900";
-  }
-.tm-chevron-left:before {
-    content: "\e903";
-}
-.tm-chevron-right:before {
-    content: "\e904";
-}
-.tm-times:before {
-    content: "\e902";
-}
-.tm-angle-down:before {
-    content: "\e900";
-}
-.tm-arrow-right:before {
-    content: "\e901";
-}
-
 $font__main: 'Open Sans', 'Arial', 'sans-serif';
 $font__code: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace;
 $font__pre: "Courier 10 Pitch", Courier, monospace;
 $font__line-height-body: 1.5;
 $font__line-height-pre: 1.6;
+
+//Tomochain-icomoon
+@font-face {
+  font-family: 'tomochain';
+  src:  url('assets/fonts/TomoChain/tomochain.eot?u3noor');
+  src:  url('assets/fonts/TomoChain/tomochain.eot?u3noor#iefix') format('embedded-opentype'),
+    url('assets/fonts/TomoChain/tomochain.ttf?u3noor') format('truetype'),
+    url('assets/fonts/TomoChain/tomochain.woff?u3noor') format('woff'),
+    url('assets/fonts/TomoChain/tomochain.svg?u3noor#tomochain') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="tm-"], [class*=" tm-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'tomochain' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tm-money:before {
+  content: "\e908";
+}
+.tm-delivery-truck:before {
+  content: "\e909";
+}
+.tm-seo:before {
+  content: "\e90a";
+}
+.tm-like:before {
+  content: "\e90b";
+}
+.tm-think:before {
+  content: "\e90c";
+}
+.tm-shield:before {
+  content: "\e90d";
+}
+.tm-mortarboard:before {
+  content: "\e90e";
+}
+.tm-shop-1:before {
+  content: "\e90f";
+}
+.tm-stethoscope:before {
+  content: "\e910";
+}
+.tm-event:before {
+  content: "\e911";
+}
+.tm-joystick:before {
+  content: "\e912";
+}
+.tm-suitcase:before {
+  content: "\e913";
+}
+.tm-data:before {
+  content: "\e914";
+}
+.tm-money-1:before {
+  content: "\e915";
+}
+.tm-money-2:before {
+  content: "\e916";
+}
+.tm-plane:before {
+  content: "\e917";
+}
+.tm-save:before {
+  content: "\e918";
+}
+.tm-play-button:before {
+  content: "\e919";
+}
+.tm-copy:before {
+  content: "\e91a";
+}
+.tm-settings:before {
+  content: "\e91b";
+}
+.tm-building:before {
+  content: "\e91c";
+}
+.tm-search:before {
+  content: "\e900";
+}
+.tm-android:before {
+  content: "\e901";
+}
+.tm-apple:before {
+  content: "\e902";
+}
+.tm-angle-down:before {
+  content: "\e903";
+}
+.tm-arrow-right:before {
+  content: "\e904";
+}
+.tm-times:before {
+  content: "\e905";
+}
+.tm-chevron-left:before {
+  content: "\e906";
+}
+.tm-chevron-right:before {
+  content: "\e907";
+}
+
