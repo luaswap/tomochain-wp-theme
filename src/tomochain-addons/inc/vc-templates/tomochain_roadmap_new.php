@@ -286,32 +286,35 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 									<div class="list-recent">
 	                                    <ul>
 	                                    <?php 
-	                                        $c = new Tomochain_Github_API;
-	                                        $commits = $c->commit_info();
+	                                        $cm = new Tomochain_Github_API;
+	                                        $commits = $cm->commit_info();
 	                                        if(!empty($commits)){
 	                                            $commits = json_decode($commits);
 	                                        }
-	                                        if( is_array($commits) ){
-	                                            foreach ($commits as $value) {?>
-	                                                <li>
-	                                                    <?php if(isset($value->url)){?>
-	                                                    <a href="<?php echo esc_url($value->url);?>"><?php if(isset($value->message)){
-	                                                            echo esc_html($value->message)?>
-	                                                        <?php }?>
-	                                                    </a>
-	                                                    <?php }?>
-	                                                    <?php
-	                                                        if(isset($value->date)){
-	                                                            $date = date_i18n('F j, Y',strtotime($value->date)); ?>
-	                                                            <p class="days-ago">
-	                                                                <?php if(isset($value->author)){?>
-	                                                                <span><?php echo esc_html($value->author);?></span> - <span><?php echo esc_html($date);?></span>
-	                                                                <?php }?>
-	                                                            </p>
-	                                                        <?php }?>
-	                                                </li>
-	                                            <?php }?>
-	                                        <?php }?>
+	                                        if( count($commits) > 0 ){
+                                            foreach ($commits as $value) {
+                                                foreach ($value as $cl) {
+                                                    ?>
+                                                    <li>
+                                                        <?php if(isset($cl->url)){?>
+                                                        <a href="<?php echo esc_url($cl->url);?>"><?php if(isset($cl->message)){
+                                                                echo esc_html($cl->message)?>
+                                                            <?php }?>
+                                                        </a>
+                                                        <?php }?>
+                                                        <?php
+                                                            if(isset($cl->date)){
+                                                                $date = date_i18n('F j, Y',strtotime($cl->date)); ?>
+                                                                <p class="days-ago">
+                                                                    <?php if(isset($cl->author)){?>
+                                                                    <span><?php echo esc_html($cl->author);?></span> - <span><?php echo esc_html($date);?></span>
+                                                                    <?php }?>
+                                                                </p>
+                                                            <?php }?>
+                                                    </li>
+                                                <?php }?>
+                                            <?php }?>
+                                        <?php }?>
 	                                    </ul>
 	                                </div><!-- /list-recent -->
 								</div><!-- /box_latest_commit -->

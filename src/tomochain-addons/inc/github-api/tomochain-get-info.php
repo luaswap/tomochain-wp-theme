@@ -3,13 +3,15 @@
 */
 class Tomochain_Github_API{
 	public $base_url = 'https://api.github.com/repos/tomochain/';
-	private $access_token; // Get access token from Theme Options
+	public $repos;
+	private $access_token;
 	
 	public function __construct(){
 		$this->access_token = !empty(get_field('github_access_token','options')) ? get_field('github_access_token','options') : '';
 		Tomochain_Github_API::schedule_check();
 		add_action('update_milestone',array($this,'update_milestone'));
 		add_action('commit_export_file',array($this,'commit_export_file'));
+
 	}
 	/* Milestone */
 	public static function schedule_check() {
@@ -64,12 +66,17 @@ class Tomochain_Github_API{
 							update_post_meta( $post_id, 'process', 'completed' );
 						}
 					}
+					if(isset($milestone->html_url) && !empty($milestone->html_url)){
+						update_post_meta( $post_id, 'github_url', esc_url($milestone->html_url) );
+					}
 					if(isset($milestone->due_on) && !empty($milestone->due_on)){
-						$due_on = date('d/m/Y',strtotime($milestone->due_on));
+						$due_on = str_replace("T"," ",$milestone->due_on);
+						$due_on = strtotime($due_on);
 						update_post_meta( $post_id, 'due_date', $due_on );
 					}
 					if(isset($milestone->closed_at) && !empty($milestone->closed_at)){
-						$closed_at = date('d/m/Y',strtotime($milestone->closed_at));
+						$closed_at = str_replace("T"," ",$milestone->closed_at);
+						$closed_at = strtotime($closed_at);
 						update_post_meta( $post_id, 'release_date', $closed_at );
 					}
 				}
@@ -92,46 +99,73 @@ class Tomochain_Github_API{
      	WP_Filesystem();
 		$base_url = $this->base_url;
 		$access_token = array('access_token'=> $this->access_token);
-		$url = $base_url .'tomochain/commits?'.http_build_query($access_token);
-		$commit_info = $this->get_info($url);
-		$commit_dir = $this->create_upload_dir( $wp_filesystem );
-		if($commit_info !== false){
+		$commit_number = !empty(get_field('commit_number','options')) ? get_field('commit_number','options') : 10;
+		$repos = $this->get_repository();
+
+		if(is_array($repos)){
 			$commit_init_array = array();
 			$commit_get_array = array();
-			foreach ($commit_info as $key => $value) {
-				$commit_init_array['author']  = $value->author->login;
-				$commit_init_array['date']    = $value->commit->committer->date;
-				$commit_init_array['message'] = $value->commit->message;
-				$commit_init_array['url'] 	  = $value->html_url;
-				array_push($commit_get_array, $commit_init_array);
+			$commit_limit = $commit_info = $commit_merge = array();
+			$i = 0;
+			foreach ($repos as $value) {
+				$url = $base_url . $value.'/commits?'.http_build_query($access_token);
+				
+				$commit_info = $this->get_info($url);
+				$commit_limit[$i] = array_slice($commit_info, 0 ,$commit_number);
+				$commit_merge  = array_merge($commit_merge,$commit_limit[$i]);
+				
+				$i++;
 			}
-			if(is_array($commit_get_array)){
-				$commit_get_array = json_encode($commit_get_array);
-			}
+			foreach ($commit_merge as $value) {
+				$date = strtotime(str_replace('T', ' ', $value->commit->committer->date));
 
-			if(!empty($commit_get_array)){
-	        	$wp_filesystem->put_contents( $commit_dir ."/commit.txt", $commit_get_array,FS_CHMOD_FILE);
+				$commit_init_array[$date][]  = array(
+					'author' => $value->author->login,
+					'date'   => $value->commit->committer->date,
+					'message'=> $value->commit->message,
+					'url'    => $value->html_url
+				);
+			}
+			if(is_array($commit_init_array)){
+				krsort($commit_init_array);
+				$commit_init_array = json_encode($commit_init_array);
+			}
+			$commit_dir = $this->create_upload_dir( $wp_filesystem );
+
+			if(!empty($commit_init_array)){
+	        	$wp_filesystem->put_contents( $commit_dir ."/commit.txt", $commit_init_array,FS_CHMOD_FILE);
 	        }
-	    }
-	    return $commit_dir . '/commit.txt';
+	    	return $commit_dir . '/commit.txt';		
+		}
 	}
 
 	public function get_info($url){
-		$result = false;
-		$ch = curl_init($url);
-	 	curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-	 	curl_setopt($ch, CURLOPT_URL, $url);
-		curl_setopt($ch, CURLOPT_USERAGENT, $_SERVER['HTTP_USER_AGENT']);
-		curl_setopt($ch, CURLOPT_SSL_VERIFYPEER, false);
-		curl_setopt($ch, CURLOPT_FAILONERROR, true);
-		
-		if(curl_exec($ch) !== false){
-		    $resp = curl_exec($ch);
-			//return JSON
-			$result = json_decode($resp);
+		$request = wp_remote_get($url);
+		if ( is_wp_error( $request ) ){
+			return false;
 		}
-		curl_close($ch);
-		return $result; 
+		$body = wp_remote_retrieve_body( $request );
+		$data = json_decode( $body );
+		return $data;
+	}
+	public function get_repository(){
+		$this->repos = !empty(get_field('repos','options')) ? get_field('repos','options') : '';
+		if(!empty($this->repos)){
+			$repos = explode(',', $this->repos);
+		}else{
+			$this->base_url = 'https://api.github.com/users/tomochain/repos';
+			$access_token = array('access_token'=> $this->access_token);
+			$url = $this->base_url . '?'.http_build_query($access_token);
+			$repos_info = $this->get_info($url);
+			if(!empty($repos_info)){
+				$repos = array();
+				foreach ($repos_info as $value) {
+					$repos[] = $value->name;
+				}
+			}
+		}
+		
+		return $repos;
 	}
 	/*================================================
 	GET UPLOAD URL, DIRECTOR
