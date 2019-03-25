@@ -357,9 +357,13 @@
 				background-repeat: no-repeat!important;
 				background-position: center!important;
 				display: block!important;
-				height: 16px!important;
+				height: 0px!important;
 				width: 100%!important;
-				margin-top: 15px!important;
+				margin: 0px!important;
+				&.is-active {
+					height: 16px!important;
+					margin-top: 15px!important;
+				}
 			}
 			.wpcf7-not-valid-tip {
 				color: #FF924E!important;
@@ -372,6 +376,7 @@
 		border: 0!important;
 		text-align: center!important;
 		color: #fff!important;
+		margin-top: 15px;
 	}
 	.btn_submit_dapp {
 		margin-bottom: -42px!important;

@@ -343,3 +343,20 @@ if (defined('SENDGRID_CATEGORY')) {
     remove_action( 'init', 'sg_create_subscribe_missing_token_error_page' );
     remove_action( 'init', 'sg_create_subscribe_invalid_token_error_page' );
 }
+
+// Menu header for page Enterprise
+function register_my_menu() {
+  register_nav_menu('header-menu-enterprise',__( 'Header Menu Enterprise' ));
+}
+add_action( 'init', 'register_my_menu' );
+
+// Remove request user
+add_filter( 'rest_endpoints', function( $endpoints ){
+    if ( isset( $endpoints['/wp/v2/users'] ) ) {
+        unset( $endpoints['/wp/v2/users'] );
+    }
+    if ( isset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] ) ) {
+        unset( $endpoints['/wp/v2/users/(?P<id>[\d]+)'] );
+    }
+    return $endpoints;
+});

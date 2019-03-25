@@ -1,13 +1,21 @@
 <?php
 /* Template name: tmp roadmap */
 
-get_template_part('headerld'); ?>
+get_template_part('headerld');
+	$home_url = get_home_url();
+
+	if (function_exists('pll_home_url')) {
+	    $home_url = pll_home_url();
+	}
+?>
 <div class="header-roadmap">
 	<div class="container">
 		<div class="row">
 			<div class="col-6 col-lg-3">
 				<div class="logo-tomo">
-					<a href="http://tomochain.com"><img src="/tomochain/assets/images/logo-tomochain.png" alt="Logo"></a>
+					<a href="<?php echo esc_url($home_url); ?>">
+						<img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/logo-tomochain.png'); ?>" alt="Logo">
+					</a>
 				</div>
 			</div>
 			<div class="col-6 col-lg-6">
