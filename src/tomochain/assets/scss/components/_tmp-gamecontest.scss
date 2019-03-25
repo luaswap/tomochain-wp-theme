@@ -613,9 +613,11 @@
 		&.wpcf7-validation-errors,
 		&.wpcf7-spam-blocked {
 			color: red;
+			margin-top: 15px;
 		}
 		&.wpcf7-mail-sent-ok {
 			color: #173d7a;
+			margin-top: 15px;
 		}
 	}
 
@@ -624,9 +626,13 @@
 		background-repeat: no-repeat!important;
 		background-position: center!important;
 		display: block!important;
-		height: 16px!important;
+		height: 0px!important;
 		width: 100%!important;
-		margin-top: 15px!important;
+		margin: 0px!important;
+		&.is-active {
+			height: 16px!important;
+			margin-top: 15px!important;
+		}
 	}
 	.form-game-contest {
 		.txt-tile {

@@ -46,10 +46,15 @@
 				</div><!-- .site-branding -->
 
 				<?php
-					wp_nav_menu( array( 'theme_location' => 'header-menu-enterprise', 'container_class' => 'main-menu menu-enterprise hidden-md-down' ));
+					wp_nav_menu( array(
+						'theme_location' => 'header-menu-enterprise',
+						'container_class' => 'main-menu menu-enterprise hidden-md-down',
+						'link_before'    => '<span class="menu-item-text">',
+						'link_after'     => '</span>'
+					));
 				?>
 
-				<div class="header-tools">
+				<div class="header-tools d-none">
 					<?php
 						if ( function_exists('get_field') && ! get_field('hide_language_switcher') ) {
 							tomochain_lang_switcher();

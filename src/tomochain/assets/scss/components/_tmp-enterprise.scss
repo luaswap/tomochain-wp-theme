@@ -1,6 +1,10 @@
 .page-template-tmp-enterprise {
 	background: #fff;
 	color: #151515;
+	font-family: "Open Sans",Arial,sans-serif!important;
+	a {
+		text-decoration: none!important;
+	}
 	.vc_custom_heading {
 		font-family: "Open Sans",Arial,sans-serif;
 		font-weight: bold;
@@ -185,8 +189,8 @@
 		}
 		.btn-view-document {
 			a {
-				border: 1px solid #000;
-				color: #000!important;
+				border: 1px solid #151515;
+				color: #151515!important;
 			}
 			@media screen and (min-width: 768px) {
 				margin-left: 15px;
@@ -215,6 +219,27 @@
 			p {
 				margin: 0;
 				margin-top: 15px;
+			}
+		}
+	}
+	.modal-footer {
+		position: absolute;
+		top: 0;
+		right: 0;
+		border: 0;
+		.btn-secondary {
+			background: transparent!important;
+			border: 0;
+			cursor: pointer;
+			color: #424e73;
+			font-weight: bold;
+			&:before {
+				content: '\e905';
+				font-size: 16px;
+				font-family: tomochain;
+			}
+			&:hover {
+				color: #868ea4;
 			}
 		}
 	}
@@ -436,6 +461,30 @@
 			}
 		}
 		.box-item {
+			@media screen and (min-width: 992px) {
+				display: flex;
+				.box-inner {
+					>.vc_column-inner {
+						height: 100%;
+						>.wpb_wrapper {
+							height: 100%;
+							position: relative;
+							overflow: hidden;
+							z-index: 1;
+							&:before {
+								content: '';
+								background: #f3f3f3;
+								position: absolute;
+								left: 15px;
+								bottom: 0;
+								z-index: -1;
+								width: calc(100% - 15px);
+								height: 100%;
+							}
+						}
+					}
+				}
+			}
 			.box-inner {
 				@media screen and (max-width: 991px) {
 					margin-bottom: 15px;
@@ -452,7 +501,7 @@
 				position: relative;
 				&:before {
 					content: '';
-					background: #000000;
+					background: #151515;
 					width: 20px;
 					height: 20px;
 					z-index: -1;
@@ -470,9 +519,10 @@
 						bottom: inherit;
 					}
 					.vc_single_image-wrapper {
-						display: grid;
-						justify-content: center;
+						display: flex;
 						overflow: hidden;
+						justify-content: center;
+						align-items: center;
 					}
 					img {
 						max-width: 160%;
@@ -482,8 +532,9 @@
 			}
 			.txt-content {
 				background: #f3f3f3;
-				padding: 30px 20px 20px;
+				padding: 25px;
 				margin-left: 15px;
+				margin-bottom: 0;
 				@media screen and (max-width: 991px) {
 					width: 60%;
 					padding: 15px 25px;
@@ -553,9 +604,9 @@
 			@media screen and (max-width: 767px) {
 				padding: 25px 0 0;
 				text-align: center;
-				.btn_tmp_white {
-					a {
-						background: #2a2a2a;
+				.btn-enterprise {
+					.btn-primary {
+						background: #151515;
 						color: #fff;
 					}
 				}
@@ -588,6 +639,114 @@
 						min-width: 250px;
 					}
 				}
+			}
+		}
+	}
+}
+
+.btn-enterprise {
+	.btn-primary {
+		background: #fff;
+		border: 0;
+		border-radius: 0;
+		padding: 1em;
+		font-weight: 600;
+		color: #151515;
+		min-width: 250px;
+		transition: all .5s ease;
+		&:active, &:hover {
+			background: #151515!important;
+			color: #fff;
+		}
+	}
+}
+
+// Form
+.form-enterprise {
+	.txt-tile {
+		font-size: 18px;
+		font-weight: bold;
+		color: #151515;
+		text-align: center;
+	}
+	.txt-desc {
+		margin: 15px 0 30px;
+		color: #151515;
+		line-height: 18px;
+		a {
+			text-decoration: underline!important;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		.tomo-modal {
+			padding: 15px;
+		}
+	}
+	.form-group {
+		margin-bottom: 1rem;
+		::placeholder {
+			font-size: 13px;
+		}
+
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			font-size: 13px;
+		}
+
+		::-ms-input-placeholder { /* Microsoft Edge */
+			font-size: 13px;
+		}
+		input,
+		select,
+		textarea {
+			background: transparent;
+			border-radius: 3px;
+			border: 1px solid #cacaca;
+			padding: .8em 1em;
+			color: #151515;
+			width: 100%;
+		}
+		textarea {
+			height: 150px;
+		}
+		br {
+			display: none;
+		}
+		.wpcf7-not-valid-tip {
+			font-size: 12px;
+		}
+		&.flex-box-between {
+			span {
+				display: block;
+			}
+			select {
+				margin-top: 5px;
+			}
+		}
+	}
+	.txt-note {
+		margin: 0 0 15px;
+		line-height: 1.4;
+		font-style: italic;
+	}
+	.btn-submit {
+		.enr-submit {
+			background: #151515;
+			border: 1px solid #151515;
+			border-radius: 0;
+			color: #fff;
+			display: block;
+			padding: 1em;
+			width: 100%;
+			font-size: 16px;
+			font-weight: 600;
+			text-transform: uppercase;
+			line-height: 1.4;
+			transition: all .5s ease;
+			&:active,
+			&:hover {
+				background: #151515!important;
+				color: #fff;
+				box-shadow: 0 5px 12px -1px #555;
 			}
 		}
 	}

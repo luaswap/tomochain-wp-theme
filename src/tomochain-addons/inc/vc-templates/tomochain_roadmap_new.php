@@ -291,7 +291,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 	                                        if(!empty($commits)){
 	                                            $commits = json_decode($commits);
 	                                        }
-	                                        if( count($commits) > 0 ){
+	                                        if( !empty($commits)){
                                             foreach ($commits as $value) {
                                                 foreach ($value as $cl) {
                                                     ?>

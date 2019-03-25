@@ -11192,7 +11192,10 @@ article.post-loop {
 
 .page-template-tmp-enterprise {
   background: #fff;
-  color: #151515; }
+  color: #151515;
+  font-family: "Open Sans", Arial, sans-serif !important; }
+  .page-template-tmp-enterprise a {
+    text-decoration: none !important; }
   .page-template-tmp-enterprise .vc_custom_heading {
     font-family: "Open Sans",Arial,sans-serif;
     font-weight: bold;
@@ -11301,12 +11304,29 @@ article.post-loop {
       -webkit-transition: all .5s ease;
       transition: all .5s ease; }
   .page-template-tmp-enterprise .box-btn .btn-view-document a {
-    border: 1px solid #000;
-    color: #000 !important; }
+    border: 1px solid #151515;
+    color: #151515 !important; }
   .page-template-tmp-enterprise .slick-dots {
     margin: 0; }
     .page-template-tmp-enterprise .slick-dots li button {
       background: #333; }
+  .page-template-tmp-enterprise .modal-footer {
+    position: absolute;
+    top: 0;
+    right: 0;
+    border: 0; }
+    .page-template-tmp-enterprise .modal-footer .btn-secondary {
+      background: transparent !important;
+      border: 0;
+      cursor: pointer;
+      color: #424e73;
+      font-weight: bold; }
+      .page-template-tmp-enterprise .modal-footer .btn-secondary:before {
+        content: '\e905';
+        font-size: 16px;
+        font-family: tomochain; }
+      .page-template-tmp-enterprise .modal-footer .btn-secondary:hover {
+        color: #868ea4; }
 
 .flexbox_tecnologies .tomochain_tecnologies_use .photo_item iframe {
   width: 100%;
@@ -11348,7 +11368,7 @@ article.post-loop {
   position: relative; }
   .page-template-tmp-enterprise .con_publications .box-item .wpb_single_image:before {
     content: '';
-    background: #000000;
+    background: #151515;
     width: 20px;
     height: 20px;
     z-index: -1;
@@ -11360,8 +11380,9 @@ article.post-loop {
 
 .page-template-tmp-enterprise .con_publications .box-item .txt-content {
   background: #f3f3f3;
-  padding: 30px 20px 20px;
-  margin-left: 15px; }
+  padding: 25px;
+  margin-left: 15px;
+  margin-bottom: 0; }
   .page-template-tmp-enterprise .con_publications .box-item .txt-content a {
     font-size: 16px;
     font-weight: bold; }
@@ -11386,6 +11407,92 @@ article.post-loop {
       margin-bottom: 0; }
       .page-template-tmp-enterprise .con_get_touch .content_touch .container .btn_tmp_white a {
         min-width: 250px; }
+
+.btn-enterprise .btn-primary {
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+  padding: 1em;
+  font-weight: 600;
+  color: #151515;
+  min-width: 250px;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+  .btn-enterprise .btn-primary:active, .btn-enterprise .btn-primary:hover {
+    background: #151515 !important;
+    color: #fff; }
+
+.form-enterprise .txt-tile {
+  font-size: 18px;
+  font-weight: bold;
+  color: #151515;
+  text-align: center; }
+
+.form-enterprise .txt-desc {
+  margin: 15px 0 30px;
+  color: #151515;
+  line-height: 18px; }
+  .form-enterprise .txt-desc a {
+    text-decoration: underline !important; }
+
+.form-enterprise .form-group {
+  margin-bottom: 1rem; }
+  .form-enterprise .form-group ::-webkit-input-placeholder {
+    font-size: 13px; }
+  .form-enterprise .form-group ::-ms-input-placeholder {
+    font-size: 13px; }
+  .form-enterprise .form-group ::placeholder {
+    font-size: 13px; }
+  .form-enterprise .form-group :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    font-size: 13px; }
+  .form-enterprise .form-group ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    font-size: 13px; }
+  .form-enterprise .form-group input,
+  .form-enterprise .form-group select,
+  .form-enterprise .form-group textarea {
+    background: transparent;
+    border-radius: 3px;
+    border: 1px solid #cacaca;
+    padding: .8em 1em;
+    color: #151515;
+    width: 100%; }
+  .form-enterprise .form-group textarea {
+    height: 150px; }
+  .form-enterprise .form-group br {
+    display: none; }
+  .form-enterprise .form-group .wpcf7-not-valid-tip {
+    font-size: 12px; }
+  .form-enterprise .form-group.flex-box-between span {
+    display: block; }
+  .form-enterprise .form-group.flex-box-between select {
+    margin-top: 5px; }
+
+.form-enterprise .txt-note {
+  margin: 0 0 15px;
+  line-height: 1.4;
+  font-style: italic; }
+
+.form-enterprise .btn-submit .enr-submit {
+  background: #151515;
+  border: 1px solid #151515;
+  border-radius: 0;
+  color: #fff;
+  display: block;
+  padding: 1em;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 1.4;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+  .form-enterprise .btn-submit .enr-submit:active, .form-enterprise .btn-submit .enr-submit:hover {
+    background: #151515 !important;
+    color: #fff;
+    -webkit-box-shadow: 0 5px 12px -1px #555;
+            box-shadow: 0 5px 12px -1px #555; }
 
 /**-------------------------------
 	Define CSS - Common
@@ -11872,17 +11979,22 @@ article.post-loop {
     border: 0;
     text-align: center; }
     .tomo-modal .wpcf7-display-none.wpcf7-validation-errors, .tomo-modal .wpcf7-display-none.wpcf7-spam-blocked {
-      color: red; }
+      color: red;
+      margin-top: 15px; }
     .tomo-modal .wpcf7-display-none.wpcf7-mail-sent-ok {
-      color: #173d7a; }
+      color: #173d7a;
+      margin-top: 15px; }
   .tomo-modal .ajax-loader {
     background-image: url(assets/images/loading.svg) !important;
     background-repeat: no-repeat !important;
     background-position: center !important;
     display: block !important;
-    height: 16px !important;
+    height: 0px !important;
     width: 100% !important;
-    margin-top: 15px !important; }
+    margin: 0px !important; }
+    .tomo-modal .ajax-loader.is-active {
+      height: 16px !important;
+      margin-top: 15px !important; }
   .tomo-modal .form-game-contest .txt-tile {
     font-size: 16px;
     font-weight: bold;
@@ -12271,9 +12383,12 @@ article.post-loop {
       background-repeat: no-repeat !important;
       background-position: center !important;
       display: block !important;
-      height: 16px !important;
+      height: 0px !important;
       width: 100% !important;
-      margin-top: 15px !important; }
+      margin: 0px !important; }
+      .submit_game .form_submit_game .form-submit-tomo .ajax-loader.is-active {
+        height: 16px !important;
+        margin-top: 15px !important; }
   .submit_game .form_submit_game .wpcf7-not-valid-tip {
     color: #FF924E !important;
     font-size: 12px !important; }
@@ -12281,7 +12396,8 @@ article.post-loop {
   .submit_game .wpcf7-response-output {
     border: 0 !important;
     text-align: center !important;
-    color: #fff !important; }
+    color: #fff !important;
+    margin-top: 15px; }
 
 .page-template-tmp-roadmap {
   background: #1d223a;
@@ -12942,9 +13058,12 @@ article.post-loop {
       background-repeat: no-repeat !important;
       background-position: center !important;
       display: block !important;
-      height: 16px !important;
+      height: 0px !important;
       width: 100% !important;
-      margin-top: 15px !important; }
+      margin: 0px !important; }
+      .dapp_form .main_form_dapp .form_dapps .ajax-loader.is-active {
+        height: 16px !important;
+        margin-top: 15px !important; }
     .dapp_form .main_form_dapp .form_dapps .wpcf7-not-valid-tip {
       color: #FF924E !important;
       font-size: 12px !important; }
@@ -12953,7 +13072,8 @@ article.post-loop {
 .dapp_form .wpcf7-response-output {
   border: 0 !important;
   text-align: center !important;
-  color: #fff !important; }
+  color: #fff !important;
+  margin-top: 15px; }
 
 .dapp_form .btn_submit_dapp {
   margin-bottom: -42px !important; }
@@ -16343,6 +16463,26 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       width: 7%; }
     .page-template-tmp-enterprise .con_publications .read_more {
       font-weight: bold; }
+  .page-template-tmp-enterprise .con_publications .box-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .page-template-tmp-enterprise .con_publications .box-item .box-inner > .vc_column-inner {
+      height: 100%; }
+      .page-template-tmp-enterprise .con_publications .box-item .box-inner > .vc_column-inner > .wpb_wrapper {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+        z-index: 1; }
+        .page-template-tmp-enterprise .con_publications .box-item .box-inner > .vc_column-inner > .wpb_wrapper:before {
+          content: '';
+          background: #f3f3f3;
+          position: absolute;
+          left: 15px;
+          bottom: 0;
+          z-index: -1;
+          width: calc(100% - 15px);
+          height: 100%; }
     .title_wallet_secure,
     .title_wallet_features,
     .title_wallet_howto,
@@ -18561,11 +18701,16 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         left: inherit;
         bottom: inherit; }
       .page-template-tmp-enterprise .con_publications .box-item .wpb_single_image .vc_single_image-wrapper {
-        display: grid;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        overflow: hidden;
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center;
-        overflow: hidden; }
+        -webkit-box-align: center;
+            -ms-flex-align: center;
+                align-items: center; }
       .page-template-tmp-enterprise .con_publications .box-item .wpb_single_image img {
         max-width: 160%;
         width: initial; }
@@ -18785,6 +18930,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         .tomochain-social .social-links .social-links__link {
           height: 36px;
           width: 36px; }
+  .form-enterprise .tomo-modal {
+    padding: 15px; }
     .header-game-contest {
       padding: 15px 0; }
         .header-game-contest .row .logo-tomo img {
@@ -18952,8 +19099,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .page-template-tmp-enterprise .con_get_touch .content_touch {
       padding: 25px 0 0;
       text-align: center; }
-      .page-template-tmp-enterprise .con_get_touch .content_touch .btn_tmp_white a {
-        background: #2a2a2a;
+      .page-template-tmp-enterprise .con_get_touch .content_touch .btn-enterprise .btn-primary {
+        background: #151515;
         color: #fff; }
         .page-template-tmp-enterprise .con_get_touch .content_touch .container .txt_desc_touch {
           font-size: 14px;

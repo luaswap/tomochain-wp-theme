@@ -2,6 +2,7 @@
 /* Template name: tmp enterprise */
 
 get_template_part('headerldetr'); ?>
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 <div class="content-area tmp-enterprise">
 	<main class="site-main">
 		<div class="container_fluid">
@@ -21,5 +22,6 @@ get_template_part('headerldetr'); ?>
 		</div>
 	</main><!-- #main -->
 </div><!-- #primary -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <?php
 get_template_part('footer'); ?>
