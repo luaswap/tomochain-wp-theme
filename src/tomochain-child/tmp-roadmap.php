@@ -22,7 +22,16 @@ get_template_part('headerld');
 				<h1 class="main-title-page">Roadmap</h1>
 			</div>
 			<div class="col-12 col-lg-3">
-				<div class="check-time">March 2019</div>
+				<div class="check-time">
+					<span id="tm_months"></span>
+					<span id="tm_year"></span>
+				</div>
+				<script>
+					var tomoDate = new Date();
+					var tomoMonths = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+					document.getElementById("tm_months").innerHTML = tomoMonths[tomoDate.getMonth()];
+					document.getElementById("tm_year").innerHTML = tomoDate.getFullYear();
+				</script>
 			</div>
 		</div>
 	</div>
