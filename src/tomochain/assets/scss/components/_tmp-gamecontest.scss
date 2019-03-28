@@ -21,6 +21,7 @@
 	}
 	.site-content {
 		background: transparent;
+		padding-top: 0;
 	}
 	.site-footer {
 		background: transparent;
@@ -73,6 +74,16 @@
 			.container {
 				max-width: 1060px;
 			}
+		}
+	}
+
+	.card-body {
+		@media only screen and (min-width: 1440px) {
+			min-height: 350px;
+		}
+		@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+			min-height: 260px;
+			padding: 1em 1.25rem;
 		}
 	}
 }
@@ -413,6 +424,11 @@
 			}
 			.card-body {
 				border-top: 1px solid #f2f2f2;
+				@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+					p {
+						margin-bottom: 5px;
+					}
+				}
 				ul {
 					padding: 0 0 0 20px;
 					margin: 0;
@@ -482,6 +498,16 @@
 					.media-body {
 						padding-left: 30px;
 					}
+					.media {
+						p {
+							margin-bottom: 15px;
+						}
+						&:last-child {
+							p {
+								margin-bottom: 0;
+							}
+						}
+					}
 					a {
 						color: #173d7a;
 						text-decoration: underline;
@@ -495,6 +521,11 @@
 			background: #fff;
 			border-radius: 2px;
 			overflow: hidden;
+			@media only screen and (min-width: 1025px) and (max-width: 1439px) {
+				p {
+					margin-bottom: 5px;
+				}
+			}
 			ul {
 				padding: 0 0 0 20px;
 				margin: 0;
@@ -560,11 +591,6 @@
 	}
 	.hentry {
 		margin-bottom: 0;
-	}
-	.card-body {
-		@media only screen and (min-width: 1440px) {
-			min-height: 350px;
-		}
 	}
 }
 .row-reverse {
