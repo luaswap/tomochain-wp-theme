@@ -54,11 +54,11 @@
 					));
 				?>
 
-				<div class="header-tools d-none">
+				<div class="header-tools">
 					<?php
-						if ( function_exists('get_field') && ! get_field('hide_language_switcher') ) {
-							tomochain_lang_switcher();
-						}
+						// if ( function_exists('get_field') && ! get_field('hide_language_switcher') ) {
+						// 	tomochain_lang_switcher();
+						// }
 						tomochain_mobile_menu_btn();
 					?>
 				</div><!-- .header-tools-->

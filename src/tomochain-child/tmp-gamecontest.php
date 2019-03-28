@@ -99,7 +99,7 @@ get_template_part('headerld');
 				</div><!-- /tomochain-contest-countdown -->
 			</div>
 			<div class="col-sm-4">
-				<ul class="tomochain-contest-filter">
+				<ul class="tomochain-contest-filter d-none">
 					<li>
 						<span class="tab-item active">Form Submission</span>
 					</li>

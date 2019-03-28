@@ -1,9 +1,14 @@
 .site-header {
-    position: relative;
-    transition: all .2s ease, background 1s ease;
+    /*transition: all .2s ease, background 1s ease;*/
+    transition: all .2s;
     padding: 20px 0;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 99;
 
-    @extend %transit;
+    /*@extend %transit;*/
 
     > .container > .row {
         display: table;
