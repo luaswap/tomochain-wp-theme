@@ -129,13 +129,13 @@ get_template_part('headerld');
 								</div>
 								<div class="btn-contest">
 									<!-- Button trigger modal -->
-									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModalCenter">
+									<button type="button" class="btn btn-primary" data-toggle="modal" data-target="#tomoModalCenter">
 										Register your interest
 									</button>
 								</div>
 							</div>
 							<!-- Modal -->
-							<div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog">
+							<div class="modal fade" id="tomoModalCenter" tabindex="-1" role="dialog">
 								<div class="modal-dialog modal-dialog-centered" role="document">
 									<div class="modal-content tomo-modal">
 										<?php
@@ -152,7 +152,7 @@ get_template_part('headerld');
 											endwhile; // End of the loop.
 										?>
 										<div class="modal-footer">
-											<span class="btn btn-secondary" data-dismiss="modal"></span>
+											<span id="abc" class="btn btn-secondary" data-dismiss="modal"></span>
 										</div>
 									</div>
 								</div>
@@ -432,5 +432,11 @@ get_template_part('headerld');
 	</main><!-- #main -->
 </div><!-- #primary -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    var wpcf7Elm = document.querySelector( '.wpcf7' );
+    wpcf7Elm.addEventListener( 'wpcf7mailsent', function( event ) {
+    	jQuery('#tomoModalCenter').modal('hide');
+    }, false );
+</script>
 <?php
 get_template_part('footerld'); ?>

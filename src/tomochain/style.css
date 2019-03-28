@@ -11303,6 +11303,8 @@ article.post-loop {
       color: #ff7b4d;
       -webkit-transition: all .5s ease;
       transition: all .5s ease; }
+  .page-template-tmp-enterprise .box-btn a {
+    font-weight: 600; }
   .page-template-tmp-enterprise .box-btn .btn-view-document a {
     border: 1px solid #151515;
     color: #151515 !important; }
@@ -11327,6 +11329,9 @@ article.post-loop {
         font-family: tomochain; }
       .page-template-tmp-enterprise .modal-footer .btn-secondary:hover {
         color: #868ea4; }
+
+.flexbox_tecnologies .tomochain_tecnologies_use .slick-track {
+  width: 100% !important; }
 
 .flexbox_tecnologies .tomochain_tecnologies_use .photo_item iframe {
   width: 100%;

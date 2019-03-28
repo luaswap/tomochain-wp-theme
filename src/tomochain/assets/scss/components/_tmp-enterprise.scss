@@ -178,6 +178,9 @@
 		}//site-footer
 	}
 	.box-btn {
+		a {
+			font-weight: 600;
+		}
 		@media screen and (max-width: 767px) {
 			.vc_btn3-inline {
 				display: block;
@@ -338,6 +341,9 @@
 
 .flexbox_tecnologies {
 	.tomochain_tecnologies_use {
+	.slick-track {
+		width: 100%!important;
+	}
 		.photo_item {
 			iframe {
 				width: 100%;
