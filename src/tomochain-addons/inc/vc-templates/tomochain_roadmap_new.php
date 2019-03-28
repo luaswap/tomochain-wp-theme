@@ -297,7 +297,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
                                                     ?>
                                                     <li>
                                                         <?php if(isset($cl->url)){?>
-                                                        <a href="<?php echo esc_url($cl->url);?>"><?php if(isset($cl->message)){
+                                                        <a target="_blank" href="<?php echo esc_url($cl->url);?>"><?php if(isset($cl->message)){
                                                                 echo esc_html($cl->message)?>
                                                             <?php }?>
                                                         </a>
