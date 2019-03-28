@@ -40,8 +40,8 @@
 		<div class="container">
 			<div class="row">
 				<div class="site-branding enter-logo">
-					<a href="/" title="Logo">
-						<img src="https://tomochain.com/tomochain/assets/images/logo-tomochain.png" alt="">
+					<a href="<?php echo esc_url($home_url); ?>">
+						<img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/logo-tomochain.png'); ?>" alt="Logo">
 					</a>
 				</div><!-- .site-branding -->
 

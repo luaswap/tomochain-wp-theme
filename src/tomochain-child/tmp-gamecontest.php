@@ -152,7 +152,7 @@ get_template_part('headerld');
 											endwhile; // End of the loop.
 										?>
 										<div class="modal-footer">
-											<span id="abc" class="btn btn-secondary" data-dismiss="modal"></span>
+											<span class="btn btn-secondary" data-dismiss="modal"></span>
 										</div>
 									</div>
 								</div>
