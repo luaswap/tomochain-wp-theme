@@ -23,6 +23,14 @@ get_template_part('headerld');
 				<h1 class="main-title-page">TomoChain Game Dappathon</h1>
 			</div>
 			<div class="col-12 col-lg-3">
+				<div class="header-tools">
+					<?php
+						if ( function_exists('get_field') && ! get_field('hide_language_switcher') ) {
+							tomochain_lang_switcher();
+						}
+						// tomochain_mobile_menu_btn();
+					?>
+				</div><!-- .header-tools-->
 			</div>
 		</div>
 	</div>
