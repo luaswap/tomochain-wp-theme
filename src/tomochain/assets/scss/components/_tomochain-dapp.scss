@@ -1,5 +1,5 @@
 .tomochain-dapp {
-	text-align: center;
+	/*text-align: center;*/
 	margin-top: 30px;
 	margin-bottom: 50px;
 
@@ -182,6 +182,7 @@
 				@include media-breakpoint-up(md) {
 					width: 65%;
 					padding-left: 3em;
+					text-align: left;
 				}
 				@include media-breakpoint-down(sm) {
 					text-align: center;
