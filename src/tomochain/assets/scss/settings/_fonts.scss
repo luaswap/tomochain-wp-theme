@@ -97,6 +97,9 @@ $font__line-height-pre: 1.6;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.tm-discord:before {
+  content: "\e91d";
+}
 .tm-money:before {
   content: "\e908";
 }
@@ -160,7 +163,7 @@ $font__line-height-pre: 1.6;
 .tm-building:before {
   content: "\e91c";
 }
-.tm-search:before {
+.tm-icon_search:before {
   content: "\e900";
 }
 .tm-android:before {
