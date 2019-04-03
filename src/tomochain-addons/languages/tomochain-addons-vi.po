@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "POT-Creation-Date: 2019-03-06 13:12+0700\n"
-"PO-Revision-Date: 2019-03-06 06:15+0000\n"
+"PO-Revision-Date: 2019-03-06 11:11+0000\n"
 "Last-Translator: TomoChain <hka@tomochain.com>\n"
 "Language: vi\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -215,7 +215,7 @@ msgstr ""
 
 #: inc/post-types/event.php:36 inc/shortcodes/tomochain-event.php:21
 msgid "All Events"
-msgstr ""
+msgstr "Tất Cả Sự Kiện"
 
 #: inc/post-types/event.php:37
 msgid "No Event items found"

@@ -428,7 +428,7 @@ var tomochain
             $roadmap.slick({
                 accessibility : false,
                 // arrows: false,
-                infinite: false,
+                infinite: true,
                 initialSlide: index,
                 slidesToScroll: 1,
                 slidesToShow: 4,

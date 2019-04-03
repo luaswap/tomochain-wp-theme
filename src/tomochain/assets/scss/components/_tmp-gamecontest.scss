@@ -1,3 +1,4 @@
+.page-template-tmp-gamedappathon,
 .page-template-tmp-gamecontest {
 	background: #15192e; /* Old browsers */
 	color: #fff;
@@ -89,6 +90,17 @@
 		@media only screen and (min-width: 1025px) and (max-width: 1439px) {
 			min-height: 260px;
 			padding: 1em 1.25rem;
+		}
+	}
+	.wpcf7-mail-sent-ok {
+		display: none!important;
+	}
+	.header-tools {
+		ul {
+			li:nth-child(4),
+			li:nth-child(5) {
+				display: none;
+			}
 		}
 	}
 }
@@ -277,7 +289,7 @@
 		@media only screen and (min-width: 1025px) and (max-width: 1439px) {
 			padding: 25px;
 		}
-		@include media-breakpoint-down(sm) {
+		@include media-breakpoint-down(lg) {
 			margin-bottom: 10px;
 			padding: 1.25rem;
 		}
@@ -325,7 +337,6 @@
 		}
 		.txt-prize {
 			color: #000000;
-			margin: 15px 0;
 			font-size: 16px;
 			font-weight: 600;
 			strong {
@@ -338,21 +349,29 @@
 		}
 		.game-avatar {
 			@media only screen and (min-width: 1440px) {
-				padding: 15px 34px;
+				padding: 7px 34px;
 			}
 			@media only screen and (min-width: 1025px) and (max-width: 1439px) {
-				padding: 15px 44px;
+				padding: 7px 43px;
+			}
+			@media only screen and (min-width: 768px) and (max-width: 991px) {
+				padding: 10px 100px;
+			}
+			@media only screen and (max-width: 767px) {
+				padding: 15px;
 			}
 		}
 		.btn-contest {
-			.btn-primary {
-				background: #173d7a;
+			p {
+				margin: 15px 0 10px;
+				color: #151515;
+			}
+			.btn {
 				border: 0;
 				border-radius: 0;
 				display: block;
 				width: 100%;
 				padding: 1em;
-				font-weight: 600;
 				@media only screen and (min-width: 1025px) and (max-width: 1439px) {
 					font-size: 14px;
 				}
@@ -364,6 +383,15 @@
 				&:focus {
 					box-shadow: 0 0 0!important;
 				}
+			}
+			.btn-primary {
+				background: #173d7a;
+				border: 1px solid #173d7a!important;
+			}
+			.btn-info {
+				background: #fff;
+				color: #173d7a;
+				border: 1px solid #173d7a!important;
 			}
 		}
 	}//box-infor-ct
@@ -435,7 +463,7 @@
 					}
 				}
 				ul {
-					padding: 0 0 0 20px;
+					padding: 0 0 0 17px;
 					margin: 0;
 					li {
 						h5 {
@@ -540,7 +568,7 @@
 				}
 			}
 			ul {
-				padding: 0 0 0 20px;
+				padding: 0 0 0 17px;
 				margin: 0;
 				li {
 					h5 {
@@ -680,7 +708,7 @@
 			color: #173d7a;
 		}
 		.txt-desc {
-			margin: 15px 0 30px;
+			margin: 15px 0;
 			color: #000;
 			@include media-breakpoint-down(sm) {
 				font-size: 12px;
@@ -707,11 +735,29 @@
 			.wpcf7-not-valid-tip {
 				font-size: 12px;
 			}
+			p {
+				margin-bottom: 5px;
+				&:last-child {
+					margin-bottom: 0;
+				}
+			}
+			.first {
+				margin-left: 0!important;
+			}
+			label {
+				margin: 0!important;
+				display: flex;
+    			align-items: center;
+    			input {
+    				margin-right: 5px;
+    			}
+			}
 		}
 		.txt-note {
 			margin: 0 0 15px;
 			line-height: 1.4;
 			font-style: italic;
+			font-size: 13px;
 		}
 		.btn-contest {
 			.submit-game {
