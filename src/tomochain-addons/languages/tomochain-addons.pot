@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: TomoChain Addons\n"
-"POT-Creation-Date: 2019-03-06 13:12+0700\n"
-"PO-Revision-Date: 2019-03-06 13:11+0700\n"
+"POT-Creation-Date: 2019-04-02 06:43+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Poedit 2.2\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: tomochain-addons.php\n"
@@ -20,6 +20,40 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
+"Language: "
+
+#: tomochain-addons.php:50
+#, php-format
+msgid ""
+"<strong>%s</strong> requires <strong><a href=\"http://bit.ly/vcomposer\" "
+"target=\"_blank\">WPBakery Page Builder</a></strong> plugin to be installed "
+"and activated on your site."
+msgstr ""
+
+#: tomochain-addons.php:58
+#, php-format
+msgid ""
+"<strong>%s</strong> requires <strong>TomoChain</strong> theme to be "
+"installed and activated on your site."
+msgstr ""
+
+#: inc/vc-extend.php:47
+msgid "Design Options"
+msgstr ""
+
+#: inc/vc-extend.php:49
+msgid "CSS box"
+msgstr ""
+
+#: inc/vc-extend.php:56
+msgid "Extra class name"
+msgstr ""
+
+#: inc/vc-extend.php:58
+msgid ""
+"Style particular content element differently - add a class name and refer to "
+"it in custom CSS."
+msgstr ""
 
 #: inc/core-functions.php:65 inc/vc-templates/tomochain_roadmap_new.php:59
 msgid "All"
@@ -35,10 +69,10 @@ msgstr ""
 msgid "%s"
 msgstr ""
 
-#: inc/core-functions.php:164 inc/vc-templates/tomochain_dapp2.php:58
-#: inc/vc-templates/tomochain_dapps.php:78
+#: inc/core-functions.php:164 inc/vc-templates/tomochain_dapps.php:78
 #: inc/vc-templates/tomochain_testnet_item.php:46
 #: inc/vc-templates/tomochain_testnet_item.php:47
+#: inc/vc-templates/tomochain_dapp2.php:58
 msgid "More Info"
 msgstr ""
 
@@ -66,417 +100,383 @@ msgstr ""
 msgid "Due date:"
 msgstr ""
 
-#: inc/post-types/dapp.php:26 inc/post-types/dapp.php:28
-#: inc/shortcodes/tomochain-dapps.php:9
-msgid "Dapps"
+#: inc/shortcodes/tomochain-image-carousel-item.php:9
+msgid "Image Carousel Item"
 msgstr ""
 
-#: inc/post-types/dapp.php:27
-msgid "Dapp"
+#. Author of the plugin/theme
+#: inc/shortcodes/tomochain-image-carousel-item.php:12
+#: inc/shortcodes/tomochain-roadmap-new.php:12
+#: inc/shortcodes/tomochain-lottie.php:12
+#: inc/shortcodes/tomochain-team-member.php:64
+#: inc/shortcodes/tomochain-video-item.php:13
+#: inc/shortcodes/tomochain-roadmap.php:12 inc/shortcodes/tomochain-list.php:26
+#: inc/shortcodes/tomochain-event.php:12 inc/shortcodes/tomochain-videos.php:11
+#: inc/shortcodes/tomochain-roadmap-item.php:12
+#: inc/shortcodes/tomochain-dapps.php:12 inc/shortcodes/tomochain-blog.php:12
+#: inc/shortcodes/tomochain-team.php:11
+#: inc/shortcodes/tomochain-countdown.php:79
+#: inc/shortcodes/tomochain-image-carousel.php:12
+#: inc/shortcodes/tomochain-social.php:12 inc/shortcodes/tomochain-dapp2.php:61
+#: inc/shortcodes/tomochain-dapp.php:61 inc/shortcodes/tomochain-testnet.php:11
+#: inc/shortcodes/tomochain-testnet-item.php:13
+msgid "TomoChain"
 msgstr ""
 
-#: inc/post-types/dapp.php:29 inc/post-types/event.php:30
-#: inc/post-types/r-activity.php:24 inc/post-types/road-map.php:24
-msgid "Add New"
+#: inc/shortcodes/tomochain-image-carousel-item.php:17
+#: inc/shortcodes/tomochain-team-member.php:79
+#: inc/shortcodes/tomochain-dapp2.php:65 inc/shortcodes/tomochain-dapp.php:65
+msgid "Image"
 msgstr ""
 
-#: inc/post-types/dapp.php:30 inc/post-types/dapp.php:32
-msgid "Add New Dapp"
+#: inc/shortcodes/tomochain-image-carousel-item.php:20
+#: inc/shortcodes/tomochain-team-member.php:82
+#: inc/shortcodes/tomochain-dapp2.php:68 inc/shortcodes/tomochain-dapp.php:68
+msgid "Select image from media library . "
 msgstr ""
 
-#: inc/post-types/dapp.php:31
-msgid "Edit Dapp"
+#: inc/shortcodes/tomochain-image-carousel-item.php:25
+#: inc/shortcodes/tomochain-image-carousel.php:19
+msgid "Carousel image size"
 msgstr ""
 
-#: inc/post-types/dapp.php:33
-msgid "Search Dapp"
+#: inc/shortcodes/tomochain-image-carousel-item.php:28
+#: inc/shortcodes/tomochain-image-carousel.php:22
+msgid ""
+"Enter image size . Example: \"thumbnail\", \"medium\", \"large\", \"full\" "
+"or other sizes defined by current theme . Alternatively enter image size in "
+"pixels: 200x100( Width x Height). Leave empty to use \"thumbnail\" size . "
 msgstr ""
 
-#: inc/post-types/dapp.php:34
-msgid "All Dapps"
+#: inc/shortcodes/tomochain-image-carousel-item.php:32
+#: inc/shortcodes/tomochain-dapp2.php:73 inc/shortcodes/tomochain-dapp.php:80
+#: inc/shortcodes/tomochain-testnet-item.php:35
+msgid "URL"
 msgstr ""
 
-#: inc/post-types/dapp.php:35
-msgid "No Dapp items found"
+#: inc/shortcodes/tomochain-image-carousel-item.php:37
+#: inc/shortcodes/tomochain-video-item.php:32
+msgid "Note"
 msgstr ""
 
-#: inc/post-types/dapp.php:36
-msgid "No Dapp items found in trash"
+#: inc/shortcodes/tomochain-roadmap-new.php:9
+msgid "Road Map New"
 msgstr ""
 
-#: inc/post-types/dapp.php:59
-msgid "Dapp Categories"
+#: inc/shortcodes/tomochain-roadmap-new.php:16
+msgid "Roadmap Categories"
 msgstr ""
 
-#: inc/post-types/dapp.php:60 inc/post-types/dapp.php:61
-msgid "Dapp Category"
+#: inc/shortcodes/tomochain-roadmap-new.php:18
+msgid "Enter Roadmap Categories"
 msgstr ""
 
-#: inc/post-types/dapp.php:62
-msgid "All Dapp Categories"
+#: inc/shortcodes/tomochain-roadmap-new.php:25
+msgid "Add Description"
 msgstr ""
 
-#: inc/post-types/dapp.php:63
-msgid "Edit Dapp Category"
+#: inc/shortcodes/tomochain-roadmap-new.php:27
+msgid "Add description for Roadmap"
 msgstr ""
 
-#: inc/post-types/dapp.php:64
-msgid "View Dapp Category"
+#: inc/shortcodes/tomochain-roadmap-new.php:34
+msgid "Time Roadmap Update"
 msgstr ""
 
-#: inc/post-types/dapp.php:65
-msgid "Update Dapp Category"
+#: inc/shortcodes/tomochain-roadmap-new.php:36
+msgid "Enter date"
 msgstr ""
 
-#: inc/post-types/dapp.php:66
-msgid "Add New Dapp Category"
+#: inc/shortcodes/tomochain-roadmap-new.php:37
+#: inc/shortcodes/tomochain-roadmap-new.php:60
+#: inc/shortcodes/tomochain-roadmap-new.php:63
+#: inc/shortcodes/tomochain-roadmap-new.php:71
+#: inc/shortcodes/tomochain-roadmap-new.php:101
+#: inc/shortcodes/tomochain-roadmap-new.php:104
+msgid "Sidebar"
 msgstr ""
 
-#: inc/post-types/dapp.php:67
-msgid "New Dapp Category Name"
+#: inc/shortcodes/tomochain-roadmap-new.php:42
+msgid "Discuss with our Team"
 msgstr ""
 
-#: inc/post-types/dapp.php:68
-msgid "Parent Dapp Category"
+#: inc/shortcodes/tomochain-roadmap-new.php:48
+#: inc/shortcodes/tomochain-roadmap-new.php:89
+#: inc/shortcodes/tomochain-team-member.php:86
+#: inc/shortcodes/tomochain-dapp.php:73
+msgid "Name"
 msgstr ""
 
-#: inc/post-types/dapp.php:69
-msgid "Parent Dapp Category:"
+#: inc/shortcodes/tomochain-roadmap-new.php:50
+#: inc/shortcodes/tomochain-roadmap-new.php:91
+msgid "Enter name"
 msgstr ""
 
-#: inc/post-types/dapp.php:70
-msgid "Search Dapp Category"
+#: inc/shortcodes/tomochain-roadmap-new.php:57
+#: inc/shortcodes/tomochain-roadmap-new.php:98
+msgid "Url"
 msgstr ""
 
-#: inc/post-types/dapp.php:71
-msgid "Popular Dapp Category"
+#: inc/shortcodes/tomochain-roadmap-new.php:59
+#: inc/shortcodes/tomochain-roadmap-new.php:70
+#: inc/shortcodes/tomochain-roadmap-new.php:100
+msgid "Enter Url"
 msgstr ""
 
-#: inc/post-types/dapp.php:72
-msgid "Separate Dapp Category with commas"
+#: inc/shortcodes/tomochain-roadmap-new.php:68
+msgid "See all recent activities"
 msgstr ""
 
-#: inc/post-types/dapp.php:73
-msgid "Add or remove Dapp Category"
+#: inc/shortcodes/tomochain-roadmap-new.php:83
+msgid "Resource"
 msgstr ""
 
-#: inc/post-types/dapp.php:74
-msgid "Choose from the most used Dapp Categories"
+#: inc/shortcodes/tomochain-lottie.php:8
+msgid "Lottie"
 msgstr ""
 
-#: inc/post-types/dapp.php:75
-msgid "No Dapp Category found"
+#: inc/shortcodes/tomochain-lottie.php:9
+msgid "Display a animation image from Adobe After Effect"
 msgstr ""
 
-#: inc/post-types/dapp.php:100 inc/post-types/event.php:143
-#: inc/shortcodes/tomochain-testnet-item.php:18
-#: inc/widgets/tomochain-address.php:24 inc/widgets/tomochain-event.php:40
-#: inc/widgets/tomochain-recent-posts.php:115
-msgid "Title"
+#: inc/shortcodes/tomochain-lottie.php:16
+msgid "Images"
 msgstr ""
 
-#: inc/post-types/dapp.php:101 inc/post-types/event.php:144
-msgid "Thumbnail"
+#: inc/shortcodes/tomochain-lottie.php:19
+msgid "Select images from media library . "
 msgstr ""
 
-#: inc/post-types/dapp.php:102
-msgid "Start Dapp"
+#: inc/shortcodes/tomochain-lottie.php:24
+msgid "JSON code"
 msgstr ""
 
-#: inc/post-types/dapp.php:103
-msgid "Close Dapp"
+#: inc/shortcodes/tomochain-team-member.php:60
+msgid "Team Member"
 msgstr ""
 
-#: inc/post-types/event.php:27 inc/post-types/event.php:29
-msgid "Events"
+#: inc/shortcodes/tomochain-team-member.php:61
+msgid "Member of TomoChain"
 msgstr ""
 
-#: inc/post-types/event.php:28 inc/shortcodes/tomochain-event.php:9
+#: inc/shortcodes/tomochain-team-member.php:69
+msgid "Advisor?"
+msgstr ""
+
+#: inc/shortcodes/tomochain-team-member.php:74
+msgid "Hide information"
+msgstr ""
+
+#: inc/shortcodes/tomochain-team-member.php:93
+msgid "Role"
+msgstr ""
+
+#: inc/shortcodes/tomochain-team-member.php:94
+msgid "Add a role."
+msgstr ""
+
+#: inc/shortcodes/tomochain-team-member.php:100
+msgid "Twitter"
+msgstr ""
+
+#: inc/shortcodes/tomochain-team-member.php:110
+msgid "Linkedin"
+msgstr ""
+
+#: inc/shortcodes/tomochain-team-member.php:120
+msgid "Github"
+msgstr ""
+
+#: inc/shortcodes/tomochain-team-member.php:130
+#: inc/shortcodes/tomochain-roadmap-item.php:39
+#: inc/shortcodes/tomochain-dapp2.php:85 inc/shortcodes/tomochain-dapp.php:92
+msgid "Description"
+msgstr ""
+
+#: inc/shortcodes/tomochain-video-item.php:10
+msgid "Video Item"
+msgstr ""
+
+#: inc/shortcodes/tomochain-video-item.php:18
+msgid "Thumbnail image"
+msgstr ""
+
+#: inc/shortcodes/tomochain-video-item.php:21
+msgid "Select image from media library (size 600x350). "
+msgstr ""
+
+#: inc/shortcodes/tomochain-video-item.php:26
+msgid "Youtube URL"
+msgstr ""
+
+#: inc/shortcodes/tomochain-roadmap.php:8
+msgid "Roadmap"
+msgstr ""
+
+#: inc/shortcodes/tomochain-roadmap.php:9
+msgid "TomoChain's Roadmap"
+msgstr ""
+
+#: inc/shortcodes/tomochain-list.php:22 inc/shortcodes/tomochain-dapps.php:21
+msgid "List"
+msgstr ""
+
+#: inc/shortcodes/tomochain-list.php:23
+msgid "Display a list"
+msgstr ""
+
+#: inc/shortcodes/tomochain-list.php:41
+msgid "List items"
+msgstr ""
+
+#: inc/shortcodes/tomochain-list.php:43
+msgid "Enter list item ( Note: divide items with linebreaks( Enter )."
+msgstr ""
+
+#: inc/shortcodes/tomochain-event.php:9 inc/post-types/event.php:28
 msgid "Event"
 msgstr ""
 
-#: inc/post-types/event.php:31 inc/post-types/event.php:33
-msgid "Add New Event"
+#: inc/shortcodes/tomochain-event.php:16 inc/widgets/tomochain-event.php:48
+msgid "Data Source"
 msgstr ""
 
-#: inc/post-types/event.php:32
-msgid "Edit Event"
+#: inc/shortcodes/tomochain-event.php:17
+msgid "Choose the source which event will be displayed."
 msgstr ""
 
-#: inc/post-types/event.php:34
-msgid "View Event"
-msgstr ""
-
-#: inc/post-types/event.php:35
-msgid "Search Event"
-msgstr ""
-
-#: inc/post-types/event.php:36 inc/shortcodes/tomochain-event.php:21
+#: inc/shortcodes/tomochain-event.php:21 inc/post-types/event.php:36
 msgid "All Events"
 msgstr ""
 
-#: inc/post-types/event.php:37
-msgid "No Event items found"
+#: inc/shortcodes/tomochain-event.php:22
+msgid "Ongoing Events"
 msgstr ""
 
-#: inc/post-types/event.php:38
-msgid "No Event items found in trash"
+#: inc/shortcodes/tomochain-event.php:23
+msgid "Upcoming Event"
 msgstr ""
 
-#: inc/post-types/event.php:44
-msgid "Display Events"
+#: inc/shortcodes/tomochain-event.php:24
+msgid "Past Event"
 msgstr ""
 
-#: inc/post-types/event.php:69
-msgid "Event Categories"
+#: inc/shortcodes/tomochain-event.php:29
+msgid "Event Layout"
 msgstr ""
 
-#: inc/post-types/event.php:70 inc/post-types/event.php:71
-msgid "Event Category"
+#: inc/shortcodes/tomochain-event.php:33
+msgid "Grid"
 msgstr ""
 
-#: inc/post-types/event.php:72
-msgid "All Event Categories"
+#: inc/shortcodes/tomochain-event.php:34 inc/shortcodes/tomochain-dapps.php:20
+msgid "Slide"
 msgstr ""
 
-#: inc/post-types/event.php:73
-msgid "Edit Event Category"
+#: inc/shortcodes/tomochain-event.php:41 inc/shortcodes/tomochain-dapps.php:28
+#: inc/shortcodes/tomochain-blog.php:17
+msgid "Per Page"
 msgstr ""
 
-#: inc/post-types/event.php:74
-msgid "View Event Category"
+#: inc/shortcodes/tomochain-event.php:46
+msgid "Columns"
 msgstr ""
 
-#: inc/post-types/event.php:75
-msgid "Update Event Category"
+#: inc/shortcodes/tomochain-event.php:47
+msgid "Enter columns number"
 msgstr ""
 
-#: inc/post-types/event.php:76
-msgid "Add New Event Category"
+#: inc/shortcodes/tomochain-event.php:51
+msgid "2 Columns"
 msgstr ""
 
-#: inc/post-types/event.php:77
-msgid "New Event Category Name"
+#: inc/shortcodes/tomochain-event.php:52
+msgid "3 Columns"
 msgstr ""
 
-#: inc/post-types/event.php:78
-msgid "Parent Event Category"
+#: inc/shortcodes/tomochain-event.php:53
+msgid "4 Columns"
 msgstr ""
 
-#: inc/post-types/event.php:79
-msgid "Parent Event Category:"
+#: inc/shortcodes/tomochain-event.php:63 inc/shortcodes/tomochain-dapps.php:33
+#: inc/shortcodes/tomochain-blog.php:22
+msgid "Slides To Show"
 msgstr ""
 
-#: inc/post-types/event.php:80
-msgid "Search Event Category"
+#: inc/shortcodes/tomochain-event.php:67 inc/shortcodes/tomochain-dapps.php:37
+#: inc/shortcodes/tomochain-blog.php:26
+msgid "2 Item"
 msgstr ""
 
-#: inc/post-types/event.php:81
-msgid "Popular Event Category"
+#: inc/shortcodes/tomochain-event.php:68 inc/shortcodes/tomochain-dapps.php:38
+#: inc/shortcodes/tomochain-blog.php:27
+msgid "3 Item"
 msgstr ""
 
-#: inc/post-types/event.php:82
-msgid "Separate Event Category with commas"
+#: inc/shortcodes/tomochain-event.php:69 inc/shortcodes/tomochain-dapps.php:39
+#: inc/shortcodes/tomochain-blog.php:28
+msgid "4 Item"
 msgstr ""
 
-#: inc/post-types/event.php:83
-msgid "Add or remove Event Category"
+#: inc/shortcodes/tomochain-event.php:70 inc/shortcodes/tomochain-dapps.php:40
+#: inc/shortcodes/tomochain-blog.php:29
+msgid "5 Item"
 msgstr ""
 
-#: inc/post-types/event.php:84
-msgid "Choose from the most used Event Categories"
+#: inc/shortcodes/tomochain-event.php:81 inc/shortcodes/tomochain-dapps.php:51
+#: inc/shortcodes/tomochain-blog.php:52
+#: inc/shortcodes/tomochain-image-carousel.php:41
+msgid "Enable carousel loop mode"
 msgstr ""
 
-#: inc/post-types/event.php:85
-msgid "No Event Category found"
+#: inc/shortcodes/tomochain-event.php:91 inc/shortcodes/tomochain-dapps.php:61
+#: inc/shortcodes/tomochain-blog.php:58
+#: inc/shortcodes/tomochain-image-carousel.php:47
+msgid "Enable carousel autolay"
 msgstr ""
 
-#: inc/post-types/event.php:145
-msgid "Start Event"
+#: inc/shortcodes/tomochain-event.php:101 inc/shortcodes/tomochain-dapps.php:71
+#: inc/shortcodes/tomochain-blog.php:64
+#: inc/shortcodes/tomochain-image-carousel.php:53
+msgid "Auto play speed (in seconds)"
 msgstr ""
 
-#: inc/post-types/event.php:146
-msgid "Close Event"
+#: inc/shortcodes/tomochain-videos.php:8
+msgid "Videos"
 msgstr ""
 
-#: inc/post-types/r-activity.php:21 inc/post-types/r-activity.php:23
-#: inc/post-types/r-activity.php:29
-msgid "Recent Activities"
+#: inc/shortcodes/tomochain-roadmap-item.php:9
+msgid "Roadmap Item"
 msgstr ""
 
-#: inc/post-types/r-activity.php:22
-msgid "Recent Activity"
+#: inc/shortcodes/tomochain-roadmap-item.php:17
+#: inc/shortcodes/tomochain-countdown.php:191
+msgid "Year"
 msgstr ""
 
-#: inc/post-types/r-activity.php:25 inc/post-types/r-activity.php:27
-msgid "Add New Activity"
+#: inc/shortcodes/tomochain-roadmap-item.php:18
+msgid "Enter the year (e.g. 2018)"
 msgstr ""
 
-#: inc/post-types/r-activity.php:26
-msgid "Edit Activity"
+#: inc/shortcodes/tomochain-roadmap-item.php:25
+msgid "Quarter"
 msgstr ""
 
-#: inc/post-types/r-activity.php:28
-msgid "Search Activity"
+#: inc/shortcodes/tomochain-roadmap-item.php:26
+msgid "Select the quarter"
 msgstr ""
 
-#: inc/post-types/r-activity.php:30
-msgid "No Activity items found"
+#: inc/shortcodes/tomochain-dapps.php:9 inc/post-types/dapp.php:26
+#: inc/post-types/dapp.php:28
+msgid "Dapps"
 msgstr ""
 
-#: inc/post-types/r-activity.php:31
-msgid "No Activity items found in trash"
-msgstr ""
-
-#: inc/post-types/road-map.php:21 inc/post-types/road-map.php:23
-msgid "Road Maps"
-msgstr ""
-
-#: inc/post-types/road-map.php:22
-msgid "Road Map"
-msgstr ""
-
-#: inc/post-types/road-map.php:25 inc/post-types/road-map.php:27
-msgid "Add New Road Map"
-msgstr ""
-
-#: inc/post-types/road-map.php:26
-msgid "Edit Road Map"
-msgstr ""
-
-#: inc/post-types/road-map.php:28
-msgid "Search Road Map"
-msgstr ""
-
-#: inc/post-types/road-map.php:29
-msgid "All Road Maps"
-msgstr ""
-
-#: inc/post-types/road-map.php:30
-msgid "No Road Map items found"
-msgstr ""
-
-#: inc/post-types/road-map.php:31
-msgid "No Road Map items found in trash"
-msgstr ""
-
-#: inc/post-types/road-map.php:54
-msgid "Road Map Categories"
-msgstr ""
-
-#: inc/post-types/road-map.php:55 inc/post-types/road-map.php:56
-msgid "Road Map Category"
-msgstr ""
-
-#: inc/post-types/road-map.php:57
-msgid "All Road Map Categories"
-msgstr ""
-
-#: inc/post-types/road-map.php:58
-msgid "Edit Road Map Category"
-msgstr ""
-
-#: inc/post-types/road-map.php:59
-msgid "View Road Map Category"
-msgstr ""
-
-#: inc/post-types/road-map.php:60
-msgid "Update Road Map Category"
-msgstr ""
-
-#: inc/post-types/road-map.php:61
-msgid "Add New Road Map Category"
-msgstr ""
-
-#: inc/post-types/road-map.php:62
-msgid "New Road Map Category Name"
-msgstr ""
-
-#: inc/post-types/road-map.php:63
-msgid "Parent Road Map Category"
-msgstr ""
-
-#: inc/post-types/road-map.php:64
-msgid "Parent Road Map Category:"
-msgstr ""
-
-#: inc/post-types/road-map.php:65
-msgid "Search Road Map Category"
-msgstr ""
-
-#: inc/post-types/road-map.php:66
-msgid "Popular Road Map Category"
-msgstr ""
-
-#: inc/post-types/road-map.php:67
-msgid "Separate Road Map Category with commas"
-msgstr ""
-
-#: inc/post-types/road-map.php:68
-msgid "Add or remove Road Map Category"
-msgstr ""
-
-#: inc/post-types/road-map.php:69
-msgid "Choose from the most used Road Map Categories"
-msgstr ""
-
-#: inc/post-types/road-map.php:70
-msgid "No Road Map Category found"
+#: inc/shortcodes/tomochain-dapps.php:16
+msgid "Dapp Layout"
 msgstr ""
 
 #: inc/shortcodes/tomochain-blog.php:9
 msgid "Blog"
-msgstr ""
-
-#. Author of the plugin/theme
-#: inc/shortcodes/tomochain-blog.php:12
-#: inc/shortcodes/tomochain-countdown.php:79
-#: inc/shortcodes/tomochain-dapp.php:61 inc/shortcodes/tomochain-dapp2.php:61
-#: inc/shortcodes/tomochain-dapps.php:12 inc/shortcodes/tomochain-event.php:12
-#: inc/shortcodes/tomochain-image-carousel-item.php:12
-#: inc/shortcodes/tomochain-image-carousel.php:12
-#: inc/shortcodes/tomochain-list.php:26 inc/shortcodes/tomochain-lottie.php:12
-#: inc/shortcodes/tomochain-roadmap-item.php:12
-#: inc/shortcodes/tomochain-roadmap-new.php:12
-#: inc/shortcodes/tomochain-roadmap.php:12
-#: inc/shortcodes/tomochain-social.php:12
-#: inc/shortcodes/tomochain-team-member.php:64
-#: inc/shortcodes/tomochain-team.php:11
-#: inc/shortcodes/tomochain-testnet-item.php:13
-#: inc/shortcodes/tomochain-testnet.php:11
-#: inc/shortcodes/tomochain-video-item.php:13
-#: inc/shortcodes/tomochain-videos.php:11
-msgid "TomoChain"
-msgstr ""
-
-#: inc/shortcodes/tomochain-blog.php:17 inc/shortcodes/tomochain-dapps.php:28
-#: inc/shortcodes/tomochain-event.php:41
-msgid "Per Page"
-msgstr ""
-
-#: inc/shortcodes/tomochain-blog.php:22 inc/shortcodes/tomochain-dapps.php:33
-#: inc/shortcodes/tomochain-event.php:63
-msgid "Slides To Show"
-msgstr ""
-
-#: inc/shortcodes/tomochain-blog.php:26 inc/shortcodes/tomochain-dapps.php:37
-#: inc/shortcodes/tomochain-event.php:67
-msgid "2 Item"
-msgstr ""
-
-#: inc/shortcodes/tomochain-blog.php:27 inc/shortcodes/tomochain-dapps.php:38
-#: inc/shortcodes/tomochain-event.php:68
-msgid "3 Item"
-msgstr ""
-
-#: inc/shortcodes/tomochain-blog.php:28 inc/shortcodes/tomochain-dapps.php:39
-#: inc/shortcodes/tomochain-event.php:69
-msgid "4 Item"
-msgstr ""
-
-#: inc/shortcodes/tomochain-blog.php:29 inc/shortcodes/tomochain-dapps.php:40
-#: inc/shortcodes/tomochain-event.php:70
-msgid "5 Item"
 msgstr ""
 
 #: inc/shortcodes/tomochain-blog.php:36
@@ -487,22 +487,12 @@ msgstr ""
 msgid "Enter Excerpt Length"
 msgstr ""
 
-#: inc/shortcodes/tomochain-blog.php:52 inc/shortcodes/tomochain-dapps.php:51
-#: inc/shortcodes/tomochain-event.php:81
-#: inc/shortcodes/tomochain-image-carousel.php:41
-msgid "Enable carousel loop mode"
+#: inc/shortcodes/tomochain-team.php:8
+msgid "Team"
 msgstr ""
 
-#: inc/shortcodes/tomochain-blog.php:58 inc/shortcodes/tomochain-dapps.php:61
-#: inc/shortcodes/tomochain-event.php:91
-#: inc/shortcodes/tomochain-image-carousel.php:47
-msgid "Enable carousel autolay"
-msgstr ""
-
-#: inc/shortcodes/tomochain-blog.php:64 inc/shortcodes/tomochain-dapps.php:71
-#: inc/shortcodes/tomochain-event.php:101
-#: inc/shortcodes/tomochain-image-carousel.php:53
-msgid "Auto play speed (in seconds)"
+#: inc/shortcodes/tomochain-team.php:20
+msgid "Hide by default"
 msgstr ""
 
 #: inc/shortcodes/tomochain-countdown.php:76
@@ -645,148 +635,8 @@ msgstr ""
 msgid "Year (Singular)"
 msgstr ""
 
-#: inc/shortcodes/tomochain-countdown.php:191
-#: inc/shortcodes/tomochain-roadmap-item.php:17
-msgid "Year"
-msgstr ""
-
 #: inc/shortcodes/tomochain-countdown.php:196
 msgid "Years (Plural)"
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapp.php:24 inc/shortcodes/tomochain-dapp2.php:24
-#: inc/shortcodes/tomochain-team-member.php:27
-msgid "Add image"
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapp.php:57
-msgid "DApp"
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapp.php:58 inc/shortcodes/tomochain-dapp2.php:58
-msgid "Show information of a DApp"
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapp.php:65 inc/shortcodes/tomochain-dapp2.php:65
-#: inc/shortcodes/tomochain-image-carousel-item.php:17
-#: inc/shortcodes/tomochain-team-member.php:79
-msgid "Image"
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapp.php:68 inc/shortcodes/tomochain-dapp2.php:68
-#: inc/shortcodes/tomochain-image-carousel-item.php:20
-#: inc/shortcodes/tomochain-team-member.php:82
-msgid "Select image from media library . "
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapp.php:73
-#: inc/shortcodes/tomochain-roadmap-new.php:48
-#: inc/shortcodes/tomochain-roadmap-new.php:89
-#: inc/shortcodes/tomochain-team-member.php:86
-msgid "Name"
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapp.php:80 inc/shortcodes/tomochain-dapp2.php:73
-#: inc/shortcodes/tomochain-image-carousel-item.php:32
-#: inc/shortcodes/tomochain-testnet-item.php:35
-msgid "URL"
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapp.php:86 inc/shortcodes/tomochain-dapp2.php:79
-#: inc/shortcodes/tomochain-testnet-item.php:41
-msgid "Source code URL"
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapp.php:92 inc/shortcodes/tomochain-dapp2.php:85
-#: inc/shortcodes/tomochain-roadmap-item.php:39
-#: inc/shortcodes/tomochain-team-member.php:130
-msgid "Description"
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapp2.php:57
-msgid "DApp 2"
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapps.php:16
-msgid "Dapp Layout"
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapps.php:20 inc/shortcodes/tomochain-event.php:34
-msgid "Slide"
-msgstr ""
-
-#: inc/shortcodes/tomochain-dapps.php:21 inc/shortcodes/tomochain-list.php:22
-msgid "List"
-msgstr ""
-
-#: inc/shortcodes/tomochain-event.php:16 inc/widgets/tomochain-event.php:48
-msgid "Data Source"
-msgstr ""
-
-#: inc/shortcodes/tomochain-event.php:17
-msgid "Choose the source which event will be displayed."
-msgstr ""
-
-#: inc/shortcodes/tomochain-event.php:22
-msgid "Ongoing Events"
-msgstr ""
-
-#: inc/shortcodes/tomochain-event.php:23
-msgid "Upcoming Event"
-msgstr ""
-
-#: inc/shortcodes/tomochain-event.php:24
-msgid "Past Event"
-msgstr ""
-
-#: inc/shortcodes/tomochain-event.php:29
-msgid "Event Layout"
-msgstr ""
-
-#: inc/shortcodes/tomochain-event.php:33
-msgid "Grid"
-msgstr ""
-
-#: inc/shortcodes/tomochain-event.php:46
-msgid "Columns"
-msgstr ""
-
-#: inc/shortcodes/tomochain-event.php:47
-msgid "Enter columns number"
-msgstr ""
-
-#: inc/shortcodes/tomochain-event.php:51
-msgid "2 Columns"
-msgstr ""
-
-#: inc/shortcodes/tomochain-event.php:52
-msgid "3 Columns"
-msgstr ""
-
-#: inc/shortcodes/tomochain-event.php:53
-msgid "4 Columns"
-msgstr ""
-
-#: inc/shortcodes/tomochain-image-carousel-item.php:9
-msgid "Image Carousel Item"
-msgstr ""
-
-#: inc/shortcodes/tomochain-image-carousel-item.php:25
-#: inc/shortcodes/tomochain-image-carousel.php:19
-msgid "Carousel image size"
-msgstr ""
-
-#: inc/shortcodes/tomochain-image-carousel-item.php:28
-#: inc/shortcodes/tomochain-image-carousel.php:22
-msgid ""
-"Enter image size . Example: \"thumbnail\", \"medium\", \"large\", \"full\" "
-"or other sizes defined by current theme . Alternatively enter image size in "
-"pixels: 200x100( Width x Height). Leave empty to use \"thumbnail\" size . "
-msgstr ""
-
-#: inc/shortcodes/tomochain-image-carousel-item.php:37
-#: inc/shortcodes/tomochain-video-item.php:32
-msgid "Note"
 msgstr ""
 
 #: inc/shortcodes/tomochain-image-carousel.php:8
@@ -801,127 +651,6 @@ msgstr ""
 msgid "Number of images to show"
 msgstr ""
 
-#: inc/shortcodes/tomochain-list.php:23
-msgid "Display a list"
-msgstr ""
-
-#: inc/shortcodes/tomochain-list.php:41
-msgid "List items"
-msgstr ""
-
-#: inc/shortcodes/tomochain-list.php:43
-msgid "Enter list item ( Note: divide items with linebreaks( Enter )."
-msgstr ""
-
-#: inc/shortcodes/tomochain-lottie.php:8
-msgid "Lottie"
-msgstr ""
-
-#: inc/shortcodes/tomochain-lottie.php:9
-msgid "Display a animation image from Adobe After Effect"
-msgstr ""
-
-#: inc/shortcodes/tomochain-lottie.php:16
-msgid "Images"
-msgstr ""
-
-#: inc/shortcodes/tomochain-lottie.php:19
-msgid "Select images from media library . "
-msgstr ""
-
-#: inc/shortcodes/tomochain-lottie.php:24
-msgid "JSON code"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-item.php:9
-msgid "Roadmap Item"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-item.php:18
-msgid "Enter the year (e.g. 2018)"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-item.php:25
-msgid "Quarter"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-item.php:26
-msgid "Select the quarter"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:9
-msgid "Road Map New"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:16
-msgid "Roadmap Categories"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:18
-msgid "Enter Roadmap Categories"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:25
-msgid "Add Description"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:27
-msgid "Add description for Roadmap"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:34
-msgid "Time Roadmap Update"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:36
-msgid "Enter date"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:37
-#: inc/shortcodes/tomochain-roadmap-new.php:60
-#: inc/shortcodes/tomochain-roadmap-new.php:63
-#: inc/shortcodes/tomochain-roadmap-new.php:71
-#: inc/shortcodes/tomochain-roadmap-new.php:101
-#: inc/shortcodes/tomochain-roadmap-new.php:104
-msgid "Sidebar"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:42
-msgid "Discuss with our Team"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:50
-#: inc/shortcodes/tomochain-roadmap-new.php:91
-msgid "Enter name"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:57
-#: inc/shortcodes/tomochain-roadmap-new.php:98
-msgid "Url"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:59
-#: inc/shortcodes/tomochain-roadmap-new.php:70
-#: inc/shortcodes/tomochain-roadmap-new.php:100
-msgid "Enter Url"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:68
-msgid "See all recent activities"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap-new.php:83
-msgid "Resource"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap.php:8
-msgid "Roadmap"
-msgstr ""
-
-#: inc/shortcodes/tomochain-roadmap.php:9
-msgid "TomoChain's Roadmap"
-msgstr ""
-
 #: inc/shortcodes/tomochain-social.php:8
 msgid "Social Links"
 msgstr ""
@@ -930,103 +659,39 @@ msgstr ""
 msgid "Social links of TomoChain"
 msgstr ""
 
-#: inc/shortcodes/tomochain-team-member.php:60
-msgid "Team Member"
+#: inc/shortcodes/tomochain-dapp2.php:57
+msgid "DApp 2"
 msgstr ""
 
-#: inc/shortcodes/tomochain-team-member.php:61
-msgid "Member of TomoChain"
+#: inc/shortcodes/tomochain-dapp2.php:58 inc/shortcodes/tomochain-dapp.php:58
+msgid "Show information of a DApp"
 msgstr ""
 
-#: inc/shortcodes/tomochain-team-member.php:69
-msgid "Advisor?"
+#: inc/shortcodes/tomochain-dapp2.php:79 inc/shortcodes/tomochain-dapp.php:86
+#: inc/shortcodes/tomochain-testnet-item.php:41
+msgid "Source code URL"
 msgstr ""
 
-#: inc/shortcodes/tomochain-team-member.php:74
-msgid "Hide information"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:93
-msgid "Role"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:94
-msgid "Add a role."
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:100
-msgid "Twitter"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:110
-msgid "Linkedin"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team-member.php:120
-msgid "Github"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team.php:8
-msgid "Team"
-msgstr ""
-
-#: inc/shortcodes/tomochain-team.php:20
-msgid "Hide by default"
-msgstr ""
-
-#: inc/shortcodes/tomochain-testnet-item.php:10
-msgid "Testnet Item"
-msgstr ""
-
-#: inc/shortcodes/tomochain-testnet-item.php:25
-msgid "Status"
+#: inc/shortcodes/tomochain-dapp.php:57
+msgid "DApp"
 msgstr ""
 
 #: inc/shortcodes/tomochain-testnet.php:8
 msgid "Testnet"
 msgstr ""
 
-#: inc/shortcodes/tomochain-video-item.php:10
-msgid "Video Item"
+#: inc/shortcodes/tomochain-testnet-item.php:10
+msgid "Testnet Item"
 msgstr ""
 
-#: inc/shortcodes/tomochain-video-item.php:18
-msgid "Thumbnail image"
+#: inc/shortcodes/tomochain-testnet-item.php:18 inc/post-types/event.php:143
+#: inc/post-types/dapp.php:100 inc/widgets/tomochain-event.php:40
+#: inc/widgets/tomochain-address.php:24
+msgid "Title"
 msgstr ""
 
-#: inc/shortcodes/tomochain-video-item.php:21
-msgid "Select image from media library (size 600x350). "
-msgstr ""
-
-#: inc/shortcodes/tomochain-video-item.php:26
-msgid "Youtube URL"
-msgstr ""
-
-#: inc/shortcodes/tomochain-videos.php:8
-msgid "Videos"
-msgstr ""
-
-#: inc/vc-extend.php:47
-msgid "Design Options"
-msgstr ""
-
-#: inc/vc-extend.php:49
-msgid "CSS box"
-msgstr ""
-
-#: inc/vc-extend.php:56
-msgid "Extra class name"
-msgstr ""
-
-#: inc/vc-extend.php:58
-msgid ""
-"Style particular content element differently - add a class name and refer to "
-"it in custom CSS."
-msgstr ""
-
-#: inc/vc-templates/tomochain_blog.php:89
-#: inc/vc-templates/tomochain_event.php:119
-msgid "See all our news"
+#: inc/shortcodes/tomochain-testnet-item.php:25
+msgid "Status"
 msgstr ""
 
 #: inc/vc-templates/tomochain_dapp.php:57
@@ -1034,10 +699,19 @@ msgid "Run App"
 msgstr ""
 
 #: inc/vc-templates/tomochain_dapp.php:60
-#: inc/vc-templates/tomochain_dapp2.php:61
 #: inc/vc-templates/tomochain_testnet_item.php:51
 #: inc/vc-templates/tomochain_testnet_item.php:52
+#: inc/vc-templates/tomochain_dapp2.php:61
 msgid "Source Code"
+msgstr ""
+
+#: inc/vc-templates/tomochain_team.php:43
+msgid "See all of our team"
+msgstr ""
+
+#: inc/vc-templates/tomochain_event.php:119
+#: inc/vc-templates/tomochain_blog.php:89
+msgid "See all our news"
 msgstr ""
 
 #: inc/vc-templates/tomochain_roadmap_new.php:216
@@ -1068,28 +742,416 @@ msgstr ""
 msgid "See all"
 msgstr ""
 
-#: inc/vc-templates/tomochain_roadmap_new.php:302
-msgid "ago"
-msgstr ""
-
-#: inc/vc-templates/tomochain_roadmap_new.php:317
+#: inc/vc-templates/tomochain_roadmap_new.php:328
 msgid "Discuss with our Team:"
 msgstr ""
 
-#: inc/vc-templates/tomochain_roadmap_new.php:328
+#: inc/vc-templates/tomochain_roadmap_new.php:339
 msgid "Resource:"
+msgstr ""
+
+#: inc/vc-templates/tomochain_video_item.php:40
+msgid "Play"
 msgstr ""
 
 #: inc/vc-templates/tomochain_social.php:32
 msgid "TomoChain addons plugin only works with the TomoChain theme."
 msgstr ""
 
-#: inc/vc-templates/tomochain_team.php:43
-msgid "See all of our team"
+#: inc/post-types/r-activity.php:21 inc/post-types/r-activity.php:23
+#: inc/post-types/r-activity.php:29
+msgid "Recent Activities"
 msgstr ""
 
-#: inc/vc-templates/tomochain_video_item.php:40
-msgid "Play"
+#: inc/post-types/r-activity.php:22
+msgid "Recent Activity"
+msgstr ""
+
+#: inc/post-types/r-activity.php:24 inc/post-types/event.php:30
+#: inc/post-types/road-map.php:24 inc/post-types/dapp.php:29
+msgid "Add New"
+msgstr ""
+
+#: inc/post-types/r-activity.php:25 inc/post-types/r-activity.php:27
+msgid "Add New Activity"
+msgstr ""
+
+#: inc/post-types/r-activity.php:26
+msgid "Edit Activity"
+msgstr ""
+
+#: inc/post-types/r-activity.php:28
+msgid "Search Activity"
+msgstr ""
+
+#: inc/post-types/r-activity.php:30
+msgid "No Activity items found"
+msgstr ""
+
+#: inc/post-types/r-activity.php:31
+msgid "No Activity items found in trash"
+msgstr ""
+
+#: inc/post-types/event.php:27 inc/post-types/event.php:29
+msgid "Events"
+msgstr ""
+
+#: inc/post-types/event.php:31 inc/post-types/event.php:33
+msgid "Add New Event"
+msgstr ""
+
+#: inc/post-types/event.php:32
+msgid "Edit Event"
+msgstr ""
+
+#: inc/post-types/event.php:34
+msgid "View Event"
+msgstr ""
+
+#: inc/post-types/event.php:35
+msgid "Search Event"
+msgstr ""
+
+#: inc/post-types/event.php:37
+msgid "No Event items found"
+msgstr ""
+
+#: inc/post-types/event.php:38
+msgid "No Event items found in trash"
+msgstr ""
+
+#: inc/post-types/event.php:44
+msgid "Display Events"
+msgstr ""
+
+#: inc/post-types/event.php:69
+msgid "Event Categories"
+msgstr ""
+
+#: inc/post-types/event.php:70 inc/post-types/event.php:71
+msgid "Event Category"
+msgstr ""
+
+#: inc/post-types/event.php:72
+msgid "All Event Categories"
+msgstr ""
+
+#: inc/post-types/event.php:73
+msgid "Edit Event Category"
+msgstr ""
+
+#: inc/post-types/event.php:74
+msgid "View Event Category"
+msgstr ""
+
+#: inc/post-types/event.php:75
+msgid "Update Event Category"
+msgstr ""
+
+#: inc/post-types/event.php:76
+msgid "Add New Event Category"
+msgstr ""
+
+#: inc/post-types/event.php:77
+msgid "New Event Category Name"
+msgstr ""
+
+#: inc/post-types/event.php:78
+msgid "Parent Event Category"
+msgstr ""
+
+#: inc/post-types/event.php:79
+msgid "Parent Event Category:"
+msgstr ""
+
+#: inc/post-types/event.php:80
+msgid "Search Event Category"
+msgstr ""
+
+#: inc/post-types/event.php:81
+msgid "Popular Event Category"
+msgstr ""
+
+#: inc/post-types/event.php:82
+msgid "Separate Event Category with commas"
+msgstr ""
+
+#: inc/post-types/event.php:83
+msgid "Add or remove Event Category"
+msgstr ""
+
+#: inc/post-types/event.php:84
+msgid "Choose from the most used Event Categories"
+msgstr ""
+
+#: inc/post-types/event.php:85
+msgid "No Event Category found"
+msgstr ""
+
+#: inc/post-types/event.php:144 inc/post-types/dapp.php:101
+msgid "Thumbnail"
+msgstr ""
+
+#: inc/post-types/event.php:145
+msgid "Start Event"
+msgstr ""
+
+#: inc/post-types/event.php:146
+msgid "Close Event"
+msgstr ""
+
+#: inc/post-types/road-map.php:21 inc/post-types/road-map.php:23
+msgid "Road Maps"
+msgstr ""
+
+#: inc/post-types/road-map.php:22
+msgid "Road Map"
+msgstr ""
+
+#: inc/post-types/road-map.php:25 inc/post-types/road-map.php:27
+msgid "Add New Road Map"
+msgstr ""
+
+#: inc/post-types/road-map.php:26
+msgid "Edit Road Map"
+msgstr ""
+
+#: inc/post-types/road-map.php:28
+msgid "Search Road Map"
+msgstr ""
+
+#: inc/post-types/road-map.php:29
+msgid "All Road Maps"
+msgstr ""
+
+#: inc/post-types/road-map.php:30
+msgid "No Road Map items found"
+msgstr ""
+
+#: inc/post-types/road-map.php:31
+msgid "No Road Map items found in trash"
+msgstr ""
+
+#: inc/post-types/road-map.php:54
+msgid "Road Map Categories"
+msgstr ""
+
+#: inc/post-types/road-map.php:55 inc/post-types/road-map.php:56
+msgid "Road Map Category"
+msgstr ""
+
+#: inc/post-types/road-map.php:57
+msgid "All Road Map Categories"
+msgstr ""
+
+#: inc/post-types/road-map.php:58
+msgid "Edit Road Map Category"
+msgstr ""
+
+#: inc/post-types/road-map.php:59
+msgid "View Road Map Category"
+msgstr ""
+
+#: inc/post-types/road-map.php:60
+msgid "Update Road Map Category"
+msgstr ""
+
+#: inc/post-types/road-map.php:61
+msgid "Add New Road Map Category"
+msgstr ""
+
+#: inc/post-types/road-map.php:62
+msgid "New Road Map Category Name"
+msgstr ""
+
+#: inc/post-types/road-map.php:63
+msgid "Parent Road Map Category"
+msgstr ""
+
+#: inc/post-types/road-map.php:64
+msgid "Parent Road Map Category:"
+msgstr ""
+
+#: inc/post-types/road-map.php:65
+msgid "Search Road Map Category"
+msgstr ""
+
+#: inc/post-types/road-map.php:66
+msgid "Popular Road Map Category"
+msgstr ""
+
+#: inc/post-types/road-map.php:67
+msgid "Separate Road Map Category with commas"
+msgstr ""
+
+#: inc/post-types/road-map.php:68
+msgid "Add or remove Road Map Category"
+msgstr ""
+
+#: inc/post-types/road-map.php:69
+msgid "Choose from the most used Road Map Categories"
+msgstr ""
+
+#: inc/post-types/road-map.php:70
+msgid "No Road Map Category found"
+msgstr ""
+
+#: inc/post-types/dapp.php:27
+msgid "Dapp"
+msgstr ""
+
+#: inc/post-types/dapp.php:30 inc/post-types/dapp.php:32
+msgid "Add New Dapp"
+msgstr ""
+
+#: inc/post-types/dapp.php:31
+msgid "Edit Dapp"
+msgstr ""
+
+#: inc/post-types/dapp.php:33
+msgid "Search Dapp"
+msgstr ""
+
+#: inc/post-types/dapp.php:34
+msgid "All Dapps"
+msgstr ""
+
+#: inc/post-types/dapp.php:35
+msgid "No Dapp items found"
+msgstr ""
+
+#: inc/post-types/dapp.php:36
+msgid "No Dapp items found in trash"
+msgstr ""
+
+#: inc/post-types/dapp.php:59
+msgid "Dapp Categories"
+msgstr ""
+
+#: inc/post-types/dapp.php:60 inc/post-types/dapp.php:61
+msgid "Dapp Category"
+msgstr ""
+
+#: inc/post-types/dapp.php:62
+msgid "All Dapp Categories"
+msgstr ""
+
+#: inc/post-types/dapp.php:63
+msgid "Edit Dapp Category"
+msgstr ""
+
+#: inc/post-types/dapp.php:64
+msgid "View Dapp Category"
+msgstr ""
+
+#: inc/post-types/dapp.php:65
+msgid "Update Dapp Category"
+msgstr ""
+
+#: inc/post-types/dapp.php:66
+msgid "Add New Dapp Category"
+msgstr ""
+
+#: inc/post-types/dapp.php:67
+msgid "New Dapp Category Name"
+msgstr ""
+
+#: inc/post-types/dapp.php:68
+msgid "Parent Dapp Category"
+msgstr ""
+
+#: inc/post-types/dapp.php:69
+msgid "Parent Dapp Category:"
+msgstr ""
+
+#: inc/post-types/dapp.php:70
+msgid "Search Dapp Category"
+msgstr ""
+
+#: inc/post-types/dapp.php:71
+msgid "Popular Dapp Category"
+msgstr ""
+
+#: inc/post-types/dapp.php:72
+msgid "Separate Dapp Category with commas"
+msgstr ""
+
+#: inc/post-types/dapp.php:73
+msgid "Add or remove Dapp Category"
+msgstr ""
+
+#: inc/post-types/dapp.php:74
+msgid "Choose from the most used Dapp Categories"
+msgstr ""
+
+#: inc/post-types/dapp.php:75
+msgid "No Dapp Category found"
+msgstr ""
+
+#: inc/post-types/dapp.php:102
+msgid "Start Dapp"
+msgstr ""
+
+#: inc/post-types/dapp.php:103
+msgid "Close Dapp"
+msgstr ""
+
+#: inc/widgets/tomochain-sendgrid.php:27
+msgid "TOMOCHAIN Sendgrid"
+msgstr ""
+
+#: inc/widgets/tomochain-sendgrid.php:28
+msgid "SendGrid Marketing Campaigns Subscription Widget."
+msgstr ""
+
+#: inc/widgets/tomochain-sendgrid.php:33
+msgid "Message to display before subscription form:"
+msgstr ""
+
+#: inc/widgets/tomochain-sendgrid.php:41
+msgid "Message to display for errors:"
+msgstr ""
+
+#: inc/widgets/tomochain-sendgrid.php:49
+msgid "Message to display for invalid email address:"
+msgstr ""
+
+#: inc/widgets/tomochain-sendgrid.php:57
+msgid "Message to display for success:"
+msgstr ""
+
+#: inc/widgets/tomochain-sendgrid.php:83
+msgid "Subscribe"
+msgstr ""
+
+#: inc/widgets/tomochain-sendgrid.php:113
+msgid "Invalid Email."
+msgstr ""
+
+#: inc/widgets/tomochain-sendgrid.php:122
+#: inc/widgets/tomochain-sendgrid.php:130
+msgid "A confirmation email has been sent, please check your inbox."
+msgstr ""
+
+#: inc/widgets/tomochain-sendgrid.php:127
+msgid ""
+"A confirmation email has been sent successfully, please check your inbox."
+msgstr ""
+
+#: inc/widgets/tomochain-event.php:27
+msgid "TOMOCHAIN - Event"
+msgstr ""
+
+#: inc/widgets/tomochain-event.php:28
+msgid "Your site's most Events."
+msgstr ""
+
+#: inc/widgets/tomochain-event.php:55
+msgid "Enter numbers of events"
+msgstr ""
+
+#: inc/widgets/wph-widget-class.php:843
+msgid "Any Categories"
 msgstr ""
 
 #: inc/widgets/tomochain-address.php:18
@@ -1148,109 +1210,12 @@ msgstr ""
 msgid "Address 6"
 msgstr ""
 
-#: inc/widgets/tomochain-event.php:27
-msgid "TOMOCHAIN - Event"
-msgstr ""
-
-#: inc/widgets/tomochain-event.php:28
-msgid "Your site's most Events."
-msgstr ""
-
-#: inc/widgets/tomochain-event.php:55
-msgid "Enter numbers of events"
-msgstr ""
-
 #: inc/widgets/tomochain-recent-posts.php:22
 msgid "TOMOCHAIN - Recent Posts"
 msgstr ""
 
 #: inc/widgets/tomochain-recent-posts.php:23
 msgid "Your site's most recent Posts."
-msgstr ""
-
-#: inc/widgets/tomochain-recent-posts.php:126
-msgid "Show post thumbnail"
-msgstr ""
-
-#: inc/widgets/tomochain-recent-posts.php:134
-msgid "Show post title"
-msgstr ""
-
-#: inc/widgets/tomochain-recent-posts.php:141
-msgid "Show excerpt"
-msgstr ""
-
-#: inc/widgets/tomochain-recent-posts.php:148
-msgid "Show meta"
-msgstr ""
-
-#: inc/widgets/tomochain-recent-posts.php:153
-msgid "Enter numbers of articles"
-msgstr ""
-
-#: inc/widgets/tomochain-sendgrid.php:27
-msgid "TOMOCHAIN Sendgrid"
-msgstr ""
-
-#: inc/widgets/tomochain-sendgrid.php:28
-msgid "SendGrid Marketing Campaigns Subscription Widget."
-msgstr ""
-
-#: inc/widgets/tomochain-sendgrid.php:33
-msgid "Message to display before subscription form:"
-msgstr ""
-
-#: inc/widgets/tomochain-sendgrid.php:41
-msgid "Message to display for errors:"
-msgstr ""
-
-#: inc/widgets/tomochain-sendgrid.php:49
-msgid "Message to display for invalid email address:"
-msgstr ""
-
-#: inc/widgets/tomochain-sendgrid.php:57
-msgid "Message to display for success:"
-msgstr ""
-
-#: inc/widgets/tomochain-sendgrid.php:83
-msgid "Subscribe"
-msgstr ""
-
-#: inc/widgets/tomochain-sendgrid.php:113
-msgid "Invalid Email."
-msgstr ""
-
-#: inc/widgets/tomochain-sendgrid.php:122
-#: inc/widgets/tomochain-sendgrid.php:130
-msgid "A confirmation email has been sent, please check your inbox."
-msgstr ""
-
-#: inc/widgets/tomochain-sendgrid.php:127
-msgid ""
-"A confirmation email has been sent successfully, please check your inbox."
-msgstr ""
-
-#: inc/widgets/wph-widget-class.php:843
-msgid "Any Categories"
-msgstr ""
-
-#: templates/content-single-event.php:37
-msgid "Pages:"
-msgstr ""
-
-#: tomochain-addons.php:49
-#, php-format
-msgid ""
-"<strong>%s</strong> requires <strong><a href=\"http://bit.ly/vcomposer\" "
-"target=\"_blank\">WPBakery Page Builder</a></strong> plugin to be installed "
-"and activated on your site."
-msgstr ""
-
-#: tomochain-addons.php:57
-#, php-format
-msgid ""
-"<strong>%s</strong> requires <strong>TomoChain</strong> theme to be "
-"installed and activated on your site."
 msgstr ""
 
 #. Plugin Name of the plugin/theme
