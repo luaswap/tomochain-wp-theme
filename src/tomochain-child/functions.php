@@ -22,10 +22,12 @@ if ( ! function_exists( 'tomochain_child_enqueue_scripts' ) ) {
             true );
 
         global $post;
-        $post_slug = $post->post_name;
+        if (!is_null($post)) {
+            $post_slug = $post->post_name;
 
-        if ($post_slug == 'mainnet') {
-            wp_enqueue_script( 'waypoints' );
+            if ($post_slug == 'mainnet') {
+                wp_enqueue_script( 'waypoints' );
+            }
         }
 
         // Enqueue BS Script for Dev.
