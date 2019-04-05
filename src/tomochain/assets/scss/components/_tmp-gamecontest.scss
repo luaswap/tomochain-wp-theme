@@ -162,6 +162,9 @@
 			display: flex;
 			align-items: center;
 			justify-content: flex-end;
+			@media only screen and (max-width: 767px) {
+				justify-content: space-between;
+			}
 			.txt-title {
 				font-size: 14px;
 				margin-right: 15px;
@@ -177,6 +180,9 @@
 					position: relative;
 					line-height: 1.4;
 					text-align: center;
+					@media only screen and (max-width: 767px) {
+						padding: 5px 7px;
+					}
 					&:before {
 						content: ":";
 						color: #fff;
@@ -273,6 +279,9 @@
 .con-game-contest {
 	margin: 15px 0 30px;
 	color: #4c4c4c;
+	.wpb_content_element {
+		margin: 0!important;
+	}
 	.tab-pane-tomo {
 		.row {
 			align-items: flex-start;

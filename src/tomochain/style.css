@@ -11698,6 +11698,8 @@ article.post-loop {
 .con-game-contest {
   margin: 15px 0 30px;
   color: #4c4c4c; }
+  .con-game-contest .wpb_content_element {
+    margin: 0 !important; }
   .con-game-contest .tab-pane-tomo .row {
     -webkit-box-align: start;
         -ms-flex-align: start;
@@ -19505,14 +19507,13 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
   .table .thead-dark th {
     color: inherit;
     border-color: #dee2e6; } }
-  @media (max-width: 767px) {
-    .site-footer .widget_tomo_sendgrid {
-      display: block;
-      float: none;
-      width: 100%; }
-    .site-footer .site-info {
-      text-align: center; } }
   @media only screen and (max-width: 767px) {
+    .tab-game-contest .tomochain-contest-countdown .box-countdown {
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+        .tab-game-contest .tomochain-contest-countdown .box-countdown .inner-countdown .txt-clock {
+          padding: 5px 7px; }
       .con-game-contest .box-infor-ct .game-avatar {
         padding: 15px; }
           .con-game-contest .box-content-ct .card .card-body.tutorial {
@@ -19520,6 +19521,13 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
             padding-right: 15px; }
             .con-game-contest .box-content-ct .card .card-body.tutorial .media-body {
               padding-left: 15px; } }
+  @media (max-width: 767px) {
+    .site-footer .widget_tomo_sendgrid {
+      display: block;
+      float: none;
+      width: 100%; }
+    .site-footer .site-info {
+      text-align: center; } }
   @media only screen and (max-width: 991px) {
       .tomo-modal-timeline .img_timeline h2 {
         font-size: 18px; } }
