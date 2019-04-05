@@ -10484,6 +10484,9 @@ This is where majority of our work takes place and our UI components are often c
     -webkit-transform: translateY(-100%);
             transform: translateY(-100%); }
 
+.grecaptcha-badge {
+  opacity: 0; }
+
 /**-------------------------------
 	Define CSS - Common
 ----------------------------------**/
