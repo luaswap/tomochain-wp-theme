@@ -30,6 +30,7 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
     } else {
         $paged   = get_query_var( 'paged' ) ? intval( get_query_var( 'paged' ) ) : 1;
     }
+    $per_page = get_field('dapp_per_page','options') ? get_field('dapp_per_page','options') : 12;
     $args = array(
         'post_type'      => 'dapp',
         'post_status'    => 'publish',
@@ -39,61 +40,86 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
         'paged'          => $paged
     );
     $dapps = new WP_Query($args);
-
     wp_reset_postdata();
     if('slide' == $dapp_layout) wp_enqueue_script( 'slick-carousel' );
 ?>
 <div class="<?php echo esc_attr( trim( $css_class ) ); ?>">
     <div class="dapp-<?php echo esc_attr($dapp_layout);?>" <?php if('slide' == $dapp_layout):?>data-atts="<?php echo esc_attr( json_encode( $atts ) ); ?>"<?php endif;?>>
-        <?php tomochain_dapp_filter($per_page,$paged);?>
+        <?php if('list' == $dapp_layout):
+            $categories = get_terms( array(
+                'taxonomy' => 'dapp_category',
+                'hide_empty' => true,
+                'orderby' => 'name',
+                'order'   => 'ASC'
+            ) );
+            ?>
+            <ul class="tomochain-dapp-filter">
+            <li class="selected"><a href="<?php echo get_post_type_archive_link('dapp')?>"><?php echo get_post_type_object('dapp')->labels->all_items;?></a></li>
+
+            <?php 
+            foreach ( $categories as $category ) {
+                $category_link = sprintf(
+                    '<a href="%1$s" alt="%2$s">%3$s</a>',
+                    esc_url( get_category_link( $category->term_id ) ),
+                    esc_attr( sprintf( esc_html__( 'View all posts in %s', 'tomochain' ), $category->name ) ),
+                    esc_html( $category->name )
+                );
+
+                echo '<li>' . sprintf( esc_html__( '%s', 'tomochain' ), $category_link ) . '</li> ';
+            }
+            ?>
+            </ul>
         <div class="tomochain-dapp-main">
-            <div class="dapp-posts">
-                <div class="inner">
-                    <?php if( $dapps->have_posts() ):
-                        while( $dapps->have_posts() ): $dapps->the_post();
-                        $custom_url = get_field('dapp_custom_url');
-                        $contract_address_url = get_field('contract_address_url');
-                        $open_new_tab = get_field('dapp_open_in_new_tab') ? '__blank' : '';
+        <?php endif;?>
+            <?php if( $dapps->have_posts() ):
+                while( $dapps->have_posts() ): $dapps->the_post();
+                $custom_url = get_field('dapp_custom_url');
+                $contract_address_url = get_field('contract_address_url');
+                $open_new_tab = get_field('dapp_open_in_new_tab') ? '__blank' : '';
+            ?>
+            <div class="tomochain-dapp-item">
+                <div class="dapp-thumbnail">
+                    <?php
+                    if (get_field('image') && 'slide' == $dapp_layout) {
+                        echo wp_get_attachment_image(get_field('image'), 'tomo-post-small-thumbnail');
+                    }elseif(has_post_thumbnail() && 'slide' != $dapp_layout) {
+                        the_post_thumbnail('tomo-post-thumbnail');
+                    }else{ 
+                        $img_url = get_template_directory_uri() . '/assets/images/image-shortcode.jpg';
                     ?>
-                    <div class="tomochain-dapp-item">
-                        <div class="dapp-thumbnail">
-                            <?php
-                            if(has_post_thumbnail()) {
-                                the_post_thumbnail('tomo-post-thumbnail');
-                            }else{ $img_url = get_template_directory_uri() . '/assets/images/image-shortcode.jpg';
-                            ?>
-                                <img src="<?php echo esc_url($img_url);?>" alt="<?php echo esc_attr(get_the_title());?>">
-                            <?php }?>
-                        </div>
-                        <div class="dapp-info">
-                            <h3 class="dapp-title text-truncate">
-                                <?php echo the_title(); ?>
-                            </h3>
-                            <div class="dapp-content">
-                                <?php the_content();?>
-                            </div>
-                            <div class="tomo_btn_tmp_trans box_flexbox">
-                                <?php if($custom_url):?>
-                                    <a class="more-info" href="<?php echo esc_url($custom_url)?>" target="<?php echo esc_attr($open_new_tab); ?>">
-                                        <?php echo esc_html__('More Info','tomochain-addons')?>
-                                    </a>
-                                <?php endif;?>
-                                <?php if($contract_address_url):?>
-                                    <a href="<?php echo esc_url($contract_address_url)?>" target="<?php echo esc_attr($open_new_tab); ?>">
-                                        <?php echo esc_html__('Contract Address','tomochain-addons')?>
-                                    </a>
-                                <?php endif;?>
-                            </div>
-                        </div>
-                    </div>
-                    <?php endwhile; ?>
-                    <?php endif;?>
+                        <img src="<?php echo esc_url($img_url);?>" alt="<?php echo esc_attr(get_the_title());?>">
+                    <?php }?>
                 </div>
-                <?php
-                if($dapps->max_num_pages > 1)
-                    tomochain_ajax_pagination($dapps,$paged);
-                ?>
+                <div class="dapp-info">
+                    <h3 class="dapp-title text-truncate">
+                        <?php echo the_title(); ?>
+                    </h3>
+                    <?php if('list' == $dapp_layout):?>
+                        <div class="dapp-content">
+                            <?php the_content();?>
+                        </div>
+                    <?php endif;?>
+                    <div class="tomo_btn_tmp_trans box_flexbox">
+                        <?php if($custom_url):?>
+                            <a class="more-info" href="<?php echo esc_url($custom_url)?>" target="<?php echo esc_attr($open_new_tab); ?>">
+                                <?php echo esc_html__('More Info','nootheme')?>
+                            </a>
+                        <?php endif;?>
+                        <?php if($contract_address_url):?>
+                            <a href="<?php echo esc_url($contract_address_url)?>" target="<?php echo esc_attr($open_new_tab); ?>">
+                                <?php echo esc_html__('Contract Address','nootheme')?>
+                            </a>
+                        <?php endif;?>
+                    </div>
+                </div>
             </div>
+            <?php endwhile; ?>
+            <?php endif;?>
+            <?php
+            if($dapps->max_num_pages > 1 && 'list' == $dapp_layout):
+                tomochain_dapp_pagination($dapps);
+            ?>
         </div>
+    <?php endif?>
     </div>
 </div>

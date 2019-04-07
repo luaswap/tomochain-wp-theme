@@ -6,7 +6,7 @@
                 return;
             }
 
-            $(document).on('click', '.tomo-categories-filter a, .page-numbers a', function(e){
+            $(document).on('click', '.tomo-categories-filter a, .tomochain-pagination .page-numbers a', function(e){
 
                 e.preventDefault();
 
@@ -31,7 +31,7 @@
                 });
             });
 
-            $( document ).on('click', '.page-numbers a', function() {
+            $( document ).on('click', '.tomochain-pagination .page-numbers a', function() {
                 $('html, body').animate({
                     scrollTop: $( '.tomo-categories-filter' ).offset().top - 100
                 }, 400);
