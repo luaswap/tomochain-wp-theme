@@ -23,5 +23,11 @@ get_template_part('headerldetr'); ?>
 	</main><!-- #main -->
 </div><!-- #primary -->
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script>
+    var boxsubmit = jQuery('.wpcf7' );
+    boxsubmit[0].addEventListener( 'wpcf7mailsent', function( event ) {
+    	jQuery('#enterModalCenter').modal('hide');
+    }, false );
+</script>
 <?php
 get_template_part('footer'); ?>

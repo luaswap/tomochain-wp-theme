@@ -42,7 +42,7 @@
 				height: 430px!important;
 			}
 			.list-recent {
-				height: 220px!important;
+				height: 310px!important;
 			}
 			.container {
 				max-width: 1060px;
@@ -58,7 +58,7 @@
 				height: 530px!important;
 			}
 			.list-recent {
-				height: 310px!important;
+				height: 400px!important;
 			}
 			.container {
 				max-width: 1060px;
@@ -348,6 +348,7 @@
 .tomochain-activities {
 	.box-countdown {
 		border-bottom: 1px solid #394472;
+		display: none;
 		.txt-title {
 			font-size: 14px;
 			margin: 0;
@@ -413,7 +414,7 @@
 			border-right: 1px solid #394472;
 			.list-recent {
 				padding-left: 5px;
-				max-height: 385px;
+				max-height: 475px;
 				font-size: 13px;
 				overflow-y: auto;
 

@@ -11249,6 +11249,8 @@ article.post-loop {
     text-transform: capitalize; }
     .page-template-tmp-enterprise .enterprise .site-header .header-tools .nice-select:after {
       color: #fff; }
+  .page-template-tmp-enterprise .enterprise .site-header .header-tools ul li:nth-child(2), .page-template-tmp-enterprise .enterprise .site-header .header-tools ul li:nth-child(3), .page-template-tmp-enterprise .enterprise .site-header .header-tools ul li:nth-child(5) {
+    display: none; }
   .page-template-tmp-enterprise .enterprise .site-content {
     background: transparent;
     position: inherit;
@@ -11384,7 +11386,7 @@ article.post-loop {
     top: 0; }
 
 .page-template-tmp-enterprise .con_publications .box-item .wpb_single_image {
-  margin-bottom: 0;
+  margin-bottom: 0 !important;
   position: relative; }
   .page-template-tmp-enterprise .con_publications .box-item .wpb_single_image:before {
     content: '';
@@ -11400,7 +11402,7 @@ article.post-loop {
 
 .page-template-tmp-enterprise .con_publications .box-item .txt-content {
   background: #f3f3f3;
-  padding: 25px;
+  padding: 25px 20px;
   margin-left: 15px;
   margin-bottom: 0; }
   .page-template-tmp-enterprise .con_publications .box-item .txt-content a {
@@ -11429,18 +11431,40 @@ article.post-loop {
         min-width: 250px; }
 
 .btn-enterprise .btn-primary {
-  background: #fff;
+  background: #ff7c4d;
   border: 0;
   border-radius: 0;
   padding: 1em;
   font-weight: 600;
-  color: #151515;
+  color: #fff;
   min-width: 250px;
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
   .btn-enterprise .btn-primary:active, .btn-enterprise .btn-primary:hover {
-    background: #151515 !important;
-    color: #fff; }
+    background: #fff !important;
+    color: #151515 !important; }
+
+.page-template-tmp-enterprise .vc_btn3.vc_btn3-color-black {
+  background: #ff7c4d !important;
+  color: #fff !important;
+  border: 1px solid #ff7c4d !important;
+  min-width: 240px;
+  text-align: center; }
+  .page-template-tmp-enterprise .vc_btn3.vc_btn3-color-black:active, .page-template-tmp-enterprise .vc_btn3.vc_btn3-color-black:hover {
+    background: #fff !important;
+    color: #151515 !important;
+    border: 1px solid #151515 !important; }
+
+.page-template-tmp-enterprise .vc_btn3.vc_btn3-color-white {
+  background: #fff !important;
+  color: #151515 !important;
+  border: 1px solid #151515 !important;
+  min-width: 240px;
+  text-align: center; }
+  .page-template-tmp-enterprise .vc_btn3.vc_btn3-color-white:active, .page-template-tmp-enterprise .vc_btn3.vc_btn3-color-white:hover {
+    background: #ff7c4d !important;
+    color: #fff !important;
+    border: 1px solid #ff7c4d !important; }
 
 .form-enterprise .txt-tile {
   font-size: 18px;
@@ -11477,7 +11501,8 @@ article.post-loop {
     border: 1px solid #cacaca;
     padding: .8em 1em;
     color: #151515;
-    width: 100%; }
+    width: 100%;
+    height: 45px; }
   .form-enterprise .form-group textarea {
     height: 150px; }
   .form-enterprise .form-group br {
@@ -11495,8 +11520,8 @@ article.post-loop {
   font-style: italic; }
 
 .form-enterprise .btn-submit .enr-submit {
-  background: #151515;
-  border: 1px solid #151515;
+  background: #ff7c4d;
+  border: 1px solid #ff7c4d;
   border-radius: 0;
   color: #fff;
   display: block;
@@ -11509,10 +11534,8 @@ article.post-loop {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
   .form-enterprise .btn-submit .enr-submit:active, .form-enterprise .btn-submit .enr-submit:hover {
-    background: #151515 !important;
-    color: #fff;
-    -webkit-box-shadow: 0 5px 12px -1px #555;
-            box-shadow: 0 5px 12px -1px #555; }
+    background: #e3673b !important;
+    color: #fff; }
 
 .page-template-tmp-enterprise .con_social_emterprise {
   position: absolute;
@@ -11524,6 +11547,9 @@ article.post-loop {
     content: "" !important; }
   .page-template-tmp-enterprise .con_social_emterprise .social-links {
     margin: 0 -5px; }
+
+.con_media_section .wpb_content_element {
+  margin-bottom: 15px !important; }
 
 /**-------------------------------
 	Define CSS - Common
@@ -12031,7 +12057,7 @@ article.post-loop {
     text-align: center; }
 
 .tomo-modal {
-  padding: 30px; }
+  padding: 25px; }
   .tomo-modal .wpcf7-display-none {
     margin: 0;
     padding: 0;
@@ -12724,7 +12750,8 @@ article.post-loop {
       color: #2b96ff; }
 
 .tomochain-activities .box-countdown {
-  border-bottom: 1px solid #394472; }
+  border-bottom: 1px solid #394472;
+  display: none; }
   .tomochain-activities .box-countdown .txt-title {
     font-size: 14px;
     margin: 0; }
@@ -12783,7 +12810,7 @@ article.post-loop {
     border-right: 1px solid #394472; }
     .tomochain-activities .box-activities .box_latest_commit .list-recent {
       padding-left: 5px;
-      max-height: 385px;
+      max-height: 475px;
       font-size: 13px;
       overflow-y: auto;
       scrollbar-color: #394472 transparent;
@@ -16072,14 +16099,15 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
   .tomo_iframe_gaming {
     padding-right: 10%; }
   .tomochain_slider_press .slick-slider {
-    padding-right: 100%;
-    margin-right: -100%;
+    /*padding-right: 100%;
+			margin-right: -100%;*/
     overflow: hidden;
     position: inherit; }
     .tomochain_slider_press .slick-slider .slick-arrow.slick-prev {
       left: 60px; }
     .tomochain_slider_press .slick-slider .slick-list {
-      overflow: visible; }
+      /*overflow: visible;*/
+      margin: 0 -15px; }
     article.post-loop .entry-title {
       font-size: 20px; }
     article.post-loop .entry-title {
@@ -16347,7 +16375,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
             color: #ff7c4d; }
             .flexbox_solutions .tomochain_slider_nav .txt_item.slick-current h3:before {
               content: "→";
-              color: #ff7c4d;
               font-size: 24px;
               line-height: .9;
               position: absolute;
@@ -16419,11 +16446,10 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
             .flexbox_tecnologies .tomochain_slider_tecnologies .txt_item .tecnologies p {
               margin: 0; }
           .flexbox_tecnologies .tomochain_slider_tecnologies .txt_item.slick-current h3 {
-            color: #151515;
+            color: #ff7c4d;
             font-weight: bold; }
             .flexbox_tecnologies .tomochain_slider_tecnologies .txt_item.slick-current h3:before {
               content: "→";
-              color: #151515;
               font-size: 24px;
               line-height: .7;
               position: absolute;
@@ -17847,7 +17873,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       .page-template-tmp-roadmap .entry-content .list-box {
         height: 430px !important; }
       .page-template-tmp-roadmap .entry-content .list-recent {
-        height: 220px !important; }
+        height: 310px !important; }
       .page-template-tmp-roadmap .entry-content .container {
         max-width: 1060px; } }
   @media only screen and (min-width: 1025px) and (max-width: 1366px) {
@@ -18574,7 +18600,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .page-template-tmp-roadmap .entry-content .list-box {
       height: 530px !important; }
     .page-template-tmp-roadmap .entry-content .list-recent {
-      height: 310px !important; }
+      height: 400px !important; }
     .page-template-tmp-roadmap .entry-content .container {
       max-width: 1060px; } }
   @media only screen and (min-width: 1440px) {

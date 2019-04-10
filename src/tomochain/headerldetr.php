@@ -16,8 +16,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="https://lab.alexcican.com/set_cookies/cookie.js"></script>
 	<?php wp_head(); ?>
 </head>
 
@@ -56,9 +54,9 @@
 
 				<div class="header-tools">
 					<?php
-						// if ( function_exists('get_field') && ! get_field('hide_language_switcher') ) {
-						// 	tomochain_lang_switcher();
-						// }
+						if ( function_exists('get_field') && ! get_field('hide_language_switcher') ) {
+							tomochain_lang_switcher();
+						}
 						tomochain_mobile_menu_btn();
 					?>
 				</div><!-- .header-tools-->
