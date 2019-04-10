@@ -37,7 +37,7 @@
                     success: function ( data ) {
                         $wrapper.removeClass('loading');
 
-                        var posts = $(data).html();
+                        var posts = $($(data).find('.tomochain-dapp-main').html());
                         $wrapper.html(posts);
                     }
                 });
