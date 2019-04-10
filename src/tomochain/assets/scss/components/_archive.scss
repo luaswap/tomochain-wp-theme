@@ -1,13 +1,11 @@
-.tomo-archive-wrapper,
-.tomochain-dapp-main {
-
+.tomo-archive-wrapper {
     .archive-posts {
         @extend %transit;
     }
 
     &.loading {
         position: relative;
-        text-align: center;
+        //text-align: center;
 
         &:before {
             content: url(assets/images/loading.svg) !important;
@@ -20,6 +18,25 @@
 
         .archive-posts,
         .dapp-posts {
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+}
+.tomochain-dapp-main{
+    &.loading {
+        position: relative;
+        //text-align: center;
+
+        &:before {
+            content: url(assets/images/loading.svg) !important;
+            display: block;
+            position: absolute;
+            top: 50px;
+            left: 50%;
+            transform: translateX(-50%) scale(1.5);
+        }
+        .tomochain-dapp-item {
             opacity: 0;
             visibility: hidden;
         }

@@ -22,7 +22,7 @@ var tomochain
                         this.event();
                         this.blog();
                         this.categories_filter();
-                        this.dapp_filter();
+                        this.dapp_categories_filter();
                         this.road_filter();
                     }
                 }
@@ -86,7 +86,7 @@ var tomochain
                 return;
             }
 
-            $(document).on('click', '.tomo-categories-filter a, .page-numbers a', function(e){
+            $(document).on('click', '.tomo-categories-filter a, .tomochain-pagination .page-numbers a', function(e){
 
                 e.preventDefault();
 
@@ -111,7 +111,7 @@ var tomochain
                 });
             });
 
-            $( document ).on('click', '.page-numbers a', function() {
+            $( document ).on('click', '.tomochain-pagination .page-numbers a', function() {
                 $('html, body').animate({
                     scrollTop: $( '.tomo-categories-filter' ).offset().top - 100
                 }, 400);
@@ -138,63 +138,57 @@ var tomochain
             $(".btn_submit_dapp").fadeIn("slow");
             $(".main_form_dapp").fadeOut("slow");
         });
-
-        tomochain.dapp_get_post = function ($params) {
-
-            var $wrapper = $('.tomochain-dapp-main');
-                $wrapper.addClass('loading');
-            $.ajax({
-                url: tomochainConfigs.ajax_url,
-                type: 'POST',
-                data: ({
-                    action: 'tomochain_dapp_ajax',
-                    params: $params
-                }),
-                dataType: 'html',
-
-                success: function ( data ) {
-                    $wrapper.removeClass('loading');
-                    $wrapper.html(data);
-                }
-            });
-        }
     }
 )(jQuery);
 (
     function ($) {
-        tomochain.dapp_filter = function () {
+        tomochain.dapp_categories_filter = function () {
 
-            if ( $( '.tomochain-dapp-filter' ).length < 1) {
+            if ( ! $( '.tomochain-dapp-filter' ).length ) {
                 return;
             }
 
-            $(document).on('click', 'a[data-filter],.dapp-pagination a', function(e){
+            $(document).on('click', '.tomochain-dapp-filter a, .tomochain-dapp-pagination .page-numbers a', function(e){
 
                 e.preventDefault();
 
-                var $_this   = $(this);
-                if($_this.data('filter')){
-                    var page = $_this.parents('.tomochain-dapp-filter').attr('data-page');
-                    $_this.closest('ul').find('.selected').removeClass('selected');
-                    $_this.parent('li').addClass('selected');
-                }else {
-                    /**
-                     * Pagination
-                     */
-                    var page = parseInt($_this.attr('href').replace(/\D/g,''));
-                    $_this = $('.tomochain-dapp-filter .selected a');
-                }
-                var $params    = {
-                    'page' : page,
-                    'id'  :  $_this.attr('data-filter'),
-                    'per_page'  : $_this.parents('.tomochain-dapp-filter').attr('data-number')
-                };
-                tomochain.dapp_get_post($params);
+                var $_this   = $(this),
+                    url      = $(this).attr('href'),
+                    $wrapper = $('.tomochain-dapp-main');
+
+                $wrapper.addClass('loading');
+
+                url = url.replace(/\/?(\?|#|$)/, "/$1");
+
+                $.ajax({
+                    url: url,
+                    dataType: 'html',
+
+                    success: function ( data ) {
+                        $wrapper.removeClass('loading');
+
+                        var posts = $(data).html();
+                        $wrapper.html(posts);
+                    }
+                });
+            });
+
+            $( document ).on('click', '.tomochain-dapp-pagination .page-numbers a', function() {
+                $('html, body').animate({
+                    scrollTop: $( '.tomochain-dapp-filter' ).offset().top - 100
+                }, 400);
+            });
+
+            $( document ).on('click', '.tomochain-dapp-filter a', function(e){
+
+                e.preventDefault();
+
+                $('.tomochain-dapp-filter li').removeClass('selected');
+                $(this).parent().addClass('selected');
             });
         }
     }
 )(jQuery);
-
 (function($) {
     // smoothScroll
     $(function(){
