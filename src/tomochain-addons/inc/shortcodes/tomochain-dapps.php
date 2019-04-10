@@ -22,12 +22,12 @@ vc_map( array(
             ),
             'std'        => 'list'
         ),
-        array(
-            'type'       => 'textfield',
-            'param_name' => 'per_page',
-            'heading'    => esc_html__( 'Per Page', 'tomochain-addons' ),
-            'value'      => 6,
-        ),
+        // array(
+        //     'type'       => 'textfield',
+        //     'param_name' => 'per_page',
+        //     'heading'    => esc_html__( 'Per Page', 'tomochain-addons' ),
+        //     'value'      => 6,
+        // ),
         array(
             'type'        => 'dropdown',
             'heading'     => esc_html__( 'Slides To Show', 'tomochain-addons' ),

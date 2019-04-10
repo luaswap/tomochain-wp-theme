@@ -7699,13 +7699,12 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
-.tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-tmp-color-gradient a:after, .btn-tmp-basic:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts,
-.tomochain-dapp-main .archive-posts, .tomochain-roadmap-content, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
+.tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-tmp-color-gradient a:after, .btn-tmp-basic:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts, .tomochain-roadmap-content, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
 .main-menu .menu li.menu-item.page_item_has_children > a:before,
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
 .main-menu .menu > li .sub-menu li.menu-item.menu-item-has-children:after, .site-mobile-menu-wrapper .menu > ul > li .children,
-.site-mobile-menu-wrapper .menu > li .sub-menu, .tomochain-pagination ul li a:after, .woocommerce-pagination ul li a:after, .post-thumbnail img, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-roadmap-page, .tomochain-blog-item, .tomochain-blog-item .blog-thumbnail, .tomochain-blog-item .blog-thumbnail a:before, .tomochain-blog-item .blog-thumbnail img, .tomochain-blog-item .blog-date, .tomochain-event-item, .tomochain-event-item .event-thumbnail, .tomochain-event-item .event-thumbnail a:before, .tomochain-event-item .event-thumbnail img, .tomochain-event-item .event-date, .tomochain-roadmap, .tomochain-team__see-all span, .tomochain-button span, .tomochain-team__see-all:before, .tomochain-button:before, .tomochain-team-member__image a:after, .tomochain-team-member__image img, .team-member-info__close:before, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, body:after, .slick-arrow, .slick-arrow:before, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
+.site-mobile-menu-wrapper .menu > li .sub-menu, .tomochain-pagination ul a:after, .woocommerce-pagination ul a:after, .tomochain-dapp-pagination ul a:after, .post-thumbnail img, .site-content, .site-content:after, .social-links .social-links__link, .tomochain-social .social-links .social-links__link:before, .tomochain-social .social-links .social-links__link:after, .tomochain-social .social-links .social-links__link i, .tomochain-roadmap-page, .tomochain-blog-item, .tomochain-blog-item .blog-thumbnail, .tomochain-blog-item .blog-thumbnail a:before, .tomochain-blog-item .blog-thumbnail img, .tomochain-blog-item .blog-date, .tomochain-event-item, .tomochain-event-item .event-thumbnail, .tomochain-event-item .event-thumbnail a:before, .tomochain-event-item .event-thumbnail img, .tomochain-event-item .event-date, .tomochain-roadmap, .tomochain-team__see-all span, .tomochain-button span, .tomochain-team__see-all:before, .tomochain-button:before, .tomochain-team-member__image a:after, .tomochain-team-member__image img, .team-member-info__close:before, .tomochain-testnet, .tomochain-testnet-item, .widget_tomo_sendgrid .tomo-sendgrid-text, .widget_tomo_sendgrid #tomo-sendgrid-form.email_invalid #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_send #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_sent #tomo-sendgrid-button:after, .widget_tomo_sendgrid #tomo-sendgrid-form.email_error_sent #tomo-sendgrid-button:after, body:after, .slick-arrow, .slick-arrow:before, .slick-dots li, .slider-button:before, .nice-select:after, .nice-select .current, .nice-select .option {
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
 
@@ -10242,12 +10241,9 @@ COMPONENTS
 Specific UI components.
 This is where majority of our work takes place and our UI components are often composed of Objects and Components
 */
-.tomo-archive-wrapper.loading,
-.tomochain-dapp-main.loading {
-  position: relative;
-  text-align: center; }
-  .tomo-archive-wrapper.loading:before,
-  .tomochain-dapp-main.loading:before {
+.tomo-archive-wrapper.loading {
+  position: relative; }
+  .tomo-archive-wrapper.loading:before {
     content: url(assets/images/loading.svg) !important;
     display: block;
     position: absolute;
@@ -10256,9 +10252,21 @@ This is where majority of our work takes place and our UI components are often c
     -webkit-transform: translateX(-50%) scale(1.5);
             transform: translateX(-50%) scale(1.5); }
   .tomo-archive-wrapper.loading .archive-posts,
-  .tomo-archive-wrapper.loading .dapp-posts,
-  .tomochain-dapp-main.loading .archive-posts,
-  .tomochain-dapp-main.loading .dapp-posts {
+  .tomo-archive-wrapper.loading .dapp-posts {
+    opacity: 0;
+    visibility: hidden; }
+
+.tomochain-dapp-main.loading {
+  position: relative; }
+  .tomochain-dapp-main.loading:before {
+    content: url(assets/images/loading.svg) !important;
+    display: block;
+    position: absolute;
+    top: 50px;
+    left: 50%;
+    -webkit-transform: translateX(-50%) scale(1.5);
+            transform: translateX(-50%) scale(1.5); }
+  .tomochain-dapp-main.loading .tomochain-dapp-item {
     opacity: 0;
     visibility: hidden; }
 
@@ -10934,81 +10942,74 @@ This is where majority of our work takes place and our UI components are often c
 .font_quicksand {
   font-family: Quicksand, sans-serif !important; }
 
-.tomochain-pagination, .woocommerce-pagination {
+.tomochain-pagination, .woocommerce-pagination, .tomochain-dapp-pagination {
   margin-bottom: 80px; }
-  .tomochain-pagination.woocommerce-pagination, .woocommerce-pagination {
+  .tomochain-pagination ul, .woocommerce-pagination ul, .tomochain-dapp-pagination ul {
+    font-size: 0;
+    text-align: center;
+    list-style: none;
+    padding: 0;
+    margin: 0; }
+    .tomochain-pagination ul li, .woocommerce-pagination ul li, .tomochain-dapp-pagination ul li {
+      display: inline-block;
+      vertical-align: top;
+      text-align: center;
+      font-size: 14px;
+      line-height: 1.7;
+      border-radius: 100%;
+      margin: 0 10px; }
+      .tomochain-pagination ul li span, .woocommerce-pagination ul li span, .tomochain-dapp-pagination ul li span {
+        display: block;
+        width: 15px;
+        line-height: 1.7; }
+      .tomochain-pagination ul li a:after, .woocommerce-pagination ul li a:after, .tomochain-dapp-pagination ul li a:after {
+        position: absolute;
+        display: block;
+        content: '';
+        width: 100%;
+        height: 1px;
+        top: 100%;
+        left: 0;
+        margin-top: -3px;
+        background-color: rgba(51, 51, 51, 0.2); }
+    .tomochain-pagination ul a, .woocommerce-pagination ul a, .tomochain-dapp-pagination ul a {
+      font-weight: 500;
+      position: relative;
+      display: block;
+      width: 15px;
+      line-height: 1.7; }
+      .tomochain-pagination ul a:after, .woocommerce-pagination ul a:after, .tomochain-dapp-pagination ul a:after {
+        opacity: 0;
+        visibility: hidden; }
+      .tomochain-pagination ul a:hover, .woocommerce-pagination ul a:hover, .tomochain-dapp-pagination ul a:hover {
+        color: #ebeaf5;
+        -webkit-transition: all .5s ease;
+        transition: all .5s ease; }
+        .tomochain-pagination ul a:hover:after, .woocommerce-pagination ul a:hover:after, .tomochain-dapp-pagination ul a:hover:after {
+          opacity: 1;
+          visibility: visible; }
+  .tomochain-pagination .current, .woocommerce-pagination .current, .tomochain-dapp-pagination .current {
+    position: relative;
+    color: #6b6ced;
+    font-weight: 500; }
+    .tomochain-pagination .current:after, .woocommerce-pagination .current:after, .tomochain-dapp-pagination .current:after {
+      position: absolute;
+      display: block;
+      content: '';
+      width: 100%;
+      height: 1px;
+      top: 100%;
+      left: 0;
+      margin-top: -3px;
+      background-color: rgba(51, 51, 51, 0.2); }
+  .tomochain-pagination .prev, .woocommerce-pagination .prev, .tomochain-pagination .next, .woocommerce-pagination .next, .tomochain-dapp-pagination .prev, .tomochain-dapp-pagination .next {
+    width: 100%;
+    text-transform: uppercase;
+    letter-spacing: 2px; }
+    .tomochain-pagination .prev:after, .woocommerce-pagination .prev:after, .tomochain-pagination .next:after, .woocommerce-pagination .next:after, .tomochain-dapp-pagination .prev:after, .tomochain-dapp-pagination .next:after {
+      display: none; }
+  .tomochain-pagination.woocommerce-pagination, .woocommerce-pagination, .tomochain-dapp-pagination.woocommerce-pagination {
     margin-bottom: 30px; }
-
-.tomochain-pagination ul, .woocommerce-pagination ul {
-  font-size: 0;
-  text-align: center;
-  list-style: none;
-  padding: 0;
-  margin: 0; }
-
-.tomochain-pagination ul a, .woocommerce-pagination ul a {
-  font-weight: 500; }
-
-.tomochain-pagination ul li, .woocommerce-pagination ul li {
-  display: inline-block;
-  vertical-align: top;
-  text-align: center;
-  font-size: 14px;
-  line-height: 1.7;
-  border-radius: 100%;
-  margin: 0 10px; }
-
-.tomochain-pagination ul li span, .woocommerce-pagination ul li span {
-  display: block;
-  width: 15px;
-  line-height: 1.7; }
-
-.tomochain-pagination .current:after, .woocommerce-pagination .current:after,
-.tomochain-pagination ul li a:after,
-.woocommerce-pagination ul li a:after {
-  position: absolute;
-  display: block;
-  content: '';
-  width: 100%;
-  height: 1px;
-  top: 100%;
-  left: 0;
-  margin-top: -3px;
-  background-color: rgba(51, 51, 51, 0.2); }
-
-.tomochain-pagination .current, .woocommerce-pagination .current {
-  position: relative;
-  color: #6b6ced;
-  font-weight: 500; }
-
-.tomochain-pagination ul li a, .woocommerce-pagination ul li a {
-  position: relative;
-  display: block;
-  width: 15px;
-  line-height: 1.7; }
-  
-  .tomochain-pagination ul li a:after,
-  .woocommerce-pagination ul li a:after {
-    opacity: 0;
-    visibility: hidden; }
-  .tomochain-pagination ul li a:hover, .woocommerce-pagination ul li a:hover {
-    color: #ebeaf5;
-    -webkit-transition: all .5s ease;
-    transition: all .5s ease; }
-    .tomochain-pagination ul li a:hover:after, .woocommerce-pagination ul li a:hover:after {
-      opacity: 1;
-      visibility: visible; }
-
-.tomochain-pagination .prev, .woocommerce-pagination .prev,
-.tomochain-pagination .next,
-.woocommerce-pagination .next {
-  width: 100%;
-  text-transform: uppercase;
-  letter-spacing: 2px; }
-  .tomochain-pagination .prev:after, .woocommerce-pagination .prev:after,
-  .tomochain-pagination .next:after,
-  .woocommerce-pagination .next:after {
-    display: none; }
 
 .woocommerce-pagination {
   margin-top: 30px; }
@@ -13065,6 +13066,9 @@ article.post-loop {
     padding: 30px 15px 70px;
     border-radius: 10px;
     overflow: hidden; }
+
+.float-none {
+  float: none !important; }
 
 .dapp_form .main_form_dapp {
   display: none;
@@ -16104,7 +16108,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     overflow: hidden;
     position: inherit; }
     .tomochain_slider_press .slick-slider .slick-arrow.slick-prev {
-      left: 60px; }
+      left: -30px; }
     .tomochain_slider_press .slick-slider .slick-list {
       /*overflow: visible;*/
       margin: 0 -15px; }

@@ -131,8 +131,11 @@ function tomochain_excerpt($limit) {
     return '<p>' . $excerpt . '</p>';
 }
 
-function tomochain_pagination() {
-    global $wp_query, $wp_rewrite;
+function tomochain_pagination($wp_query = null) {
+    if($wp_query == null){
+        global $wp_query;
+    }
+    global$wp_rewrite;
 
     $paged        = get_query_var( 'paged' ) ? intval( get_query_var( 'paged' ) ) : 1;
     $pagenum_link = wp_kses_post( get_pagenum_link() );
@@ -234,3 +237,15 @@ if ( !function_exists('tomochain_event_per_page') ) {
     add_filter( 'pre_get_posts', 'tomochain_event_per_page' );
 }
 
+if ( !function_exists('tomochain_dapp_per_page') ) {
+
+    function tomochain_dapp_per_page( $query ) {
+        $per_page = get_field('dapp_per_page','options') ? get_field('dapp_per_page','options') : 12;
+
+        if ( !is_admin() && $query->is_main_query() && (is_post_type_archive( 'dapp' ) || is_tax('dapp_category')) ) {
+           $query->set( 'posts_per_page', $per_page );
+        }
+    }
+
+    add_filter( 'pre_get_posts', 'tomochain_dapp_per_page' );
+}

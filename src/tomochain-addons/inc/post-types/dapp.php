@@ -14,6 +14,7 @@ if ( !class_exists( 'Tomochain_Dapp_Post_Type' ) ) {
             $this->prefix = 'tomochain';
 
             add_action('init', array( $this, 'tomochain_dapp'));
+            add_filter( 'template_include', array( $this, 'template_loader' ) );
 
             if( is_admin() ) {
                 add_filter( 'manage_dapps_posts_columns', array( $this, 'add_columns' ) );
@@ -40,16 +41,19 @@ if ( !class_exists( 'Tomochain_Dapp_Post_Type' ) ) {
             $args = array(
                 'labels'              => $labels,
                 'public'              => true,
-                'exclude_from_search' => true,
-                'show_in_admin_bar'   => false,
-                'show_in_nav_menus'   => false,
-                'publicly_queryable'  => false,
-                // 'query_var'           => false,
+                'description'         => esc_html__( 'Display Dapp', 'tomochain-addons' ),
+                'exclude_from_search' => false,
+                'menu_icon'           => 'dashicons-networking',
+                'has_archive'         => true,
+                'show_in_admin_bar'   => true,
+                'show_in_nav_menus'   => true,
+                'publicly_queryable'  => true,
+                'capability_type'     => 'post',
                 'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
                 'rewrite'           => array(
-                    'slug'          => 'dapps',
+                    'slug'          => 'dapp',
                     'with_front'    => false
-                ) ,
+                )
             );
 
             register_post_type( 'dapp', $args );
@@ -93,6 +97,30 @@ if ( !class_exists( 'Tomochain_Dapp_Post_Type' ) ) {
                 'dapp'
             ) , $category_args);
 
+        }
+
+        public static function template_loader( $template ) {
+            if ( is_embed() ) {
+                return $template;
+            }
+            $default_file = self::get_template_loader_default_file();
+
+            if ( $default_file ) {
+                $template     = locate_template( $default_file );
+                if ( ! $template ) {
+                    $template = TOMOCHAIN_ADDONS_DIR . '/templates/' . $default_file;
+                }
+            }
+            return $template;
+        }
+
+        private static function get_template_loader_default_file() {
+            if ( is_post_type_archive( 'dapp' ) || is_tax( 'dapp_category' ) ) {
+                $default_file = 'archive-dapp.php';
+            } else {
+                $default_file = '';
+            }
+            return $default_file;
         }
 
         // Add columns to Dapp
