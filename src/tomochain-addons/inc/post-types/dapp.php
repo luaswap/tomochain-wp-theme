@@ -51,7 +51,7 @@ if ( !class_exists( 'Tomochain_Dapp_Post_Type' ) ) {
                 'capability_type'     => 'post',
                 'supports'            => array( 'title', 'editor', 'thumbnail', 'excerpt' ),
                 'rewrite'           => array(
-                    'slug'          => 'dapps',
+                    'slug'          => 'dapp',
                     'with_front'    => false
                 )
             );

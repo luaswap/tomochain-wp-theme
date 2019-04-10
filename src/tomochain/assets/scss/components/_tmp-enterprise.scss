@@ -81,6 +81,15 @@
 						color: #fff;
 					}
 				}
+				ul {
+					li {
+						&:nth-child(2),
+						&:nth-child(3),
+						&:nth-child(5) {
+							display: none;
+						}
+					}
+				}
 			}
 		}//site-header
 		.site-content {
@@ -292,7 +301,6 @@
 						color: #ff7c4d;
 						&:before {
 							content: "→";
-							color: #ff7c4d;
 							font-size: 24px;
 							line-height: .9;
 							position: absolute;
@@ -403,11 +411,10 @@
 				}
 				&.slick-current {
 					h3 {
-						color: #151515;
+						color: #ff7c4d;
 						font-weight: bold;
 						&:before {
 							content: "→";
-							color: #151515;
 							font-size: 24px;
 							line-height: .7;
 							position: absolute;
@@ -509,7 +516,7 @@
 				}
 			}
 			.wpb_single_image {
-				margin-bottom: 0;
+				margin-bottom: 0!important;
 				position: relative;
 				&:before {
 					content: '';
@@ -544,7 +551,7 @@
 			}
 			.txt-content {
 				background: #f3f3f3;
-				padding: 25px;
+				padding: 25px 20px;
 				margin-left: 15px;
 				margin-bottom: 0;
 				@media screen and (max-width: 991px) {
@@ -658,21 +665,46 @@
 
 .btn-enterprise {
 	.btn-primary {
-		background: #fff;
+		background: #ff7c4d;
 		border: 0;
 		border-radius: 0;
 		padding: 1em;
 		font-weight: 600;
-		color: #151515;
+		color: #fff;
 		min-width: 250px;
 		transition: all .5s ease;
 		&:active, &:hover {
-			background: #151515!important;
-			color: #fff;
+			background: #fff!important;
+			color: #151515!important;
 		}
 	}
 }
-
+.page-template-tmp-enterprise {
+	.vc_btn3.vc_btn3-color-black {
+		background: #ff7c4d!important;
+		color: #fff!important;
+		border: 1px solid #ff7c4d!important;
+		min-width: 240px;
+		text-align: center;
+		&:active, &:hover {
+			background: #fff!important;
+			color: #151515!important;
+			border: 1px solid #151515!important;
+		}
+	}
+	.vc_btn3.vc_btn3-color-white {
+		background: #fff!important;
+		color: #151515!important;
+		border: 1px solid #151515!important;
+		min-width: 240px;
+		text-align: center;
+		&:active, &:hover {
+			background: #ff7c4d!important;
+			color: #fff!important;
+			border: 1px solid #ff7c4d!important;
+		}
+	}
+}
 // Form
 .form-enterprise {
 	.txt-tile {
@@ -716,6 +748,7 @@
 			padding: .8em 1em;
 			color: #151515;
 			width: 100%;
+			height: 45px;
 		}
 		textarea {
 			height: 150px;
@@ -742,8 +775,8 @@
 	}
 	.btn-submit {
 		.enr-submit {
-			background: #151515;
-			border: 1px solid #151515;
+			background: #ff7c4d;
+			border: 1px solid #ff7c4d;
 			border-radius: 0;
 			color: #fff;
 			display: block;
@@ -756,9 +789,8 @@
 			transition: all .5s ease;
 			&:active,
 			&:hover {
-				background: #151515!important;
+				background: #e3673b!important;
 				color: #fff;
-				box-shadow: 0 5px 12px -1px #555;
 			}
 		}
 	}
@@ -776,5 +808,10 @@
 		.social-links {
 			margin: 0 -5px;
 		}
+	}
+}
+.con_media_section {
+	.wpb_content_element {
+	    margin-bottom: 15px!important;
 	}
 }
