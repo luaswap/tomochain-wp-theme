@@ -3,14 +3,14 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: TomoChain\n"
-"POT-Creation-Date: 2019-04-02 06:38+0000\n"
-"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"POT-Creation-Date: 2019-04-11 09:52+0700\n"
+"PO-Revision-Date: 2019-04-11 09:52+0700\n"
 "Last-Translator: \n"
 "Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"X-Generator: Loco https://localise.biz/\n"
+"X-Generator: Poedit 2.2\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-Flags-xgettext: --add-comments=translators:\n"
 "X-Poedit-WPHeader: style.css\n"
@@ -20,16 +20,32 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"Language: "
 
-#. translators: %s: search query.
-#: search.php:22 template-parts/page-title.php:31
-#, php-format
-msgid "Search Results for: %s"
+#: 404.php:24
+msgid "Page not found"
 msgstr ""
 
-#: headerld.php:38 headerldgame.php:36 header.php:63 headerldetr.php:37
-msgid "Skip to content"
+#: 404.php:25
+msgid "Go Home"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:66
+msgid "Comments are closed."
 msgstr ""
 
 #. Theme Name of the plugin/theme
@@ -41,6 +57,38 @@ msgstr ""
 #: footer.php:30 footerld.php:22
 #, php-format
 msgid "Copyright &copy; %1$s by %2$s."
+msgstr ""
+
+#: functions.php:61
+msgid "Primary"
+msgstr ""
+
+#: functions.php:131
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:133 functions.php:142 functions.php:151
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:140
+msgid "Event Sidebar"
+msgstr ""
+
+#: functions.php:149
+msgid "Footer Sidebar"
+msgstr ""
+
+#: functions.php:349
+msgid "Header Menu Enterprise"
+msgstr ""
+
+#: header.php:37
+msgid "Join our Telegram"
+msgstr ""
+
+#: header.php:63 headerld.php:38 headerldetr.php:35 headerldgame.php:36
+msgid "Skip to content"
 msgstr ""
 
 #: headerldgame.php:49
@@ -75,55 +123,14 @@ msgstr ""
 msgid "Contest"
 msgstr ""
 
-#: 404.php:24
-msgid "Page not found"
-msgstr ""
-
-#: 404.php:25
-msgid "Go Home"
-msgstr ""
-
-#: header.php:37
-msgid "Join our Telegram"
-msgstr ""
-
-#. translators: 1: title.
-#: comments.php:35
+#: inc/template-functions.php:217
 #, php-format
-msgid "One thought on &ldquo;%1$s&rdquo;"
+msgid "View all posts in %s"
 msgstr ""
 
-#. translators: 1: comment count number, 2: title.
-#: comments.php:41
+#: inc/template-functions.php:221
 #, php-format
-msgctxt "comments title"
-msgid "%1$s thought on &ldquo;%2$s&rdquo;"
-msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
-msgstr[0] ""
-msgstr[1] ""
-
-#: comments.php:66
-msgid "Comments are closed."
-msgstr ""
-
-#: functions.php:61
-msgid "Primary"
-msgstr ""
-
-#: functions.php:131
-msgid "Sidebar"
-msgstr ""
-
-#: functions.php:133 functions.php:142 functions.php:151
-msgid "Add widgets here."
-msgstr ""
-
-#: functions.php:140
-msgid "Event Sidebar"
-msgstr ""
-
-#: functions.php:149
-msgid "Footer Sidebar"
+msgid "%s"
 msgstr ""
 
 #. translators: %s: post author.
@@ -139,14 +146,21 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/template-functions.php:214
+#. translators: %s: search query.
+#: search.php:22 template-parts/page-title.php:31
 #, php-format
-msgid "View all posts in %s"
+msgid "Search Results for: %s"
 msgstr ""
 
-#: inc/template-functions.php:218
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-fullwidth.php:42
 #, php-format
-msgid "%s"
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content-fullwidth.php:53 template-parts/content-page.php:21
+#: template-parts/content-single.php:42
+msgid "Pages:"
 msgstr ""
 
 #. translators: 1: link to WP admin new post page.
@@ -166,17 +180,6 @@ msgstr ""
 msgid ""
 "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps "
 "searching can help."
-msgstr ""
-
-#: template-parts/content-single.php:42 template-parts/content-fullwidth.php:53
-#: template-parts/content-page.php:21
-msgid "Pages:"
-msgstr ""
-
-#. translators: %s: Name of current post. Only visible to screen readers
-#: template-parts/content-fullwidth.php:42
-#, php-format
-msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
 msgstr ""
 
 #: template-parts/page-title.php:9
