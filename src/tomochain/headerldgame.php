@@ -128,7 +128,7 @@
 										var timeinterval = setInterval(updateClock, 1000);
 									}
 									//var time_update = "<?php //echo esc_attr($time_update);?>";
-									var time_update = "April 15, 2019 23:59:59";
+									var time_update = "April 22, 2019 23:59:59";
 									var deadline = new Date(time_update);
 									initializeClock('clockdiv', deadline);
 								</script>

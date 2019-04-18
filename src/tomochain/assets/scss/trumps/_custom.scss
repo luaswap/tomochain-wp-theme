@@ -670,6 +670,18 @@ body.page-template-revslider-page-template {
         bottom: 60px;
         transform: translateX(-50%);
     }
+    @include media-breakpoint-down(md) {
+        .wpb_content_element {
+            margin-bottom: 10px;
+        }
+        .st_img_thumbnail img {
+            width:260px;
+        }
+        .vc_custom_heading {
+            font-size: 25px!important;
+            margin-bottom: 20px!important;
+        }
+    }
 }
 
 .tomochain-team.five-columns .tomochain-team__wrapper {

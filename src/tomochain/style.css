@@ -10538,6 +10538,9 @@ This is where majority of our work takes place and our UI components are often c
 .mag_bot_15 {
   margin-bottom: 15px !important; }
 
+.mag_bot_50 {
+  margin-bottom: 50px !important; }
+
 /** Style padding **/
 .pad_lef_right_10 {
   padding: 0 2%; }
@@ -10576,9 +10579,15 @@ This is where majority of our work takes place and our UI components are often c
 *:focus {
   outline: none; }
 
-.tomochain_slider_press .tomochain-image-carousel-item {
+.tomochain_slider_press .tomochain-image-carousel-item,
+.tomochain_slider_press .item-media,
+.tomochain_slider_media .tomochain-image-carousel-item,
+.tomochain_slider_media .item-media {
   padding: 0 15px; }
-  .tomochain_slider_press .tomochain-image-carousel-item img {
+  .tomochain_slider_press .tomochain-image-carousel-item img,
+  .tomochain_slider_press .item-media img,
+  .tomochain_slider_media .tomochain-image-carousel-item img,
+  .tomochain_slider_media .item-media img {
     width: 100%; }
 
 .tomochain-image-carousel {
@@ -13307,7 +13316,7 @@ article.post-loop {
     background-image: radial-gradient(50% 112%, #ffb567 50%, #348099 100%); }
 
 .tomochain-roadmap {
-  margin-bottom: 30px; }
+  /*margin-bottom: 30px;*/ }
 
 .tomochain-roadmap-item {
   margin-bottom: 45px; }
@@ -16102,14 +16111,17 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       padding: 0 5%; }
   .tomo_iframe_gaming {
     padding-right: 10%; }
-  .tomochain_slider_press .slick-slider {
+  .tomochain_slider_press .slick-slider,
+  .tomochain_slider_media .slick-slider {
     /*padding-right: 100%;
 			margin-right: -100%;*/
     overflow: hidden;
     position: inherit; }
-    .tomochain_slider_press .slick-slider .slick-arrow.slick-prev {
+    .tomochain_slider_press .slick-slider .slick-arrow.slick-prev,
+    .tomochain_slider_media .slick-slider .slick-arrow.slick-prev {
       left: -30px; }
-    .tomochain_slider_press .slick-slider .slick-list {
+    .tomochain_slider_press .slick-slider .slick-list,
+    .tomochain_slider_media .slick-slider .slick-list {
       /*overflow: visible;*/
       margin: 0 -15px; }
     article.post-loop .entry-title {
@@ -19189,7 +19201,14 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
               .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category > span > span {
                 margin: 0 .5em .5em 0; }
                   .dapp_form .main_form_dapp .form_dapps .form-group-tomo.checkbox .Category > span > span input ~ span {
-                    padding: 2px 6px; } }
+                    padding: 2px 6px; }
+    body.page-template-revslider-page-template .wpb_content_element {
+      margin-bottom: 10px; }
+    body.page-template-revslider-page-template .st_img_thumbnail img {
+      width: 260px; }
+    body.page-template-revslider-page-template .vc_custom_heading {
+      font-size: 25px !important;
+      margin-bottom: 20px !important; } }
   @media screen and (max-width: 767px) {
       .page-template-tmp-enterprise .vc_custom_heading {
         font-size: 2em; }
