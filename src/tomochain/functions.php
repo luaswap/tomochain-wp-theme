@@ -347,6 +347,7 @@ if (defined('SENDGRID_CATEGORY')) {
 // Menu header for page Enterprise
 function register_my_menu() {
   register_nav_menu('header-menu-enterprise',__( 'Header Menu Enterprise' ));
+  register_nav_menu('footer-menu-bounty',__( 'Footer Menu Bounty' ));
 }
 add_action( 'init', 'register_my_menu' );
 

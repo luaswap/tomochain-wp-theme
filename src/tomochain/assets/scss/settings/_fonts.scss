@@ -97,6 +97,24 @@ $font__line-height-pre: 1.6;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.tm-check:before {
+  content: "\e91e";
+}
+.tm-docs:before {
+  content: "\e91f";
+}
+.tm-eye:before {
+  content: "\e920";
+}
+.tm-flag:before {
+  content: "\e921";
+}
+.tm-rocket:before {
+  content: "\e922";
+}
+.tm-trophy:before {
+  content: "\e923";
+}
 .tm-discord:before {
   content: "\e91d";
 }
@@ -187,4 +205,3 @@ $font__line-height-pre: 1.6;
 .tm-chevron-right:before {
   content: "\e907";
 }
-
