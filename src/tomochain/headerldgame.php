@@ -70,7 +70,9 @@
 					<div class="col-sm-8">
 						<div class="tomochain-contest-countdown">
 							<div class="box-countdown">
-								<h3 class="txt-title"><?php echo esc_html__('The 1st contest submission ends in:','tomochain')?></h3>
+								<h3 class="txt-title"><?php echo esc_html__('The 1st submission round has ended','tomochain')?></h3>
+
+								<!-- <h3 class="txt-title"><?php //echo esc_html__('The 1st contest submission ends in:','tomochain')?></h3> -->
 								<div id="clockdiv" class="inner-countdown">
 									<div class="txt-clock">
 										<span class="days"></span>
@@ -96,6 +98,15 @@
 										var minutes = Math.floor((t / 1000 / 60) % 60);
 										var hours = Math.floor((t / (1000 * 60 * 60)) % 24);
 										var days = Math.floor(t / (1000 * 60 * 60 * 24));
+										if (t <= 0) {
+											return {
+												'total': 0,
+												'days': 0,
+												'hours': 0,
+												'minutes': 0,
+												'seconds': 0
+											};
+										}
 										return {
 											'total': t,
 											'days': days,
@@ -128,10 +139,10 @@
 										var timeinterval = setInterval(updateClock, 1000);
 									}
 									//var time_update = "<?php //echo esc_attr($time_update);?>";
-									var time_update = "April 22, 2019 23:59:59";
+									var time_update = "April 23, 2019 10:44:10";
 									var deadline = new Date(time_update);
 									initializeClock('clockdiv', deadline);
-								</script>
+								</script> 
 							</div><!-- /box-countdown -->
 						</div><!-- /tomochain-contest-countdown -->
 					</div>
