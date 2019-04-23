@@ -11297,7 +11297,7 @@ common bounty
           -ms-flex-align: center;
               align-items: center;
       display: grid;
-      grid-template-columns: auto 10% 60% 20%;
+      grid-template-columns: auto 8% 65% 20%;
       padding: 7px 15px; }
   .list-bounty tbody tr {
     background: #2b2d46;
@@ -11306,7 +11306,7 @@ common bounty
         -ms-flex-align: center;
             align-items: center;
     display: grid;
-    grid-template-columns: auto 10% 60% 20%;
+    grid-template-columns: auto 8% 65% 20%;
     padding: 7px 15px;
     margin: 15px 0;
     overflow: hidden;
@@ -11330,12 +11330,14 @@ common bounty
     color: #fff; }
     .list-bounty .txt-tile:hover {
       text-decoration: underline; }
-  .list-bounty .icon-view {
-    margin-right: 30px; }
 
 .txt-status {
   font-size: 12px;
   margin-top: 5px; }
+  .txt-status span {
+    margin-right: 15px; }
+    .txt-status span:last-child {
+      margin-right: 0; }
 
 .stt-active {
   color: #50e3c2; }
@@ -11421,16 +11423,22 @@ common bounty
         line-height: 1.3; }
         .container-detail-bounty .box-content-detail table td:first-child span {
           color: #ffa04d; }
-  .container-detail-bounty .tomo_btn_tmp_grad {
+  .container-detail-bounty .tomo_btn_grad {
     margin-bottom: 30px; }
-    .container-detail-bounty .tomo_btn_tmp_grad a {
+    .container-detail-bounty .tomo_btn_grad a {
+      background: #2a8bff;
+      border-radius: 10px;
+      color: #fff;
       display: inline-block;
       min-width: 200px;
-      font-size: 18px !important;
-      line-height: 22px !important;
+      font-size: 18px;
+      line-height: 22px;
+      padding: 12px 15px;
       text-align: center;
       text-transform: uppercase;
       font-family: bai jamjuree,sans-serif; }
+      .container-detail-bounty .tomo_btn_grad a:hover {
+        background: #2171d0; }
   .container-detail-bounty .logo-project {
     color: #2a8bff;
     display: inline-block;
@@ -16355,6 +16363,10 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       font-size: 18px; }
     .entry-title {
       font-size: 24px; }
+        .list-bounty thead tr th:last-child {
+          padding-left: 25px; }
+        .list-bounty tbody tr td:last-child {
+          padding-left: 25px; }
       .container-detail-bounty .box-content-detail > .row > div:first-child {
         padding-left: 30px;
         border-left: 1px solid #292b43; }
@@ -19631,11 +19643,11 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       padding-left: 3px;
       padding-right: 3px; }
         .list-bounty thead tr {
-          grid-template-columns: auto auto 60% 20%;
+          grid-template-columns: auto auto 55% 25%;
           padding: 5px;
           font-size: 12px; }
       .list-bounty tbody tr {
-        grid-template-columns: auto auto 60% 20%;
+        grid-template-columns: auto auto 55% 25%;
         padding: 10px 5px;
         margin: 10px 0; }
     .list-bounty {
@@ -19646,7 +19658,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           margin-right: 0;
           width: 24px;
           display: block;
-          margin: 0 auto 3px; }
+          margin: 0 auto; }
         .list-bounty .logo-project span {
           display: none; }
       .list-bounty .txt-tile {
@@ -19691,7 +19703,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           .container-detail-bounty .box-content-detail table tr {
             grid-template-columns: 30px auto 60%;
             padding: 5px 0; }
-      .container-detail-bounty .tomo_btn_tmp_grad {
+      .container-detail-bounty .tomo_btn_grad {
         text-align: center; }
   .form-enterprise .tomo-modal {
     padding: 15px; }

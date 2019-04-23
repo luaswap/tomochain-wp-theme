@@ -111,12 +111,19 @@ common bounty
 		tr {
 			align-items: center;
 			display: grid;
-			grid-template-columns: auto 10% 60% 20%;
+			grid-template-columns: auto 8% 65% 20%;
 			padding: 7px 15px;
 			@include media-breakpoint-down(sm) {
-				grid-template-columns: auto auto 60% 20%;
+				grid-template-columns: auto auto 55% 25%;
 				padding: 5px;
 				font-size: 12px;
+			}
+			th {
+				&:last-child {
+					@include media-breakpoint-up(md) {
+						padding-left: 25px;
+					}
+				}
 			}
 		}
 	}
@@ -126,7 +133,7 @@ common bounty
 			border-radius: 5px;
 			align-items: center;
 			display: grid;
-			grid-template-columns: auto 10% 60% 20%;
+			grid-template-columns: auto 8% 65% 20%;
 			padding: 7px 15px;
 			margin: 15px 0;
 			overflow: hidden;
@@ -135,13 +142,16 @@ common bounty
 				background: #373a5a;
 			}
 			@include media-breakpoint-down(sm) {
-				grid-template-columns: auto auto 60% 20%;
+				grid-template-columns: auto auto 55% 25%;
 				padding: 10px 5px;
 				margin: 10px 0;
 			}
 			td {
 				&:last-child {
 					color: #fff;
+					@include media-breakpoint-up(md) {
+						padding-left: 25px;
+					}
 				}
 			}
 		}
@@ -165,9 +175,6 @@ common bounty
 			text-decoration: underline;
 		}
 	}
-	.icon-view {
-		margin-right: 30px;
-	}
 	@include media-breakpoint-down(sm) {
 		font-size: 12px;
 		.logo-project {
@@ -176,7 +183,7 @@ common bounty
 				margin-right: 0;
 				width: 24px;
 				display: block;
-				margin: 0 auto 3px;
+				margin: 0 auto;
 			}
 			span {
 				display: none;
@@ -195,6 +202,12 @@ common bounty
 .txt-status {
 	font-size: 12px;
 	margin-top: 5px;
+	span {
+		margin-right: 15px;
+		&:last-child {
+			margin-right: 0;
+		}
+	}
 }
 .stt-active {
 	color: #50e3c2;
@@ -361,19 +374,26 @@ common bounty
 			}
 		}
 	}
-	.tomo_btn_tmp_grad {
+	.tomo_btn_grad {
 		margin-bottom: 30px;
 		@include media-breakpoint-down(sm) {
 			text-align: center;
 		}
 		a {
+			background: #2a8bff;
+			border-radius: 10px;
+			color: #fff;
 			display: inline-block;
 			min-width: 200px;
-			font-size: 18px!important;
-			line-height: 22px!important;
+			font-size: 18px;
+			line-height: 22px;
+			padding: 12px 15px;
 			text-align: center;
 			text-transform: uppercase;
 			font-family: bai jamjuree,sans-serif;
+			&:hover {
+				background: #2171d0;
+			}
 		}
 	}
 	.logo-project {
