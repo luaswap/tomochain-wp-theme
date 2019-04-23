@@ -11,8 +11,8 @@ get_template_part('headerbounty');
 	<div class="content-area">
 		<main class="site-main">
 			<div class="container">
-				<!-- content - list -->
-				<div class="row">
+				<!-- content - form detail -->
+				<div class="row d-none">
 					<div class="col-12">
 						<div class="container-detail-bounty">
 							<div class="box-form-detail">
@@ -45,7 +45,7 @@ get_template_part('headerbounty');
 						</div>
 					</div>
 				</div>
-				<!-- content - list -->
+				<!-- content - detail -->
 				<div class="row d-none">
 					<div class="col-12">
 						<div class="container-detail-bounty">
@@ -140,7 +140,7 @@ get_template_part('headerbounty');
 					</div>
 				</div>
 				<!-- content - list -->
-				<div class="row d-none">
+				<div class="row">
 					<div class="col-12 col-lg-2">
 						<div class="box-sidebar-bounty">
 							<div class="menu-sidebar">
