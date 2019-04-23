@@ -97,23 +97,35 @@ $font__line-height-pre: 1.6;
   -moz-osx-font-smoothing: grayscale;
 }
 
+.tm-user:before {
+  content: "\e924";
+}
+.tm-avatar:before {
+  content: "\e925";
+}
 .tm-check:before {
   content: "\e91e";
+  color: #2a8bff;
 }
 .tm-docs:before {
   content: "\e91f";
+  color: #ffa04d;
 }
 .tm-eye:before {
   content: "\e920";
+  color: #7777a7;
 }
 .tm-flag:before {
   content: "\e921";
+  color: #ffa04d;
 }
 .tm-rocket:before {
   content: "\e922";
+  color: #ffa04d;
 }
 .tm-trophy:before {
   content: "\e923";
+  color: #ffa04d;
 }
 .tm-discord:before {
   content: "\e91d";

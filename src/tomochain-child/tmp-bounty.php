@@ -35,7 +35,7 @@ get_template_part('headerbounty');
 											<div class="form-group-tomo">
 												<p><textarea name="Description" cols="40" rows="10" placeholder="Description"></textarea></p>
 											</div>
-											<div class="tomo_btn_tmp_grad text-center">
+											<div class="tomo_btn_grad text-center">
 												<a class="" href="" title="">Submit</a>
 											</div>
 										</div>
@@ -78,13 +78,13 @@ get_template_part('headerbounty');
 													<td>1000 TOMO</td>
 												</tr>
 												<tr>
-													<td><span class="tm-docs"></span></td>
+													<td><span class="tm-avatar"></span></td>
 													<td>Number of participants:</td>
 													<td>3</td>
 												</tr>
 											</tbody>
 										</table>
-										<div class="tomo_btn_tmp_grad">
+										<div class="tomo_btn_grad">
 											<a href="#">Claim IT</a>
 										</div>
 									</div>
@@ -146,13 +146,13 @@ get_template_part('headerbounty');
 							<div class="menu-sidebar">
 								<h2>Sort</h2>
 								<select class="d-block d-lg-none">
-									<option value="">All job</option>
+									<option value="">All</option>
 									<option value="">Active</option>
 									<option value="">In Progress</option>
 									<option value="">Completed</option>
 								</select>
 								<ul class="d-none d-lg-block">
-									<li class="active"><a href="" title="">All job</a></li>
+									<li class="active"><a href="" title="">All</a></li>
 									<li><a href="" title="">Active</a></li>
 									<li><a href="" title="">In Progress</a></li>
 									<li><a href="" title="">Completed</a></li>
@@ -184,7 +184,7 @@ get_template_part('headerbounty');
 									<th>#</th>
 									<th><!-- Project --></th>
 									<th>Title</th>
-									<th>Reward</th>
+									<th>Reward (Unit:TOMO)</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -198,11 +198,13 @@ get_template_part('headerbounty');
 									<td>
 										<a class="txt-tile" href="#" title="Your Bounty Idea">Your Bounty Idea</a>
 										<div class="txt-status">
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span class="stt-active">Active</span>
+											<span>Project: <a target="_blank" href="#">TomoChain</a></span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 0</span>
+											<span title="Status" class="stt-active">Active</span>
 										</div>
 									</td>
-									<td>500 TOMO</td>
+									<td>500</td>
 								</tr>
 								<tr>
 									<td>#2</td>
@@ -213,14 +215,16 @@ get_template_part('headerbounty');
 									</td>
 									<td>
 										<a class="txt-tile" href="#" title="Please help us to develop a website that shows ontology nodes distribution">
-											Please help us to develop a website that shows ...
+											Please help us to develop a website that shows ontology nodes distribution
 										</a>
 										<div class="txt-status">
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span class="stt-progress">In Progress</span>
+											<span>Project: <a target="_blank" href="#">TomoScan</a></span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 1</span>
+											<span title="Status" class="stt-progress">In Progress</span>
 										</div>
 									</td>
-									<td>1500 TOMO</td>
+									<td>1500</td>
 								</tr>
 								<tr>
 									<td>#3</td>
@@ -234,11 +238,13 @@ get_template_part('headerbounty');
 											Vulnerability disclosure program
 										</a>
 										<div class="txt-status">
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span class="stt-completed">Completed</span>
+											<span>Project: <a target="_blank" href="#">TomoX</a></span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-completed">Completed</span>
 										</div>
 									</td>
-									<td>500 - 1500 TOMO</td>
+									<td>500 - 1500</td>
 								</tr>
 								<tr>
 									<td>#4</td>
@@ -250,11 +256,13 @@ get_template_part('headerbounty');
 									<td>
 										<a class="txt-tile" href="#" title="Your Bounty Idea">Your Bounty Idea</a>
 										<div class="txt-status">
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span class="stt-active">Active</span>
+											<span>Project: <a target="_blank" href="#">TomoChain</a></span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-active">Active</span>
 										</div>
 									</td>
-									<td>500 TOMO</td>
+									<td>500</td>
 								</tr>
 								<tr>
 									<td>#5</td>
@@ -265,14 +273,16 @@ get_template_part('headerbounty');
 									</td>
 									<td>
 										<a class="txt-tile" href="#" title="Please help us to develop a website that shows ontology nodes distribution">
-											Please help us to develop a website that shows ...
+											Please help us to develop a website that shows
 										</a>
 										<div class="txt-status">
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span class="stt-progress">In Progress</span>
+											<span>Project: <a target="_blank" href="#">TomoScan</a></span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-progress">In Progress</span>
 										</div>
 									</td>
-									<td>1500 TOMO</td>
+									<td>1500</td>
 								</tr>
 								<tr>
 									<td>#6</td>
@@ -286,11 +296,13 @@ get_template_part('headerbounty');
 											Vulnerability disclosure program
 										</a>
 										<div class="txt-status">
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span class="stt-completed">Completed</span>
+											<span>Project: <a target="_blank" href="#">TomoX</a></span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-completed">Completed</span>
 										</div>
 									</td>
-									<td>500 - 1500 TOMO</td>
+									<td>500 - 1500</td>
 								</tr>
 								<tr>
 									<td>#7</td>
@@ -302,11 +314,13 @@ get_template_part('headerbounty');
 									<td>
 										<a class="txt-tile" href="#" title="Your Bounty Idea">Your Bounty Idea</a>
 										<div class="txt-status">
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span class="stt-active">Active</span>
+											<span>Project: <a target="_blank" href="#">TomoChain</a></span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-active">Active</span>
 										</div>
 									</td>
-									<td>500 TOMO</td>
+									<td>500</td>
 								</tr>
 								<tr>
 									<td>#8</td>
@@ -317,14 +331,16 @@ get_template_part('headerbounty');
 									</td>
 									<td>
 										<a class="txt-tile" href="#" title="Please help us to develop a website that shows ontology nodes distribution">
-											Please help us to develop a website that shows ...
+											Please help us to develop a website that shows
 										</a>
 										<div class="txt-status">
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span class="stt-progress">In Progress</span>
+											<span>Project: <a target="_blank" href="#">TomoScan</a></span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-progress">In Progress</span>
 										</div>
 									</td>
-									<td>1500 TOMO</td>
+									<td>1500</td>
 								</tr>
 								<tr>
 									<td>#9</td>
@@ -338,11 +354,13 @@ get_template_part('headerbounty');
 											Vulnerability disclosure program
 										</a>
 										<div class="txt-status">
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span class="stt-completed">Completed</span>
+											<span>Project: <a target="_blank" href="#">TomoX</a></span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-completed">Completed</span>
 										</div>
 									</td>
-									<td>500 - 1500 TOMO</td>
+									<td>500 - 1500</td>
 								</tr>
 							</tbody>
 						</table>
