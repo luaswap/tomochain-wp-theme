@@ -46,7 +46,7 @@ get_template_part('headerbounty');
 					</div>
 				</div>
 				<!-- content - detail -->
-				<div class="row ">
+				<div class="row d-none">
 					<div class="col-12">
 						<div class="container-detail-bounty">
 							<h2 class="tomo-job-title"><span>#2</span> Please help us to develop a website that shows ontology nodes distribution</h2>
@@ -78,7 +78,7 @@ get_template_part('headerbounty');
 													<td>1000 TOMO</td>
 												</tr>
 												<tr>
-													<td><span class="tm-docs"></span></td>
+													<td><span class="tm-avatar"></span></td>
 													<td>Number of participants:</td>
 													<td>3</td>
 												</tr>
@@ -140,7 +140,7 @@ get_template_part('headerbounty');
 					</div>
 				</div>
 				<!-- content - list -->
-				<div class="row d-none">
+				<div class="row">
 					<div class="col-12 col-lg-2">
 						<div class="box-sidebar-bounty">
 							<div class="menu-sidebar">
@@ -184,7 +184,7 @@ get_template_part('headerbounty');
 									<th>#</th>
 									<th><!-- Project --></th>
 									<th>Title</th>
-									<th>Reward</th>
+									<th>Reward (Unit:TOMO)</th>
 								</tr>
 							</thead>
 							<tbody>
@@ -199,12 +199,12 @@ get_template_part('headerbounty');
 										<a class="txt-tile" href="#" title="Your Bounty Idea">Your Bounty Idea</a>
 										<div class="txt-status">
 											<span>Project: <a target="_blank" href="#">TomoChain</a></span>
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span><i class="fas fa-user"></i> 0</span>
-											<span class="stt-active">Active</span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 0</span>
+											<span title="Status" class="stt-active">Active</span>
 										</div>
 									</td>
-									<td>500 TOMO</td>
+									<td>500</td>
 								</tr>
 								<tr>
 									<td>#2</td>
@@ -215,16 +215,16 @@ get_template_part('headerbounty');
 									</td>
 									<td>
 										<a class="txt-tile" href="#" title="Please help us to develop a website that shows ontology nodes distribution">
-											Blockchain, we have heard about it but do we know what it actually is and <br>how it applies in our lives especially business?
+											Please help us to develop a website that shows ontology nodes distribution
 										</a>
 										<div class="txt-status">
 											<span>Project: <a target="_blank" href="#">TomoScan</a></span>
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span><i class="fas fa-user"></i> 1</span>
-											<span class="stt-progress">In Progress</span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 1</span>
+											<span title="Status" class="stt-progress">In Progress</span>
 										</div>
 									</td>
-									<td>1500 TOMO</td>
+									<td>1500</td>
 								</tr>
 								<tr>
 									<td>#3</td>
@@ -239,12 +239,12 @@ get_template_part('headerbounty');
 										</a>
 										<div class="txt-status">
 											<span>Project: <a target="_blank" href="#">TomoX</a></span>
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span><i class="fas fa-user"></i> 3</span>
-											<span class="stt-completed">Completed</span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-completed">Completed</span>
 										</div>
 									</td>
-									<td>500 - 1500 TOMO</td>
+									<td>500 - 1500</td>
 								</tr>
 								<tr>
 									<td>#4</td>
@@ -257,12 +257,12 @@ get_template_part('headerbounty');
 										<a class="txt-tile" href="#" title="Your Bounty Idea">Your Bounty Idea</a>
 										<div class="txt-status">
 											<span>Project: <a target="_blank" href="#">TomoChain</a></span>
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span><i class="fas fa-user"></i> 3</span>
-											<span class="stt-active">Active</span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-active">Active</span>
 										</div>
 									</td>
-									<td>500 TOMO</td>
+									<td>500</td>
 								</tr>
 								<tr>
 									<td>#5</td>
@@ -277,12 +277,12 @@ get_template_part('headerbounty');
 										</a>
 										<div class="txt-status">
 											<span>Project: <a target="_blank" href="#">TomoScan</a></span>
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span><i class="fas fa-user"></i> 3</span>
-											<span class="stt-progress">In Progress</span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-progress">In Progress</span>
 										</div>
 									</td>
-									<td>1500 TOMO</td>
+									<td>1500</td>
 								</tr>
 								<tr>
 									<td>#6</td>
@@ -297,12 +297,12 @@ get_template_part('headerbounty');
 										</a>
 										<div class="txt-status">
 											<span>Project: <a target="_blank" href="#">TomoX</a></span>
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span><i class="fas fa-user"></i> 3</span>
-											<span class="stt-completed">Completed</span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-completed">Completed</span>
 										</div>
 									</td>
-									<td>500 - 1500 TOMO</td>
+									<td>500 - 1500</td>
 								</tr>
 								<tr>
 									<td>#7</td>
@@ -315,12 +315,12 @@ get_template_part('headerbounty');
 										<a class="txt-tile" href="#" title="Your Bounty Idea">Your Bounty Idea</a>
 										<div class="txt-status">
 											<span>Project: <a target="_blank" href="#">TomoChain</a></span>
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span><i class="fas fa-user"></i> 3</span>
-											<span class="stt-active">Active</span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-active">Active</span>
 										</div>
 									</td>
-									<td>500 TOMO</td>
+									<td>500</td>
 								</tr>
 								<tr>
 									<td>#8</td>
@@ -335,12 +335,12 @@ get_template_part('headerbounty');
 										</a>
 										<div class="txt-status">
 											<span>Project: <a target="_blank" href="#">TomoScan</a></span>
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span><i class="fas fa-user"></i> 3</span>
-											<span class="stt-progress">In Progress</span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-progress">In Progress</span>
 										</div>
 									</td>
-									<td>1500 TOMO</td>
+									<td>1500</td>
 								</tr>
 								<tr>
 									<td>#9</td>
@@ -355,12 +355,12 @@ get_template_part('headerbounty');
 										</a>
 										<div class="txt-status">
 											<span>Project: <a target="_blank" href="#">TomoX</a></span>
-											<span class="icon-view"><span class="tm-eye"></span> 973</span>
-											<span><i class="fas fa-user"></i> 3</span>
-											<span class="stt-completed">Completed</span>
+											<span title="View"><span class="tm-eye"></span> 973</span>
+											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
+											<span title="Status" class="stt-completed">Completed</span>
 										</div>
 									</td>
-									<td>500 - 1500 TOMO</td>
+									<td>500 - 1500</td>
 								</tr>
 							</tbody>
 						</table>
