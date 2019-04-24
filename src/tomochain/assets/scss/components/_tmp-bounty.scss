@@ -74,10 +74,23 @@ common bounty
 /*============================
 	page list bounty
 ============================*/
-
-/**box-sidebar-bounty**/
-.box-sidebar-bounty {
-	.menu-sidebar {
+/**box-faq-bounty**/
+.box-faq-bounty {
+	border-top: 1px solid #2b2d46;
+	margin: 50px 0 0;
+	padding: 15px 0;
+	@include media-breakpoint-down(md) {
+		margin: 15px 0;
+		padding: 15px 0
+	}
+	a {
+		color: #2a8bff;
+		text-decoration: underline;
+	}
+}
+/**box-widget-bounty**/
+.box-widget-bounty {
+	.widget-cate {
 		margin-top: 50px;
 		h2 {
 			font-family: 'Bai Jamjuree',sans-serif;
@@ -104,12 +117,15 @@ common bounty
 				a {
 					display: inline-block;
 				}
+				span {
+					font-style: italic;
+				}
 				&.active {
 					&:before {
 						background: #2a8bff;
 						border: 1px solid #2a8bff;
 					}
-					a {
+					a,span {
 						color: #fff;
 					}
 				}
@@ -118,7 +134,7 @@ common bounty
 	}
 	@include media-breakpoint-down(md) {
 		display: flex;
-		.menu-sidebar {
+		.widget-cate {
 			margin: 0 15px 15px 0;
 			select {
 				background: transparent;

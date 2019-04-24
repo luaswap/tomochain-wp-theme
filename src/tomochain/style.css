@@ -11288,21 +11288,30 @@ common bounty
 /*============================
 	page list bounty
 ============================*/
-/**box-sidebar-bounty**/
-.box-sidebar-bounty .menu-sidebar {
+/**box-faq-bounty**/
+.box-faq-bounty {
+  border-top: 1px solid #2b2d46;
+  margin: 50px 0 0;
+  padding: 15px 0; }
+  .box-faq-bounty a {
+    color: #2a8bff;
+    text-decoration: underline; }
+
+/**box-widget-bounty**/
+.box-widget-bounty .widget-cate {
   margin-top: 50px; }
-  .box-sidebar-bounty .menu-sidebar h2 {
+  .box-widget-bounty .widget-cate h2 {
     font-family: 'Bai Jamjuree',sans-serif;
     font-size: 18px; }
-  .box-sidebar-bounty .menu-sidebar ul {
+  .box-widget-bounty .widget-cate ul {
     margin: 0;
     padding: 0;
     list-style: none; }
-    .box-sidebar-bounty .menu-sidebar ul li {
+    .box-widget-bounty .widget-cate ul li {
       margin: 10px 0;
       padding-left: 30px;
       position: relative; }
-      .box-sidebar-bounty .menu-sidebar ul li:before {
+      .box-widget-bounty .widget-cate ul li:before {
         content: '';
         width: 10px;
         height: 10px;
@@ -11311,12 +11320,14 @@ common bounty
         position: absolute;
         left: 2px;
         top: 6px; }
-      .box-sidebar-bounty .menu-sidebar ul li a {
+      .box-widget-bounty .widget-cate ul li a {
         display: inline-block; }
-      .box-sidebar-bounty .menu-sidebar ul li.active:before {
+      .box-widget-bounty .widget-cate ul li span {
+        font-style: italic; }
+      .box-widget-bounty .widget-cate ul li.active:before {
         background: #2a8bff;
         border: 1px solid #2a8bff; }
-      .box-sidebar-bounty .menu-sidebar ul li.active a {
+      .box-widget-bounty .widget-cate ul li.active a, .box-widget-bounty .widget-cate ul li.active span {
         color: #fff; }
 
 .list-bounty {
@@ -19522,19 +19533,22 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         .header-bounty .row .main-title-page {
           text-align: right;
           font-size: 18px; }
-  .box-sidebar-bounty {
+    .box-faq-bounty {
+      margin: 15px 0;
+      padding: 15px 0; }
+  .box-widget-bounty {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex; }
-    .box-sidebar-bounty .menu-sidebar {
+    .box-widget-bounty .widget-cate {
       margin: 0 15px 15px 0; }
-      .box-sidebar-bounty .menu-sidebar select {
+      .box-widget-bounty .widget-cate select {
         background: transparent;
         border: 1px solid #3c4776;
         padding: 7px;
         border-radius: 5px;
         font-size: 12px; }
-      .box-sidebar-bounty .menu-sidebar h2 {
+      .box-widget-bounty .widget-cate h2 {
         font-size: 14px;
         font-weight: normal;
         margin-bottom: 15px; }
