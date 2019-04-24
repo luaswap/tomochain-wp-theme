@@ -124,13 +124,7 @@ get_template_part('headerbounty');
 												3 – Enter your new team name or pick an existing team
 											</p>
 											<p>
-												1 – Blockchain, we have heard about it but do we know what it actually is and how it applies in our lives especially business? Join us for a free workshop to get yourselves a deeper understanding of the best practices in Blockchain and how it cope up with the current business trend!
-											</p>
-											<p>
 												2 – Click Join this Bounty
-											</p>
-											<p>
-												3 – Enter your new team name or pick an existing team
 											</p>
 										</div>
 									</div>
@@ -142,39 +136,43 @@ get_template_part('headerbounty');
 				<!-- content - list -->
 				<div class="row">
 					<div class="col-12 col-lg-2">
-						<div class="box-sidebar-bounty">
-							<div class="menu-sidebar">
+						<div class="box-widget-bounty">
+							<div class="widget-cate">
 								<h2>Sort</h2>
 								<select class="d-block d-lg-none">
-									<option value="">All</option>
-									<option value="">Active</option>
-									<option value="">In Progress</option>
-									<option value="">Completed</option>
+									<option value="">All (65)</option>
+									<option value="">Active (10)</option>
+									<option value="">In Progress (10)</option>
+									<option value="">Completed (10)</option>
 								</select>
 								<ul class="d-none d-lg-block">
-									<li class="active"><a href="" title="">All</a></li>
-									<li><a href="" title="">Active</a></li>
-									<li><a href="" title="">In Progress</a></li>
-									<li><a href="" title="">Completed</a></li>
+									<li class="active"><a href="" title="">All <span>(65)</span></a></li>
+									<li><a href="" title="">Active <span>(7)</span></a></li>
+									<li><a href="" title="">In Progress <span>(23)</span></a></li>
+									<li><a href="" title="">Completed <span>(45)</span></a></li>
 								</ul>
 							</div>
-							<div class="menu-sidebar">
+							<div class="widget-cate">
 								<h2>Project</h2>
 								<select class="d-block d-lg-none">
-									<option value="">All</option>
-									<option value="">TomoChain</option>
-									<option value="">TomoScan</option>
-									<option value="">TomoMaster</option>
-									<option value="">TomoWallet</option>
+									<option value="">All (65)</option>
+									<option value="">TomoChain (9)</option>
+									<option value="">TomoScan (16)</option>
+									<option value="">TomoMaster (7)</option>
+									<option value="">TomoWallet (23)</option>
 								</select>
 								<ul class="d-none d-lg-block">
-									<li class="active"><a href="" title="">All</a></li>
-									<li><a href="" title="">TomoChain</a></li>
-									<li><a href="" title="">TomoScan</a></li>
-									<li><a href="" title="">TomoMaster</a></li>
-									<li><a href="" title="">TomoWallet</a></li>
+									<li><a href="" title="">All <span>(65)</span></a></li>
+									<li class="active"><a href="" title="">TomoChain <span>(9)</span></a></li>
+									<li><a href="" title="">TomoScan <span>(52)</span></a></li>
+									<li><a href="" title="">TomoMaster <span>(68)</span></a></li>
+									<li><a href="" title="">TomoWallet <span>(7)</span></a></li>
 								</ul>
 							</div>
+						</div>
+						<div class="box-faq-bounty">
+							Have any questions about the bounty program?
+							Please read our <a href="#" title="FAQ">FAQ</a>
 						</div>
 					</div>
 					<div class="col-12 col-lg-10">
