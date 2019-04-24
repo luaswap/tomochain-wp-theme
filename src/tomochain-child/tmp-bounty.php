@@ -210,7 +210,7 @@ get_template_part('headerbounty');
 									<td>#2</td>
 									<td>
 										<span class="logo-project">
-											<img src="https://tomochain.com/wp-content/uploads/2019/03/Logo-tomoscan100px.png"><span>TomoScan</span>
+											<img src="https://tomochain.com/wp-content/uploads/2019/03/Logo-tomochain100px.png"><span>TomoScan</span>
 										</span>
 									</td>
 									<td>
@@ -230,7 +230,7 @@ get_template_part('headerbounty');
 									<td>#3</td>
 									<td>
 										<span class="logo-project">
-											<img src="https://tomochain.com/wp-content/uploads/2019/03/Logo-tomox100px.png"><span>TomoX</span>
+											<img src="https://tomochain.com/wp-content/uploads/2019/03/Logo-tomochain100px.png"><span>TomoX</span>
 										</span>
 									</td>
 									<td>
@@ -341,26 +341,6 @@ get_template_part('headerbounty');
 										</div>
 									</td>
 									<td>1500</td>
-								</tr>
-								<tr>
-									<td>#9</td>
-									<td>
-										<span class="logo-project">
-											<img src="https://tomochain.com/wp-content/uploads/2019/03/Logo-tomox100px.png"><span>TomoX</span>
-										</span>
-									</td>
-									<td>
-										<a class="txt-tile" href="#" title="Vulnerability disclosure program">
-											Vulnerability disclosure program
-										</a>
-										<div class="txt-status">
-											<span>Project: <a target="_blank" href="#">TomoX</a></span>
-											<span title="View"><span class="tm-eye"></span> 973</span>
-											<span title="Number of participants"><span class="tm-avatar"></span> 3</span>
-											<span title="Status" class="stt-completed">Completed</span>
-										</div>
-									</td>
-									<td>500 - 1500</td>
 								</tr>
 							</tbody>
 						</table>

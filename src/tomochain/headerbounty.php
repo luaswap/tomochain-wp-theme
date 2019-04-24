@@ -23,7 +23,7 @@
 <body <?php body_class(); ?>>
 <div id="page" class="site page-tomo-bounty">
 	<?php if (!is_404()): ?>
-	<div class="header-game-contest">
+	<div class="header-bounty">
 		<div class="container">
 			<div class="row">
 				<div class="col-5 col-lg-3">
@@ -48,7 +48,7 @@
 				</div>
 			</div>
 		</div>
-	</div><!-- header-game-contest -->
+	</div><!-- header-bounty -->
 	<?php endif; ?>
 
 	<div id="content" class="site-content-bounty">

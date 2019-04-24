@@ -18,7 +18,7 @@
             <div class="footer-bounty">
                 <div class="logo-tomo-bounty site-info">
                     <a href="<?php echo esc_url($home_url); ?>">
-                        <img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/logo-roadmap.png'); ?>" alt="Logo">
+                        <img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/logo-tomochain.png'); ?>" alt="Logo">
                     </a>
                 </div>
                 <div class="site-info">
