@@ -155,10 +155,10 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 													$github_url = get_field('github_url');
 													$doc_url = get_field('doc_url');
 													$due_date = get_field('due_date');
-													$progress_number = get_field('progress');
+													$progress_number = substr(get_field('progress'), 0, 2);
 													$open_new_tab = get_field('r_open_in_new_tab') ? '__blank' : '';
 											?>
-												
+
 													<div class="box-item">
 														<div class="item-header">
 															<?php
