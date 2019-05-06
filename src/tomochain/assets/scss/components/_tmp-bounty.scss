@@ -405,13 +405,20 @@ common bounty
 /*============================
 	page detail
 ============================*/
+.cl_black {
+	color: #151515;
+}
+.modal-form-bounty {
+	.box-form-detail {
+		padding: 0 25px;
+		.tomo-job-title {
+			color: #151515;
+		}
+	}
+}
 .container-detail-bounty {
 	max-width: 900px;
 	margin: 0 auto;
-	.box-form-detail {
-		max-width: 650px;
-		margin: 0 auto;
-	}
 	.tomo-bounty-title {
 		font-size: 16px;
 		text-transform: uppercase;
@@ -467,11 +474,13 @@ common bounty
 		@include media-breakpoint-down(sm) {
 			text-align: center;
 		}
-		a {
+		button {
 			background: #2a8bff;
 			border-radius: 10px;
+			border: 0;
 			color: #fff;
 			display: block;
+			width: 100%;
 			font-size: 18px;
 			line-height: 22px;
 			padding: 12px 15px;
