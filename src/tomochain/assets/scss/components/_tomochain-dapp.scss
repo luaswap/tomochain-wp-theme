@@ -1,8 +1,9 @@
 .tomochain-dapp {
-	/*text-align: center;*/
 	margin-top: 30px;
 	margin-bottom: 50px;
-
+	&.tomochain-shortcode {
+		text-align: center;
+	}
 	&__image {
 		margin-bottom: 10px;
 	}

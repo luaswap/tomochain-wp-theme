@@ -96,3 +96,14 @@
 .grecaptcha-badge {
     opacity: 0;
 }
+
+
+.header-tools {
+    ul.list {
+        li {
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}
