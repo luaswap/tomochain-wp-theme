@@ -34,7 +34,19 @@
 </div>
 <?php endif; ?>
 <div class="popup_btn tomo_btn_tmp_grad">
-    <a href="https://t.me/tomochain" title="" target="_blank"><span><?php echo esc_html__('Join our Telegram','tomochain');?></span> <i class="fab fa-telegram-plane"></i></a>
+
+	<?php if (get_bloginfo('language') == 'en-US'): ?>
+    	<a href="https://t.me/tomochain" title="" target="_blank"><span><?php echo esc_html__('Join our Telegram','tomochain');?></span> <i class="fab fa-telegram-plane"></i></a>
+    <?php elseif(get_bloginfo('language') == 'vi'): ?>
+    	<a href="https://t.me/TomoChainVietNam" title="" target="_blank"><span><?php echo esc_html__('Join our Telegram','tomochain');?></span> <i class="fab fa-telegram-plane"></i></a>
+    <?php elseif(get_bloginfo('language') == 'ja'): ?>
+    	<a href="https://t.me/TomoChainJapan" title="" target="_blank"><span><?php echo esc_html__('Join our Telegram','tomochain');?></span> <i class="fab fa-telegram-plane"></i></a>
+    <?php elseif(get_bloginfo('language') == 'ko-KR'): ?>
+    	<a href="https://t.me/TomoChainKorea" title="" target="_blank"><span><?php echo esc_html__('Join our Telegram','tomochain');?></span> <i class="fab fa-telegram-plane"></i></a>
+    <?php elseif(get_bloginfo('language')): ?>
+    	<a href="https://t.me/tomochain" title="" target="_blank"><span><?php echo esc_html__('Join our Telegram','tomochain');?></span> <i class="fab fa-telegram-plane"></i></a>
+    <?php endif; ?>
+
     <span class="close" title="Hide This Message">×</span>
 </div>
 <script type="text/JavaScript">

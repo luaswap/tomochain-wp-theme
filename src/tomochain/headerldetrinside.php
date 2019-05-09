@@ -31,7 +31,7 @@
 	?>
 </div>
 <?php endif; ?>
-<div id="page" class="site enterprise">
+<div id="page" class="site enterprise-inside">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tomochain' ); ?></a>
 	<?php if (!is_404()): ?>
 	<header id="masthead" class="site-header">
@@ -39,7 +39,7 @@
 			<div class="row">
 				<div class="site-branding enter-logo">
 					<a href="<?php echo esc_url($home_url); ?>">
-						<img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/logo-tomochain.png'); ?>" alt="Logo">
+						<img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/logo-tomochain-black.png'); ?>" alt="Logo">
 					</a>
 				</div><!-- .site-branding -->
 
