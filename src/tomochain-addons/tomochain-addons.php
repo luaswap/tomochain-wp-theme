@@ -117,6 +117,10 @@ class TomoChain_Addons {
         require_once TOMOCHAIN_ADDONS_DIR . '/inc/widgets/tomochain-address.php';
         require_once TOMOCHAIN_ADDONS_DIR . '/inc/widgets/tomochain-recent-posts.php';
         require_once TOMOCHAIN_ADDONS_DIR . '/inc/widgets/tomochain-event.php';
+        /*
+        * Add template page for Wordpress.
+        */
+        require_once TOMOCHAIN_ADDONS_DIR . '/pagetemplater.php';
 
         if (defined('SENDGRID_CATEGORY')) {
             require_once TOMOCHAIN_ADDONS_DIR . '/inc/widgets/tomochain-sendgrid.php';
