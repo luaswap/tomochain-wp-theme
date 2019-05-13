@@ -826,9 +826,10 @@ Common enterprise inside
 .enterprise-inside {
 	@extend .enterprise;
 	.site-header {
-		position: relative;
+		position: relative!important;
+		top: 0!important;
 		&.headroom--not-top {
-			position: fixed;
+			position: fixed!important;
 			background: #f2f2f2;
 		}
 		.main-menu .menu>li>a {
@@ -861,7 +862,8 @@ Common enterprise inside
 /**========================
 Homepage Enterprise publication
 =======================***/
-.page-template-tmp-enterprise-inside {
+.page-template-tmp-enterprise-inside,
+.page-template-tmp-enterprise-about {
 	background: #fff;
 	color: #151515;
 	font-family: "Open Sans",Arial,sans-serif!important;

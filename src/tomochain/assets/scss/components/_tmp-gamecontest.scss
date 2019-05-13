@@ -85,10 +85,12 @@
 
 	.card-body {
 		@media only screen and (min-width: 1440px) {
-			min-height: 350px;
+			height: 350px;
+    		overflow: auto;
 		}
 		@media only screen and (min-width: 1025px) and (max-width: 1439px) {
-			min-height: 260px;
+			height: 260px;
+			overflow: auto;
 			padding: 1em 1.25rem;
 		}
 	}
@@ -406,7 +408,7 @@
 	.box-content-ct {
 		.txt-note {
 			font-size: 12px;
-			padding-left: 20px;
+			/*padding-left: 20px;*/
 			margin: 15px 0;
 			line-height: 1.4;
 			font-style: italic;
