@@ -24,6 +24,9 @@ var tomochain
                         this.categories_filter();
                         this.dapp_categories_filter();
                         this.road_filter();
+                        this.bounty();
+                        this.thank_you();
+                        this.form_popup();
                     }
                 }
             }()
@@ -33,6 +36,7 @@ var tomochain
 //@include('blog.js')
 //@include('categories_filter.js')
 //@include('dapp.js')
+//@include('bounty.js')
 //@include('common.js')
 //@include('event.js')
 //@include('header.js')

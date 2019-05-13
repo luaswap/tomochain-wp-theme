@@ -1,5 +1,29 @@
 <?php
+// function to display number of posts.
+function tomochain_getPostViews($postID){
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+        return "0";
+    }
+    return $count;
+}
 
+// function to count views.
+function tomochain_setPostViews($postID) {
+    $count_key = 'post_views_count';
+    $count = get_post_meta($postID, $count_key, true);
+    if($count==''){
+        $count = 0;
+        delete_post_meta($postID, $count_key);
+        add_post_meta($postID, $count_key, '0');
+    }else{
+        $count++;
+        update_post_meta($postID, $count_key, $count);
+    }
+}
 function tomochain_get_shortcode_id($name) {
     global $tomochain_shortcode_id;
 
@@ -282,3 +306,21 @@ function tomochain_roadmap_ajax(){
     wp_die();
 
 }
+/**
+ * Thank you when bounty send mail successful
+ */
+function tomochain_bounty_thank_you() {
+
+    if(isset($_POST['id']) && !empty($_POST['id'])){
+        $number_submit = get_post_meta($_POST['id'],'tomochain_number_submit',true);
+        if(!empty($number_submit)){
+            update_post_meta($_POST['id'],'tomochain_number_submit',$number_submit + 1);
+        }else{
+            $number_submit = 1;
+            update_post_meta($_POST['id'],'tomochain_number_submit',$number_submit);
+        }
+    }
+    wp_die();
+}
+add_action('wp_ajax_tomochain_bounty_thank_you','tomochain_bounty_thank_you');
+add_action('wp_ajax_nopriv_tomochain_bounty_thank_you','tomochain_bounty_thank_you');

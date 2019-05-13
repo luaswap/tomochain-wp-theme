@@ -59,6 +59,7 @@ if ( ! function_exists( 'tomochain_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'tomochain' ),
+			'footer-menu-bounty' => esc_html__( 'Footer Menu Bounty', 'tomochain' ),
 		) );
 
 		/*
@@ -236,6 +237,11 @@ function tomochain_enqueue_libs() {
     wp_register_script( 'jquery-flipster',
         TOMOCHAIN_LIBS_URI . '/jquery-flipster/js/jquery.flipster.min.js',
         array(),
+        null,
+        true );
+    wp_register_script( 'datatable',
+        TOMOCHAIN_LIBS_URI . '/datatable/datatables.min.js',
+        array('jquery'),
         null,
         true );
 }

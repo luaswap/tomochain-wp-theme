@@ -8,7 +8,11 @@
  *
  * @package tomochain
  */
+$home_url = get_home_url();
 
+if (function_exists('pll_home_url')) {
+    $home_url = pll_home_url();
+}
 ?>
 
     </div><!-- #content -->
