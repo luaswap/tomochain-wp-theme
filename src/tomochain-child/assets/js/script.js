@@ -43,7 +43,7 @@ jQuery(document).ready(function($) {
         calculateForLaptop();
     });
 
-    $(window).on('resize', function() {
-        calculateForLaptop();
-    });
+    // $(window).on('resize', function() {
+    //     calculateForLaptop();
+    // });
 });
