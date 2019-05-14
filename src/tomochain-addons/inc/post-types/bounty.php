@@ -83,7 +83,7 @@ if ( !class_exists( 'Tomochain_Bounty_Post_Type' ) ) {
                 'show_in_nav_menus' => true,
                 'show_tagcloud'     => true,
                 'show_admin_column' => true,
-                'hierarchical'      => false,
+                'hierarchical'      => true,
                 'query_var'         => true,
             );
             register_taxonomy('project', array(
@@ -118,7 +118,7 @@ if ( !class_exists( 'Tomochain_Bounty_Post_Type' ) ) {
                 'show_in_nav_menus' => true,
                 'show_tagcloud'     => true,
                 'show_admin_column' => true,
-                'hierarchical'      => false,
+                'hierarchical'      => true,
                 'query_var'         => true,
             );
             register_taxonomy('status', array(

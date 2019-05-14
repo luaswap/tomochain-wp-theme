@@ -3,7 +3,7 @@
 
 get_template_part('headerbounty');
 $args = array(
-	'post_type'  => 'bouty',
+	'post_type'  => 'bounty',
 	'post_status' => 'publish',
 	'posts_per_page' => -1
 );
@@ -118,10 +118,12 @@ wp_enqueue_script('datatable');
 											<td>
 												<a class="txt-tile" href="<?php echo get_permalink();?>" title="<?php echo get_the_title();?>"><?php echo get_the_title();?></a>
 												<div class="txt-status">
-													<?php if(!is_wp_error($project)):
-														foreach ($project as $p):?>
-															<span><?php echo esc_html_e('Project:','tomochain-addon') ?><a href="<?php echo esc_url($project_url);?>" target="_blank"><?php echo esc_html($p->name);?></a></span>
-														<?php endforeach;?>
+													<?php if(!is_wp_error($project)):?>
+														<span><?php echo esc_html_e('Project:','tomochain-addon') ?>
+															<?php foreach ($project as $p):?>
+																<a href="<?php echo esc_url($project_url);?>" target="_blank"><?php echo esc_html($p->name);?></a>
+															<?php endforeach;?>
+														</span>
 													<?php endif;?>
 													<span title="View"><span class="tm-eye"></span><?php echo tomochain_getPostViews(get_the_ID());?></span>
 													<span title="Number of participants"><span class="tm-avatar"></span><?php echo $number_submit = !empty($number_submit) ? esc_html($number_submit) : 0;?></span>
@@ -135,7 +137,7 @@ wp_enqueue_script('datatable');
 											<td><?php if($reward) echo esc_html($reward);?></td>
 										</tr>
 									<?php endwhile;?>
-								<?php 
+								<?php
 								wp_reset_postdata();
 								endif;?>
 							</tbody>

@@ -70,7 +70,7 @@
 					<div class="col-sm-8">
 						<div class="tomochain-contest-countdown">
 							<div class="box-countdown">
-								<h3 class="txt-title"><?php echo esc_html__('The 1st submission round has ended','tomochain')?></h3>
+								<h3 class="txt-title"><?php echo esc_html__('The 2nd round will end in','tomochain')?></h3>
 
 								<!-- <h3 class="txt-title"><?php //echo esc_html__('The 1st contest submission ends in:','tomochain')?></h3> -->
 								<div id="clockdiv" class="inner-countdown">
@@ -139,7 +139,7 @@
 										var timeinterval = setInterval(updateClock, 1000);
 									}
 									//var time_update = "<?php //echo esc_attr($time_update);?>";
-									var time_update = "April 23, 2019 10:44:10";
+									var time_update = "May 22, 2019 24:00:00";
 									var deadline = new Date(time_update);
 									initializeClock('clockdiv', deadline);
 								</script> 

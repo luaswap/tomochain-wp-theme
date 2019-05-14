@@ -11971,9 +11971,10 @@ Homepage Enterprise
 Common enterprise inside
 =======================***/
 .enterprise-inside .site-header {
-  position: relative; }
+  position: relative !important;
+  top: 0 !important; }
   .enterprise-inside .site-header.headroom--not-top {
-    position: fixed;
+    position: fixed !important;
     background: #f2f2f2; }
   .enterprise-inside .site-header .main-menu .menu > li > a {
     color: #151515; }
@@ -11993,43 +11994,56 @@ Common enterprise inside
 /**========================
 Homepage Enterprise publication
 =======================***/
-.page-template-tmp-enterprise-inside {
+.page-template-tmp-enterprise-inside,
+.page-template-tmp-enterprise-about {
   background: #fff;
   color: #151515;
   font-family: "Open Sans", Arial, sans-serif !important;
   font-size: 14px; }
-  .page-template-tmp-enterprise-inside a {
+  .page-template-tmp-enterprise-inside a,
+  .page-template-tmp-enterprise-about a {
     text-decoration: none !important;
     display: inline-block; }
-  .page-template-tmp-enterprise-inside .vc_custom_heading {
+  .page-template-tmp-enterprise-inside .vc_custom_heading,
+  .page-template-tmp-enterprise-about .vc_custom_heading {
     font-family: "Open Sans",Arial,sans-serif;
     font-weight: bold;
     margin-top: 0; }
-  .page-template-tmp-enterprise-inside .enter_nav {
+  .page-template-tmp-enterprise-inside .enter_nav,
+  .page-template-tmp-enterprise-about .enter_nav {
     padding: 30px 0 0; }
-    .page-template-tmp-enterprise-inside .enter_nav span.current-item {
+    .page-template-tmp-enterprise-inside .enter_nav span.current-item,
+    .page-template-tmp-enterprise-about .enter_nav span.current-item {
       color: #ff7c4d; }
-    .page-template-tmp-enterprise-inside .enter_nav span a {
+    .page-template-tmp-enterprise-inside .enter_nav span a,
+    .page-template-tmp-enterprise-about .enter_nav span a {
       color: #2c2c2c;
       display: inline-block;
       position: relative; }
-      .page-template-tmp-enterprise-inside .enter_nav span a:hover {
+      .page-template-tmp-enterprise-inside .enter_nav span a:hover,
+      .page-template-tmp-enterprise-about .enter_nav span a:hover {
         text-decoration: underline !important; }
-      .page-template-tmp-enterprise-inside .enter_nav span a:after {
+      .page-template-tmp-enterprise-inside .enter_nav span a:after,
+      .page-template-tmp-enterprise-about .enter_nav span a:after {
         content: ' / '; }
-  .page-template-tmp-enterprise-inside .enter_label {
+  .page-template-tmp-enterprise-inside .enter_label,
+  .page-template-tmp-enterprise-about .enter_label {
     margin: 15px 0 50px; }
-    .page-template-tmp-enterprise-inside .enter_label .row {
+    .page-template-tmp-enterprise-inside .enter_label .row,
+    .page-template-tmp-enterprise-about .enter_label .row {
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
-      .page-template-tmp-enterprise-inside .enter_label .row .filter-category select {
+      .page-template-tmp-enterprise-inside .enter_label .row .filter-category select,
+      .page-template-tmp-enterprise-about .enter_label .row .filter-category select {
         display: none; }
-      .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-selected {
+      .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-selected,
+      .page-template-tmp-enterprise-about .enter_label .row .filter-category .select-selected {
         background-color: #f2f2f2;
         position: relative;
         font-family: Arial; }
-        .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-selected:after {
+        .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-selected:after,
+        .page-template-tmp-enterprise-about .enter_label .row .filter-category .select-selected:after {
           position: absolute;
           content: '\e903';
           font-size: 7px;
@@ -12038,10 +12052,13 @@ Homepage Enterprise publication
           font-family: tomochain;
           -webkit-transition: all .3s ease;
           transition: all .3s ease; }
-        .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-selected.select-arrow-active:after {
+        .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-selected.select-arrow-active:after,
+        .page-template-tmp-enterprise-about .enter_label .row .filter-category .select-selected.select-arrow-active:after {
           -webkit-transform: rotate(-180deg);
                   transform: rotate(-180deg); }
-      .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-items div, .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-selected {
+      .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-items div, .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-selected,
+      .page-template-tmp-enterprise-about .enter_label .row .filter-category .select-items div,
+      .page-template-tmp-enterprise-about .enter_label .row .filter-category .select-selected {
         color: #151515;
         padding: 10px 20px;
         cursor: pointer;
@@ -12049,18 +12066,23 @@ Homepage Enterprise publication
            -moz-user-select: none;
             -ms-user-select: none;
                 user-select: none; }
-      .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-items {
+      .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-items,
+      .page-template-tmp-enterprise-about .enter_label .row .filter-category .select-items {
         position: absolute;
         background-color: #f2f2f2;
         top: 100%;
         left: 0;
         right: 0;
         z-index: 99; }
-        .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-items div {
+        .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-items div,
+        .page-template-tmp-enterprise-about .enter_label .row .filter-category .select-items div {
           border-top: 1px solid #e6e6e6; }
-      .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-hide {
+      .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-hide,
+      .page-template-tmp-enterprise-about .enter_label .row .filter-category .select-hide {
         display: none; }
-      .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-items div:hover, .page-template-tmp-enterprise-inside .enter_label .row .filter-category .same-as-selected {
+      .page-template-tmp-enterprise-inside .enter_label .row .filter-category .select-items div:hover, .page-template-tmp-enterprise-inside .enter_label .row .filter-category .same-as-selected,
+      .page-template-tmp-enterprise-about .enter_label .row .filter-category .select-items div:hover,
+      .page-template-tmp-enterprise-about .enter_label .row .filter-category .same-as-selected {
         background-color: rgba(102, 102, 102, 0.1); }
 
 .single_subtitle_large {
@@ -12650,7 +12672,7 @@ Homepage Enterprise publication
       border: 1px solid #173d7a !important; }
   .con-game-contest .box-content-ct .txt-note {
     font-size: 12px;
-    padding-left: 20px;
+    /*padding-left: 20px;*/
     margin: 15px 0;
     line-height: 1.4;
     font-style: italic; }
@@ -17459,15 +17481,18 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           z-index: -1;
           width: calc(100% - 15px);
           height: 100%; }
-    .page-template-tmp-enterprise-inside .post_filter_wrapper .enter_type_post {
+    .page-template-tmp-enterprise-inside .post_filter_wrapper .enter_type_post,
+    .page-template-tmp-enterprise-about .post_filter_wrapper .enter_type_post {
       margin-top: 50px; }
-      .page-template-tmp-enterprise-inside .post_filter_wrapper .enter_type_post:first-child {
+      .page-template-tmp-enterprise-inside .post_filter_wrapper .enter_type_post:first-child,
+      .page-template-tmp-enterprise-about .post_filter_wrapper .enter_type_post:first-child {
         width: 100% !important;
         max-width: 100% !important;
         min-width: 100%;
         display: block;
         margin-top: 0px; }
-        .page-template-tmp-enterprise-inside .post_filter_wrapper .enter_type_post:first-child .enter_post_img a {
+        .page-template-tmp-enterprise-inside .post_filter_wrapper .enter_type_post:first-child .enter_post_img a,
+        .page-template-tmp-enterprise-about .post_filter_wrapper .enter_type_post:first-child .enter_post_img a {
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -17479,7 +17504,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
                   justify-content: center;
           max-height: 500px;
           overflow: hidden; }
-          .page-template-tmp-enterprise-inside .post_filter_wrapper .enter_type_post:first-child .enter_post_img a img {
+          .page-template-tmp-enterprise-inside .post_filter_wrapper .enter_type_post:first-child .enter_post_img a img,
+          .page-template-tmp-enterprise-about .post_filter_wrapper .enter_type_post:first-child .enter_post_img a img {
             width: 100%; }
   .enter_type_post {
     display: -webkit-box;
@@ -18770,7 +18796,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         max-width: 1060px; }
     .page-template-tmp-gamedappathon .card-body,
     .page-template-tmp-gamecontest .card-body {
-      min-height: 260px;
+      height: 260px;
+      overflow: auto;
       padding: 1em 1.25rem; }
       .tab-game-contest .tomochain-contest-countdown .box-countdown .txt-title {
         font-size: 12px; }
@@ -19607,7 +19634,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
   @media only screen and (min-width: 1440px) {
     .page-template-tmp-gamedappathon .card-body,
     .page-template-tmp-gamecontest .card-body {
-      min-height: 350px; }
+      height: 350px;
+      overflow: auto; }
         .tab-game-contest .tomochain-contest-filter li .tab-item {
           font-size: 15px; }
       .con-game-contest .box-infor-ct .game-avatar {
@@ -20631,11 +20659,14 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         .page-template-tmp-enterprise .con_get_touch .content_touch .container .txt_desc_touch {
           font-size: 14px;
           color: #151515; }
-      .page-template-tmp-enterprise-inside .vc_custom_heading {
+      .page-template-tmp-enterprise-inside .vc_custom_heading,
+      .page-template-tmp-enterprise-about .vc_custom_heading {
         font-size: 2em; }
-      .page-template-tmp-enterprise-inside .enter_nav {
+      .page-template-tmp-enterprise-inside .enter_nav,
+      .page-template-tmp-enterprise-about .enter_nav {
         padding: 0; }
-      .page-template-tmp-enterprise-inside .enter_label {
+      .page-template-tmp-enterprise-inside .enter_label,
+      .page-template-tmp-enterprise-about .enter_label {
         margin: 15px 0 30px; }
     .single_subtitle_large {
       font-size: 24px; }
