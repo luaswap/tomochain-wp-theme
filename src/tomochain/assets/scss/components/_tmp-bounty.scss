@@ -75,6 +75,30 @@ common bounty
 	page list bounty
 ============================*/
 /**box-faq-bounty**/
+.dataTables_filter{
+	display: none;
+}
+.dataTables_paginate{
+	text-align: right;
+	a{
+		margin-left: 10px;
+		cursor: pointer;
+		width: 20px;
+	    height: 20px;
+	    display: inline-block;
+	    vertical-align: middle;
+	    line-height: 20px;
+	    text-align: center;
+		&.current{
+			background: #2C2F50;
+		    cursor: auto;
+		}
+		&.previous,&.next{
+			width: auto;
+			height: auto;
+		}
+	}
+}
 .box-faq-bounty {
 	border-top: 1px solid #2b2d46;
 	margin: 50px 0 0;
@@ -104,6 +128,8 @@ common bounty
 				margin: 10px 0;
 				padding-left: 30px;
 				position: relative;
+				font-style: italic;
+				cursor: pointer;
 				&:before {
 					content: '';
 					width: 10px;
@@ -114,19 +140,12 @@ common bounty
 					left: 2px;
 					top: 6px;
 				}
-				a {
-					display: inline-block;
-				}
-				span {
-					font-style: italic;
-				}
 				&.active {
+					color: #fff;
+					font-weight: bold;
 					&:before {
 						background: #2a8bff;
 						border: 1px solid #2a8bff;
-					}
-					a,span {
-						color: #fff;
 					}
 				}
 			}
@@ -346,7 +365,6 @@ common bounty
 		}
 	}
 }
-
 /**footer-bounty**/
 .not-bg {
 	background: transparent!important;
@@ -419,6 +437,40 @@ common bounty
 .container-detail-bounty {
 	max-width: 900px;
 	margin: 0 auto;
+	.box-form-wrap{
+		position: fixed;
+	    z-index: 9;
+	    top: 5%;
+	    bottom: 0;
+	    left: 0;
+	    right: 0;
+	    display: none;
+	    &:before{
+	    	content:'';
+	    	display: block;
+	    	position: absolute;
+			background: #1c2139d6;
+			width: 100%;
+			height: 100%;
+	    }
+	    .close{
+		    position: absolute;
+		    right: 10%;
+		    color: #fff;
+		    width: 30px;
+		    height: 30px;
+		    text-align: center;
+		    line-height: 30px;
+		    font-size: 18px;
+		    font-weight: bold;
+	    }
+		.box-form-detail {
+			max-width: 650px;
+			margin: 0 auto;
+			position: relative;
+			z-index: 2;
+		}
+	}
 	.tomo-bounty-title {
 		font-size: 16px;
 		text-transform: uppercase;

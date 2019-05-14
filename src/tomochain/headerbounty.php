@@ -8,7 +8,11 @@
  *
  * @package tomochain
  */
+$home_url = get_home_url();
 
+if (function_exists('pll_home_url')) {
+	$home_url = pll_home_url();
+}
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -16,7 +20,6 @@
 	<meta charset="<?php bloginfo( 'charset' ); ?>">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
 	<?php wp_head(); ?>
 </head>
 
