@@ -78,7 +78,7 @@ if ( !class_exists( 'Tomochain_Bounty_Post_Type' ) ) {
 
             $project_args = array(
                 'labels'            => $project_labels,
-                'public'            => false,
+                'public'            => true,
                 'show_ui'           => true,
                 'show_in_nav_menus' => true,
                 'show_tagcloud'     => true,
@@ -113,7 +113,7 @@ if ( !class_exists( 'Tomochain_Bounty_Post_Type' ) ) {
 
             $status_args = array(
                 'labels'            => $status_labels,
-                'public'            => false,
+                'public'            => true,
                 'show_ui'           => true,
                 'show_in_nav_menus' => true,
                 'show_tagcloud'     => true,
