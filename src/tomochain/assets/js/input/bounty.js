@@ -2,14 +2,14 @@
     function ($) {
         tomochain.bounty = function () {
             if($('.list-bounty').length > 0){
-                var perpage = $('.list-bounty').attr('data-page');
+                if ($(window).width() > 991){
+                    var perpage = $('.list-bounty').attr('data-page');
                     var table = $('.list-bounty').DataTable({
                         // searching: false,
                         lengthChange: false,
                         pageLength: parseInt(perpage),
-                        //paging: false,
+                        //paging: false, 
                         info: false});
-                if ($(window).width() > 991){
                     var search_status = $('.status');
                     search_status.on( 'click','li', function (e) {
                         e.preventDefault();
@@ -35,6 +35,13 @@
                         }
                     } );
                 }else{
+                    var perpage = $('.list-bounty').attr('data-page');
+                    var table = $('.list-bounty').DataTable({
+                        // searching: false,
+                        lengthChange: false,
+                        pageLength: parseInt(perpage),
+                        //paging: false, 
+                        info: false});
                     var search_status = $('.select-status');
                     search_status.on( 'change', function () {
                         if ( table.columns('.title-sort').search() !==  $(this).val() ) {
