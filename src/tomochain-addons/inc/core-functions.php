@@ -324,3 +324,14 @@ function tomochain_bounty_thank_you() {
 }
 add_action('wp_ajax_tomochain_bounty_thank_you','tomochain_bounty_thank_you');
 add_action('wp_ajax_nopriv_tomochain_bounty_thank_you','tomochain_bounty_thank_you');
+/* Redirect to Bounty page */
+function tomochain_bounty_redirect(){
+    if ( is_post_type_archive( 'bounty' ) || is_tax( 'project' ) || is_tax( 'status' ) ) {
+        $url = get_field('bounty_url','options');
+        if(!empty($url)){
+            wp_redirect($url);
+            exit();
+        }
+    }
+}
+add_action( 'template_redirect', 'tomochain_bounty_redirect' );
