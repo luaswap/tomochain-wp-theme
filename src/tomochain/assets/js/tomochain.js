@@ -196,6 +196,7 @@ var tomochain
     function ($) {
         tomochain.bounty = function () {
             if($('.list-bounty').length > 0){
+                if ($(window).width() > 991){
                 var perpage = $('.list-bounty').attr('data-page');
                     var table = $('.list-bounty').DataTable({
                         // searching: false,
@@ -203,7 +204,6 @@ var tomochain
                         pageLength: parseInt(perpage),
                         //paging: false,
                         info: false});
-                if ($(window).width() > 991){
                     var search_status = $('.status');
                     search_status.on( 'click','li', function (e) {
                         e.preventDefault();

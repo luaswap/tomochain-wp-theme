@@ -6,7 +6,7 @@ msgstr ""
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language-Team: Vietnamese\n"
+"Language-Team: Chinese (China)\n"
 "Report-Msgid-Bugs-To: https://tomochain.com\n"
 "X-Poedit-Basepath: ..\n"
 "X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:"
@@ -17,9 +17,9 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "POT-Creation-Date: 2019-05-10 03:04+0000\n"
-"PO-Revision-Date: 2019-05-10 03:05+0000\n"
+"PO-Revision-Date: 2019-05-10 03:14+0000\n"
 "Last-Translator: TomoChain <hka@tomochain.com>\n"
-"Language: vi\n"
+"Language: zh_CN\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.2.0; wp-4.9.10"
 
@@ -51,27 +51,27 @@ msgstr ""
 
 #: headerldgame.php:49
 msgid "TomoChain Game Dappathon"
-msgstr ""
+msgstr "TomoChain的游戏去中心化应用黑客马拉松"
 
 #: headerldgame.php:73
 msgid "The 2nd round will end in"
-msgstr "Vòng 2 sẽ kết thúc sau:"
+msgstr "二轮比赛结束时间"
 
 #: headerldgame.php:79
 msgid "days"
-msgstr "ngày"
+msgstr "天"
 
 #: headerldgame.php:83
 msgid "hours"
-msgstr "giờ"
+msgstr "个小时"
 
 #: headerldgame.php:87
 msgid "minutes"
-msgstr "phút"
+msgstr "分钟"
 
 #: headerldgame.php:91
 msgid "second"
-msgstr ""
+msgstr "秒钟"
 
 #: headerldgame.php:152
 msgid "Form Submission"
@@ -91,7 +91,7 @@ msgstr ""
 
 #: header.php:39 header.php:41 header.php:43 header.php:45 header.php:47
 msgid "Join our Telegram"
-msgstr "Telegram của chúng tôi"
+msgstr ""
 
 #. translators: 1: title.
 #: comments.php:35
@@ -192,11 +192,11 @@ msgstr ""
 
 #: template-parts/page-title.php:12 template-parts/page-title.php:22
 msgid "Blog"
-msgstr ""
+msgstr "博客"
 
 #: template-parts/page-title.php:19
 msgid "Events"
-msgstr ""
+msgstr "活动"
 
 #: template-parts/page-title.php:28
 msgid "Tags: "

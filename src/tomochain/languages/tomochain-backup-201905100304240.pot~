@@ -1,31 +1,26 @@
-# Copyright (C) 2018 tomochain
-# This file is distributed under the same license as the tomochain package.
+#, fuzzy
 msgid ""
 msgstr ""
-"Project-Id-Version: tomochain\n"
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: TomoChain\n"
+"POT-Creation-Date: 2019-04-23 02:26+0000\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: \n"
+"Language-Team: \n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
-"Language-Team: Vietnamese\n"
-"Report-Msgid-Bugs-To: https://tomochain.com\n"
+"X-Generator: Loco https://localise.biz/\n"
 "X-Poedit-Basepath: ..\n"
-"X-Poedit-KeywordsList: __;_e;_ex:1,2c;_n:1,2;_n_noop:1,2;_nx:1,2,4c;_nx_noop:"
-"1,2,3c;_x:1,2c;esc_attr__;esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;"
-"esc_html_x:1,2c\n"
+"X-Poedit-Flags-xgettext: --add-comments=translators:\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
-"X-Poedit-SourceCharset: UTF-8\n"
-"Plural-Forms: nplurals=1; plural=0;\n"
-"POT-Creation-Date: 2019-05-10 03:04+0000\n"
-"PO-Revision-Date: 2019-05-10 03:05+0000\n"
-"Last-Translator: TomoChain <hka@tomochain.com>\n"
-"Language: vi\n"
-"X-Generator: Loco https://localise.biz/\n"
-"X-Loco-Version: 2.2.0; wp-4.9.10"
-
-#: headerbounty.php:37
-msgid "TomoChain Bounties Program"
-msgstr ""
+"Language: "
 
 #. translators: %s: search query.
 #: search.php:22 template-parts/page-title.php:31
@@ -33,8 +28,7 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: headerld.php:38 headerldgame.php:36 header.php:75 headerldetrinside.php:35
-#: headerldetr.php:35
+#: headerld.php:38 headerldgame.php:36 header.php:63 headerldetr.php:35
 msgid "Skip to content"
 msgstr ""
 
@@ -54,30 +48,30 @@ msgid "TomoChain Game Dappathon"
 msgstr ""
 
 #: headerldgame.php:73
-msgid "The 2nd round will end in"
-msgstr "Vòng 2 sẽ kết thúc sau:"
+msgid "The 1st submission round has ended"
+msgstr ""
 
 #: headerldgame.php:79
 msgid "days"
-msgstr "ngày"
+msgstr ""
 
 #: headerldgame.php:83
 msgid "hours"
-msgstr "giờ"
+msgstr ""
 
 #: headerldgame.php:87
 msgid "minutes"
-msgstr "phút"
+msgstr ""
 
 #: headerldgame.php:91
 msgid "second"
 msgstr ""
 
-#: headerldgame.php:152
+#: headerldgame.php:143
 msgid "Form Submission"
 msgstr ""
 
-#: headerldgame.php:155
+#: headerldgame.php:146
 msgid "Contest"
 msgstr ""
 
@@ -89,9 +83,9 @@ msgstr ""
 msgid "Go Home"
 msgstr ""
 
-#: header.php:39 header.php:41 header.php:43 header.php:45 header.php:47
+#: header.php:37
 msgid "Join our Telegram"
-msgstr "Telegram của chúng tôi"
+msgstr ""
 
 #. translators: 1: title.
 #: comments.php:35
@@ -139,7 +133,6 @@ msgctxt "post author"
 msgid "By %s"
 msgstr ""
 
-#. translators: %s: Name of current post. Only visible to screen readers
 #. translators: %s: Name of current post. Only visible to screen readers
 #: inc/template-tags.php:118 template-parts/content-page.php:34
 #, php-format

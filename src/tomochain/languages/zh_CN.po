@@ -16,12 +16,16 @@ msgstr ""
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"POT-Creation-Date: 2019-04-02 06:38+0000\n"
-"PO-Revision-Date: 2019-04-02 06:55+0000\n"
-"Last-Translator: Xiem Nguyen <xiemnguyen@tommochain.com>\n"
+"POT-Creation-Date: 2019-05-10 03:04+0000\n"
+"PO-Revision-Date: 2019-05-10 03:16+0000\n"
+"Last-Translator: TomoChain <hka@tomochain.com>\n"
 "Language: zh_CN\n"
 "X-Generator: Loco https://localise.biz/\n"
 "X-Loco-Version: 2.2.0; wp-4.9.10"
+
+#: headerbounty.php:37
+msgid "TomoChain Bounties Program"
+msgstr ""
 
 #. translators: %s: search query.
 #: search.php:22 template-parts/page-title.php:31
@@ -29,7 +33,8 @@ msgstr ""
 msgid "Search Results for: %s"
 msgstr ""
 
-#: headerld.php:38 headerldgame.php:36 header.php:63 headerldetr.php:37
+#: headerld.php:38 headerldgame.php:36 header.php:75 headerldetrinside.php:35
+#: headerldetr.php:35
 msgid "Skip to content"
 msgstr ""
 
@@ -49,30 +54,30 @@ msgid "TomoChain Game Dappathon"
 msgstr "TomoChain的游戏去中心化应用黑客马拉松"
 
 #: headerldgame.php:73
-msgid "The 1st contest submission ends in:"
-msgstr "第一场提交的比赛结果："
+msgid "The 2nd round will end in"
+msgstr "第二轮比赛结束时间"
 
-#: headerldgame.php:77
+#: headerldgame.php:79
 msgid "days"
 msgstr "天"
 
-#: headerldgame.php:81
+#: headerldgame.php:83
 msgid "hours"
 msgstr "个小时"
 
-#: headerldgame.php:85
+#: headerldgame.php:87
 msgid "minutes"
 msgstr "分钟"
 
-#: headerldgame.php:89
+#: headerldgame.php:91
 msgid "second"
 msgstr "秒钟"
 
-#: headerldgame.php:141
+#: headerldgame.php:152
 msgid "Form Submission"
 msgstr ""
 
-#: headerldgame.php:144
+#: headerldgame.php:155
 msgid "Contest"
 msgstr ""
 
@@ -84,7 +89,7 @@ msgstr ""
 msgid "Go Home"
 msgstr ""
 
-#: header.php:37
+#: header.php:39 header.php:41 header.php:43 header.php:45 header.php:47
 msgid "Join our Telegram"
 msgstr ""
 
@@ -141,12 +146,12 @@ msgstr ""
 msgid "Edit <span class=\"screen-reader-text\">%s</span>"
 msgstr ""
 
-#: inc/template-functions.php:214
+#: inc/template-functions.php:217
 #, php-format
 msgid "View all posts in %s"
 msgstr ""
 
-#: inc/template-functions.php:218
+#: inc/template-functions.php:221
 #, php-format
 msgid "%s"
 msgstr ""

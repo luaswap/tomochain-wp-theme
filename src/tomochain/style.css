@@ -10525,9 +10525,15 @@ This is where majority of our work takes place and our UI components are often c
 .grecaptcha-badge {
   opacity: 0; }
 
-.header-tools ul.list li:last-child {
-  display: none; }
-
+/*.header-tools {
+    ul.list {
+        li {
+            &:last-child {
+                display: none;
+            }
+        }
+    }
+}*/
 /**-------------------------------
 	Define CSS - Common
 ----------------------------------**/

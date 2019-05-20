@@ -17,7 +17,7 @@ msgstr ""
 "X-Poedit-SourceCharset: UTF-8\n"
 "Plural-Forms: nplurals=1; plural=0;\n"
 "POT-Creation-Date: 2019-05-10 03:04+0000\n"
-"PO-Revision-Date: 2019-05-10 03:05+0000\n"
+"PO-Revision-Date: 2019-05-10 03:04+0000\n"
 "Last-Translator: TomoChain <hka@tomochain.com>\n"
 "Language: vi\n"
 "X-Generator: Loco https://localise.biz/\n"
@@ -55,7 +55,7 @@ msgstr ""
 
 #: headerldgame.php:73
 msgid "The 2nd round will end in"
-msgstr "Vòng 2 sẽ kết thúc sau:"
+msgstr ""
 
 #: headerldgame.php:79
 msgid "days"
