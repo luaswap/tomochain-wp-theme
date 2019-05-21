@@ -12,7 +12,6 @@ if( ! class_exists( 'Tomochain_Add_Posttypes' ) ) {
 		}
 
 		public function includes() {
-			require_once( TOMOCHAIN_ADDONS_DIR . '/inc/post-types/enterprise.php');
 			require_once( TOMOCHAIN_ADDONS_DIR . '/inc/post-types/event.php');
 			require_once( TOMOCHAIN_ADDONS_DIR . '/inc/post-types/dapp.php');
 			require_once( TOMOCHAIN_ADDONS_DIR . '/inc/post-types/road-map.php');

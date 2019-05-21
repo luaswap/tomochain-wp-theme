@@ -147,5 +147,6 @@ wp_enqueue_script('datatable');
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
+	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 <?php
 get_template_part('footerbounty'); ?>
