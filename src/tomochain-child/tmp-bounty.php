@@ -11,9 +11,42 @@ get_template_part('headerbounty');
 	<div class="content-area">
 		<main class="site-main">
 			<div class="container">
-
-				<!-- content detail -->
-				<div class="row">
+				<!-- content - form detail -->
+				<div class="row d-none">
+					<div class="col-12">
+						<div class="container-detail-bounty">
+							<div class="box-form-detail">
+								<h2 class="tomo-job-title">
+									<span>#2</span> Please help us to develop a website that shows ontology nodes distribution
+								</h2>
+								<p>These industries have common points including asset exchanges, verifiable scarcity of virtual objects and collectibles, fast and secure payment networks</p>
+								<div class="box-form">
+									<form>
+										<div class="form_dapps">
+											<div class="form-group-tomo">
+												<p><input type="text" name="" placeholder="Full Name"></span></p>
+											</div>
+											<div class="form-group-tomo">
+												<p><input type="text" name="" placeholder="Email"></span></p>
+											</div>
+											<div class="form-group-tomo">
+												<p><input type="text" name="" placeholder="GitHub"></p>
+											</div>
+											<div class="form-group-tomo">
+												<p><textarea name="Description" cols="40" rows="10" placeholder="Description"></textarea></p>
+											</div>
+											<div class="tomo_btn_grad text-center">
+												<a class="" href="" title="">Submit</a>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- content - detail -->
+				<div class="row d-none">
 					<div class="col-12">
 						<div class="container-detail-bounty">
 							<h2 class="tomo-job-title"><span>#2</span> Please help us to develop a website that shows ontology nodes distribution</h2>
@@ -52,9 +85,7 @@ get_template_part('headerbounty');
 											</tbody>
 										</table>
 										<div class="tomo_btn_grad">
-											<button type="button" data-toggle="modal" data-target="#exampleModalCenter">
-												Claim IT
-											</button>
+											<a href="#">Claim IT</a>
 										</div>
 									</div>
 									<div class="col-12 col-md-8">
@@ -100,36 +131,10 @@ get_template_part('headerbounty');
 								</div>
 							</div>
 						</div>
-						<!-- modal -->
-						<div class="modal fade modal-form-bounty" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-							<div class="modal-dialog modal-dialog-centered modal-lg" role="document">
-								<div class="modal-content">
-									<div class="modal-body">
-										<div class="box-form-detail">
-											<h2 class="tomo-job-title">
-												<span>#2</span> Please help us to develop a website that shows ontology nodes distribution
-											</h2>
-											<p class="cl_black">These industries have common points including asset exchanges, verifiable scarcity of virtual objects and collectibles, fast and secure payment networks</p>
-											<div class="box-form text-center">
-												<br>
-												<br>
-												Contact Form 7
-												<br>
-												<br>
-												<br>
-												<br>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<!-- /modal -->
 					</div>
 				</div>
-				<!-- /content detail -->
-				<!-- content home bounty -->
-				<div class="row d-none">
+				<!-- content - list -->
+				<div class="row">
 					<div class="col-12 col-lg-2">
 						<div class="box-widget-bounty">
 							<div class="widget-cate">
@@ -352,7 +357,6 @@ get_template_part('headerbounty');
 						</nav>
 					</div>
 				</div>
-				<!-- /content home bounty -->
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->

@@ -1,11 +1,11 @@
 msgid ""
 msgstr ""
-"Plural-Forms: nplurals=1; plural=0;\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
 "Project-Id-Version: TomoChain Addons\n"
 "POT-Creation-Date: 2019-04-11 02:55+0000\n"
-"PO-Revision-Date: 2019-04-11 02:56+0000\n"
+"PO-Revision-Date: 2019-05-17 02:53+0000\n"
 "Last-Translator: TomoChain <hka@tomochain.com>\n"
-"Language-Team: Korean\n"
+"Language-Team: Spanish (Spain)\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -19,8 +19,8 @@ msgstr ""
 "_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
+"Language: es_ES\n"
 "Report-Msgid-Bugs-To: \n"
-"Language: ko_KR\n"
 "X-Loco-Version: 2.2.0; wp-4.9.10"
 
 #: tomochain-addons.php:50
@@ -311,7 +311,7 @@ msgstr ""
 
 #: inc/shortcodes/tomochain-event.php:9 inc/post-types/event.php:28
 msgid "Event"
-msgstr "이벤트"
+msgstr ""
 
 #: inc/shortcodes/tomochain-event.php:16 inc/widgets/tomochain-event.php:48
 msgid "Data Source"
@@ -323,7 +323,7 @@ msgstr ""
 
 #: inc/shortcodes/tomochain-event.php:21 inc/post-types/event.php:36
 msgid "All Events"
-msgstr "전체 이벤트"
+msgstr ""
 
 #: inc/shortcodes/tomochain-event.php:22
 msgid "Ongoing Events"
@@ -671,18 +671,18 @@ msgstr ""
 
 #: inc/vc-templates/tomochain_dapp.php:57
 msgid "Run App"
-msgstr "앱 실행"
+msgstr ""
 
 #: inc/vc-templates/tomochain_dapp.php:60
 #: inc/vc-templates/tomochain_testnet_item.php:51
 #: inc/vc-templates/tomochain_testnet_item.php:52
 #: inc/vc-templates/tomochain_dapp2.php:61
 msgid "Source Code"
-msgstr "소스 코드"
+msgstr ""
 
 #: inc/vc-templates/tomochain_team.php:43
 msgid "See all of our team"
-msgstr "우리 팀 모두보기"
+msgstr "MIRA TODO NUESTRO EQUIPO"
 
 #: inc/vc-templates/tomochain_event.php:119
 #: inc/vc-templates/tomochain_blog.php:89
@@ -692,7 +692,6 @@ msgstr ""
 #: inc/vc-templates/tomochain_roadmap_new.php:59
 msgid "All"
 msgstr ""
-"전체\n"
 
 #: inc/vc-templates/tomochain_roadmap_new.php:216
 msgid "Next Roadmap Update"
@@ -734,7 +733,7 @@ msgstr ""
 #: inc/vc-templates/tomochain_testnet_item.php:47
 #: inc/vc-templates/tomochain_dapp2.php:58
 msgid "More Info"
-msgstr "더 많은 정보 보기"
+msgstr ""
 
 #: inc/vc-templates/tomochain_video_item.php:40
 msgid "Play"
@@ -780,7 +779,7 @@ msgstr ""
 
 #: inc/post-types/event.php:27 inc/post-types/event.php:29
 msgid "Events"
-msgstr "이벤트"
+msgstr ""
 
 #: inc/post-types/event.php:31 inc/post-types/event.php:33
 msgid "Add New Event"
