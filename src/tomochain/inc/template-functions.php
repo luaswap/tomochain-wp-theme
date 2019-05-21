@@ -249,3 +249,15 @@ if ( !function_exists('tomochain_dapp_per_page') ) {
 
     add_filter( 'pre_get_posts', 'tomochain_dapp_per_page' );
 }
+if ( !function_exists('tomochain_enter_per_page') ) {
+
+    function tomochain_enter_per_page( $query ) {
+        $per_page = get_field('enter_per_page','options') ? get_field('enter_per_page','options') : 12;
+
+        if ( !is_admin() && $query->is_main_query() && (is_post_type_archive( 'enterprise' ) || is_tax('enterprise_cat')) ) {
+           $query->set( 'posts_per_page', $per_page );
+        }
+    }
+
+    add_filter( 'pre_get_posts', 'tomochain_enter_per_page' );
+}
