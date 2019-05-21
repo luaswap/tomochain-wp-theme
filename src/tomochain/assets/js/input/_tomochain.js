@@ -27,6 +27,7 @@ var tomochain
                         this.bounty();
                         this.thank_you();
                         this.form_popup();
+                        this.enterCarousel();
                     }
                 }
             }()
@@ -36,6 +37,7 @@ var tomochain
 //@include('blog.js')
 //@include('categories_filter.js')
 //@include('dapp.js')
+//@include('enterprise.js')
 //@include('bounty.js')
 //@include('common.js')
 //@include('event.js')
