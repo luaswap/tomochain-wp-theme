@@ -862,6 +862,8 @@ Common enterprise inside
 /**========================
 Homepage Enterprise publication
 =======================***/
+.tax-enterprise_cat,
+.post-type-archive-enterprise,
 .page-template-tmp-enterprise-inside,
 .page-template-tmp-enterprise-about,
 .page-template-tmp-enterprise-inside-full {
@@ -897,9 +899,9 @@ Homepage Enterprise publication
 				&:hover {
 					text-decoration: underline!important;
 				}
-				&:after {
-					content: ' / ';
-				}
+				// &:after {
+				// 	content: ' / ';
+				// }
 			}
 		}
 	}
@@ -911,49 +913,59 @@ Homepage Enterprise publication
 		.row {
 			align-items: center;
 			.filter-category {
-				select {
-					display: none;
+				select{
+					width: 100%;
+				    padding: 10px 5px;
+				    color: #000;
+				    background: #f2f2f2;
+				    border: none;
+				    outline: none;
+				    webkit-appearance: none;
+				    -moz-appearance: none;
 				}
-				.select-selected {
-					background-color: #f2f2f2;
-					position: relative;
-					font-family: Arial;
-					&:after {
-						position: absolute;
-						content: '\e903';
-						font-size: 7px;
-						top: 16px;
-						right: 10px;
-						font-family: tomochain;
-						transition: all .3s ease;
-					}
-					&.select-arrow-active:after {
-						transform: rotate(-180deg);
-					}
-				}
-				.select-items div,.select-selected {
-					color: #151515;
-					padding: 10px 20px;
-					cursor: pointer;
-					user-select: none;
-				}
-				.select-items {
-					position: absolute;
-					background-color: #f2f2f2;
-					top: 100%;
-					left: 0;
-					right: 0;
-					z-index: 99;
-					div {
-						border-top: 1px solid #e6e6e6;
-					}
-				}
-				.select-hide {
-					display: none;
-				}
-				.select-items div:hover, .same-as-selected {
-					background-color: rgba(#666, 0.1);
-				}
+				// select {
+				// 	display: none;
+				// }
+				// .select-selected {
+				// 	background-color: #f2f2f2;
+				// 	position: relative;
+				// 	font-family: Arial;
+				// 	&:after {
+				// 		position: absolute;
+				// 		content: '\e903';
+				// 		font-size: 7px;
+				// 		top: 16px;
+				// 		right: 10px;
+				// 		font-family: tomochain;
+				// 		transition: all .3s ease;
+				// 	}
+				// 	&.select-arrow-active:after {
+				// 		transform: rotate(-180deg);
+				// 	}
+				// }
+				// .select-items div,.select-selected {
+				// 	color: #151515;
+				// 	padding: 10px 20px;
+				// 	cursor: pointer;
+				// 	user-select: none;
+				// }
+				// .select-items {
+				// 	position: absolute;
+				// 	background-color: #f2f2f2;
+				// 	top: 100%;
+				// 	left: 0;
+				// 	right: 0;
+				// 	z-index: 99;
+				// 	div {
+				// 		border-top: 1px solid #e6e6e6;
+				// 	}
+				// }
+				// .select-hide {
+				// 	display: none;
+				// }
+				// .select-items div:hover, .same-as-selected {
+				// 	background-color: rgba(#666, 0.1);
+				// }
 			}
 		}
 	}
@@ -1133,7 +1145,7 @@ Homepage Enterprise publication
 	.txt_title a {
 		color: #151515;
 	}
-	.txt_date {
+	.txt_meta {
 		color: #ff7c4d;
 		span {
 			margin-left: 15px;
