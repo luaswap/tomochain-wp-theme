@@ -19,7 +19,7 @@ get_template_part('headerbounty');
 								$reward = get_field('tomo_reward');
 								$number_order = get_post_meta(get_the_ID(),'number_order',true);
 								$number_submit = get_post_meta(get_the_ID(),'tomochain_number_submit',true);
-								//tomochain_setPostViews(get_the_ID());
+								tomochain_setPostViews(get_the_ID());
 							?>
 								<h1 class="tomo-job-title"><span><?php echo '#'.$number_order.' ';?></span><?php echo get_the_title();?></h1>
 								<div class="box-content-detail">
@@ -89,7 +89,20 @@ get_template_part('headerbounty');
 										<p><?php esc_html_e('These industries have common points including asset exchanges, verifiable scarcity of virtual objects and collectibles, fast and secure payment networks','tomochain-addon');?></p>
 										<div class="box-form" data-id="<?php echo esc_attr(get_the_ID());?>">
 											<?php 
-												$contact_form = get_field('contact_form', 'options');
+												$curent_lang = pll_current_language('slug');
+												$contact_form = get_field('en_form', 'options');
+												if('vi' == $curent_lang){
+													$contact_form = get_field('vi_form', 'options');
+												}elseif('jp' == $curent_lang){
+													$contact_form = get_field('jp_form', 'options');
+												}
+												elseif('cn' == $curent_lang){
+													$contact_form = get_field('cn_form', 'options');
+												}elseif('es' == $curent_lang){
+													$contact_form = get_field('es_form', 'options');
+												}elseif('kr' == $curent_lang){
+													$contact_form = get_field('kr_form', 'options');
+												}
 												if(!empty($contact_form)){
 													echo do_shortcode('[contact-form-7 id="'.$contact_form.'"]');
 												}
@@ -104,6 +117,5 @@ get_template_part('headerbounty');
 			</div>
 		</main><!-- #main -->
 	</div><!-- #primary -->
-	<!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script> -->
 <?php
 get_template_part('footerbounty'); ?>
