@@ -20,7 +20,7 @@ if ( !class_exists( 'Tomochain_Enterprise_Post_Type' ) ) {
         function tomochain_enterprise() {
             $labels = array(
                 'name'               => esc_html__( 'Enterprise', 'tomochain-addons' ),
-                'singular_name'      => esc_html__( 'Enterprise', 'tomochain-addons' ),
+                'singular_name'      => esc_html__( 'Publication', 'tomochain-addons' ),
                 'menu_name'          => esc_html__( 'Enterprise', 'tomochain-addons' ),
                 'add_new'            => esc_html__( 'Add New', 'tomochain-addons' ) ,
                 'add_new_item'       => esc_html__( 'Add New Post', 'tomochain-addons' ) ,

@@ -17,8 +17,7 @@ if ( is_tax('enterprise_cat') ) {
         <div class="container">
             <div class="enter_nav">
                 <div class="breadcrumbs">
-                    <span><a href="<?php echo esc_url(home_url('/'));?>" title=""><?php esc_html_e('Home','tomochain-addon');?></a></span>
-                    <span class="current-item"><?php echo $page_title;?></span>
+                    <?php echo tomochain_breadcrumbs();?>
                 </div>
             </div><!-- /enter_nav -->
             <div class="enter_label">
