@@ -1,6 +1,6 @@
 <?php
 /* 
-*Enterprise Achive page
+* Single Enterprise page
 */
 
 get_template_part('headerldetrinside');
@@ -13,22 +13,93 @@ get_template_part('headerldetrinside');
                     <?php echo tomochain_breadcrumbs();?>
                 </div>
             </div><!-- /enter_nav -->
-            <div class="enter_wrapper">
-                <div class="row">
-                    <?php
-                        if ( have_posts() ) :
-                            /* Start the Loop */
-                            
-                            while ( have_posts() ) :
-                                the_post();?>
-                                
-                            <?php endwhile;
-                        else :
-                            $s = esc_html__('No found post!','tomochain-addon');
-                            echo sprintf('<h4>%s</h4>',$s);
-                        endif;
-                    ?>
-                </div>
+            <div class="container-detail-bounty">
+                <?php
+                while ( have_posts() ) :
+                    the_post();?>
+                    <?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
+                    
+                    <div class="entry-meta">
+                        <?php tomochain_post_date(); ?>
+                        <span class="author"><?php echo sprintf(__('- by %s'),get_the_author());?></span>
+                    </div><!-- .entry-meta -->
+                    <div class="entry-content">
+                        <?php
+                        the_content();
+                        ?>
+                    </div>
+                    <div class="related-post">
+                        <?php
+                            wp_enqueue_script( 'slick-carousel' );
+                            $custom_url    = get_field( 'enter_custom_url' );
+                            $open_new_tab  = get_field( 'enter_open_in_new_tab' ) ? '__blank' : '';
+                            $excerpt_length = get_field('enter_excerpt_length','options') ? get_field('enter_excerpt_length','options') : '20';
+                            $custom_taxterms = wp_get_object_terms( get_the_ID(), 'enterprise_cat', array('fields' => 'ids') );
+                            // arguments
+                            $args = array(
+                            'post_type' => 'enterprise',
+                            'post_status' => 'publish',
+                            'posts_per_page' => 10, // you may edit this number
+                            'orderby' => 'rand',
+                            'tax_query' => array(
+                                array(
+                                    'taxonomy' => 'enterprise_cat',
+                                    'field' => 'id',
+                                    'terms' => $custom_taxterms
+                                )
+                            ),
+                            'post__not_in' => array ($post->ID),
+                            );
+                            $related_items = new WP_Query( $args );
+                            if ($related_items->have_posts()) :?>
+                                <h2 class="related-title"><?php esc_html_e('Related Post','tomochain-addon')?></h2>
+                            <div class="slide">
+                                <?php
+                                    while ( $related_items->have_posts() ) : $related_items->the_post();
+                                    ?>
+                                        <div class="enter_type_post">
+                                            <div class="enter_wpb_wrapper">
+                                                <div class="enter_post_img">
+                                                    <a href="<?php echo $custom_url ? esc_url($custom_url) : get_permalink()?>" target="<?php echo esc_attr($open_new_tab)?>" rel="bookmark">
+                                                        <?php the_post_thumbnail('tomo-post-thumbnail');?>
+                                                    </a>
+                                                </div>
+                                                <div class="enter_post_txt">
+                                                <div class="post_inner">
+                                                    <h4 class="txt_title"><a href="<?php echo $custom_url ? esc_url($custom_url) : get_permalink()?>"><?php echo get_the_title();?></a></h4>
+                                                    <div class="txt_meta">
+                                                        <?php 
+                                                            $terms = get_the_terms(get_the_ID(),'enterprise_cat');
+                                                            if(!is_wp_error( $terms ) && !empty($terms)){
+                                                                foreach($terms as $term):?>
+                                                                    <span><a href="<?php echo esc_url(get_term_link($term->term_id));?>"><?php echo esc_html($term->name);?></a></span>
+                                                        <?php
+                                                                endforeach; 
+                                                            }
+                                                        ?>
+                                                        
+                                                        <?php tomochain_post_date(); ?>
+                                                    </div>
+                                                    <?php if(get_the_excerpt()):?>
+                                                        <div class="entry-content">
+                                                            <?php
+                                                                echo tomochain_excerpt($excerpt_length);
+                                                            ?>
+                                                        </div>
+                                                    <?php endif;?>
+                                                </div>
+                                            </div>
+                                            </div>
+                                        </div><!-- /enter_type_post -->
+                                    <?php
+                                    endwhile;
+                                    wp_reset_postdata();
+                                endif;
+                            ?>
+                        </div>
+                    </div>
+                <?php endwhile;
+                ?>
             </div><!-- /enter_wrapper -->
         </div>
     </main>
