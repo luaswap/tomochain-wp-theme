@@ -64,3 +64,57 @@
         }
     }
 })(jQuery);
+(function( $ ) {
+    tomochain.relatedCarousel = function() {
+        if($('.related-post .slide').length > 0)
+        $( '.related-post .slide' ).each( function() {
+            var $this = $( this );
+
+            var configs = {
+                accessibility : false,
+                slidesToShow  : 3,
+                slidesToScroll: 1,
+                infinite      : true,
+                autoplay      : true,
+                autoplaySpeed : 3000,
+                responsive    : [
+                    {
+                    breakpoint: 1200,
+                    settings  : {
+                            slidesToShow  : 4
+                    },
+                    },
+                    {
+                        breakpoint: 769,
+                        settings  : {
+                            slidesToShow  : 3
+                        },
+                    },
+                    {
+                        breakpoint: 544,
+                        settings  : {
+                            slidesToShow  : 2
+                        },
+                    }
+                ],
+            };
+
+            configs['responsive'] = [{
+                breakpoint: 1200,
+                settings  : {
+                    adaptiveHeight: true,
+                    slidesToShow  : 2
+                },
+            },
+            {
+                breakpoint: 544,
+                settings  : {
+                    adaptiveHeight: true,
+                    slidesToShow  : 2
+                },
+            }];
+
+            $this.slick( configs );
+        });
+    }
+})(jQuery);

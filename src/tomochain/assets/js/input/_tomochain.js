@@ -28,6 +28,7 @@ var tomochain
                         this.thank_you();
                         this.form_popup();
                         this.enterCarousel();
+                        this.relatedCarousel();
                     }
                 }
             }()
