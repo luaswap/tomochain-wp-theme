@@ -47,10 +47,10 @@ get_template_part('headerbounty');
 															<?php if(!is_wp_error($status)):
 																foreach ($status as $s):?>
 																	<span class="stt-active"><?php echo esc_html($s->name);?></span>
-																	<br>
+																	<!-- <br> -->
 																<?php endforeach;?>
 															<?php endif;?>
-															<span><?php echo sprintf( __( 'disclosed %s ago','tomochain-addon' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) );?></span>
+															<!-- <span><?php //echo sprintf( __( 'disclosed %s ago','tomochain-addon' ), human_time_diff( get_the_time( 'U' ), current_time( 'timestamp' ) ) );?></span> -->
 														</td>
 													</tr>
 													<tr>
