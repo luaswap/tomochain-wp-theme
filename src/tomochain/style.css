@@ -11382,7 +11382,7 @@ common bounty
             align-items: center;
     display: grid;
     grid-template-columns: auto auto 60% 20%;
-    padding: 8px 30px;
+    padding: 5px 30px;
     margin: 20px 0;
     overflow: hidden;
     -webkit-transition: all .3s ease;
@@ -11408,7 +11408,7 @@ common bounty
 
 .txt-status {
   font-size: 12px;
-  margin-top: 5px;
+  margin-top: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -11540,8 +11540,9 @@ common bounty
   margin: 0 auto; }
   .container-detail-bounty .box-form-wrap {
     position: fixed;
+    padding: 5%;
     z-index: 9;
-    top: 5%;
+    top: 0;
     bottom: 0;
     left: 0;
     right: 0;
@@ -11550,9 +11551,11 @@ common bounty
       content: '';
       display: block;
       position: absolute;
-      background: #1c2139d6;
+      background: #1c2139;
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      top: 0;
+      let: 0; }
     .container-detail-bounty .box-form-wrap .close {
       position: absolute;
       right: 10%;
