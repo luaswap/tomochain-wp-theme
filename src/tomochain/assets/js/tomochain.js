@@ -29,6 +29,7 @@ var tomochain
                         this.form_popup();
                         this.enterCarousel();
                         this.relatedCarousel();
+                        this.enterFilter();
                     }
                 }
             }()
@@ -276,6 +277,7 @@ var tomochain
                 slidesToScroll: 1,
                 infinite      : true,
                 autoplay      : true,
+                centerMode    : false,
                 autoplaySpeed : 3000,
                 responsive    : [
                     {
@@ -320,6 +322,18 @@ var tomochain
 
             $this.slick( configs );
         });
+    }
+})(jQuery);
+(function( $ ) {
+    tomochain.enterFilter = function() {
+        if($('.tomo_custom_select').length > 0){
+            $( '.tomo_custom_select select' ).on( 'change', function() {
+                var url = $(this).val();
+                if(url){
+                    window.location.href = url;
+                }
+            });
+        }
     }
 })(jQuery);
 (

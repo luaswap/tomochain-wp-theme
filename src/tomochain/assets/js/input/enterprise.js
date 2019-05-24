@@ -80,6 +80,7 @@
                 slidesToScroll: 1,
                 infinite      : true,
                 autoplay      : true,
+                centerMode    : false,
                 autoplaySpeed : 3000,
                 responsive    : [
                     {
@@ -124,5 +125,17 @@
 
             $this.slick( configs );
         });
+    }
+})(jQuery);
+(function( $ ) {
+    tomochain.enterFilter = function() {
+        if($('.tomo_custom_select').length > 0){
+            $( '.tomo_custom_select select' ).on( 'change', function() {
+                var url = $(this).val();
+                if(url){
+                    window.location.href = url;
+                }
+            });
+        }
     }
 })(jQuery);

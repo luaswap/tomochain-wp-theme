@@ -90,7 +90,7 @@ if ( !class_exists( 'Tomochain_Enterprise_Post_Type' ) ) {
                 'hierarchical'      => true,
                 'query_var'         => true,
                 'rewrite'           => array(
-                    'slug'          => 'news',
+                    'slug'          => 'publications',
                     'with_front'    => false
                 ) ,
             );

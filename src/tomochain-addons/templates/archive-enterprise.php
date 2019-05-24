@@ -35,8 +35,9 @@ if ( is_tax('enterprise_cat') ) {
                                     <select>
                                         <option value="<?php echo get_post_type_archive_link('enterprise');?>"><?php esc_html_e('All Publication','tomochain-addon');?></option>
                                         <?php if(!is_wp_error($terms) && !empty($terms)):
+                                                $queried_object = get_queried_object();
                                                 foreach ($terms as $term) {?>
-                                                   <option value="<?php echo esc_url(get_term_link($term->term_id));?>"><?php echo esc_html($term->name);?></option>
+                                                   <option value="<?php echo esc_url(get_term_link($term->term_id));?>" <?php if(is_tax()) selected($term->term_id,$queried_object->term_id);?>><?php echo esc_html($term->name);?></option>
                                         <?php   }
                                         ?>
                                         <?php endif;?>
@@ -54,7 +55,6 @@ if ( is_tax('enterprise_cat') ) {
                             $i = 0;
                             if ( have_posts() ) :
                                 /* Start the Loop */
-                                
                                 while ( have_posts() ) :
                                     the_post();
                                     tomochain_get_template( 'content-enterprise.php', array('i'=> $i) );
