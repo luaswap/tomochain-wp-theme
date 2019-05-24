@@ -11677,6 +11677,20 @@ Homepage Enterprise
         font-family: tomochain; }
       .page-template-tmp-enterprise .modal-footer .btn-secondary:hover {
         color: #868ea4; }
+  .page-template-tmp-enterprise .related-post {
+    margin: 20px 0 50px; }
+    .page-template-tmp-enterprise .related-post .slick-track {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important; }
+      .page-template-tmp-enterprise .related-post .slick-track .enter_type_post {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        float: inherit !important;
+        height: inherit;
+        padding-right: 15px;
+        padding-left: 15px; }
 
 .enterprise .site-header .enter-logo img, .enterprise-inside .site-header .enter-logo img {
   max-width: 120px; }
@@ -11999,6 +12013,7 @@ Common enterprise inside
 /**========================
 Homepage Enterprise publication
 =======================***/
+.single-enterprise,
 .tax-enterprise_cat,
 .post-type-archive-enterprise,
 .page-template-tmp-enterprise-inside,
@@ -12008,6 +12023,14 @@ Homepage Enterprise publication
   color: #151515;
   font-family: "Open Sans", Arial, sans-serif !important;
   font-size: 14px; }
+  .single-enterprise .tmp-enterprise-inside-full,
+  .tax-enterprise_cat .tmp-enterprise-inside-full,
+  .post-type-archive-enterprise .tmp-enterprise-inside-full,
+  .page-template-tmp-enterprise-inside .tmp-enterprise-inside-full,
+  .page-template-tmp-enterprise-about .tmp-enterprise-inside-full,
+  .page-template-tmp-enterprise-inside-full .tmp-enterprise-inside-full {
+    overflow: hidden; }
+  .single-enterprise a,
   .tax-enterprise_cat a,
   .post-type-archive-enterprise a,
   .page-template-tmp-enterprise-inside a,
@@ -12015,6 +12038,7 @@ Homepage Enterprise publication
   .page-template-tmp-enterprise-inside-full a {
     text-decoration: none !important;
     display: inline-block; }
+  .single-enterprise .vc_custom_heading,
   .tax-enterprise_cat .vc_custom_heading,
   .post-type-archive-enterprise .vc_custom_heading,
   .page-template-tmp-enterprise-inside .vc_custom_heading,
@@ -12023,38 +12047,95 @@ Homepage Enterprise publication
     font-family: "Open Sans",Arial,sans-serif;
     font-weight: bold;
     margin-top: 0; }
+  .single-enterprise .enter_nav,
   .tax-enterprise_cat .enter_nav,
   .post-type-archive-enterprise .enter_nav,
   .page-template-tmp-enterprise-inside .enter_nav,
   .page-template-tmp-enterprise-about .enter_nav,
   .page-template-tmp-enterprise-inside-full .enter_nav {
     padding: 30px 0 0; }
+    .single-enterprise .enter_nav a,
+    .tax-enterprise_cat .enter_nav a,
+    .post-type-archive-enterprise .enter_nav a,
+    .page-template-tmp-enterprise-inside .enter_nav a,
+    .page-template-tmp-enterprise-about .enter_nav a,
+    .page-template-tmp-enterprise-inside-full .enter_nav a {
+      color: #2c2c2c;
+      display: inline-block;
+      position: relative; }
+      .single-enterprise .enter_nav a:hover,
+      .tax-enterprise_cat .enter_nav a:hover,
+      .post-type-archive-enterprise .enter_nav a:hover,
+      .page-template-tmp-enterprise-inside .enter_nav a:hover,
+      .page-template-tmp-enterprise-about .enter_nav a:hover,
+      .page-template-tmp-enterprise-inside-full .enter_nav a:hover {
+        text-decoration: underline !important; }
+    .single-enterprise .enter_nav span.current-item,
     .tax-enterprise_cat .enter_nav span.current-item,
     .post-type-archive-enterprise .enter_nav span.current-item,
     .page-template-tmp-enterprise-inside .enter_nav span.current-item,
     .page-template-tmp-enterprise-about .enter_nav span.current-item,
     .page-template-tmp-enterprise-inside-full .enter_nav span.current-item {
       color: #ff7c4d; }
-    .tax-enterprise_cat .enter_nav span a,
-    .post-type-archive-enterprise .enter_nav span a,
-    .page-template-tmp-enterprise-inside .enter_nav span a,
-    .page-template-tmp-enterprise-about .enter_nav span a,
-    .page-template-tmp-enterprise-inside-full .enter_nav span a {
-      color: #2c2c2c;
-      display: inline-block;
-      position: relative; }
-      .tax-enterprise_cat .enter_nav span a:hover,
-      .post-type-archive-enterprise .enter_nav span a:hover,
-      .page-template-tmp-enterprise-inside .enter_nav span a:hover,
-      .page-template-tmp-enterprise-about .enter_nav span a:hover,
-      .page-template-tmp-enterprise-inside-full .enter_nav span a:hover {
-        text-decoration: underline !important; }
+  .single-enterprise .container-detail-enter,
+  .tax-enterprise_cat .container-detail-enter,
+  .post-type-archive-enterprise .container-detail-enter,
+  .page-template-tmp-enterprise-inside .container-detail-enter,
+  .page-template-tmp-enterprise-about .container-detail-enter,
+  .page-template-tmp-enterprise-inside-full .container-detail-enter {
+    max-width: 800px;
+    margin: 0 auto; }
+    .single-enterprise .container-detail-enter .posted-on,
+    .tax-enterprise_cat .container-detail-enter .posted-on,
+    .post-type-archive-enterprise .container-detail-enter .posted-on,
+    .page-template-tmp-enterprise-inside .container-detail-enter .posted-on,
+    .page-template-tmp-enterprise-about .container-detail-enter .posted-on,
+    .page-template-tmp-enterprise-inside-full .container-detail-enter .posted-on {
+      color: #ff7c4d; }
+    .single-enterprise .container-detail-enter .author,
+    .tax-enterprise_cat .container-detail-enter .author,
+    .post-type-archive-enterprise .container-detail-enter .author,
+    .page-template-tmp-enterprise-inside .container-detail-enter .author,
+    .page-template-tmp-enterprise-about .container-detail-enter .author,
+    .page-template-tmp-enterprise-inside-full .container-detail-enter .author {
+      color: #2c2c2c; }
+  .single-enterprise .related-post,
+  .tax-enterprise_cat .related-post,
+  .post-type-archive-enterprise .related-post,
+  .page-template-tmp-enterprise-inside .related-post,
+  .page-template-tmp-enterprise-about .related-post,
+  .page-template-tmp-enterprise-inside-full .related-post {
+    margin: 20px 0 50px; }
+    .single-enterprise .related-post .slick-track,
+    .tax-enterprise_cat .related-post .slick-track,
+    .post-type-archive-enterprise .related-post .slick-track,
+    .page-template-tmp-enterprise-inside .related-post .slick-track,
+    .page-template-tmp-enterprise-about .related-post .slick-track,
+    .page-template-tmp-enterprise-inside-full .related-post .slick-track {
+      display: -webkit-box !important;
+      display: -ms-flexbox !important;
+      display: flex !important; }
+      .single-enterprise .related-post .slick-track .enter_type_post,
+      .tax-enterprise_cat .related-post .slick-track .enter_type_post,
+      .post-type-archive-enterprise .related-post .slick-track .enter_type_post,
+      .page-template-tmp-enterprise-inside .related-post .slick-track .enter_type_post,
+      .page-template-tmp-enterprise-about .related-post .slick-track .enter_type_post,
+      .page-template-tmp-enterprise-inside-full .related-post .slick-track .enter_type_post {
+        display: -webkit-box !important;
+        display: -ms-flexbox !important;
+        display: flex !important;
+        float: inherit !important;
+        height: inherit;
+        padding-right: 15px;
+        padding-left: 15px; }
+  .single-enterprise .enter_label,
   .tax-enterprise_cat .enter_label,
   .post-type-archive-enterprise .enter_label,
   .page-template-tmp-enterprise-inside .enter_label,
   .page-template-tmp-enterprise-about .enter_label,
   .page-template-tmp-enterprise-inside-full .enter_label {
     margin: 15px 0 50px; }
+    .single-enterprise .enter_label .row,
     .tax-enterprise_cat .enter_label .row,
     .post-type-archive-enterprise .enter_label .row,
     .page-template-tmp-enterprise-inside .enter_label .row,
@@ -12063,6 +12144,7 @@ Homepage Enterprise publication
       -webkit-box-align: center;
           -ms-flex-align: center;
               align-items: center; }
+      .single-enterprise .enter_label .row .filter-category select,
       .tax-enterprise_cat .enter_label .row .filter-category select,
       .post-type-archive-enterprise .enter_label .row .filter-category select,
       .page-template-tmp-enterprise-inside .enter_label .row .filter-category select,
@@ -12076,6 +12158,13 @@ Homepage Enterprise publication
         outline: none;
         webkit-appearance: none;
         -moz-appearance: none; }
+  .single-enterprise .enter_wrapper,
+  .tax-enterprise_cat .enter_wrapper,
+  .post-type-archive-enterprise .enter_wrapper,
+  .page-template-tmp-enterprise-inside .enter_wrapper,
+  .page-template-tmp-enterprise-about .enter_wrapper,
+  .page-template-tmp-enterprise-inside-full .enter_wrapper {
+    margin-bottom: 50px; }
 
 .single_subtitle_large {
   font-size: 34px;
@@ -12109,6 +12198,8 @@ Homepage Enterprise publication
     position: absolute;
     -webkit-transform: rotate(45deg);
             transform: rotate(45deg); }
+  .enter_type_post .enter_post_img a {
+    display: block; }
 
 .enter_type_post .enter_post_txt {
   background: #f3f3f3;
@@ -15478,6 +15569,9 @@ body.info-opened:after {
   padding-top: 50px;
   padding-bottom: 30px; }
 
+body.about-us-page .site-content {
+  padding-top: 0px; }
+
 body.about-us-page .site-header {
   position: fixed;
   top: 0;
@@ -17699,12 +17793,14 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           z-index: -1;
           width: calc(100% - 15px);
           height: 100%; }
+    .single-enterprise .post_filter_wrapper .enter_type_post,
     .tax-enterprise_cat .post_filter_wrapper .enter_type_post,
     .post-type-archive-enterprise .post_filter_wrapper .enter_type_post,
     .page-template-tmp-enterprise-inside .post_filter_wrapper .enter_type_post,
     .page-template-tmp-enterprise-about .post_filter_wrapper .enter_type_post,
     .page-template-tmp-enterprise-inside-full .post_filter_wrapper .enter_type_post {
       margin-top: 50px; }
+      .single-enterprise .post_filter_wrapper .enter_type_post:first-child,
       .tax-enterprise_cat .post_filter_wrapper .enter_type_post:first-child,
       .post-type-archive-enterprise .post_filter_wrapper .enter_type_post:first-child,
       .page-template-tmp-enterprise-inside .post_filter_wrapper .enter_type_post:first-child,
@@ -17715,6 +17811,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         min-width: 100%;
         display: block;
         margin-top: 0px; }
+        .single-enterprise .post_filter_wrapper .enter_type_post:first-child .enter_post_img a,
         .tax-enterprise_cat .post_filter_wrapper .enter_type_post:first-child .enter_post_img a,
         .post-type-archive-enterprise .post_filter_wrapper .enter_type_post:first-child .enter_post_img a,
         .page-template-tmp-enterprise-inside .post_filter_wrapper .enter_type_post:first-child .enter_post_img a,
@@ -17731,6 +17828,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
                   justify-content: center;
           max-height: 500px;
           overflow: hidden; }
+          .single-enterprise .post_filter_wrapper .enter_type_post:first-child .enter_post_img a img,
           .tax-enterprise_cat .post_filter_wrapper .enter_type_post:first-child .enter_post_img a img,
           .post-type-archive-enterprise .post_filter_wrapper .enter_type_post:first-child .enter_post_img a img,
           .page-template-tmp-enterprise-inside .post_filter_wrapper .enter_type_post:first-child .enter_post_img a img,
@@ -20847,6 +20945,13 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       width: 70%;
       padding: 15px;
       margin: 15px 0 0; }
+  .slide .enter_type_post {
+    display: block !important; }
+    .slide .enter_type_post .enter_wpb_wrapper {
+      height: 100%; }
+      .slide .enter_type_post .enter_wpb_wrapper .enter_post_img,
+      .slide .enter_type_post .enter_wpb_wrapper .enter_post_txt {
+        width: 100%; }
   .page-template-tmp-enterprise-inside-full .con_publications .box-item .box-inner {
     margin-bottom: 15px;
     padding-bottom: 15px;
@@ -20957,18 +21062,21 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         .page-template-tmp-enterprise .con_get_touch .content_touch .container .txt_desc_touch {
           font-size: 14px;
           color: #151515; }
+      .single-enterprise .vc_custom_heading,
       .tax-enterprise_cat .vc_custom_heading,
       .post-type-archive-enterprise .vc_custom_heading,
       .page-template-tmp-enterprise-inside .vc_custom_heading,
       .page-template-tmp-enterprise-about .vc_custom_heading,
       .page-template-tmp-enterprise-inside-full .vc_custom_heading {
         font-size: 2em; }
+      .single-enterprise .enter_nav,
       .tax-enterprise_cat .enter_nav,
       .post-type-archive-enterprise .enter_nav,
       .page-template-tmp-enterprise-inside .enter_nav,
       .page-template-tmp-enterprise-about .enter_nav,
       .page-template-tmp-enterprise-inside-full .enter_nav {
         padding: 0; }
+      .single-enterprise .enter_label,
       .tax-enterprise_cat .enter_label,
       .post-type-archive-enterprise .enter_label,
       .page-template-tmp-enterprise-inside .enter_label,

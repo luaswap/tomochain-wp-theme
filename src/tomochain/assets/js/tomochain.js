@@ -220,19 +220,21 @@ var tomochain
                         {
                         breakpoint: 1200,
                         settings  : {
-                                slidesToShow  : 4
-                        },
+                                slidesToShow  : 2
+                            },
                         },
                         {
                             breakpoint: 769,
                             settings  : {
-                                slidesToShow  : 3
+                                slidesToShow  : 2,
+                                dots: true,
                             },
                         },
                         {
                             breakpoint: 544,
                             settings  : {
-                                slidesToShow  : 2
+                                slidesToShow  : 1,
+                                dots: true,
                             },
                         }
                     ],
@@ -243,14 +245,16 @@ var tomochain
                         breakpoint: 1200,
                         settings  : {
                             adaptiveHeight: true,
-                            slidesToShow  : 2
+                            slidesToShow  : 2,
+                            dots: true,
                         },
                     },
                     {
                         breakpoint: 544,
                         settings  : {
                             adaptiveHeight: true,
-                            slidesToShow  : 2
+                            slidesToShow  : 1,
+                            dots: true,
                         },
                     }];
                 }
@@ -277,19 +281,21 @@ var tomochain
                     {
                     breakpoint: 1200,
                     settings  : {
-                            slidesToShow  : 4
+                            slidesToShow  : 3
                     },
                     },
                     {
                         breakpoint: 769,
                         settings  : {
-                            slidesToShow  : 3
+                            slidesToShow  : 2,
+                            dots: true,
                         },
                     },
                     {
                         breakpoint: 544,
                         settings  : {
-                            slidesToShow  : 2
+                            slidesToShow  : 1,
+                            dots: true,
                         },
                     }
                 ],
@@ -299,14 +305,16 @@ var tomochain
                 breakpoint: 1200,
                 settings  : {
                     adaptiveHeight: true,
-                    slidesToShow  : 2
+                    slidesToShow  : 2,
+                    dots: true,
                 },
             },
             {
                 breakpoint: 544,
                 settings  : {
                     adaptiveHeight: true,
-                    slidesToShow  : 2
+                    slidesToShow  : 1,
+                    dots: true,
                 },
             }];
 

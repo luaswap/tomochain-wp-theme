@@ -1,6 +1,6 @@
 <?php
 $columns       = get_field( 'enter_columns','options' ) ? get_field( 'enter_columns','options' ) : '3';
-$classes       = 'enter_type_post col-sm-12 col-md-' . $columns;
+$classes       = 'enter_type_post col-sm-12 col-lg-' . $columns;
 $custom_url    = get_field( 'enter_custom_url' );
 $open_new_tab  = get_field( 'enter_open_in_new_tab' ) ? '__blank' : '';
 $excerpt_length = get_field('enter_excerpt_length','options') ? get_field('enter_excerpt_length','options') : '20';
@@ -25,17 +25,16 @@ $excerpt_length = get_field('enter_excerpt_length','options') ? get_field('enter
             <div class="post_inner">
                 <h4 class="txt_title"><a href="<?php echo $custom_url ? esc_url($custom_url) : get_permalink()?>"><?php echo get_the_title();?></a></h4>
                 <div class="txt_meta">
-                    <?php 
+                    <?php tomochain_post_date(); ?>
+                    <?php
                         $terms = get_the_terms(get_the_ID(),'enterprise_cat');
                         if(!is_wp_error( $terms ) && !empty($terms)){
                             foreach($terms as $term):?>
                                 <span><a href="<?php echo esc_url(get_term_link($term->term_id));?>"><?php echo esc_html($term->name);?></a></span>
                     <?php
-                            endforeach; 
+                            endforeach;
                         }
                     ?>
-                    
-                    <?php tomochain_post_date(); ?>
                 </div>
                 <?php if(get_the_excerpt()):?>
                     <div class="entry-content">
@@ -47,4 +46,4 @@ $excerpt_length = get_field('enter_excerpt_length','options') ? get_field('enter
             </div>
         </div>
     </div>
-</article><!-- /enter_type_post -->
+</article>
