@@ -55,7 +55,6 @@ if ( is_tax('enterprise_cat') ) {
                             $i = 0;
                             if ( have_posts() ) :
                                 /* Start the Loop */
-                                
                                 while ( have_posts() ) :
                                     the_post();
                                     tomochain_get_template( 'content-enterprise.php', array('i'=> $i) );

@@ -38,7 +38,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="site-branding enter-logo">
-					<a href="<?php echo esc_url($home_url); ?>">
+					<a href="/enterprise/">
 						<img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/logo-tomochain-black.png'); ?>" alt="Logo">
 					</a>
 				</div><!-- .site-branding -->

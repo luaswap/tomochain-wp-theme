@@ -440,7 +440,9 @@ body.info-opened:after {
 
 // TEAM PAGE
 body.about-us-page {
-
+    .site-content {
+        padding-top: 0px;
+    }
     .site-header {
         position: fixed;
         top: 0;

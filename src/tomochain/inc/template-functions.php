@@ -45,7 +45,7 @@ add_action( 'wp_head', 'tomochain_pingback_header' );
 function tomochain_breadcrumbs(){
     // Set variables for later use
     // $here_text        = __( 'You are currently here!' );
-    $home_link        = home_url('/');
+    $home_link        = home_url('enterprise');
     $home_text        = __( 'Home' );
     $link_before      = '<span typeof="v:Breadcrumb">';
     $link_after       = '</span>';
