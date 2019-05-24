@@ -528,7 +528,8 @@ common bounty
 		@include media-breakpoint-down(sm) {
 			text-align: center;
 		}
-		button {
+		button,
+		a {
 			background: #2a8bff;
 			border-radius: 10px;
 			border: 0;

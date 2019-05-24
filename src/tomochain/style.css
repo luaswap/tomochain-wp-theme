@@ -11593,7 +11593,8 @@ common bounty
           color: #ffa04d; }
   .container-detail-bounty .tomo_btn_grad {
     margin-bottom: 30px; }
-    .container-detail-bounty .tomo_btn_grad button {
+    .container-detail-bounty .tomo_btn_grad button,
+    .container-detail-bounty .tomo_btn_grad a {
       background: #2a8bff;
       border-radius: 10px;
       border: 0;
@@ -11606,7 +11607,8 @@ common bounty
       text-align: center;
       text-transform: uppercase;
       font-family: bai jamjuree,sans-serif; }
-      .container-detail-bounty .tomo_btn_grad button:hover {
+      .container-detail-bounty .tomo_btn_grad button:hover,
+      .container-detail-bounty .tomo_btn_grad a:hover {
         background: #2171d0; }
   .container-detail-bounty .logo-project {
     color: #2a8bff;
