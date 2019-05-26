@@ -134,7 +134,6 @@ wp_enqueue_script('datatable');
 										</tr>
 									<?php endwhile;?>
 								<?php
-								wp_reset_postdata();
 								endif;?>
 							</tbody>
 						</table>
