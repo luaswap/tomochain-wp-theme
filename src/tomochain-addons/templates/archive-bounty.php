@@ -2,16 +2,12 @@
 /* Template name: Bounty Page */
 
 get_template_part('headerbounty');
-$args = array(
-	'post_type'  => 'bounty',
-	'post_status' => 'publish',
-	'posts_per_page' => -1
-);
-$b = new WP_Query($args);
+
+global $wp_query;
+$count_posts = $wp_query->found_posts;
 $project_terms = get_terms('project');
 $status_terms = get_terms('status');
 $perpage = get_field('bounty_per_page','options');
-// wp_enqueue_style('datatable');
 wp_enqueue_script('datatable');
 ?>
 	<div class="content-area">
@@ -25,7 +21,7 @@ wp_enqueue_script('datatable');
 								<h2><?php esc_html_e('Sort','tomochain-addon');?></h2>
 								<select class="d-block d-lg-none">
 									<?php
-										echo '<option value="">'. esc_html__('All','tomochain-addon') . '&nbsp;(' . $b->post_count . ')' .'</option>';
+										echo '<option value="">'. esc_html__('All','tomochain-addon') . '&nbsp;(' . $count_posts . ')' .'</option>';
 									?>
 									<?php if ( !empty( $status_terms ) && !is_wp_error( $status_terms ) ):
 										foreach ( $status_terms as $s ):
@@ -35,7 +31,7 @@ wp_enqueue_script('datatable');
 								</select>
 								<ul class="status d-none d-lg-block">
 									<?php
-										echo '<li class="active" data-value="">'. esc_html__('All','tomochain-addon') . '&nbsp;(' . $b->post_count . ')' .'</li>';
+										echo '<li class="active" data-value="">'. esc_html__('All','tomochain-addon') . '&nbsp;(' . $count_posts . ')' .'</li>';
 									?>
 									<?php if ( !empty( $status_terms ) && !is_wp_error( $status_terms ) ):
 										foreach ( $status_terms as $s ):
@@ -48,7 +44,7 @@ wp_enqueue_script('datatable');
 								<h2><?php esc_html_e('Project','tomochain-addon');?></h2>
 								<select class="d-block d-lg-none">
 									<?php
-										echo '<option value="">'. esc_html__('All','tomochain-addon') . '&nbsp;(' . $b->post_count . ')' .'</option>';
+										echo '<option value="">'. esc_html__('All','tomochain-addon') . '&nbsp;(' . $count_posts . ')' .'</option>';
 									?>
 									<?php if ( !empty( $project_terms ) && !is_wp_error( $project_terms ) ):
 										foreach ( $project_terms as $p ):
@@ -58,7 +54,7 @@ wp_enqueue_script('datatable');
 								</select>
 								<ul class="project d-none d-lg-block">
 									<?php
-										echo '<li class="active" data-value="">'. esc_html__('All','tomochain-addon') . '&nbsp;(' . $b->post_count . ')' .'</li>';
+										echo '<li class="active" data-value="">'. esc_html__('All','tomochain-addon') . '&nbsp;(' . $count_posts . ')' .'</li>';
 									?>
 									<?php if ( !empty( $project_terms ) && !is_wp_error( $project_terms ) ):
 										foreach ( $project_terms as $p ):
@@ -89,10 +85,10 @@ wp_enqueue_script('datatable');
 								</tr>
 							</thead>
 							<tbody>
-								<?php if($b->have_posts()):
+								<?php if(have_posts()):
 									$i = 0;
-									while ($b->have_posts()):
-										$b->the_post();
+									while (have_posts()):
+										the_post();
 										$i++;
 										$project = get_the_terms(get_the_ID(),'project');
 										$status = get_the_terms(get_the_ID(),'status');
@@ -106,14 +102,14 @@ wp_enqueue_script('datatable');
 										<tr>
 											<td><?php echo '#'.$number_order;?></td>
 											<td>
-												<span class="logo-project">
+												<a class="logo-project" href="">
 													<img src="<?php echo esc_url($project_logo);?>">
 													<?php if(!is_wp_error($project)):
 														foreach ($project as $p):?>
 															<span><?php echo esc_html($p->name);?></span>
 														<?php endforeach;?>
 													<?php endif;?>
-												</span>
+												</a>
 											</td>
 											<td>
 												<a class="txt-tile" href="<?php echo get_permalink();?>" title="<?php echo get_the_title();?>"><?php echo get_the_title();?></a>

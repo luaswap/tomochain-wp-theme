@@ -51,7 +51,6 @@ class PageTemplater {
 		);
 		// Add your templates to this array.
 		$this->templates = array(
-			'bounty-page.php' => 'Bounty Page',
 			'faq-bounty.php'  => 'FAQ Bouty'
 		);
 	}
