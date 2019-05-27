@@ -479,3 +479,15 @@ if ( !function_exists('tomochain_enter_per_page') ) {
 
     add_filter( 'pre_get_posts', 'tomochain_enter_per_page' );
 }
+// Override Post per page for archive bounty
+if ( !function_exists('tomochain_bounty_per_page') ) {
+
+    function tomochain_bounty_per_page( $query ) {
+
+        if ( !is_admin() && $query->is_main_query() && (is_post_type_archive( 'bounty' ))) {
+           $query->set( 'posts_per_page', -1 );
+        }
+    }
+
+    add_filter( 'pre_get_posts', 'tomochain_bounty_per_page' );
+}
