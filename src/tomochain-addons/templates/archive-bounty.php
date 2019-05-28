@@ -102,14 +102,14 @@ wp_enqueue_script('datatable');
 										<tr>
 											<td><?php echo '#'.$number_order;?></td>
 											<td>
-												<a class="logo-project" href="">
+												<span class="logo-project">
 													<img src="<?php echo esc_url($project_logo);?>">
 													<?php if(!is_wp_error($project)):
 														foreach ($project as $p):?>
 															<span><?php echo esc_html($p->name);?></span>
 														<?php endforeach;?>
 													<?php endif;?>
-												</a>
+												</span>
 											</td>
 											<td>
 												<a class="txt-tile" href="<?php echo get_permalink();?>" title="<?php echo get_the_title();?>"><?php echo get_the_title();?></a>
@@ -125,7 +125,7 @@ wp_enqueue_script('datatable');
 													<span title="Number of participants"><span class="tm-avatar"></span><?php echo $number_submit = !empty($number_submit) ? esc_html($number_submit) : 0;?></span>
 													<?php if(!is_wp_error($status)):
 														foreach ($status as $s):?>
-															<span title="<?php echo esc_attr_e('Status','tomochain-addon')?>" class="stt-active"><?php echo esc_html($s->name);?></span>
+															<span title="<?php echo esc_attr_e('Status','tomochain-addon')?>" class="stt-<?php echo esc_attr($s->slug);?>"><?php echo esc_html($s->name);?></span>
 														<?php endforeach;?>
 													<?php endif;?>
 												</div>

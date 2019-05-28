@@ -11430,7 +11430,7 @@ common bounty
 .stt-active {
   color: #50e3c2; }
 
-.stt-progress {
+.stt-in-progress {
   color: #ffa04d; }
 
 .stt-completed {
@@ -11640,7 +11640,7 @@ common bounty
 .confirmation-bounties {
   background: #323957;
   border-radius: 10px;
-  max-width: 640px;
+  max-width: 550px;
   padding: 50px 15px 20px;
   margin: 0 auto !important; }
   .confirmation-bounties .tm-check {
@@ -20471,7 +20471,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           display: none; }
     .stt-active {
       font-size: 11px; }
-    .stt-progress {
+    .stt-in-progress {
       font-size: 11px; }
     .stt-completed {
       font-size: 11px; }

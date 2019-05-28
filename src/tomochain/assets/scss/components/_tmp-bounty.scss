@@ -309,7 +309,7 @@ common bounty
 		font-size: 11px;
 	}
 }
-.stt-progress {
+.stt-in-progress {
 	color: #ffa04d;
 	@include media-breakpoint-down(sm) {
 		font-size: 11px;
@@ -600,7 +600,7 @@ common bounty
 .confirmation-bounties {
 	background: #323957;
 	border-radius: 10px;
-	max-width: 640px;
+	max-width: 550px;
 	padding: 50px 15px 20px;
 	margin: 0 auto!important;
 	@include media-breakpoint-down(sm) {

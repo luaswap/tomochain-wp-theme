@@ -19,6 +19,8 @@ get_template_part('headerbounty');
 								$reward = get_field('tomo_reward');
 								$number_order = get_post_meta(get_the_ID(),'number_order',true);
 								$number_submit = get_post_meta(get_the_ID(),'tomochain_number_submit',true);
+								$project_logo = get_field('project_logo');
+								$project_url = get_field('project_url');
 								tomochain_setPostViews(get_the_ID());
 							?>
 								<h1 class="tomo-job-title"><span><?php echo '#'.$number_order.' ';?></span><?php echo get_the_title();?></h1>
@@ -33,8 +35,13 @@ get_template_part('headerbounty');
 														<td>
 															<?php if(!is_wp_error($project)):
 																foreach ($project as $p):?>
-																	<a class="logo-project" href="#" title="">
-																		<img src="https://tomochain.com/file/2019/03/Logo-tomochain100px.png"><span><?php echo esc_html($p->name);?></span>
+																	<a class="logo-project" target="_blank" href="<?php echo esc_url($project_url);?>">
+																		<img src="<?php echo esc_url($project_logo);?>">
+																		<?php if(!is_wp_error($project)):
+																			foreach ($project as $p):?>
+																				<span><?php echo esc_html($p->name);?></span>
+																			<?php endforeach;?>
+																		<?php endif;?>
 																	</a>
 																<?php endforeach;?>
 															<?php endif;?>
