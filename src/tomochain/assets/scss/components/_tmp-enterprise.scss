@@ -80,12 +80,6 @@ Homepage Enterprise
 		.btn-download-deck {
 		}
 	}
-	.slick-dots {
-		margin: 0;
-		li button {
-			background: #333;
-		}
-	}
 	@media screen and (max-width: 767px) {
 		.txt_item {
 			padding: 0;
@@ -126,19 +120,34 @@ Homepage Enterprise
 	}
 	.related-post {
 		margin: 20px 0 50px;
-		.slick-track {
-			display: flex!important;
-			.enter_type_post {
-				display: flex!important;
-				float: inherit!important;
-				height: inherit;
-				padding-right: 15px;
-				padding-left: 15px;
+	}
+}
+.site-content-enterprise {
+	.slick-dots {
+		li {
+			button {
+				border: 2px solid #f78d7a!important;
+			}
+			&.slick-active {
+				button {
+					border: 0!important;
+				}
+			}
+		}
+	}
+	.page-numbers {
+		margin-top: 50px;
+		a {
+			color: #151515;
+		}
+		span {
+			color: #ccc;
+			&:after {
+				display: none;
 			}
 		}
 	}
 }
-
 .enterprise {
 	.site-header {
 		@media screen and (min-width: 992px) {
@@ -933,20 +942,10 @@ Homepage Enterprise publication
 		margin: 20px 0 50px;
 		.slick-track {
 			display: flex!important;
-			.enter_type_post {
-				display: flex!important;
-				float: inherit!important;
-				height: inherit;
-				padding-right: 15px;
-				padding-left: 15px;
-			}
 		}
 	}
 	.enter_label {
-		margin: 15px 0 50px;
-		@media screen and (max-width: 767px) {
-			margin: 15px 0 30px;
-		}
+		margin: 15px 0 0;
 		.row {
 			align-items: center;
 			.filter-category {
@@ -968,14 +967,14 @@ Homepage Enterprise publication
 	}
 	.post_filter_wrapper {
 		.enter_type_post {
+			margin-top: 50px;
+			margin-bottom: 0;
 			@media screen and (min-width: 992px) {
-				margin-top: 50px;
 				&:first-child {
 					width: 100%!important;
 					max-width: 100%!important;
 					min-width: 100%;
 					display: block;
-					margin-top: 0px;
 					.enter_post_img {
 						a {
 							display: flex;
@@ -1017,45 +1016,36 @@ Homepage Enterprise publication
 	margin-bottom: 50px;
 }
 .shortcode_home_type_post {
-	
+
+}
+.tomochain-enterprise {
+	.slick-track {
+		display: flex!important;
+	}
 }
 .enter_type_post {
-	@media screen and (min-width: 992px) {
-		display: flex;
-		.enter_wpb_wrapper {
+	display: flex!important;
+	float: inherit!important;
+	height: inherit;
+	overflow: hidden;
+	@include media-breakpoint-up(md) {
+		padding-right: 15px;
+		padding-left: 15px;
+	}
+	.enter_wpb_wrapper {
+		height: 100%;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		&:before {
+			content: '';
+			background: #f3f3f3;
+			position: absolute;
+			left: 15px;
+			bottom: 0;
+			z-index: -1;
+			width: calc(100% - 15px);
 			height: 100%;
-			position: relative;
-			overflow: hidden;
-			z-index: 1;
-			&:before {
-				content: '';
-				background: #f3f3f3;
-				position: absolute;
-				left: 15px;
-				bottom: 0;
-				z-index: -1;
-				width: calc(100% - 15px);
-				height: 100%;
-			}
-		}
-	}
-	@media screen and (max-width: 991px) {
-		.enter_wpb_wrapper {
-			margin-bottom: 15px;
-			padding-bottom: 15px;
-			border-bottom: 1px solid #f2f2f2;
-			display: flex;
-		}
-		&:last-child {
-			.enter_wpb_wrapper {
-				margin-bottom: 0;
-				padding-bottom: 0;
-			}
-		}
-	}
-	&:last-child {
-		.enter_wpb_wrapper {
-			border-bottom: 0;
 		}
 	}
 	.enter_post_img {
@@ -1075,44 +1065,12 @@ Homepage Enterprise publication
 		a {
 			display: block;
 		}
-		@media screen and (max-width: 991px) {
-			width: 30%;
-			&:before {
-				top: 5px;
-				right: -10px;
-				left: inherit;
-				bottom: inherit;
-			}
-			a {
-				display: flex;
-				overflow: hidden;
-				justify-content: center;
-				align-items: center;
-			}
-			img {
-				max-width: 160%;
-				width: initial;
-			}
-		}
-		@media screen and (max-width: 767px) {
-			width: 40%;
-		}
 	}
 	.enter_post_txt {
 		background: #f3f3f3;
 		padding: 25px 20px;
 		margin-left: 15px;
 		margin-bottom: 0;
-		@media screen and (max-width: 991px) {
-			width: 70%;
-			padding: 15px;
-			margin: 15px 0 0;
-		}
-		@media screen and (max-width: 767px) {
-			width: 60%;
-			padding: 10px 15px;
-			margin: 7px 0 0;
-		}
 		.txt_title {
 			a {
 				font-size: 16px;
@@ -1136,9 +1094,6 @@ Homepage Enterprise publication
 				&:first-child {
 					margin-bottom: 5px;
 				}
-				&:last-child {
-					display: none;
-				}
 			}
 		}
 	}
@@ -1148,12 +1103,12 @@ Homepage Enterprise publication
 	.txt_meta {
 		color: #ff7c4d;
 		span {
-			margin-left: 15px;
+			margin-right: 15px;
 			@media screen and (max-width: 767px) {
-				margin-left: 5px;
+				margin-right: 5px;
 			}
-			&:first-child {
-				margin-left: 0;
+			&:last-child {
+				margin-right: 0;
 			}
 		}
 		a {
