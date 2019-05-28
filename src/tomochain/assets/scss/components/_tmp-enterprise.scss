@@ -1181,9 +1181,11 @@ Homepage Enterprise publication
 }
 
 .post_faq {
-	max-width: 800px;
-	margin: 0 auto;
-	.not_bd {
+	@include media-breakpoint-up(lg) {
+		max-width: 800px;
+		margin: 0 auto!important;
+	}
+	/*.not_bd {
 		@include media-breakpoint-up(md) {
 			border: 0!important;
 		}
@@ -1192,56 +1194,70 @@ Homepage Enterprise publication
 		a {
 			text-decoration: underline;
 		}
-	}
+	}*/
 	.item-faq {
+		background: #f2f2f2;
 		margin-bottom: 15px;
-		.accordion {
-			background: #f2f2f2;
-			color: #151515;
-			cursor: pointer;
-			padding: 1.2em 2em;
-			width: 100%;
+		.vc_toggle_content {
+			padding: 0 1em!important;
 			margin: 0;
-			font-size: 16px;
-			font-weight: bold;
-			position: relative;
-			transition: all .4s ease;
-			line-height: 1.5;
-			@include media-breakpoint-down(md) {
-				font-size: 14px;
-				padding: 1em;
-				line-height: 1.4;
-			}
-			&:before {
-				content: '↓';
-				/*font-family: tomochain;*/
-				font-size: 18px;
+		}
+		.vc_toggle_title {
+			padding: 0!important;
+			h4 {
 				color: #151515;
-				position: absolute;
-				top: 12px;
-				right: 20px;
-				transition: all .4s ease;
+				cursor: pointer;
+				padding: 1em;
+				width: 100%;
+				display: block;
+				margin: 0;
+				font-size: 16px;
+				font-weight: bold;
+				line-height: 1.5;
 				@include media-breakpoint-down(md) {
-					right: 5px;
+					font-size: 14px;
+					line-height: 1.4;
 				}
 			}
-			&.active {
+			.vc_toggle_icon {
+				background: transparent!important;
+				width: 40px!important;
+				height: 30px!important;
+				border: 0!important;
+				position: absolute!important;
+				top: 15px!important;
+				right: 0!important;
+				left: inherit!important;
+				margin-left: 0;
+				transform: translate(0,0)!important;
+				text-align: center;
+				@include media-breakpoint-down(md) {
+					width: 25px!important;
+					top: 10px!important;
+				}
 				&:before {
-					content: '↑';
-					/*transform: translateY(-50%) rotate(-180deg);*/
+					background: transparent!important;
+					width: 100%!important;
+					height: 100%!important;
+					border: 0!important;
+					content: '↓';
+					font-size: 18px;
+					color: #151515;
+					right: 20px;
+					visibility: inherit;
+				}
+				&:after {
+					display: none;
 				}
 			}
 		}
-		.panel {
-			background: #f2f2f2;
-			color: #151515;
-			max-height: 0;
-			overflow: hidden;
-			transition: max-height 0.2s ease-out;
-			.txt-answer {
-				padding: 0 2em 1.2em;
-				@include media-breakpoint-down(md) {
-					padding: 0 1em 1em;
+		&.vc_toggle_active {
+			.vc_toggle_icon {
+				&:before {
+					content: '↑';
+				}
+				&:after {
+					display: none;
 				}
 			}
 		}

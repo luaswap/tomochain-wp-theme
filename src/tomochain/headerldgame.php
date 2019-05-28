@@ -139,10 +139,10 @@
 										var timeinterval = setInterval(updateClock, 1000);
 									}
 									//var time_update = "<?php //echo esc_attr($time_update);?>";
-									var time_update = "May 22, 2019 24:00:00";
+									var time_update = "June 22, 2019 24:00:00";
 									var deadline = new Date(time_update);
 									initializeClock('clockdiv', deadline);
-								</script> 
+								</script>
 							</div><!-- /box-countdown -->
 						</div><!-- /tomochain-contest-countdown -->
 					</div>

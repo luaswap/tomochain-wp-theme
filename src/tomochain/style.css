@@ -12410,47 +12410,63 @@ Homepage Enterprise publication
         color: #fff !important; }
 
 .post_faq {
-  max-width: 800px;
-  margin: 0 auto; }
-  .post_faq .text-underline a {
-    text-decoration: underline; }
+  /*.not_bd {
+		@include media-breakpoint-up(md) {
+			border: 0!important;
+		}
+	}
+	.text-underline {
+		a {
+			text-decoration: underline;
+		}
+	}*/ }
   .post_faq .item-faq {
+    background: #f2f2f2;
     margin-bottom: 15px; }
-    .post_faq .item-faq .accordion {
-      background: #f2f2f2;
-      color: #151515;
-      cursor: pointer;
-      padding: 1.2em 2em;
-      width: 100%;
-      margin: 0;
-      font-size: 16px;
-      font-weight: bold;
-      position: relative;
-      -webkit-transition: all .4s ease;
-      transition: all .4s ease;
-      line-height: 1.5; }
-      .post_faq .item-faq .accordion:before {
-        content: '↓';
-        /*font-family: tomochain;*/
-        font-size: 18px;
+    .post_faq .item-faq .vc_toggle_content {
+      padding: 0 1em !important;
+      margin: 0; }
+    .post_faq .item-faq .vc_toggle_title {
+      padding: 0 !important; }
+      .post_faq .item-faq .vc_toggle_title h4 {
         color: #151515;
-        position: absolute;
-        top: 12px;
-        right: 20px;
-        -webkit-transition: all .4s ease;
-        transition: all .4s ease; }
-      .post_faq .item-faq .accordion.active:before {
-        content: '↑';
-        /*transform: translateY(-50%) rotate(-180deg);*/ }
-    .post_faq .item-faq .panel {
-      background: #f2f2f2;
-      color: #151515;
-      max-height: 0;
-      overflow: hidden;
-      -webkit-transition: max-height 0.2s ease-out;
-      transition: max-height 0.2s ease-out; }
-      .post_faq .item-faq .panel .txt-answer {
-        padding: 0 2em 1.2em; }
+        cursor: pointer;
+        padding: 1em;
+        width: 100%;
+        display: block;
+        margin: 0;
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.5; }
+      .post_faq .item-faq .vc_toggle_title .vc_toggle_icon {
+        background: transparent !important;
+        width: 40px !important;
+        height: 30px !important;
+        border: 0 !important;
+        position: absolute !important;
+        top: 15px !important;
+        right: 0 !important;
+        left: inherit !important;
+        margin-left: 0;
+        -webkit-transform: translate(0, 0) !important;
+                transform: translate(0, 0) !important;
+        text-align: center; }
+        .post_faq .item-faq .vc_toggle_title .vc_toggle_icon:before {
+          background: transparent !important;
+          width: 100% !important;
+          height: 100% !important;
+          border: 0 !important;
+          content: '↓';
+          font-size: 18px;
+          color: #151515;
+          right: 20px;
+          visibility: inherit; }
+        .post_faq .item-faq .vc_toggle_title .vc_toggle_icon:after {
+          display: none; }
+    .post_faq .item-faq.vc_toggle_active .vc_toggle_icon:before {
+      content: '↑'; }
+    .post_faq .item-faq.vc_toggle_active .vc_toggle_icon:after {
+      display: none; }
 
 .enterprise-inside .tomochain-team .tomochain-team-member__image {
   max-width: 100%;
@@ -17473,8 +17489,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .enter_type_post {
       padding-right: 15px;
       padding-left: 15px; }
-    .post_faq .not_bd {
-      border: 0 !important; }
       .site-training .con_faq_enterprise > .vc_column_container > .vc_column-inner > .wpb_wrapper {
         padding: 50px; }
       .site-training .tab-calendar .calendar-list .calendar-item {
@@ -18621,6 +18635,9 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         font-size: 80px; }
       .tomo-page-title h2 {
         margin-top: 32px; }
+    .post_faq {
+      max-width: 800px;
+      margin: 0 auto !important; }
       .site-training .tab-calendar .calendar-list .calendar-item {
         padding: 3em 0; }
       .tmp-landingpage .main-title h2.vc_custom_heading {
@@ -20307,14 +20324,12 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         font-size: 14px;
         font-weight: normal;
         margin-bottom: 15px; }
-        .post_faq .item-faq .accordion {
-          font-size: 14px;
-          padding: 1em;
-          line-height: 1.4; }
-          .post_faq .item-faq .accordion:before {
-            right: 5px; }
-          .post_faq .item-faq .panel .txt-answer {
-            padding: 0 1em 1em; }
+          .post_faq .item-faq .vc_toggle_title h4 {
+            font-size: 14px;
+            line-height: 1.4; }
+          .post_faq .item-faq .vc_toggle_title .vc_toggle_icon {
+            width: 25px !important;
+            top: 10px !important; }
     .tmp-fullpage .tomo-page-title-banner {
       min-height: 100px; }
       .tmp-fullpage .tomo-page-title-banner.justify-end {
