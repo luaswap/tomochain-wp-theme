@@ -88,14 +88,14 @@
     function ($) {
         tomochain.form_popup = function () {
             if($('.tomo_btn_grad').length > 0){
-                $('.tomo_btn_grad a').on('click',function(e){
+                $('.tomo_btn_grad button').on('click',function(e){
                     e.preventDefault();
-                    $(this).parents('.container-detail-bounty').find('.box-form-wrap').show(500);
+                    $(this).parents('.container-detail-bounty').find('.box-form-wrap').show(300);
                 });
             }
             $('.close').on('click',function(e){
                 e.preventDefault();
-                $(this).parent().hide(500);
+                $(this).parent().hide(300);
             })
         }
     }

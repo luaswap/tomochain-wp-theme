@@ -29,17 +29,17 @@ if (function_exists('pll_home_url')) {
 	<div class="header-bounty">
 		<div class="container">
 			<div class="row">
-				<div class="col-5 col-lg-3">
+				<div class="col-5 col-md-3">
 					<div class="logo-tomo">
 						<a href="<?php echo esc_url($home_url); ?>">
 							<img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/logo-tomobounty.png'); ?>" alt="logo-tomobounty">
 						</a>
 					</div>
 				</div>
-				<div class="col-7 col-lg-6">
+				<div class="col-7 col-md-6">
 					<h1 class="main-title-page"><?php echo esc_html__( 'TomoChain Bounties Program', 'tomochain' ); ?></h1>
 				</div>
-				<div class="col-12 col-lg-3">
+				<div class="col-12 col-md-3">
 					<div class="header-tools">
 						<?php
 							if ( function_exists('get_field') && ! get_field('hide_language_switcher') ) {

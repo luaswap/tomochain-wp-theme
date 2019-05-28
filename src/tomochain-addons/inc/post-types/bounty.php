@@ -145,7 +145,9 @@ if ( !class_exists( 'Tomochain_Bounty_Post_Type' ) ) {
         private static function get_template_loader_default_file() {
             if ( is_singular( 'bounty' ) ) {
                 $default_file = 'single-bounty.php';
-            } else {
+            }elseif( is_post_type_archive( 'bounty' )) {
+                    $default_file = 'archive-bounty.php';
+            }else {
                 $default_file = '';
             }
             return $default_file;

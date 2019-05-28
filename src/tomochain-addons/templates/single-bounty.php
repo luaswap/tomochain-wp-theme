@@ -66,7 +66,7 @@ get_template_part('headerbounty');
 												</tbody>
 											</table>
 											<div class="tomo_btn_grad">
-												<a href="#"><?php esc_html_e('Claim IT','tomochain-addon')?></a>
+												<button><?php esc_html_e('Claim IT','tomochain-addon')?></button>
 											</div>
 										</div>
 										<div class="col-12 col-md-8">
@@ -78,7 +78,7 @@ get_template_part('headerbounty');
 									</div>
 								</div>
 								<div class="box-form-wrap">
-									<a class="close" href="#"><?php esc_html_e('x','tomochain-addon');?></a>
+									<span class="close tm-times"></span>
 									<div class="box-form-detail">
 										<h2 class="tomo-job-title">
 											<?php
@@ -86,7 +86,6 @@ get_template_part('headerbounty');
 											?>
 											<span><?php echo '#'.$number_order;?></span> <?php echo get_the_title();?>n
 										</h2>
-										<p><?php esc_html_e('These industries have common points including asset exchanges, verifiable scarcity of virtual objects and collectibles, fast and secure payment networks','tomochain-addon');?></p>
 										<div class="box-form" data-id="<?php echo esc_attr(get_the_ID());?>">
 											<?php 
 												$curent_lang = pll_current_language('slug');

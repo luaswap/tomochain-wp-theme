@@ -2,19 +2,23 @@
 common bounty
 ============================*/
 .page-tomo-bounty {
-	min-height: 100vh;
-	padding-bottom: 80px;
+	@include media-breakpoint-up(sm) {
+		min-height: 100vh;
+		padding-bottom: 80px;
+	}
 	position: relative;
-	@media only screen and (min-width: 1025px) {
+	@media only screen and (min-width: 768px) {
 		.nice-select {
 			float: right;
 		}
 	}
 	.site-footer {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		width: 100%;
+		@include media-breakpoint-up(sm) {
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			width: 100%;
+		}
 	}
 }
 .tomo-job-title {
@@ -22,7 +26,7 @@ common bounty
 	margin: 15px 0;
 	font-family: bai jamjuree,sans-serif;
 	@include media-breakpoint-down(sm) {
-		margin: 15px 0 30px;
+		margin: 15px 0;
 		font-size: 18px;
 	}
 }
@@ -42,7 +46,7 @@ common bounty
 			img {
 				height: 40px;
 				@include media-breakpoint-down(sm) {
-					height: 34px;
+					height: 30px;
 				}
 			}
 		}
@@ -53,10 +57,10 @@ common bounty
 			font-family: 'Bai Jamjuree', sans-serif;
 			@include media-breakpoint-down(md) {
 				text-align: right;
-				font-size: 18px;
+				font-size: 16px;
 			}
 			@include media-breakpoint-down(xs) {
-				font-size: 16px!important;
+				font-size: 13px!important;
 			}
 		}
 		.check-time {
@@ -186,7 +190,7 @@ common bounty
 			grid-template-columns: auto auto 60% 20%;
 			padding: 0 30px;
 			@include media-breakpoint-down(sm) {
-				grid-template-columns: auto auto 55% 23%;
+				grid-template-columns: auto auto 60% 15%;
 				padding: 15px 10px 0;
 				font-size: 12px;
 			}
@@ -370,9 +374,11 @@ common bounty
 	border-top: 1px solid #2b2d46;
 }
 .footer-bounty {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+	@include media-breakpoint-up(sm) {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	.main-menu .menu>li>a {
 		height: 40px;
 		line-height: 40px;
@@ -393,16 +399,13 @@ common bounty
 		padding: 5px 0;
 		align-items: center;
 		.menu-bounty {
-			text-align: left;
+			text-align: center;
+			padding: 10px 0;
 		}
 		.logo-tomo-bounty {
-			width: 68px;
 			a {
 				display: inline-block;
-				img {
-					max-width: 40px;
-					padding: 10px 0;
-				}
+				padding: 10px 0 0;
 			}
 		}
 		.site-info {
@@ -438,22 +441,25 @@ common bounty
 	margin: 0 auto;
 	.box-form-wrap{
 		position: fixed;
+		width: 100%!important;
+		height: 100%!important;
 		padding: 5%;
 	    z-index: 9;
 	    top: 0;
 	    bottom: 0;
 	    left: 0;
 	    right: 0;
+	    overflow: auto;
 	    display: none;
 	    &:before{
 	    	content:'';
 	    	display: block;
-	    	position: absolute;
+	    	position: fixed;
 			background: #1c2139;
 			width: 100%;
 			height: 100%;
 			top: 0;
-			let: 0;
+			left: 0;
 	    }
 	    .close{
 		    position: absolute;
@@ -464,7 +470,8 @@ common bounty
 		    text-align: center;
 		    line-height: 30px;
 		    font-size: 18px;
-		    font-weight: bold;
+		    cursor: pointer;
+		    z-index: 99;
 	    }
 		.box-form-detail {
 			max-width: 650px;
@@ -534,6 +541,7 @@ common bounty
 			border-radius: 10px;
 			border: 0;
 			color: #fff;
+			cursor: pointer;
 			display: block;
 			width: 100%;
 			font-size: 18px;
@@ -542,6 +550,7 @@ common bounty
 			text-align: center;
 			text-transform: uppercase;
 			font-family: bai jamjuree,sans-serif;
+			transition: all .5s ease;
 			&:hover {
 				background: #2171d0;
 			}
@@ -555,5 +564,171 @@ common bounty
 			margin-right: 15px;
 			width: 24px;
 		}
+	}
+	.wpcf7-validation-errors {
+		border: 0!important;
+		color: #ffa04d;
+		text-align: center;
+	}
+	.wpcf7-mail-sent-ok {
+		display: none!important;
+	}
+}
+
+.tomo_tmpbtn_blue {
+	button,
+	a {
+		background: #2a8bff;
+		border-radius: 10px;
+		border: 0;
+		color: #fff;
+		cursor: pointer;
+		display: inline-block;
+		min-width: 230px;
+		font-size: 18px;
+		line-height: 22px;
+		padding: 12px 15px;
+		text-align: center;
+		text-transform: uppercase;
+		font-family: bai jamjuree,sans-serif;
+		transition: all .5s ease;
+		&:hover {
+			background: #2171d0;
+		}
+	}
+}
+.confirmation-bounties {
+	background: #323957;
+	border-radius: 10px;
+	max-width: 640px;
+	padding: 50px 15px 20px;
+	margin: 0 auto!important;
+	@include media-breakpoint-down(sm) {
+		padding: 35px 15px 0px;
+	}
+	.tm-check {
+		font-size: 100px;
+		color: #2c88f7;
+		@include media-breakpoint-down(sm) {
+			font-size: 60px;
+		}
+	}
+	h2.vc_custom_heading {
+		@include media-breakpoint-down(sm) {
+			font-size: 24px!important;
+			margin-bottom: 15px!important;
+		}
+	}
+}
+//form-bounty
+.form-bounty {
+	.txt-desc {
+		margin: 30px 0;
+		color: #8b96b5;
+		line-height: 22px;
+		@include media-breakpoint-down(sm) {
+			margin: 15px 0;
+			line-height: 20px;
+		}
+		a {
+			text-decoration: underline!important;
+		}
+	}
+	@include media-breakpoint-down(sm) {
+		.tomo-modal {
+			padding: 15px;
+		}
+	}
+	.form-group {
+		margin-bottom: 30px;
+		font-weight: normal;
+		@include media-breakpoint-down(sm) {
+			margin-bottom: 15px;
+		}
+		::placeholder {
+			font-size: 14px;
+			color: #757b9b;
+			font-weight: normal;
+		}
+
+		:-ms-input-placeholder { /* Internet Explorer 10-11 */
+			font-size: 14px;
+			color: #757b9b;
+		}
+
+		::-ms-input-placeholder { /* Microsoft Edge */
+			font-size: 14px;
+			color: #757b9b;
+		}
+		input,
+		select,
+		textarea {
+			background: #323957;
+			border-radius: 5px;
+			padding: 1.2em 1em;
+			color: #e3e4e9;
+			width: 100%;
+			@include media-breakpoint-down(sm) {
+				padding: 10px 1em;
+			}
+		}
+		textarea {
+			height: 150px;
+		}
+		br {
+			display: none;
+		}
+		.wpcf7-not-valid-tip {
+			font-size: 13px;
+			color: #ffa04d;
+			margin-top: 5px;
+		}
+		&.flex-box-between {
+			span {
+				display: block;
+			}
+			select {
+				margin-top: 5px;
+			}
+		}
+	}
+	.txt-note {
+		margin: 0 0 15px;
+		line-height: 1.4;
+		font-style: italic;
+	}
+	.btn-submit {
+		text-align: center;
+		.enr-submit {
+			background: #2a8bfe;
+			border: 0;
+			border-radius: 10px;
+			color: #fff;
+			padding: 12px 15px;
+			min-width: 220px;
+			font-size: 16px;
+			text-transform: uppercase;
+			line-height: 1.4;
+			transition: all .5s ease;
+			cursor: pointer;
+			&:active,
+			&:hover {
+				background: #1f66ba!important;
+				color: #fff;
+			}
+		}
+	}
+}
+.ajax-loader {
+	background-image: url(assets/images/loading.svg) !important;
+	background-repeat: no-repeat!important;
+	background-position: center!important;
+	display: block!important;
+	height: 0px!important;
+	width: 100%!important;
+	margin: 0px!important;
+	&.is-active {
+		height: 16px!important;
+		margin-top: 15px!important;
 	}
 }
