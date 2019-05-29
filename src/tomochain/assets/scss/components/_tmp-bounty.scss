@@ -372,6 +372,9 @@ common bounty
 .not-bg {
 	background: transparent!important;
 	border-top: 1px solid #2b2d46;
+	@include media-breakpoint-down(md) {
+		margin-top: 30px;
+	}
 }
 .footer-bounty {
 	@include media-breakpoint-up(sm) {

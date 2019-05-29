@@ -31,7 +31,7 @@ if (function_exists('pll_home_url')) {
 			<div class="row">
 				<div class="col-5 col-md-3">
 					<div class="logo-tomo">
-						<a href="<?php echo esc_url($home_url); ?>">
+						<a href="/bounty/">
 							<img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/logo-tomobounty.png'); ?>" alt="logo-tomobounty">
 						</a>
 					</div>
