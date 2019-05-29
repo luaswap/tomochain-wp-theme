@@ -134,17 +134,7 @@ function tomochain_roadmap_ajax(){
      * Process data
     */
     $id  = $_POST['params']['id'];
-    if( isset( $id ) && !empty( $id ) ){
-        $tax_query = array();
-        if('all' != $id){
-            $tax_query = array(
-                array(
-                    'taxonomy' => 'roadmap_category',
-                    'field'    => 'term_id',
-                    'terms'    => $id,
-                ),
-            );
-        }  
+    if( isset( $id ) && !empty( $id ) ){        
         ?>
         <div class="row">
             <div class="col-lg-6">
@@ -157,16 +147,26 @@ function tomochain_roadmap_ajax(){
                                 'post_type'      => 'road_map',
                                 'post_status'    => 'publish',
                                 'posts_per_page' => -1,
-                                'meta_key'       => 'process',
-                                'meta_value'     => 'completed',
-                                'meta_compare'   => '=',
                                 'orderby'        => 'date',
                                 'order'          => 'DESC',
-                                'tax_query'      => $tax_query
+                                'meta_query'     => array(
+                                    array(
+                                        'key'     => 'process',
+                                        'value'   => 'completed'
+                                    ),
+                                ),
                             );
-                            
+                            if('all' != $id){
+                                $args_complete[ 'tax_query'] = array(
+                                    array(
+                                        'taxonomy' => 'roadmap_category',
+                                        'field'    => 'term_id',
+                                        'terms'    => $id,
+                                    ),
+                                );
+                            }
                             $c = new WP_Query($args_complete);
-                            wp_reset_postdata();
+                            
                             if( $c->have_posts() ):
                                 while( $c->have_posts() ): $c->the_post();
                                     $roadmap_url = get_field('roadmap_url') ? get_field('roadmap_url') : '#';
@@ -214,7 +214,9 @@ function tomochain_roadmap_ajax(){
                                         </div>
                                     </div><!-- box-item -->
                                 
-                                <?php endwhile;?>
+                                <?php endwhile;
+                                    wp_reset_postdata();
+                                ?>
                             <?php else:?>
                                 <p class="mgs"><?php echo esc_html__('No posts found','tomochain-addons');?></p>
                             <?php endif;?>
@@ -232,15 +234,26 @@ function tomochain_roadmap_ajax(){
                                 'post_type'      => 'road_map',
                                 'post_status'    => 'publish',
                                 'posts_per_page' => -1,
-                                'meta_key'       => 'process',
-                                'meta_value'     => 'in-progress',
-                                'meta_compare'   => '=',
                                 'orderby'        => 'date',
                                 'order'          => 'DESC',
-                                'tax_query'      => $tax_query
+                                'meta_query'     => array(
+                                    array(
+                                        'key'     => 'process',
+                                        'value'   => 'in-progress'
+                                    ),
+                                ),
                             );
+                            if('all' != $id){
+                                $args_inprogress[ 'tax_query'] = array(
+                                    array(
+                                        'taxonomy' => 'roadmap_category',
+                                        'field'    => 'term_id',
+                                        'terms'    => $id,
+                                    ),
+                                );
+                            }
                             $p = new WP_Query($args_inprogress);
-                            wp_reset_postdata();
+                            
                             if( $p->have_posts() ):
                                 while( $p->have_posts() ): $p->the_post();
                                     $roadmap_url = get_field('roadmap_url') ? get_field('roadmap_url') : '#';
@@ -293,7 +306,9 @@ function tomochain_roadmap_ajax(){
                                             <?php the_content();?>
                                         </div>
                                     </div><!-- box-item -->                             
-                            <?php endwhile;?>
+                            <?php endwhile;
+                                wp_reset_postdata();
+                            ?>
                             <?php else:?>
                                 <p class="mgs"><?php echo esc_html__('No posts found','tomochain-addons');?></p>
                         <?php endif;?>
