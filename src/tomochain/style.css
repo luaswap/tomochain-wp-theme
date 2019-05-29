@@ -20324,6 +20324,8 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         font-size: 14px;
         font-weight: normal;
         margin-bottom: 15px; }
+    .not-bg {
+      margin-top: 30px; }
           .post_faq .item-faq .vc_toggle_title h4 {
             font-size: 14px;
             line-height: 1.4; }
