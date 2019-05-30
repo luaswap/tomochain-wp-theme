@@ -28,29 +28,28 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 		'post_type'      => 'road_map',
 		'post_status'    => 'publish',
 		'posts_per_page' => -1,
-		'meta_key'       => 'process',
-		'meta_value'     => 'completed',
-		'meta_compare'   => '=',
 		'orderby'        => 'date',
 		'order'          => 'DESC',
+		'meta_query'     => array(
+            array(
+                'key'     => 'process',
+                'value'   => 'completed'
+            ),
+        ),
 	);
 	$args_inprogress = array(
 		'post_type'      => 'road_map',
 		'post_status'    => 'publish',
 		'posts_per_page' => -1,
-		'meta_key'       => 'process',
-		'meta_value'     => 'in-progress',
-		'meta_compare'   => '=',
 		'orderby'        => 'date',
 		'order'          => 'DESC',
+		'meta_query'     => array(
+            array(
+                'key'     => 'process',
+                'value'   => 'in-progress'
+            ),
+        ),
 	);
-	$args_activity = array(
-		'post_type'      => 'activity',
-		'post_status'    => 'publish',
-		'posts_per_page' => -1,
-		'orderby'        => 'date',
-		'order'          => 'DESC',
-	);  
 ?>
 <div class="<?php echo esc_attr( trim( $css_class ) ); ?>">
 	<div class="tomochain-roadmap-page">
@@ -87,7 +86,6 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 										<div class="list-box">
 											<?php
 											$c = new WP_Query($args_complete);
-											wp_reset_postdata();
 											if( $c->have_posts() ):
 												while( $c->have_posts() ): $c->the_post();
 													$roadmap_url = get_field('roadmap_url') ? get_field('roadmap_url') : '#';
@@ -135,7 +133,9 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 														</div>
 													</div><!-- box-item -->
 												
-												<?php endwhile;?>
+												<?php endwhile;
+													wp_reset_postdata();
+												?>
 											<?php endif;?>
 										</div>
 									</div>
@@ -148,7 +148,6 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 										<div class="list-box">
 											<?php
 											$p = new WP_Query($args_inprogress);
-											wp_reset_postdata();
 											 if( $p->have_posts() ):
 												while( $p->have_posts() ): $p->the_post();
 													$roadmap_url = get_field('roadmap_url') ? get_field('roadmap_url') : '#';
@@ -202,7 +201,9 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 															<?php the_content();?>
 														</div>
 													</div><!-- box-item -->                             
-											<?php endwhile;?>
+											<?php endwhile;
+												wp_reset_postdata();
+											?>
 										<?php endif;?>
 									</div>
 									</div>
