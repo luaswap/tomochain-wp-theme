@@ -738,3 +738,44 @@ body.page-template-revslider-page-template {
         border: none !important;
     }
 }
+
+// EXCHANGES PAGE
+.page-template-tmp-fullpage {
+    .exchanges {
+        @include media-breakpoint-up(lg) {
+            .vc_single_image-wrapper img {
+                max-height: 70px;
+                width: inherit;
+                max-width: 100%;
+            }
+        }
+        @include media-breakpoint-up(md) {
+            .vc_single_image-wrapper img {
+                height: 60px;
+                width: inherit;
+                max-width: 100%;
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            .vc_single_image-wrapper img {
+                max-height: 50px;
+                width: inherit;
+                max-width: 100%;
+            }
+        }
+        .wpb_content_element {
+            margin-bottom: 25px;
+        }
+        @media screen and (max-width: 767px) {
+            .wpb_single_image.vc_align_left {
+                text-align: center;
+            }
+        }
+        @media screen and (max-width: 767px) {
+            h4.vc_custom_heading {
+                font-size: 20px;
+                text-align: center!important;
+            }
+        }
+    }
+}

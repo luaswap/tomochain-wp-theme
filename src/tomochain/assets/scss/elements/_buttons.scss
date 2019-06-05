@@ -44,7 +44,7 @@ input[type="submit"] {
 			z-index: -1;
 			@extend %transit;
 		}
-		&:after {
+		/*&:after {
 			content: '';
 			background-color: #272f4b!important;
 			height: calc(100% - 2px);
@@ -55,7 +55,7 @@ input[type="submit"] {
 			right: 1px;
 			z-index: -1;
 			@extend %transit;
-		}
+		}*/
 		&:hover {
 			/*color: #272f4b!important;*/
 			&:after {

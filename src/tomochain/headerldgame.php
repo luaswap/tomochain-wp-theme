@@ -32,7 +32,7 @@
 	?>
 </div>
 <?php endif; ?>
-<div id="page" class="site enterprise">
+<div id="page" class="site">
 	<a class="skip-link screen-reader-text" href="#content"><?php esc_html_e( 'Skip to content', 'tomochain' ); ?></a>
 	<?php if (!is_404()): ?>
 	<div class="header-game-contest">
@@ -139,7 +139,7 @@
 										var timeinterval = setInterval(updateClock, 1000);
 									}
 									//var time_update = "<?php //echo esc_attr($time_update);?>";
-									var time_update = "June 22, 2019 24:00:00";
+									var time_update = "Jun 22 2019";
 									var deadline = new Date(time_update);
 									initializeClock('clockdiv', deadline);
 								</script>
