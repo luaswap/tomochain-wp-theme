@@ -5,7 +5,7 @@
     border-radius: 10px;*/
     display: block;
     overflow: hidden;
-    transition: all .5s ease;
+    transition: all .3s ease;
     img {
         @extend %transit;
     }
@@ -25,7 +25,12 @@ article.post-loop {
         border-radius: 10px;
         margin-bottom: 25px;
         min-height: 175px;
-        overflow: hidden;
+        /*overflow: hidden;
+        backface-visibility: hidden;*/
+        img {
+            border-radius: 10px;
+            backface-visibility: hidden;
+        }
         /*img {
             min-height: 175px;
             object-fit: cover;
@@ -55,7 +60,7 @@ article.post-loop {
     }
     &:hover {
         .post-thumbnail {
-            transform: scale(1.04);
+            transform: translateY(-5px);
         }
     }
     /*&:hover .entry-img img {

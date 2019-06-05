@@ -7729,7 +7729,7 @@ If your tooling is more complex you can split it up like:
   tools.typography
   etc.
 */
-.tomo_btn_tmp_slider a:before, .tomo_btn_tmp_slider a:after, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-tmp-color-gradient a:after, .btn-tmp-basic:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts, .tomochain-roadmap-content, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
+.tomo_btn_tmp_slider a:before, .tomo_btn_tmp_grad a:before, .tomo_btn_tmp_grad a:after, .btn-tmp-color-gradient a:after, .btn-tmp-basic:after, .btn-downios:after, .btn-downandroid:after, a, .tomo-archive-wrapper .archive-posts, .tomochain-roadmap-content, .site-header .site-branding img, .main-menu .menu li.page_item.page_item_has_children > a:before, .main-menu .menu li.page_item.menu-item-has-children > a:before,
 .main-menu .menu li.menu-item.page_item_has_children > a:before,
 .main-menu .menu li.menu-item.menu-item-has-children > a:before, .main-menu .menu > ul > li .children li.page_item.page_item_has_children:after, .main-menu .menu > ul > li .children li.page_item.menu-item-has-children:after,
 .main-menu .menu > li .sub-menu li.menu-item.page_item_has_children:after,
@@ -8721,7 +8721,19 @@ input[type="submit"] {
   border: 0 !important;
   color: #fff !important;
   overflow: hidden !important;
-  z-index: 1 !important; }
+  z-index: 1 !important;
+  /*&:after {
+			content: '';
+			background-color: #272f4b!important;
+			height: calc(100% - 2px);
+			width: calc(100% - 2px);
+			border-radius: 6px!important;
+			position: absolute;
+			top: 1px;
+			right: 1px;
+			z-index: -1;
+			@extend %transit;
+		}*/ }
   .tomo_btn_tmp_slider a:before {
     content: '';
     background-image: linear-gradient(-123deg, #48A5FF 30%, #534BFF 100%) !important;
@@ -8734,16 +8746,6 @@ input[type="submit"] {
     position: absolute;
     top: 0;
     left: 0;
-    z-index: -1; }
-  .tomo_btn_tmp_slider a:after {
-    content: '';
-    background-color: #272f4b !important;
-    height: calc(100% - 2px);
-    width: calc(100% - 2px);
-    border-radius: 6px !important;
-    position: absolute;
-    top: 1px;
-    right: 1px;
     z-index: -1; }
   .tomo_btn_tmp_slider a:hover {
     /*color: #272f4b!important;*/ }
@@ -11070,8 +11072,8 @@ This is where majority of our work takes place and our UI components are often c
     border-radius: 10px;*/
   display: block;
   overflow: hidden;
-  -webkit-transition: all .5s ease;
-  transition: all .5s ease; }
+  -webkit-transition: all .3s ease;
+  transition: all .3s ease; }
   body.single .post-thumbnail {
     margin-bottom: 20px; }
 
@@ -11085,7 +11087,8 @@ article.post-loop {
     border-radius: 10px;
     margin-bottom: 25px;
     min-height: 175px;
-    overflow: hidden;
+    /*overflow: hidden;
+        backface-visibility: hidden;*/
     /*img {
             min-height: 175px;
             object-fit: cover;
@@ -11095,12 +11098,16 @@ article.post-loop {
     /*@include media-breakpoint-up(sm) {
             margin-bottom: 20px;
         }*/ }
+    article.post-loop .entry-img img {
+      border-radius: 10px;
+      -webkit-backface-visibility: hidden;
+              backface-visibility: hidden; }
   article.post-loop .entry-title span.event-venue {
     font-size: 16px;
     color: #808aa9; }
   article.post-loop:hover .post-thumbnail {
-    -webkit-transform: scale(1.04);
-            transform: scale(1.04); }
+    -webkit-transform: translateY(-5px);
+            transform: translateY(-5px); }
 
 .post-navigation {
   margin-bottom: 80px; }
@@ -12713,7 +12720,7 @@ Homepage Enterprise inside full
   margin-left: 0;
   padding-left: 15px; }
   .tmp-fullpage ol li {
-    margin: 5px 0; }
+    margin: 10px 0; }
 
 .page-template-tmp-gamedappathon,
 .page-template-tmp-gamecontest {
@@ -13719,15 +13726,17 @@ Homepage Enterprise inside full
     margin-bottom: 0;
     font-size: 18px;
     text-align: center; }
-  .roadmap-common .main-inner:before {
-    background: url(assets/images/bg_roadmap1.png) repeat-x left bottom;
-    content: "";
-    width: 100%;
-    height: 150px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1; }
+  .roadmap-common .main-inner {
+    /*&:before {
+			background: url(assets/images/bg_roadmap1.png) repeat-x left bottom;
+			content: "";
+			width: 100%;
+			height: 150px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}*/ }
   .roadmap-common .list-box {
     padding: 0 15px;
     max-height: 590px;
@@ -13918,16 +13927,17 @@ Homepage Enterprise inside full
         font-size: 12px; }
 
 .tomochain-activities .box-activities {
-  position: relative; }
-  .tomochain-activities .box-activities:before {
-    background: url(assets/images/bg_roadmap2.png) repeat-x left bottom;
-    content: "";
-    width: 100%;
-    height: 80px;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    z-index: 1; }
+  position: relative;
+  /*&:before {
+			background: url(assets/images/bg_roadmap2.png) repeat-x left bottom;
+			content: "";
+			width: 100%;
+			height: 80px;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			z-index: 1;
+		}*/ }
   .tomochain-activities .box-activities .box-title {
     padding: 15px 0;
     display: -webkit-box;
@@ -13948,6 +13958,7 @@ Homepage Enterprise inside full
       max-height: 475px;
       font-size: 13px;
       overflow-y: auto;
+      overflow-x: hidden;
       scrollbar-color: #394472 transparent;
       scrollbar-width: thin;
       /* width */
@@ -15007,7 +15018,7 @@ Homepage Enterprise inside full
   text-align: left; }
   .site-training .tab-calendar .calendar-list .calendar-item {
     padding: 1.5em 0;
-    border-top: 2px solid #333867; }
+    border-top: 1px solid #333867; }
     .site-training .tab-calendar .calendar-list .calendar-item:first-child {
       border-top: 0;
       padding-top: 0; }
@@ -16000,6 +16011,9 @@ body.page-template-revslider-page-template {
 
 .wpim-marker .wpim-infowindow__inner {
   border: none !important; }
+
+.page-template-tmp-fullpage .exchanges .wpb_content_element {
+  margin-bottom: 25px; }
 
 body.mainnet-page {
   background-image: linear-gradient(131deg, #272f4b 0%, #1a1f36 21%, #15152d 52%, #211841 100%); }
@@ -17790,6 +17804,10 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
                 transform: translateY(-50%); }
   .exchanges-inner-row {
     margin-bottom: 50px; }
+  .page-template-tmp-fullpage .exchanges .vc_single_image-wrapper img {
+    height: 60px;
+    width: inherit;
+    max-width: 100%; }
         body.mainnet-page .tomochain-videos .video-link {
           height: 77px;
           width: 77px; }
@@ -18838,6 +18856,10 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       max-width: 400px; }
   .tomochain-team.five-columns .tomochain-team__wrapper {
     grid-template-columns: 20% 20% 20% 20% 20%; }
+  .page-template-tmp-fullpage .exchanges .vc_single_image-wrapper img {
+    max-height: 70px;
+    width: inherit;
+    max-width: 100%; }
       body.mainnet-page #message-row {
         margin-top: 100px; }
     body.mainnet-page #coming-image-column img {
@@ -20446,15 +20468,23 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
   .box-widget-bounty {
     display: -webkit-box;
     display: -ms-flexbox;
-    display: flex; }
+    display: flex;
+    margin-bottom: 25px;
+    margin-right: -15px;
+    margin-left: -15px; }
     .box-widget-bounty .widget-cate {
-      margin: 0 15px 15px 0; }
+      margin: 0;
+      width: 50%;
+      padding: 0 15px; }
+      .box-widget-bounty .widget-cate:last-child {
+        margin: 0; }
       .box-widget-bounty .widget-cate select {
         background: transparent;
         border: 1px solid #3c4776;
         padding: 7px;
         border-radius: 5px;
-        font-size: 12px; }
+        font-size: 12px;
+        width: 100%; }
       .box-widget-bounty .widget-cate h2 {
         font-size: 14px;
         font-weight: normal;
@@ -20587,11 +20617,11 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         .header-bounty .row .check-time {
           font-size: 10px; }
         .list-bounty thead tr {
-          grid-template-columns: auto auto 60% 15%;
+          grid-template-columns: auto auto 52% 24%;
           padding: 15px 10px 0;
           font-size: 12px; }
       .list-bounty tbody tr {
-        grid-template-columns: auto auto 55% 23%;
+        grid-template-columns: auto auto 60% 15%;
         padding: 10px;
         margin: 15px 0; }
     .list-bounty {
@@ -20775,6 +20805,10 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         -ms-flex-order: 2;
             order: 2;
     margin-bottom: 50px; }
+  .page-template-tmp-fullpage .exchanges .vc_single_image-wrapper img {
+    max-height: 50px;
+    width: inherit;
+    max-width: 100%; }
       body.mainnet-page #meetup-row p.vc_custom_heading {
         font-size: 14px !important;
         line-height: 28px !important; } }
@@ -21434,7 +21468,12 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .flexbox_howto .tomochain_howto_use .vd_item iframe {
       height: 260px !important; }
   .flexbox_howto .tomochain_slider_nav {
-    display: none; } }
+    display: none; }
+  .page-template-tmp-fullpage .exchanges .wpb_single_image.vc_align_left {
+    text-align: center; }
+  .page-template-tmp-fullpage .exchanges h4.vc_custom_heading {
+    font-size: 20px;
+    text-align: center !important; } }
   @media only screen and (max-width: 767px) {
     .tab-game-contest .tomochain-contest-countdown .box-countdown {
       -webkit-box-pack: justify;
