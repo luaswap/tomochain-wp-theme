@@ -1492,7 +1492,7 @@ if( function_exists('acf_add_local_field_group') ) {
    /* Bouty Option */
     acf_add_local_field_group(array (
         'key' => 'group_5c6424d421424',
-        'title' => 'Bouty Option',
+        'title' => 'Bounty Option',
         'fields' => array (
             array (
                 'key' => 'field_5c2db35e9eb8f',
@@ -1532,6 +1532,29 @@ if( function_exists('acf_add_local_field_group') ) {
                     'id' => '',
                 ),
                 'default_value' => '',
+                'placeholder' => '',
+            ),
+            array (
+                'key' => 'field_5c3db3765eb13',
+                'label' => 'Status',
+                'name' => 'query_status',
+                'type' => 'select',
+                'instructions' => 'Use for query status',
+                'required' => 0,
+                'conditional_logic' => 0,
+                'choices' => array (
+                    1 => 'Active',
+                    2 => 'Inprogress',
+                    3 => 'Complete',
+                ),
+                'default_value' => array (
+                   
+                ),
+                'allow_null' => 0,
+                'multiple' => 0,
+                'ui' => 0,
+                'ajax' => 0,
+                'return_format' => 'value',
                 'placeholder' => '',
             ),
             array (
