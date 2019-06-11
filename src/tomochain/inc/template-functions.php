@@ -485,7 +485,10 @@ if ( !function_exists('tomochain_bounty_per_page') ) {
     function tomochain_bounty_per_page( $query ) {
 
         if ( !is_admin() && $query->is_main_query() && (is_post_type_archive( 'bounty' ))) {
-           $query->set( 'posts_per_page', -1 );
+            $query->set( 'posts_per_page', -1 );
+            $query->set( 'meta_key', 'query_status' );
+            $query->set( 'orderby', 'meta_value_num' );
+            $query->set( 'order', 'ASC' );
         }
     }
 
