@@ -70,10 +70,10 @@
 					<div class="col-sm-8">
 						<div class="tomochain-contest-countdown">
 							<div class="box-countdown">
-								<h3 class="txt-title"><?php echo esc_html__('The 2nd round will end in','tomochain')?></h3>
+								<h3 class="txt-title"><?php echo esc_html__('Final round will begin soon - look out for updates!','tomochain')?></h3>
 
 								<!-- <h3 class="txt-title"><?php //echo esc_html__('The 1st contest submission ends in:','tomochain')?></h3> -->
-								<div id="clockdiv" class="inner-countdown">
+								<div id="clockdiv" class="inner-countdown d-none">
 									<div class="txt-clock">
 										<span class="days"></span>
 										<div class="smalltext"><?php echo esc_html__('days','tomochain')?></div>
