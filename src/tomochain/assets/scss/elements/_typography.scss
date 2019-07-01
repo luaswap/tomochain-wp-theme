@@ -6,7 +6,7 @@ optgroup,
 textarea {
 	color: $color__text-main;
 	font-family: $font__main;
-	@include font-size(0.875);
+	// @include font-size(0.875);
 	line-height: $font__line-height-body;
 }
 
@@ -33,7 +33,7 @@ address {
 pre {
 	background: $color__background-pre;
 	font-family: $font__pre;
-	@include font-size(0.9375);
+	// @include font-size(0.9375);
 	line-height: $font__line-height-pre;
 	margin-bottom: 1.6em;
 	max-width: 100%;
@@ -43,7 +43,7 @@ pre {
 
 code, kbd, tt, var {
 	font-family: $font__code;
-	@include font-size(0.9375);
+	// @include font-size(0.9375);
 }
 
 abbr, acronym {
