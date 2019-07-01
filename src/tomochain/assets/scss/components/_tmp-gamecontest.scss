@@ -1,9 +1,9 @@
 .page-template-tmp-gamedappathon,
 .page-template-tmp-gamecontest {
 	background: #15192e; /* Old browsers */
-	color: #fff;
+	color: #444964;
 	font-family: "Open Sans",Arial,sans-serif;
-	font-size: 14px;
+	font-size: 12px;
 	@media only screen and (min-width: 1025px) {
 		.nice-select {
 			float: right;
@@ -18,7 +18,7 @@
 		}
 	}
 	#page {
-		padding-bottom: 55px;
+		padding-bottom: 50px;
 		position: relative;
 		min-height: 100vh;
 	}
@@ -32,7 +32,7 @@
 	.site-footer {
 		background: transparent;
 		bottom: 0;
-		border-top: 1px solid #394472;
+		border-top: 1px solid #252C4F;
 		width: 100%;
 		padding: 0;
 		left: 0;
@@ -278,7 +278,7 @@
 
 //con-game-contest
 .con-game-contest {
-	margin: 15px 0 30px;
+	margin: 15px 0 0px;
 	color: #4c4c4c;
 	.wpb_content_element {
 		margin: 0!important;
@@ -286,6 +286,24 @@
 	.tab-pane-tomo {
 		.row {
 			align-items: flex-start;
+		}
+		.list-partner {
+			padding: 25px 0;
+			ul {
+				display: flex;
+				flex-wrap: wrap;
+				align-content: center;
+				justify-content: center;
+				padding: 0;
+				margin: 0;
+				li {
+					list-style: none;
+					padding: 15px 25px;
+					img {
+						height: 30px;
+					}
+				}
+			}
 		}
 	}
 	.box-infor-ct {
@@ -326,12 +344,12 @@
 			z-index: -1;
 		}*/
 		.tmp-tile-contest {
-			font-size: 32px;
-			color: #173d7a;
+			font-size: 48px;
+			color: #3D38A0;
 			font-weight: bold;
 			margin-bottom: 15px;
 			@include media-breakpoint-down(sm) {
-				font-size: 18px;
+				font-size: 40px;
 			}
 			span {
 				display: block;
@@ -339,10 +357,17 @@
 				text-transform: uppercase;
 			}
 			@media only screen and (min-width: 1025px) and (max-width: 1439px) {
-				font-size: 26px;
+				font-size: 48px;
 				span {
 					font-size: 16px;
 				}
+			}
+		}
+		.txt-desc {
+			font-size: 20px;
+			color: #000;
+			@include media-breakpoint-down(sm) {
+				font-size: 16px;
 			}
 		}
 		.txt-prize {
@@ -350,7 +375,7 @@
 			font-size: 16px;
 			font-weight: 600;
 			strong {
-				color: #ff2c9c;
+				color: #FFB126;
 				margin-left: 5px;
 				line-height: 1;
 				font-size: 28px;
@@ -359,19 +384,34 @@
 		}
 		.game-avatar {
 			@media only screen and (min-width: 1440px) {
-				padding: 7px 34px;
+				padding: 25px 36px;
 			}
 			@media only screen and (min-width: 1025px) and (max-width: 1439px) {
-				padding: 7px 43px;
+				padding: 25px 55px;
+			}
+			@media only screen and (min-width: 992px) and (max-width: 1024px) {
+				padding: 5px 55px;
 			}
 			@media only screen and (min-width: 768px) and (max-width: 991px) {
-				padding: 10px 100px;
+				padding: 25px 100px;
 			}
 			@media only screen and (max-width: 767px) {
 				padding: 15px;
 			}
 		}
 		.btn-contest {
+			@include media-breakpoint-up(md) {
+				.row {
+					>div {
+						&:first-child {
+							padding-right: 5px!important;
+						}
+						&:last-child {
+							padding-left: 5px!important;
+						}
+					}
+				}
+			}
 			p {
 				margin: 15px 0 10px;
 				color: #151515;
@@ -395,13 +435,23 @@
 				}
 			}
 			.btn-primary {
-				background: #173d7a;
-				border: 1px solid #173d7a!important;
+				background: #FFB126;
+				border: 2px solid #FFB126!important;
+				transition: .5s ;
+				&:hover {
+					background: #E79B13;
+					border: 2px solid #E79B13!important;
+				}
 			}
 			.btn-info {
 				background: #fff;
-				color: #173d7a;
-				border: 1px solid #173d7a!important;
+				border: 2px solid #3D38A0!important;
+				color: #3D38A0;
+				&:hover {
+					background: #3D38A0;
+					border: 2px solid #3D38A0!important;
+					color: #ffffff;
+				}
 			}
 		}
 	}//box-infor-ct
@@ -715,7 +765,7 @@
 		.txt-tile {
 			font-size: 16px;
 			font-weight: bold;
-			color: #173d7a;
+			color: #3d38a0;
 		}
 		.txt-desc {
 			margin: 15px 0;
@@ -771,7 +821,7 @@
 		}
 		.btn-contest {
 			.submit-game {
-				background: #173d7a;
+				background: #FFB126;
 				border: 0;
 				border-radius: 0;
 				color: #fff;
@@ -780,6 +830,10 @@
 				padding: 1em;
 				font-size: 16px;
 				line-height: 1.4;
+				transition: .5s;
+				&:hover {
+					background: #E79B13;
+				}
 				&:active {
 					&:focus {
 						box-shadow: 0 0 0!important;
