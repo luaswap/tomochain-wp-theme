@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="82px" height="80px" viewBox="0 0 82 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 55.1 (78136) - https://sketchapp.com -->
+    <title>icon_es_st_2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="21.12%" x2="100%" y2="78.88%" id="linearGradient-1">
+            <stop stop-color="#A088FF" offset="0%"></stop>
+            <stop stop-color="#8163FF" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="21.6" y="27.2" width="40" height="30.4" rx="1.6"></rect>
+        <filter x="-60.0%" y="-78.9%" width="220.0%" height="257.9%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.725490196   0 0 0 0 0.658823529   0 0 0 0 0.97254902  0 0 0 0.5 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+        <linearGradient x1="18.585998%" y1="11.9135753%" x2="84.4283449%" y2="86.4735176%" id="linearGradient-4">
+            <stop stop-color="#FD7DB3" offset="0%"></stop>
+            <stop stop-color="#FF9E98" offset="100%"></stop>
+        </linearGradient>
+        <circle id="path-5" cx="24.8" cy="31.2" r="11.2"></circle>
+        <filter x="-107.1%" y="-107.1%" width="314.3%" height="314.3%" filterUnits="objectBoundingBox" id="filter-6">
+            <feOffset dx="0" dy="0" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="8" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.725490196   0 0 0 0 0.654901961   0 0 0 0 0.97254902  0 0 0 0.502895542 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="TomoZ-1-Copy-5" transform="translate(-433.000000, -1100.000000)">
+            <g id="icon_es_st_2" transform="translate(435.000000, 1100.000000)">
+                <circle id="Oval" fill="#F5F2FB" cx="40" cy="40" r="40"></circle>
+                <circle id="Oval-Copy-63" fill="#FAC4A6" cx="26.8" cy="68.4" r="2"></circle>
+                <circle id="Oval-Copy-64" fill="#97DCFD" cx="45.2" cy="11.6" r="2"></circle>
+                <circle id="Oval-Copy-65" fill="#B9A8F8" cx="70" cy="42.8" r="2"></circle>
+                <g id="Rectangle">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+                <rect id="Rectangle-Copy-9" fill="#FFFFFF" x="42.4" y="35.2" width="11.2" height="1" rx="0.5"></rect>
+                <rect id="Rectangle-Copy-16" fill="#FFFFFF" x="42.4" y="40.8" width="12.8" height="1" rx="0.5"></rect>
+                <rect id="Rectangle-Copy-17" fill="#FFFFFF" x="42.4" y="45.6" width="6.4" height="1" rx="0.5"></rect>
+                <rect id="Rectangle-Copy-18" fill="#FFFFFF" x="26.4" y="52" width="6.4" height="1" rx="0.5"></rect>
+                <g id="Oval">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-6)" xlink:href="#path-5"></use>
+                    <use fill="url(#linearGradient-4)" fill-rule="evenodd" xlink:href="#path-5"></use>
+                </g>
+                <text id="user---anticon" font-family="LastResort, .LastResort" font-size="11.2" font-weight="normal" fill="#FFFFFF">
+                    <tspan x="19.2" y="34.6"></tspan>
+                </text>
+            </g>
+        </g>
+    </g>
+</svg>
