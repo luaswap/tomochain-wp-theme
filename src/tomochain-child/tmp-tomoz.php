@@ -1674,7 +1674,6 @@ particlesJS("particles-js", {
   },
   "retina_detect": true
 });
-requestAnimationFrame();
 </script>
 <?php
 get_footer();
