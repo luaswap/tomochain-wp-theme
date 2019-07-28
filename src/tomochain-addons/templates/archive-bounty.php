@@ -93,14 +93,13 @@ wp_enqueue_script('datatable');
 										$project = get_the_terms(get_the_ID(),'project');
 										$status = get_the_terms(get_the_ID(),'status');
 										update_post_meta(get_the_ID(),'number_order',$i);
-										$number_order = get_post_meta(get_the_ID(),'number_order',true);
 										$reward = get_field('tomo_reward');
 										$project_logo = get_field('project_logo');
 										$project_url = get_field('project_url');
 										$number_submit = get_post_meta(get_the_ID(),'tomochain_number_submit',true);
 										?>
 										<tr>
-											<td><?php echo '#'.$number_order;?></td>
+											<td class="number-order"><?php echo '#'.$i;?></td>
 											<td>
 												<span class="logo-project">
 													<img src="<?php echo esc_url($project_logo);?>">

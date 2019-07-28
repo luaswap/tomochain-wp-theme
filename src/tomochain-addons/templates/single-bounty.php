@@ -17,13 +17,12 @@ get_template_part('headerbounty');
 								$status = get_the_terms(get_the_ID(),'status');
 								$disclose = human_time_diff( get_the_time('U'), current_time('timestamp') ) . ' ago';
 								$reward = get_field('tomo_reward');
-								$number_order = get_post_meta(get_the_ID(),'number_order',true);
 								$number_submit = get_post_meta(get_the_ID(),'tomochain_number_submit',true);
 								$project_logo = get_field('project_logo');
 								$project_url = get_field('project_url');
 								tomochain_setPostViews(get_the_ID());
 							?>
-								<h1 class="tomo-job-title"><span><?php echo '#'.$number_order.' ';?></span><?php echo get_the_title();?></h1>
+								<h1 class="tomo-job-title"><?php echo get_the_title();?></h1>
 								<div class="box-content-detail">
 									<div class="row flex-row-reverse">
 										<div class="col-12 col-md-4">
@@ -87,11 +86,7 @@ get_template_part('headerbounty');
 								<div class="box-form-wrap">
 									<span class="close tm-times"></span>
 									<div class="box-form-detail">
-										<h2 class="tomo-job-title">
-											<?php
-												$number_order = get_post_meta(get_the_ID(),'number_order',true);
-											?>
-											<span><?php echo '#'.$number_order;?></span> <?php echo get_the_title();?>n
+										<h2 class="tomo-job-title"><?php echo get_the_title();?>
 										</h2>
 										<div class="box-form" data-id="<?php echo esc_attr(get_the_ID());?>">
 											<?php 
