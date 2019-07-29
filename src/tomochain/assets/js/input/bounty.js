@@ -55,6 +55,14 @@
                         }
                     } );
                 }
+                $('.box-widget-bounty').on('click','li', function(e){
+                    e.preventDefault();
+                    var a = $(this).closest('.row').find('.list-bounty tbody tr');
+                    a.each(function(i){
+                        i++;
+                        $(this).find('.number-order').html('#'+ i);
+                    });
+                });
             }
         }
     }
