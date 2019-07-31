@@ -206,7 +206,7 @@ common bounty
 			th {
 				&:last-child {
 					@include media-breakpoint-up(md) {
-						padding-left: 25px;
+						// padding-left: 25px;
 					}
 				}
 			}

@@ -343,6 +343,7 @@ var tomochain
                 var perpage = $('.list-bounty').attr('data-page');
                 var table = $('.list-bounty').DataTable({
                     // searching: false,
+                    ordering: false,
                     lengthChange: false,
                     pageLength: parseInt(perpage),
                     //paging: false,
