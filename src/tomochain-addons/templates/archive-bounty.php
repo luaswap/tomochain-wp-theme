@@ -119,14 +119,14 @@ wp_enqueue_script('datatable');
 																<a href="<?php echo esc_url($project_url);?>" target="_blank"><?php echo esc_html($p->name);?></a>
 															<?php endforeach;?>
 														</span>
-													<?php endif;?>
-													<span title="View"><span class="tm-eye"></span><?php echo tomochain_getPostViews(get_the_ID());?></span>
-													<span title="Number of participants"><span class="tm-avatar"></span><?php echo $number_submit = !empty($number_submit) ? esc_html($number_submit) : 0;?></span>
-													<?php if(!is_wp_error($status)):
-														foreach ($status as $s):?>
-															<span title="<?php echo esc_attr_e('Status','tomochain-addon')?>" class="stt-<?php echo esc_attr($s->slug);?>"><?php echo esc_html($s->name);?></span>
-														<?php endforeach;?>
-													<?php endif;?>
+														<?php endif;?>
+														<?php if(!is_wp_error($status)):
+															foreach ($status as $s):?>
+																<span title="<?php echo esc_attr_e('Status','tomochain-addon')?>" class="stt-<?php echo esc_attr($s->slug);?>"><?php echo esc_html($s->name);?></span>
+															<?php endforeach;?>
+														<?php endif;?>
+														<span title="View"><span class="tm-eye"></span><?php echo tomochain_getPostViews(get_the_ID());?></span>
+													<!-- <span title="Number of participants"><span class="tm-avatar"></span><?php //echo $number_submit = !empty($number_submit) ? esc_html($number_submit) : 0;?></span> -->
 												</div>
 											</td>
 											<td><?php if($reward) echo esc_html($reward);?></td>
