@@ -92,6 +92,9 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 													$github_url = get_field('github_url');
 													$doc_url = get_field('doc_url');
 													$released_date = get_field('release_date');
+													if( is_numeric($released_date) && strlen($released_date) !== 8 ) {
+														$released_date = date_i18n('M d, Y', $released_date);
+													}
 													$open_new_tab = get_field('r_open_in_new_tab') ? '__blank' : '';
 											?>
 												
@@ -154,6 +157,9 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 													$github_url = get_field('github_url');
 													$doc_url = get_field('doc_url');
 													$due_date = get_field('due_date');
+													if( is_numeric($due_date) && strlen($due_date) !== 8 ) {
+														$due_date = date_i18n('M d, Y', $due_date);
+													}
 													$progress_number = substr(get_field('progress'), 0, 2);
 													$open_new_tab = get_field('r_open_in_new_tab') ? '__blank' : '';
 											?>
