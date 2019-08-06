@@ -42,6 +42,7 @@ class Tomochain_Github_API{
 				$tomochain_init['repository'] = get_post_meta(get_the_ID(),'tomochain_repository',true);
 				array_push($tomochain_info, $tomochain_init);
 			}
+			wp_reset_postdata();
 			return $tomochain_info;
 		}
 		return;
