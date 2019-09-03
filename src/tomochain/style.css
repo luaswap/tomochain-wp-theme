@@ -10804,6 +10804,23 @@ This is where majority of our work takes place and our UI components are often c
 *:focus {
   outline: none; }
 
+.con_roadmap {
+  padding: 5em 0;
+  position: relative;
+  z-index: 0; }
+  .con_roadmap::before {
+    content: '';
+    background: #262E5D;
+    position: absolute;
+    display: block !important;
+    left: 50%;
+    top: 0;
+    width: 200%;
+    height: 100%;
+    z-index: -1;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%); }
+
 .tomochain_slider_press .tomochain-image-carousel-item,
 .tomochain_slider_press .item-media,
 .tomochain_slider_media .tomochain-image-carousel-item,
@@ -14462,11 +14479,16 @@ Homepage Enterprise inside full
     width: 100%;
     height: 44px;
     padding: 0 5px;
-    border-radius: 4px;
-    background-color: #2f364c;
+    background-color: transparent;
     text-align: center; }
   .page-template-tmp-staking .box-txt-top .span {
     color: #ffaf00; }
+  .page-template-tmp-staking .box-txt-top .box_input {
+    overflow: hidden;
+    border-radius: 4px;
+    background-color: #2f364c; }
+    .page-template-tmp-staking .box-txt-top .box_input #numberTomo {
+      width: calc(100% + 20px); }
   .page-template-tmp-staking .box-txt-top img {
     margin-right: 15px; }
   .page-template-tmp-staking .box-txt-top .txt_tooltips {
@@ -14527,7 +14549,19 @@ Homepage Enterprise inside full
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
   .page-template-tmp-staking .btn-staking-yellow:hover {
-    background-color: #eec368; }
+    background-color: #fab725; }
+
+.page-template-tmp-staking .btn-staking-green {
+  border-radius: 8px;
+  background-color: #350d98;
+  color: #fff;
+  display: block;
+  padding: .8em 2em;
+  text-align: center;
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease; }
+  .page-template-tmp-staking .btn-staking-green:hover {
+    background-color: #5224c7; }
 
 .page-template-tmp-staking .bg_cta_row > div {
   background: #202533;
@@ -14549,80 +14583,81 @@ Homepage Enterprise inside full
 .page-template-tmp-staking .bg_cta_row .wpb_content_element {
   margin-bottom: 0; }
 
-.page-template-tmp-staking .container_staking {
-  max-width: 900px;
-  margin: 0 auto; }
-  .page-template-tmp-staking .container_staking .content-tab-staking .tab-pane {
-    display: none; }
-    .page-template-tmp-staking .container_staking .content-tab-staking .tab-pane.active {
-      display: block; }
-  .page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomomaster {
-    max-width: 770px;
-    margin: 0 auto;
-    background: url(assets/images/img-mockup-pc.png) no-repeat top center;
-    background-size: 100%;
-    padding: 2em 2em 11.4em; }
-    .page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomomaster video {
-      width: 100%; }
-  .page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomowallet {
-    width: 300px;
-    margin: 0 auto;
-    height: 608px;
-    position: relative;
-    z-index: 0; }
-    .page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomowallet:after {
-      background: url(assets/images/img-mockup-sp.png) no-repeat top center;
-      background-size: 100%;
-      content: '';
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-      z-index: 9; }
-    .page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomowallet video {
-      padding: .8em 1.2em;
-      width: 100%; }
+.page-template-tmp-staking .container_staking .content-tab-staking .tab-pane {
+  display: none; }
+  .page-template-tmp-staking .container_staking .content-tab-staking .tab-pane.active {
+    display: block; }
 
-.page-template-tmp-staking .tomochain-taking-tab {
-  margin: 3em 0 5em; }
-  .page-template-tmp-staking .tomochain-taking-tab > div {
-    cursor: pointer; }
-  .page-template-tmp-staking .tomochain-taking-tab .tab-tomomaster {
-    padding: 4em 1.5em 1em;
-    word-break: break-word;
-    position: relative;
-    z-index: 0; }
-    .page-template-tmp-staking .tomochain-taking-tab .tab-tomomaster:before {
-      content: '01';
-      font-size: 90px;
-      position: absolute;
-      right: 15px;
-      color: #350d98;
-      font-weight: bold;
-      opacity: 0.1;
-      z-index: -1;
-      font-family: 'Bai Jamjuree',sans-serif; }
-  .page-template-tmp-staking .tomochain-taking-tab .tab-tomowallet {
-    padding: 4em 1.5em 1em;
-    position: relative;
-    z-index: 0;
-    word-break: break-word; }
-    .page-template-tmp-staking .tomochain-taking-tab .tab-tomowallet:before {
-      content: '02';
-      font-size: 90px;
-      position: absolute;
-      right: 15px;
-      color: #350d98;
-      font-weight: bold;
-      opacity: 0.1;
-      z-index: -1;
-      font-family: 'Bai Jamjuree',sans-serif; }
-  .page-template-tmp-staking .tomochain-taking-tab .active {
-    border-radius: 8px;
-    -webkit-box-shadow: 0 0 50px 20px rgba(32, 37, 51, 0.05);
-            box-shadow: 0 0 50px 20px rgba(32, 37, 51, 0.05);
-    background-color: #ffffff; }
+.page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomomaster .box_video {
+  max-width: 100%;
+  margin: 0 auto;
+  background: url(assets/images/img-mockup-pc.png) no-repeat top center;
+  background-size: 100%;
+  padding: 2em 2em 11.4em; }
+  .page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomomaster .box_video video {
+    max-width: 100%;
+    background-size: 100%; }
+
+.page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomowallet .box_video {
+  width: 300px;
+  margin: 0 auto;
+  position: relative;
+  z-index: 0; }
+  .page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomowallet .box_video:after {
+    background: url(assets/images/img-mockup-sp.png) no-repeat top center;
+    background-size: 100%;
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1; }
+  .page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomowallet .box_video video {
+    padding: .8em 1.2em;
+    width: 100%;
+    border-radius: 50px; }
+
+.page-template-tmp-staking .tomochain-taking-tab > div {
+  cursor: pointer; }
+
+.page-template-tmp-staking .tomochain-taking-tab .tab-tomomaster {
+  padding: 4em 1.5em 1em;
+  word-break: break-word;
+  position: relative;
+  z-index: 0; }
+  .page-template-tmp-staking .tomochain-taking-tab .tab-tomomaster:before {
+    content: '01';
+    font-size: 90px;
+    position: absolute;
+    right: 15px;
+    color: #350d98;
+    font-weight: bold;
+    opacity: 0.1;
+    z-index: -1;
+    font-family: 'Bai Jamjuree',sans-serif; }
+
+.page-template-tmp-staking .tomochain-taking-tab .tab-tomowallet {
+  padding: 4em 1.5em 1em;
+  position: relative;
+  z-index: 0;
+  word-break: break-word; }
+  .page-template-tmp-staking .tomochain-taking-tab .tab-tomowallet:before {
+    content: '02';
+    font-size: 90px;
+    position: absolute;
+    right: 15px;
+    color: #350d98;
+    font-weight: bold;
+    opacity: 0.1;
+    z-index: -1;
+    font-family: 'Bai Jamjuree',sans-serif; }
+
+.page-template-tmp-staking .tomochain-taking-tab .active {
+  border-radius: 8px;
+  -webkit-box-shadow: 0 0 50px 20px rgba(32, 37, 51, 0.05);
+          box-shadow: 0 0 50px 20px rgba(32, 37, 51, 0.05);
+  background-color: #ffffff; }
 
 .page-template-tmp-staking .staking_faq ul {
   margin: 0;
@@ -14802,6 +14837,8 @@ canvas {
 
 .row_comparison .tomoz-comparison.box-tomoz {
   padding-left: 50px; }
+  .row_comparison .tomoz-comparison.box-tomoz ul li:nth-child(2) {
+    min-height: 175px; }
 
 .row_comparison .tomoz-comparison.box-ethereum {
   padding-right: 50px;
@@ -14868,8 +14905,10 @@ canvas {
       border-radius: 50%; }
     .row_comparison .tomoz-comparison.box-ethereum ul li:nth-child(1):after {
       content: '1'; }
-    .row_comparison .tomoz-comparison.box-ethereum ul li:nth-child(2):after {
-      content: '2'; }
+    .row_comparison .tomoz-comparison.box-ethereum ul li:nth-child(2) {
+      min-height: 175px; }
+      .row_comparison .tomoz-comparison.box-ethereum ul li:nth-child(2):after {
+        content: '2'; }
     .row_comparison .tomoz-comparison.box-ethereum ul li:nth-child(3):after {
       content: '3'; }
     .row_comparison .tomoz-comparison.box-ethereum ul li:nth-child(4):after {
@@ -21911,6 +21950,14 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       .cryp-3-box > div:nth-child(2):before {
         font-size: 60px;
         left: 10px; }
+    .row_comparison .tomoz-comparison.box-tomoz ul li:nth-child(1) {
+      min-height: 115px; }
+      .row_comparison .tomoz-comparison.box-tomoz ul li:nth-child(2) {
+        min-height: 230px; }
+      .row_comparison .tomoz-comparison.box-ethereum ul li:nth-child(1) {
+        min-height: 115px; }
+        .row_comparison .tomoz-comparison.box-ethereum ul li:nth-child(2) {
+          min-height: 230px; }
     .page-template-tmp-tomoz .bg_gr_top_row {
       padding: 5em 0 10em; }
       .page-template-tmp-tomoz .bg_gr_top_row:before {
@@ -22204,22 +22251,28 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       .page-template-tmp-staking .bg_cta_row > div:after {
         height: 90px;
         top: -50px; }
-      .page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomomaster {
-        padding: 2em 2em 5.4em; }
-    .page-template-tmp-staking .tomochain-taking-tab {
-      margin: 0 0 3em; }
+    .page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomomaster .box_video {
+      padding: 2em 2em 5.4em; }
+  .page-template-tmp-staking .tomochain-taking-tab {
+    margin: 0 0 3em; }
+    .page-template-tmp-staking .tomochain-taking-tab .tab-tomomaster {
+      padding: 2em 1em; }
+    .page-template-tmp-staking .tomochain-taking-tab .tab-tomowallet {
+      padding: 2em 1em; }
     .height-3 {
       max-height: 35px; }
     .row_comparison .tomoz-comparison .z_txt_heading {
       min-height: 55px; }
     .row_comparison .tomoz-comparison .z_txt_subtitle {
-      min-height: 300px; }
+      min-height: 200px; }
       .row_comparison .tomoz-comparison ul li {
         padding: 15px 0px; }
     .row_comparison .tomoz-comparison.box-tomoz {
       padding-left: 25px; }
-      .row_comparison .tomoz-comparison.box-tomoz ul li:nth-child(1) {
-        min-height: 200px; }
+    .row_comparison .tomoz-comparison.box-tomoz ul li:nth-child(1) {
+      min-height: 140px; }
+      .row_comparison .tomoz-comparison.box-tomoz ul li:nth-child(2) {
+        min-height: 390px; }
     .row_comparison .tomoz-comparison.box-ethereum {
       padding-right: 25px; }
         .row_comparison .tomoz-comparison.box-ethereum ul li:after {
@@ -22232,8 +22285,10 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           right: -43px;
           width: 36px;
           height: 36px; }
-      .row_comparison .tomoz-comparison.box-ethereum ul li:nth-child(2) {
-        min-height: 400px; }
+      .row_comparison .tomoz-comparison.box-ethereum ul li:nth-child(1) {
+        min-height: 140px; }
+        .row_comparison .tomoz-comparison.box-ethereum ul li:nth-child(2) {
+          min-height: 390px; }
     .page-template-tmp-tomoz .bg_gr_top_row {
       padding: 5em 0 7em;
       margin-bottom: 1em; }

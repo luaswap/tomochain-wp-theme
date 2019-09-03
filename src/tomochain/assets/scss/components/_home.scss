@@ -199,6 +199,24 @@
 	outline: none;
 }
 
+.con_roadmap {
+	padding: 5em 0;
+	position: relative;
+	z-index: 0;
+	&::before {
+		content: '';
+		background: #262E5D;
+		position: absolute;
+		display: block!important;
+		left: 50%;
+		top: 0;
+		width: 200%;
+		height: 100%;
+		z-index: -1;
+		transform: translateX(-50%);
+	}
+}
+
 // con_press_about_us
 .tomochain_slider_press,
 .tomochain_slider_media {

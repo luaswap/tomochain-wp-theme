@@ -161,7 +161,7 @@ canvas {
 			margin-bottom: 30px;
 			font-size: 13px;
 			@include media-breakpoint-down(sm) {
-				min-height: 300px;
+				min-height: 200px;
 			}
 		}
 		ul {
@@ -184,10 +184,26 @@ canvas {
 			padding-left: 50px;
 			@include media-breakpoint-down(sm) {
 				padding-left: 25px;
-				ul {
-					li {
-						&:nth-child(1) {
-							min-height: 200px;
+			}
+			ul {
+				li {
+					&:nth-child(1) {
+						@include media-breakpoint-down(md) {
+							min-height: 115px;
+						}
+						@include media-breakpoint-down(sm) {
+							min-height: 140px;
+						}
+					}
+					&:nth-child(2) {
+						@include media-breakpoint-down(xl) {
+							min-height: 175px;
+						}
+						@include media-breakpoint-down(md) {
+							min-height: 230px;
+						}
+						@include media-breakpoint-down(sm) {
+							min-height: 390px;
 						}
 					}
 				}
@@ -273,13 +289,25 @@ canvas {
 						}
 					}
 					&:nth-child(1) {
+						@include media-breakpoint-down(md) {
+							min-height: 115px;
+						}
+						@include media-breakpoint-down(sm) {
+							min-height: 140px;
+						}
 						&:after {
 							content: '1';
 						}
 					}
 					&:nth-child(2) {
+						@include media-breakpoint-down(xl) {
+							min-height: 175px;
+						}
+						@include media-breakpoint-down(md) {
+							min-height: 230px;
+						}
 						@include media-breakpoint-down(sm) {
-							min-height: 400px;
+							min-height: 390px;
 						}
 						&:after {
 							content: '2';
