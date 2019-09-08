@@ -59,7 +59,8 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
             <?php 
             foreach ( $categories as $category ) {
                 $category_link = sprintf(
-                    '<a href="%1$s" alt="%2$s">%3$s</a>',
+                    '<a class="%1$s" href="%2$s" alt="%3$s">%4$s</a>',
+                    esc_attr($category->slug),
                     esc_url( get_category_link( $category->term_id ) ),
                     esc_attr( sprintf( esc_html__( 'View all posts in %s', 'tomochain' ), $category->name ) ),
                     esc_html( $category->name )
