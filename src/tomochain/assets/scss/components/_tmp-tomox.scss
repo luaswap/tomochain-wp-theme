@@ -71,10 +71,10 @@
                 position: relative;
                 &:before {
                     content: '';
-                    left: 45%;
+                    left: 50%;
                     top: -22px;
                     transform: translateX(-50%);
-                    width: 60%;
+                    width: 50%;
                     height: 1px;
                     background-image: linear-gradient(to left, transparent 50%, #6e717a 50%);
                     background-size: 15px 100%;
@@ -84,8 +84,9 @@
                     color: #6E717A;
                     margin: 0 15px;
                     cursor: pointer;
+                    width: 50%;
+                    position: relative;
                     span {
-                        position: relative;
                         &::after {
                             content: '';
                             position: absolute;
