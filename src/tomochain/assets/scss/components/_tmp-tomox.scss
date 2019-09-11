@@ -58,6 +58,7 @@
                     iframe {
                         width: 100%!important;
                         height: 500px!important;
+                        border: 0;
                         @include media-breakpoint-down(sm) {
                             height: 250px!important;
                         }
@@ -381,6 +382,7 @@
         padding: 1em 2em;
         text-align: center;
         transition: all .5s ease;
+        cursor: pointer;
         &:hover {
             background-color: #A97DE5;
         }
@@ -492,11 +494,6 @@
         color: #8b96b5;
         &:hover {
             color: #fff;
-        }
-    }
-    &.modal-open {
-        .bg_gr_top_row {
-            z-index: 999 !important;
         }
     }
 }
