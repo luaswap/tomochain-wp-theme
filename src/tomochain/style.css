@@ -14771,7 +14771,8 @@ Homepage Enterprise inside full
     margin: 0 auto; }
     .page-template-tmp-tomox .modal .modal-body .show-video-large .box_video iframe {
       width: 100% !important;
-      height: 500px !important; }
+      height: 500px !important;
+      border: 0; }
     .page-template-tmp-tomox .modal .modal-body .tab-nav-small {
       padding: 1em 0;
       margin: 4em auto 2em;
@@ -15034,7 +15035,8 @@ Homepage Enterprise inside full
     padding: 1em 2em;
     text-align: center;
     -webkit-transition: all .5s ease;
-    transition: all .5s ease; }
+    transition: all .5s ease;
+    cursor: pointer; }
     .page-template-tmp-tomox .btn-violet:hover {
       background-color: #A97DE5; }
   .page-template-tmp-tomox .bg_cta_row ul {
@@ -15117,8 +15119,6 @@ Homepage Enterprise inside full
     .page-template-tmp-tomox a:hover,
     .page-template-tmp-tomox .nice-select span:hover {
       color: #fff; }
-  .page-template-tmp-tomox.modal-open .bg_gr_top_row {
-    z-index: 999 !important; }
 
 /**-------------------------------
 	Define CSS - Common
