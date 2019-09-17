@@ -64,7 +64,7 @@
 	<?php endif; ?>
 
 	<div id="content" class="site-content">
-		<div class="tab-game-contest">
+		<div class="tab-game-contest d-none">
 			<div class="container">
 				<div class="row row-reverse">
 					<div class="col-sm-8">
