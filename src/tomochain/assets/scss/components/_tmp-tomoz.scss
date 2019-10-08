@@ -160,7 +160,7 @@ canvas {
             opacity: .7;
             line-height: 2;
             margin-bottom: 0px;
-            font-size: 13px;
+            // font-size: 13px;
         }
         ul {
             list-style: none;
@@ -631,7 +631,7 @@ canvas {
     .z_txt_heading {
         color: #000;
         font-family: 'Bai Jamjuree', sans-serif;
-        font-size: 18px;
+        font-size: 20px;
         @include media-breakpoint-down(sm) {
             font-size: 15px;
         }
@@ -812,7 +812,7 @@ canvas {
         .vc_toggle_content {
             padding-left: 0!important;
             color: #4c4c4c;
-            font-size: 14px;
+            font-size: 16px;
         }
         .accordion {
             background: transparent;
@@ -826,7 +826,7 @@ canvas {
             transition: all .2s ease;
             position: relative;
             line-height: 1.5;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 500;
             &:after {
                 content: "\e903";

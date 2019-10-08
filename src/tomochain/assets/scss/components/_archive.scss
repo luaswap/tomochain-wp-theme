@@ -2,11 +2,9 @@
     .archive-posts {
         @extend %transit;
     }
-
     &.loading {
         position: relative;
         //text-align: center;
-
         &:before {
             content: url(assets/images/loading.svg) !important;
             display: block;
@@ -15,7 +13,6 @@
             left: 50%;
             transform: translateX(-50%) scale(1.5);
         }
-
         .archive-posts,
         .dapp-posts {
             opacity: 0;
@@ -23,11 +20,11 @@
         }
     }
 }
-.tomochain-dapp-main{
+
+.tomochain-dapp-main {
     &.loading {
         position: relative;
         //text-align: center;
-
         &:before {
             content: url(assets/images/loading.svg) !important;
             display: block;
@@ -42,13 +39,12 @@
         }
     }
 }
+
 .tomochain-roadmap-content {
     @extend %transit;
-
     &.loading {
         position: relative;
         text-align: center;
-
         &:before {
             content: url(assets/images/loading.svg) !important;
             display: block;
@@ -57,7 +53,6 @@
             left: 50%;
             transform: translateX(-50%) scale(1.5);
         }
-
         >.row {
             opacity: 0;
             visibility: hidden;
@@ -70,25 +65,21 @@
 .tomochain-dapp-filter {
     margin: 0 0 30px;
     padding: 0;
-
     @include media-breakpoint-up(md) {
         margin-bottom: 50px;
     }
-
     li {
         list-style: none;
         display: inline-block;
         vertical-align: middle;
-        margin: 0 0 0 20px;
+        margin: 0 20px 15px 0;
         padding: 0;
         @include media-breakpoint-up(md) {
-            margin-left: 50px;
+            margin-right: 50px;
         }
-
-        &:first-child {
-            margin-left: 0;
+        &:last-child {
+            margin-right: 0;
         }
-
         a {
             position: relative;
             display: block;
@@ -96,7 +87,6 @@
             text-transform: capitalize;
             color: #9eaacc;
             padding-bottom: 10px;
-
             &:after {
                 content: '';
                 position: absolute;
@@ -111,15 +101,12 @@
                 background-color: #e68b71;
             }
         }
-
         &.selected,
         &:hover {
-
             a {
-                color:#fff;
-
+                color: #fff;
                 &:after {
-                    transform: scale3d(1,1,1);
+                    transform: scale3d(1, 1, 1);
                     transform-origin: 0 50%;
                 }
             }

@@ -1,32 +1,26 @@
 body.mainnet-page {
     background-image: linear-gradient(131deg, #272f4b 0%, #1a1f36 21%, #15152d 52%, #211841 100%);
-
     .site-header {
         position: fixed;
         top: 0;
         left: 0;
         width: 100%;
         z-index: 99;
-
         &.headroom--not-top {
             opacity: 0;
             visibility: hidden;
         }
     }
-
     .site-footer {
         display: none;
     }
-
     #main .entry-content {
         margin-top: 0;
     }
-
     .tomochain-videos {
         position: relative;
         opacity: 1;
         visibility: visible;
-
         &:before {
             content: '';
             position: absolute;
@@ -38,7 +32,6 @@ body.mainnet-page {
             border-radius: 8px;
             background-color: #fff;
         }
-
         &:after {
             content: '';
             position: absolute;
@@ -50,17 +43,14 @@ body.mainnet-page {
             z-index: -1;
             background-image: linear-gradient(-180deg, #2a3452 0%, #191d34 100%);
         }
-
         img {
             border-radius: 6px;
             max-width: 100% !important;
         }
-
         .video-link {
             opacity: 1;
             visibility: visible;
             z-index: 0;
-
             &:before {
                 content: '';
                 position: absolute;
@@ -74,7 +64,6 @@ body.mainnet-page {
                 z-index: -1;
                 transition: .5s all ease;
             }
-
             &:after {
                 content: '';
                 position: absolute;
@@ -88,11 +77,9 @@ body.mainnet-page {
                 z-index: -1;
                 transition: .7s all ease;
             }
-
             i {
                 background-image: linear-gradient(133deg, #6658FF 5%, #887FFE 100%);
             }
-
             &:hover:before {
                 top: -20px;
                 bottom: -20px;
@@ -100,7 +87,6 @@ body.mainnet-page {
                 right: -20px;
                 opacity: 0;
             }
-
             &:hover:after {
                 top: -40px;
                 bottom: -40px;
@@ -108,11 +94,9 @@ body.mainnet-page {
                 right: -40px;
                 opacity: 0;
             }
-
             @include media-breakpoint-up(md) {
                 height: 77px;
                 width: 77px;
-
                 i {
                     font-size: 24px;
                     line-height: 77px;
@@ -120,178 +104,139 @@ body.mainnet-page {
             }
         }
     }
-
     #message-row {
         margin-top: 30px;
         margin-bottom: 100px;
-
         .tomochain-videos {
             max-width: 480px;
             margin-left: auto;
             margin-right: 0;
             margin-top: 50px;
         }
-
         @include media-breakpoint-only(md) {
-
             #message-title {
                 font-size: 28px !important;
             }
         }
-
         @include media-breakpoint-up(md) {
             margin-top: 50px;
             margin-bottom: 150px;
-
             .tomochain-videos {
                 margin-top: 0;
             }
         }
-
         @include media-breakpoint-up(lg) {
             margin-top: 100px;
         }
-
         @media (min-width: 1440px) {
             margin-top: 150px;
             margin-bottom: 200px;
         }
     }
-
     #coming-row {
-
         .wpb_text_column {
             font-size: 18px;
             line-height: 40px;
-            color: #8b96b5;
-
+            color: #b9c4df;
             a {
                 color: #c67869;
             }
-
             a:hover {
                 color: #fff;
             }
         }
-
         #lets-rock-it {
             display: inline-block;
-
             &:after {
                 content: '\e901';
                 font-size: 8px;
                 vertical-align: middle;
                 margin-left: 15px;
                 transition: all .5s ease;
-
                 @extend %tm-icon;
             }
-
             &:hover {
                 color: #fff !important;
             }
-
             &:hover a {
                 color: #fff;
             }
         }
     }
-
     #coming-image-column {
-
         .vc_column-inner {
             padding-right: 0;
         }
-
         @include media-breakpoint-up(lg) {
             img {
                 max-width: none;
                 margin-left: -100px;
             }
         }
-
         @media (min-width: 1440px) {
             img {
                 margin-left: -50px;
             }
         }
     }
-
     #meetup-row {
         margin-top: 150px;
-
         @include media-breakpoint-up(md) {
             margin-top: 250px;
         }
-
         @include media-breakpoint-down(sm) {
-
             p.vc_custom_heading {
                 font-size: 14px !important;
                 line-height: 28px !important;
             }
         }
-
         .wpim {
-
             a {
                 color: #c67869;
-
                 &:hover {
                     color: #fff;
                 }
             }
-
             .wpim-infowindow {
                 width: 290px;
             }
-
             @include media-breakpoint-only(xl) {
                 margin-left: -90px;
                 transform: scale(0.8);
             }
-
             @media (min-width: 1440px) {
                 margin-left: -89px;
                 transform: scale(1);
             }
-
             #c7,
             #c23,
             #c25 {
                 z-index: 1;
             }
-
             #c5,
             #c15,
             #c21 {
                 z-index: 2;
             }
-
             #c13,
             #c19 {
                 z-index: 3;
             }
-
             #c17,
             #c11 {
                 z-index: 4;
             }
-
             #c9 {
                 z-index: 5;
             }
         }
     }
-
     .tomochain-list a {
         color: #c67869;
-
         &:hover {
             color: #fff;
         }
     }
-
     #journey-row {
         position: relative;
         overflow: hidden;
@@ -300,33 +245,26 @@ body.mainnet-page {
         margin-top: 80px;
         margin-bottom: 100px;
     }
-
     .station-row {
         margin-bottom: 25px;
     }
-
     .station-col {
         padding-left: 80px;
-
         @include media-breakpoint-up(md) {
             padding-left: 0;
         }
-
         .vc_custom_heading {
             margin-bottom: 12px;
         }
-
         ul {
             list-style-type: none;
             padding: 0;
             margin: 0;
         }
-
         li {
             font-size: 14px;
             line-height: 22px;
         }
-
         li:before {
             content: '•';
             display: inline-block;
@@ -334,46 +272,36 @@ body.mainnet-page {
             margin-right: 5px;
         }
     }
-
     .station-col--left {
-
         @include media-breakpoint-up(md) {
             padding-left: 90px;
         }
-
         @include media-breakpoint-up(lg) {
             padding-left: 105;
         }
     }
-
     .station-col--right {
-
         @include media-breakpoint-up(md) {
             padding-right: 90px;
             text-align: right;
-
             .wpb_single_image,
             .vc_custom_heading {
                 text-align: right !important;
             }
         }
-
         @include media-breakpoint-up(lg) {
             padding-right: 105px;
         }
     }
-
     #train-column {
         position: absolute;
         top: -50px;
         left: 0;
         width: auto;
-
         @include media-breakpoint-up(md) {
             left: 50%;
             transform: translateX(-50%);
         }
-
         .vc_column-inner:before,
         .vc_column-inner:after,
         .wpb_wrapper:before,
@@ -395,103 +323,89 @@ body.mainnet-page {
             transform: scale(0.15);
             filter: blur(2px);
         }
-         .vc_column-inner:before {
+        .vc_column-inner:before {
             animation: smokeL 10s 0s infinite;
         }
-         .vc_column-inner:after {
+        .vc_column-inner:after {
             animation: smokeR 10s 1s infinite;
         }
-         .wpb_wrapper:before {
+        .wpb_wrapper:before {
             animation: smokeL 10s 2s infinite;
         }
         .wpb_wrapper:after {
             animation: smokeR 10s 3s infinite;
         }
-         #train-image:before {
+        #train-image:before {
             animation: smokeL 10s 4s infinite;
         }
-         #train-image:after {
+        #train-image:after {
             animation: smokeR 10s 5s infinite;
         }
-         .wpb_wrapper.vc_figure:before {
+        .wpb_wrapper.vc_figure:before {
             animation: smokeL 10s 6s infinite;
         }
-         .wpb_wrapper.vc_figure:after {
+        .wpb_wrapper.vc_figure:after {
             animation: smokeR 10s 7s infinite;
         }
-         .vc_single_image-wrapper:before {
+        .vc_single_image-wrapper:before {
             animation: smokeL 10s 8s infinite;
         }
-         .vc_single_image-wrapper:after {
+        .vc_single_image-wrapper:after {
             animation: smokeR 10s 9s infinite;
         }
     }
-
     #train-image {
         margin-top: -1160px;
         margin-bottom: 0;
-        transition: all 1s cubic-bezier(.17,.64,.37,.85);
+        transition: all 1s cubic-bezier(.17, .64, .37, .85);
     }
 }
 
-/* Slider */
-body.mainnet-page .wpb_revslider_element {
 
+/* Slider */
+
+body.mainnet-page .wpb_revslider_element {
     .tp-parallax-wrap:nth-child(24) .tp-caption {
         animation: smokeR1 10s 0s infinite;
     }
-
     .tp-parallax-wrap:nth-child(25) .tp-caption {
         animation: smokeR2 10s 1s infinite;
     }
-
     .tp-parallax-wrap:nth-child(26) .tp-caption {
         animation: smokeR1 10s 2s infinite;
     }
-
     .tp-parallax-wrap:nth-child(27) .tp-caption {
         animation: smokeR2 10s 3s infinite;
     }
-
     .tp-parallax-wrap:nth-child(28) .tp-caption {
         animation: smokeR1 10s 4s infinite;
     }
-
     .tp-parallax-wrap:nth-child(29) .tp-caption {
         animation: smokeR2 10s 5s infinite;
     }
-
     .tp-parallax-wrap:nth-child(30) .tp-caption {
         animation: smokeR1 10s 6s infinite;
     }
-
     .tp-parallax-wrap:nth-child(31) .tp-caption {
         animation: smokeR2 10s 7s infinite;
     }
-
     .tp-parallax-wrap:nth-child(32) .tp-caption {
         animation: smokeR1 10s 8s infinite;
     }
-
     .tp-parallax-wrap:nth-child(33) .tp-caption {
         animation: smokeR2 10s 9s infinite;
     }
-
     @media (min-width: 1024px) and (max-width: 1919px) {
-
         .rev_slider_wrapper {
             left: 0 !important;
         }
-
         .rev_slider_wrapper,
         .rev_slider {
             height: 700px !important;
         }
-
         .tp-parallax-wrap:nth-child(2) {
             left: auto !important;
             right: 0 !important;
-
             img {
                 position: absolute;
                 right: 0;
@@ -499,7 +413,6 @@ body.mainnet-page .wpb_revslider_element {
                 height: auto !important;
             }
         }
-
         .tp-parallax-wrap:nth-child(3),
         .tp-parallax-wrap:nth-child(4),
         .tp-parallax-wrap:nth-child(5),
@@ -517,170 +430,139 @@ body.mainnet-page .wpb_revslider_element {
         .tp-parallax-wrap:nth-child(17),
         .tp-parallax-wrap:nth-child(18),
         .tp-parallax-wrap:nth-child(19) {
-
             img {
                 width: auto !important;
                 height: auto !important;
             }
         }
-
         .tp-parallax-wrap:nth-child(20),
         .tp-parallax-wrap:nth-child(21),
         .tp-parallax-wrap:nth-child(22) {
             left: 0 !important;
         }
-
         .tp-parallax-wrap:nth-child(20) {
             top: 200px !important;
-
             .tp-caption {
                 min-width: 40px !important;
                 min-height: 2px !important;
             }
         }
-
         .tp-parallax-wrap:nth-child(21) {
             top: 220px !important;
-
             .tp-caption {
                 font-size: 36px !important;
                 line-height: 60px !important;
             }
         }
-
         .tp-parallax-wrap:nth-child(22) {
             top: 300px !important;
-
             .tp-caption,
-            .tp-caption > span {
+            .tp-caption>span {
                 font-size: 24px !important;
                 line-height: 70px !important;
                 margin-top: 35px !important;
             }
         }
-
         .tp-parallax-wrap:nth-child(23) {
             top: 380px !important;
             left: -20px !important;
-
             .tp-caption {
                 width: 350px !important;
                 max-width: none !important;
             }
-
             .tomochain-countdown {
                 margin-top: 30px !important;
             }
         }
     }
-
     @media (min-width: 1024px) and (max-width: 1199px) {
-
         .tp-parallax-wrap:nth-child(2) {
             transform: scale(.9) !important;
         }
-
         .tp-parallax-wrap:nth-child(3) {
             left: 400px !important;
             top: 175px !important;
             transform: scale(.7) !important;
         }
-
         .tp-parallax-wrap:nth-child(4) {
             left: 800px !important;
             top: 520px !important;
             transform: scale(.8) !important;
         }
-
         .tp-parallax-wrap:nth-child(5) {
             left: 320px !important;
             top: 520px !important;
             transform: scale(.8) !important;
         }
-
         .tp-parallax-wrap:nth-child(6) {
             left: 480px !important;
             top: 480px !important;
         }
-
         .tp-parallax-wrap:nth-child(7) {
             left: 710px !important;
             top: 420px !important;
             transform: scale(.8) !important;
         }
-
         .tp-parallax-wrap:nth-child(8) {
             left: 800px !important;
             top: 30px !important;
             transform: scale(.8) !important;
         }
-
         .tp-parallax-wrap:nth-child(9) {
             left: 782px !important;
             top: 126px !important;
             transform: scale(.9) !important;
         }
-
         .tp-parallax-wrap:nth-child(10) {
             left: 788px !important;
             top: 128px !important;
             transform: scale(.9) !important;
         }
-
         .tp-parallax-wrap:nth-child(11) {
             left: 795px !important;
             top: 128px !important;
             transform: scale(.9) !important;
         }
-
         .tp-parallax-wrap:nth-child(12) {
             left: 806px !important;
             top: 130px !important;
             transform: scale(.9) !important;
         }
-
         .tp-parallax-wrap:nth-child(13) {
             left: 823px !important;
             top: 134px !important;
             transform: scale(.9) !important;
         }
-
         .tp-parallax-wrap:nth-child(14) {
             left: 850px !important;
             top: 140px !important;
             transform: scale(.9) !important;
         }
-
         .tp-parallax-wrap:nth-child(15) {
             left: 820px !important;
             top: 120px !important;
             transform: scale(.9) !important;
         }
-
         .tp-parallax-wrap:nth-child(16) {
             left: 895px !important;
             top: 235px !important;
             transform: scale(.9) !important;
         }
-
         .tp-parallax-wrap:nth-child(17) {
             left: 795px !important;
             top: 215px !important;
             transform: scale(.9) !important;
         }
-
         .tp-parallax-wrap:nth-child(18) {
             left: 732px !important;
             top: 235px !important;
             transform: scale(.9) !important;
         }
-
         .tp-parallax-wrap:nth-child(19) {
             left: 520px !important;
             top: 250px !important;
             transform: scale(.9) !important;
         }
-
         .tp-parallax-wrap:nth-child(24),
         .tp-parallax-wrap:nth-child(25),
         .tp-parallax-wrap:nth-child(26),
@@ -693,105 +575,84 @@ body.mainnet-page .wpb_revslider_element {
         .tp-parallax-wrap:nth-child(33) {
             left: 566px !important;
             top: 267px !important;
-
             .tp-caption {
                 transform: matrix3d(.5, 0, 0, 0, 0, .5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) !important;
             }
         }
     }
-
     @media (min-width: 1200px) and (max-width: 1439px) {
-
         .rev_slider_wrapper,
         .rev_slider {
             height: 750px !important;
         }
-
         .tp-parallax-wrap:nth-child(3) {
             left: 400px !important;
             top: 170px !important;
         }
-
         .tp-parallax-wrap:nth-child(4) {
             left: 920px !important;
             top: 550px !important;
         }
-
         .tp-parallax-wrap:nth-child(5) {
             left: 390px !important;
             top: 480px !important;
         }
-
         .tp-parallax-wrap:nth-child(6) {
             left: 610px !important;
             top: 540px !important;
         }
-
         .tp-parallax-wrap:nth-child(7) {
             left: 870px !important;
             top: 470px !important;
         }
-
         .tp-parallax-wrap:nth-child(8) {
             left: 820px !important;
             top: 40px !important;
         }
-
         .tp-parallax-wrap:nth-child(9) {
             left: 845px !important;
             top: 162px !important;
         }
-
         .tp-parallax-wrap:nth-child(10) {
             left: 853px !important;
             top: 165px !important;
         }
-
         .tp-parallax-wrap:nth-child(11) {
             left: 860px !important;
             top: 166px !important;
         }
-
         .tp-parallax-wrap:nth-child(12) {
             left: 871px !important;
             top: 168px !important;
         }
-
         .tp-parallax-wrap:nth-child(13) {
             left: 890px !important;
             top: 172px !important;
         }
-
         .tp-parallax-wrap:nth-child(14) {
             left: 920px !important;
             top: 180px !important;
         }
-
         .tp-parallax-wrap:nth-child(15) {
             left: 900px !important;
             top: 150px !important;
         }
-
         .tp-parallax-wrap:nth-child(16) {
             left: 992px !important;
             top: 264px !important;
         }
-
         .tp-parallax-wrap:nth-child(17) {
             left: 885px !important;
             top: 246px !important;
         }
-
         .tp-parallax-wrap:nth-child(18) {
             left: 815px !important;
             top: 270px !important;
         }
-
         .tp-parallax-wrap:nth-child(19) {
             left: 580px !important;
             top: 290px !important;
         }
-
         .tp-parallax-wrap:nth-child(24),
         .tp-parallax-wrap:nth-child(25),
         .tp-parallax-wrap:nth-child(26),
@@ -804,105 +665,84 @@ body.mainnet-page .wpb_revslider_element {
         .tp-parallax-wrap:nth-child(33) {
             left: 626px !important;
             top: 310px !important;
-
             .tp-caption {
                 transform: matrix3d(.5, 0, 0, 0, 0, .5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) !important;
             }
         }
     }
-
     @media (min-width: 1440px) and (max-width: 1599px) {
-
         .rev_slider_wrapper,
         .rev_slider {
             height: 750px !important;
         }
-
         .tp-parallax-wrap:nth-child(3) {
             left: 450px !important;
             top: 170px !important;
         }
-
         .tp-parallax-wrap:nth-child(4) {
             left: 970px !important;
             top: 550px !important;
         }
-
         .tp-parallax-wrap:nth-child(5) {
             left: 470px !important;
             top: 480px !important;
         }
-
         .tp-parallax-wrap:nth-child(6) {
             left: 660px !important;
             top: 540px !important;
         }
-
         .tp-parallax-wrap:nth-child(7) {
             left: 940px !important;
             top: 470px !important;
         }
-
         .tp-parallax-wrap:nth-child(8) {
             left: 920px !important;
             top: 40px !important;
         }
-
         .tp-parallax-wrap:nth-child(9) {
             left: 895px !important;
             top: 162px !important;
         }
-
         .tp-parallax-wrap:nth-child(10) {
             left: 903px !important;
             top: 165px !important;
         }
-
         .tp-parallax-wrap:nth-child(11) {
             left: 910px !important;
             top: 166px !important;
         }
-
         .tp-parallax-wrap:nth-child(12) {
             left: 921px !important;
             top: 168px !important;
         }
-
         .tp-parallax-wrap:nth-child(13) {
             left: 940px !important;
             top: 172px !important;
         }
-
         .tp-parallax-wrap:nth-child(14) {
             left: 970px !important;
             top: 180px !important;
         }
-
         .tp-parallax-wrap:nth-child(15) {
             left: 950px !important;
             top: 150px !important;
         }
-
         .tp-parallax-wrap:nth-child(16) {
             left: 1042px !important;
             top: 264px !important;
         }
-
         .tp-parallax-wrap:nth-child(17) {
             left: 935px !important;
             top: 246px !important;
         }
-
         .tp-parallax-wrap:nth-child(18) {
             left: 865px !important;
             top: 270px !important;
         }
-
         .tp-parallax-wrap:nth-child(19) {
             left: 630px !important;
             top: 290px !important;
         }
-
         .tp-parallax-wrap:nth-child(24),
         .tp-parallax-wrap:nth-child(25),
         .tp-parallax-wrap:nth-child(26),
@@ -915,105 +755,84 @@ body.mainnet-page .wpb_revslider_element {
         .tp-parallax-wrap:nth-child(33) {
             left: 676px !important;
             top: 290px !important;
-
             .tp-caption {
                 transform: matrix3d(.5, 0, 0, 0, 0, .5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) !important;
             }
         }
     }
-
     @media (min-width: 1600px) and (max-width: 1919px) {
-
         .rev_slider_wrapper,
         .rev_slider {
             height: 750px !important;
         }
-
         .tp-parallax-wrap:nth-child(3) {
             left: 720px !important;
             top: 170px !important;
         }
-
         .tp-parallax-wrap:nth-child(4) {
             left: 1240px !important;
             top: 550px !important;
         }
-
         .tp-parallax-wrap:nth-child(5) {
             left: 740px !important;
             top: 480px !important;
         }
-
         .tp-parallax-wrap:nth-child(6) {
             left: 930px !important;
             top: 540px !important;
         }
-
         .tp-parallax-wrap:nth-child(7) {
             left: 1210px !important;
             top: 470px !important;
         }
-
         .tp-parallax-wrap:nth-child(8) {
             left: 1190px !important;
             top: 40px !important;
         }
-
         .tp-parallax-wrap:nth-child(9) {
             left: 1165px !important;
             top: 162px !important;
         }
-
         .tp-parallax-wrap:nth-child(10) {
             left: 1173px !important;
             top: 165px !important;
         }
-
         .tp-parallax-wrap:nth-child(11) {
             left: 1180px !important;
             top: 166px !important;
         }
-
         .tp-parallax-wrap:nth-child(12) {
             left: 1191px !important;
             top: 168px !important;
         }
-
         .tp-parallax-wrap:nth-child(13) {
             left: 1210px !important;
             top: 172px !important;
         }
-
         .tp-parallax-wrap:nth-child(14) {
             left: 1240px !important;
             top: 180px !important;
         }
-
         .tp-parallax-wrap:nth-child(15) {
             left: 1220px !important;
             top: 150px !important;
         }
-
         .tp-parallax-wrap:nth-child(16) {
             left: 1312px !important;
             top: 264px !important;
         }
-
         .tp-parallax-wrap:nth-child(17) {
             left: 1195px !important;
             top: 250px !important;
         }
-
         .tp-parallax-wrap:nth-child(18) {
             left: 1126px !important;
             top: 270px !important;
         }
-
         .tp-parallax-wrap:nth-child(19) {
             left: 900px !important;
             top: 290px !important;
         }
-
         .tp-parallax-wrap:nth-child(24),
         .tp-parallax-wrap:nth-child(25),
         .tp-parallax-wrap:nth-child(26),
@@ -1026,7 +845,6 @@ body.mainnet-page .wpb_revslider_element {
         .tp-parallax-wrap:nth-child(33) {
             left: 936px !important;
             top: 290px !important;
-
             .tp-caption {
                 transform: matrix3d(.5, 0, 0, 0, 0, .5, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1) !important;
             }

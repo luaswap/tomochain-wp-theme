@@ -291,7 +291,7 @@
     .z_txt_heading {
         color: #000;
         font-family: 'Bai Jamjuree', sans-serif;
-        font-size: 18px;
+        font-size: 20px;
         @include media-breakpoint-down(sm) {
             font-size: 15px;
         }
@@ -380,9 +380,9 @@
                     margin: 0 auto;
                     background: url(assets/images/img-mockup-pc.png) no-repeat top center;
                     background-size: 100%;
-                    padding: 2em 2em 11.4em;
+                    padding: 1.8em 1.6em 11.4em;
                     @include media-breakpoint-down(sm) {
-                        padding: 2em 2em 5.4em;
+                        padding: .8em .6em 5.4em;
                     }
                     video {
                         max-width: 100%;
@@ -498,7 +498,7 @@
         .vc_toggle_content {
             padding-left: 0!important;
             color: #4c4c4c;
-            font-size: 14px;
+            font-size: 16px;
         }
         .accordion {
             background: transparent;
@@ -512,7 +512,7 @@
             transition: all .2s ease;
             position: relative;
             line-height: 1.5;
-            font-size: 16px;
+            font-size: 18px;
             font-weight: 500;
             &:after {
                 content: "\e903";

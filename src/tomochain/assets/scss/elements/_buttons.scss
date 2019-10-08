@@ -23,7 +23,7 @@ input[type="submit"] {
         background: transparent!important;
         border-radius: 6px!important;
         padding: 13px 20px!important;
-        font-size: 14px!important;
+        font-size: 16px!important;
         line-height: 16px!important;
         border: 0!important;
         color: #fff!important;
@@ -70,7 +70,7 @@ input[type="submit"] {
         background: transparent!important;
         border-radius: 6px!important;
         padding: 12px 20px!important;
-        font-size: 14px!important;
+        font-size: 16px!important;
         min-width: 170px;
         line-height: 16px!important;
         border: 0!important;
@@ -119,7 +119,7 @@ input[type="submit"] {
         background: #7289da!important;
         border-radius: 0px!important;
         padding: 12px 20px!important;
-        font-size: 14px!important;
+        font-size: 16px!important;
         min-width: 170px;
         line-height: 16px!important;
         border: 0!important;
@@ -140,7 +140,7 @@ input[type="submit"] {
         background: transparent!important;
         border-radius: 6px!important;
         padding: 12px 35px 12px 12px!important;
-        font-size: 14px!important;
+        font-size: 16px!important;
         border: 0!important;
         color: #6B6CED!important;
         overflow: hidden!important;
@@ -240,6 +240,10 @@ input[type="submit"] {
             /*transform: translate(10px, 5px);*/
         }
     }
+}
+
+.vc_btn3.vc_btn3-size-md {
+    font-size: 16px!important;
 }
 
 .btn-tmp-color-gradient {
@@ -351,9 +355,10 @@ input[type="submit"] {
     background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
     border-radius: 6px;
     color: #fff!important;
-    padding: 10px 20px 10px 35px;
+    padding: 10px 10px 10px 20px;
     line-height: 16px;
-    width: 140px;
+    width: 150px;
+    white-space: nowrap;
     height: 38px;
     position: relative;
     overflow: hidden;
@@ -370,7 +375,7 @@ input[type="submit"] {
         font-family: tomochain;
         color: #fff;
         position: absolute;
-        left: 12px;
+        left: 10px;
         width: 20px;
         height: 16px;
         top: 10px;
@@ -402,10 +407,11 @@ input[type="submit"] {
     background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
     border-radius: 6px;
     color: #fff!important;
-    padding: 10px 20px 10px 35px;
+    padding: 10px 10px 10px 30px;
     line-height: 16px;
-    width: 140px;
+    width: 150px;
     height: 38px;
+    white-space: nowrap;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -421,7 +427,7 @@ input[type="submit"] {
         font-family: tomochain;
         color: #fff;
         position: absolute;
-        left: 20px;
+        left: 15px;
         width: 20px;
         height: 16px;
         top: 10px;
@@ -453,10 +459,11 @@ input[type="submit"] {
     background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
     border-radius: 6px;
     color: #fff!important;
-    padding: 10px 20px 10px 35px;
+    padding: 10px 10px 10px 25px;
     line-height: 16px;
-    width: 140px;
+    width: 150px;
     height: 38px;
+    white-space: nowrap;
     position: relative;
     overflow: hidden;
     text-align: center;
@@ -472,7 +479,7 @@ input[type="submit"] {
         font-family: tomochain;
         color: #fff;
         position: absolute;
-        left: 15px;
+        left: 10px;
         width: 20px;
         height: 16px;
         top: 10px;

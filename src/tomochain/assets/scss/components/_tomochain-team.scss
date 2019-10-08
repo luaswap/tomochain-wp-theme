@@ -1,23 +1,19 @@
 .tomochain-team {
-
     &--hide {
         .tomochain-team__wrapper {
             display: none;
         }
     }
-
     &__wrapper {
         display: grid;
         grid-template-columns: 100%;
     }
-
     &__see-all-wrapper {
         display: block;
         text-align: center;
         margin-top: 20px;
         margin-bottom: 60px;
     }
-
     &__see-all {
         position: relative;
         display: inline-block;
@@ -26,7 +22,6 @@
         background-image: linear-gradient(-123deg, #ffc44d 0%, #f66b50 100%);
         background-size: 400% 400%;
         animation: sliderButtonAnimation 3s ease infinite;
-
         span {
             color: #d5d9e5;
             position: relative;
@@ -35,10 +30,8 @@
             font-weight: 500;
             text-transform: uppercase;
             z-index: 2;
-
             @extend %transit;
         }
-
         &:before {
             content: '';
             position: absolute;
@@ -49,41 +42,32 @@
             z-index: 1;
             border-radius: 6px;
             background-color: #161530;
-
             @extend %transit;
         }
-
         &:hover span {
             color: #272f4b !important;
         }
-
         &:hover:before {
             width: 0;
         }
-
         &--collapse {
             min-width: 150px;
-
             span {
                 font-size: 0;
             }
-
             &:after {
                 position: relative;
                 content: fa-content($fa-var-chevron-up);
                 z-index: 1;
-
                 @extend .fas;
             }
         }
     }
-
     @include media-breakpoint-up(md) {
         &__wrapper {
             grid-template-columns: 50% 50%;
         }
     }
-
     @include media-breakpoint-up(lg) {
         &__wrapper {
             grid-template-columns: 25% 25% 25% 25%;
@@ -95,20 +79,17 @@
     text-align: center;
     margin: 30px 0 55px;
     padding: 0 15px;
-
     &:hover {
         .tomochain-team-member__image {
             img {
                 opacity: 1;
                 margin-top: -35px;
             }
-
             a:after {
                 top: -35px;
             }
         }
     }
-
     &.empty-box {
         .tomochain-team-member__image,
         .tomochain-team-member__info {
@@ -116,7 +97,6 @@
             visibility: hidden;
         }
     }
-
     &__image {
         border-radius: 8px;
         max-width: 250px;
@@ -125,7 +105,6 @@
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 10px;
-
         a {
             position: relative;
             display: block;
@@ -134,7 +113,6 @@
             margin-left: auto;
             margin-right: auto;
         }
-
         a:after {
             content: '';
             position: absolute;
@@ -145,10 +123,8 @@
             border-radius: 8px;
             z-index: 1;
             background-color: #202640;
-
             @extend %transit;
         }
-
         img {
             position: relative;
             opacity: .8;
@@ -158,52 +134,42 @@
             margin-top: -25px;
             box-shadow: 0 2px 10px 5px #1e2242;
             z-index: 2;
-
             @extend %transit;
         }
     }
-
     &__name {
         font-size: 18px;
-
         a {
             color: #ebeaf5;
         }
     }
-
     &__role {
         font-weight: 300;
-        color: #8b96b5;
+        color: #b9c4df;
         margin-bottom: 0;
     }
 }
 
 .tomochain-team-member--is-advisor {
-
     &:hover {
         .tomochain-team-member__image {
             a:after {
                 top: -20px;
             }
-
             img {
                 margin-top: -20px;
             }
         }
     }
-
     .tomochain-team-member__image {
         max-width: 250px;
-
         a {
             width: 250px;
             height: 200px;
         }
-
         a:after {
             top: -10px;
         }
-
         img {
             max-width: 250px;
             margin-top: -10px;
@@ -213,11 +179,9 @@
 }
 
 .team-member-info {
-
     &__wrapper {
         position: relative;
     }
-
     &__basic-info,
     &__close,
     &__description,
@@ -227,7 +191,6 @@
         visibility: hidden;
         transition: opacity .3s, visibility 0s;
     }
-
     &__close {
         cursor: pointer;
         position: absolute;
@@ -235,34 +198,27 @@
         right: 35px;
         font-size: 0;
         z-index: 1;
-
         &:before {
             content: '\e905';
             font-size: 16px;
             color: #424e73;
-
             @extend %tm-icon;
             @extend %transit;
         }
-
         &:hover:before {
             color: #fff;
         }
     }
-
     &__image {
         text-align: center;
-
         img {
             max-width: 200px;
         }
     }
-
     &__basic-info {
         text-align: center;
         margin-top: 10px;
     }
-
     &__name {
         font-size: 18px;
         font-weight: 500;
@@ -270,19 +226,16 @@
         margin-bottom: 5px;
         color: #ebeaf5;
     }
-
     &__role {
         font-weight: 300;
         margin-bottom: 0;
     }
-
     &__description {
         font-weight: 300;
         letter-spacing: .025em;
         margin-top: 30px;
         margin-bottom: 25px;
     }
-
     &__social a {
         display: inline-block;
         font-size: 17px;
@@ -295,14 +248,11 @@
         color: #fff;
         background-color: rgba(255, 255, 255, .1);
         transition: opacity .3s, visibility 0s, background-color .3s;
-
         &:hover {
             background-color: rgba(255, 255, 255, .3);
         }
     }
-
     @include media-breakpoint-up(md) {
-
         &__image {
             text-align: left;
             position: absolute;
@@ -310,22 +260,17 @@
             left: 0;
             max-width: 80px;
         }
-
         &__basic-info {
             text-align: left;
         }
-
         &__name,
         &__role {
             margin-left: 100px;
         }
-
         &__description {
             margin-top: 50px;
         }
-
         html[lang="ja"] & {
-
             &__description {
                 margin-top: 30px;
             }
@@ -338,48 +283,38 @@
     max-width: 725px;
     visibility: hidden;
     -webkit-backface-visibility: hidden;
-	backface-visibility: hidden;
-	will-change: left, top, width;
+    backface-visibility: hidden;
+    will-change: left, top, width;
     z-index: 1000;
     transform: translateZ(0);
-
     &.is-visible {
         visibility: visible;
     }
-
     &.animate-width {
         background-image: linear-gradient(-176deg, #2c3553 0%, #1b2038 100%);
         border-radius: 6px;
     }
-
     &.add-content {
-
         @include media-breakpoint-up(md) {
             height: auto !important;
         }
-
         .team-member-info__wrapper {
             padding: 20px;
-
             @include media-breakpoint-up(sm) {
                 padding: 30px;
             }
-
             @include media-breakpoint-up(md) {
                 padding: 35px 35px 45px 35px;
-
                 html[lang="ja"] & {
                     padding-left: 30px;
                     padding-right: 30px;
                 }
             }
         }
-
         .team-member-info__close {
             opacity: 1;
             visibility: visible;
         }
-
         .team-member-info__basic-info,
         .team-member-info__description,
         .team-member-info__social {
@@ -387,7 +322,6 @@
             visibility: visible;
             position: relative;
         }
-
         .team-member-info__name,
         .team-member-info__role,
         .team-member-info__description,

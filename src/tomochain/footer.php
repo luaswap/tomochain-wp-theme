@@ -19,7 +19,7 @@
                 <div class="col-12">
                     <div class="logo-footer">
                         <?php the_custom_logo(); ?>
-                        <h2 class="tomochain-name"><?php echo esc_html__('TomoChain','tomochain');?></h2>
+                        <!-- <h2 class="tomochain-name"><?php //echo esc_html__('TomoChain','tomochain');?></h2> -->
                     </div>
                     <div class="sidebar-footer">
                         <?php dynamic_sidebar( 'sidebar-footer' ); ?>
