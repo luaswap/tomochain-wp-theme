@@ -22678,7 +22678,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         .tmp-landingpage .main-title .wpb_text_column {
           margin-bottom: 15px; }
       .tmp-landingpage .main-title {
-        top: 150px; }
+        top: 150px !important; }
     .con_game_run .title_item {
       font-size: 18px; }
         .submit_game .form_submit_game .form-submit-tomo .btn_submit {

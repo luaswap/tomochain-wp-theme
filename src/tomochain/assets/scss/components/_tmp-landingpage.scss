@@ -212,7 +212,7 @@
             top: 300px;
         }
         @include media-breakpoint-down(sm) {
-            top: 150px;
+            top: 150px!important;
         }
         * {
             text-align: center!important;
