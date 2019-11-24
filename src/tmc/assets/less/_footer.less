@@ -1,0 +1,101 @@
+.site-footer {
+    position: relative;
+    z-index: 2;
+    color: @white;
+    .widget-title{
+        margin-top: 0;
+    }
+    a{
+        &:hover{
+            color: @white;
+            text-decoration: underline;
+        }
+    }
+    .footer-top{
+        background-color: @primary-color;
+        .sidebar-footer{
+            display: flex;
+            flex-wrap: wrap;
+            padding: 60px 0;
+            section{
+                width: 25%;
+                padding-left: 15px;
+                padding-right: 15px;
+                @media(max-width: 992px){
+                    width: 50%;
+                }
+                @media(max-width: 680px){
+                    width: 100%;
+                }
+            }
+        }
+    }
+    .logo-footer{
+        padding: 40px 0 10px;
+        @media(max-width: 992px) {
+            text-align: center;
+        }
+    }
+    ul{
+        padding: 0;
+        margin: 0;
+        li{
+            list-style: none;
+        }
+    }    
+    .site-info {
+        padding-top: 30px;
+        padding-bottom: 30px;
+        background-color: darken(@primary-color, 5%);
+        color: @white;
+        font-size: 16px;
+        text-align: center;
+    }
+}
+.tmc-newletter{
+    position: relative;
+    border-radius: 4px;
+    overflow: hidden;
+    .your-email input{
+        width: 100%;
+        padding-right: 70px;
+    }
+    .ctf7_submit{
+        position: absolute;
+        top: 0;
+        right: 0;
+        overflow: hidden;
+        cursor: pointer;
+        input{
+            padding: 9px 10px;
+            position: relative;
+            z-index: 2;
+            color: transparent;
+            background-color: transparent;
+            border: none;
+        }
+        &:before{
+            content: "\f0e0";
+            font-family: 'Font Awesome 5 Free';
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            top: 0;
+            left: 0;
+            background-color: @secondary-color;
+            text-align: center;
+            line-height: 40px;
+            -webkit-transition: all 0.35s ease;
+            -o-transition: all 0.35s ease;
+            transition: all 0.35s ease;
+            font-size: 18px;
+        }
+        .ajax-loader{
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+div.wpcf7-response-output{
+    margin: 0;
+}
