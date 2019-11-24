@@ -4,14 +4,16 @@
 
 @keyframes fade-slide-up {
     0% {
-        background-position: center 0;
+        transform: translateY(0px);
     }
     100% {
-        background-position: center -650px;
+        transform: translateY(-500px);
     }
 }
 
 .page-template-tmp-tomox {
+    font-family: "Open Sans", Arial, sans-serif;
+    line-height: 25px;
     .modal-content {
         background-color: #161b28;
         display: block;
@@ -54,6 +56,9 @@
             .show-video-large {
                 .box_video {
                     iframe {
+                        width: 100%!important;
+                        height: 500px!important;
+                        border: 0;
                         @include media-breakpoint-down(sm) {
                             height: 250px!important;
                         }
@@ -62,14 +67,15 @@
             }
             .tab-nav-small {
                 padding: 1em 0;
-                margin: 4em 0 2em;
+                margin: 4em auto 2em;
+                max-width: 500px;
                 position: relative;
                 &:before {
                     content: '';
                     left: 50%;
                     top: -22px;
                     transform: translateX(-50%);
-                    width: 60%;
+                    width: 50%;
                     height: 1px;
                     background-image: linear-gradient(to left, transparent 50%, #6e717a 50%);
                     background-size: 15px 100%;
@@ -79,8 +85,9 @@
                     color: #6E717A;
                     margin: 0 15px;
                     cursor: pointer;
+                    width: 50%;
+                    position: relative;
                     span {
-                        position: relative;
                         &::after {
                             content: '';
                             position: absolute;
@@ -165,6 +172,7 @@
     }
     .entry-content {
         margin: 0;
+        line-height: 25px;
     }
     .title-01 {
         position: relative;
@@ -175,9 +183,9 @@
             background-size: auto 100%;
             position: absolute;
             width: 100%;
-            height: 60px;
+            height: 70px;
             z-index: -1;
-            top: -24px;
+            top: -34px;
             left: 0;
             @include media-breakpoint-down(sm) {
                 background-position: top center;
@@ -193,9 +201,9 @@
             background-size: auto 100%;
             position: absolute;
             width: 100%;
-            height: 60px;
+            height: 70px;
             z-index: -1;
-            top: -24px;
+            top: -34px;
             left: 0;
             @include media-breakpoint-down(sm) {
                 background-position: top center;
@@ -205,27 +213,30 @@
     .bg_gr_top_row {
         background: #161B28;
         background-image: linear-gradient(to bottom, rgba(#000000, 1), rgba(#161B28, 1));
-        padding: 15em 0 18em;
+        // padding: 22em 0;
         overflow: hidden;
         position: relative;
         z-index: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
         &::before {
             content: '';
             background-image: url(assets/images/bg-tomox-banner.png);
             animation: fade-slide-up 30s linear infinite;
             position: absolute;
             width: 100%;
-            height: 100%;
+            height: 1800px;
             top: 0;
             left: 0;
             z-index: -1;
             opacity: .2;
         }
         @include media-breakpoint-down(md) {
-            padding: 5em 0 10em;
+            padding: 8em 0;
         }
         @include media-breakpoint-down(sm) {
-            padding: 5em 0 7em;
+            // padding: 10em 0 5em;
             min-height: 100vh;
         }
     }
@@ -359,7 +370,7 @@
         transition: all .5s ease;
         cursor: pointer;
         &:hover {
-            background-color: #703DB5;
+            background-color: #00A99D;
             text-decoration: none;
         }
     }
@@ -371,6 +382,7 @@
         padding: 1em 2em;
         text-align: center;
         transition: all .5s ease;
+        cursor: pointer;
         &:hover {
             background-color: #A97DE5;
         }
@@ -467,6 +479,9 @@
             font-size: 14px;
         }
     }
+    .site-footer {
+        background-color: #161b28;
+    }
     .site-footer .widget_nav_menu ul a,
     .site-info {
         color: #8b96b5;
@@ -479,11 +494,6 @@
         color: #8b96b5;
         &:hover {
             color: #fff;
-        }
-    }
-    &.modal-open {
-        .bg_gr_top_row {
-            z-index: 999 !important;
         }
     }
 }
