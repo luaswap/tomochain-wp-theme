@@ -4,376 +4,386 @@
 .title_wallet_download,
 .title_wallet_review,
 .title_wallet_faq {
-	position: relative;
-	z-index: 1;
-	&:before {
-		content:'';
-		font-size: 5.5rem;
-		color: #293067;
-		position: absolute;
-		z-index: -1;
-		top: -52px;
-		left: 0;
-		font-family: $font__main;
-		font-weight: bold;
-	}
-	@media screen and (min-width: 992px) {
-		font-size: 2rem;
-	}
-	@media screen and (max-width: 767px) {
-		&:before {
-			font-size: 3.5rem;
-			top: -40px;
-			left: 50%;
-			transform: translateX(-50%);
-		}
-	}
-	b {
-		font-weight: 500;
-		color: #1e86ff;
-	}
+    position: relative;
+    z-index: 1;
+    &:before {
+        content: '';
+        font-size: 5.5rem;
+        color: #293067;
+        position: absolute;
+        z-index: -1;
+        top: -52px;
+        left: 0;
+        font-family: $font__main;
+        font-weight: bold;
+    }
+    @media screen and (min-width: 992px) {
+        font-size: 2rem;
+    }
+    @media screen and (max-width: 767px) {
+        &:before {
+            font-size: 3.5rem;
+            top: -40px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+    }
+    b {
+        font-weight: 500;
+        color: #1e86ff;
+    }
 }
+
 .title_wallet_secure {
-	&:before {
-		content:'Wallet';
-	}
+    &:before {
+        content: 'Wallet';
+    }
 }
+
 .title_wallet_faq {
-	&:before {
-		content:'FAQ';
-	}
+    &:before {
+        content: 'FAQ';
+    }
 }
+
 .title_wallet_features {
-	&:before {
-		content:'Features';
-	}
+    &:before {
+        content: 'Features';
+    }
 }
+
 .title_wallet_howto {
-	&:before {
-		content:'Tutorials';
-		left: 50%;
-		transform: translateX(-50%);
-	}
+    &:before {
+        content: 'Tutorials';
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
+
 .title_wallet_download {
-	&:before {
-		content:'Download';
-		left: 50%;
-		transform: translateX(-50%);
-	}
+    &:before {
+        content: 'Download';
+        left: 50%;
+        transform: translateX(-50%);
+    }
 }
+
 .title_wallet_review {
-	&:before {
-		content:'Review';
-	}
+    &:before {
+        content: 'Review';
+    }
 }
+
 .size_img550 {
-	max-width: 550px;
+    max-width: 550px;
 }
+
 // con_wallet_review
 .con_wallet_review {
-	.tomochain_slider_review {
-		.vc_column-inner {
-			padding-left: 0;
-			padding-right: 0;
-		}
-	}
+    .tomochain_slider_review {
+        .vc_column-inner {
+            padding-left: 0;
+            padding-right: 0;
+        }
+    }
 }
+
 // con_wallet_secure
 .con_wallet_secure {
-	background: url('assets/images/bg_toppage_wallet.png') no-repeat center right;
-	background-size: auto 100%;
-	.box_inner_slide {
-		.tomo_slide_img_wallet {
-			img {
-				max-height: 603px;
-				max-width: initial;
-		    	width: inherit;
-			}
-			.vc_single_image-wrapper {
-				display: flex;
-				justify-content: center;
-	    		align-items: center;
-			}
-		}
-		text-align: center;
-		@media screen and (min-width: 768px) {
-			text-align: left;
-			display: flex;
-			align-items: center;
-			flex-direction: row-reverse;
-		}
-		@media screen and (max-width: 767px) {
-			img {
-				/*width: 200px;*/
-			}
-		}
-		.wpb_text_column {
-			margin: 30px 0 40px;
-		}
-		@media screen and (max-width: 990px) and (min-width: 768px) {
-			.tomo-flexbox>a {
-				margin: 0 10px;
-			}
-			.btn-downios,
-			.btn-downandroid {
-				padding: 10px 15px 10px 30px;
-			}
-			.btn-downandroid:before {
-				left: 10px;
-			}
-			.btn-downios:before {
-				left: 15px;
-			}
-		}
-	}
+    background: url('assets/images/bg_toppage_wallet.png') no-repeat center right;
+    background-size: auto 100%;
+    .box_inner_slide {
+        .tomo_slide_img_wallet {
+            img {
+                max-height: 603px;
+                max-width: initial;
+                width: inherit;
+            }
+            .vc_single_image-wrapper {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+            }
+        }
+        text-align: center;
+        @media screen and (min-width: 768px) {
+            text-align: left;
+            display: flex;
+            align-items: center;
+            flex-direction: row-reverse;
+        }
+        @media screen and (max-width: 767px) {
+            img {
+                /*width: 200px;*/
+            }
+        }
+        .wpb_text_column {
+            margin: 30px 0 40px;
+        }
+        @media screen and (max-width: 990px) and (min-width: 768px) {
+            .tomo-flexbox>a {
+                margin: 0 10px;
+            }
+            .btn-downios,
+            .btn-downandroid {
+                padding: 10px 15px 10px 30px;
+            }
+            .btn-downandroid:before {
+                left: 10px;
+            }
+            .btn-downios:before {
+                left: 15px;
+            }
+        }
+    }
 }
 
 // con_wallet_faq
 .con_wallet_faq {
-	i {
-		display: none!important;
-	}
-	.vc_toggle_title {
-		padding-left: 0!important;
-	}
-	.vc_toggle_content {
-		padding-left: 4em!important;
-		@media screen and (max-width: 767px) {
-			padding-left: 3em!important;
-		}
-	}
-	.accordion {
-		background: transparent;
-		color: #fff;
-		cursor: pointer;
-		padding: .5em 0 .5em 4.5em;
-		width: 100%;
-		border: 0;
-		text-align: left;
-		outline: none;
-		transition: all .4s ease;
-		position: relative;
-		line-height: 1.5;
-		@media screen and (max-width: 767px) {
-			padding: .5em 0 .5em 3.5em;
-			text-align: left!important;
-		}
-		&:before {
-			background-color: #2c3665;
-			box-shadow: 0 0 5px #1e2147;
-			border-radius: 50%;
-			content: "";
-			position: absolute;
-			width: 34px;
-			height: 34px;
-			padding: 5px;
-			top: 2px;
-			left: 0;
-		}
-		&:after {
-			content: "\e903";
-			color: #1e86ff;
-			display: flex;
-			align-items: center;
-			justify-content: center;
-			font-size: 8px;
-			position: absolute;
-			width: 34px;
-			height: 34px;
-			padding: 5px;
-			top: 4px;
-			left: 0;
-			font-family: "tomochain";
-			transition: all .4s ease;
-		}
-	}
-	.vc_toggle_active {
-		.accordion {
-			&:after {
-				transform: rotate(-180deg);
-				top: 2px;
-			}
-		}
-	}
-	/*.vc_toggle:last-of-type {
+    i {
+        display: none!important;
+    }
+    .vc_toggle_title {
+        padding-left: 0!important;
+    }
+    .vc_toggle_content {
+        padding-left: 4em!important;
+        @media screen and (max-width: 767px) {
+            padding-left: 3em!important;
+        }
+    }
+    .accordion {
+        background: transparent;
+        color: #fff;
+        cursor: pointer;
+        padding: .5em 0 .5em 4.5em;
+        width: 100%;
+        border: 0;
+        text-align: left;
+        outline: none;
+        transition: all .4s ease;
+        position: relative;
+        line-height: 1.5;
+        @media screen and (max-width: 767px) {
+            padding: .5em 0 .5em 3.5em;
+            text-align: left!important;
+        }
+        &:before {
+            background-color: #2c3665;
+            box-shadow: 0 0 5px #1e2147;
+            border-radius: 50%;
+            content: "";
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            padding: 5px;
+            top: 2px;
+            left: 0;
+        }
+        &:after {
+            content: "\e903";
+            color: #1e86ff;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 8px;
+            position: absolute;
+            width: 34px;
+            height: 34px;
+            padding: 5px;
+            top: 4px;
+            left: 0;
+            font-family: "tomochain";
+            transition: all .4s ease;
+        }
+    }
+    .vc_toggle_active {
+        .accordion {
+            &:after {
+                transform: rotate(-180deg);
+                top: 2px;
+            }
+        }
+    }
+    /*.vc_toggle:last-of-type {
 		margin-bottom: 0!important;
 	}*/
 }
 
 //con_features
 .con_features {
-	h6 {
-		font-family: 'Bai Jamjuree', sans-serif;
-	}
-	.wpb_text_column {
-		margin-bottom: 15px!important;
-	}
-	.mew-features {
-		position: relative;
-		.ic_features {
-			position: absolute;
-			left: 0px;
-			top: 10px;
-			img {
-				width: 100px;
-			}
-		}
-		&:first-child {
-			padding-left: 120px;
-			padding-right: 50px;
-		}
-		&:last-child {
-			padding-left: 170px;
-			.ic_features {
-				left: 50px;
-			}
-		}
-		@include media-breakpoint-between(md, lg) {
-			&:first-child {
-				padding-right: 0px;
-			}
-			&:last-child {
-				padding-left: 120px;
-				.ic_features {
-					left: 0px;
-				}
-			}
-		}
-		@include media-breakpoint-down(sm) {
-			.ic_features {
-				left: 15px;
-				top: 0;
-				img {
-					width: 60px;
-				}
-			}
-			&:first-child {
-				padding-left: 80px;
-				padding-right: 0px;
-			}
-			&:last-child {
-				padding-left: 80px;
-				.ic_features {
-					left: 15px;
-				}
-			}
-		}
-	}
+    h6 {
+        font-family: 'Bai Jamjuree', sans-serif;
+    }
+    .wpb_text_column {
+        margin-bottom: 15px!important;
+    }
+    .mew-features {
+        position: relative;
+        .ic_features {
+            position: absolute;
+            left: 0px;
+            top: 10px;
+            img {
+                width: 100px;
+            }
+        }
+        &:first-child {
+            padding-left: 120px;
+            padding-right: 50px;
+        }
+        &:last-child {
+            padding-left: 170px;
+            .ic_features {
+                left: 50px;
+            }
+        }
+        @include media-breakpoint-between(md,
+        lg) {
+            &:first-child {
+                padding-right: 0px;
+            }
+            &:last-child {
+                padding-left: 120px;
+                .ic_features {
+                    left: 0px;
+                }
+            }
+        }
+        @include media-breakpoint-down(sm) {
+            .ic_features {
+                left: 15px;
+                top: 0;
+                img {
+                    width: 60px;
+                }
+            }
+            &:first-child {
+                padding-left: 80px;
+                padding-right: 0px;
+            }
+            &:last-child {
+                padding-left: 80px;
+                .ic_features {
+                    left: 15px;
+                }
+            }
+        }
+    }
 }
 
 .flexbox_howto {
-	.tomochain_howto_use {
-		.vd_item {
-			iframe {
-				display: block;
-				@media screen and (max-width: 767px) {
-					height: 260px!important;
-				}
-			}
-		}
-		.slick-list {
-			box-shadow: 0px 20px 40px -10px #1a1e41;
-			border-radius: 5px;
-			overflow: hidden;
-		}
-	}
-	@media screen and (max-width: 767px) {
-		.tomochain_slider_nav {
-			display: none;
-		}
-	}
-	@media screen and (min-width: 768px) {
-		display: flex;
-		flex-direction: row-reverse;
-		align-items: center;
-		.tomochain_howto_use {
-			width: 60%;
-		}
-		.tomochain_slider_nav {
-			width: 40%;
-			padding-right: 30px;
-			.slick-list {
-				height: auto!important;
-			}
-			.txt_item {
-				padding: 15px 0;
-				.howto {
-					font-size: 16px;
-					position: relative;
-					padding-right: 50px;
-					margin-bottom: 0;
-					display: inline-block;
-					&:before {
-						content: "→";
-						color: #8b96b5;
-						font-size: 20px;
-						position: absolute;
-						width: 30px;
-						height: 30px;
-						top: 0px;
-						right: 0;
-						font-family: "monospace";
-						transition: all .4s ease;
-					}
-				}
-				&.slick-current {
-					color: #fff;
-					.howto {
-						&:before {
-							color: #fff;
-						}
-					}
-				}
-			}
-		}
-	}
-	@media screen and (max-width: 991px) and (min-width: 768px) {
-		.tomochain_slider_nav {
-			width: 45%;
-		}
-		.tomochain_howto_use {
-			width: 55%;
-			.vd_item {
-				iframe {
-					display: block;
-					height: 210px!important;
-				}
-			}
-		}
-	}
-	@media screen and (max-width: 1100px) and (min-width: 992px) {
-		.tomochain_howto_use {
-			.vd_item {
-				iframe {
-					display: block;
-					height: 315px!important;
-				}
-			}
-		}
-	}
+    .tomochain_howto_use {
+        .vd_item {
+            iframe {
+                display: block;
+                @media screen and (max-width: 767px) {
+                    height: 260px!important;
+                }
+            }
+        }
+        .slick-list {
+            box-shadow: 0px 20px 40px -10px #1a1e41;
+            border-radius: 5px;
+            overflow: hidden;
+        }
+    }
+    @media screen and (max-width: 767px) {
+        .tomochain_slider_nav {
+            display: none;
+        }
+    }
+    @media screen and (min-width: 768px) {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        .tomochain_howto_use {
+            width: 60%;
+        }
+        .tomochain_slider_nav {
+            width: 40%;
+            padding-right: 30px;
+            .slick-list {
+                height: auto!important;
+            }
+            .txt_item {
+                padding: 15px 0;
+                .howto {
+                    font-size: 16px;
+                    position: relative;
+                    padding-right: 50px;
+                    margin-bottom: 0;
+                    display: inline-block;
+                    &:before {
+                        content: "→";
+                        color: #b9c4df;
+                        font-size: 20px;
+                        position: absolute;
+                        width: 30px;
+                        height: 30px;
+                        top: 0px;
+                        right: 0;
+                        font-family: "monospace";
+                        transition: all .4s ease;
+                    }
+                }
+                &.slick-current {
+                    color: #fff;
+                    .howto {
+                        &:before {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 991px) and (min-width: 768px) {
+        .tomochain_slider_nav {
+            width: 45%;
+        }
+        .tomochain_howto_use {
+            width: 55%;
+            .vd_item {
+                iframe {
+                    display: block;
+                    height: 210px!important;
+                }
+            }
+        }
+    }
+    @media screen and (max-width: 1100px) and (min-width: 992px) {
+        .tomochain_howto_use {
+            .vd_item {
+                iframe {
+                    display: block;
+                    height: 315px!important;
+                }
+            }
+        }
+    }
 }
 
 // con_review_tomowallet
 .tomochain_slider_review {
-	.tomochain-image-carousel-item {
-		padding: 0 15px;
-		img {
-			width: 100%;
-		}
-	}
+    .tomochain-image-carousel-item {
+        padding: 0 15px;
+        img {
+            width: 100%;
+        }
+    }
 }
 
 // con_wallet_down
 .con_wallet_down {
-	background: url('assets/images/bg_con_down.png') no-repeat center top;
-	background-size: 100% auto;
-	padding: 150px 0;
-	@media screen and (max-width: 1600px) and (min-width: 1201px) {
-		padding: 100px 0;
-	}
-	@media screen and (max-width: 1200px) {
-		padding: 80px 0;
-		background-size: auto 100%;
-	}
+    background: url('assets/images/bg_con_down.png') no-repeat center top;
+    background-size: 100% auto;
+    padding: 150px 0;
+    @media screen and (max-width: 1600px) and (min-width: 1201px) {
+        padding: 100px 0;
+    }
+    @media screen and (max-width: 1200px) {
+        padding: 80px 0;
+        background-size: auto 100%;
+    }
 }

@@ -4,7 +4,6 @@
     background-color: #262e5d;
     position: relative;
     z-index: 2;
-
     &:before {
         /*background-image: linear-gradient(90deg, #181631 0%, #fcb168 51%, #181c34 100%);
         content: '';
@@ -12,26 +11,26 @@
         width: 100%;
         height: 2px;*/
     }
-    .logo-footer{
+    .logo-footer {
         padding: 40px 0 10px;
         @include media-breakpoint-down(sm) {
             text-align: center;
         }
     }
-    .custom-logo-link{
+    .custom-logo-link {
         display: inline-block;
     }
     .custom-logo {
-        width: 60px;
+        width: 140px;
         margin-bottom: 15px;
     }
-    .tomochain-name{
+    .tomochain-name {
         display: inline-block;
         vertical-align: middle;
         font-size: 20px;
         padding-left: 10px;
     }
-    .widget_nav_menu{
+    .widget_nav_menu {
         width: 20%;
         display: inline-block;
         @include media-breakpoint-down(sm) {
@@ -39,17 +38,17 @@
             text-align: center;
             display: none;
         }
-        ul{
+        ul {
             margin: 0;
             padding: 10px 0 0 0;
             list-style: none;
-            a{
+            a {
                 padding: 5px 0;
                 display: block;
             }
         }
     }
-    .widget_tomo_address{
+    .widget_tomo_address {
         width: 80%;
         display: inline-block;
         vertical-align: top;
@@ -57,7 +56,7 @@
             width: 100%;
         }
     }
-    .widget_tomo_sendgrid{
+    .widget_tomo_sendgrid {
         display: inline-block;
         float: right;
         width: 56%;
@@ -66,8 +65,8 @@
         padding-top: 15px!important;
         padding-bottom: 15px!important;
     }
-    @media(max-width: 767px){
-        .widget_tomo_sendgrid{
+    @media(max-width: 767px) {
+        .widget_tomo_sendgrid {
             display: block;
             float: none;
             width: 100%;
@@ -76,7 +75,6 @@
             text-align: center;
         }
     }
-
 }
 
 .popup_btn {
@@ -101,7 +99,7 @@
         }
     }
     &.hide-second {
-      display: none;
+        display: none;
     }
     .close {
         align-items: center;

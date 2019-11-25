@@ -11,7 +11,7 @@ get_template_part('headerldgame');
 <div class="content-area con-game-contest">
 	<main class="site-main">
 		<div class="container">
-			<img src="../tomochain/assets/images/dappathon-closed.png">
+			<img src="/tomochain/assets/images/dappathon-closed.png">
 			<?php
 				// while ( have_posts() ) :
 				// 	the_post();

@@ -8915,7 +8915,7 @@ input[type="submit"] {
   background: transparent !important;
   border-radius: 6px !important;
   padding: 13px 20px !important;
-  font-size: 14px !important;
+  font-size: 16px !important;
   line-height: 16px !important;
   border: 0 !important;
   color: #fff !important;
@@ -8956,7 +8956,7 @@ input[type="submit"] {
   background: transparent !important;
   border-radius: 6px !important;
   padding: 12px 20px !important;
-  font-size: 14px !important;
+  font-size: 16px !important;
   min-width: 170px;
   line-height: 16px !important;
   border: 0 !important;
@@ -8997,7 +8997,7 @@ input[type="submit"] {
   background: #7289da !important;
   border-radius: 0px !important;
   padding: 12px 20px !important;
-  font-size: 14px !important;
+  font-size: 16px !important;
   min-width: 170px;
   line-height: 16px !important;
   border: 0 !important;
@@ -9015,7 +9015,7 @@ input[type="submit"] {
     background: transparent !important;
     border-radius: 6px !important;
     padding: 12px 35px 12px 12px !important;
-    font-size: 14px !important;
+    font-size: 16px !important;
     border: 0 !important;
     color: #6B6CED !important;
     overflow: hidden !important;
@@ -9085,6 +9085,9 @@ input[type="submit"] {
     .btn-tmp-txt1:hover:after {
       color: #43a6fa !important;
       /*transform: translate(10px, 5px);*/ }
+
+.vc_btn3.vc_btn3-size-md {
+  font-size: 16px !important; }
 
 .btn-tmp-color-gradient a {
   background: -webkit-gradient(linear, left top, left bottom, color-stop(30%, #48A5FF), to(#534BFF)) !important;
@@ -9179,9 +9182,10 @@ input[type="submit"] {
   background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
   border-radius: 6px;
   color: #fff !important;
-  padding: 10px 20px 10px 35px;
+  padding: 10px 10px 10px 20px;
   line-height: 16px;
-  width: 140px;
+  width: 150px;
+  white-space: nowrap;
   height: 38px;
   position: relative;
   overflow: hidden;
@@ -9194,7 +9198,7 @@ input[type="submit"] {
     font-family: tomochain;
     color: #fff;
     position: absolute;
-    left: 12px;
+    left: 10px;
     width: 20px;
     height: 16px;
     top: 10px; }
@@ -9217,10 +9221,11 @@ input[type="submit"] {
   background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
   border-radius: 6px;
   color: #fff !important;
-  padding: 10px 20px 10px 35px;
+  padding: 10px 10px 10px 30px;
   line-height: 16px;
-  width: 140px;
+  width: 150px;
   height: 38px;
+  white-space: nowrap;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -9232,7 +9237,7 @@ input[type="submit"] {
     font-family: tomochain;
     color: #fff;
     position: absolute;
-    left: 20px;
+    left: 15px;
     width: 20px;
     height: 16px;
     top: 10px; }
@@ -9255,10 +9260,11 @@ input[type="submit"] {
   background-image: linear-gradient(#48A5FF 30%, #534BFF 100%);
   border-radius: 6px;
   color: #fff !important;
-  padding: 10px 20px 10px 35px;
+  padding: 10px 10px 10px 25px;
   line-height: 16px;
-  width: 140px;
+  width: 150px;
   height: 38px;
+  white-space: nowrap;
   position: relative;
   overflow: hidden;
   text-align: center;
@@ -9270,7 +9276,7 @@ input[type="submit"] {
     font-family: tomochain;
     color: #fff;
     position: absolute;
-    left: 15px;
+    left: 10px;
     width: 20px;
     height: 16px;
     top: 10px; }
@@ -9477,9 +9483,9 @@ input,
 select,
 optgroup,
 textarea {
-  color: #8b96b5;
+  color: #b9c4df;
   font-family: "Open Sans", "Arial", "sans-serif";
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.5; }
 
 p {
@@ -9488,7 +9494,10 @@ p {
 strong {
   font-weight: 700; }
 
-dfn, cite, em, i {
+dfn,
+cite,
+em,
+i {
   font-style: italic; }
 
 blockquote {
@@ -9506,14 +9515,19 @@ pre {
   overflow: auto;
   padding: 1.6em; }
 
-code, kbd, tt, var {
+code,
+kbd,
+tt,
+var {
   font-family: Monaco, Consolas, "Andale Mono", "DejaVu Sans Mono", monospace; }
 
-abbr, acronym {
+abbr,
+acronym {
   border-bottom: 1px dotted #666;
   cursor: help; }
 
-mark, ins {
+mark,
+ins {
   background: #fff9c0;
   text-decoration: none; }
 
@@ -9791,7 +9805,7 @@ This is the first layer of classes and should be agnostically named
     clip: auto !important;
     -webkit-clip-path: none;
             clip-path: none;
-    color: #8b96b5;
+    color: #b9c4df;
     display: block;
     font-weight: bold;
     height: auto;
@@ -10587,12 +10601,12 @@ This is where majority of our work takes place and our UI components are often c
     list-style: none;
     display: inline-block;
     vertical-align: middle;
-    margin: 0 0 0 20px;
+    margin: 0 20px 15px 0;
     padding: 0; }
-    .tomo-categories-filter li:first-child,
-    .tomochain-roadmap-filter li:first-child,
-    .tomochain-dapp-filter li:first-child {
-      margin-left: 0; }
+    .tomo-categories-filter li:last-child,
+    .tomochain-roadmap-filter li:last-child,
+    .tomochain-dapp-filter li:last-child {
+      margin-right: 0; }
     .tomo-categories-filter li a,
     .tomochain-roadmap-filter li a,
     .tomochain-dapp-filter li a {
@@ -10660,7 +10674,7 @@ This is where majority of our work takes place and our UI components are often c
   .site-footer .custom-logo-link {
     display: inline-block; }
   .site-footer .custom-logo {
-    width: 60px;
+    width: 140px;
     margin-bottom: 15px; }
   .site-footer .tomochain-name {
     display: inline-block;
@@ -10747,7 +10761,7 @@ This is where majority of our work takes place and our UI components are often c
     display: table-cell;
     vertical-align: middle; }
   .site-header .site-branding img {
-    max-width: 40px;
+    max-width: 140px;
     padding: 10px 0; }
   .site-header .header-tools {
     text-align: right;
@@ -10770,8 +10784,7 @@ This is where majority of our work takes place and our UI components are often c
     .admin-bar .site-header.headroom--not-top {
       top: 32px; }
     .site-header.headroom--not-top img {
-      padding: 0;
-      max-width: 35px; }
+      padding: 0; }
     .site-header.headroom--not-top .main-menu .menu > ul > li > a,
     .site-header.headroom--not-top .main-menu .menu > li > a {
       height: 50px;
@@ -11090,7 +11103,7 @@ This is where majority of our work takes place and our UI components are often c
     -webkit-transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
     transition: stroke-dashoffset 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25), stroke-dasharray 0.5s cubic-bezier(0.25, -0.25, 0.75, 1.25);
     fill: none;
-    stroke: #8b96b5;
+    stroke: #b9c4df;
     stroke-width: 40px;
     stroke-linecap: round;
     stroke-dashoffset: 0; }
@@ -11423,8 +11436,8 @@ article.post-loop {
     content: "\f07c"; }
 
 .entry-content {
-  font-size: 14px;
-  line-height: 22px; }
+  font-size: 16px;
+  line-height: 1.8; }
 
 .sticky {
   display: block; }
@@ -11545,7 +11558,7 @@ common bounty
 .tomo-job-title {
   font-size: 24px;
   margin: 15px 0;
-  font-family: bai jamjuree,sans-serif; }
+  font-family: bai jamjuree, sans-serif; }
 
 .header-bounty {
   padding: 25px 0 50px; }
@@ -11607,7 +11620,7 @@ common bounty
 .box-widget-bounty .widget-cate {
   margin-top: 50px; }
   .box-widget-bounty .widget-cate h2 {
-    font-family: 'Bai Jamjuree',sans-serif;
+    font-family: 'Bai Jamjuree', sans-serif;
     font-size: 18px; }
   .box-widget-bounty .widget-cate ul {
     margin: 0;
@@ -11637,9 +11650,11 @@ common bounty
 .list-bounty {
   color: #7777a7;
   margin: 0; }
-  .list-bounty th, .list-bounty td {
+  .list-bounty th,
+  .list-bounty td {
     font-weight: normal; }
-    .list-bounty th:last-child, .list-bounty td:last-child {
+    .list-bounty th:last-child,
+    .list-bounty td:last-child {
       text-align: right; }
   .list-bounty thead {
     display: block; }
@@ -11847,7 +11862,7 @@ common bounty
     font-size: 16px;
     text-transform: uppercase;
     margin-bottom: 1.5em;
-    font-family: bai jamjuree,sans-serif; }
+    font-family: bai jamjuree, sans-serif; }
   .container-detail-bounty .box-content-detail {
     margin: 50px 0; }
     .container-detail-bounty .box-content-detail .txt-detail {
@@ -11879,7 +11894,7 @@ common bounty
       padding: 12px 15px;
       text-align: center;
       text-transform: uppercase;
-      font-family: bai jamjuree,sans-serif;
+      font-family: bai jamjuree, sans-serif;
       -webkit-transition: all .5s ease;
       transition: all .5s ease; }
       .container-detail-bounty .tomo_btn_grad button:hover,
@@ -11913,7 +11928,7 @@ common bounty
   padding: 12px 15px;
   text-align: center;
   text-transform: uppercase;
-  font-family: bai jamjuree,sans-serif;
+  font-family: bai jamjuree, sans-serif;
   -webkit-transition: all .5s ease;
   transition: all .5s ease; }
   .tomo_tmpbtn_blue button:hover,
@@ -11932,7 +11947,7 @@ common bounty
 
 .form-bounty .txt-desc {
   margin: 30px 0;
-  color: #8b96b5;
+  color: #b9c4df;
   line-height: 22px; }
   .form-bounty .txt-desc a {
     text-decoration: underline !important; }
@@ -12032,7 +12047,7 @@ Homepage Enterprise
   .page-template-tmp-enterprise a {
     text-decoration: none !important; }
   .page-template-tmp-enterprise .vc_custom_heading {
-    font-family: "Open Sans",Arial,sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-weight: bold;
     margin-top: 0; }
   .page-template-tmp-enterprise .container_fluid {
@@ -12138,15 +12153,14 @@ Homepage Enterprise
             -ms-flex-pack: center;
                 justify-content: center; }
       .enterprise .site-content-enterprise .main-banner-enter .banner_enter_slide img, .enterprise-inside .site-content-enterprise .main-banner-enter .banner_enter_slide img {
-        height: -webkit-fill-available;
         max-width: initial; }
     .enterprise .site-content-enterprise .main-banner-enter .content_banner, .enterprise-inside .site-content-enterprise .main-banner-enter .content_banner {
       position: absolute;
-      height: 100%;
+      height: 100vh;
+      width: 100%;
       top: 0px;
       left: 0;
       margin: 0;
-      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -12453,7 +12467,7 @@ Homepage Enterprise publication
   .page-template-tmp-enterprise-inside .vc_custom_heading,
   .page-template-tmp-enterprise-about .vc_custom_heading,
   .page-template-tmp-enterprise-inside-full .vc_custom_heading {
-    font-family: "Open Sans",Arial,sans-serif;
+    font-family: "Open Sans", Arial, sans-serif;
     font-weight: bold;
     margin-top: 0; }
   .single-enterprise .enter_nav,
@@ -12848,7 +12862,7 @@ Homepage Enterprise publication
 
 .enterprise-inside .tomochain-team .team-member-info__description,
 .enterprise-inside .tomochain-team .team-member-info__basic-info {
-  color: #8b96b5; }
+  color: #b9c4df; }
 
 /**========================
 Homepage Enterprise inside full
@@ -12881,15 +12895,14 @@ Homepage Enterprise inside full
             -ms-flex-pack: center;
                 justify-content: center; }
       .page-template-tmp-enterprise-inside-full .site-content-enterprise .main-banner-enter .banner_enter_slide img {
-        height: -webkit-fill-available;
         max-width: initial; }
     .page-template-tmp-enterprise-inside-full .site-content-enterprise .main-banner-enter .content_banner {
       position: absolute;
-      height: 100%;
+      height: 100vh;
+      width: 100%;
       top: 0px;
       left: 0;
       margin: 0;
-      width: 100%;
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
@@ -13759,8 +13772,7 @@ Homepage Enterprise inside full
               justify-content: center !important; }
       .tmp-landingpage .main-banner * img {
         width: initial;
-        max-width: initial;
-        height: -webkit-fill-available; }
+        max-width: initial; }
   .tmp-landingpage .main-title {
     color: #fff;
     top: 300px;
@@ -14032,34 +14044,16 @@ Homepage Enterprise inside full
 
 .roadmap-common {
   background: #1f2649;
-  /* Old browsers */
-  /* FF3.6-15 */
-  /* Chrome10-25,Safari5.1-6 */
-  background: -webkit-gradient(linear, left top, left bottom, from(#1f2649), color-stop(50%, #1e2444));
-  background: linear-gradient(to bottom, #1f2649 0%, #1e2444 50%);
-  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2649', endColorstr='#1e2444',GradientType=0 );
-  /* IE6-9 */
   border-radius: 5px;
   overflow: hidden;
   padding: 15px 2px 0 0;
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+  height: 100%; }
   .roadmap-common .main-title {
     padding: 0 0 15px;
     margin-bottom: 0;
     font-size: 18px;
     text-align: center; }
-  .roadmap-common .main-inner {
-    /*&:before {
-			background: url(assets/images/bg_roadmap1.png) repeat-x left bottom;
-			content: "";
-			width: 100%;
-			height: 150px;
-			position: absolute;
-			bottom: 0;
-			left: 0;
-			z-index: 1;
-		}*/ }
   .roadmap-common .list-box {
     padding: 0 15px;
     max-height: 590px;
@@ -14137,6 +14131,7 @@ Homepage Enterprise inside full
         padding-left: 15px;
         margin-bottom: 15px;
         position: relative;
+        font-size: 14px;
         /*.box-element {
 					padding-left: 15px;
 					margin-bottom: 15px;
@@ -14169,11 +14164,13 @@ Homepage Enterprise inside full
           position: absolute;
           left: 0;
           top: 6px; }
-        .roadmap-common .list-box .box-item .item-body ul, .roadmap-common .list-box .box-item .item-body ol {
+        .roadmap-common .list-box .box-item .item-body ul,
+        .roadmap-common .list-box .box-item .item-body ol {
           margin: 0 0 15px;
           padding-left: 0;
           list-style: none; }
-          .roadmap-common .list-box .box-item .item-body ul li, .roadmap-common .list-box .box-item .item-body ol li {
+          .roadmap-common .list-box .box-item .item-body ul li,
+          .roadmap-common .list-box .box-item .item-body ol li {
             margin-bottom: 7px; }
         .roadmap-common .list-box .box-item .item-body h4 {
           font-size: 14px; }
@@ -14197,14 +14194,6 @@ Homepage Enterprise inside full
       z-index: -1; }
     .roadmap-common.tomochain-progress:after {
       background: #1f2649;
-      /* Old browsers */
-      /* FF3.6-15 */
-      /* Chrome10-25,Safari5.1-6 */
-      background: -webkit-gradient(linear, left top, left bottom, from(#1f2649), color-stop(50%, #1e2444));
-      background: linear-gradient(to bottom, #1f2649 0%, #1e2444 50%);
-      /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-      filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1f2649', endColorstr='#1e2444',GradientType=0 );
-      /* IE6-9 */
       border-radius: 5px;
       content: '';
       width: calc(100% - 2px);
@@ -14603,7 +14592,7 @@ Homepage Enterprise inside full
 .page-template-tmp-staking .z_txt_heading {
   color: #000;
   font-family: 'Bai Jamjuree', sans-serif;
-  font-size: 18px; }
+  font-size: 20px; }
 
 .page-template-tmp-staking .z_txt_subtitle {
   color: #4c4c4c; }
@@ -14669,7 +14658,7 @@ Homepage Enterprise inside full
   margin: 0 auto;
   background: url(assets/images/img-mockup-pc.png) no-repeat top center;
   background-size: 100%;
-  padding: 2em 2em 11.4em; }
+  padding: 1.8em 1.6em 11.4em; }
   .page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomomaster .box_video video {
     max-width: 100%;
     background-size: 100%; }
@@ -14760,7 +14749,7 @@ Homepage Enterprise inside full
 .page-template-tmp-staking .staking_faq .vc_toggle_content {
   padding-left: 0 !important;
   color: #4c4c4c;
-  font-size: 14px; }
+  font-size: 16px; }
 
 .page-template-tmp-staking .staking_faq .accordion {
   background: transparent;
@@ -14775,7 +14764,7 @@ Homepage Enterprise inside full
   transition: all .2s ease;
   position: relative;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500; }
   .page-template-tmp-staking .staking_faq .accordion:after {
     content: "\e903";
@@ -15063,7 +15052,7 @@ Homepage Enterprise inside full
   .page-template-tmp-tomox .z_txt_heading {
     color: #000;
     font-family: 'Bai Jamjuree', sans-serif;
-    font-size: 18px; }
+    font-size: 20px; }
   .page-template-tmp-tomox .z_txt_subtitle {
     color: #4c4c4c; }
   .page-template-tmp-tomox .z_protocol {
@@ -15143,7 +15132,7 @@ Homepage Enterprise inside full
   .page-template-tmp-tomox .staking_faq .vc_toggle_content {
     padding-left: 0 !important;
     color: #4c4c4c;
-    font-size: 14px; }
+    font-size: 16px; }
   .page-template-tmp-tomox .staking_faq .accordion {
     background: transparent;
     color: #000;
@@ -15157,7 +15146,7 @@ Homepage Enterprise inside full
     transition: all .2s ease;
     position: relative;
     line-height: 1.5;
-    font-size: 16px;
+    font-size: 18px;
     font-weight: 500; }
     .page-template-tmp-tomox .staking_faq .accordion:after {
       content: "\e903";
@@ -15173,20 +15162,20 @@ Homepage Enterprise inside full
     -webkit-transform: rotate(-180deg);
             transform: rotate(-180deg); }
   .page-template-tmp-tomox .widget_tomo_address .address {
-    color: #8b96b5;
+    color: #b9c4df;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px; }
   .page-template-tmp-tomox .site-footer {
     background-color: #161b28; }
   .page-template-tmp-tomox .site-footer .widget_nav_menu ul a,
   .page-template-tmp-tomox .site-info {
-    color: #8b96b5;
+    color: #b9c4df;
     font-family: "Open Sans", Arial, sans-serif;
     font-size: 14px; }
   .page-template-tmp-tomox a,
   .page-template-tmp-tomox .nice-select span {
     text-decoration: none !important;
-    color: #8b96b5; }
+    color: #b9c4df; }
     .page-template-tmp-tomox a:hover,
     .page-template-tmp-tomox .nice-select span:hover {
       color: #fff; }
@@ -15296,8 +15285,7 @@ canvas {
   color: #000;
   opacity: .7;
   line-height: 2;
-  margin-bottom: 0px;
-  font-size: 13px; }
+  margin-bottom: 0px; }
 
 .row_comparison .tomoz-comparison ul {
   list-style: none;
@@ -15573,7 +15561,7 @@ canvas {
 .page-template-tmp-tomoz .z_txt_heading {
   color: #000;
   font-family: 'Bai Jamjuree', sans-serif;
-  font-size: 18px; }
+  font-size: 20px; }
 
 .page-template-tmp-tomoz .z_txt_subtitle {
   color: #4c4c4c; }
@@ -15694,7 +15682,7 @@ canvas {
 .page-template-tmp-tomoz .tomoz_faq .vc_toggle_content {
   padding-left: 0 !important;
   color: #4c4c4c;
-  font-size: 14px; }
+  font-size: 16px; }
 
 .page-template-tmp-tomoz .tomoz_faq .accordion {
   background: transparent;
@@ -15709,7 +15697,7 @@ canvas {
   transition: all .2s ease;
   position: relative;
   line-height: 1.5;
-  font-size: 16px;
+  font-size: 18px;
   font-weight: 500; }
   .page-template-tmp-tomoz .tomoz_faq .accordion:after {
     content: "\e903";
@@ -15851,6 +15839,9 @@ canvas {
     margin-left: 0;
     margin-right: 20px; }
 
+.tomochain-dapp__description {
+  color: #434f74; }
+
 .box_flexbox {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -15883,7 +15874,7 @@ canvas {
         margin: 0; }
     .tomochain-dapp .dapp-list .tomochain-dapp-item .dapp-info .dapp-title {
       font-size: 20px;
-      font-family: Quicksand,sans-serif;
+      font-family: Quicksand, sans-serif;
       margin: 0; }
 
 .bg_full_dapp {
@@ -15917,7 +15908,7 @@ canvas {
     margin-top: 50px; }
     .dapp_form .main_form_dapp .form_dapps .form-title {
       font-size: 18px;
-      font-family: Quicksand,sans-serif;
+      font-family: Quicksand, sans-serif;
       margin: 0;
       text-align: center;
       margin: 30px 0; }
@@ -16374,7 +16365,7 @@ canvas {
       color: #ebeaf5; }
   .tomochain-team-member__role {
     font-weight: 300;
-    color: #8b96b5;
+    color: #b9c4df;
     margin-bottom: 0; }
 
 .tomochain-team-member--is-advisor:hover .tomochain-team-member__image a:after {
@@ -16684,7 +16675,7 @@ canvas {
       transition: all .3s ease;
       position: relative;
       line-height: 1.5;
-      font-size: 16px; }
+      font-size: 18px; }
       .site-training .con_faq_enterprise .item-faq .accordion:after {
         content: "\e903";
         color: #252f5a;
@@ -16730,7 +16721,7 @@ canvas {
         margin: 0; }
     .site-training .tab-calendar .calendar-list .calendar-item .calendar-info .calendar-title {
       font-size: 20px;
-      font-family: Quicksand,sans-serif;
+      font-family: Quicksand, sans-serif;
       margin: 0; }
 
 .site-training .btn-submit .tomo_btn_tmp_grad {
@@ -16771,7 +16762,7 @@ canvas {
     padding-left: 30px; }
   .form-training .txt-desc {
     margin: 15px 0 30px;
-    color: #8b96b5;
+    color: #b9c4df;
     line-height: 22px; }
     .form-training .txt-desc a {
       text-decoration: underline !important; }
@@ -16801,7 +16792,7 @@ canvas {
     .form-training .form-group ::-ms-input-placeholder {
       /* Microsoft Edge */
       font-size: 14px;
-      color: #8b96b5; }
+      color: #b9c4df; }
     .form-training .form-group input,
     .form-training .form-group select,
     .form-training .form-group textarea {
@@ -17817,7 +17808,7 @@ body.mainnet-page {
   body.mainnet-page #coming-row .wpb_text_column {
     font-size: 18px;
     line-height: 40px;
-    color: #8b96b5; }
+    color: #b9c4df; }
     body.mainnet-page #coming-row .wpb_text_column a {
       color: #c67869; }
     body.mainnet-page #coming-row .wpb_text_column a:hover {
@@ -19254,7 +19245,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       .tomo-categories-filter li,
       .tomochain-roadmap-filter li,
       .tomochain-dapp-filter li {
-        margin-left: 50px; }
+        margin-right: 50px; }
   .width_st180 {
     width: 180% !important; }
   .width_st200 {
@@ -19627,7 +19618,6 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           .flexbox_solutions .tomochain_slider_nav .txt_item:last-child {
             margin-bottom: 0; }
           .flexbox_solutions .tomochain_slider_nav .txt_item .solutions {
-            font-size: 14px;
             position: relative;
             margin-bottom: 0;
             display: inline-block;
@@ -19810,7 +19800,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
           display: inline-block; }
           .flexbox_howto .tomochain_slider_nav .txt_item .howto:before {
             content: "→";
-            color: #8b96b5;
+            color: #b9c4df;
             font-size: 20px;
             position: absolute;
             width: 30px;
@@ -21134,7 +21124,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
             animation-fill-mode: forwards; }
   .animated .tomo_chart table {
     color: #5D66B2;
-    font-size: 12px;
+    font-size: 14px;
     text-align: center;
     vertical-align: bottom; }
     .animated .tomo_chart table td {
@@ -21155,7 +21145,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
     .animated .tomo_chart table .st_2 td {
       padding: 5px 2px !important;
       height: auto !important;
-      font-size: 13px;
+      font-size: 14px;
       vertical-align: top; }
     .animated .tomo_chart table .st_2 {
       color: #818AD8; }
@@ -22688,7 +22678,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         .tmp-landingpage .main-title .wpb_text_column {
           margin-bottom: 15px; }
       .tmp-landingpage .main-title {
-        top: 150px; }
+        top: 150px !important; }
     .con_game_run .title_item {
       font-size: 18px; }
         .submit_game .form_submit_game .form-submit-tomo .btn_submit {
@@ -22731,7 +22721,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
         height: 90px;
         top: -50px; }
     .page-template-tmp-staking .container_staking .content-tab-staking .content-tab--tomomaster .box_video {
-      padding: 2em 2em 5.4em; }
+      padding: .8em .6em 5.4em; }
   .page-template-tmp-staking .tomochain-taking-tab {
     margin: 0 0 3em; }
     .page-template-tmp-staking .tomochain-taking-tab .tab-tomomaster {
@@ -23454,7 +23444,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
               animation-fill-mode: forwards; }
     .not-opt .tomo_chart table {
       color: #5D66B2;
-      font-size: 12px;
+      font-size: 14px;
       text-align: center;
       vertical-align: bottom; }
       .not-opt .tomo_chart table td {
@@ -23472,7 +23462,7 @@ body.mainnet-page .wpb_revslider_element .tp-parallax-wrap:nth-child(33) .tp-cap
       .not-opt .tomo_chart table .st_2 td {
         padding: 5px 2px !important;
         height: auto !important;
-        font-size: 13px;
+        font-size: 14px;
         vertical-align: top; }
       .not-opt .tomo_chart table .st_2 {
         color: #818AD8; }
