@@ -34,9 +34,11 @@ $css_class = apply_filters( VC_SHORTCODE_CUSTOM_CSS_FILTER_TAG,
 	);
 	if(!empty($enter_categories)){
 		$args['tax_query'] = array(
-			'taxonomy' => 'enterprise_cat',
-			'field'    => 'term_id',
-			'terms'    => explode(',', $enter_categories),
+			array(
+                'taxonomy' => 'enterprise_cat',
+                'field'    => 'term_id',
+                'terms'    => explode(',', $enter_categories),
+            )
 		);
 	}
 	$enterprise = new WP_Query($args);

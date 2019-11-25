@@ -1,0 +1,2701 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Tomochain Addon\n"
+"POT-Creation-Date: 2019-09-04 14:46+0700\n"
+"PO-Revision-Date: 2019-09-04 14:46+0700\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.8.9\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: tmc-addon.php\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_tmcp:1,2;"
+"_nx_tmcp:3c,1,2;__ngettext_tmcp:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: tmc-addon.php:71
+#, php-format
+msgid ""
+"<strong>%s</strong> requires <strong><a href=\"https://wordpress.org/plugins/"
+"elementor/\" target=\"_blank\">Elementor</a></strong> plugin to be installed "
+"and activated on your site."
+msgstr ""
+
+#: tmc-addon.php:78
+#, php-format
+msgid ""
+"<strong>%s</strong> requires <strong>JM Core</strong> plugin to be installed "
+"and activated on your site."
+msgstr ""
+
+#: tmc-addon.php:103 tmc-addon.php:104
+#: includes/tmc-setup-install.php:212
+msgid "Quick Setup"
+msgstr ""
+
+#: includes/class-elementor-add-option.php:30
+#: includes/elementor-extra/client.php:96
+#: includes/elementor-extra/company.php:73
+#: includes/elementor-extra/company.php:222
+#: includes/elementor-extra/contact-form.php:141
+#: includes/elementor-extra/event-countdown.php:85
+#: includes/elementor-extra/event-countdown.php:245
+#: includes/elementor-extra/job-category.php:72
+#: includes/elementor-extra/job-location.php:259
+#: includes/elementor-extra/job.php:356 includes/elementor-extra/resume.php:79
+#: includes/elementor-extra/resume.php:245
+#: includes/elementor-extra/team-member.php:80
+#: includes/elementor-extra/testimonial.php:83
+msgid "Style"
+msgstr ""
+
+#: includes/class-elementor-add-option.php:33
+#: includes/elementor-extra/advanced_search.php:156
+#: includes/elementor-extra/company.php:76
+#: includes/elementor-extra/contact-form.php:145
+#: includes/elementor-extra/event-countdown.php:88
+#: includes/elementor-extra/job-location.php:100
+#: includes/elementor-extra/job.php:101 includes/elementor-extra/package.php:99
+#: includes/elementor-extra/resume.php:82
+#: includes/elementor-extra/service.php:144
+#: includes/elementor-extra/testimonial.php:86
+#: includes/elementor-extra/title.php:43
+msgid "Style 1"
+msgstr ""
+
+#: includes/class-elementor-add-option.php:34
+#: includes/elementor-extra/advanced_search.php:157
+#: includes/elementor-extra/company.php:77
+#: includes/elementor-extra/contact-form.php:146
+#: includes/elementor-extra/event-countdown.php:89
+#: includes/elementor-extra/job-location.php:101
+#: includes/elementor-extra/job.php:102
+#: includes/elementor-extra/package.php:100
+#: includes/elementor-extra/resume.php:83
+#: includes/elementor-extra/service.php:145
+#: includes/elementor-extra/testimonial.php:87
+#: includes/elementor-extra/title.php:44
+msgid "Style 2"
+msgstr ""
+
+#: includes/class-elementor-add-option.php:35
+#: includes/elementor-extra/company.php:78
+#: includes/elementor-extra/contact-form.php:147
+#: includes/elementor-extra/testimonial.php:88
+msgid "Style 3"
+msgstr ""
+
+#: includes/class-elementor-add-option.php:36
+msgid "Style 4"
+msgstr ""
+
+#: includes/class-elementor-add-option.php:43
+msgid "Select Icon"
+msgstr ""
+
+#: includes/class-elementor-add-option.php:93
+msgid "Icon Background Color"
+msgstr ""
+
+#. Plugin Name of the plugin/theme
+#: includes/class-elementor-extra-widgets.php:92
+msgid "Tomochain Addon"
+msgstr ""
+
+#: includes/class-elementor-extra-widgets.php:199
+#: includes/class-elementor-extra-widgets.php:211
+msgid "Cheatin&#8217; huh?"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:19
+#: includes/elementor-extra/advanced_search.php:106
+msgid "TMC Advanced Search"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:45
+#: includes/elementor-extra/advanced_search.php:65
+#: includes/elementor-extra/advanced_search.php:172
+#: includes/elementor-extra/job-location.php:170
+#: includes/elementor-extra/job-location.php:184
+#: includes/elementor-extra/job.php:236 includes/elementor-extra/job.php:278
+msgid "None"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:54
+#: includes/elementor-extra/advanced_search.php:75
+msgid "Custom Field: "
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:113
+msgid "Main Title"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:115
+msgid "Find Jobs"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:116
+msgid "type your title here"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:122
+msgid "Sub Title"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:125
+msgid "Join us & Explore thousands of Jobs"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:126
+#: includes/elementor-extra/call-to-action.php:141
+#: includes/elementor-extra/title.php:64
+msgid "Type your description here"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:132
+msgid " HTML Content"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:141
+msgid "Search Form Layout"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:144
+#: includes/elementor-extra/step-icon.php:72
+msgid "Layout 1"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:145
+#: includes/elementor-extra/step-icon.php:73
+msgid "Layout 2"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:153
+msgid "Form Search Style"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:158
+#: includes/elementor-extra/post-layout.php:135
+msgid "Overlay"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:166
+msgid "Background Type"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:169
+#: includes/elementor-extra/advanced_search.php:180
+msgid "Revolution Slider"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:170
+msgid "Image Slider"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:171
+msgid "One Image"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:193
+msgid "Slider Images"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:204
+msgid "Slider Time(ms)"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:226
+msgid "Slider Speed(ms)"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:248
+msgid "Slider Max Height(px)"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:270
+#: includes/elementor-extra/event-countdown.php:118
+#: includes/elementor-extra/service.php:217
+msgid "Background Image"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:286
+msgid "Image Max Height (px)"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:312
+msgid "Content Max Height (px)"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:337
+msgid "Search_type"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:340
+msgid "Job"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:341
+msgid "Resume"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:349
+msgid "Enable keyword search"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:351
+#: includes/elementor-extra/advanced_search.php:362
+#: includes/elementor-extra/company.php:192
+#: includes/elementor-extra/job-category.php:113
+#: includes/elementor-extra/job-category.php:124
+#: includes/elementor-extra/job-location.php:133
+#: includes/elementor-extra/job-location.php:169
+#: includes/elementor-extra/job-location.php:183
+#: includes/elementor-extra/job.php:72 includes/elementor-extra/job.php:173
+#: includes/elementor-extra/job.php:277 includes/elementor-extra/job.php:289
+#: includes/elementor-extra/job.php:302
+#: includes/elementor-extra/testimonial.php:192
+#: includes/elementor-extra/text-info.php:98
+msgid "Show"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:352
+#: includes/elementor-extra/advanced_search.php:363
+#: includes/elementor-extra/company.php:193
+#: includes/elementor-extra/job-category.php:112
+#: includes/elementor-extra/job-category.php:125
+#: includes/elementor-extra/job-location.php:134
+#: includes/elementor-extra/job.php:174 includes/elementor-extra/job.php:290
+#: includes/elementor-extra/job.php:303
+#: includes/elementor-extra/post-layout.php:308
+#: includes/elementor-extra/post-layout.php:359
+#: includes/elementor-extra/post-layout.php:414
+#: includes/elementor-extra/post-layout.php:508
+#: includes/elementor-extra/promotion.php:75
+#: includes/elementor-extra/promotion.php:100
+#: includes/elementor-extra/resume.php:159
+#: includes/elementor-extra/service.php:235
+#: includes/elementor-extra/step-icon.php:214
+#: includes/elementor-extra/testimonial.php:193
+#: includes/elementor-extra/text-info.php:99
+msgid "Hide"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:360
+msgid "Enable More Filter"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:371
+#: includes/elementor-extra/client.php:118
+#: includes/elementor-extra/company.php:139
+#: includes/elementor-extra/job-category.php:146
+#: includes/elementor-extra/job-location.php:113
+#: includes/elementor-extra/job.php:114
+#: includes/elementor-extra/package.php:110
+#: includes/elementor-extra/post-layout.php:157
+#: includes/elementor-extra/service.php:274
+#: includes/elementor-extra/step-icon.php:253
+#: includes/elementor-extra/team-member.php:93
+#: includes/elementor-extra/testimonial.php:118
+msgid "Columns"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:389
+#: includes/elementor-extra/advanced_search.php:492
+msgid "Search Position 2"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:401
+#: includes/elementor-extra/advanced_search.php:504
+msgid "Search Position 3"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:413
+#: includes/elementor-extra/advanced_search.php:516
+msgid "Search Position 5"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:426
+#: includes/elementor-extra/advanced_search.php:529
+msgid "Search Position 6"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:439
+#: includes/elementor-extra/advanced_search.php:542
+msgid "Search Position 7"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:452
+#: includes/elementor-extra/advanced_search.php:555
+msgid "Search Position 8"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:465
+#: includes/elementor-extra/advanced_search.php:568
+msgid "Search Position 9"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:478
+#: includes/elementor-extra/advanced_search.php:581
+msgid "Search Position 10"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:594
+#: includes/elementor-extra/job-category.php:218
+#: includes/elementor-extra/job.php:338
+msgid "Visibility"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:597
+#: includes/elementor-extra/job-category.php:221
+#: includes/elementor-extra/job.php:341
+msgid "All Devices"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:598
+#: includes/elementor-extra/job-category.php:222
+#: includes/elementor-extra/job.php:342
+msgid "Hidden phone"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:599
+#: includes/elementor-extra/job-category.php:223
+#: includes/elementor-extra/job.php:343
+msgid "Hidden Tablet"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:600
+#: includes/elementor-extra/job-category.php:224
+#: includes/elementor-extra/job.php:344
+msgid "Hidden PC"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:601
+#: includes/elementor-extra/job-category.php:225
+#: includes/elementor-extra/job.php:345
+msgid "Visible Phone"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:602
+#: includes/elementor-extra/job-category.php:226
+#: includes/elementor-extra/job.php:346
+msgid "Visible Tablet"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:603
+#: includes/elementor-extra/job-category.php:227
+#: includes/elementor-extra/job.php:347
+msgid "Visible PC"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:613
+msgid "Style Advanced"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:620
+msgid "Content Align"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:624
+#: includes/elementor-extra/advanced_search.php:647
+#: includes/elementor-extra/button-form.php:87
+#: includes/elementor-extra/button-form.php:173
+#: includes/elementor-extra/call-to-action.php:72
+#: includes/elementor-extra/call-to-action.php:104
+#: includes/elementor-extra/call-to-action.php:189
+#: includes/elementor-extra/contact-form.php:104
+#: includes/elementor-extra/job.php:249
+#: includes/elementor-extra/testimonial.php:209
+#: includes/elementor-extra/text-info.php:51
+#: includes/elementor-extra/title.php:156
+msgid "Left"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:628
+#: includes/elementor-extra/advanced_search.php:651
+#: includes/elementor-extra/button-form.php:91
+#: includes/elementor-extra/button-form.php:177
+#: includes/elementor-extra/call-to-action.php:76
+#: includes/elementor-extra/call-to-action.php:105
+#: includes/elementor-extra/contact-form.php:108
+#: includes/elementor-extra/job.php:253
+#: includes/elementor-extra/testimonial.php:213
+#: includes/elementor-extra/text-info.php:55
+#: includes/elementor-extra/title.php:160
+msgid "Center"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:632
+#: includes/elementor-extra/advanced_search.php:655
+#: includes/elementor-extra/button-form.php:95
+#: includes/elementor-extra/button-form.php:181
+#: includes/elementor-extra/call-to-action.php:80
+#: includes/elementor-extra/call-to-action.php:106
+#: includes/elementor-extra/call-to-action.php:190
+#: includes/elementor-extra/contact-form.php:112
+#: includes/elementor-extra/job.php:257
+#: includes/elementor-extra/testimonial.php:217
+#: includes/elementor-extra/text-info.php:59
+#: includes/elementor-extra/title.php:164
+msgid "Right"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:643
+msgid "Text Align"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:666
+msgid "Content Width"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:688
+msgid "Color Title"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:703
+msgid "Typography Title"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:711
+msgid "Color Sub Title"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:726
+msgid "Typography Sub Title"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:735
+msgid "Color HTML Content"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:749
+msgid "Content bottom Position"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:771
+msgid "Title Bottom Position"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:915
+#: includes/elementor-extra/advanced_search.php:916
+#: includes/elementor-extra/advanced_search.php:1038
+#: includes/elementor-extra/advanced_search.php:1039
+msgid "Keyword"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:933
+msgid "find opportunity"
+msgstr ""
+
+#: includes/elementor-extra/advanced_search.php:1056
+msgid "find now"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:18
+#: includes/elementor-extra/button-form.php:42
+msgid "TMC Button Form"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:50
+msgid "Title Button Form"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:52
+msgid "Button Form"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:53
+#: includes/elementor-extra/call-to-action.php:130
+#: includes/elementor-extra/call-to-action.php:158
+#: includes/elementor-extra/text-info.php:78
+#: includes/elementor-extra/title.php:55
+msgid "Type your title here"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:59
+msgid "Postion Title"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:62
+#: includes/elementor-extra/promotion.php:169
+msgid "Top"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:63
+#: includes/elementor-extra/promotion.php:170
+msgid "Bottom"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:75
+#: includes/elementor-extra/call-to-action.php:294
+#: includes/elementor-extra/contact-form.php:158
+#: includes/elementor-extra/promotion.php:129
+#: includes/elementor-extra/text-info.php:138
+#: includes/elementor-extra/text-info.php:178
+#: includes/elementor-extra/title.php:135
+msgid "Typography for Title"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:83
+#: includes/elementor-extra/button-form.php:169
+#: includes/elementor-extra/text-info.php:47
+#: includes/elementor-extra/title.php:152
+msgid "Align"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:110
+#: includes/elementor-extra/call-to-action.php:147
+#: includes/elementor-extra/call-to-action.php:333
+#: includes/elementor-extra/post-layout.php:529
+#: includes/elementor-extra/promotion.php:147
+#: includes/elementor-extra/promotion.php:291
+#: includes/elementor-extra/service.php:229
+#: includes/elementor-extra/step-icon.php:208
+msgid "Button"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:115
+#: includes/elementor-extra/call-to-action.php:155
+#: includes/elementor-extra/event-countdown.php:170
+msgid "Button Text"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:117
+msgid "Click Button"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:118
+msgid "type your name button"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:122
+#: includes/elementor-extra/call-to-action.php:164
+#: includes/elementor-extra/post-layout.php:334
+#: includes/elementor-extra/post-layout.php:390
+#: includes/elementor-extra/team-member.php:216
+#: includes/elementor-extra/team-member.php:234
+#: includes/elementor-extra/team-member.php:252
+#: includes/elementor-extra/team-member.php:270
+msgid "Link"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:129
+#: includes/elementor-extra/service.php:129
+msgid "Icons"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:135
+msgid "Width Item"
+msgstr ""
+
+#: includes/elementor-extra/button-form.php:152
+msgid "Width Button"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:27
+msgid "TMC Call To Action"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:62
+#: includes/elementor-extra/client.php:76
+#: includes/elementor-extra/contact-form.php:75
+#: includes/elementor-extra/embeb.php:55
+#: includes/elementor-extra/job-location.php:79
+#: includes/elementor-extra/post-layout.php:112
+#: includes/elementor-extra/promotion.php:60
+#: includes/elementor-extra/service.php:63
+#: includes/elementor-extra/step-icon.php:61
+#: includes/elementor-extra/team-member.php:73
+#: includes/tmc-setup-install.php:645
+msgid "General Options"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:68
+msgid "Alignment"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:93
+#: includes/elementor-extra/call-to-action.php:178
+#: includes/elementor-extra/promotion.php:179
+#: includes/elementor-extra/step-icon.php:118
+#: includes/elementor-extra/team-member.php:210
+#: includes/elementor-extra/team-member.php:228
+#: includes/elementor-extra/team-member.php:246
+#: includes/elementor-extra/team-member.php:264
+msgid "Select icon"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:101
+#: includes/elementor-extra/call-to-action.php:186
+#: includes/elementor-extra/job-location.php:392
+#: includes/elementor-extra/promotion.php:166
+#: includes/elementor-extra/team-member.php:201
+msgid "Position"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:117
+#: includes/elementor-extra/call-to-action.php:125
+#: includes/elementor-extra/service.php:205
+msgid "Title & Description"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:129
+msgid "Default title"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:136
+#: includes/elementor-extra/call-to-action.php:305
+#: includes/elementor-extra/event-countdown.php:161
+#: includes/elementor-extra/promotion.php:109
+#: includes/elementor-extra/text-info.php:84
+#: includes/elementor-extra/text-info.php:170
+msgid "Description"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:140
+msgid "Default description"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:157
+msgid "Post a Job"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:166
+#: includes/elementor-extra/client.php:215
+#: includes/elementor-extra/event-countdown.php:179
+#: includes/elementor-extra/promotion.php:190
+#: includes/elementor-extra/service.php:254
+#: includes/elementor-extra/step-icon.php:233
+#: includes/elementor-extra/team-member.php:219
+#: includes/elementor-extra/team-member.php:237
+#: includes/elementor-extra/team-member.php:255
+#: includes/elementor-extra/team-member.php:273
+msgid "https://your-link.com"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:208
+#: includes/elementor-extra/text-info.php:110
+msgid "General"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:215
+#: includes/elementor-extra/text-info.php:117
+msgid "Padding"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:226
+#: includes/elementor-extra/post-layout.php:981
+msgid "Border Radius"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:250
+#: includes/elementor-extra/testimonial.php:97
+msgid "Background"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:259
+#: includes/elementor-extra/service.php:406
+#: includes/elementor-extra/service.php:467
+msgid "Icon Color"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:275
+#: includes/elementor-extra/client.php:205
+#: includes/elementor-extra/company.php:117
+#: includes/elementor-extra/contact-form.php:82
+#: includes/elementor-extra/post-layout.php:182
+#: includes/elementor-extra/post-layout.php:351
+#: includes/elementor-extra/promotion.php:210
+#: includes/elementor-extra/step-icon.php:184
+#: includes/elementor-extra/text-info.php:75
+#: includes/elementor-extra/text-info.php:130
+#: includes/elementor-extra/title.php:52
+msgid "Title"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:283
+#: includes/elementor-extra/call-to-action.php:313
+#: includes/elementor-extra/call-to-action.php:359
+#: includes/elementor-extra/call-to-action.php:389
+#: includes/elementor-extra/event-countdown.php:321
+#: includes/elementor-extra/promotion.php:241
+#: includes/elementor-extra/promotion.php:277
+#: includes/elementor-extra/service.php:481
+#: includes/elementor-extra/service.php:573
+#: includes/elementor-extra/service.php:673
+msgid "Color"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:323
+msgid "Typography for Description"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:342
+#: includes/elementor-extra/job-location.php:269
+#: includes/elementor-extra/promotion.php:359
+#: includes/elementor-extra/service.php:339
+#: includes/elementor-extra/service.php:400
+#: includes/elementor-extra/service.php:518
+#: includes/elementor-extra/service.php:610
+#: includes/elementor-extra/step-icon.php:362
+msgid "Normal"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:349
+#: includes/elementor-extra/call-to-action.php:379
+#: includes/elementor-extra/event-countdown.php:331
+#: includes/elementor-extra/service.php:356
+#: includes/elementor-extra/service.php:525
+#: includes/elementor-extra/step-icon.php:369
+#: includes/elementor-extra/step-icon.php:416
+msgid "Background Color"
+msgstr ""
+
+#: includes/elementor-extra/call-to-action.php:372
+#: includes/elementor-extra/job-location.php:308
+#: includes/elementor-extra/promotion.php:378
+#: includes/elementor-extra/service.php:348
+#: includes/elementor-extra/service.php:461
+#: includes/elementor-extra/service.php:538
+#: includes/elementor-extra/service.php:666
+#: includes/elementor-extra/step-icon.php:409
+msgid "Hover"
+msgstr ""
+
+#: includes/elementor-extra/client.php:27
+msgid "TMC Client"
+msgstr ""
+
+#: includes/elementor-extra/client.php:83
+#: includes/elementor-extra/company.php:61 includes/elementor-extra/job.php:84
+#: includes/elementor-extra/post-layout.php:118
+#: includes/elementor-extra/resume.php:66
+#: includes/elementor-extra/service.php:138
+msgid "Layout"
+msgstr ""
+
+#: includes/elementor-extra/client.php:86
+#: includes/elementor-extra/company.php:64
+#: includes/elementor-extra/job-location.php:88
+#: includes/elementor-extra/job.php:87
+#: includes/elementor-extra/post-layout.php:121
+#: includes/elementor-extra/resume.php:70
+#: includes/elementor-extra/team-member.php:83
+msgid "Grid"
+msgstr ""
+
+#: includes/elementor-extra/client.php:87
+#: includes/elementor-extra/company.php:65
+#: includes/elementor-extra/job-location.php:89
+#: includes/elementor-extra/job.php:89
+#: includes/elementor-extra/post-layout.php:123
+#: includes/elementor-extra/team-member.php:84
+msgid "Slider"
+msgstr ""
+
+#: includes/elementor-extra/client.php:99
+msgid "Natural"
+msgstr ""
+
+#: includes/elementor-extra/client.php:100
+msgid "Gray"
+msgstr ""
+
+#: includes/elementor-extra/client.php:108
+msgid "Border"
+msgstr ""
+
+#: includes/elementor-extra/client.php:109
+#: includes/elementor-extra/client.php:137
+#: includes/elementor-extra/client.php:150
+#: includes/elementor-extra/client.php:163
+#: includes/elementor-extra/client.php:176
+#: includes/elementor-extra/contact-form.php:135
+#: includes/elementor-extra/event-countdown.php:190
+#: includes/elementor-extra/event-countdown.php:200
+#: includes/elementor-extra/event-countdown.php:223
+#: includes/elementor-extra/event-countdown.php:233
+#: includes/elementor-extra/job-category.php:165
+#: includes/elementor-extra/job-category.php:179
+#: includes/elementor-extra/job-category.php:193
+#: includes/elementor-extra/job-category.php:207
+#: includes/elementor-extra/post-layout.php:228
+#: includes/elementor-extra/post-layout.php:242
+#: includes/elementor-extra/post-layout.php:267
+#: includes/elementor-extra/post-layout.php:281
+#: includes/elementor-extra/team-member.php:112
+#: includes/elementor-extra/team-member.php:126
+#: includes/elementor-extra/team-member.php:140
+#: includes/elementor-extra/team-member.php:153
+msgid "Off"
+msgstr ""
+
+#: includes/elementor-extra/client.php:110
+#: includes/elementor-extra/client.php:138
+#: includes/elementor-extra/client.php:151
+#: includes/elementor-extra/client.php:164
+#: includes/elementor-extra/client.php:177
+#: includes/elementor-extra/contact-form.php:134
+#: includes/elementor-extra/event-countdown.php:191
+#: includes/elementor-extra/event-countdown.php:201
+#: includes/elementor-extra/event-countdown.php:224
+#: includes/elementor-extra/event-countdown.php:234
+#: includes/elementor-extra/job-category.php:166
+#: includes/elementor-extra/job-category.php:180
+#: includes/elementor-extra/job-category.php:194
+#: includes/elementor-extra/job-category.php:208
+#: includes/elementor-extra/post-layout.php:229
+#: includes/elementor-extra/post-layout.php:243
+#: includes/elementor-extra/post-layout.php:268
+#: includes/elementor-extra/post-layout.php:282
+#: includes/elementor-extra/team-member.php:113
+#: includes/elementor-extra/team-member.php:127
+#: includes/elementor-extra/team-member.php:141
+#: includes/elementor-extra/team-member.php:154
+msgid "On"
+msgstr ""
+
+#: includes/elementor-extra/client.php:135
+#: includes/elementor-extra/event-countdown.php:188
+#: includes/elementor-extra/job-category.php:177
+#: includes/elementor-extra/post-layout.php:226
+#: includes/elementor-extra/team-member.php:110
+msgid "Loop"
+msgstr ""
+
+#: includes/elementor-extra/client.php:148
+#: includes/elementor-extra/company.php:154
+#: includes/elementor-extra/event-countdown.php:198
+#: includes/elementor-extra/job-category.php:163
+#: includes/elementor-extra/post-layout.php:240
+#: includes/elementor-extra/resume.php:126
+#: includes/elementor-extra/team-member.php:124
+#: includes/elementor-extra/testimonial.php:136
+msgid "Auto Play"
+msgstr ""
+
+#: includes/elementor-extra/client.php:161
+#: includes/elementor-extra/event-countdown.php:221
+#: includes/elementor-extra/job-category.php:191
+#: includes/elementor-extra/post-layout.php:265
+#: includes/elementor-extra/team-member.php:138
+msgid "Show Navigation"
+msgstr ""
+
+#: includes/elementor-extra/client.php:174
+#: includes/elementor-extra/company.php:190
+#: includes/elementor-extra/event-countdown.php:231
+#: includes/elementor-extra/job-category.php:205
+#: includes/elementor-extra/job-location.php:167
+#: includes/elementor-extra/job.php:275
+#: includes/elementor-extra/post-layout.php:279
+#: includes/elementor-extra/resume.php:156
+#: includes/elementor-extra/team-member.php:151
+msgid "Show Pagination"
+msgstr ""
+
+#: includes/elementor-extra/client.php:187
+#: includes/elementor-extra/client.php:232
+msgid "Client Item"
+msgstr ""
+
+#: includes/elementor-extra/client.php:208
+#: includes/elementor-extra/client.php:209
+#: includes/elementor-extra/client.php:246
+msgid "Client"
+msgstr ""
+
+#: includes/elementor-extra/client.php:212
+msgid "Url"
+msgstr ""
+
+#: includes/elementor-extra/client.php:223
+#: includes/elementor-extra/job-location.php:218
+#: includes/elementor-extra/team-member.php:185
+msgid "Choose Image"
+msgstr ""
+
+#: includes/elementor-extra/client.php:282
+#: includes/elementor-extra/post-layout.php:582
+#: includes/elementor-extra/team-member.php:330
+#, php-format
+msgid "%s <i class=\"fa fa-angle-right\" aria-hidden=\"true\"></i>"
+msgstr ""
+
+#: includes/elementor-extra/client.php:282
+#: includes/elementor-extra/post-layout.php:582
+#: includes/elementor-extra/post-layout.php:671
+#: includes/elementor-extra/team-member.php:330
+msgid "Next"
+msgstr ""
+
+#: includes/elementor-extra/client.php:283
+#: includes/elementor-extra/post-layout.php:583
+#: includes/elementor-extra/team-member.php:331
+#, php-format
+msgid "<i class=\"fa fa-angle-left\" aria-hidden=\"true\"></i> %s"
+msgstr ""
+
+#: includes/elementor-extra/client.php:283
+#: includes/elementor-extra/post-layout.php:583
+#: includes/elementor-extra/post-layout.php:670
+#: includes/elementor-extra/team-member.php:331
+msgid "Previous"
+msgstr ""
+
+#: includes/elementor-extra/company.php:14
+#: includes/elementor-extra/company.php:42
+msgid "TMC Company"
+msgstr ""
+
+#: includes/elementor-extra/company.php:49
+msgid "Featured Company Only"
+msgstr ""
+
+#: includes/elementor-extra/company.php:52
+#: includes/elementor-extra/company.php:156
+#: includes/elementor-extra/event-countdown.php:211
+#: includes/elementor-extra/post-layout.php:256
+#: includes/elementor-extra/resume.php:97
+#: includes/elementor-extra/resume.php:128
+#: includes/elementor-extra/testimonial.php:138
+#: includes/elementor-extra/testimonial.php:149
+#: includes/elementor-extra/testimonial.php:161
+msgid "Yes"
+msgstr ""
+
+#: includes/elementor-extra/company.php:53
+#: includes/elementor-extra/company.php:157
+#: includes/elementor-extra/event-countdown.php:212
+#: includes/elementor-extra/post-layout.php:257
+#: includes/elementor-extra/resume.php:98
+#: includes/elementor-extra/resume.php:129
+#: includes/elementor-extra/testimonial.php:139
+#: includes/elementor-extra/testimonial.php:150
+#: includes/elementor-extra/testimonial.php:162
+msgid "No"
+msgstr ""
+
+#: includes/elementor-extra/company.php:87
+msgid "Logo Style"
+msgstr ""
+
+#: includes/elementor-extra/company.php:90
+#: includes/elementor-extra/step-icon.php:166
+msgid "Square"
+msgstr ""
+
+#: includes/elementor-extra/company.php:91
+#: includes/elementor-extra/step-icon.php:165
+msgid "Circle"
+msgstr ""
+
+#: includes/elementor-extra/company.php:92
+msgid "No Border"
+msgstr ""
+
+#: includes/elementor-extra/company.php:103
+#: includes/elementor-extra/job.php:132
+msgid "Posts Per Page"
+msgstr ""
+
+#: includes/elementor-extra/company.php:114
+msgid "OrderBy"
+msgstr ""
+
+#: includes/elementor-extra/company.php:118
+msgid "Job Count"
+msgstr ""
+
+#: includes/elementor-extra/company.php:126
+msgid "Order"
+msgstr ""
+
+#: includes/elementor-extra/company.php:129
+#: includes/elementor-extra/post-layout.php:197
+msgid "ASC"
+msgstr ""
+
+#: includes/elementor-extra/company.php:130
+#: includes/elementor-extra/post-layout.php:198
+msgid "DESC"
+msgstr ""
+
+#: includes/elementor-extra/company.php:168
+msgid "Slide Speed"
+msgstr ""
+
+#: includes/elementor-extra/company.php:201
+#: includes/elementor-extra/job.php:314
+#: includes/elementor-extra/package.php:124
+#: includes/elementor-extra/service.php:291
+#: includes/elementor-extra/step-icon.php:284
+#: includes/elementor-extra/team-member.php:283
+#: includes/elementor-extra/testimonial.php:261
+msgid "Item Spacing"
+msgstr ""
+
+#: includes/elementor-extra/company.php:229
+#: includes/elementor-extra/job-location.php:275
+#: includes/elementor-extra/job-location.php:314
+#: includes/elementor-extra/job.php:363 includes/elementor-extra/resume.php:252
+#: includes/elementor-extra/step-icon.php:304
+msgid "Primary Color"
+msgstr ""
+
+#: includes/elementor-extra/contact-form.php:27
+msgid "TMC Contact Form 7"
+msgstr ""
+
+#: includes/elementor-extra/contact-form.php:84
+msgid "Enter text heading"
+msgstr ""
+
+#: includes/elementor-extra/contact-form.php:85
+msgid "Don't miss"
+msgstr ""
+
+#: includes/elementor-extra/contact-form.php:92
+msgid "Enter description"
+msgstr ""
+
+#: includes/elementor-extra/contact-form.php:93
+msgid "the latest tech news from us!"
+msgstr ""
+
+#: includes/elementor-extra/contact-form.php:100
+msgid "Tittle Align"
+msgstr ""
+
+#: includes/elementor-extra/contact-form.php:123
+msgid "Select Form"
+msgstr ""
+
+#: includes/elementor-extra/contact-form.php:132
+msgid "Form for MailChimp"
+msgstr ""
+
+#: includes/elementor-extra/contact-form.php:167
+#: includes/elementor-extra/job-category.php:86
+#: includes/elementor-extra/job-location.php:285
+#: includes/elementor-extra/job-location.php:324
+#: includes/elementor-extra/promotion.php:366
+#: includes/elementor-extra/promotion.php:385
+msgid "Text Color"
+msgstr ""
+
+#: includes/elementor-extra/contact-form.php:203
+msgid "Make sure you have enabled Contact Form 7 plugin."
+msgstr ""
+
+#: includes/elementor-extra/embeb.php:24
+msgid "TMC Embeb"
+msgstr ""
+
+#: includes/elementor-extra/embeb.php:61
+msgid "Type Code"
+msgstr ""
+
+#: includes/elementor-extra/embeb.php:64
+msgid "Embeb"
+msgstr ""
+
+#: includes/elementor-extra/embeb.php:65
+msgid "Custom HTML"
+msgstr ""
+
+#: includes/elementor-extra/embeb.php:73
+msgid "Add Code"
+msgstr ""
+
+#: includes/elementor-extra/embeb.php:82
+msgid "Note"
+msgstr ""
+
+#: includes/elementor-extra/embeb.php:94
+#: includes/elementor-extra/event-countdown.php:253
+msgid "Height"
+msgstr ""
+
+#: includes/elementor-extra/embeb.php:126
+#: includes/elementor-extra/promotion.php:203
+#: includes/elementor-extra/step-icon.php:276
+msgid "Style Options"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:26
+msgid "TMC Event Countdown"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:78
+msgid "Event Options"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:96
+msgid "Event Item"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:112
+msgid "Time Countdown"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:113
+msgid "Set the event end time"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:129
+msgid "Banner"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:143
+msgid "Event name"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:148
+#: includes/elementor-extra/job.php:210
+#: includes/elementor-extra/post-layout.php:181
+#: includes/elementor-extra/post-layout.php:431
+#: includes/elementor-extra/resume.php:203
+msgid "Date"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:153
+msgid "Time"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:165
+#: includes/elementor-extra/job-indeed.php:69
+#: includes/elementor-extra/job-location.php:228
+msgid "Location"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:173
+msgid "JOIN NOW"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:176
+#: includes/elementor-extra/promotion.php:188
+#: includes/elementor-extra/service.php:251
+#: includes/elementor-extra/step-icon.php:230
+msgid "Button Link"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:209
+#: includes/elementor-extra/post-layout.php:254
+#: includes/elementor-extra/testimonial.php:147
+msgid "Auto Height"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:272
+#: includes/elementor-extra/service.php:416
+#: includes/elementor-extra/text-info.php:146
+#: includes/elementor-extra/title.php:106
+msgid "Title Color"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:285
+#: includes/elementor-extra/service.php:428
+#: includes/elementor-extra/service.php:632
+#: includes/elementor-extra/testimonial.php:292
+msgid "Content Color"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:298
+#: includes/elementor-extra/step-icon.php:460
+msgid "Button Background Color"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:314
+msgid "Countdown"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:364
+msgid "Day"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:365
+msgid "Hour"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:366
+msgid "Min"
+msgstr ""
+
+#: includes/elementor-extra/event-countdown.php:367
+msgid "Sec"
+msgstr ""
+
+#: includes/elementor-extra/job-category.php:15
+msgid "TMC Job Category"
+msgstr ""
+
+#: includes/elementor-extra/job-category.php:65
+msgid "Job Category Options"
+msgstr ""
+
+#: includes/elementor-extra/job-category.php:75
+#: includes/elementor-extra/job-location.php:97
+msgid "Style Grid"
+msgstr ""
+
+#: includes/elementor-extra/job-category.php:76
+msgid "Style Grid Two"
+msgstr ""
+
+#: includes/elementor-extra/job-category.php:77
+msgid "Style List"
+msgstr ""
+
+#: includes/elementor-extra/job-category.php:78
+msgid "Style Slider"
+msgstr ""
+
+#: includes/elementor-extra/job-category.php:101
+msgid "Select Job Category"
+msgstr ""
+
+#: includes/elementor-extra/job-category.php:110
+msgid "Hide Empty"
+msgstr ""
+
+#: includes/elementor-extra/job-category.php:122
+msgid "Show Job Count"
+msgstr ""
+
+#: includes/elementor-extra/job-category.php:133
+msgid "Limit Category"
+msgstr ""
+
+#: includes/elementor-extra/job-category.php:236
+msgid "Item Spacing for Grid"
+msgstr ""
+
+#: includes/elementor-extra/job-category.php:358
+#: includes/elementor-extra/job-category.php:390
+#: includes/elementor-extra/tmc-company/style-1.php:32
+#: includes/elementor-extra/tmc-company/style-2.php:32
+#: includes/elementor-extra/tmc-company/style-3.php:21
+#, php-format
+msgid "%s Job"
+msgid_plural "%s Jobs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/elementor-extra/job-indeed.php:14
+msgid "TMC Jobs Indeed"
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:52
+msgid "TMC Job Indeed "
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:59
+msgid "Query"
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:61
+msgid "Design"
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:62
+msgid "Enter terms"
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:63
+msgid ""
+"Enter terms to search for by default. By default terms are ANDed. Search for "
+"multiple terms at once by using the \"or\" keyword between each keyword."
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:71
+msgid "new york"
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:72
+msgid "Enter Job Location"
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:78
+#: includes/elementor-extra/job.php:153
+msgid "Job Type"
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:86
+msgid "Country"
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:88
+msgid "us"
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:89
+msgid "Enter country"
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:95
+msgid "Job Per Page"
+msgstr ""
+
+#: includes/elementor-extra/job-indeed.php:137
+msgid "Load More"
+msgstr ""
+
+#: includes/elementor-extra/job-location.php:27
+msgid "TMC Job Location"
+msgstr ""
+
+#: includes/elementor-extra/job-location.php:85
+msgid "Display Style"
+msgstr ""
+
+#: includes/elementor-extra/job-location.php:131
+#: includes/elementor-extra/job.php:171
+msgid "Show Auto Play"
+msgstr ""
+
+#: includes/elementor-extra/job-location.php:145
+#: includes/elementor-extra/job.php:185 includes/elementor-extra/resume.php:141
+msgid "Slide Speed(ms)"
+msgstr ""
+
+#: includes/elementor-extra/job-location.php:181
+msgid "Show Dots"
+msgstr ""
+
+#: includes/elementor-extra/job-location.php:195
+msgid "Job Locations"
+msgstr ""
+
+#: includes/elementor-extra/job-location.php:199
+msgid "Location 1"
+msgstr ""
+
+#: includes/elementor-extra/job-location.php:202
+msgid "Location 2"
+msgstr ""
+
+#: includes/elementor-extra/job-location.php:205
+msgid "Location 3"
+msgstr ""
+
+#: includes/elementor-extra/job-location.php:208
+msgid "Location 4"
+msgstr ""
+
+#: includes/elementor-extra/job-location.php:211
+msgid "Location 5"
+msgstr ""
+
+#: includes/elementor-extra/job-location.php:400
+msgid "Please select Location for each Item"
+msgstr ""
+
+#: includes/elementor-extra/job.php:14
+msgid "TMC Jobs"
+msgstr ""
+
+#: includes/elementor-extra/job.php:65
+msgid "TMC Job"
+msgstr ""
+
+#: includes/elementor-extra/job.php:75 includes/elementor-extra/job.php:224
+#: includes/elementor-extra/resume.php:217
+msgid "Recent"
+msgstr ""
+
+#: includes/elementor-extra/job.php:76 includes/elementor-extra/job.php:212
+#: includes/elementor-extra/resume.php:205
+msgid "Featured"
+msgstr ""
+
+#: includes/elementor-extra/job.php:88
+#: includes/elementor-extra/post-layout.php:122
+#: includes/elementor-extra/resume.php:69
+msgid "List"
+msgstr ""
+
+#: includes/elementor-extra/job.php:98
+msgid "Slider Style"
+msgstr ""
+
+#: includes/elementor-extra/job.php:144 includes/elementor-extra/resume.php:182
+msgid "Job Category"
+msgstr ""
+
+#: includes/elementor-extra/job.php:162 includes/elementor-extra/resume.php:191
+msgid "Job Location"
+msgstr ""
+
+#: includes/elementor-extra/job.php:207
+#: includes/elementor-extra/post-layout.php:178
+#: includes/elementor-extra/resume.php:200
+msgid "Order by"
+msgstr ""
+
+#: includes/elementor-extra/job.php:211 includes/elementor-extra/resume.php:204
+#: includes/elementor-extra/step-icon.php:143
+msgid "View"
+msgstr ""
+
+#: includes/elementor-extra/job.php:213
+#: includes/elementor-extra/post-layout.php:185
+#: includes/elementor-extra/resume.php:206
+msgid "Random"
+msgstr ""
+
+#: includes/elementor-extra/job.php:221 includes/elementor-extra/resume.php:214
+msgid "Sort By"
+msgstr ""
+
+#: includes/elementor-extra/job.php:225 includes/elementor-extra/resume.php:218
+msgid "Older"
+msgstr ""
+
+#: includes/elementor-extra/job.php:233
+msgid "Filter Isotope"
+msgstr ""
+
+#: includes/elementor-extra/job.php:235
+msgid "Use"
+msgstr ""
+
+#: includes/elementor-extra/job.php:245
+msgid "Filter Align"
+msgstr ""
+
+#: includes/elementor-extra/job.php:287
+msgid "Show View More"
+msgstr ""
+
+#: includes/elementor-extra/job.php:300
+msgid "Show Job Tool"
+msgstr ""
+
+#: includes/elementor-extra/package.php:19
+msgid "TMC Package"
+msgstr ""
+
+#: includes/elementor-extra/package.php:71
+msgid "Packages Options"
+msgstr ""
+
+#: includes/elementor-extra/package.php:78
+msgid "Type Package"
+msgstr ""
+
+#: includes/elementor-extra/package.php:82
+msgid "Job Package"
+msgstr ""
+
+#: includes/elementor-extra/package.php:86
+msgid "Resume Package"
+msgstr ""
+
+#: includes/elementor-extra/package.php:96
+msgid "Packages Style"
+msgstr ""
+
+#: includes/elementor-extra/package.php:204
+msgid "Unlimited job posting"
+msgstr ""
+
+#: includes/elementor-extra/package.php:204
+#, php-format
+msgid "%s job posting"
+msgid_plural "%s jobs posting"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/elementor-extra/package.php:207
+msgid "Unlimited featured job"
+msgstr ""
+
+#: includes/elementor-extra/package.php:207
+#, php-format
+msgid "%s featured job"
+msgid_plural "%s featured jobs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/elementor-extra/package.php:210
+msgid "Unlimited refresh job"
+msgstr ""
+
+#: includes/elementor-extra/package.php:210
+#, php-format
+msgid "%s refresh job"
+msgid_plural "%s refresh jobs"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/elementor-extra/package.php:213
+msgid "Unlimited download resume"
+msgstr ""
+
+#: includes/elementor-extra/package.php:213
+#, php-format
+msgid "%s download resume "
+msgid_plural "%s download resumes "
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/elementor-extra/package.php:215
+#, php-format
+msgid "Job displayed for %s day"
+msgid_plural "Job displayed for %s days"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/elementor-extra/package.php:243
+#: includes/elementor-extra/package.php:362
+#: includes/elementor-extra/package.php:490
+#: includes/elementor-extra/package.php:575
+#, php-format
+msgid "%s Membership"
+msgstr ""
+
+#: includes/elementor-extra/package.php:250
+#: includes/elementor-extra/package.php:369
+msgid "No job posting"
+msgstr ""
+
+#: includes/elementor-extra/package.php:257
+#: includes/elementor-extra/package.php:376
+msgid "No featured job"
+msgstr ""
+
+#: includes/elementor-extra/package.php:264
+msgid "No refresh job"
+msgstr ""
+
+#: includes/elementor-extra/package.php:271
+msgid "No Download Resume Attach file"
+msgstr ""
+
+#: includes/elementor-extra/package.php:279
+#: includes/elementor-extra/package.php:384
+msgid "Featured Company"
+msgstr ""
+
+#: includes/elementor-extra/package.php:291
+#: includes/elementor-extra/package.php:513
+msgid "More info"
+msgstr ""
+
+#: includes/elementor-extra/package.php:309
+#: includes/elementor-extra/package.php:531
+msgid "You have exhausted the right to purchase this package"
+msgstr ""
+
+#: includes/elementor-extra/package.php:318
+msgid "You cannot buy the package with a candidate account"
+msgstr ""
+
+#: includes/elementor-extra/package.php:459
+msgid "Unlimited resume posting"
+msgstr ""
+
+#: includes/elementor-extra/package.php:459
+#, php-format
+msgid "%s resume posting"
+msgid_plural "%s resumes posting"
+msgstr[0] ""
+msgstr[1] ""
+
+#: includes/elementor-extra/package.php:493
+#, php-format
+msgid "%s Resume Refresh"
+msgstr ""
+
+#: includes/elementor-extra/package.php:496
+#, php-format
+msgid "%s Resume Feature"
+msgstr ""
+
+#: includes/elementor-extra/package.php:501
+#: includes/elementor-extra/package.php:580
+msgid "No resume posting"
+msgstr ""
+
+#: includes/elementor-extra/package.php:539
+msgid "You cannot buy the package with an employer account"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:25
+msgid "TMC Post Layout"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:131
+msgid "Grid Style"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:134
+#: includes/elementor-extra/service.php:143
+#: includes/elementor-extra/step-icon.php:146
+msgid "Default"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:146
+#: includes/elementor-extra/testimonial.php:105
+msgid "Category"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:183
+msgid "Modified date"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:184
+msgid "Comment count"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:194
+msgid "Sort by"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:205
+msgid "Post Per Page"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:207
+msgid "8"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:208
+msgid "-1 = Get all post."
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:216
+msgid "Pagination"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:300
+#: includes/elementor-extra/service.php:122
+#: includes/elementor-extra/service.php:155
+#: includes/elementor-extra/step-icon.php:114
+msgid "Image"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:318
+msgid "Image Size"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:321
+msgid "Thumbnail"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:322
+msgid "Medium"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:323
+msgid "Large"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:324
+msgid "Full"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:370
+msgid "Tag"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:406
+msgid "Meta"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:424
+msgid "Display"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:430
+msgid "Author"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:432
+msgid "Tags"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:433
+msgid "Comments"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:443
+msgid "No. of Categories"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:444
+msgid "How many categories to display?"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:445
+msgid "1"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:457
+msgid "No. of Tags"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:458
+msgid "How many tags to display?"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:468
+msgid "Meta Color"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:484
+msgid "Remove icons"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:500
+#: includes/elementor-extra/promotion.php:66
+msgid "Content"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:519
+msgid "Excerpt Length (words)"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:520
+msgid "Length of content (words)"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:540
+#: includes/elementor-extra/promotion.php:158
+#: includes/elementor-extra/service.php:243
+#: includes/elementor-extra/step-icon.php:222
+msgid "Button text"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:541
+#: includes/elementor-extra/post-layout.php:542
+msgid "Read more"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:864
+msgid "No comments"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:864
+msgid "1 comment"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:864
+#, php-format
+msgid "% comments"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:928
+msgid "Options"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:937
+msgid "Columns Space"
+msgstr ""
+
+#: includes/elementor-extra/post-layout.php:961
+msgid "Rows Space"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:26
+msgid "TMC Promotion"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:83
+msgid "Title text"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:88
+msgid "Join our tech talent"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:89
+#: includes/elementor-extra/step-icon.php:191
+msgid "Enter your title"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:114
+msgid "network and grow your Career."
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:115
+#: includes/elementor-extra/step-icon.php:202
+msgid "Enter your description"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:138
+#: includes/elementor-extra/title.php:144
+msgid "Typography for SubTitle"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:159
+#: includes/elementor-extra/service.php:244
+#: includes/elementor-extra/step-icon.php:223
+msgid "Enter text"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:160
+msgid "Join now"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:218
+msgid "Title Spacing"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:254
+msgid "Description Spacing"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:299
+msgid "Button Size"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:318
+msgid "Text Position"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:337
+msgid "Button Spacing"
+msgstr ""
+
+#: includes/elementor-extra/promotion.php:399
+#: includes/elementor-extra/step-icon.php:156
+msgid "Hover Animation"
+msgstr ""
+
+#: includes/elementor-extra/resume.php:14
+msgid "TMC Resumes"
+msgstr ""
+
+#: includes/elementor-extra/resume.php:59
+msgid "TMC Resume"
+msgstr ""
+
+#: includes/elementor-extra/resume.php:95
+msgid "Slide Mode"
+msgstr ""
+
+#: includes/elementor-extra/resume.php:110
+msgid "Column"
+msgstr ""
+
+#: includes/elementor-extra/resume.php:114
+msgid "2"
+msgstr ""
+
+#: includes/elementor-extra/resume.php:115
+msgid "3"
+msgstr ""
+
+#: includes/elementor-extra/resume.php:116
+msgid "4"
+msgstr ""
+
+#: includes/elementor-extra/resume.php:158
+msgid "show"
+msgstr ""
+
+#: includes/elementor-extra/resume.php:171
+msgid "Posts per page"
+msgstr ""
+
+#: includes/elementor-extra/resume.php:226
+msgid "Hide Rating"
+msgstr ""
+
+#: includes/elementor-extra/resume.php:234
+msgid "Hide Button"
+msgstr ""
+
+#: includes/elementor-extra/service.php:29
+msgid "TMC Service"
+msgstr ""
+
+#: includes/elementor-extra/service.php:69
+msgid "Services"
+msgstr ""
+
+#: includes/elementor-extra/service.php:73
+#: includes/elementor-extra/step-icon.php:84
+msgid "Award-Winning​"
+msgstr ""
+
+#: includes/elementor-extra/service.php:74
+#: includes/elementor-extra/service.php:80
+#: includes/elementor-extra/service.php:86
+#: includes/elementor-extra/step-icon.php:85
+#: includes/elementor-extra/step-icon.php:92
+#: includes/elementor-extra/step-icon.php:99
+msgid "Add some text here to describe your services to the page visitors.​"
+msgstr ""
+
+#: includes/elementor-extra/service.php:79
+#: includes/elementor-extra/step-icon.php:91
+msgid "Professional​"
+msgstr ""
+
+#: includes/elementor-extra/service.php:85
+#: includes/elementor-extra/step-icon.php:98
+msgid "Consulting​"
+msgstr ""
+
+#: includes/elementor-extra/service.php:98
+msgid "Type"
+msgstr ""
+
+#: includes/elementor-extra/service.php:102
+#: includes/elementor-extra/service.php:182
+msgid "Alphabet"
+msgstr ""
+
+#: includes/elementor-extra/service.php:106
+#: includes/elementor-extra/service.php:192
+msgid "Number"
+msgstr ""
+
+#: includes/elementor-extra/service.php:110
+#: includes/elementor-extra/service.php:121
+#: includes/elementor-extra/step-icon.php:113
+msgid "Icon"
+msgstr ""
+
+#: includes/elementor-extra/service.php:118
+msgid "Icon Type"
+msgstr ""
+
+#: includes/elementor-extra/service.php:156
+msgid "Recommended size: 60x60 (px)"
+msgstr ""
+
+#: includes/elementor-extra/service.php:169
+msgid "Icon Background"
+msgstr ""
+
+#: includes/elementor-extra/service.php:206
+msgid "Service Title"
+msgstr ""
+
+#: includes/elementor-extra/service.php:211
+msgid "Plan Features"
+msgstr ""
+
+#: includes/elementor-extra/service.php:212
+msgid "Feature"
+msgstr ""
+
+#: includes/elementor-extra/service.php:245
+#: includes/elementor-extra/step-icon.php:224
+msgid "Add text"
+msgstr ""
+
+#: includes/elementor-extra/service.php:260
+#: includes/elementor-extra/step-icon.php:239
+msgid "Hover Active"
+msgstr ""
+
+#: includes/elementor-extra/service.php:320
+msgid "For Image | Icon style"
+msgstr ""
+
+#: includes/elementor-extra/service.php:328
+#: includes/elementor-extra/service.php:507
+msgid "Service Box"
+msgstr ""
+
+#: includes/elementor-extra/service.php:371
+#: includes/elementor-extra/service.php:600
+msgid "Text Content"
+msgstr ""
+
+#: includes/elementor-extra/service.php:379
+#: includes/elementor-extra/step-icon.php:339
+msgid "Icon Size"
+msgstr ""
+
+#: includes/elementor-extra/service.php:439
+msgid "Content margin top"
+msgstr ""
+
+#: includes/elementor-extra/service.php:499
+msgid "For Alphabet style"
+msgstr ""
+
+#: includes/elementor-extra/service.php:545
+msgid "Overlay Color"
+msgstr ""
+
+#: includes/elementor-extra/service.php:564
+msgid "Text Blur"
+msgstr ""
+
+#: includes/elementor-extra/service.php:589
+msgid "Typography for Alphabet"
+msgstr ""
+
+#: includes/elementor-extra/service.php:616
+msgid "Color Text"
+msgstr ""
+
+#: includes/elementor-extra/service.php:648
+msgid "Link Color"
+msgstr ""
+
+#: includes/elementor-extra/service.php:687
+msgid "Line Color"
+msgstr ""
+
+#: includes/elementor-extra/service.php:708
+msgid "For Number style"
+msgstr ""
+
+#: includes/elementor-extra/service.php:716
+msgid "Text-Border Color"
+msgstr ""
+
+#: includes/elementor-extra/service.php:729
+msgid "Size"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:27
+msgid "TMC Step Icon"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:69
+msgid "Layout Style"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:80
+msgid "Step Icon"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:110
+msgid "Icon Style"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:129
+msgid "Choose Image (1:1)"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:144
+msgid "Use for Layoyt 2"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:147
+msgid "Stacked"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:148
+msgid "Framed"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:162
+msgid "Shape"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:175
+msgid "Step"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:190
+msgid "This is the heading"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:195
+msgid "Text"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:201
+msgid ""
+"Click edit button to change this text. Lorem ipsum dolor sit amet, "
+"consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, "
+"pulvinar dapibus leo."
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:315
+msgid "Box Padding"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:329
+msgid "Icon color"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:382
+msgid "Title & Buton Text Color"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:395
+#: includes/elementor-extra/step-icon.php:445
+#: includes/elementor-extra/text-info.php:187
+#: includes/elementor-extra/title.php:120
+msgid "Description Color"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:431
+msgid "Title color"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:469
+msgid "Background Step Number Color"
+msgstr ""
+
+#: includes/elementor-extra/step-icon.php:522
+#: includes/elementor-extra/step-icon.php:538
+#: includes/elementor-extra/step-icon.php:601
+msgid "Post Job Step"
+msgstr ""
+
+#: includes/elementor-extra/team-member.php:25
+msgid "TMC Team Member"
+msgstr ""
+
+#: includes/elementor-extra/team-member.php:165
+msgid "Team Item"
+msgstr ""
+
+#: includes/elementor-extra/team-member.php:196
+msgid "Name"
+msgstr ""
+
+#: includes/elementor-extra/team-member.php:204
+msgid "Social 1"
+msgstr ""
+
+#: includes/elementor-extra/team-member.php:222
+msgid "Social 2"
+msgstr ""
+
+#: includes/elementor-extra/team-member.php:240
+msgid "Social 3"
+msgstr ""
+
+#: includes/elementor-extra/team-member.php:258
+msgid "Social 4"
+msgstr ""
+
+#: includes/elementor-extra/testimonial.php:18
+msgid "TMC Testimonial"
+msgstr ""
+
+#: includes/elementor-extra/testimonial.php:48
+msgid "All"
+msgstr ""
+
+#: includes/elementor-extra/testimonial.php:75
+msgid "Testimonial Option"
+msgstr ""
+
+#: includes/elementor-extra/testimonial.php:159
+msgid "Show Avatar"
+msgstr ""
+
+#: includes/elementor-extra/testimonial.php:170
+msgid "Autoplay Timeout"
+msgstr ""
+
+#: includes/elementor-extra/testimonial.php:190
+msgid "Navigation"
+msgstr ""
+
+#: includes/elementor-extra/testimonial.php:205
+msgid "Item Align"
+msgstr ""
+
+#: includes/elementor-extra/testimonial.php:234
+msgid "Image Margin"
+msgstr ""
+
+#: includes/elementor-extra/testimonial.php:253
+msgid "Testimonial Style"
+msgstr ""
+
+#: includes/elementor-extra/testimonial.php:281
+msgid "Name Color"
+msgstr ""
+
+#: includes/elementor-extra/testimonial.php:307
+msgid "Position Color"
+msgstr ""
+
+#: includes/elementor-extra/text-info.php:21
+#: includes/elementor-extra/text-info.php:39
+msgid "TMC Text Info"
+msgstr ""
+
+#: includes/elementor-extra/text-info.php:77
+#: includes/elementor-extra/title.php:17 includes/elementor-extra/title.php:33
+msgid "TMC Title"
+msgstr ""
+
+#: includes/elementor-extra/text-info.php:86
+msgid ""
+"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, "
+"luctus nec ullamcorper mattis, pulvinar dapibus leo."
+msgstr ""
+
+#: includes/elementor-extra/text-info.php:87
+msgid "type your description here"
+msgstr ""
+
+#: includes/elementor-extra/text-info.php:96
+msgid "Bottom Border"
+msgstr ""
+
+#: includes/elementor-extra/text-info.php:156
+msgid "Space"
+msgstr ""
+
+#: includes/elementor-extra/title.php:40
+msgid "Select Style"
+msgstr ""
+
+#: includes/elementor-extra/title.php:54
+msgid "TMC Title"
+msgstr ""
+
+#: includes/elementor-extra/title.php:61
+msgid "Sub title"
+msgstr ""
+
+#: includes/elementor-extra/title.php:71
+msgid "Label"
+msgstr ""
+
+#: includes/elementor-extra/title.php:73
+msgid "Type your label"
+msgstr ""
+
+#: includes/elementor-extra/title.php:80
+msgid "Top Image"
+msgstr ""
+
+#: includes/elementor-extra/title.php:87
+msgid "Position Sub Title"
+msgstr ""
+
+#: includes/elementor-extra/title.php:184
+msgid "heading-title-image"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:73
+msgid "Import Successfully!"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:131
+#: includes/import-demo/tmc-import.php:140
+#: includes/import-demo/tmc-import.php:192
+#: includes/import-demo/tmc-import.php:196
+#: includes/import-demo/tmc-import.php:205
+msgid "Sorry, there has been an error."
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:132
+msgid "The file does not exist, please try again."
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:176
+msgid "All done. Have fun! "
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:197
+#, php-format
+msgid ""
+"The export file could not be found at <code>%s</code>. It is likely that "
+"this was caused by a permissions problem."
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:213
+#, php-format
+msgid ""
+"This TMC file (version %s) may not be supported by this version of the "
+"importer. Please consider updating."
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:239
+#, php-format
+msgid ""
+"Failed to import author %s. Their posts will be attributed to the current "
+"user."
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:262
+msgid "Import author:"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:273
+msgid "or create new user with login name:"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:276
+msgid "as a new user:"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:284
+msgid "assign posts to an existing user:"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:286
+msgid "or assign posts to an existing user:"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:287
+msgid "- Select -"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:339
+#, php-format
+msgid ""
+"Failed to create new user for %s. Their posts will be attributed to the "
+"current user."
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:392
+#, php-format
+msgid "Failed to import category %s"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:433
+#, php-format
+msgid "Failed to import post tag %s"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:481
+#: includes/import-demo/tmc-import.php:632
+#, php-format
+msgid "Failed to import %s %s"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:508
+#, php-format
+msgid "Failed to import &#8220;%s&#8221;: Invalid post type %s"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:598
+#, php-format
+msgid "Failed to import %s &#8220;%s&#8221;"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:764
+msgid "Menu item skipped due to missing menu slug"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:771
+#, php-format
+msgid "Menu item skipped due to invalid menu slug: %s"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:839
+msgid "The given object ID is not that of a menu item."
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:844
+msgid "Invalid menu ID."
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:997
+msgid "Fetching attachments is not enabled"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1010
+msgid "Invalid file type"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1053
+msgid "Remote server did not respond"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1059
+#, php-format
+msgid "Remote server returned error response %1$d %2$s"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1066
+msgid "Remote file is incorrect size"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1071
+msgid "Zero size file downloaded"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1077
+#, php-format
+msgid "Remote file is too large, limit is %s"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1181
+msgid "Import WordPress"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1188
+#, php-format
+msgid ""
+"A new version of this importer is available. Please update to version %s to "
+"ensure compatibility with newer export files."
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1205
+msgid ""
+"Howdy! Upload your WordPress eXtended RSS (TMC) file and we&#8217;ll import "
+"the posts, pages, comments, custom fields, categories, and tags into this "
+"site."
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1206
+msgid "Choose a TMC (.xml) file to upload, then click Upload file and import."
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1339
+msgid "Imported data could not be read. Please try a different file.."
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1381
+msgid "Sidebar does not exist in theme (using Inactive)"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1403
+msgid "Site does not support widget"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1439
+msgid "Widget already exists"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1501
+msgid "Imported"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1504
+msgid "Imported to Inactive"
+msgstr ""
+
+#: includes/import-demo/tmc-import.php:1511
+msgid "No Title"
+msgstr ""
+
+#: includes/import-demo/parsers.php:46 includes/import-demo/parsers.php:82
+#: includes/import-demo/parsers.php:90
+msgid "There was an error when reading this TMC file"
+msgstr ""
+
+#: includes/import-demo/parsers.php:47
+msgid ""
+"Details are shown above. The importer will now try again with a different "
+"parser..."
+msgstr ""
+
+#: includes/import-demo/parsers.php:94 includes/import-demo/parsers.php:99
+#: includes/import-demo/parsers.php:295 includes/import-demo/parsers.php:511
+msgid ""
+"This does not appear to be a TMC file, missing/invalid TMC version number"
+msgstr ""
+
+#: includes/tmc-setup-install.php:111
+msgid "Do you want to continue this action?"
+msgstr ""
+
+#: includes/tmc-setup-install.php:112
+msgid "There was an error processing. Please try again!"
+msgstr ""
+
+#: includes/tmc-setup-install.php:113
+msgid "Please waiting, not exit page."
+msgstr ""
+
+#: includes/tmc-setup-install.php:130
+#, php-format
+msgid "Welcome to %s,"
+msgstr ""
+
+#: includes/tmc-setup-install.php:132
+msgid ""
+"If it is the first time you install this theme, you should go and check the "
+"basic setting."
+msgstr ""
+
+#: includes/tmc-setup-install.php:135
+msgid "Go to Quick Setup"
+msgstr ""
+
+#: includes/tmc-setup-install.php:139
+msgid "Skip Setup"
+msgstr ""
+
+#: includes/tmc-setup-install.php:187 includes/tmc-setup-install.php:446
+#: includes/tmc-setup-install.php:485
+msgid "Done"
+msgstr ""
+
+#: includes/tmc-setup-install.php:211
+msgid "Import Demo"
+msgstr ""
+
+#: includes/tmc-setup-install.php:264
+msgid "Cancel"
+msgstr ""
+
+#: includes/tmc-setup-install.php:284
+msgid "License"
+msgstr ""
+
+#: includes/tmc-setup-install.php:286
+msgid "Automatic Update"
+msgstr ""
+
+#: includes/tmc-setup-install.php:293
+msgid "ThemeForest Purchase Code"
+msgstr ""
+
+#: includes/tmc-setup-install.php:294
+msgid "ThemeForest Purchase Code:"
+msgstr ""
+
+#: includes/tmc-setup-install.php:297
+msgid ""
+"This purchase code makes sure that our server recognizes your website thus "
+"allows you to download and install the new updates."
+msgstr ""
+
+#: includes/tmc-setup-install.php:305
+#, php-format
+msgid "<a target=\"_blank\" href=\"%s\">How to get Purchase code?</a>"
+msgstr ""
+
+#: includes/tmc-setup-install.php:322 includes/tmc-setup-install.php:323
+msgid "Required Pages"
+msgstr ""
+
+#: includes/tmc-setup-install.php:332
+msgid "Front Page"
+msgstr ""
+
+#: includes/tmc-setup-install.php:335
+msgid "The Homepage"
+msgstr ""
+
+#: includes/tmc-setup-install.php:344
+msgid "Member"
+msgstr ""
+
+#: includes/tmc-setup-install.php:347
+msgid "The main page for all the action of Employer and Candidate"
+msgstr ""
+
+#: includes/tmc-setup-install.php:355
+msgid "Post Job"
+msgstr ""
+
+#: includes/tmc-setup-install.php:358
+msgid "The page for Job posting"
+msgstr ""
+
+#: includes/tmc-setup-install.php:362
+msgid "Post Resume"
+msgstr ""
+
+#: includes/tmc-setup-install.php:365
+msgid "The page for Resume posting"
+msgstr ""
+
+#: includes/tmc-setup-install.php:429
+msgid "Missing setting"
+msgstr ""
+
+#: includes/tmc-setup-install.php:431 includes/tmc-setup-install.php:439
+msgid "Wrong"
+msgstr ""
+
+#: includes/tmc-setup-install.php:433 includes/tmc-setup-install.php:435
+#, php-format
+msgid "Page should contains %s"
+msgstr ""
+
+#: includes/tmc-setup-install.php:440
+#, php-format
+msgid "Page should have template %s"
+msgstr ""
+
+#: includes/tmc-setup-install.php:443
+msgid "Wrong Page"
+msgstr ""
+
+#: includes/tmc-setup-install.php:457 includes/tmc-setup-install.php:499
+msgid "Correct now"
+msgstr ""
+
+#: includes/tmc-setup-install.php:464
+msgid "Edit setting"
+msgstr ""
+
+#: includes/tmc-setup-install.php:495
+#, php-format
+msgid "You need to create a page with template %s"
+msgstr ""
+
+#: includes/tmc-setup-install.php:524
+msgid "Tomochain Demo"
+msgstr ""
+
+#: includes/tmc-setup-install.php:545
+msgid "Import Post"
+msgstr ""
+
+#: includes/tmc-setup-install.php:551
+msgid "Import Nav Menu"
+msgstr ""
+
+#: includes/tmc-setup-install.php:557
+msgid "Import Comment"
+msgstr ""
+
+#: includes/tmc-setup-install.php:573
+msgid "Install "
+msgstr ""
+
+#: includes/tmc-setup-install.php:583
+msgid "Install Demo"
+msgstr ""
+
+#: includes/tmc-setup-install.php:588
+msgid "Process of importing data demo"
+msgstr ""
+
+#: includes/wp-widget/widgets.php:12
+msgid "Your site&#8217;s most recent Posts."
+msgstr ""
+
+#: includes/wp-widget/widgets.php:14
+msgid "TMC Recent News"
+msgstr ""
+
+#: includes/wp-widget/widgets.php:40
+msgid "Recent News"
+msgstr ""
+
+#: includes/wp-widget/widgets.php:135
+msgid "Title:"
+msgstr ""
+
+#: includes/wp-widget/widgets.php:140
+msgid "Number of posts to show:"
+msgstr ""
+
+#: includes/wp-widget/widgets.php:146
+msgid "Display post date?"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Elementor Widget Extra for Tomochain"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "TMCTheme Team"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "https://www.tmctheme.com"
+msgstr ""
