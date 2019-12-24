@@ -2,6 +2,7 @@
     position: relative;
     z-index: 2;
     color: @white;
+    background-color: @footer-bg;
     .widget-title{
         margin-top: 0;
     }
@@ -12,7 +13,6 @@
         }
     }
     .footer-top{
-        background-color: @primary-color;
         .sidebar-footer{
             display: flex;
             flex-wrap: wrap;
@@ -46,10 +46,23 @@
     .site-info {
         padding-top: 30px;
         padding-bottom: 30px;
-        background-color: darken(@primary-color, 5%);
         color: @white;
         font-size: 16px;
         text-align: center;
+    }
+    .social-list{
+        display: flex;
+        justify-content: center;
+        li{
+            a{
+                width: 40px;
+                height: 40px;
+                line-height: 40px;
+                font-size: 20px;
+                text-align: center;
+                display: block;
+            }
+        }
     }
 }
 .tmc-newletter{

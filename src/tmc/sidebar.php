@@ -10,6 +10,6 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 	return;
 }
 ?>
-<div id="secondary" class="sidebar">
+<div id="secondary" class="sidebar col-md-3 col-xs-12">
 		<?php dynamic_sidebar( 'sidebar-1' );?>
 </div><!-- #secondary -->

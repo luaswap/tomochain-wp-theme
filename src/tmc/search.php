@@ -13,7 +13,7 @@ get_header();
 <main id="main" class="site-main">
 	<div class="container">
      	<div class="row">
-     		<div class="site-content">
+     		<div class="site-content col-md-9">
      			<div class="search-result">
 					<?php if ( have_posts() ) : 
 						global $wp_query;?>

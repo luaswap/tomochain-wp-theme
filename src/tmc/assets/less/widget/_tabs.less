@@ -1,0 +1,38 @@
+.tmc-tabs-widget{
+	.tmc-tab-title{
+		list-style: none;
+		padding: 0;
+		display: flex;
+		justify-content: space-between;
+		li{
+			position: relative;
+			font-size: 20px;
+			width: 25%;
+			font-weight: 600;
+			a{
+				display: block;
+			}
+			&:after{
+				position: absolute;
+				content: '';
+				width: 0;
+				height: 5px;
+				background: #000;
+				bottom: -5px;
+				left: 0;
+				opacity: 0;
+				transition: all 0.35s ease;
+			}
+			&.active,&:hover{
+				&:after{
+					width: 50%;
+					opacity: 1;
+				}
+			}
+		}
+	}
+	.tab-content{
+		display: none;
+		width: 100%!important;
+	}
+}

@@ -20,7 +20,7 @@ if (function_exists('pll_home_url')) {
             <div class="container">
                 <div class="row">
                     <div class="col-12">
-                        <img src="<?php echo esc_url(ST_THEME_URI . '/assets/images/404.png'); ?>" alt="404">
+                        <img src="<?php echo esc_url(TMC_THEME_URI . '/assets/images/404.png'); ?>" alt="404">
                         <p><?php esc_html_e('Page not found', 'tmc'); ?></p>
                         <a href="<?php echo esc_url($home_url); ?>" class="tmc-button"><span><?php esc_html_e('Go Home', 'tmc') ?></span></a>
                     </div>
