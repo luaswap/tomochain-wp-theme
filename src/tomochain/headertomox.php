@@ -19,6 +19,96 @@
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script type="text/javascript" src="https://lab.alexcican.com/set_cookies/cookie.js"></script>
 	<?php wp_head(); ?>
+    <style>
+        .menu-primary-menu-container li,
+        .site-mobile-menu-wrapper li {
+            position: relative;
+        }
+        .menu-primary-menu-vi-container > ul > li:last-child::after,
+        .menu-primary-menu-vi-container > ul > li:first-child::after,
+        .menu-primary-menu-container > ul > li:last-child::after,
+        .menu-primary-menu-container > ul > li:first-child::after {
+            content: 'NEW';
+            position: absolute;
+            right: -8px;
+            top: 22px;
+            display: block;
+            padding: 3px 5px;
+            background: #e2358d;
+            font-size: 9px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 10px;
+            line-height: 1;
+            font-family: 'Bai Jamjuree',sans-serif;
+        }
+        @media screen and (min-width: 992px) {
+            .headroom--pinned .menu-primary-menu-vi-container > ul > li:last-child::after,
+            .headroom--pinned .menu-primary-menu-vi-container > ul > li:first-child::after,
+            .headroom--pinned .menu-primary-menu-container > ul > li:last-child::after,
+            .headroom--pinned .menu-primary-menu-container > ul > li:first-child::after {
+                top: 18px;
+            }
+            .headroom--top .menu-primary-menu-vi-container > ul > li:last-child::after,
+            .headroom--top .menu-primary-menu-vi-container > ul > li:first-child::after,
+            .headroom--top .menu-primary-menu-container > ul > li:last-child::after,
+            .headroom--top .menu-primary-menu-container > ul > li:first-child::after {
+                top: 22px;
+            }
+        }
+        .menu-primary-menu-vi-container > ul > li:last-child > ul > li:first-child::after,
+        .menu-primary-menu-container > ul > li:last-child > ul > li:first-child::after,
+        .menu-primary-menu-vi-container > ul > li:first-child > ul > li:nth-last-child(1)::after,
+        .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(2)::after {
+            content: 'NEW';
+            position: absolute;
+            right: 0px;
+            top: 8px;
+            display: block;
+            padding: 3px 5px;
+            background: #e2358d;
+            font-size: 9px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 10px;
+            line-height: 1;
+            font-family: 'Bai Jamjuree',sans-serif;
+        }
+        @media screen and (max-width: 991px) {
+            .menu-primary-menu-vi-container > ul > li:last-child::after,
+            .menu-primary-menu-container > ul > li:last-child::after,
+            .menu-primary-menu-vi-container > ul > li:first-child::after,
+            .menu-primary-menu-container > ul > li:first-child::after {
+                right: 50px;
+                top: 12px;
+            }
+            .menu-primary-menu-vi-container > ul > li:first-child > ul > li:nth-last-child(1)::after,
+            .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(2)::after {
+                right: 10px;
+                top: 12px;
+            }
+            .menu-primary-menu-vi-container > ul > li:last-child > ul > li:first-child::after,
+            .menu-primary-menu-container > ul > li:last-child > ul > li:first-child::after {
+                display: none;
+            }
+            .menu-primary-menu-vi-container > ul > li:last-child > ul > li:nth-child(2)::after,
+            .menu-primary-menu-container > ul > li:last-child > ul > li:nth-child(2)::after {
+                content: 'NEW';
+                position: absolute;
+                right: 10px;
+                top: 12px;
+                display: block;
+                padding: 3px 5px;
+                background: #e2358d;
+                font-size: 9px;
+                font-weight: bold;
+                color: #fff;
+                border-radius: 10px;
+                line-height: 1;
+                font-family: 'Bai Jamjuree',sans-serif;
+            }
+        }
+    </style>
 </head>
 
 <body <?php body_class(); ?>>
@@ -36,11 +126,11 @@
 <div class="popup_btn tomo_btn_tmp_grad">
 
 	<?php if (get_bloginfo('language') == 'en-US'): ?>
-    	<a href="https://dex.testnet.tomochain.com/markets" title="" target="_blank"><span><?php echo esc_html__('Trade on TomoDEX','tomochain');?></span> <i class="fas fa-chart-area"></i></a>
+    	<a href="https://t.me/TomoX" title="" target="_blank"><span><?php echo esc_html__('Join TomoX Telegram','tomochain');?></span> <i class="fab fa-telegram-plane"></i></a>
     <?php elseif(get_bloginfo('language') == 'vi'): ?>
-    	<a href="https://dex.testnet.tomochain.com/markets" title="" target="_blank"><span><?php echo esc_html__('Giao dịch trên TomoDEX','tomochain');?></span> <i class="fas fa-chart-area"></i></a>
+    	<a href="https://t.me/TomoX" title="" target="_blank"><span><?php echo esc_html__('Tham gia Telegram TomoX','tomochain');?></span> <i class="fab fa-telegram-plane"></i></a>
     <?php elseif(get_bloginfo('language')): ?>
-    	<a href="https://dex.testnet.tomochain.com/markets" title="" target="_blank"><span><?php echo esc_html__('Trade on TomoDEX','tomochain');?></span> <i class="fas fa-chart-area"></i></a>
+    	<a href="https://t.me/TomoX" title="" target="_blank"><span><?php echo esc_html__('Join TomoX Telegram','tomochain');?></span> <i class="fab fa-telegram-plane"></i></a>
     <?php endif; ?>
 
     <!-- <span class="close" title="Hide This Message">×</span> -->
