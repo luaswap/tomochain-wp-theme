@@ -171,3 +171,13 @@
         text-align: center;
     }
 }
+
+.menu-primary-menu-container {
+    ul {
+        > li:first-child {
+            &::before {
+                content: 'new';
+            }
+        }
+    }
+}
