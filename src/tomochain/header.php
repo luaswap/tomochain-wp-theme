@@ -42,6 +42,20 @@
             line-height: 1;
             font-family: 'Bai Jamjuree',sans-serif;
         }
+        @media screen and (min-width: 992px) {
+            .headroom--pinned .menu-primary-menu-vi-container > ul > li:last-child::after,
+            .headroom--pinned .menu-primary-menu-vi-container > ul > li:first-child::after,
+            .headroom--pinned .menu-primary-menu-container > ul > li:last-child::after,
+            .headroom--pinned .menu-primary-menu-container > ul > li:first-child::after {
+                top: 18px;
+            }
+            .headroom--top .menu-primary-menu-vi-container > ul > li:last-child::after,
+            .headroom--top .menu-primary-menu-vi-container > ul > li:first-child::after,
+            .headroom--top .menu-primary-menu-container > ul > li:last-child::after,
+            .headroom--top .menu-primary-menu-container > ul > li:first-child::after {
+                top: 22px;
+            }
+        }
         .menu-primary-menu-vi-container > ul > li:last-child > ul > li:first-child::after,
         .menu-primary-menu-container > ul > li:last-child > ul > li:first-child::after,
         .menu-primary-menu-vi-container > ul > li:first-child > ul > li:nth-last-child(1)::after,
