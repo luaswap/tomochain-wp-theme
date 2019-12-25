@@ -8,7 +8,7 @@
  *
  * @package st
  */
-
+$social_lists = tmc_get_option( 'tmc_social_list');
 ?>
 
     </div><!-- #content -->
@@ -32,6 +32,28 @@
         </div>
         <div class="site-info">
             <div class="container">
+                <ul class="social-list">
+                    <?php
+                    $url = $title = $icon = '';
+                    foreach ( (array) $social_lists as $k => $s ) {
+
+                        if ( isset( $s['title'] ) ) {
+                            $title = esc_html( $s['title'] );
+                        }
+
+                        if ( isset( $s['icon'] ) ) {
+                            $icon = $s['icon'];
+                        }
+
+                        if ( isset( $s['url'] ) ) {
+                           $url = esc_url( $s['url'] );
+                        }?>
+                        <li class="social-item">
+                            <a href="<?php echo $url;?>" target="_blank" title="<?php echo $title?>"><?php echo $icon?></a>
+                        </li>
+                    <?php }
+                    ?>
+                </ul>
                 <?php
                 printf( esc_html__( 'Copyright &copy; %1$s by %2$s.', 'tmc' ), date('Y'), 'Tomochain' );
                 ?>

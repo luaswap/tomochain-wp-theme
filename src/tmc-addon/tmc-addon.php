@@ -54,6 +54,7 @@ if ( ! class_exists( 'TMC_Addon' ) ) {
 			* CMB2 Custom field
 			*/
 			if(class_exists('CMB2_Bootstrap_260')){
+				require_once TMC_ADDON_INCLUDES_DIR . '/libs/cmb2-extend/condition/cmb2-condition.php';
 				require_once TMC_ADDON_INCLUDES_DIR . '/admin/theme-options.php';
 				require_once TMC_ADDON_INCLUDES_DIR . '/admin/page-metaboxs.php';
 				require_once TMC_ADDON_INCLUDES_DIR . '/libs/cmb2-extend/google-map/cmb-field-map.php';
