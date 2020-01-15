@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="https://lab.alexcican.com/set_cookies/cookie.js"></script>
+	<script type="text/javascript" src="/tomochain/assets/libs/set-cookie/cookie.js"></script>
 	<?php wp_head(); ?>
     <style>
         .menu-primary-menu-container li,
