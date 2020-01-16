@@ -52,7 +52,7 @@ if (function_exists('pll_home_url')) {
                     </p>
                 </div>
             </div>
-            <a class="btn-scroll-down" href="#1rdPage"><img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-icon-mouse.svg'); ?>" alt="privacy-icon-mouse"> Scroll down</a>
+            <a class="btn-scroll-down" href="#1rdPage">Scroll down</a>
         </div>
         <div class="section" id="section1">
             <div class="container-fluid text-center fixed-content">
@@ -66,7 +66,7 @@ if (function_exists('pll_home_url')) {
                     </p>
                 </div>
             </div>
-            <a class="btn-scroll-down" href="#2rdPage"><img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-icon-mouse.svg'); ?>" alt="privacy-icon-mouse"> Scroll down</a>
+            <a class="btn-scroll-down" href="#2rdPage">Scroll down</a>
         </div>
         <div class="section" id="section2">
             <div class="container-fluid text-center fixed-content">
@@ -76,7 +76,7 @@ if (function_exists('pll_home_url')) {
                     </p>
                 </div>
             </div>
-            <a class="btn-scroll-down" href="#3rdPage"><img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-icon-mouse-white.svg'); ?>" alt="privacy-icon-mouse"> Scroll down</a>
+            <a class="btn-scroll-down" href="#3rdPage">Scroll down</a>
         </div>
         <div class="section" id="section3">
             <div class="container-fluid text-center fixed-content">
@@ -86,7 +86,7 @@ if (function_exists('pll_home_url')) {
                     </p>
                 </div>
             </div>
-            <a class="btn-scroll-down" href="#4rdPage"><img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-icon-mouse-white.svg'); ?>" alt="privacy-icon-mouse"> Scroll down</a>
+            <a class="btn-scroll-down" href="#4rdPage">Scroll down</a>
         </div>
         <div class="section" id="section4">
             <div class="main-site tmpr-bg-black">
@@ -145,7 +145,7 @@ if (function_exists('pll_home_url')) {
                             <p class="privacy-benefits-icon-medium mb-5">
                                 <img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-benefits-icon-1.svg'); ?>" alt="privacy-benefits-icon-1">
                             </p>
-                            <p class="tpl-title-medium mb-5 pb-5">
+                            <p class="tpl-title-medium pb-5">
                                 <strong>Fastest and User-friendly:</strong> Easy <span>one-click step</span> to switch from transparent to privacy mode. 2-4 second confirmation time
                             </p>
                         </div>
@@ -154,7 +154,7 @@ if (function_exists('pll_home_url')) {
                             <p class="privacy-benefits-icon-medium mb-5">
                                 <img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-benefits-icon-2.svg'); ?>" alt="privacy-benefits-icon-2">
                             </p>
-                            <p class="tpl-title-medium mb-5 pb-5">
+                            <p class="tpl-title-medium pb-5">
                                 <strong>Confidential:</strong> <span>All transactions are hidden</span>, including senders, receivers & value information
                             </p>
                         </div>
@@ -162,7 +162,7 @@ if (function_exists('pll_home_url')) {
                             <p class="privacy-benefits-icon-medium mb-5">
                                 <img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-benefits-icon-3.svg'); ?>" alt="privacy-benefits-icon-3">
                             </p>
-                            <p class="tpl-title-medium mb-5 pb-5">
+                            <p class="tpl-title-medium pb-5">
                                 <strong>Multiple chain support:</strong> Both TomoChain’s token and tokens from other chains like <span>BTC, ETH, USDT,...</span>
                             </p>
                         </div>
@@ -171,7 +171,7 @@ if (function_exists('pll_home_url')) {
                             <p class="privacy-benefits-icon-medium mb-5">
                                 <img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-benefits-icon-4.svg'); ?>" alt="privacy-benefits-icon-4">
                             </p>
-                            <p class="tpl-title-medium mb-5 pb-5">
+                            <p class="tpl-title-medium pb-5">
                                 <strong>Regulatory compliant:</strong> TomoP <span>allows authorized entities</span> to fulfill their obligations by acquiring necessary information.
                             </p>
                         </div>
