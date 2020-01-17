@@ -14730,7 +14730,7 @@ Homepage Enterprise inside full
       height: 20px;
       background-color: #00E8B4;
       position: absolute;
-      bottom: 0;
+      bottom: 5px;
       z-index: -1;
       -webkit-animation-name: underlineTitleRight;
               animation-name: underlineTitleRight;

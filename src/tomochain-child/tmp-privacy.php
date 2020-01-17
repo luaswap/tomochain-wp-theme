@@ -230,7 +230,7 @@ if (function_exists('pll_home_url')) {
                 <div class="container">
                     <div class="box-title">
                         <div class="box-title text-center mb-5 pb-5">
-                            <h2 class="tpl-title-big underline_right">
+                            <h2 class="tpl-title-big underline_left">
                                 Roadmap
                             </h2>
                         </div>
