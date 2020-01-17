@@ -59,7 +59,8 @@
         .menu-primary-menu-vi-container > ul > li:last-child > ul > li:first-child::after,
         .menu-primary-menu-container > ul > li:last-child > ul > li:first-child::after,
         .menu-primary-menu-vi-container > ul > li:first-child > ul > li:nth-last-child(1)::after,
-        .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(2)::after {
+        .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(2)::after,
+        .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(3)::after {
             content: 'NEW';
             position: absolute;
             right: 0px;
@@ -83,7 +84,8 @@
                 top: 12px;
             }
             .menu-primary-menu-vi-container > ul > li:first-child > ul > li:nth-last-child(1)::after,
-            .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(2)::after {
+            .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(2)::after,
+            .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(3)::after {
                 right: 10px;
                 top: 12px;
             }
