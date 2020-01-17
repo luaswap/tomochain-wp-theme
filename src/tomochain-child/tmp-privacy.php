@@ -21,7 +21,7 @@ if (function_exists('pll_home_url')) {
                 </div>
                 <div class='mb-0 pb-5 mb-lg-5 pb-lg-5'>
                     <h2 class="tpl-title-big txt-black">
-                        Do you believe in  what so-called privacy<br>
+                        Do you believe in  what <span>so-called privacy</span><br>
                         in crypto transactions?
                     </h2>
                 </div>
@@ -121,23 +121,33 @@ if (function_exists('pll_home_url')) {
             <div class="section-break tmpr-bg-black py-5">
                 <div class="container">
                     <div class="box-title text-right mb-5 py-5">
-                        <h2 class="tpl-title-big underline_left">
-                            Switch to Privacy Mode
+                        <h2 class="tpl-title-big">
+                            Switch to <span class="underline_left">Privacy Mode</span>
                         </h2>
                         <p class="m-0">
                             Follow our step-by-step guide to preserve your<br>transaction privacy on Tomo Wallet
                         </p>
                     </div>
                     <div class="box-image mb-5">
-                        <img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-img-relayer.png'); ?>" alt="privacy-img-relayer">
+                        <ul class="btn-next">
+                            <li id="start"><img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-relayer-p1.png'); ?>" alt="privacy-img-relayer"></li>
+                            <li><img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-relayer-p2.png'); ?>" alt="privacy-img-relayer"></li>
+                            <li><img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-relayer-p3.png'); ?>" alt="privacy-img-relayer"></li>
+                            <li><img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-relayer-p4.png'); ?>" alt="privacy-img-relayer"></li>
+                            <li><img src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/images/privacy-relayer-p5.png'); ?>" alt="privacy-img-relayer"></li>
+                        </ul>
+                        <div class="box-btn-n-b">
+                            <span class="btn-back">BACK</span>
+                            <span class="btn-next">NEXT</span>
+                        </div>
                     </div>
                 </div>
             </div>
             <div class="section-benefits tmpr-bg-black py-10">
                 <div class="container">
                     <div class="box-title mb-5 pb-5">
-                        <h2 class="tpl-title-big underline_right">
-                            Highlight Features
+                        <h2 class="tpl-title-big">
+                            Highlight <span class="underline_left">Features</span>
                         </h2>
                     </div>
                     <div class="row">
@@ -292,7 +302,7 @@ if (function_exists('pll_home_url')) {
                                 FAQs
                             </h2>
                             <p class="m-0">
-                                Have not found the question that you are looking for? <a href="#">See More…</a>
+                                Have not found the question that you are looking for? <a href="mailto:admin@tomochain.com">admin@tomochain.com</a>
                             </p>
                         </div>
                     </div>
@@ -368,6 +378,38 @@ if (function_exists('pll_home_url')) {
 <script src="<?php echo esc_url(TOMOCHAIN_THEME_URI . '/assets/libs/scroll-fullpage/fullpage.js'); ?>"></script>
 <script type="text/javascript">
     jQuery(document).ready(function() {
+        var $currDiv = $( "#start" );
+            $currDiv.css( "opacity", "1" );
+        var count = 1;
+        if (count === 1) {
+            $( ".btn-back" ).css( "background-color", "#444444" );
+        }
+        $( ".btn-next" ).click(function() {
+            if (count < 5) {
+                $currDiv  = $currDiv.next();
+                $( ".btn-back" ).css( "background-color", "#ffffff");
+                $( ".section-break ul li" ).css( "opacity", "0" );
+                $currDiv.css( "opacity", "1" );
+                count++;
+                if (count === 5) {
+                    $( ".btn-next" ).css(  {"background-color": "#1A4038", "color": "#666"} );
+                }
+            }
+        });
+        $( ".btn-back" ).click(function() {
+            if (count > 1) {
+                $currDiv  = $currDiv .prev();
+                $( ".btn-next" ).css( "background-color", "#00e8b4" );
+                $( ".section-break ul li" ).css( "opacity", "0" );
+                $currDiv .css( "opacity", "1" );
+                count--;
+                if (count === 1) {
+                    $( ".btn-back" ).css( "background-color", "#444444" );
+                }
+            }
+        });
+
+
         // COOKIES
         // if the cookie is true, hide the initial message and show the other one
         if ($.cookie('hide-section-click') == 'yes' ) {//yes
