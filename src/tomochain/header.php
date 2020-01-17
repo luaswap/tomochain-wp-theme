@@ -17,7 +17,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link rel="profile" href="https://gmpg.org/xfn/11">
 	<script type="text/javascript" src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
-	<script type="text/javascript" src="https://lab.alexcican.com/set_cookies/cookie.js"></script>
+	<script type="text/javascript" src="/tomochain/assets/libs/set-cookie/cookie.js"></script>
 	<?php wp_head(); ?>
     <style>
         .menu-primary-menu-container li,
@@ -59,7 +59,8 @@
         .menu-primary-menu-vi-container > ul > li:last-child > ul > li:first-child::after,
         .menu-primary-menu-container > ul > li:last-child > ul > li:first-child::after,
         .menu-primary-menu-vi-container > ul > li:first-child > ul > li:nth-last-child(1)::after,
-        .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(2)::after {
+        .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(2)::after,
+        .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(3)::after {
             content: 'NEW';
             position: absolute;
             right: 0px;
@@ -83,7 +84,8 @@
                 top: 12px;
             }
             .menu-primary-menu-vi-container > ul > li:first-child > ul > li:nth-last-child(1)::after,
-            .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(2)::after {
+            .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(2)::after,
+            .menu-primary-menu-container > ul > li:first-child > ul > li:nth-last-child(3)::after {
                 right: 10px;
                 top: 12px;
             }
