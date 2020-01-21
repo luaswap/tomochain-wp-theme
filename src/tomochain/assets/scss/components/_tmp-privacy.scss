@@ -805,6 +805,18 @@
 }
 //
 .page-template-tmp-privacy {
+    .entry-content, .entry-summary, .page-content, .type-page {
+        margin: 0!important;
+    }
+    .vc_row {
+        margin: 0!important;
+    }
+    .wpb_content_element {
+        margin-bottom: 0px!important;
+    }
+    .vc_column_container>.vc_column-inner {
+        padding: 0!important;
+    }
     position: relative;
     transition: all .3s;
     &::before {

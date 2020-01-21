@@ -14362,6 +14362,14 @@ Homepage Enterprise inside full
   position: relative;
   -webkit-transition: all .3s;
   transition: all .3s; }
+  .page-template-tmp-privacy .entry-content, .page-template-tmp-privacy .entry-summary, .page-template-tmp-privacy .page-content, .page-template-tmp-privacy .type-page {
+    margin: 0 !important; }
+  .page-template-tmp-privacy .vc_row {
+    margin: 0 !important; }
+  .page-template-tmp-privacy .wpb_content_element {
+    margin-bottom: 0px !important; }
+  .page-template-tmp-privacy .vc_column_container > .vc_column-inner {
+    padding: 0 !important; }
   .page-template-tmp-privacy::before {
     -webkit-transition: all .3s;
     transition: all .3s; }
