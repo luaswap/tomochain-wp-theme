@@ -14545,7 +14545,10 @@ Homepage Enterprise inside full
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  z-index: 5; }
+  z-index: 5;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
   .box-btn-n-b span {
     display: inline-block;
     padding: 7px 20px;
