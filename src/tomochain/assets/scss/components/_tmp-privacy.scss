@@ -1055,6 +1055,7 @@
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 5;
+    display: flex;
     span {
         display: inline-block;
         padding: 7px 20px;
